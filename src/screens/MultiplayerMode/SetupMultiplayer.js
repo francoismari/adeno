@@ -5,6 +5,7 @@ import {
   Dimensions,
   FlatList,
   TouchableOpacity,
+  Alert,
 } from "react-native";
 import React, { useState } from "react";
 import BackgroundWrapper from "../../components/BackgroundWrapper";
@@ -14,15 +15,14 @@ import { Entypo } from "@expo/vector-icons";
 export default function SetupMultiplayer() {
   const navigation = useNavigation();
 
-  const [players, setPlayers] = useState([
-    {
-      pseudo: "Francois",
-    },
-  ]);
+  const [players, setPlayers] = useState([]);
 
   const handleStartGame = () => {
-    // check if there is at least 3 players
-    // then navigate to the 'Question' screen with the players as params
+    if (players.length >= 3) {
+      navigation.navigate("MultiplayerQuestion", { players });
+    } else {
+      Alert.alert("Not enough players", "Please add at least 3 players.");
+    }
   };
 
   const handleGoBack = () => {
@@ -141,7 +141,9 @@ const StartButton = ({ handleStartGame }) => {
 
 const PlayerNameItem = ({ player, setPlayers }) => {
   const handleRemovePlayer = () => {
-    // remove the player from the players state
+    setPlayers((currentPlayers) =>
+      currentPlayers.filter((p) => p.pseudo !== player.pseudo)
+    );
   };
 
   return (
@@ -185,11 +187,41 @@ const PlayerNameItem = ({ player, setPlayers }) => {
 
 const PlayerListFooter = ({ players, setPlayers }) => {
   const handleAddPlayer = () => {
-    // alert that asks the user a pseudo for the new player
-    // then when confirmed it adds the player with the pseudo, as an object in the players array, like this:
-    // {
-    //   pseudo: ...
-    // }
+    if (players.length >= 10) {
+      Alert.alert("Limit Reached", "You cannot add more than 10 players.");
+      return;
+    }
+
+    Alert.prompt(
+      "Ajouter un joueur",
+      "Entrez le nom du joueur",
+      [
+        {
+          text: "Annuler",
+          style: "cancel",
+        },
+        {
+          text: "Ajouter",
+          onPress: (pseudo) => {
+            if (!pseudo) return;
+
+            // Check for duplicate pseudo
+            const isDuplicate = players.some(
+              (player) => player.pseudo === pseudo
+            );
+            if (isDuplicate) {
+              Alert.alert(
+                "Ce nom est déjà ajouté",
+                "Each player must have a unique name."
+              );
+            } else {
+              setPlayers([...players, { pseudo }]);
+            }
+          },
+        },
+      ],
+      "plain-text"
+    );
   };
 
   return (
