@@ -3,6 +3,7 @@ import StackNavigator from "./src/navigation/StackNavigator";
 import * as Font from "expo-font";
 import * as SplashScreen from "expo-splash-screen";
 import { useEffect, useState } from "react";
+import AsyncStorage from "@react-native-async-storage/async-storage";
 
 let customFonts = {
   FrancoisOne: require("./assets/fonts/FrancoisOne-Regular.ttf"),
@@ -10,49 +11,36 @@ let customFonts = {
 
 SplashScreen.preventAutoHideAsync();
 
-function Initializer() {
-  const [isAppReady, setIsAppReady] = useState(false);
+function App() {
+  const [initialRouteName, setInitialRouteName] = useState(null);
 
   useEffect(() => {
-    let unsubscribe;
-
-    async function loadAppResources() {
+    async function loadResourcesAndDataAsync() {
       try {
-        // Loading fonts.
         await Font.loadAsync(customFonts);
+        const setUpValue = await AsyncStorage.getItem("isSetUp");
+        console.log("isSetUp value:", setUpValue); // Debugging log
+
+        setInitialRouteName(setUpValue !== null ? "Navigator" : "Onboarding");
       } catch (e) {
-        console.error("App loading error", e);
+        console.warn(e);
       } finally {
-        setIsAppReady(true);
+        await SplashScreen.hideAsync();
       }
     }
 
-    loadAppResources();
-
-    return () => {
-      // Cleanup
-      if (unsubscribe) unsubscribe();
-      setIsAppReady(true);
-    };
+    loadResourcesAndDataAsync();
   }, []);
 
-  useEffect(() => {
-    if (isAppReady) {
-      SplashScreen.hideAsync();
-    }
-  }, [isAppReady]);
-
-  if (!isAppReady) {
+  if (!initialRouteName) {
     return null;
   }
 
-  return <StackNavigator />;
-}
-
-export default function App() {
   return (
     <NavigationContainer>
-      <Initializer />
+      <StackNavigator initialRouteName={initialRouteName} />
     </NavigationContainer>
   );
 }
+
+export default App;

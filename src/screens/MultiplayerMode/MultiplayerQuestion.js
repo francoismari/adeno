@@ -14,213 +14,192 @@ import { Entypo } from "@expo/vector-icons";
 
 const questions = [
   {
-    text: "L'UE devrait-elle intervenir militairement dans des pays tiers pour défendre les droits de l'homme ?",
+    text: "Faut-il intervenir militairement pour les droits de l'homme à l'étranger ?",
     choices: {
-      Pour: [1, 2, 4],
-      Contre: [5, 6, 9],
+      Pour: [1, 4, 7],
+      Contre: [5, 9, 10],
     },
   },
   {
-    text: "L'UE devrait-elle imposer une interdiction générale du port du voile islamique dans les espaces publics ?",
+    text: "Interdirais-tu le port du voile islamique dans les espaces publics ?",
     choices: {
-      Pour: [5, 6],
+      Pour: [5, 6, 9],
       Contre: [2, 3, 4],
     },
   },
   {
-    text: "Les pays en difficulté économique devraient-ils être expulsés de la zone euro ?",
-    choices: {
-      Pour: [9],
-      Contre: [1, 2, 3, 4, 6, 7],
-    },
-  },
-  {
-    text: "L'UE devrait-elle augmenter les dépenses pour les programmes d'aide sociale ?",
-    choices: {
-      Pour: [2, 4, 7, 10],
-      Contre: [1, 5, 6, 9],
-    },
-  },
-  {
-    text: "L'UE devrait-elle renforcer les mesures contre le changement climatique ?",
-    choices: {
-      Pour: [2, 3, 4, 7, 10],
-      Contre: [5, 6, 9],
-    },
-  },
-  {
-    text: "L'UE devrait-elle limiter l'immigration en provenance de pays non-européens ?",
+    text: "Exclurais-tu les pays économiquement faibles de la zone euro ?",
     choices: {
       Pour: [5, 6, 9],
       Contre: [1, 2, 3, 4, 7, 10],
     },
   },
   {
-    text: "L'UE devrait-elle augmenter son budget pour la défense et la sécurité ?",
+    text: "Devrait-on augmenter les dépenses en aide sociale ?",
+    choices: {
+      Pour: [2, 4, 7, 10],
+      Contre: [1, 5, 6, 9],
+    },
+  },
+  {
+    text: "Doit-on renforcer les mesures contre le changement climatique ?",
+    choices: {
+      Pour: [3, 4, 7, 10],
+      Contre: [5, 6, 9],
+    },
+  },
+  {
+    text: "Faut-il limiter l'immigration hors UE ?",
+    choices: {
+      Pour: [5, 6, 9],
+      Contre: [1, 2, 3, 4, 7, 10],
+    },
+  },
+  {
+    text: "L'UE doit-elle booster son budget de défense et sécurité ?",
     choices: {
       Pour: [1, 5, 6, 9],
       Contre: [2, 3, 4, 7, 10],
     },
   },
   {
-    text: "Les membres de l'UE devraient-ils avoir une politique fiscale commune ?",
+    text: "Pour ou contre une politique fiscale commune dans l'UE ?",
     choices: {
-      Pour: [1, 3, 4, 7, 10],
+      Pour: [1, 3, 7, 10],
       Contre: [2, 5, 6, 9],
     },
   },
   {
-    text: "L'UE devrait-elle favoriser le développement de l'énergie nucléaire comme alternative aux combustibles fossiles ?",
+    text: "Devrait-on miser sur le nucléaire comme alternative aux fossiles ?",
     choices: {
       Pour: [1, 3, 6, 9],
       Contre: [2, 4, 5, 7, 10],
     },
   },
   {
-    text: "L'UE devrait-elle imposer des normes plus strictes en matière de protection des données personnelles sur les plateformes numériques ?",
+    text: "Es-tu pour des normes plus strictes sur les données numériques ?",
     choices: {
       Pour: [2, 3, 4, 7, 10],
       Contre: [1, 5, 6, 9],
     },
   },
   {
-    text: "L'UE devrait-elle subventionner davantage les entreprises locales pour les rendre plus compétitives à l'international ?",
+    text: "L'UE doit-elle soutenir davantage les entreprises locales ?",
     choices: {
       Pour: [1, 2, 4, 7, 10],
       Contre: [3, 5, 6, 9],
     },
   },
   {
-    text: "L'UE devrait-elle interdire les produits en plastique à usage unique pour lutter contre la pollution ?",
+    text: "Es-tu pour l'interdiction du plastique à usage unique ?",
     choices: {
       Pour: [2, 3, 4, 7, 10],
       Contre: [1, 5, 6, 9],
     },
   },
   {
-    text: "L'UE devrait-elle mettre en place une politique commune de logement social pour lutter contre la crise du logement ?",
+    text: "Une politique commune de logement social est-elle nécessaire ?",
     choices: {
       Pour: [2, 4, 7, 10],
       Contre: [1, 3, 5, 6, 9],
     },
   },
   {
-    text: "L'UE devrait-elle interdire les véhicules à combustion interne d'ici 2030 pour réduire les émissions de carbone ?",
+    text: "Interdirais-tu les voitures à essence d'ici 2030 ?",
     choices: {
       Pour: [2, 3, 4, 7, 10],
       Contre: [1, 5, 6, 9],
     },
   },
   {
-    text: "L'UE devrait-elle instaurer un revenu minimum garanti pour tous les citoyens ?",
+    text: "Faut-il un revenu minimum garanti pour tous dans l'UE ?",
     choices: {
       Pour: [2, 4, 7, 10],
       Contre: [1, 3, 5, 6, 9],
     },
   },
   {
-    text: "L'UE devrait-elle abolir la censure sur internet, même si cela inclut des discours haineux ou extrémistes ?",
+    text: "Doit-on abolir toute censure sur internet, même extrémiste ?",
     choices: {
-      Pour: [3, 5, 8, 9],
-      Contre: [1, 2, 4, 6, 7, 10],
+      Pour: [3, 8, 9],
+      Contre: [1, 2, 4, 5, 6, 7, 10],
     },
   },
   {
-    text: "L'UE devrait-elle subventionner l'agriculture biologique pour promouvoir une alimentation saine ?",
-    choices: {
-      Pour: [2, 3, 4, 7, 10],
-      Contre: [1, 5, 6, 9],
-    },
-  },
-  {
-    text: "L'UE devrait-elle imposer un quota de femmes dans les conseils d'administration des grandes entreprises ?",
+    text: "Es-tu pour la subvention de l'agriculture bio ?",
     choices: {
       Pour: [2, 3, 4, 7, 10],
       Contre: [1, 5, 6, 9],
     },
   },
   {
-    text: "L'UE devrait-elle exiger une transparence complète sur les sources de financement des partis politiques ?",
+    text: "Pour ou contre un quota de femmes dans les conseils d'administration ?",
+    choices: {
+      Pour: [2, 3, 4, 7, 10],
+      Contre: [1, 5, 6, 9],
+    },
+  },
+  {
+    text: "L'UE doit-elle exiger plus de transparence sur le financement des partis ?",
     choices: {
       Pour: [1, 2, 3, 4, 7, 10],
       Contre: [5, 6, 9],
     },
   },
   {
-    text: "L'UE devrait-elle imposer une taxe carbone aux entreprises pour financer la transition écologique ?",
+    text: "Doit-on imposer une taxe carbone pour financer l'écologie ?",
     choices: {
       Pour: [2, 3, 4, 7, 10],
       Contre: [1, 5, 6, 9],
     },
   },
   {
-    text: "L'UE devrait-elle accorder davantage de fonds à la recherche et au développement dans les technologies vertes ?",
+    text: "Faut-il plus investir dans la recherche des technologies vertes ?",
     choices: {
       Pour: [2, 3, 4, 7, 10],
       Contre: [1, 5, 6, 9],
     },
   },
   {
-    text: "L'UE devrait-elle favoriser une politique de neutralité sur Internet, garantissant l'égalité d'accès pour tous les utilisateurs ?",
+    text: "Es-tu pour une neutralité d'internet, garantissant un accès égal ?",
     choices: {
       Pour: [2, 3, 4, 7, 10],
       Contre: [1, 5, 6, 9],
     },
   },
   {
-    text: "L'UE devrait-elle renforcer la législation sur le droit d'asile pour accueillir davantage de réfugiés ?",
+    text: "L'UE doit-elle renforcer ses lois sur l'asile et accueillir plus de réfugiés ?",
     choices: {
       Pour: [2, 3, 4, 7, 10],
       Contre: [1, 5, 6, 9],
     },
   },
   {
-    text: "L'UE devrait-elle mettre en place une politique commune pour la régulation de la cryptomonnaie ?",
+    text: "Pour ou contre une régulation commune de la cryptomonnaie ?",
     choices: {
       Pour: [1, 3, 4, 7],
       Contre: [2, 5, 6, 9, 10],
     },
   },
   {
-    text: "L'UE devrait-elle créer un réseau de santé publique européen pour améliorer la réponse aux crises sanitaires ?",
+    text: "Doit-on créer un réseau de santé publique européen ?",
     choices: {
       Pour: [2, 3, 4, 7, 10],
       Contre: [1, 5, 6, 9],
     },
   },
   {
-    text: "L'UE devrait-elle financer un programme de bourses d'études pour encourager l'éducation supérieure dans tous les pays membres ?",
+    text: "L'UE devrait-elle financer des bourses d'études pour favoriser l'éducation ?",
     choices: {
       Pour: [2, 3, 4, 7, 10],
       Contre: [1, 5, 6, 9],
     },
   },
   {
-    text: "L'UE devrait-elle mettre en place des quotas obligatoires pour les énergies renouvelables dans les politiques énergétiques nationales ?",
+    text: "Faut-il des quotas obligatoires pour les énergies renouvelables ?",
     choices: {
       Pour: [2, 3, 4, 7, 10],
       Contre: [1, 5, 6, 9],
-    },
-  },
-  {
-    text: "L'UE devrait-elle imposer des sanctions plus sévères aux pays membres qui violent les principes de l'état de droit ?",
-    choices: {
-      Pour: [2, 3, 4, 7, 10],
-      Contre: [1, 5, 6, 9],
-    },
-  },
-  {
-    text: "L'UE devrait-elle avoir un rôle plus actif dans la résolution des conflits internationaux ?",
-    choices: {
-      Pour: [1, 2, 3, 4, 7],
-      Contre: [5, 6, 9, 10],
-    },
-  },
-  {
-    text: "L'UE devrait-elle augmenter le financement pour les arts et la culture afin de promouvoir l'identité européenne ?",
-    choices: {
-      Pour: [2, 3, 4, 7],
-      Contre: [1, 5, 6, 9, 10],
     },
   },
 ];

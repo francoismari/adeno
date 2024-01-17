@@ -6,13 +6,18 @@ import AllUserResults from "../screens/AllUserResults";
 import SetupMultiplayer from "../screens/MultiplayerMode/SetupMultiplayer";
 import MultiplayerResults from "../screens/MultiplayerMode/MultiplayerResults";
 import MultiplayerQuestion from "../screens/MultiplayerMode/MultiplayerQuestion";
+import OnboardingScreen from "../screens/Onboarding";
 
 const Stack = createStackNavigator();
 
-function StackNavigator() {
+function StackNavigator({ initialRouteName }) {
   return (
-    <Stack.Navigator screenOptions={{ headerShown: false }}>
+    <Stack.Navigator
+      screenOptions={{ headerShown: false }}
+      initialRouteName={initialRouteName}
+    >
       <Stack.Screen name="Navigator" component={TabNavigator} />
+      <Stack.Screen name="Onboarding" component={OnboardingScreen} />
       <Stack.Screen name="SetupMultiplayer" component={SetupMultiplayer} />
       <Stack.Screen name="MultiplayerResults" component={MultiplayerResults} />
       <Stack.Screen

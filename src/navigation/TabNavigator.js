@@ -67,16 +67,18 @@ const styles = StyleSheet.create({
     shadowColor: "#000",
     shadowOffset: {
       width: 0,
-      height: 10,
+      height: 2,
     },
     shadowOpacity: 0.25,
-    shadowRadius: 3.5,
+    shadowRadius: 3.84,
+
     elevation: 5,
   },
   iconPressable: {
     width: 56,
     height: 56,
     borderRadius: 28,
+    marginTop: 30,
   },
 });
 

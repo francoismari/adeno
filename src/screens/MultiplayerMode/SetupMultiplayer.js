@@ -50,7 +50,7 @@ export default function SetupMultiplayer() {
   );
 }
 
-const BackButton = (handleGoBack) => {
+const BackButton = ({ handleGoBack }) => {
   return (
     <Pressable
       onPress={handleGoBack}

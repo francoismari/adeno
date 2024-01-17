@@ -2,13 +2,13 @@ import React from "react";
 import { LinearGradient } from "expo-linear-gradient";
 import { StyleSheet, SafeAreaView } from "react-native";
 
-const BackgroundWrapper = ({ children }) => {
+const BackgroundWrapper = ({ children, style }) => {
   return (
     <LinearGradient
       colors={["#587CF9", "#000000", "#FBD51F"]}
       start={{ x: 0, y: 0 }}
       end={{ x: 1, y: 1 }}
-      style={styles.background}
+      style={[styles.background, style]}
     >
       <SafeAreaView style={styles.container}>{children}</SafeAreaView>
     </LinearGradient>
