@@ -3,6 +3,7 @@ import React from "react";
 import { Ionicons } from "@expo/vector-icons";
 import { useNavigation } from "@react-navigation/native";
 import AsyncStorage from "@react-native-async-storage/async-storage";
+import CustomText from "../../components/CustomText";
 
 export default function Start() {
   const navigation = useNavigation();
@@ -18,8 +19,8 @@ export default function Start() {
         source={require("../../../assets/images/images-icons/start-image-icon.png")}
         style={{ height: 150, width: 150, marginTop: 20 }}
       /> */}
-      <Text style={{ fontSize: 40, marginTop: 20 }}>🔐</Text>
-      <Text
+      <CustomText style={{ fontSize: 40, marginTop: 20 }}>🔐</CustomText>
+      <CustomText
         style={{
           fontSize: 30,
           fontFamily: "FrancoisOne",
@@ -32,10 +33,10 @@ export default function Start() {
       >
         Avant de commencer...
         {/* {i18n.t("onboardingScreen.firstScreen.mainTitle")} */}
-      </Text>
+      </CustomText>
       <View style={{ marginHorizontal: 20, marginTop: 20 }}>
         <View>
-          <Text
+          <CustomText
             style={{
               fontSize: 20,
               fontFamily: "FrancoisOne",
@@ -44,12 +45,12 @@ export default function Start() {
             }}
           >
             Nous ne collectons aucune donnée personnelle.
-          </Text>
+          </CustomText>
         </View>
-        <Text style={{ color: "white", fontSize: 15, marginTop: 5 }}>
+        <CustomText style={{ color: "white", fontSize: 15, marginTop: 5 }}>
           Toutes les données utilisées dans l'app sont anonymes, et sont limités
           au strict nécessaire pour le bon fonctionnement de l'app !
-        </Text>
+        </CustomText>
         <View
           style={{
             flexDirection: "row",
@@ -79,10 +80,17 @@ export default function Start() {
               lineHeight: 20,
             }}
           >
-            Adeno est a-partisane, neutre, et transparente.
+            Adeno est apartisane, neutre, et transparente.
           </Text>
         </View>
-        <Text style={{ color: "white", fontSize: 15, marginTop: 5 }}>
+        <Text
+          style={{
+            fontSize: 15,
+            fontFamily: "FrancoisOne",
+            color: "white",
+            marginTop: 5,
+          }}
+        >
           Toutes les données utilisées dans l'app sont anonymes, et sont limités
           au strict nécessaire pour le bon fonctionnement de l'app !
         </Text>
@@ -121,7 +129,7 @@ export default function Start() {
             }}
           >
             Adeno est un projet citoyen, créé par une équipe de bénévoles, sans
-            vocation lucrative, qui n'a pour objectif que d'aller vous faire
+            vocation lucrative, qui n'a pour objectif que d'aller te faire
             voter !
           </Text>
         </View>
@@ -158,7 +166,7 @@ const StartButton = ({ onPress }) => {
         alignItems: "center",
       }}
     >
-      <Text
+      <CustomText
         style={{
           fontSize: 20,
           //   textTransform: "uppercase",
@@ -167,7 +175,7 @@ const StartButton = ({ onPress }) => {
         }}
       >
         C'est parti !
-      </Text>
+      </CustomText>
     </Pressable>
   );
 };

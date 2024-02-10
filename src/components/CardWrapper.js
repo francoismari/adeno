@@ -1,5 +1,6 @@
 import { View, Text } from "react-native";
 import React from "react";
+import CustomText from "./CustomText";
 
 export default function CardWrapper({ title, color, children }) {
   return (
@@ -27,11 +28,11 @@ export default function CardWrapper({ title, color, children }) {
           transform: [{ rotate: "-1.01deg" }],
         }}
       >
-        <Text
+        <CustomText
           style={{ fontSize: 20, color: "white", fontFamily: "FrancoisOne" }}
         >
           {title}
-        </Text>
+        </CustomText>
       </View>
       {children}
     </View>

@@ -2,7 +2,8 @@ import { createBottomTabNavigator } from "@react-navigation/bottom-tabs";
 import Home from "../screens/Home";
 import Ranking from "../screens/Ranking";
 import Discover from "../screens/Discover";
-import { Pressable, StyleSheet, Text } from "react-native";
+import { Platform, Pressable, StyleSheet, Text } from "react-native";
+import CustomText from "../components/CustomText";
 
 const Tab = createBottomTabNavigator();
 
@@ -32,10 +33,13 @@ function TabNavigator() {
                   justifyContent: "center",
                   borderWidth: focused ? 0 : 1,
                   borderColor: "#D9D9D9",
+                  marginBottom: Platform.OS === "android" ? 30 : 0,
                 },
               ]}
             >
-              <Text style={{ fontSize: 29, color }}>{iconName}</Text>
+              <CustomText style={{ fontSize: 29, color }}>
+                {iconName}
+              </CustomText>
             </Pressable>
           );
         },
@@ -58,6 +62,7 @@ function TabNavigator() {
 const styles = StyleSheet.create({
   tabBar: {
     position: "absolute",
+    height: 90,
     bottom: 51,
     left: "10%",
     right: "10%",

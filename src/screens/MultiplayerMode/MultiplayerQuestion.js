@@ -11,6 +11,10 @@ import {
 import { useNavigation } from "@react-navigation/native";
 import BackgroundWrapper from "../../components/BackgroundWrapper";
 import { Entypo } from "@expo/vector-icons";
+import { LinearGradient } from "expo-linear-gradient";
+import themes from "../../../assets/data/themes";
+import BackButton from "../../components/BackButton";
+import CustomText from "../../components/CustomText";
 
 const questions = [
   {
@@ -19,6 +23,7 @@ const questions = [
       Pour: [1, 4, 7],
       Contre: [5, 9, 10],
     },
+    theme: 1,
   },
   {
     text: "Interdirais-tu le port du voile islamique dans les espaces publics ?",
@@ -26,6 +31,7 @@ const questions = [
       Pour: [5, 6, 9],
       Contre: [2, 3, 4],
     },
+    theme: 1,
   },
   {
     text: "Exclurais-tu les pays économiquement faibles de la zone euro ?",
@@ -33,6 +39,7 @@ const questions = [
       Pour: [5, 6, 9],
       Contre: [1, 2, 3, 4, 7, 10],
     },
+    theme: 4,
   },
   {
     text: "Devrait-on augmenter les dépenses en aide sociale ?",
@@ -40,6 +47,7 @@ const questions = [
       Pour: [2, 4, 7, 10],
       Contre: [1, 5, 6, 9],
     },
+    theme: 4,
   },
   {
     text: "Doit-on renforcer les mesures contre le changement climatique ?",
@@ -47,6 +55,7 @@ const questions = [
       Pour: [3, 4, 7, 10],
       Contre: [5, 6, 9],
     },
+    theme: 3,
   },
   {
     text: "Faut-il limiter l'immigration hors UE ?",
@@ -54,6 +63,7 @@ const questions = [
       Pour: [5, 6, 9],
       Contre: [1, 2, 3, 4, 7, 10],
     },
+    theme: 2,
   },
   {
     text: "L'UE doit-elle booster son budget de défense et sécurité ?",
@@ -61,6 +71,7 @@ const questions = [
       Pour: [1, 5, 6, 9],
       Contre: [2, 3, 4, 7, 10],
     },
+    theme: 1,
   },
   {
     text: "Pour ou contre une politique fiscale commune dans l'UE ?",
@@ -68,6 +79,7 @@ const questions = [
       Pour: [1, 3, 7, 10],
       Contre: [2, 5, 6, 9],
     },
+    theme: 4,
   },
   {
     text: "Devrait-on miser sur le nucléaire comme alternative aux fossiles ?",
@@ -75,6 +87,7 @@ const questions = [
       Pour: [1, 3, 6, 9],
       Contre: [2, 4, 5, 7, 10],
     },
+    theme: 9,
   },
   {
     text: "Es-tu pour des normes plus strictes sur les données numériques ?",
@@ -82,6 +95,7 @@ const questions = [
       Pour: [2, 3, 4, 7, 10],
       Contre: [1, 5, 6, 9],
     },
+    theme: 1,
   },
   {
     text: "L'UE doit-elle soutenir davantage les entreprises locales ?",
@@ -89,6 +103,7 @@ const questions = [
       Pour: [1, 2, 4, 7, 10],
       Contre: [3, 5, 6, 9],
     },
+    theme: 1,
   },
   {
     text: "Es-tu pour l'interdiction du plastique à usage unique ?",
@@ -96,6 +111,7 @@ const questions = [
       Pour: [2, 3, 4, 7, 10],
       Contre: [1, 5, 6, 9],
     },
+    theme: 3,
   },
   {
     text: "Une politique commune de logement social est-elle nécessaire ?",
@@ -103,6 +119,7 @@ const questions = [
       Pour: [2, 4, 7, 10],
       Contre: [1, 3, 5, 6, 9],
     },
+    theme: 1,
   },
   {
     text: "Interdirais-tu les voitures à essence d'ici 2030 ?",
@@ -110,6 +127,7 @@ const questions = [
       Pour: [2, 3, 4, 7, 10],
       Contre: [1, 5, 6, 9],
     },
+    theme: 3,
   },
   {
     text: "Faut-il un revenu minimum garanti pour tous dans l'UE ?",
@@ -117,6 +135,7 @@ const questions = [
       Pour: [2, 4, 7, 10],
       Contre: [1, 3, 5, 6, 9],
     },
+    theme: 1,
   },
   {
     text: "Doit-on abolir toute censure sur internet, même extrémiste ?",
@@ -124,6 +143,7 @@ const questions = [
       Pour: [3, 8, 9],
       Contre: [1, 2, 4, 5, 6, 7, 10],
     },
+    theme: 1,
   },
   {
     text: "Es-tu pour la subvention de l'agriculture bio ?",
@@ -131,6 +151,7 @@ const questions = [
       Pour: [2, 3, 4, 7, 10],
       Contre: [1, 5, 6, 9],
     },
+    theme: 1,
   },
   {
     text: "Pour ou contre un quota de femmes dans les conseils d'administration ?",
@@ -138,6 +159,7 @@ const questions = [
       Pour: [2, 3, 4, 7, 10],
       Contre: [1, 5, 6, 9],
     },
+    theme: 1,
   },
   {
     text: "L'UE doit-elle exiger plus de transparence sur le financement des partis ?",
@@ -145,6 +167,7 @@ const questions = [
       Pour: [1, 2, 3, 4, 7, 10],
       Contre: [5, 6, 9],
     },
+    theme: 1,
   },
   {
     text: "Doit-on imposer une taxe carbone pour financer l'écologie ?",
@@ -152,6 +175,7 @@ const questions = [
       Pour: [2, 3, 4, 7, 10],
       Contre: [1, 5, 6, 9],
     },
+    theme: 1,
   },
   {
     text: "Faut-il plus investir dans la recherche des technologies vertes ?",
@@ -159,6 +183,7 @@ const questions = [
       Pour: [2, 3, 4, 7, 10],
       Contre: [1, 5, 6, 9],
     },
+    theme: 1,
   },
   {
     text: "Es-tu pour une neutralité d'internet, garantissant un accès égal ?",
@@ -166,6 +191,7 @@ const questions = [
       Pour: [2, 3, 4, 7, 10],
       Contre: [1, 5, 6, 9],
     },
+    theme: 1,
   },
   {
     text: "L'UE doit-elle renforcer ses lois sur l'asile et accueillir plus de réfugiés ?",
@@ -173,6 +199,7 @@ const questions = [
       Pour: [2, 3, 4, 7, 10],
       Contre: [1, 5, 6, 9],
     },
+    theme: 1,
   },
   {
     text: "Pour ou contre une régulation commune de la cryptomonnaie ?",
@@ -180,6 +207,7 @@ const questions = [
       Pour: [1, 3, 4, 7],
       Contre: [2, 5, 6, 9, 10],
     },
+    theme: 1,
   },
   {
     text: "Doit-on créer un réseau de santé publique européen ?",
@@ -187,6 +215,7 @@ const questions = [
       Pour: [2, 3, 4, 7, 10],
       Contre: [1, 5, 6, 9],
     },
+    theme: 1,
   },
   {
     text: "L'UE devrait-elle financer des bourses d'études pour favoriser l'éducation ?",
@@ -194,6 +223,7 @@ const questions = [
       Pour: [2, 3, 4, 7, 10],
       Contre: [1, 5, 6, 9],
     },
+    theme: 1,
   },
   {
     text: "Faut-il des quotas obligatoires pour les énergies renouvelables ?",
@@ -201,6 +231,7 @@ const questions = [
       Pour: [2, 3, 4, 7, 10],
       Contre: [1, 5, 6, 9],
     },
+    theme: 1,
   },
 ];
 
@@ -225,7 +256,7 @@ const shuffleArray = (array) => {
 };
 
 const QuestionsScreen = ({ route }) => {
-  const { players } = route.params;
+  const { players, time } = route.params;
   const navigation = useNavigation();
 
   const totalQuestions = 20; // Total questions per game
@@ -233,7 +264,7 @@ const QuestionsScreen = ({ route }) => {
   const [playerQuestions, setPlayerQuestions] = useState({});
   const [currentQuestionIndex, setCurrentQuestionIndex] = useState(0);
   const [currentPlayerIndex, setCurrentPlayerIndex] = useState(0);
-  const [timer, setTimer] = useState(10);
+  const [timer, setTimer] = useState(time);
   const [responses, setResponses] = useState({});
 
   const handleCompletion = () => {
@@ -261,18 +292,18 @@ const QuestionsScreen = ({ route }) => {
     setPlayerQuestions(initPlayerQuestions);
   }, [players]);
 
-  // useEffect(() => {
-  //   const interval = setInterval(() => {
-  //     setTimer((prev) => prev - 1);
-  //   }, 1000);
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setTimer((prev) => prev - 1);
+    }, 1000);
 
-  //   if (timer === 0) {
-  //     clearInterval(interval);
-  //     nextQuestion(); // Move to the next player/question
-  //   }
+    if (timer === 0) {
+      clearInterval(interval);
+      nextQuestion(); // Move to the next player/question
+    }
 
-  //   return () => clearInterval(interval);
-  // }, [timer]);
+    return () => clearInterval(interval);
+  }, [timer]);
 
   const nextQuestion = () => {
     const nextPlayerIndex = (currentPlayerIndex + 1) % players.length;
@@ -281,7 +312,7 @@ const QuestionsScreen = ({ route }) => {
 
     setCurrentPlayerIndex(nextPlayerIndex);
     setCurrentQuestionIndex(nextQuestionIndex);
-    setTimer(10);
+    setTimer(time);
 
     // Update the count of total questions asked after changing the question/player
     setTotalAsked((prev) => prev + 1);
@@ -293,11 +324,7 @@ const QuestionsScreen = ({ route }) => {
     totalAsked >= totalQuestions
   ) {
     // Prevent rendering before questions are loaded or if the game is completed
-    return (
-      <View style={{ flex: 1 }}>
-        <Text>Loading questions or game completed...</Text>
-      </View>
-    );
+    return <BackgroundWrapper></BackgroundWrapper>;
   }
 
   const handleResponse = (partyIDs) => {
@@ -328,29 +355,15 @@ const QuestionsScreen = ({ route }) => {
   const question = playerQuestions[currentPlayerIndex][currentQuestionIndex];
   const questionNumberDisplay = `Question ${totalAsked + 1}/${totalQuestions}`;
 
+  const theme = themes.find((t) => t.id === question?.theme);
+
   return (
-    <BackgroundWrapper>
-      <TouchableOpacity
-        onPress={handleQuitGame}
-        style={{
-          zIndex: 100,
-          position: "absolute",
-          top: 70,
-          left: 20,
-          // width: 40,
-          // height: 40,
-          // backgroundColor: "white",
-          borderRadius: 20,
-          justifyContent: "center",
-          alignItems: "center",
-        }}
-      >
-        <Entypo name="chevron-thin-left" size={30} color="white" />
-      </TouchableOpacity>
+    <BackgroundWrapper bottom>
+      <BackButton handleGoBack={handleQuitGame} />
       <View style={{ alignSelf: "center" }}>
-        <Text
+        <CustomText
           style={{
-            marginTop: 25,
+            // marginTop: 25,
             color: "white",
             fontSize: 20,
             fontFamily: "FrancoisOne",
@@ -358,47 +371,68 @@ const QuestionsScreen = ({ route }) => {
           }}
         >
           {timer} seconde{timer > 1 && "s"}
-        </Text>
+        </CustomText>
 
-        <ProgressBar timer={timer} totalTime={10} />
+        <ProgressBar timer={timer} totalTime={time} />
 
-        <Text
-          style={{
-            marginTop: Dimensions.get("screen").height * 0.1,
-            fontFamily: "FrancoisOne",
-            fontSize: 35,
-            lineHeight: 40,
-            marginHorizontal: 30,
-            color: "white",
-            textAlign: "center",
-          }}
-        >
-          <Text style={{ color: "#E8C51D" }}>{currentPlayer}</Text>,{" "}
-          {question.text}
-        </Text>
-      </View>
-      <Text style={{ color: "white" }}>{questionNumberDisplay}</Text>
-      {/* <Text style={styles.timerText}>Time left: {timer}s</Text> */}
-      <View style={{ marginTop: 46 }}>
-        {Object.entries(question.choices).map(([choice, partyIDs]) => (
-          <Pressable
-            key={choice}
-            onPress={() => handleResponse(partyIDs)}
+        <View style={{ marginTop: Dimensions.get("screen").height * 0.08 }}>
+          <View style={{ alignSelf: "center" }}>
+            {theme && (
+              <LinearGradient
+                colors={theme.colors}
+                start={{ x: 0, y: 0 }}
+                end={{ x: 1, y: 1 }}
+                style={{
+                  flexDirection: "row",
+                  alignItems: "center",
+                  paddingVertical: 6,
+                  paddingHorizontal: 10,
+                  borderRadius: 10,
+                  marginBottom: 18,
+                }}
+              >
+                <CustomText style={{ fontSize: 19, marginRight: 5 }}>
+                  {theme.emoji}
+                </CustomText>
+                <CustomText
+                  style={{
+                    fontSize: 17,
+                    color: "white",
+                    fontFamily: "FrancoisOne",
+                  }}
+                >
+                  {theme.name}
+                </CustomText>
+              </LinearGradient>
+            )}
+          </View>
+
+          <Text
             style={{
-              width: Dimensions.get("screen").width * 0.8,
-              backgroundColor: "white",
-              paddingVertical: 17,
-              justifyContent: "center",
-              alignItems: "center",
-              alignSelf: "center",
-              marginBottom: 18,
-              borderRadius: 20,
+              fontFamily: "FrancoisOne",
+              fontSize: 35,
+              lineHeight: 40,
+              marginHorizontal: 20,
+              color: "white",
+              textAlign: "center",
             }}
           >
-            <Text style={{ fontFamily: "FrancoisOne", fontSize: 36 }}>
-              {choice}
-            </Text>
-          </Pressable>
+            <Text style={{ color: "#E8C51D" }}>{currentPlayer}</Text>,{" "}
+            {question.text.toLowerCase()}
+          </Text>
+        </View>
+      </View>
+      {/* <Text style={{ color: "white" }}>{questionNumberDisplay}</Text> */}
+      {/* <Text style={styles.timerText}>Time left: {timer}s</Text> */}
+      <View
+        style={{ position: "absolute", bottom: "15%", alignSelf: "center" }}
+      >
+        {Object.entries(question.choices).map(([choice, partyIDs]) => (
+          <ChoiceButton
+            choice={choice}
+            partyIDs={partyIDs}
+            handleResponse={handleResponse}
+          />
         ))}
       </View>
     </BackgroundWrapper>
@@ -445,6 +479,34 @@ const ProgressBar = ({ timer, totalTime }) => {
         }}
       />
     </View>
+  );
+};
+
+const ChoiceButton = ({ choice, partyIDs, handleResponse }) => {
+  return (
+    <Pressable
+      key={choice}
+      onPress={() => handleResponse(partyIDs)}
+      style={{
+        flexDirection: "row",
+        width: Dimensions.get("screen").width * 0.8,
+        backgroundColor: "white",
+        paddingVertical: 17,
+        justifyContent: "center",
+        alignItems: "center",
+        alignSelf: "center",
+        marginBottom: 18,
+        borderRadius: 20,
+      }}
+    >
+      <CustomText style={{ fontSize: 36 }}>
+        {choice === "Pour" ? "👍 " : ""}
+        {choice === "Contre" ? "👎 " : ""}
+      </CustomText>
+      <CustomText style={{ fontFamily: "FrancoisOne", fontSize: 36 }}>
+        {choice}
+      </CustomText>
+    </Pressable>
   );
 };
 

@@ -6,22 +6,50 @@ import {
   FlatList,
   TouchableOpacity,
   Alert,
+  Modal,
+  StyleSheet,
+  TextInput,
 } from "react-native";
 import React, { useState } from "react";
 import BackgroundWrapper from "../../components/BackgroundWrapper";
 import { useNavigation } from "@react-navigation/native";
 import { Entypo } from "@expo/vector-icons";
+import BackButton from "../../components/BackButton";
+import CustomText from "../../components/CustomText";
+import CenteredHeader from "../../components/CenteredHeader";
+import AsyncStorage from "@react-native-async-storage/async-storage";
 
 export default function SetupMultiplayer() {
   const navigation = useNavigation();
 
   const [players, setPlayers] = useState([]);
+  const [modalVisible, setModalVisible] = useState(false);
+  const [newPlayerName, setNewPlayerName] = useState("");
+  const [isLoaded, setIsLoaded] = useState(false);
 
-  const handleStartGame = () => {
-    if (players.length >= 3) {
-      navigation.navigate("MultiplayerQuestion", { players });
+  const handleStartGame = async () => {
+    // Make this function async
+
+    if (players.length >= 2) {
+      setIsLoaded(true);
+      try {
+        const multiplayerTime = await AsyncStorage.getItem("multiplayerTime"); // Retrieve the value from AsyncStorage
+        const time = multiplayerTime ? JSON.parse(multiplayerTime) : 10; // Parse the value or default to 10
+        navigation.navigate("MultiplayerQuestion", { players, time }); // Pass it as parameter
+      } catch (error) {
+        console.error(
+          "Failed to read multiplayerTime from AsyncStorage",
+          error
+        );
+        navigation.navigate("MultiplayerQuestion", { players, time: 10 }); // In case of error, default to 10
+      } finally {
+        setIsLoaded(false);
+      }
     } else {
-      Alert.alert("Not enough players", "Please add at least 3 players.");
+      Alert.alert(
+        "Pas assez de joueurs",
+        "Ajoute au moins 2 joueurs pour commencer la partie !"
+      );
     }
   };
 
@@ -29,53 +57,75 @@ export default function SetupMultiplayer() {
     navigation.goBack();
   };
 
+  const submitNewPlayer = () => {
+    if (!newPlayerName) {
+      setModalVisible(false);
+      return;
+    }
+
+    const isDuplicate = players.some(
+      (player) => player.pseudo === newPlayerName
+    );
+    if (isDuplicate) {
+      Alert.alert(
+        "Ce nom est déjà ajouté",
+        "Chaque joueur doit avoir un nom différent."
+      );
+    } else {
+      setPlayers([...players, { pseudo: newPlayerName }]);
+      setNewPlayerName("");
+      setModalVisible(false);
+    }
+  };
+
   return (
-    <BackgroundWrapper>
-      <BackButton handleGoBack={handleGoBack} />
-      <Text
-        style={{
-          textAlign: "center",
-          fontSize: 50,
-          fontFamily: "FrancoisOne",
-          color: "white",
-          marginBottom: 17,
+    <BackgroundWrapper bottom>
+      <CenteredHeader handleGoBack={handleGoBack} title={"Joueurs"} />
+
+      <Modal
+        animationType="fade"
+        transparent={true}
+        visible={modalVisible}
+        onRequestClose={() => {
+          setModalVisible(!modalVisible);
         }}
       >
-        Joueurs
-      </Text>
-      <PlayersList players={players} setPlayers={setPlayers} />
+        <View style={styles.centeredView}>
+          <View style={styles.modalView}>
+            <CustomText style={styles.modalTitle}>Ajouter un joueur</CustomText>
+            <TextInput
+              style={styles.modalTextInput}
+              placeholder="Nom du joueur"
+              onChangeText={setNewPlayerName}
+              value={newPlayerName}
+              autoFocus={true}
+            />
+            <Pressable style={styles.modalButton} onPress={submitNewPlayer}>
+              <CustomText style={styles.modalButtonText}>Ajouter</CustomText>
+            </Pressable>
+          </View>
+        </View>
+      </Modal>
+
+      <PlayersList
+        players={players}
+        setPlayers={setPlayers}
+        setModalVisible={setModalVisible}
+      />
 
       <StartButton handleStartGame={handleStartGame} />
     </BackgroundWrapper>
   );
 }
 
-const BackButton = ({ handleGoBack }) => {
-  return (
-    <Pressable
-      onPress={handleGoBack}
-      style={{
-        width: 49,
-        height: 49,
-        borderRadius: 30,
-        backgroundColor: "white",
-        justifyContent: "center",
-        alignItems: "center",
-        marginHorizontal: 20,
-      }}
-    >
-      <Entypo name="chevron-thin-left" size={24} color="#233C93" />
-    </Pressable>
-  );
-};
-
-const PlayersList = ({ players, setPlayers }) => {
+const PlayersList = ({ players, setPlayers, setModalVisible }) => {
   return (
     <View
       style={{
         height: Dimensions.get("screen").height * 0.57,
         backgroundColor: "white",
         width: "90%",
+        marginTop: 30,
         alignSelf: "center",
         borderRadius: 20,
         shadowColor: "#000",
@@ -92,6 +142,8 @@ const PlayersList = ({ players, setPlayers }) => {
       <FlatList
         data={players}
         keyExtractor={(item) => item.pseudo}
+        contentContainerStyle={{ paddingBottom: 100 }}
+        showsVerticalScrollIndicator={false}
         renderItem={({ item }) => (
           <PlayerNameItem player={item} setPlayers={setPlayers} />
         )}
@@ -103,13 +155,17 @@ const PlayersList = ({ players, setPlayers }) => {
               alignItems: "center",
             }}
           >
-            <Text style={{ fontFamily: "FrancoisOne", fontSize: 25 }}>
+            <CustomText style={{ fontFamily: "FrancoisOne", fontSize: 25 }}>
               Aucun joueur ajouté
-            </Text>
+            </CustomText>
           </View>
         )}
       />
-      <PlayerListFooter players={players} setPlayers={setPlayers} />
+      <PlayerListFooter
+        players={players}
+        setPlayers={setPlayers}
+        setModalVisible={setModalVisible}
+      />
     </View>
   );
 };
@@ -130,11 +186,11 @@ const StartButton = ({ handleStartGame }) => {
         alignItems: "center",
       }}
     >
-      <Text
+      <CustomText
         style={{ fontSize: 27, fontFamily: "FrancoisOne", color: "#182D7C" }}
       >
         C'est parti
-      </Text>
+      </CustomText>
     </Pressable>
   );
 };
@@ -158,9 +214,9 @@ const PlayerNameItem = ({ player, setPlayers }) => {
         alignItems: "center",
       }}
     >
-      <Text style={{ fontSize: 30, fontFamily: "FrancoisOne" }}>
+      <CustomText style={{ fontSize: 30, fontFamily: "FrancoisOne" }}>
         {player.pseudo}
-      </Text>
+      </CustomText>
       <TouchableOpacity
         onPress={handleRemovePlayer}
         style={{
@@ -185,43 +241,52 @@ const PlayerNameItem = ({ player, setPlayers }) => {
   );
 };
 
-const PlayerListFooter = ({ players, setPlayers }) => {
+const PlayerListFooter = ({ players, setPlayers, setModalVisible }) => {
+  // const handleAddPlayer = () => {
+  //   if (players.length >= 10) {
+  //     Alert.alert("Limit Reached", "You cannot add more than 10 players.");
+  //     return;
+  //   }
+
+  //   Alert.prompt(
+  //     "Ajouter un joueur",
+  //     "Entrez le nom du joueur",
+  //     [
+  //       {
+  //         text: "Annuler",
+  //         style: "cancel",
+  //       },
+  //       {
+  //         text: "Ajouter",
+  //         onPress: (pseudo) => {
+  //           if (!pseudo) return;
+
+  //           // Check for duplicate pseudo
+  //           const isDuplicate = players.some(
+  //             (player) => player.pseudo === pseudo
+  //           );
+  //           if (isDuplicate) {
+  //             Alert.alert(
+  //               "Ce nom est déjà ajouté",
+  //               "Each player must have a unique name."
+  //             );
+  //           } else {
+  //             setPlayers([...players, { pseudo }]);
+  //           }
+  //         },
+  //       },
+  //     ],
+  //     "plain-text"
+  //   );
+  // };
+
   const handleAddPlayer = () => {
     if (players.length >= 10) {
       Alert.alert("Limit Reached", "You cannot add more than 10 players.");
       return;
     }
 
-    Alert.prompt(
-      "Ajouter un joueur",
-      "Entrez le nom du joueur",
-      [
-        {
-          text: "Annuler",
-          style: "cancel",
-        },
-        {
-          text: "Ajouter",
-          onPress: (pseudo) => {
-            if (!pseudo) return;
-
-            // Check for duplicate pseudo
-            const isDuplicate = players.some(
-              (player) => player.pseudo === pseudo
-            );
-            if (isDuplicate) {
-              Alert.alert(
-                "Ce nom est déjà ajouté",
-                "Each player must have a unique name."
-              );
-            } else {
-              setPlayers([...players, { pseudo }]);
-            }
-          },
-        },
-      ],
-      "plain-text"
-    );
+    setModalVisible(true);
   };
 
   return (
@@ -235,7 +300,7 @@ const PlayerListFooter = ({ players, setPlayers }) => {
         // alignItems: "center",
       }}
     >
-      <Text
+      <CustomText
         style={{
           marginBottom: 5,
           fontFamily: "FrancoisOne",
@@ -244,7 +309,7 @@ const PlayerListFooter = ({ players, setPlayers }) => {
         }}
       >
         {players.length}/10
-      </Text>
+      </CustomText>
       <Pressable
         onPress={handleAddPlayer}
         style={{
@@ -253,7 +318,7 @@ const PlayerListFooter = ({ players, setPlayers }) => {
           borderRadius: 15,
         }}
       >
-        <Text
+        <CustomText
           style={{
             fontSize: 25,
             fontFamily: "FrancoisOne",
@@ -262,8 +327,60 @@ const PlayerListFooter = ({ players, setPlayers }) => {
           }}
         >
           Ajouter un joueur
-        </Text>
+        </CustomText>
       </Pressable>
     </View>
   );
 };
+
+const styles = StyleSheet.create({
+  centeredView: {
+    flex: 1,
+    justifyContent: "center",
+    alignItems: "center",
+    backgroundColor: "rgba(0, 0, 0, 0.5)",
+  },
+  modalView: {
+    margin: 20,
+    backgroundColor: "white",
+    width: "80%",
+    borderRadius: 20,
+    padding: 20,
+    alignItems: "center",
+    shadowColor: "#000",
+    shadowOffset: {
+      width: 0,
+      height: 2,
+    },
+    shadowOpacity: 0.25,
+    shadowRadius: 3.84,
+    elevation: 5,
+  },
+  modalTitle: {
+    fontFamily: "FrancoisOne",
+    fontSize: 25,
+    marginBottom: 10,
+  },
+  modalTextInput: {
+    width: "100%",
+    borderColor: "#ddd",
+    borderWidth: 1,
+    borderRadius: 10,
+    padding: 10,
+    marginBottom: 20,
+    fontSize: 16,
+  },
+  modalButton: {
+    backgroundColor: "#3856C1",
+    borderRadius: 15,
+    padding: 10,
+    elevation: 2,
+  },
+  modalButtonText: {
+    color: "white",
+    // fontWeight: "bold",
+    textAlign: "center",
+    fontSize: 20,
+    fontFamily: "FrancoisOne",
+  },
+});

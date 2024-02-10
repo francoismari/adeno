@@ -4,6 +4,7 @@ import * as Font from "expo-font";
 import * as SplashScreen from "expo-splash-screen";
 import { useEffect, useState } from "react";
 import AsyncStorage from "@react-native-async-storage/async-storage";
+import { UserProvider } from "./src/context/userContext";
 
 let customFonts = {
   FrancoisOne: require("./assets/fonts/FrancoisOne-Regular.ttf"),
@@ -37,9 +38,11 @@ function App() {
   }
 
   return (
-    <NavigationContainer>
-      <StackNavigator initialRouteName={initialRouteName} />
-    </NavigationContainer>
+    <UserProvider>
+      <NavigationContainer>
+        <StackNavigator initialRouteName={initialRouteName} />
+      </NavigationContainer>
+    </UserProvider>
   );
 }
 

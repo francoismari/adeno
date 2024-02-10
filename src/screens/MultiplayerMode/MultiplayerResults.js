@@ -6,85 +6,115 @@ import {
   ScrollView,
   Pressable,
   Image,
+  TouchableOpacity,
 } from "react-native";
 import { BlurView } from "expo-blur";
 import mockParties from "../../../assets/mockParties";
 import BackgroundWrapper from "../../components/BackgroundWrapper";
 import { useNavigation } from "@react-navigation/native";
+import CustomText from "../../components/CustomText";
 
 const MultiplayerResults = ({ route }) => {
   const { responses } = route.params;
   const navigation = useNavigation();
 
   const calculateResults = () => {
-    let partyScores = {};
-    let playerResults = {};
-
-    // Calculate individual scores
-    Object.keys(responses).forEach((player) => {
-      let tally = {};
-      responses[player].forEach((response) => {
-        response.forEach((partyID) => {
-          tally[partyID] = (tally[partyID] || 0) + 1;
-        });
-      });
-
-      let maxScore = Math.max(...Object.values(tally));
-      let maxParties = Object.keys(tally).filter(
-        (partyID) => tally[partyID] === maxScore
-      );
-      playerResults[player] = { maxParties, maxScore };
-    });
-
-    // Group players by party and score
-    Object.keys(playerResults).forEach((player) => {
-      playerResults[player].maxParties.forEach((partyID) => {
-        if (!partyScores[partyID]) {
-          partyScores[partyID] = {};
-        }
-        if (!partyScores[partyID][playerResults[player].maxScore]) {
-          partyScores[partyID][playerResults[player].maxScore] = [];
-        }
-        partyScores[partyID][playerResults[player].maxScore].push(player);
-      });
-    });
-
-    // Determine final results
+    let playerScores = {};
     let finalResults = {};
-    Object.keys(partyScores).forEach((partyID) => {
-      Object.values(partyScores[partyID]).forEach((playersWithSameScore) => {
-        playersWithSameScore.forEach((player) => {
-          let partyDetails = mockParties[partyID] || {
-            name: "No clear preference",
-            adjective: "No clear preference",
-            explaination: "Pas d'explication",
-            color: "#000000",
-            emoji: "❓",
-            mockCandidatePicUrl: "https://example.com/default.jpg",
-            mockCandidateName: "Unknown",
-          };
+    let allocatedParties = {};
 
+    // Calculate individual scores for each player
+    Object.keys(responses).forEach((player) => {
+      playerScores[player] = responses[player].flat().reduce((acc, partyID) => {
+        acc[partyID] = (acc[partyID] || 0) + 1;
+        return acc;
+      }, {});
+    });
+
+    // Sort players by their maximum score in descending order
+    let sortedPlayers = Object.keys(playerScores).sort((a, b) => {
+      let maxScoreA = Math.max(...Object.values(playerScores[a]));
+      let maxScoreB = Math.max(...Object.values(playerScores[b]));
+      return maxScoreB - maxScoreA;
+    });
+
+    sortedPlayers.forEach((player) => {
+      let scores = playerScores[player];
+      let sortedParties = Object.keys(scores).sort(
+        (a, b) => scores[b] - scores[a]
+      );
+
+      for (let partyID of sortedParties) {
+        // Assign party if not already taken or if player has a higher score
+        if (
+          !allocatedParties[partyID] ||
+          scores[partyID] > allocatedParties[partyID].score
+        ) {
+          // Update final results for the player
           finalResults[player] = {
-            isGroup: playersWithSameScore.length > 1,
-            groupMembers: playersWithSameScore.join(" & "),
-            partyDetails: partyDetails,
+            isGroup: false,
+            groupMembers: player,
+            partyDetails: mockParties[partyID] || {
+              name: "No clear preference",
+              adjective: "No clear preference",
+              explanation: "Pas d'explication",
+              color: "#000000",
+              emoji: "❓",
+              mockCandidatePicUrl: "https://example.com/default.jpg",
+              mockCandidateName: "Unknown",
+            },
             matchingPercentage: (
-              (playerResults[player].maxScore / responses[player].length) *
+              (scores[partyID] / responses[player].flat().length) *
               100
             ).toFixed(2),
           };
-        });
-      });
+          allocatedParties[partyID] = {
+            score: scores[partyID],
+            player: player,
+          };
+          break;
+        }
+      }
     });
 
-    return finalResults;
+    // Group players with the same highest score for a list
+    Object.keys(allocatedParties).forEach((partyID) => {
+      let playersWithSameTopScore = sortedPlayers.filter(
+        (player) =>
+          finalResults[player] &&
+          finalResults[player].partyDetails.name === mockParties[partyID].name
+      );
+
+      if (playersWithSameTopScore.length > 1) {
+        playersWithSameTopScore.forEach((player) => {
+          finalResults[player] = {
+            ...finalResults[player],
+            isGroup: true,
+            groupMembers: playersWithSameTopScore.join(" & "),
+          };
+        });
+      }
+    });
+
+    // Convert finalResults to an array and sort by matching percentage
+    let sortedFinalResultsArray = Object.entries(finalResults).sort((a, b) => {
+      return b[1].matchingPercentage - a[1].matchingPercentage;
+    });
+
+    // Convert sorted array back to object
+    let sortedFinalResults = {};
+    sortedFinalResultsArray.forEach(([player, result]) => {
+      sortedFinalResults[player] = result;
+    });
+
+    return sortedFinalResults;
   };
 
   const results = calculateResults();
 
   return (
     <BackgroundWrapper style={styles.container}>
-      <Text
+      <CustomText
         style={{
           fontFamily: "FrancoisOne",
           textAlign: "center",
@@ -95,56 +125,63 @@ const MultiplayerResults = ({ route }) => {
         }}
       >
         Les résultats
-      </Text>
-      <ScrollView>
+      </CustomText>
+      <ScrollView
+        contentContainerStyle={{ paddingBottom: 150 }}
+        showsVerticalScrollIndicator={false}
+      >
         {Object.entries(results).map(([player, result]) => (
           <ResultCard key={player} player={player} result={result} />
         ))}
       </ScrollView>
-      {/* <BlurView
+      <BlurView
         style={{
           width: "100%",
           borderRadius: 20,
           alignSelf: "center",
           paddingHorizontal: 26,
-          paddingTop: 26,
+          paddingTop: 15,
           paddingBottom: 40,
           borderBlockColor: 20,
-        }}
-      > */}
-      <Pressable
-        onPress={() => navigation.navigate("SetupMultiplayer")}
-        style={{
           position: "absolute",
-          bottom: 40,
-          width: "90%",
-          backgroundColor: "#1F3480",
-          alignSelf: "center",
-          justifyContent: "center",
-          alignItems: "center",
-          // paddingVertical: 5,
-          borderRadius: 20,
-          borderWidth: 4,
-          borderColor: "white",
+          bottom: 0,
+          width: "100%",
         }}
       >
-        <Text
+        {/* <BlurView> */}
+        <Pressable
+          onPress={() => navigation.navigate("SetupMultiplayer")}
           style={{
-            fontSize: 27,
-            paddingVertical: 10,
-            fontFamily: "FrancoisOne",
-            color: "white",
+            width: "100%",
+            backgroundColor: "#1F3480",
+            alignSelf: "center",
+            justifyContent: "center",
+            alignItems: "center",
+            // paddingVertical: 5,
+            borderRadius: 20,
+            borderWidth: 4,
+            borderColor: "white",
           }}
         >
-          Recommencer
-        </Text>
-      </Pressable>
-      {/* </BlurView> */}
+          <Text
+            style={{
+              fontSize: 27,
+              paddingVertical: 10,
+              fontFamily: "FrancoisOne",
+              color: "white",
+            }}
+          >
+            Recommencer
+          </Text>
+        </Pressable>
+      </BlurView>
     </BackgroundWrapper>
   );
 };
 
 const ResultCard = ({ player, result }) => {
+  const navigation = useNavigation();
+
   const isGroup =
     result.groupMembers && result.groupMembers.split(" & ").length > 1;
   const adjective = isGroup
@@ -152,8 +189,12 @@ const ResultCard = ({ player, result }) => {
     : `${result.partyDetails.adjective}`;
 
   const displayText = isGroup
-    ? `, vous êtes les plus ${adjective}`
-    : `, tu es le plus ${adjective}`;
+    ? `, vous êtes les + ${adjective}`
+    : `, tu es le + ${adjective}`;
+
+  const handleSeeDetails = () => {
+    navigation.navigate("MultiplayerResultsDetails", { result });
+  };
 
   return (
     <View
@@ -165,6 +206,15 @@ const ResultCard = ({ player, result }) => {
         marginHorizontal: 20,
         marginBottom: 14,
         borderRadius: 20,
+        shadowColor: "#000",
+        shadowOffset: {
+          width: 0,
+          height: 2,
+        },
+        shadowOpacity: 0.25,
+        shadowRadius: 3.84,
+
+        elevation: 5,
       }}
     >
       <Text
@@ -176,7 +226,9 @@ const ResultCard = ({ player, result }) => {
           marginTop: 10,
         }}
       >
-        <Text style={{ color: "#E8C51D" }}>{result.groupMembers}</Text>
+        <Text style={{ color: "#E8C51D" }}>
+          {result.groupMembers}
+        </Text>
         {/* {isGroup ? (
           result.groupMembers
         ) : (
@@ -216,14 +268,22 @@ const ResultCard = ({ player, result }) => {
               alignItems: "center",
             }}
           >
-            <Text style={{ fontSize: 24 }}>{result.partyDetails.emoji}</Text>
+            <CustomText
+              style={{ fontSize: 31, transform: [{ rotate: "5deg" }] }}
+            >
+              {result.partyDetails.emoji}
+            </CustomText>
           </View>
         </View>
 
-        <Text style={{ marginTop: -18, fontSize: 35, marginLeft: 40 }}>🫶</Text>
+        <CustomText
+          style={{ zIndex: 100, marginTop: -18, fontSize: 35, marginLeft: 40 }}
+        >
+          🫶
+        </CustomText>
       </View>
 
-      <Text
+      <CustomText
         style={{
           fontFamily: "FrancoisOne",
           fontSize: 17,
@@ -233,10 +293,11 @@ const ResultCard = ({ player, result }) => {
           marginTop: 5,
         }}
       >
-        {isGroup ? 'Vous matchez' : 'Tu matches'} à {Math.round(result.matchingPercentage)}% avec la liste de{" "}
+        {isGroup ? "Vous matchez" : "Tu matches"} à{" "}
+        {Math.round(result.matchingPercentage)}% avec la liste de{" "}
         {result.partyDetails.mockCandidateName}
-      </Text>
-      <Text
+      </CustomText>
+      <CustomText
         style={{
           fontSize: 16,
           color: "#9B9B9B",
@@ -247,7 +308,21 @@ const ResultCard = ({ player, result }) => {
         }}
       >
         {result.partyDetails.explaination}
-      </Text>
+      </CustomText>
+
+      <TouchableOpacity onPress={handleSeeDetails}>
+        <CustomText
+          style={{
+            textTransform: "uppercase",
+            fontSize: 16,
+            fontFamily: "FrancoisOne",
+            color: "#294AC0",
+            marginTop: 5,
+          }}
+        >
+          Voir pourquoi
+        </CustomText>
+      </TouchableOpacity>
     </View>
   );
 };

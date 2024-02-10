@@ -1,7 +1,15 @@
-import { View, Text, Pressable, StyleSheet } from "react-native";
+import {
+  View,
+  Text,
+  Pressable,
+  StyleSheet,
+  Platform,
+  TouchableOpacity,
+} from "react-native";
 import React from "react";
 import { Ionicons } from "@expo/vector-icons";
 import { useNavigation } from "@react-navigation/native";
+import CustomText from "./CustomText";
 
 export default function MainHeader({ title, emoji }) {
   const navigation = useNavigation();
@@ -13,23 +21,34 @@ export default function MainHeader({ title, emoji }) {
   return (
     <View style={styles.container}>
       <View style={{ transform: [{ rotate: "-1.48deg" }] }}>
-        <Text
+        <CustomText
           style={{ fontSize: 53, fontFamily: "FrancoisOne", color: "white" }}
         >
           Adeno
-        </Text>
-        <View style={styles.titleContainer}>
-          <Text style={{ fontSize: 24, fontFamily: "FrancoisOne" }}>
+        </CustomText>
+        <View
+          style={[
+            styles.titleContainer,
+            Platform.select({
+              android: styles.titleContainerAndroid,
+              ios: styles.titleContainerIos,
+            }),
+          ]}
+        >
+          <CustomText style={{ fontSize: 24, fontFamily: "FrancoisOne" }}>
             {title}
-          </Text>
+          </CustomText>
           <View style={styles.emojiContainer}>
-            <Text>{emoji}</Text>
+            <CustomText>{emoji}</CustomText>
           </View>
         </View>
       </View>
-      <Pressable onPress={handleOpenSettings} style={styles.settingsButton}>
+      <TouchableOpacity
+        onPress={handleOpenSettings}
+        style={styles.settingsButton}
+      >
         <Ionicons name="settings-outline" size={26} color="white" />
-      </Pressable>
+      </TouchableOpacity>
     </View>
   );
 }
@@ -46,7 +65,10 @@ const styles = StyleSheet.create({
     backgroundColor: "white",
     paddingHorizontal: 12,
     borderRadius: 15,
-    paddingVertical: 2,
+  },
+  // Define platform-specific styles
+  titleContainerIos: {
+    paddingVertical: 2, // Use the iOS-specific padding or keep the original value
   },
   emojiContainer: {
     position: "absolute",
@@ -68,5 +90,6 @@ const styles = StyleSheet.create({
     borderRadius: 56,
     justifyContent: "center",
     alignItems: "center",
+    marginTop: 20,
   },
 });

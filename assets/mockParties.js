@@ -74,8 +74,8 @@ export default {
     emoji: "🔒",
     color: "#00008B",
     mockCandidatePicUrl:
-      "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5f/Jordan_Bardella_-_Strasbourg_European_Parliament_September_2022_%28cropped%29.jpg/1200px-Jordan_Bardella_-_Strasbourg_European_Parliament_September_2022_%28cropped%29.jpg",
-    mockCandidateName: "Yannick Jadot",
+      "https://media.lesechos.com/api/v1/images/view/65a592e9f416550960116449/1280x720/01002159704592-web-tete.jpg",
+    mockCandidateName: "François-Xavier Bellamy",
   },
   7: {
     name: "The Left in the European Parliament",
@@ -101,7 +101,7 @@ export default {
     color: "#808080",
     mockCandidatePicUrl:
       "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5f/Jordan_Bardella_-_Strasbourg_European_Parliament_September_2022_%28cropped%29.jpg/1200px-Jordan_Bardella_-_Strasbourg_European_Parliament_September_2022_%28cropped%29.jpg",
-    mockCandidateName: "Yannick Jadot",
+    mockCandidateName: "non-inscrits",
   },
   9: {
     name: "Freedom and Direct Democracy",
@@ -114,7 +114,7 @@ export default {
     color: "#87CEEB",
     mockCandidatePicUrl:
       "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5f/Jordan_Bardella_-_Strasbourg_European_Parliament_September_2022_%28cropped%29.jpg/1200px-Jordan_Bardella_-_Strasbourg_European_Parliament_September_2022_%28cropped%29.jpg",
-    mockCandidateName: "Yannick Jadot",
+    mockCandidateName: "Jordan Bardella",
   },
   10: {
     name: "European United Left–Nordic Green Left",
@@ -127,6 +127,6 @@ export default {
     color: "#D2042D",
     mockCandidatePicUrl:
       "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5f/Jordan_Bardella_-_Strasbourg_European_Parliament_September_2022_%28cropped%29.jpg/1200px-Jordan_Bardella_-_Strasbourg_European_Parliament_September_2022_%28cropped%29.jpg",
-    mockCandidateName: "Yannick Jadot",
+    mockCandidateName: "Manon Aubry",
   },
 };
