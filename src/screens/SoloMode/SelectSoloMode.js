@@ -4,6 +4,7 @@ import {
   Pressable,
   Dimensions,
   TouchableOpacity,
+  ScrollView,
 } from "react-native";
 import React from "react";
 import BackgroundWrapper from "../../components/BackgroundWrapper";
@@ -14,6 +15,7 @@ import BackButton from "../../components/BackButton";
 import CustomText from "../../components/CustomText";
 import CenteredHeader from "../../components/CenteredHeader";
 import { useUser } from "../../context/userContext";
+import i18n from "../../languages/i18n";
 
 export default function SelectSoloMode() {
   const navigation = useNavigation();
@@ -23,17 +25,16 @@ export default function SelectSoloMode() {
   const modes = [
     {
       id: 1,
-      title: "Mode express ⏱️",
-      description: "60 secondes pour trouver ton candidat, top chrono !",
+      title: i18n.t("selectSoloMode.expressCard.title"),
+      description: i18n.t("selectSoloMode.expressCard.subtitle"),
       colors: ["#DB3366", "#E7265A"],
       onPress: () => navigation.navigate("ExpressMode"),
     },
     {
       id: 2,
-      title: "Mode classique 🗳️",
-      description:
-        "Répond à 100 questions, sans limite de temps, et trouve un résultat adapté à tes convictions !",
-      colors: ["#D1B742", "#F1CB22"],
+      title: i18n.t("selectSoloMode.classicCard.title"),
+      description: i18n.t("selectSoloMode.classicCard.subtitle"),
+      colors: ["#FBD51F", "#F1CB22"],
       onPress: () => navigation.navigate("ClassicMode"),
     },
   ];
@@ -46,17 +47,26 @@ export default function SelectSoloMode() {
     navigation.navigate("SetStudyInfos");
   };
 
+  console.log("USER : ", user);
+
   return (
     <BackgroundWrapper>
-      <CenteredHeader handleGoBack={handleGoBack} title={"Mode solo"} />
+      <CenteredHeader
+        handleGoBack={handleGoBack}
+        title={i18n.t("selectSoloMode.title")}
+      />
 
-      <View style={{ marginBottom: 5 }}>
-        {modes.map((mode, index) => (
-          <ModeCard key={index} mode={mode} />
-        ))}
-      </View>
+      <ScrollView>
+        <View style={{ marginBottom: 5 }}>
+          {modes.map((mode, index) => (
+            <ModeCard key={index} mode={mode} />
+          ))}
+        </View>
 
-      {!user && <StudyCardInfo handleSetStudyInfos={handleSetStudyInfos} />}
+        {!user?.responses && (
+          <StudyCardInfo handleSetStudyInfos={handleSetStudyInfos} />
+        )}
+      </ScrollView>
     </BackgroundWrapper>
   );
 }
@@ -96,7 +106,7 @@ const ModeCard = ({ mode }) => {
             fontSize: 17,
             lineHeight: 20,
             marginTop: 5,
-            marginHorizontal: 40,
+            marginHorizontal: 20,
           }}
         >
           {mode.description}
@@ -114,7 +124,7 @@ const StudyCardInfo = ({ handleSetStudyInfos }) => {
         backgroundColor: "white",
         padding: 10,
         marginTop: 10,
-        borderRadius: 15,
+        borderRadius: 19,
       }}
     >
       <Text
@@ -136,13 +146,13 @@ const StudyCardInfo = ({ handleSetStudyInfos }) => {
           marginHorizontal: 20,
         }}
       >
-        Participe à la grande étude des jeunes en Europe
+        Participe à la grande étude{"\n"}des jeunes en Europe
       </Text>
       <CustomText style={{ color: "gray", textAlign: "center" }}>
-        Vos réponses aux questions du mode solo seront collectées de manière
-        anonyme, et permettront de réaliser une grande étude sur les
-        comportements éléctoraux des jeunes en Europe, supervisée par un conseil
-        scientifique de professeurs, chercheurs, et intellectuels.
+        Vos réponses aux questions du mode solo permettront de manière
+        entièrrement anonyme de réaliser une grande étude sur les comportements
+        éléctoraux des jeunes en Europe, supervisée par un conseil scientifique
+        de professeurs, chercheurs, et intellectuels.
       </CustomText>
       <TouchableOpacity
         onPress={handleSetStudyInfos}
@@ -156,7 +166,7 @@ const StudyCardInfo = ({ handleSetStudyInfos }) => {
         }}
       >
         <CustomText style={{ fontSize: 20, color: "white" }}>
-          C'est parti !
+          Répondre à l'étude
         </CustomText>
       </TouchableOpacity>
     </View>

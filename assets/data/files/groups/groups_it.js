@@ -1,0 +1,86 @@
+export default [
+  {
+    id: 1,
+    name: "PPE",
+    fullname: "Partito Popolare Europeo",
+    emoji: "💙",
+    imageUrl: require("../../../data/images/groups/PPE.png"),
+    value: "Centrismo",
+    adjective: "moderato",
+    pluralAdjective: "moderati",
+    explaination:
+      "Valori l'unità e i valori democratici centristi, enfatizzando un approccio moderato e di centro-destra.",
+  },
+  {
+    id: 2,
+    name: "S&D",
+    fullname: "Alleanza Progressista di Socialisti & Democratici",
+    emoji: "🌹",
+    imageUrl: require("../../../data/images/groups/SD.png"),
+    value: "Socialismo",
+    adjective: "socialista",
+    pluralAdjective: "socialisti",
+    explaination:
+      "Per un mondo più giusto, un tweet alla volta, mentre sorseggi un caffè equo e solidale.",
+  },
+  {
+    id: 3,
+    name: "Rinnova",
+    fullname: "Rinnova Europa",
+    emoji: "🔄",
+    imageUrl: require("../../../data/images/groups/Renew.png"),
+    value: "Liberalismo",
+    adjective: "liberale",
+    pluralAdjective: "liberali",
+    explaination:
+      "Pronto a lanciare la tua startup nel cuore di Bruxelles, promuovi l'innovazione e il liberalismo, guardando le regolamentazioni con un sorriso.",
+  },
+  {
+    id: 4,
+    name: "I Verdi/ALE",
+    fullname: "Verdi/Alleanza Libera Europea",
+    emoji: "🌿",
+    imageUrl: require("../../../data/images/groups/Greens.png"),
+    value: "Ecologismo",
+    adjective: "ecologico",
+    pluralAdjective: "ecologici",
+    explaination:
+      "Salvare il pianeta, una conferenza Zoom alla volta, con il tuo bicchiere riutilizzabile sempre a portata di mano.",
+  },
+  {
+    id: 5,
+    name: "ECR",
+    fullname: "Conservatori e Riformisti Europei",
+    emoji: "🦁",
+    imageUrl: require("../../../data/images/groups/ECR.png"),
+    value: "Conservatorismo",
+    adjective: "conservatore",
+    pluralAdjective: "conservatori",
+    explaination:
+      "Difendi i valori conservatori, sostenendo il mantenimento delle tradizioni, la stabilità sociale e la riduzione delle tasse.",
+  },
+  {
+    id: 6,
+    name: "La Sinistra",
+    fullname: "Gruppo della Sinistra",
+    emoji: "💢",
+    imageUrl: require("../../../data/images/groups/GUE.png"),
+    value: "Radicalismo",
+    adjective: "radicale",
+    pluralAdjective: "radicali",
+    explaination:
+      "Rappresenti una visione di sinistra, incentrata sui diritti dei lavoratori, la redistribuzione equa della ricchezza e politiche sociali progressiste.",
+  },
+  {
+    id: 7,
+    name: "ID",
+    fullname: "Identità e Democrazia",
+    emoji: "🆔",
+    imageUrl: require("../../../data/images/groups/ID.png"),
+    value: "Nazionalismo",
+    adjective: "nazionalista",
+    pluralAdjective: "nazionalisti",
+    explaination:
+      "Custode della tradizione, con un'affezione particolare per le frontiere, specialmente quando sono ben chiuse.",
+  },
+];

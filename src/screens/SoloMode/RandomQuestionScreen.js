@@ -2,13 +2,39 @@ import React, { useState, useEffect } from "react";
 import { View, Text, Pressable, FlatList } from "react-native";
 import AsyncStorage from "@react-native-async-storage/async-storage";
 import BackgroundWrapper from "../../components/BackgroundWrapper";
-import questions from "../../../assets/data/solo/questions";
+
+import questionsFR from "../../../assets/data/solo/questions_fr";
+import questionsEN from "../../../assets/data/solo/questions_en";
+import questionsBG from "../../../assets/data/solo/questions_bg";
+
 import CenteredHeader from "../../components/CenteredHeader";
 import CustomText from "../../components/CustomText";
+import shuffleArray from "../../utils/shuffleArray";
+import { BlurView } from "expo-blur";
+import { Feather } from "@expo/vector-icons";
+import themes from "../../../assets/data/themes";
+import { useUser } from "../../context/userContext";
+import i18n from "../../languages/i18n";
+import questionsByLocale from "../../../assets/data/solo/questionsByLocale";
+import questions_en from "../../../assets/data/solo/questions_en";
+import QuestionHeader from "../../components/Solo/QuestionHeader";
 
 export default function RandomQuestionScreen({ navigation }) {
+  const { locale } = useUser();
+
   const [currentQuestionIndex, setCurrentQuestionIndex] = useState(null);
   const [answeredQuestions, setAnsweredQuestions] = useState([]);
+
+  const [questions, setQuestions] = useState(questions_en);
+
+  // Mapping of locale codes to question sets
+
+  useEffect(() => {
+    // Select questions set based on the current locale, defaulting to English if not found
+    const selectedQuestions =
+      questionsByLocale[locale.userLocale] || questions_en;
+    setQuestions(selectedQuestions);
+  }, [locale]);
 
   // Load the initial unanswered question.
   useEffect(() => {
@@ -42,8 +68,8 @@ export default function RandomQuestionScreen({ navigation }) {
     }
   };
 
-  const handleAnswer = async (questionId, answerId) => {
-    const newAnswer = { questionId, answerId };
+  const handleAnswer = async (questionId, partyId, categoryId) => {
+    const newAnswer = { questionId, partyId, categoryId };
     const updatedAnsweredQuestions = [...answeredQuestions, newAnswer];
 
     await AsyncStorage.setItem(
@@ -60,38 +86,43 @@ export default function RandomQuestionScreen({ navigation }) {
     navigation.navigate("Home");
   };
 
+  const handleShowContext = () => {
+    navigation.navigate("QuestionContext", {
+      context: questions[currentQuestionIndex].learnMore,
+    });
+  };
+
+  const themeDetails = themes.find(
+    (theme) => theme.id === questions[currentQuestionIndex]?.category
+  );
+
   return (
     <BackgroundWrapper>
-      <CenteredHeader title="Aléatoire" handleGoBack={handleGoBack} />
+      <CenteredHeader
+        title={i18n.t("randomQuestionScreen.title")}
+        handleGoBack={handleGoBack}
+      />
       <View>
-        {/* <Text>
-          {answeredQuestions.length}/{questions.length}
-        </Text> */}
         {currentQuestionIndex !== null ? (
-          <View style={{ marginHorizontal: 20 }}>
+          <>
+            <QuestionHeader
+              themeDetails={themeDetails}
+              question={questions[currentQuestionIndex].question}
+              handleShowContext={handleShowContext}
+            />
+
             <FlatList
-              data={questions[currentQuestionIndex].answers}
-              ListHeaderComponent={() => (
-                <CustomText
-                  style={{
-                    fontSize: 30,
-                    color: "white",
-                    textAlign: "center",
-                    marginBottom: 15,
-                  }}
-                >
-                  {questions[currentQuestionIndex].question}
-                </CustomText>
-              )}
+              data={shuffleArray(questions[currentQuestionIndex].answers)}
               showsVerticalScrollIndicator={false}
               renderItem={({ item }) => (
                 <Pressable
                   style={{
                     width: "100%",
-                    borderRadius: 20,
+                    borderRadius: 10,
                     backgroundColor: "white",
-                    padding: 15,
-                    marginBottom: 15,
+                    paddingHorizontal: 14,
+                    paddingVertical: 12,
+                    marginBottom: 10,
                   }}
                   onPress={() =>
                     handleAnswer(
@@ -100,15 +131,47 @@ export default function RandomQuestionScreen({ navigation }) {
                     )
                   }
                 >
-                  <CustomText style={{ fontSize: 20 }}>{item.text}</CustomText>
+                  <CustomText
+                    style={{
+                      fontSize: 16,
+                      textAlign: "center",
+                      // fontWeight: "500",
+                    }}
+                  >
+                    {item.text}
+                  </CustomText>
                 </Pressable>
               )}
               keyExtractor={(item) => item.id.toString()}
-              contentContainerStyle={{ paddingBottom: 150 }}
+              contentContainerStyle={{
+                paddingHorizontal: 20,
+                paddingBottom: 400,
+              }}
             />
-          </View>
+          </>
         ) : (
-          <Text>No more questions or load error</Text>
+          <View
+            style={{
+              width: "100%",
+              justifyContent: "center",
+              alignItems: "center",
+              marginTop: 20,
+            }}
+          >
+            <CustomText style={{ fontSize: 40, marginBottom: 10 }}>
+              🥳
+            </CustomText>
+            <CustomText
+              style={{
+                fontSize: 25,
+                color: "white",
+                textAlign: "center",
+                marginHorizontal: 20,
+              }}
+            >
+              Tu as répondu à toutes les questions !
+            </CustomText>
+          </View>
         )}
       </View>
     </BackgroundWrapper>

@@ -9,7 +9,6 @@ import {
   ScrollView,
 } from "react-native";
 import React, { useState, useContext } from "react";
-import { signInAnonymously } from "firebase/auth";
 import { doc, setDoc } from "firebase/firestore";
 import CustomText from "../../components/CustomText";
 import CloseButton from "../../components/CloseButton";
@@ -68,7 +67,7 @@ const questions = [
 export default function SetStudyInfos({ navigation }) {
   const [userStep, setUserStep] = useState(0);
   const [responses, setResponses] = useState([]);
-  const { setUser } = useUser();
+  const { locale, setUser } = useUser();
 
   const handleClose = () => {
     navigation.goBack();
@@ -85,12 +84,18 @@ export default function SetStudyInfos({ navigation }) {
 
   const handleFinish = async () => {
     try {
-      const { user } = await signInAnonymously(auth);
-      setUser(user); // Set user in context
+      // const { user } = await signInAnonymously(auth);
+      // setUser(user); // Set user in context
 
       // Create a document with the user's ID in the 'users' collection
-      await setDoc(doc(db, "users", user.uid), {
-        uid: user.uid,
+      await setDoc(doc(db, "users", auth.currentUser.uid), {
+        uid: auth.currentUser.uid,
+        responses,
+        locale: locale.userLocale,
+      });
+
+      setUser({
+        uid: auth.currentUser.uid,
         responses,
       });
 
@@ -154,7 +159,7 @@ export default function SetStudyInfos({ navigation }) {
             >
               {questions[userStep].question}
             </CustomText>
-            <ScrollView contentContainerStyle={{ flexGrow: 1, paddingTop: 2}}>
+            <ScrollView contentContainerStyle={{ flexGrow: 1, paddingTop: 2 }}>
               {questions[userStep].choices.map((choice, index) => (
                 <TouchableOpacity
                   key={index}

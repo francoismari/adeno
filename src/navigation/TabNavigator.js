@@ -1,13 +1,20 @@
+import React from "react";
 import { createBottomTabNavigator } from "@react-navigation/bottom-tabs";
 import Home from "../screens/Home";
 import Ranking from "../screens/Ranking";
 import Discover from "../screens/Discover";
-import { Platform, Pressable, StyleSheet, Text } from "react-native";
+import { Platform, Pressable, StyleSheet } from "react-native";
 import CustomText from "../components/CustomText";
+import * as Haptics from "expo-haptics";
 
 const Tab = createBottomTabNavigator();
 
 function TabNavigator() {
+  const handlePress = (navigation, routeName) => {
+    Haptics.impactAsync(Haptics.ImpactFeedbackStyle.Medium);
+    navigation.navigate(routeName);
+  };
+
   return (
     <Tab.Navigator
       screenOptions={({ route, navigation }) => ({
@@ -24,12 +31,12 @@ function TabNavigator() {
 
           return (
             <Pressable
-              onPress={() => navigation.navigate(route.name)} // Navigate on press
+              onPress={() => handlePress(navigation, route.name)} // Updated to use handlePress
               style={[
                 styles.iconPressable,
                 {
                   backgroundColor: focused ? "#DB3366" : "white",
-                  alignItems: "center", // Align icon horizontally
+                  alignItems: "center",
                   justifyContent: "center",
                   borderWidth: focused ? 0 : 1,
                   borderColor: "#D9D9D9",

@@ -14,10 +14,15 @@ import MainHeader from "../components/MainHeader";
 import CardWrapper from "../components/CardWrapper";
 import { useIsFocused, useNavigation } from "@react-navigation/native";
 import CustomText from "../components/CustomText";
-import groups from "../../assets/data/files/groups";
+// import groups from "../../assets/data/files/groups";
 import AsyncStorage from "@react-native-async-storage/async-storage";
+import i18n from "../languages/i18n";
+import getGroups from "../../assets/data/files/groups/getGroups";
+import { useUser } from "../context/userContext";
 
 export default function Home() {
+  const { locale } = useUser();
+
   const navigation = useNavigation();
   const isFocused = useIsFocused();
 
@@ -27,21 +32,21 @@ export default function Home() {
   const modes = [
     {
       id: 1,
-      title: "Mode solo 🎯",
-      description: "2 modes & 100 questions pour trouver ta tête de liste !",
-      playText: "Commencer",
-      mainColor: "#DB3366",
-      secondColor: "#B50D40",
-      onPressStart: () => navigation.navigate("SelectSoloMode"),
+      title: i18n.t("home.multiplayerCard.title"),
+      description: i18n.t("home.multiplayerCard.subtitle"),
+      playText: i18n.t("home.startButtonText"),
+      mainColor: "#FBD51F",
+      secondColor: "#F5D020",
+      onPressStart: () => navigation.navigate("SelectMultiplayerMode"),
     },
     {
       id: 2,
-      title: "Mode multijoueur 🎮",
-      description: "Commence une partie et challenge tes potes !",
-      playText: "Commencer",
-      mainColor: "#FBD620",
-      secondColor: "#D9B815",
-      onPressStart: () => navigation.navigate("SelectMultiplayerMode"),
+      title: i18n.t("home.soloCard.title"),
+      description: i18n.t("home.soloCard.subtitle"),
+      playText: i18n.t("home.startButtonText"),
+      mainColor: "#DB3366",
+      secondColor: "#B50D40",
+      onPressStart: () => navigation.navigate("SelectSoloMode"),
     },
   ];
 
@@ -53,7 +58,7 @@ export default function Home() {
     const answered = await AsyncStorage.getItem("answeredQuestions");
     const answeredQuestions = answered ? JSON.parse(answered) : [];
 
-    console.log(answeredQuestions);
+    // console.log(answeredQuestions);
 
     if (answeredQuestions.length === 0) {
       console.log("aucune réponse");
@@ -69,7 +74,7 @@ export default function Home() {
     });
 
     const totalAnswers = answeredQuestions.length;
-    const results = groups
+    const results = getGroups(locale.userLocale)
       .map((group) => ({
         ...group,
         // Correct calculation of percentage
@@ -82,11 +87,9 @@ export default function Home() {
     setFavoriteGroup(results[0]);
   };
 
-  // console.log(favoriteGroup);
-
   return (
     <BackgroundWrapper>
-      <MainHeader title={"Joue & apprends"} emoji={"🎲"} />
+      <MainHeader title={i18n.t("home.title")} emoji={"🎲"} />
       <FlatList
         data={modes}
         keyExtractor={(item) => item.id}
@@ -105,7 +108,7 @@ export default function Home() {
 }
 
 const LevelContainer = ({ level }) => {
-  console.log("LEVEL : ", level);
+  // console.log("LEVEL : ", level);
 
   // Animated value for scaling
   const scaleAnim = useRef(new Animated.Value(1)).current;
@@ -169,7 +172,7 @@ const LevelContainer = ({ level }) => {
           style={{
             alignSelf: "center",
             textAlign: "center",
-            marginHorizontal: 60,
+            marginHorizontal: 30,
             fontFamily: "FrancoisOne",
             lineHeight: 20,
             fontSize: 17,
@@ -217,7 +220,7 @@ const StartButton = ({ playText, color }) => {
 const UserHeadList = ({ favoriteGroup, favoriteGroups }) => {
   const navigation = useNavigation();
 
-  console.log(favoriteGroups);
+  // console.log(favoriteGroups);
 
   const handleSeeResults = () => {
     navigation.navigate("UserResults", { favoriteGroups });
@@ -228,7 +231,7 @@ const UserHeadList = ({ favoriteGroup, favoriteGroups }) => {
   };
 
   return (
-    <CardWrapper title={"Ma tête de liste 🇪🇺"} color={"#6380E4"}>
+    <CardWrapper title={i18n.t("home.headListCard.title")} color={"#5354E8"}>
       {favoriteGroup ? (
         <>
           <View
@@ -240,9 +243,7 @@ const UserHeadList = ({ favoriteGroup, favoriteGroups }) => {
             }}
           >
             <Image
-              source={{
-                uri: favoriteGroup.imageUrl,
-              }}
+              source={favoriteGroup.imageUrl}
               style={{
                 width: 89,
                 height: 89,
@@ -299,11 +300,10 @@ const UserHeadList = ({ favoriteGroup, favoriteGroups }) => {
             </View>
             <View style={{ flexShrink: 1, marginLeft: 10 }}>
               <CustomText style={{ fontSize: 15 }}>
-                Ta tête de liste n'est pas encore disponible...
+                {i18n.t("home.headListCard.listNotAvailableTitle")}
               </CustomText>
               <CustomText style={{ fontSize: 12, color: "gray" }}>
-                Tu seras alerté(e) quand ton parti aura annoncé sa tête de liste
-                dans ton pays !
+                {i18n.t("home.headListCard.listNotAvailableSubtitle")}
               </CustomText>
             </View>
           </View>
@@ -332,6 +332,11 @@ const UserHeadList = ({ favoriteGroup, favoriteGroups }) => {
               {Math.round(favoriteGroup.percentage)}%
             </CustomText>
           </View>
+
+          <CustomText style={{ color: "gray", alignSelf: "center", marginBottom: 10}}>
+            {favoriteGroup.fullname}
+          </CustomText>
+
           <CustomText
             style={{
               fontSize: 14,
@@ -354,11 +359,11 @@ const UserHeadList = ({ favoriteGroup, favoriteGroups }) => {
                 fontFamily: "FrancoisOne",
                 textTransform: "uppercase",
                 textAlign: "center",
-                color: "#294AC0",
+                color: "#5354E8",
                 fontSize: 16,
               }}
             >
-              Voir tous mes résultats
+              {i18n.t("home.headListCard.seeAllResultsText")}
             </CustomText>
           </TouchableOpacity>
         </>
@@ -373,7 +378,7 @@ const UserHeadList = ({ favoriteGroup, favoriteGroups }) => {
           <CustomText
             style={{ fontSize: 17, marginHorizontal: 20, textAlign: "center" }}
           >
-            Lance le mode solo pour découvrir ta tête de liste !
+            {i18n.t("home.headListCard.noResultText")}
           </CustomText>
           <TouchableOpacity
             onPress={handleOpenSoloMode}
@@ -388,7 +393,7 @@ const UserHeadList = ({ favoriteGroup, favoriteGroups }) => {
                 fontSize: 16,
               }}
             >
-              C'est parti !
+              {i18n.t("home.headListCard.startButtonText")}
             </CustomText>
           </TouchableOpacity>
         </View>

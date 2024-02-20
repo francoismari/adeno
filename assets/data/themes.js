@@ -43,7 +43,7 @@ export default [
   },
   {
     id: 7,
-    name: "PESC",
+    name: "International & sécurité",
     emoji: "🌍",
     colors: ["#0077B5", "#0096D5"],
     mainColor: "#00B0FF",
@@ -57,16 +57,23 @@ export default [
   },
   {
     id: 9,
-    name: "Culture – affaires sociales",
+    name: "Culture & affaires sociales",
     emoji: "🎭",
     colors: ["#8B5C7E", "#9D7E9B"],
     mainColor: "#BA68C8",
   },
   {
     id: 10,
-    name: "Santé/ Travail",
+    name: "Santé & travail",
     emoji: "🏥",
     colors: ["#E74C3C", "#FF6B6B"],
     mainColor: "#EF5350",
+  },
+  {
+    id: 11,
+    name: "Futur de l'UE",
+    emoji: "🇪🇺",
+    colors: ["#3E3FC2", "#FF6B6B"],
+    mainColor: "#3E3FC2",
   },
 ];

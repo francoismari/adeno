@@ -1,0 +1,86 @@
+export default [
+  {
+    id: 1,
+    name: "EPP",
+    fullname: "Európai Néppárt",
+    emoji: "💙",
+    imageUrl: require("../../../data/images/groups/PPE.png"),
+    value: "Centrismus",
+    adjective: "mérsékelt",
+    pluralAdjective: "mérsékeltek",
+    explaination:
+      "Értékeled az egységet és a centrális demokratikus értékeket, egy mérsékelt és közép-jobboldali megközelítést hangsúlyozva.",
+  },
+  {
+    id: 2,
+    name: "S&D",
+    fullname: "Szocialisták és Demokraták Progresszív Szövetsége",
+    emoji: "🌹",
+    imageUrl: require("../../../data/images/groups/SD.png"),
+    value: "Szocializmus",
+    adjective: "szocialista",
+    pluralAdjective: "szocialisták",
+    explaination:
+      "Egy igazságosabb világért, egy tweettel egyszerre, miközben méltányos kereskedelmi kávét szürcsölgetsz.",
+  },
+  {
+    id: 3,
+    name: "Megújulás",
+    fullname: "Európát Megújítani",
+    emoji: "🔄",
+    imageUrl: require("../../../data/images/groups/Renew.png"),
+    value: "Liberalizmus",
+    adjective: "liberális",
+    pluralAdjective: "liberálisok",
+    explaination:
+      "Készen állsz a startupod indítására Brüsszel szívében, támogatva az innovációt és a liberalizmust, miközben mosolyogva tekintesz a szabályozásokra.",
+  },
+  {
+    id: 4,
+    name: "Zöldek/EFA",
+    fullname: "A Zöldek/Európai Szabad Szövetség",
+    emoji: "🌿",
+    imageUrl: require("../../../data/images/groups/Greens.png"),
+    value: "Ökológia",
+    adjective: "zöld",
+    pluralAdjective: "zöldek",
+    explaination:
+      "A bolygó megmentése, egy Zoom-értekezleten egyszerre, a többször használatos poharad mindig kéznél.",
+  },
+  {
+    id: 5,
+    name: "EKR",
+    fullname: "Európai Konzervatívok és Reformerek",
+    emoji: "🦁",
+    imageUrl: require("../../../data/images/groups/ECR.png"),
+    value: "Konzervativizmus",
+    adjective: "konzervatív",
+    pluralAdjective: "konzervatívok",
+    explaination:
+      "Véded a konzervatív értékeket, támogatva a hagyományok megőrzését, a társadalmi stabilitást és az alacsonyabb adókat.",
+  },
+  {
+    id: 6,
+    name: "Baloldal",
+    fullname: "Európai Baloldal",
+    emoji: "💢",
+    imageUrl: require("../../../data/images/groups/GUE.png"),
+    value: "Radikalizmus",
+    adjective: "radikális",
+    pluralAdjective: "radikálisok",
+    explaination:
+      "A munkavállalók jogainak, a gazdagság igazságos elosztásának és a progresszív társadalompolitikának szentelt baloldali nézőpontot képviselsz.",
+  },
+  {
+    id: 7,
+    name: "ID",
+    fullname: "Identitás és Demokrácia",
+    emoji: "🆔",
+    imageUrl: require("../../../data/images/groups/ID.png"),
+    value: "Nacionalizmus",
+    adjective: "nacionalista",
+    pluralAdjective: "nacionalisták",
+    explaination:
+      "A hagyományok őrzője, különös figyelemmel a határokra, különösen, ha azok jól le vannak zárva.",
+  },
+];

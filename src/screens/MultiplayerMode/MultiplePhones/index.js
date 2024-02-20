@@ -6,19 +6,18 @@ import {
   Pressable,
   Alert,
   ActivityIndicator,
-  TouchableOpacity,
   StyleSheet,
   Dimensions,
+  Platform,
 } from "react-native";
 import React, { useState } from "react";
-import colors from "../../../../assets/colors";
-import { LinearGradient } from "expo-linear-gradient";
 import { httpsCallable } from "firebase/functions";
-// import { functions } from "../../../firebase";
 import { useNavigation } from "@react-navigation/native";
 import BackgroundWrapper from "../../../components/BackgroundWrapper";
 import CenteredHeader from "../../../components/CenteredHeader";
 import CustomText from "../../../components/CustomText";
+import { functions } from "../../../../firebaseConfig";
+import i18n from "../../../languages/i18n";
 
 export default function RatedByFriends() {
   const navigation = useNavigation();
@@ -30,28 +29,35 @@ export default function RatedByFriends() {
     if (userPseudo !== "") {
       setIsCreatingRoom(true);
 
-      // const createRoomFunction = httpsCallable(functions, "createRoom");
+      const createRoomFunction = httpsCallable(functions, "createRoom");
 
-      // createRoomFunction({ pseudo: userPseudo })
-      //   .then((result) => {
-      //     //   const roomCode = result.data;
-      //     //   console.log(`Room created with code: ${roomCode}`);
-      //     setIsCreatingRoom(false);
-      //     navigation.navigate("Room", { roomCode: result.data });
-      //   })
-      //   .catch((error) => {
-      //     console.error("Error creating room:", error.message);
-      //   });
+      createRoomFunction({ pseudo: userPseudo })
+        .then((result) => {
+          const roomCode = result.data;
+          console.log(`Room created with code: ${roomCode}`);
+          setIsCreatingRoom(false);
+          navigation.navigate("Game", { roomCode: result.data });
+        })
+        .catch((error) => {
+          console.error("Error creating room:", error.message);
+        });
     } else {
       Alert.alert(
-        "Nom invalide",
-        "Il faut que tu renseignes un nom pour créer une partie !"
+        "Pseudo invalide",
+        "Il faut que tu renseignes un pseudo pour créer une partie !"
       );
     }
   };
 
   const handleJoinRoom = () => {
-    navigation.navigate("JoinGame", { pseudo: userPseudo });
+    if (userPseudo !== "") {
+      navigation.navigate("JoinGame", { pseudo: userPseudo });
+    } else {
+      Alert.alert(
+        "Pseudo invalide",
+        "Il faut que tu renseignes un pseudo pour rejoindre une partie !"
+      );
+    }
   };
 
   const handleGoBack = () => {
@@ -61,7 +67,7 @@ export default function RatedByFriends() {
   return (
     <BackgroundWrapper>
       <CenteredHeader
-        title={"Plusieurs téléphones"}
+        // title={"Plusieurs téléphones"}
         handleGoBack={handleGoBack}
       />
 
@@ -98,19 +104,25 @@ export default function RatedByFriends() {
           marginTop: Dimensions.get("screen").height * 0.15,
         }}
       >
-        Ton pseudo
+        {i18n.t("multiplePhones.title")}
       </CustomText>
       <View style={{ marginHorizontal: 50, marginTop: 15, marginBottom: 20 }}>
         <TextInput
-          placeholder={"Ton pseudo"}
-          style={{
-            borderRadius: 15,
-            borderWidth: 1,
-            borderColor: "transparent", // Make original border transparent
-            padding: 12,
-            fontSize: 17,
-            backgroundColor: "white", // Set background color to match your theme
-          }}
+          placeholder={i18n.t("multiplePhones.pseudoPlaceholder")}
+          value={userPseudo}
+          onChangeText={(text) => setUserPseudo(text)}
+          style={[
+            {
+              borderRadius: 15,
+              borderWidth: 1,
+              borderColor: "transparent", // Make original border transparent
+              padding: 12,
+              fontSize: 17,
+              backgroundColor: "white", // Set background color to match your theme
+              fontFamily: "FrancoisOne",
+            },
+            Platform.OS === "android" ? { paddingBottom: 15 } : {},
+          ]}
         />
       </View>
 
@@ -126,7 +138,9 @@ export default function RatedByFriends() {
           borderRadius: 15,
         }}
       >
-        <CustomText style={{ fontSize: 27 }}>Créer une partie</CustomText>
+        <CustomText style={{ fontSize: 27 }}>
+          {i18n.t("multiplePhones.createPartyText")}
+        </CustomText>
       </Pressable>
 
       <Pressable
@@ -141,7 +155,9 @@ export default function RatedByFriends() {
           borderRadius: 15,
         }}
       >
-        <CustomText style={{ fontSize: 27 }}>Rejoindre une partie</CustomText>
+        <CustomText style={{ fontSize: 27 }}>
+          {i18n.t("multiplePhones.joinPartyText")}
+        </CustomText>
       </Pressable>
 
       {isCreatingRoom && (

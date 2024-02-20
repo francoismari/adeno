@@ -1,0 +1,86 @@
+export default [
+  {
+    id: 1,
+    name: "EPP",
+    fullname: "Evropská lidová strana",
+    emoji: "💙",
+    imageUrl: require("../../../data/images/groups/PPE.png"),
+    value: "Centrismus",
+    adjective: "středový",
+    pluralAdjective: "středoví",
+    explaination:
+      "Oceňujete jednotu a středové demokratické hodnoty, zdůrazňujete mírný a středo-pravicový přístup.",
+  },
+  {
+    id: 2,
+    name: "S&D",
+    fullname: "Progresivní aliance socialistů a demokratů",
+    emoji: "🌹",
+    imageUrl: require("../../../data/images/groups/SD.png"),
+    value: "Socialismus",
+    adjective: "socialistický",
+    pluralAdjective: "socialističtí",
+    explaination:
+      "Za spravedlivější svět, jeden tweet najednou, zatímco si vychutnáváte spravedlivě obchodovanou kávu.",
+  },
+  {
+    id: 3,
+    name: "Obnovit",
+    fullname: "Obnovit Evropu",
+    emoji: "🔄",
+    imageUrl: require("../../../data/images/groups/Renew.png"),
+    value: "Liberalismus",
+    adjective: "liberální",
+    pluralAdjective: "liberální",
+    explaination:
+      "Připraveni založit svůj startup v srdci Bruselu, prosazujete inovace a liberalismus, přičemž na regulace se díváte s úsměvem.",
+  },
+  {
+    id: 4,
+    name: "Zelení/ALE",
+    fullname: "Zelení/Evropská svobodná aliance",
+    emoji: "🌿",
+    imageUrl: require("../../../data/images/groups/Greens.png"),
+    value: "Ekologismus",
+    adjective: "ekologický",
+    pluralAdjective: "ekologičtí",
+    explaination:
+      "Zachraňovat planetu, jednu Zoom konferenci po druhé, s vaším opakovaně použitelným pohárem vždy po ruce.",
+  },
+  {
+    id: 5,
+    name: "ECR",
+    fullname: "Evropští konzervativci a reformisté",
+    emoji: "🦁",
+    imageUrl: require("../../../data/images/groups/ECR.png"),
+    value: "Konzervatismus",
+    adjective: "konzervativní",
+    pluralAdjective: "konzervativní",
+    explaination:
+      "Obhajujete konzervativní hodnoty, zastáváte udržení tradic, sociální stabilitu a snížení daní.",
+  },
+  {
+    id: 6,
+    name: "Levice",
+    fullname: "Skupina Levice",
+    emoji: "💢",
+    imageUrl: require("../../../data/images/groups/GUE.png"),
+    value: "Radikalismus",
+    adjective: "radikální",
+    pluralAdjective: "radikální",
+    explaination:
+      "Reprezentujete levicovou vizi zaměřenou na práva pracovníků, spravedlivé rozdělení bohatství a progresivní sociální politiky.",
+  },
+  {
+    id: 7,
+    name: "ID",
+    fullname: "Identita a demokracie",
+    emoji: "🆔",
+    imageUrl: require("../../../data/images/groups/ID.png"),
+    value: "Nacionalismus",
+    adjective: "nacionalistický",
+    pluralAdjective: "nacionalisté",
+    explaination:
+      "Strážce tradice, s obzvláštním zalíbením v hranicích, zejména když jsou dobře uzavřené.",
+  },
+];

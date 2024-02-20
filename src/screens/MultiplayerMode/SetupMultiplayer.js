@@ -18,6 +18,7 @@ import BackButton from "../../components/BackButton";
 import CustomText from "../../components/CustomText";
 import CenteredHeader from "../../components/CenteredHeader";
 import AsyncStorage from "@react-native-async-storage/async-storage";
+import i18n from "../../languages/i18n";
 
 export default function SetupMultiplayer() {
   const navigation = useNavigation();
@@ -68,8 +69,8 @@ export default function SetupMultiplayer() {
     );
     if (isDuplicate) {
       Alert.alert(
-        "Ce nom est déjà ajouté",
-        "Chaque joueur doit avoir un nom différent."
+        i18n.t("setupOnePhone.addPlayerModal.errors.nameAlreadyUsedTitle"),
+        i18n.t("setupOnePhone.addPlayerModal.errors.nameAlreadyUsedSubtitle")
       );
     } else {
       setPlayers([...players, { pseudo: newPlayerName }]);
@@ -80,7 +81,10 @@ export default function SetupMultiplayer() {
 
   return (
     <BackgroundWrapper bottom>
-      <CenteredHeader handleGoBack={handleGoBack} title={"Joueurs"} />
+      <CenteredHeader
+        handleGoBack={handleGoBack}
+        title={i18n.t("setupOnePhone.title")}
+      />
 
       <Modal
         animationType="fade"
@@ -92,16 +96,20 @@ export default function SetupMultiplayer() {
       >
         <View style={styles.centeredView}>
           <View style={styles.modalView}>
-            <CustomText style={styles.modalTitle}>Ajouter un joueur</CustomText>
+            <CustomText style={styles.modalTitle}>
+              {i18n.t("setupOnePhone.addPlayerModal.title")}
+            </CustomText>
             <TextInput
               style={styles.modalTextInput}
-              placeholder="Nom du joueur"
+              placeholder={i18n.t("setupOnePhone.addPlayerModal.placeholder")}
               onChangeText={setNewPlayerName}
               value={newPlayerName}
               autoFocus={true}
             />
             <Pressable style={styles.modalButton} onPress={submitNewPlayer}>
-              <CustomText style={styles.modalButtonText}>Ajouter</CustomText>
+              <CustomText style={styles.modalButtonText}>
+                {i18n.t("setupOnePhone.addPlayerModal.addPlayerButton")}
+              </CustomText>
             </Pressable>
           </View>
         </View>
@@ -156,7 +164,7 @@ const PlayersList = ({ players, setPlayers, setModalVisible }) => {
             }}
           >
             <CustomText style={{ fontFamily: "FrancoisOne", fontSize: 25 }}>
-              Aucun joueur ajouté
+              {i18n.t("setupOnePhone.noPlayerAdded")}
             </CustomText>
           </View>
         )}
@@ -189,7 +197,7 @@ const StartButton = ({ handleStartGame }) => {
       <CustomText
         style={{ fontSize: 27, fontFamily: "FrancoisOne", color: "#182D7C" }}
       >
-        C'est parti
+        {i18n.t("setupOnePhone.letGoText")}
       </CustomText>
     </Pressable>
   );
@@ -242,47 +250,12 @@ const PlayerNameItem = ({ player, setPlayers }) => {
 };
 
 const PlayerListFooter = ({ players, setPlayers, setModalVisible }) => {
-  // const handleAddPlayer = () => {
-  //   if (players.length >= 10) {
-  //     Alert.alert("Limit Reached", "You cannot add more than 10 players.");
-  //     return;
-  //   }
-
-  //   Alert.prompt(
-  //     "Ajouter un joueur",
-  //     "Entrez le nom du joueur",
-  //     [
-  //       {
-  //         text: "Annuler",
-  //         style: "cancel",
-  //       },
-  //       {
-  //         text: "Ajouter",
-  //         onPress: (pseudo) => {
-  //           if (!pseudo) return;
-
-  //           // Check for duplicate pseudo
-  //           const isDuplicate = players.some(
-  //             (player) => player.pseudo === pseudo
-  //           );
-  //           if (isDuplicate) {
-  //             Alert.alert(
-  //               "Ce nom est déjà ajouté",
-  //               "Each player must have a unique name."
-  //             );
-  //           } else {
-  //             setPlayers([...players, { pseudo }]);
-  //           }
-  //         },
-  //       },
-  //     ],
-  //     "plain-text"
-  //   );
-  // };
-
   const handleAddPlayer = () => {
-    if (players.length >= 10) {
-      Alert.alert("Limit Reached", "You cannot add more than 10 players.");
+    if (players.length > 9) {
+      Alert.alert(
+        i18n.t("setupOnePhone.addPlayerModal.errors.moreThanTenTitle"),
+        i18n.t("setupOnePhone.addPlayerModal.errors.moreThanTenSubtitle")
+      );
       return;
     }
 
@@ -326,7 +299,7 @@ const PlayerListFooter = ({ players, setPlayers, setModalVisible }) => {
             color: "white",
           }}
         >
-          Ajouter un joueur
+          {i18n.t("setupOnePhone.addPlayerText")}
         </CustomText>
       </Pressable>
     </View>

@@ -16,7 +16,7 @@
     ],
     "ios": {
       "supportsTablet": false,
-      "buildNumber": "8",
+      "buildNumber": "11",
       "bundleIdentifier": "com.francoismari.adeno"
     },
     "android": {
@@ -33,6 +33,10 @@
       "eas": {
         "projectId": "b281b1a9-2f81-4cd3-ae12-b8f816329238"
       }
-    }
+    },
+    "plugins": [
+      "expo-localization",
+      "expo-font"
+    ]
   }
 }

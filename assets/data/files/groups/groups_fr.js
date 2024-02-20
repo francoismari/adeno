@@ -1,0 +1,86 @@
+export default [
+  {
+    id: 1,
+    name: "PPE",
+    fullname: "Parti populaire européen",
+    emoji: "💙",
+    imageUrl: require("../../../data/images/groups/PPE.png"),
+    value: "Centrism",
+    adjective: "modéré",
+    pluralAdjective: "modérés",
+    explaination:
+      "Tu valorises l'unité et les valeurs démocratiques centristes, en mettant l'accent sur une approche modérée et de droite-centriste.",
+  },
+  {
+    id: 2,
+    name: "S&D",
+    fullname: "Progressistes de Socialistes & Démocrates",
+    emoji: "🌹",
+    imageUrl: require("../../../data/images/groups/SD.png"),
+    value: "Socialism",
+    adjective: "socialiste",
+    pluralAdjective: "socialistes",
+    explaination:
+      "Pour un monde plus juste, un tweet à la fois, tout en sirotant un café équitable.",
+  },
+  {
+    id: 3,
+    name: "Renew",
+    fullname: "Renew Europe",
+    emoji: "🔄",
+    imageUrl: require("../../../data/images/groups/Renew.png"),
+    value: "Liberalism",
+    adjective: "libéral",
+    pluralAdjective: "libéraux",
+    explaination:
+      "Prêt à lancer ta startup en plein cœur de Bruxelles, tu prônes l'innovation et le libéralisme, tout en regardant les régulations avec sourire.",
+  },
+  {
+    id: 4,
+    name: "Les Verts/ALE",
+    fullname: "Verts/Alliance libre européenne",
+    emoji: "🌿",
+    imageUrl: require("../../../data/images/groups/Greens.png"),
+    value: "Ecologism",
+    adjective: "écolo",
+    pluralAdjective: "écolos",
+    explaination:
+      "Sauver la planète, une conférence Zoom à la fois, avec ton gobelet réutilisable toujours à portée de main.",
+  },
+  {
+    id: 5,
+    name: "CER",
+    fullname: "Conservateurs et Réformistes européens",
+    emoji: "🦁",
+    imageUrl: require("../../../data/images/groups/ECR.png"),
+    value: "Conservatism",
+    adjective: "conservateur",
+    pluralAdjective: "conservateurs",
+    explaination:
+      "Tu défends les valeurs conservatrices, prônant le maintien des traditions, la stabilité sociale et la fiscalité réduite.",
+  },
+  {
+    id: 6,
+    name: "GUE/NGL",
+    fullname: "Groupe de la Gauche",
+    emoji: "💢",
+    imageUrl: require("../../../data/images/groups/GUE.png"),
+    value: "Radicalism",
+    adjective: "radical",
+    pluralAdjective: "radicaux",
+    explaination:
+      "Tu représentes une vision de gauche, axée sur les droits des travailleurs, la redistribution équitable des richesses et des politiques sociales progressistes.",
+  },
+  {
+    id: 7,
+    name: "ID",
+    fullname: "Identité et Démocratie",
+    emoji: "🆔",
+    imageUrl: require("../../../data/images/groups/ID.png"),
+    value: "Nationalism",
+    adjective: "nationaliste",
+    pluralAdjective: "nationalistes",
+    explaination:
+      "Gardien de la tradition, avec une affection particulière pour les frontières, surtout quand elles sont bien fermées.",
+  },
+];

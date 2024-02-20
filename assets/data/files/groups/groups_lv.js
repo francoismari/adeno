@@ -1,0 +1,86 @@
+export default [
+  {
+    id: 1,
+    name: "EPP",
+    fullname: "Eiropas Tautas Partija",
+    emoji: "💙",
+    imageUrl: require("../../../data/images/groups/PPE.png"),
+    value: "Centrisms",
+    adjective: "mērens",
+    pluralAdjective: "mēreni",
+    explaination:
+      "Tu vērtē vienotību un centriskās demokrātiskās vērtības, uzsverot mērenu un centra labējo pieeju.",
+  },
+  {
+    id: 2,
+    name: "S&D",
+    fullname: "Sociālistu un Demokrātu Progresīvā alianse",
+    emoji: "🌹",
+    imageUrl: require("../../../data/images/groups/SD.png"),
+    value: "Sociālisms",
+    adjective: "sociālistisks",
+    pluralAdjective: "sociālistiski",
+    explaination:
+      "Par taisnīgāku pasauli, vienu tvītu reizi, baudot taisnīgas tirdzniecības kafiju.",
+  },
+  {
+    id: 3,
+    name: "Atjaunošana",
+    fullname: "Atjauno Eiropu",
+    emoji: "🔄",
+    imageUrl: require("../../../data/images/groups/Renew.png"),
+    value: "Liberalisms",
+    adjective: "liberāls",
+    pluralAdjective: "liberāli",
+    explaination:
+      "Gatavs sākt savu uzņēmumu Briselē, tu atbalsti inovāciju un liberalismu, pieejas regulējumiem ar smaidu.",
+  },
+  {
+    id: 4,
+    name: "Zaļie/EFA",
+    fullname: "Zaļie/Eiropas Brīvā alianse",
+    emoji: "🌿",
+    imageUrl: require("../../../data/images/groups/Greens.png"),
+    value: "Ekoloģisms",
+    adjective: "zaļš",
+    pluralAdjective: "zaļi",
+    explaination:
+      "Glābj planetu, vienu Zoom sanāksmi reizi, ar savu atkārtoti lietojamo krūzi vienmēr blakus.",
+  },
+  {
+    id: 5,
+    name: "EKR",
+    fullname: "Eiropas Konservatīvie un Reformisti",
+    emoji: "🦁",
+    imageUrl: require("../../../data/images/groups/ECR.png"),
+    value: "Konservatisms",
+    adjective: "konservatīvs",
+    pluralAdjective: "konservatīvi",
+    explaination:
+      "Tu aizstāvi konservatīvās vērtības, veicinot tradīciju saglabāšanu, sociālo stabilitāti un nodokļu samazinājumu.",
+  },
+  {
+    id: 6,
+    name: "Kreisie",
+    fullname: "Eiropas Kreiso grupa",
+    emoji: "💢",
+    imageUrl: require("../../../data/images/groups/GUE.png"),
+    value: "Radikalisms",
+    adjective: "radikāls",
+    pluralAdjective: "radikāli",
+    explaination:
+      "Tu pārstāvi kreiso perspektīvu, kas koncentrējas uz darba ņēmēju tiesībām, bagātības taisnīgu sadali un progresīvu sociālo politiku.",
+  },
+  {
+    id: 7,
+    name: "ID",
+    fullname: "Identitāte un Demokrātija",
+    emoji: "🆔",
+    imageUrl: require("../../../data/images/groups/ID.png"),
+    value: "Nacionālisms",
+    adjective: "nacionālistisks",
+    pluralAdjective: "nacionālistiski",
+    explaination:
+      "Tradīciju sargs, ar īpašu mīlestību pret robežām, it īpaši, ja tās ir labi noslēgtas.",
+  },
+];

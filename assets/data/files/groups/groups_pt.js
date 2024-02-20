@@ -1,0 +1,86 @@
+export default [
+  {
+    id: 1,
+    name: "PPE",
+    fullname: "Partido Popular Europeu",
+    emoji: "💙",
+    imageUrl: require("../../../data/images/groups/PPE.png"),
+    value: "Centrismo",
+    adjective: "moderado",
+    pluralAdjective: "moderados",
+    explaination:
+      "Você valoriza a unidade e os valores democráticos centristas, enfatizando uma abordagem moderada e de centro-direita.",
+  },
+  {
+    id: 2,
+    name: "S&D",
+    fullname: "Aliança Progressista dos Socialistas & Democratas",
+    emoji: "🌹",
+    imageUrl: require("../../../data/images/groups/SD.png"),
+    value: "Socialismo",
+    adjective: "socialista",
+    pluralAdjective: "socialistas",
+    explaination:
+      "Por um mundo mais justo, um tweet de cada vez, enquanto saboreia um café de comércio justo.",
+  },
+  {
+    id: 3,
+    name: "Renovar",
+    fullname: "Renovar Europa",
+    emoji: "🔄",
+    imageUrl: require("../../../data/images/groups/Renew.png"),
+    value: "Liberalismo",
+    adjective: "liberal",
+    pluralAdjective: "liberais",
+    explaination:
+      "Pronto para lançar sua startup no coração de Bruxelas, promovendo inovação e liberalismo, enquanto observa a regulamentação com um sorriso.",
+  },
+  {
+    id: 4,
+    name: "Os Verdes/ALE",
+    fullname: "Os Verdes/Aliança Livre Europeia",
+    emoji: "🌿",
+    imageUrl: require("../../../data/images/groups/Greens.png"),
+    value: "Ecologismo",
+    adjective: "ecológico",
+    pluralAdjective: "ecológicos",
+    explaination:
+      "Salvando o planeta, uma conferência Zoom de cada vez, com seu copo reutilizável sempre por perto.",
+  },
+  {
+    id: 5,
+    name: "CRE",
+    fullname: "Conservadores e Reformistas Europeus",
+    emoji: "🦁",
+    imageUrl: require("../../../data/images/groups/ECR.png"),
+    value: "Conservadorismo",
+    adjective: "conservador",
+    pluralAdjective: "conservadores",
+    explaination:
+      "Você defende valores conservadores, promovendo a preservação das tradições, estabilidade social e impostos mais baixos.",
+  },
+  {
+    id: 6,
+    name: "A Esquerda",
+    fullname: "Grupo da Esquerda no Parlamento Europeu",
+    emoji: "💢",
+    imageUrl: require("../../../data/images/groups/GUE.png"),
+    value: "Radicalismo",
+    adjective: "radical",
+    pluralAdjective: "radicais",
+    explaination:
+      "Você representa uma visão de esquerda, focada nos direitos dos trabalhadores, distribuição justa da riqueza e políticas sociais progressistas.",
+  },
+  {
+    id: 7,
+    name: "ID",
+    fullname: "Identidade e Democracia",
+    emoji: "🆔",
+    imageUrl: require("../../../data/images/groups/ID.png"),
+    value: "Nacionalismo",
+    adjective: "nacionalista",
+    pluralAdjective: "nacionalistas",
+    explaination:
+      "Guardião da tradição, com um carinho especial por fronteiras, especialmente quando estão bem fechadas.",
+  },
+];

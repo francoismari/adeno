@@ -1,0 +1,86 @@
+export default [
+  {
+    id: 1,
+    name: "EVP",
+    fullname: "Europese Volkspartij",
+    emoji: "💙",
+    imageUrl: require("../../../data/images/groups/PPE.png"),
+    value: "Centrisme",
+    adjective: "gematigd",
+    pluralAdjective: "gematigden",
+    explaination:
+      "Je waardeert eenheid en centristische democratische waarden, met een nadruk op een gematigde en centrum-rechtse benadering.",
+  },
+  {
+    id: 2,
+    name: "S&D",
+    fullname: "Progressieve Alliantie van Socialisten en Democraten",
+    emoji: "🌹",
+    imageUrl: require("../../../data/images/groups/SD.png"),
+    value: "Socialisme",
+    adjective: "socialistisch",
+    pluralAdjective: "socialisten",
+    explaination:
+      "Voor een rechtvaardigere wereld, één tweet tegelijk, terwijl je geniet van een fairtrade koffie.",
+  },
+  {
+    id: 3,
+    name: "Vernieuwen",
+    fullname: "Vernieuw Europa",
+    emoji: "🔄",
+    imageUrl: require("../../../data/images/groups/Renew.png"),
+    value: "Liberalisme",
+    adjective: "liberaal",
+    pluralAdjective: "liberalen",
+    explaination:
+      "Klaar om je startup in het hart van Brussel te lanceren, je bevordert innovatie en liberalisme, terwijl je regelgeving met een glimlach bekijkt.",
+  },
+  {
+    id: 4,
+    name: "De Groenen/EVA",
+    fullname: "De Groenen/Europese Vrije Alliantie",
+    emoji: "🌿",
+    imageUrl: require("../../../data/images/groups/Greens.png"),
+    value: "Ecologisme",
+    adjective: "ecologisch",
+    pluralAdjective: "ecologen",
+    explaination:
+      "De planeet redden, één Zoom-vergadering tegelijk, met je herbruikbare beker altijd binnen handbereik.",
+  },
+  {
+    id: 5,
+    name: "ECR",
+    fullname: "Europese Conservatieven en Hervormers",
+    emoji: "🦁",
+    imageUrl: require("../../../data/images/groups/ECR.png"),
+    value: "Conservatisme",
+    adjective: "conservatief",
+    pluralAdjective: "conservatieven",
+    explaination:
+      "Je verdedigt conservatieve waarden, pleit voor het behoud van tradities, sociale stabiliteit en lagere belastingen.",
+  },
+  {
+    id: 6,
+    name: "De Linkse",
+    fullname: "De Europese Linkse",
+    emoji: "💢",
+    imageUrl: require("../../../data/images/groups/GUE.png"),
+    value: "Radicalisme",
+    adjective: "radicaal",
+    pluralAdjective: "radicalen",
+    explaination:
+      "Je vertegenwoordigt een links standpunt, gericht op arbeidersrechten, eerlijke verdeling van rijkdom en progressieve sociale beleidsmaatregelen.",
+  },
+  {
+    id: 7,
+    name: "ID",
+    fullname: "Identiteit en Democratie",
+    emoji: "🆔",
+    imageUrl: require("../../../data/images/groups/ID.png"),
+    value: "Nationalisme",
+    adjective: "nationalistisch",
+    pluralAdjective: "nationalisten",
+    explaination:
+      "Bewaker van traditie, met een speciale voorliefde voor grenzen, vooral als ze goed gesloten zijn.",
+  },
+];

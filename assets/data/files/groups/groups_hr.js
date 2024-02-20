@@ -1,0 +1,86 @@
+export default [
+  {
+    id: 1,
+    name: "EPP",
+    fullname: "Europska pučka stranka",
+    emoji: "💙",
+    imageUrl: require("../../../data/images/groups/PPE.png"),
+    value: "Centrizam",
+    adjective: "umjeren",
+    pluralAdjective: "umjereni",
+    explaination:
+      "Cijenite jedinstvo i centrističke demokratske vrijednosti, naglašavajući umjereni i centar-desni pristup.",
+  },
+  {
+    id: 2,
+    name: "S&D",
+    fullname: "Progresivni savez socijalista i demokrata",
+    emoji: "🌹",
+    imageUrl: require("../../../data/images/groups/SD.png"),
+    value: "Socijalizam",
+    adjective: "socijalistički",
+    pluralAdjective: "socijalisti",
+    explaination:
+      "Za pravedniji svijet, jedan tweet odjednom, dok ispijate pravedno trgovano kavu.",
+  },
+  {
+    id: 3,
+    name: "Obnovi",
+    fullname: "Obnovi Europu",
+    emoji: "🔄",
+    imageUrl: require("../../../data/images/groups/Renew.png"),
+    value: "Liberalizam",
+    adjective: "liberalan",
+    pluralAdjective: "liberali",
+    explaination:
+      "Spremni ste pokrenuti svoj startup u srcu Bruxellesa, zagovarate inovaciju i liberalizam, dok promatrate regulative s osmijehom.",
+  },
+  {
+    id: 4,
+    name: "Zeleni/ALE",
+    fullname: "Zeleni/Europski slobodni savez",
+    emoji: "🌿",
+    imageUrl: require("../../../data/images/groups/Greens.png"),
+    value: "Ekologizam",
+    adjective: "ekološki",
+    pluralAdjective: "ekolozi",
+    explaination:
+      "Spašavanje planeta, jedna Zoom konferencija odjednom, s vašom višekratno upotrebljivom šalicom uvijek pri ruci.",
+  },
+  {
+    id: 5,
+    name: "ECR",
+    fullname: "Europski konzervativci i reformisti",
+    emoji: "🦁",
+    imageUrl: require("../../../data/images/groups/ECR.png"),
+    value: "Konzervativizam",
+    adjective: "konzervativan",
+    pluralAdjective: "konzervativci",
+    explaination:
+      "Branite konzervativne vrijednosti, zagovarajući očuvanje tradicija, socijalnu stabilnost i smanjenje poreza.",
+  },
+  {
+    id: 6,
+    name: "Ljevica",
+    fullname: "Grupa Ljevice",
+    emoji: "💢",
+    imageUrl: require("../../../data/images/groups/GUE.png"),
+    value: "Radikalizam",
+    adjective: "radikalan",
+    pluralAdjective: "radikali",
+    explaination:
+      "Predstavljate lijevu viziju usmjerenu na prava radnika, pravednu raspodjelu bogatstva i progresivne socijalne politike.",
+  },
+  {
+    id: 7,
+    name: "ID",
+    fullname: "Identitet i demokracija",
+    emoji: "🆔",
+    imageUrl: require("../../../data/images/groups/ID.png"),
+    value: "Nacionalizam",
+    adjective: "nacionalistički",
+    pluralAdjective: "nacionalisti",
+    explaination:
+      "Čuvar tradicije, s posebnom naklonošću prema granicama, posebno kada su dobro zatvorene.",
+  },
+];

@@ -14,14 +14,88 @@ import {
 import React, { useEffect, useState } from "react";
 import AsyncStorage from "@react-native-async-storage/async-storage";
 import CustomText from "../components/CustomText";
-import colors from "../../assets/colors";
-import CloseButton from "../components/CloseButton";
 import { useNavigation } from "@react-navigation/native";
 import CenteredTitleHeader from "../components/CenteredTitleHeader";
 import { useUser } from "../context/userContext";
 import { signOut } from "firebase/auth";
 import { deleteDoc, doc } from "firebase/firestore";
 import { auth, db } from "../../firebaseConfig";
+import i18n from "../languages/i18n";
+
+const team = [
+  {
+    name: "Pauline Bizet",
+    role: "Bénévole (à completer)",
+  },
+  {
+    name: "Ithier Bariety",
+    role: "Bénévole (à completer)",
+  },
+  {
+    name: "Maxime Laporte",
+    role: "Bénévole (à completer)",
+  },
+  {
+    name: "Marco Demichelis",
+    role: "Bénévole (à completer)",
+  },
+  {
+    name: "Emmie Hallot",
+    role: "Bénévole (à completer)",
+  },
+  {
+    name: "Elise Torche",
+    role: "Responsable pôle éditorial",
+  },
+  {
+    name: "Alix Poncet",
+    role: "Bénévole (à completer)",
+  },
+  {
+    name: "Igor Thiam",
+    role: "Bénévole (à completer)",
+  },
+  {
+    name: "Alexandre Alecse",
+    role: "Bénévole (à completer)",
+  },
+  {
+    name: "Louise R",
+    role: "Bénévole (à completer)",
+  },
+  {
+    name: "Léna Bergougnan-Dijou",
+    role: "Bénévole (à completer)",
+  },
+  {
+    name: "Apolline Choux",
+    role: "Bénévole (à completer)",
+  },
+  {
+    name: "Emi Heiler",
+    role: "Bénévole (à completer)",
+  },
+  {
+    name: "Adelaïde Brouillet",
+    role: "Bénévole (à completer)",
+  },
+  {
+    name: "Alice Nigon",
+    role: "Bénévole (à completer)",
+  },
+  {
+    name: "May Barthelemy",
+    role: "Bénévole (à completer)",
+  },
+  {
+    name: "Emma Constantin",
+    role: "Bénévole (à completer)",
+  },
+  {
+    name: "Laurie Segreto",
+    role: "Responsable communication",
+  },
+];
 
 export default function Settings() {
   const navigation = useNavigation();
@@ -109,12 +183,34 @@ export default function Settings() {
     );
   };
 
+  const getSecondWord = (fullName) => {
+    const names = fullName.split(" ");
+    return names.length > 1 ? names[1] : names[0];
+  };
+
+  // Sort the team by the second word of their name
+  const sortedTeam = team.sort((a, b) => {
+    const nameA = getSecondWord(a.name).toUpperCase(); // Ignore case
+    const nameB = getSecondWord(b.name).toUpperCase(); // Ignore case
+    if (nameA < nameB) {
+      return -1;
+    }
+    if (nameA > nameB) {
+      return 1;
+    }
+    return 0; // names must be equal
+  });
+
+  const handleOpenScientificCouncil = () => {
+    navigation.navigate("ScientificCouncil");
+  };
+
   return (
     <View style={{ flex: 1, backgroundColor: "#5354E8" }}>
       <CenteredTitleHeader title={"Réglages"} handleClose={handleClose} />
 
       <ScrollView>
-        <CategoryWrapper title={"Mode multijoueur"}>
+        <CategoryWrapper title={i18n.t("settingsScreen.multiplayerCard.title")}>
           <View
             style={{
               flexDirection: "row",
@@ -140,8 +236,8 @@ export default function Settings() {
           </View>
         </CategoryWrapper>
 
-        <CategoryWrapper title={"Mode solo"}>
-          {user ? (
+        <CategoryWrapper title={i18n.t("settingsScreen.soloCard.title")}>
+          {user?.responses ? (
             <View
               style={{
                 marginTop: 10,
@@ -149,24 +245,39 @@ export default function Settings() {
                 alignItems: "center",
               }}
             >
+              <CustomText
+                style={{ transform: [{ rotate: "-4deg" }], fontSize: 20 }}
+              >
+                🇪🇺
+              </CustomText>
               <CustomText>
                 Tu participes à la grande étude sur l'Europe !
               </CustomText>
-              <TouchableOpacity onPress={handleSignOutAndDeleteData}>
-                <Text>Annuler</Text>
-              </TouchableOpacity>
             </View>
           ) : (
             <>
-              <Text style={{ marginTop: 10, fontFamily: "FrancoisOne" }}>
+              <Text
+                style={{
+                  marginTop: 10,
+                  fontFamily: "FrancoisOne",
+                  textAlign: "center",
+                }}
+              >
                 Participe à la grande étude des jeunes en Europe
               </Text>
-              <CustomText style={{ color: "gray" }}>
-                Vos réponses aux questions du mode solo seront collectées de
+              <CustomText style={{ color: "gray", textAlign: "center" }}>
+                Tes réponses aux questions du mode solo seront enregistrées de
                 manière anonyme, et permettront de réaliser une grande étude sur
                 les comportements éléctoraux des jeunes en Europe, supervisée
-                par un conseil scientifique de professeurs, chercheurs, et
-                intellectuels.
+                par un{" "}
+                <Text
+                  style={{ color: "#5354E8" }}
+                  onPress={handleOpenScientificCouncil}
+                >
+                  conseil scientifique de professeurs, chercheurs, et
+                  intellectuels
+                </Text>
+                .
               </CustomText>
               <TouchableOpacity
                 onPress={handleSetStudyInfos}
@@ -191,12 +302,12 @@ export default function Settings() {
             style={{ alignSelf: "center" }}
           >
             <CustomText style={{ fontSize: 17, color: "gray", marginTop: 10 }}>
-              Réinitialiser mes résultats
+              {i18n.t("settingsScreen.soloCard.resetResultsText")}
             </CustomText>
           </TouchableOpacity>
         </CategoryWrapper>
 
-        <CategoryWrapper title={"Créé par"}>
+        <CategoryWrapper title={i18n.t("settingsScreen.createdByCard.title")}>
           <View
             style={{
               flexDirection: "row",
@@ -217,12 +328,27 @@ export default function Settings() {
               marginTop: 15,
             }}
           >
-            Créé par Matthieu Maillard et un réseau de bénévoles à travers
-            l'Europe !
+            {i18n.t("settingsScreen.createdByCard.subtitle")}
           </CustomText>
         </CategoryWrapper>
 
-        <CategoryWrapper title={"Incubé par"}>
+        <CategoryWrapper title={i18n.t("settingsScreen.incubatedBy.title")}>
+          <Image
+            source={require("../../assets/images/inceptio.jpg")}
+            style={{
+              width: 120,
+              height: 70,
+              borderRadius: 30,
+              alignSelf: "center",
+              marginTop: 10,
+            }}
+            resizeMode={'contain'}
+          />
+
+          <CustomText style={{ color: "gray" }}>
+            {i18n.t("settingsScreen.incubatedBy.subtitle")}
+          </CustomText>
+
           <View style={{ alignSelf: "center" }}>
             <View
               style={{
@@ -237,8 +363,11 @@ export default function Settings() {
                   source={require("../../assets/data/images/inceptio/alexis.jpg")}
                   style={{ width: 60, height: 60, borderRadius: 30 }}
                 />
-                <CustomText style={{ textAlign: "center", marginTop: 2 }}>
+                <CustomText style={{ textAlign: "center", marginTop: 5 }}>
                   Alexis Costa
+                </CustomText>
+                <CustomText style={{ textAlign: "center", color: "gray" }}>
+                  {i18n.t("settingsScreen.incubatedBy.founderMaleText")}
                 </CustomText>
               </TouchableOpacity>
 
@@ -252,6 +381,9 @@ export default function Settings() {
                 <CustomText style={{ textAlign: "center", marginTop: 2 }}>
                   Laurie Segreto
                 </CustomText>
+                <CustomText style={{ textAlign: "center", color: "gray" }}>
+                  {i18n.t("settingsScreen.incubatedBy.founderFemaleText")}
+                </CustomText>
               </TouchableOpacity>
 
               <TouchableOpacity style={{ alignItems: "center" }}>
@@ -262,12 +394,26 @@ export default function Settings() {
                 <CustomText style={{ textAlign: "center", marginTop: 2 }}>
                   Vladimir Méline
                 </CustomText>
+                <CustomText style={{ textAlign: "center", color: "gray" }}>
+                  {i18n.t("settingsScreen.incubatedBy.founderMaleText")}
+                </CustomText>
               </TouchableOpacity>
             </View>
           </View>
         </CategoryWrapper>
 
-        <CategoryWrapper title={"L'équipe"}></CategoryWrapper>
+        <CategoryWrapper title={i18n.t("settingsScreen.teamCard.title")}>
+          {sortedTeam.map((member, index) => {
+            return (
+              <View style={{ marginBottom: 10 }}>
+                <CustomText style={{ fontSize: 17 }}>{member.name}</CustomText>
+                <CustomText style={{ fontSize: 14, color: "gray" }}>
+                  {member.role}
+                </CustomText>
+              </View>
+            );
+          })}
+        </CategoryWrapper>
 
         <CustomText
           style={{
@@ -286,7 +432,7 @@ export default function Settings() {
             marginTop: -2,
           }}
         >
-          tous droits réservés
+          {i18n.t('settingsScreen.allRightsReserved')}
         </CustomText>
 
         <View style={{ marginHorizontal: 20 }}>
@@ -346,7 +492,7 @@ const CategoryWrapper = ({ title, children }) => {
             alignSelf: "flex-start",
             paddingVertical: 2,
             paddingHorizontal: 7,
-            backgroundColor: colors.mainYellow,
+            backgroundColor: "#FBD51F",
             transform: [{ rotate: "-2deg" }],
             borderRadius: 10,
           }}
@@ -443,7 +589,7 @@ const styles = StyleSheet.create({
     fontSize: 16,
   },
   modalButton: {
-    backgroundColor: "#3856C1",
+    backgroundColor: "#5354E8",
     borderRadius: 15,
     padding: 10,
     elevation: 2,

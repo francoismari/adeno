@@ -3,6 +3,7 @@ import React from "react";
 import BackgroundWrapper from "../../components/BackgroundWrapper";
 import CenteredHeader from "../../components/CenteredHeader";
 import CustomText from "../../components/CustomText";
+import i18n from "../../languages/i18n";
 
 export default function SelectMultiplayerMode({ navigation }) {
   const handleGoBack = () => {
@@ -19,7 +20,10 @@ export default function SelectMultiplayerMode({ navigation }) {
 
   return (
     <BackgroundWrapper>
-      <CenteredHeader title={"Multijoueur"} handleGoBack={handleGoBack} />
+      <CenteredHeader
+        title={i18n.t("selectMultiplayerMode.title")}
+        handleGoBack={handleGoBack}
+      />
 
       <View
         style={{
@@ -36,7 +40,7 @@ export default function SelectMultiplayerMode({ navigation }) {
             marginHorizontal: 30,
           }}
         >
-          Sélectionne le mode qui te convient !
+          {i18n.t("selectMultiplayerMode.selectText")}
         </CustomText>
 
         <Pressable
@@ -56,7 +60,7 @@ export default function SelectMultiplayerMode({ navigation }) {
             📲
           </CustomText>
           <CustomText style={{ marginLeft: 10, fontSize: 20 }}>
-            Un seul téléphone
+            {i18n.t("selectMultiplayerMode.onePhone")}
           </CustomText>
         </Pressable>
 
@@ -78,7 +82,7 @@ export default function SelectMultiplayerMode({ navigation }) {
             👥
           </CustomText>
           <CustomText style={{ marginLeft: 10, fontSize: 20 }}>
-            Plusieurs téléphones
+            {i18n.t("selectMultiplayerMode.multiplePhones")}
           </CustomText>
         </Pressable>
       </View>

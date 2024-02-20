@@ -5,41 +5,44 @@ import BackButton from "../../components/BackButton";
 import { useNavigation } from "@react-navigation/native";
 import CustomText from "../../components/CustomText";
 import CenteredHeader from "../../components/CenteredHeader";
-import questions from "../../../assets/data/solo/questions";
 import AsyncStorage from "@react-native-async-storage/async-storage";
+import { BlurView } from "expo-blur";
+import { Feather } from "@expo/vector-icons";
+import shuffleArray from "../../utils/shuffleArray";
+import questions_en from "../../../assets/data/solo/questions_en";
+import { useUser } from "../../context/userContext";
+import questionsByLocale from "../../../assets/data/solo/questionsByLocale";
+import QuestionHeader from "../../components/Solo/QuestionHeader";
 
 export default function ExpressMode() {
+  const { locale } = useUser();
+
   const navigation = useNavigation();
 
   const [isReady, setIsReady] = useState(false);
-  const [timer, setTimer] = useState(60);
   const [currentQuestion, setCurrentQuestion] = useState(null);
   const [expressQuestions, setExpressQuestions] = useState([]);
   const [answeredQuestions, setAnsweredQuestions] = useState([]);
 
   useEffect(() => {
-    const filteredQuestions = questions
-      .filter((q) => q.express)
-      .sort(() => Math.random() - 0.5);
-    setExpressQuestions(filteredQuestions);
-    setCurrentQuestion(filteredQuestions[0]);
-  }, []);
+    const loadQuestions = async () => {
+      // Select questions set based on the current locale, defaulting to English if not found
+      const selectedQuestions =
+        questionsByLocale[locale.userLocale] || questions_en;
 
-  useEffect(() => {
-    let interval = null;
-    if (timer > 0) {
-      interval = setInterval(() => {
-        setTimer((prevTimer) => prevTimer - 1);
-      }, 1000);
-    } else {
-      clearInterval(interval);
-      onFinish();
-    }
-    return () => clearInterval(interval);
-  }, [timer]);
+      const filteredQuestions = selectedQuestions
+        .filter((q) => q.express)
+        .sort(() => Math.random() - 0.5);
 
-  const handleAnswer = async (questionId, partyId) => {
-    const newAnswer = { questionId, partyId };
+      setExpressQuestions(filteredQuestions);
+      setCurrentQuestion(filteredQuestions[0]);
+    };
+
+    loadQuestions();
+  }, [locale]);
+
+  const handleAnswer = async (questionId, partyId, categoryId) => {
+    const newAnswer = { questionId, partyId, categoryId };
     const updatedAnsweredQuestions = [...answeredQuestions, newAnswer];
     await AsyncStorage.setItem(
       "answeredQuestions",
@@ -76,10 +79,7 @@ export default function ExpressMode() {
 
       {isReady ? (
         <ExpressScreen
-          timer={timer}
-          // question={questions[currentQuestionIndex]}
-          // handleAnswer={handleAnswer}
-          // useJoker={useJoker}
+          navigation={navigation}
           data={currentQuestion.answers}
           handleAnswer={handleAnswer}
           currentQuestion={currentQuestion}
@@ -111,44 +111,9 @@ const RulesScreen = ({ handleStartGame }) => {
             alignSelf: "center",
           }}
         >
-          Les règles
+          ÉCRAN À REVOIR
         </Text>
 
-        <Text
-          style={{
-            textAlign: "center",
-            fontFamily: "FrancoisOne",
-            fontSize: 15,
-            lineHeight: 17,
-            color: "gray",
-            marginTop: 5,
-            marginBottom: 10,
-          }}
-        >
-          Le mode express te permet de trouver ta tête de liste en 60 secondes
-          chrono !
-        </Text>
-
-        <Text
-          style={{
-            fontFamily: "FrancoisOne",
-            fontSize: 20,
-            lineHeight: 25,
-            marginTop: 10,
-          }}
-        >
-          ⏱️ 60 secondes pour répondre à un maximum de questions
-        </Text>
-        {/* <Text
-          style={{
-            fontFamily: "FrancoisOne",
-            fontSize: 20,
-            lineHeight: 25,
-            marginTop: 10,
-          }}
-        >
-          🃏 3 jokers si tu ne sais pas répondre
-        </Text> */}
         <Text
           style={{
             fontFamily: "FrancoisOne",
@@ -179,58 +144,63 @@ const RulesScreen = ({ handleStartGame }) => {
   );
 };
 
-const ExpressScreen = ({
-  timer,
-  question,
-  handleAnswer,
-  data,
-  currentQuestion,
-}) => {
+const ExpressScreen = ({ navigation, handleAnswer, currentQuestion }) => {
+  const shuffledAnswers = currentQuestion
+    ? shuffleArray([...currentQuestion.answers])
+    : [];
+
+  const handleShowContext = () => {
+    navigation.navigate("QuestionContext", {
+      context: currentQuestion.learnMore,
+    });
+  };
+
   return (
     <View>
-      <Text
-        style={{
-          fontSize: 100,
-          fontFamily: "FrancoisOne",
-          color: "white",
-          textAlign: "center",
-        }}
-      >
-        {timer}
-      </Text>
-
       {currentQuestion && (
         <>
+          <QuestionHeader
+            question={currentQuestion.question}
+            handleShowContext={handleShowContext}
+          />
+
           <FlatList
-            data={currentQuestion.answers}
-            keyExtractor={(item) => item.id.toString()}
-            ListHeaderComponent={() => (
-              <CustomText
-                style={{
-                  fontSize: 24,
-                  color: "white",
-                  textAlign: "center",
-                  margin: 20,
-                }}
-              >
-                {currentQuestion.question}
-              </CustomText>
-            )}
+            data={shuffledAnswers}
+            showsVerticalScrollIndicator={false}
             renderItem={({ item }) => (
               <Pressable
                 style={{
                   width: "100%",
-                  borderRadius: 20,
+                  borderRadius: 10,
                   backgroundColor: "white",
-                  padding: 15,
-                  marginBottom: 20,
+                  paddingHorizontal: 14,
+                  paddingVertical: 12,
+                  marginBottom: 10,
                 }}
-                onPress={() => handleAnswer(currentQuestion.id, item.partyId)}
+                onPress={() =>
+                  handleAnswer(
+                    currentQuestion.id,
+                    item.partyId,
+                    currentQuestion.category
+                  )
+                }
               >
-                <CustomText style={{ fontSize: 20 }}>{item.text}</CustomText>
+                <CustomText
+                  style={{
+                    fontSize: 16,
+                    textAlign: "center",
+                    // fontWeight: "500",
+                  }}
+                >
+                  {item.text}
+                </CustomText>
               </Pressable>
             )}
-            contentContainerStyle={{ marginHorizontal: 20, paddingBottom: 250 }}
+            keyExtractor={(item) => item.id.toString()}
+            contentContainerStyle={{
+              paddingHorizontal: 20,
+              paddingBottom: 50,
+            }}
           />
         </>
       )}

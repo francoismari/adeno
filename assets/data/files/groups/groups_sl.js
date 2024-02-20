@@ -1,0 +1,86 @@
+export default [
+  {
+    id: 1,
+    name: "ELS",
+    fullname: "Evropska ljudska stranka",
+    emoji: "💙",
+    imageUrl: require("../../../data/images/groups/PPE.png"),
+    value: "Sredinski",
+    adjective: "zmerno",
+    pluralAdjective: "zmerni",
+    explaination:
+      "Ceniš enotnost in sredinske demokratične vrednote, s poudarkom na zmernem in sredinsko-desnem pristopu.",
+  },
+  {
+    id: 2,
+    name: "S&D",
+    fullname: "Progresivno zavezništvo socialistov in demokratov",
+    emoji: "🌹",
+    imageUrl: require("../../../data/images/groups/SD.png"),
+    value: "Socializem",
+    adjective: "socialističen",
+    pluralAdjective: "socialistični",
+    explaination:
+      "Za pravičnejši svet, en tvit naenkrat, ob uživanju pravično trgovane kave.",
+  },
+  {
+    id: 3,
+    name: "Obnovi",
+    fullname: "Obnovi Evropo",
+    emoji: "🔄",
+    imageUrl: require("../../../data/images/groups/Renew.png"),
+    value: "Liberalizem",
+    adjective: "liberalen",
+    pluralAdjective: "liberalni",
+    explaination:
+      "Pripravljen za zagon svojega start-upa v srcu Bruslja, spodbujaš inovacije in liberalizem, medtem ko regulacije opazuješ z nasmehom.",
+  },
+  {
+    id: 4,
+    name: "Zeleni/EFA",
+    fullname: "Zeleni/Evropska svobodna zveza",
+    emoji: "🌿",
+    imageUrl: require("../../../data/images/groups/Greens.png"),
+    value: "Ekologija",
+    adjective: "ekološki",
+    pluralAdjective: "ekološki",
+    explaination:
+      "Reševanje planeta, ena Zoom konferenca naenkrat, s tvojo večkratno uporabno skodelico vedno pri roki.",
+  },
+  {
+    id: 5,
+    name: "ECR",
+    fullname: "Evropski konservativci in reformisti",
+    emoji: "🦁",
+    imageUrl: require("../../../data/images/groups/ECR.png"),
+    value: "Konzervatizem",
+    adjective: "konzervativen",
+    pluralAdjective: "konzervativni",
+    explaination:
+      "Branjenje konzervativnih vrednot, zagovarjanje ohranjanja tradicij, socialne stabilnosti in nižjih davkov.",
+  },
+  {
+    id: 6,
+    name: "Levica",
+    fullname: "Skupina Evropske združene levice/Zelene nordijske levice",
+    emoji: "💢",
+    imageUrl: require("../../../data/images/groups/GUE.png"),
+    value: "Radikalizem",
+    adjective: "radikalen",
+    pluralAdjective: "radikalni",
+    explaination:
+      "Predstavljaš levičarsko perspektivo, osredotočeno na pravice delavcev, pravično porazdelitev bogastva in progresivno socialno politiko.",
+  },
+  {
+    id: 7,
+    name: "ID",
+    fullname: "Identiteta in demokracija",
+    emoji: "🆔",
+    imageUrl: require("../../../data/images/groups/ID.png"),
+    value: "Nacionalizem",
+    adjective: "nacionalističen",
+    pluralAdjective: "nacionalistični",
+    explaination:
+      "Varuh tradicije, s posebnim poudarkom na mejah, še posebej, ko so dobro zaprte.",
+  },
+];

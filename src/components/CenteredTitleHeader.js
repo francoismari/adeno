@@ -15,7 +15,7 @@ export default function CenteredTitleHeader({ handleClose, title }) {
           fontFamily: "FrancoisOne",
           fontSize: 40,
           marginTop: Platform.OS === "android" ? 30 : 20,
-          marginBottom: 20,
+          marginBottom: 10,
         }}
       >
         {title}

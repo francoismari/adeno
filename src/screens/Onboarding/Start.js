@@ -1,15 +1,29 @@
-import { View, Text, SafeAreaView, Image, Pressable } from "react-native";
+import {
+  View,
+  Text,
+  SafeAreaView,
+  Pressable,
+  TouchableOpacity,
+} from "react-native";
 import React from "react";
-import { Ionicons } from "@expo/vector-icons";
 import { useNavigation } from "@react-navigation/native";
 import AsyncStorage from "@react-native-async-storage/async-storage";
 import CustomText from "../../components/CustomText";
+import { signInAnonymously } from "firebase/auth";
+import { auth } from "../../../firebaseConfig";
+import { useUser } from "../../context/userContext";
 
 export default function Start() {
   const navigation = useNavigation();
 
+  const { setUser } = useUser();
+
   const handlePress = async () => {
     await AsyncStorage.setItem("isSetUp", "true");
+
+    const { user } = await signInAnonymously(auth);
+    setUser(user);
+
     navigation.navigate("Navigator");
   };
 
@@ -51,23 +65,22 @@ export default function Start() {
           Toutes les données utilisées dans l'app sont anonymes, et sont limités
           au strict nécessaire pour le bon fonctionnement de l'app !
         </CustomText>
-        <View
+        <TouchableOpacity
           style={{
             flexDirection: "row",
             alignItems: "center",
             marginTop: 10,
+            justifyContent: "center",
+            alignItems: "center",
+            backgroundColor: "#5354E8",
+            padding: 10,
+            borderRadius: 10,
           }}
         >
-          <Text style={{ fontSize: 15, color: "white" }}>
+          <CustomText style={{ fontSize: 15, color: "white" }}>
             Lire notre charte sur la vie privée
-          </Text>
-          <Ionicons
-            name="open-outline"
-            size={18}
-            color="white"
-            style={{ marginLeft: 7 }}
-          />
-        </View>
+          </CustomText>
+        </TouchableOpacity>
       </View>
 
       <View style={{ marginHorizontal: 20, marginTop: 25 }}>
@@ -95,23 +108,22 @@ export default function Start() {
           au strict nécessaire pour le bon fonctionnement de l'app !
         </Text>
 
-        <View
+        <TouchableOpacity
           style={{
             flexDirection: "row",
             alignItems: "center",
             marginTop: 10,
+            justifyContent: "center",
+            alignItems: "center",
+            backgroundColor: "#5354E8",
+            padding: 10,
+            borderRadius: 10,
           }}
         >
-          <Text style={{ fontSize: 15, color: "white" }}>
+          <CustomText style={{ fontSize: 15, color: "white" }}>
             Lire notre charte sur la transparence
-          </Text>
-          <Ionicons
-            name="open-outline"
-            size={18}
-            color="white"
-            style={{ marginLeft: 7 }}
-          />
-        </View>
+          </CustomText>
+        </TouchableOpacity>
       </View>
 
       <View style={{ position: "absolute", bottom: 50, marginHorizontal: 25 }}>
@@ -129,8 +141,8 @@ export default function Start() {
             }}
           >
             Adeno est un projet citoyen, créé par une équipe de bénévoles, sans
-            vocation lucrative, qui n'a pour objectif que d'aller te faire
-            voter !
+            vocation lucrative, qui n'a pour objectif que d'aller te faire voter
+            !
           </Text>
         </View>
         <Text
@@ -159,7 +171,7 @@ const StartButton = ({ onPress }) => {
       onPress={onPress}
       style={{
         width: "100%",
-        backgroundColor: "#233D97",
+        backgroundColor: "#3536E4",
         padding: 10,
         borderRadius: 15,
         justifyContent: "center",

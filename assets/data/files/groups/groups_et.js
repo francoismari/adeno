@@ -1,0 +1,86 @@
+export default [
+  {
+    id: 1,
+    name: "EPP",
+    fullname: "Euroopa Rahvapartei",
+    emoji: "💙",
+    imageUrl: require("../../../data/images/groups/PPE.png"),
+    value: "Tsentrism",
+    adjective: "mõõdukas",
+    pluralAdjective: "mõõdukad",
+    explaination:
+      "Hindad ühtsust ja tsentristlikke demokraatlikke väärtusi, rõhutades mõõdukat ja tsentristlikult parempoolset lähenemist.",
+  },
+  {
+    id: 2,
+    name: "S&D",
+    fullname: "Sotsialistide ja Demokraatide Progressiivne Allianss",
+    emoji: "🌹",
+    imageUrl: require("../../../data/images/groups/SD.png"),
+    value: "Sotsialism",
+    adjective: "sotsialistlik",
+    pluralAdjective: "sotsialistlikud",
+    explaination:
+      "Õiglasema maailma nimel, üks säuts korraga, nautides õiglase kaubanduse kohvi.",
+  },
+  {
+    id: 3,
+    name: "Uuenda",
+    fullname: "Uuenda Euroopat",
+    emoji: "🔄",
+    imageUrl: require("../../../data/images/groups/Renew.png"),
+    value: "Liberalism",
+    adjective: "liberaalne",
+    pluralAdjective: "liberaalsed",
+    explaination:
+      "Valmis oma idufirmat Brüsseli südames käivitama, pooldad innovatsiooni ja liberalismi, vaadates regulatsioone naeratusega.",
+  },
+  {
+    id: 4,
+    name: "Rohelised/EVA",
+    fullname: "Rohelised / Euroopa Vabaliit",
+    emoji: "🌿",
+    imageUrl: require("../../../data/images/groups/Greens.png"),
+    value: "Ökoloogia",
+    adjective: "ökoloogiline",
+    pluralAdjective: "ökoloogilised",
+    explaination:
+      "Planeedi päästmine, üks Zoomi koosolek korraga, sinu korduvkasutatav tass alati käeulatuses.",
+  },
+  {
+    id: 5,
+    name: "ECR",
+    fullname: "Euroopa Konservatiivid ja Reformistid",
+    emoji: "🦁",
+    imageUrl: require("../../../data/images/groups/ECR.png"),
+    value: "Konservatism",
+    adjective: "konservatiivne",
+    pluralAdjective: "konservatiivsed",
+    explaination:
+      "Kaitsete konservatiivseid väärtusi, toetades traditsioonide säilitamist, sotsiaalset stabiilsust ja madalamaid makse.",
+  },
+  {
+    id: 6,
+    name: "Vasakpoolsed",
+    fullname: "Euroopa Vasakpoolsete Grupp",
+    emoji: "💢",
+    imageUrl: require("../../../data/images/groups/GUE.png"),
+    value: "Radikalism",
+    adjective: "radikaalne",
+    pluralAdjective: "radikaalsed",
+    explaination:
+      "Esindad vasakpoolset vaadet, keskendudes töötajate õigustele, rikkuse õiglasele jaotusele ja progressiivsetele sotsiaalpoliitikatele.",
+  },
+  {
+    id: 7,
+    name: "ID",
+    fullname: "Identiteet ja Demokraatia",
+    emoji: "🆔",
+    imageUrl: require("../../../data/images/groups/ID.png"),
+    value: "Rahvuslus",
+    adjective: "rahvuslik",
+    pluralAdjective: "rahvuslikud",
+    explaination:
+      "Traditsioonide hoidja, erilise kiindumusega piiride vastu, eriti kui need on hästi suletud.",
+  },
+];

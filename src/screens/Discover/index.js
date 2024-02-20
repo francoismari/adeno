@@ -12,10 +12,17 @@ import BackgroundWrapper from "../../components/BackgroundWrapper";
 import MainHeader from "../../components/MainHeader";
 import CustomText from "../../components/CustomText";
 import { useNavigation } from "@react-navigation/native";
-import filesThemes from "../../../assets/data/files/filesThemes";
+import partners from "../../../assets/data/partners";
+import i18n from "../../languages/i18n";
+import { useUser } from "../../context/userContext";
+import getFilesThemes from "../../../assets/data/files/getFilesThemes";
 
 export default function Discover() {
   const navigation = useNavigation();
+
+  const { locale } = useUser();
+
+  i18n.locale = locale.userLocale;
 
   const handleShowAllFiles = () => {
     navigation.navigate("AllFiles");
@@ -29,9 +36,11 @@ export default function Discover() {
     Linking.openURL("https://www.youtube.com/@levieuxcontinent2400");
   };
 
+  const filesThemes = getFilesThemes(locale.userLocale);
+
   return (
     <BackgroundWrapper>
-      <MainHeader title={"Découvre l’UE"} emoji={"🇪🇺"} />
+      <MainHeader title={i18n.t("discoverEU.title")} emoji={"🇪🇺"} />
 
       <ScrollView
         contentContainerStyle={{ paddingBottom: 150 }}
@@ -44,7 +53,7 @@ export default function Discover() {
             marginBottom: 20,
             backgroundColor: "white",
             borderWidth: 3,
-            borderColor: "#6380E4",
+            borderColor: "#3C3DAC",
             paddingTop: 26,
             borderRadius: 26,
           }}
@@ -53,7 +62,7 @@ export default function Discover() {
             style={{
               marginTop: -40,
               alignSelf: "center",
-              backgroundColor: "#6380E4",
+              backgroundColor: "#5354E8",
               paddingHorizontal: 8,
               paddingVertical: 3,
               borderRadius: 10,
@@ -67,7 +76,7 @@ export default function Discover() {
                 fontFamily: "FrancoisOne",
               }}
             >
-              Les institutions 🇪🇺
+              {i18n.t("discoverEU.institutionsCard.title")}
             </CustomText>
           </View>
 
@@ -83,7 +92,7 @@ export default function Discover() {
               marginTop: 15,
             }}
           >
-            Découvrez les institutions européennes et leur fonctionnement !
+            {i18n.t("discoverEU.institutionsCard.subtitle")}
           </CustomText>
 
           {filesThemes.slice(0, 3).map((theme, index) => (
@@ -137,10 +146,10 @@ export default function Discover() {
                 alignSelf: "center",
                 marginVertical: 12,
                 textTransform: "uppercase",
-                color: "#6380E4",
+                color: "#3C3DAC",
               }}
             >
-              Tout afficher
+              {i18n.t("discoverEU.institutionsCard.showAllText")}
             </CustomText>
           </TouchableOpacity>
         </View>
@@ -152,7 +161,7 @@ export default function Discover() {
             marginBottom: 20,
             backgroundColor: "white",
             borderWidth: 3,
-            borderColor: "#FBD620",
+            borderColor: "#FBD51F",
             paddingTop: 26,
             borderRadius: 26,
           }}
@@ -161,7 +170,7 @@ export default function Discover() {
             style={{
               marginTop: -40,
               alignSelf: "center",
-              backgroundColor: "#FBD620",
+              backgroundColor: "#FBD51F",
               paddingHorizontal: 8,
               paddingVertical: 3,
               borderRadius: 10,
@@ -175,26 +184,33 @@ export default function Discover() {
                 fontFamily: "FrancoisOne",
               }}
             >
-              Engage-toi ✊
+              {i18n.t("discoverEU.commitCard.title")}
             </CustomText>
           </View>
 
-          <CustomText
+          <Image
+            source={require("../../../assets/images/les-engages.jpg")}
             style={{
+              height: 60,
+              width: 60,
+              borderRadius: 30,
               alignSelf: "center",
-              textAlign: "center",
-              marginHorizontal: 30,
-              fontFamily: "FrancoisOne",
-              lineHeight: 20,
-              fontSize: 17,
-              color: "#9B9B9B",
               marginTop: 15,
+              marginBottom: 10,
             }}
-          >
-            Découvre d'autres moyens de faire entendre ta voix
+          />
+
+          <CustomText style={{ marginHorizontal: 15, color: "gray" }}>
+            {i18n.t("discoverEU.commitCard.text")}
           </CustomText>
 
-          <TouchableOpacity>
+          <TouchableOpacity
+            onPress={() =>
+              Linking.openURL(
+                "https://www.helloasso.com/associations/association-les-engages/adhesions/les-engages-adhesion-2023-2024"
+              )
+            }
+          >
             <CustomText
               style={{
                 fontFamily: "FrancoisOne",
@@ -202,10 +218,10 @@ export default function Discover() {
                 alignSelf: "center",
                 marginVertical: 12,
                 textTransform: "uppercase",
-                color: "#FBD620",
+                color: "#F5D020",
               }}
             >
-              Rejoindre
+              {i18n.t("discoverEU.commitCard.joinButtonText")}
             </CustomText>
           </TouchableOpacity>
         </View>
@@ -240,25 +256,9 @@ export default function Discover() {
                 fontFamily: "FrancoisOne",
               }}
             >
-              Informe-toi 🗞️
+              {i18n.t("discoverEU.informCard.title")}
             </CustomText>
           </View>
-
-          {/* <CustomText
-            style={{
-              alignSelf: "center",
-              textAlign: "center",
-              marginHorizontal: 30,
-              fontFamily: "FrancoisOne",
-              lineHeight: 20,
-              fontSize: 17,
-              color: "#9B9B9B",
-              marginTop: 15,
-            }}
-          >
-            Découvre de nouveaux médias, plus jeunes, pour t'informer sur
-            l'Europe et l'actualité.
-          </CustomText> */}
 
           <Image
             source={require("../../../assets/images/le-vieux-continent.jpg")}
@@ -273,13 +273,7 @@ export default function Discover() {
           />
 
           <CustomText style={{ marginHorizontal: 15, color: "gray" }}>
-            Le Vieux Continent est un média en ligne dont l'objectif est
-            d’informer, et de diffuser la question européenne dans le débat
-            public. Nous sommes présents sur YouTube, TikTok et Instagram.{"\n"}
-            À cet effet, nous réalisons différents formats tels que des
-            interviews, micro-trottoirs, décryptages d’actualité, débats,
-            toujours autour de sujets européens. À partir d’avril 2024, nous
-            couvrirons les élections européennes en France de très près.
+            {i18n.t("discoverEU.informCard.text")}
           </CustomText>
 
           <TouchableOpacity onPress={handleOpenNews}>
@@ -293,7 +287,7 @@ export default function Discover() {
                 color: "#DB3366",
               }}
             >
-              Découvrir
+              {i18n.t("discoverEU.informCard.joinButtonText")}
             </CustomText>
           </TouchableOpacity>
         </View>
@@ -328,8 +322,29 @@ export default function Discover() {
                 fontFamily: "FrancoisOne",
               }}
             >
-              Nos partenaires
+              {i18n.t("discoverEU.partnerCard.title")}
             </CustomText>
+          </View>
+
+          <View style={{ marginHorizontal: 15 }}>
+            {partners.map((partner, index) => (
+              <View
+                style={{
+                  marginBottom: 10,
+                  flexDirection: "row",
+                  alignItems: "center",
+                }}
+              >
+                <Image
+                  source={partner.image}
+                  style={{ width: 50, height: 50, borderRadius: 25 }}
+                  resizeMode={"cover"}
+                />
+                <CustomText style={{ fontSize: 15, marginLeft: 10 }}>
+                  {partner.name}
+                </CustomText>
+              </View>
+            ))}
           </View>
         </View>
       </ScrollView>

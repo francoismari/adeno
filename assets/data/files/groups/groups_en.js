@@ -1,0 +1,86 @@
+export default [
+  {
+    id: 1,
+    name: "EPP",
+    fullname: "European People's Party",
+    emoji: "💙",
+    imageUrl: require("../../../data/images/groups/PPE.png"),
+    value: "Centrism",
+    adjective: "moderate",
+    pluralAdjective: "moderates",
+    explaination:
+      "You value unity and centrist democratic values, emphasizing a moderate and center-right approach.",
+  },
+  {
+    id: 2,
+    name: "S&D",
+    fullname: "Progressive Alliance of Socialists & Democrats",
+    emoji: "🌹",
+    imageUrl: require("../../../data/images/groups/SD.png"),
+    value: "Socialism",
+    adjective: "socialist",
+    pluralAdjective: "socialists",
+    explaination:
+      "For a fairer world, one tweet at a time, while sipping on fair-trade coffee.",
+  },
+  {
+    id: 3,
+    name: "Renew",
+    fullname: "Renew Europe",
+    emoji: "🔄",
+    imageUrl: require("../../../data/images/groups/Renew.png"),
+    value: "Liberalism",
+    adjective: "liberal",
+    pluralAdjective: "liberals",
+    explaination:
+      "Ready to launch your startup in the heart of Brussels, you advocate for innovation and liberalism, while smiling at regulations.",
+  },
+  {
+    id: 4,
+    name: "The Greens/EFA",
+    fullname: "Greens/European Free Alliance",
+    emoji: "🌿",
+    imageUrl: require("../../../data/images/groups/Greens.png"),
+    value: "Ecologism",
+    adjective: "green",
+    pluralAdjective: "greens",
+    explaination:
+      "Saving the planet, one Zoom conference at a time, with your reusable cup always within reach.",
+  },
+  {
+    id: 5,
+    name: "ECR",
+    fullname: "European Conservatives and Reformists",
+    emoji: "🦁",
+    imageUrl: require("../../../data/images/groups/ECR.png"),
+    value: "Conservatism",
+    adjective: "conservative",
+    pluralAdjective: "conservatives",
+    explaination:
+      "You defend conservative values, advocating for the preservation of traditions, social stability, and reduced taxation.",
+  },
+  {
+    id: 6,
+    name: "The Left",
+    fullname: "The Left in the European Parliament",
+    emoji: "💢",
+    imageUrl: require("../../../data/images/groups/GUE.png"),
+    value: "Radicalism",
+    adjective: "radical",
+    pluralAdjective: "radicals",
+    explaination:
+      "You represent a left-wing vision focused on workers' rights, fair redistribution of wealth, and progressive social policies.",
+  },
+  {
+    id: 7,
+    name: "ID",
+    fullname: "Identity and Democracy",
+    emoji: "🆔",
+    imageUrl: require("../../../data/images/groups/ID.png"),
+    value: "Nationalism",
+    adjective: "nationalist",
+    pluralAdjective: "nationalists",
+    explaination:
+      "Keeper of tradition, with a special fondness for borders, especially when they're well secured.",
+  },
+];

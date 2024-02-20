@@ -10,8 +10,11 @@ import {
 import React, { useState } from "react";
 import colors from "../../../../assets/colors";
 import { httpsCallable } from "firebase/functions";
-import { functions } from "../../../../firebase";
+import { functions } from "../../../../firebaseConfig";
 import { useNavigation } from "@react-navigation/native";
+import BackgroundWrapper from "../../../components/BackgroundWrapper";
+import CenteredHeader from "../../../components/CenteredHeader";
+import CustomText from "../../../components/CustomText";
 
 export default function JoinGame({ route }) {
   const { pseudo } = route.params;
@@ -24,13 +27,16 @@ export default function JoinGame({ route }) {
   const handleJoinRoom = () => {
     setIsJoiningRoom(true);
 
+    console.log(roomCode);
+    console.log(pseudo);
+
     if (roomCode !== "") {
       const joinRoomFunction = httpsCallable(functions, "joinRoom");
 
       joinRoomFunction({ roomCode: roomCode, pseudo: pseudo })
         .then((result) => {
           console.log(result.data);
-          navigation.navigate("Room", { roomCode: result.data });
+          navigation.navigate("Game", { roomCode: result.data });
         })
         .catch((error) => {
           console.error("Error joining room:", error.message);
@@ -50,30 +56,34 @@ export default function JoinGame({ route }) {
     }
   };
 
+  const handleGoBack = () => {
+    navigation.goBack();
+  };
+
   return (
-    <View style={{ flex: 1, backgroundColor: colors.mainBgColor }}>
-      <Text
+    <BackgroundWrapper>
+      <CenteredHeader handleGoBack={handleGoBack} />
+      <CustomText
         style={{
           marginTop: 60,
           textAlign: "center",
-          fontFamily: "Carena",
           fontSize: 30,
+          color: "white",
         }}
       >
-        Rejoindre un salon
-      </Text>
+        Rejoindre une partie
+      </CustomText>
 
-      <Text
+      <CustomText
         style={{
           fontSize: 20,
-          fontFamily: "Carena",
-          color: colors.mainPurple,
           textAlign: "center",
           marginTop: 50,
+          color: "white",
         }}
       >
         Code d'invitation
-      </Text>
+      </CustomText>
 
       <View style={{ marginHorizontal: 50, marginTop: 15, marginBottom: 20 }}>
         {/* <LinearGradient
@@ -86,15 +96,14 @@ export default function JoinGame({ route }) {
             }}
           > */}
         <TextInput
-          placeholder={"XHLPSM..."}
+          placeholder={"ABCDEF..."}
           value={roomCode}
           onChangeText={(text) => setRoomCode(text.toUpperCase())}
           style={{
-            borderRadius: 5,
+            borderRadius: 10,
             borderWidth: 1,
             borderColor: "transparent", // Make original border transparent
             padding: 14,
-            fontFamily: "Poppins-Regular",
             fontSize: 15,
             backgroundColor: "white", // Set background color to match your theme
           }}
@@ -105,18 +114,16 @@ export default function JoinGame({ route }) {
       <Pressable
         onPress={handleJoinRoom}
         style={{
-          width: 75,
-          height: 75,
-          borderRadius: 37.5,
-          backgroundColor: "#F2F2F2",
-          marginTop: 32,
+          marginHorizontal: 50,
           justifyContent: "center",
           alignItems: "center",
-          alignSelf: "center",
+          padding: 10,
+          backgroundColor: "#F6F6F6",
+          marginBottom: 20,
+          borderRadius: 15,
         }}
       >
-        {/* <NextIcon width={40} height={40} color={"black"} /> */}
-        <Text>Suivant</Text>
+        <CustomText style={{ fontSize: 27 }}>Rejoindre</CustomText>
       </Pressable>
 
       {isJoiningRoom && (
@@ -142,6 +149,6 @@ export default function JoinGame({ route }) {
           </View>
         </View>
       )}
-    </View>
+    </BackgroundWrapper>
   );
 }

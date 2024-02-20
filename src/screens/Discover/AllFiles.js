@@ -10,9 +10,12 @@ import React from "react";
 import BackgroundWrapper from "../../components/BackgroundWrapper";
 import CenteredHeader from "../../components/CenteredHeader";
 import CustomText from "../../components/CustomText";
-import filesThemes from "../../../assets/data/files/filesThemes";
+import getFilesThemes from "../../../assets/data/files/getFilesThemes";
+import { useUser } from "../../context/userContext";
 
 export default function AllFiles({ navigation }) {
+  const { locale } = useUser();
+
   const handleGoBack = () => {
     navigation.goBack();
   };
@@ -20,6 +23,8 @@ export default function AllFiles({ navigation }) {
   const handleGoToTheme = (theme) => {
     navigation.navigate("ThemeFiles", { theme });
   };
+
+  const filesThemes = getFilesThemes(locale.userLocale);
 
   return (
     <BackgroundWrapper>

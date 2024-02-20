@@ -1,18 +1,29 @@
 import React from "react";
 import { LinearGradient } from "expo-linear-gradient";
-import { View, StyleSheet } from "react-native";
+import { View, StyleSheet, Platform, StatusBar } from "react-native";
 import { useSafeAreaInsets } from "react-native-safe-area-context";
 
 const BackgroundWrapper = ({ children, style, disableTop, bottom }) => {
   const insets = useSafeAreaInsets();
 
+  // Adjust the top padding for Android to account for the status bar height,
+  // ensuring the gradient is visible in the safe area.
+  const topPadding = disableTop
+    ? 0
+    : Platform.OS === "android"
+    ? StatusBar.currentHeight
+    : insets.top;
+
+  // Optionally adjust bottom padding for Android if needed
+  const bottomPadding = bottom
+    ? Platform.OS === "android"
+      ? Math.max(insets.bottom, 16)
+      : insets.bottom
+    : 0;
+
   return (
     <LinearGradient
-      // colors={["#587CF9", "#000000", "#FBD51F"]}
-      // colors={["#587CF9", "#B08BFF", "#FBD51F"]}
       colors={["#5354E8", "#050675", "#000000"]}
-      // colors={["#B08BFF", "#000000", "#FBD51F"]}
-      // colors={["#587CF9", "#FBD51F"]}
       start={{ x: 0, y: 0 }}
       end={{ x: 1, y: 1 }}
       style={[styles.background, style]}
@@ -20,8 +31,8 @@ const BackgroundWrapper = ({ children, style, disableTop, bottom }) => {
       <View
         style={{
           ...styles.container,
-          paddingTop: disableTop ? 0 : insets.top,
-          paddingBottom: bottom ? insets.bottom : 0,
+          paddingTop: topPadding,
+          paddingBottom: bottomPadding,
         }}
       >
         {children}

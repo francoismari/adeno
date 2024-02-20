@@ -1,0 +1,86 @@
+export default [
+  {
+    id: 1,
+    name: "PPE",
+    fullname: "Partidul Popular European",
+    emoji: "💙",
+    imageUrl: require("../../../data/images/groups/PPE.png"),
+    value: "Centrism",
+    adjective: "moderat",
+    pluralAdjective: "moderați",
+    explaination:
+      "Aprecierea unității și valorilor democratice centriste, accentuând o abordare moderată și de centru-dreapta.",
+  },
+  {
+    id: 2,
+    name: "S&D",
+    fullname: "Alianța Progresistă a Socialiștilor și Democraților",
+    emoji: "🌹",
+    imageUrl: require("../../../data/images/groups/SD.png"),
+    value: "Socialism",
+    adjective: "socialist",
+    pluralAdjective: "socialiști",
+    explaination:
+      "Pentru o lume mai dreaptă, un tweet la un moment dat, savurând o cafea de comerț echitabil.",
+  },
+  {
+    id: 3,
+    name: "Renew",
+    fullname: "Renew Europe",
+    emoji: "🔄",
+    imageUrl: require("../../../data/images/groups/Renew.png"),
+    value: "Liberalism",
+    adjective: "liberal",
+    pluralAdjective: "liberali",
+    explaination:
+      "Pregătit să-ți lansezi start-up-ul în inima Bruxelles-ului, promovând inovația și liberalismul, privind reglementările cu un zâmbet.",
+  },
+  {
+    id: 4,
+    name: "Verzii/ALE",
+    fullname: "Verzii/Alianța Liberă Europeană",
+    emoji: "🌿",
+    imageUrl: require("../../../data/images/groups/Greens.png"),
+    value: "Ecologism",
+    adjective: "ecologic",
+    pluralAdjective: "ecologiști",
+    explaination:
+      "Salvarea planetei, o conferință Zoom la un timp, cu cana ta reutilizabilă mereu la îndemână.",
+  },
+  {
+    id: 5,
+    name: "ECR",
+    fullname: "Conservatorii și Reformiștii Europeni",
+    emoji: "🦁",
+    imageUrl: require("../../../data/images/groups/ECR.png"),
+    value: "Conservatorism",
+    adjective: "conservator",
+    pluralAdjective: "conservatori",
+    explaination:
+      "Apari valorile conservatoare, promovând păstrarea tradițiilor, stabilitatea socială și taxe mai mici.",
+  },
+  {
+    id: 6,
+    name: "Stânga",
+    fullname: "Grupul Stângii",
+    emoji: "💢",
+    imageUrl: require("../../../data/images/groups/GUE.png"),
+    value: "Radicalism",
+    adjective: "radical",
+    pluralAdjective: "radicali",
+    explaination:
+      "Reprezinți o viziune de stânga, concentrată pe drepturile lucrătorilor, distribuția echitabilă a bogăției și politicile sociale progresiste.",
+  },
+  {
+    id: 7,
+    name: "ID",
+    fullname: "Identitate și Democrație",
+    emoji: "🆔",
+    imageUrl: require("../../../data/images/groups/ID.png"),
+    value: "Naționalism",
+    adjective: "naționalist",
+    pluralAdjective: "naționaliști",
+    explaination:
+      "Păzitor al tradiției, cu o afecțiune specială pentru granițe, mai ales când sunt bine închise.",
+  },
+];

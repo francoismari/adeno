@@ -7,7 +7,6 @@ import SetupMultiplayer from "../screens/MultiplayerMode/SetupMultiplayer";
 import MultiplayerResults from "../screens/MultiplayerMode/MultiplayerResults";
 import MultiplayerQuestion from "../screens/MultiplayerMode/MultiplayerQuestion";
 import OnboardingScreen from "../screens/Onboarding";
-import MultiplayerResultsDetails from "../screens/MultiplayerMode/MultiplayerResultsDetails";
 import SelectSoloMode from "../screens/SoloMode/SelectSoloMode";
 import ExpressMode from "../screens/SoloMode/ExpressMode";
 import ClassicMode from "../screens/SoloMode/ClassicMode";
@@ -17,8 +16,17 @@ import AllFiles from "../screens/Discover/AllFiles";
 import ThemeFiles from "../screens/Discover/ThemeFiles";
 import SelectMultiplayerMode from "../screens/MultiplayerMode/SelectMultiplayerMode";
 import MultiplePhones from "../screens/MultiplayerMode/MultiplePhones";
+import JoinGame from "../screens/MultiplayerMode/MultiplePhones/JoinGame";
+import Game from "../screens/MultiplayerMode/MultiplePhones/Game";
 import RandomQuestionScreen from "../screens/SoloMode/RandomQuestionScreen";
 import ExpressResults from "../screens/SoloMode/ExpressResults";
+import MultiplePhonesQuestions from "../screens/MultiplayerMode/MultiplePhones/MultiplePhonesQuestions";
+import MultiplePhonesResults from "../screens/MultiplayerMode/MultiplePhones/MultiplePhonesResults";
+import ThemeQuestionScreen from "../screens/SoloMode/ThemeQuestionScreen";
+import GroupResultsDetails from "../screens/UserResults/GroupResultsDetails";
+import QuestionContext from "../screens/SoloMode/QuestionContext";
+import ScientificCouncil from "../screens/ScientificCouncil";
+import File from "../screens/Discover/File";
 
 const Stack = createStackNavigator();
 
@@ -28,7 +36,11 @@ function StackNavigator({ initialRouteName }) {
       screenOptions={{ headerShown: false }}
       initialRouteName={initialRouteName}
     >
-      <Stack.Screen name="Navigator" component={TabNavigator} />
+      <Stack.Screen
+        name="Navigator"
+        component={TabNavigator}
+        options={{ gestureEnabled: false }}
+      />
       <Stack.Screen name="Onboarding" component={OnboardingScreen} />
       <Stack.Screen name="SetupMultiplayer" component={SetupMultiplayer} />
       <Stack.Screen
@@ -47,6 +59,10 @@ function StackNavigator({ initialRouteName }) {
         component={RandomQuestionScreen}
       />
       <Stack.Screen
+        name="ThemeQuestionScreen"
+        component={ThemeQuestionScreen}
+      />
+      <Stack.Screen
         name="ExpressResults"
         component={ExpressResults}
         options={{ gestureEnabled: false }}
@@ -54,21 +70,34 @@ function StackNavigator({ initialRouteName }) {
 
       {/* Multiplayer Mode */}
       <Stack.Screen name="MultiplePhones" component={MultiplePhones} />
+      <Stack.Screen name="JoinGame" component={JoinGame} />
+      <Stack.Screen name="Game" component={Game} />
       <Stack.Screen name="MultiplayerResults" component={MultiplayerResults} />
+      <Stack.Screen
+        name="MultiplePhonesQuestions"
+        component={MultiplePhonesQuestions}
+      />
+      <Stack.Screen
+        name="MultiplePhonesResults"
+        component={MultiplePhonesResults}
+      />
 
       <Stack.Screen name="AllFiles" component={AllFiles} />
       <Stack.Screen name="ThemeFiles" component={ThemeFiles} />
+      <Stack.Screen name="File" component={File} />
       {/* <Stack.Screen name="Home" component={Home} /> */}
       <Stack.Group screenOptions={{ presentation: "modal" }}>
         <Stack.Screen name="Settings" component={Settings} />
         <Stack.Screen name="AllUserResults" component={AllUserResults} />
-
         <Stack.Screen
-          name="MultiplayerResultsDetails"
-          component={MultiplayerResultsDetails}
+          name="GroupResultsDetails"
+          component={GroupResultsDetails}
         />
+
         <Stack.Screen name="UserResults" component={UserResults} />
         <Stack.Screen name="SetStudyInfos" component={SetStudyInfos} />
+        <Stack.Screen name="QuestionContext" component={QuestionContext} />
+        <Stack.Screen name="ScientificCouncil" component={ScientificCouncil} />
       </Stack.Group>
     </Stack.Navigator>
   );

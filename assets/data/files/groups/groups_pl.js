@@ -1,0 +1,86 @@
+export default [
+  {
+    id: 1,
+    name: "EPL",
+    fullname: "Europejska Partia Ludowa",
+    emoji: "💙",
+    imageUrl: require("../../../data/images/groups/PPE.png"),
+    value: "Centryzm",
+    adjective: "umiarkowany",
+    pluralAdjective: "umiarkowani",
+    explaination:
+      "Cenisz jedność i centrowe wartości demokratyczne, podkreślając umiarkowane i centrowo-prawicowe podejście.",
+  },
+  {
+    id: 2,
+    name: "S&D",
+    fullname: "Postępowy Sojusz Socjalistów i Demokratów",
+    emoji: "🌹",
+    imageUrl: require("../../../data/images/groups/SD.png"),
+    value: "Socjalizm",
+    adjective: "socjalistyczny",
+    pluralAdjective: "socjaliści",
+    explaination:
+      "Dla sprawiedliwszego świata, jeden tweet na raz, popijając sprawiedliwą kawę handlową.",
+  },
+  {
+    id: 3,
+    name: "Renew",
+    fullname: "Odnowa Europy",
+    emoji: "🔄",
+    imageUrl: require("../../../data/images/groups/Renew.png"),
+    value: "Liberalizm",
+    adjective: "liberalny",
+    pluralAdjective: "liberałowie",
+    explaination:
+      "Gotów na uruchomienie swojego start-upu w sercu Brukseli, promujesz innowacje i liberalizm, obserwując regulacje z uśmiechem.",
+  },
+  {
+    id: 4,
+    name: "Zieloni-EFA",
+    fullname: "Zieloni - Wolny Sojusz Europejski",
+    emoji: "🌿",
+    imageUrl: require("../../../data/images/groups/Greens.png"),
+    value: "Ekologizm",
+    adjective: "ekologiczny",
+    pluralAdjective: "ekolodzy",
+    explaination:
+      "Ratowanie planety, jedna wideokonferencja Zoom na raz, zawsze z wielokrotnego użytku kubkiem pod ręką.",
+  },
+  {
+    id: 5,
+    name: "EKR",
+    fullname: "Europejscy Konserwatyści i Reformatorzy",
+    emoji: "🦁",
+    imageUrl: require("../../../data/images/groups/ECR.png"),
+    value: "Konserwatyzm",
+    adjective: "konserwatywny",
+    pluralAdjective: "konserwatyści",
+    explaination:
+      "Bronisz wartości konserwatywnych, opowiadając się za zachowaniem tradycji, stabilnością społeczną i niższymi podatkami.",
+  },
+  {
+    id: 6,
+    name: "Lewica",
+    fullname: "Grupa Lewicy w Parlamencie Europejskim",
+    emoji: "💢",
+    imageUrl: require("../../../data/images/groups/GUE.png"),
+    value: "Radykalizm",
+    adjective: "radykalny",
+    pluralAdjective: "radykałowie",
+    explaination:
+      "Reprezentujesz lewicową perspektywę, skoncentrowaną na prawach pracowniczych, sprawiedliwym podziale bogactwa i postępowej polityce społecznej.",
+  },
+  {
+    id: 7,
+    name: "ID",
+    fullname: "Tożsamość i Demokracja",
+    emoji: "🆔",
+    imageUrl: require("../../../data/images/groups/ID.png"),
+    value: "Nacjonalizm",
+    adjective: "nacjonalistyczny",
+    pluralAdjective: "nacjonaliści",
+    explaination:
+      "Strażnik tradycji, ze szczególnym upodobaniem do granic, zwłaszcza gdy są dobrze zamknięte.",
+  },
+];

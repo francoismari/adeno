@@ -7,20 +7,22 @@ export default function CenteredHeader({ handleGoBack, title, subtitle }) {
   return (
     <View style={styles.headerContainer}>
       <View style={styles.backButtonContainer}>
-        <BackButton handleGoBack={handleGoBack} />
+        {handleGoBack && <BackButton handleGoBack={handleGoBack} />}
       </View>
       <View style={styles.titleContainer}>
-        <CustomText
-          style={[
-            styles.title,
-            {
-              fontSize: subtitle ? 30 : 40,
-              paddingTop: subtitle ? 20 : Platform.OS == "android" ? 30 : 0,
-            },
-          ]}
-        >
-          {title}
-        </CustomText>
+        {title && (
+          <CustomText
+            style={[
+              styles.title,
+              {
+                fontSize: subtitle ? 27 : 27,
+                paddingTop: subtitle ? 20 : Platform.OS == "android" ? 30 : 0,
+              },
+            ]}
+          >
+            {title}
+          </CustomText>
+        )}
         {subtitle && <Text style={styles.subtitle}>{subtitle}</Text>}
       </View>
       <View style={styles.spacer} />
@@ -33,7 +35,7 @@ const styles = StyleSheet.create({
     flexDirection: "row",
     alignItems: "center",
     height: 85, // Adjust the height as needed
-    paddingBottom: 10
+    paddingBottom: 10,
   },
   backButtonContainer: {
     flex: 1,

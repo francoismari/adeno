@@ -14,8 +14,10 @@ import AsyncStorage from "@react-native-async-storage/async-storage";
 import { useNavigation } from "@react-navigation/native";
 import { Ionicons, AntDesign } from "@expo/vector-icons";
 import Start from "./Start";
+import Tutorial from "./Tutorial";
 import CustomText from "../../components/CustomText";
 import NextButton from "../../components/NextButton";
+import i18n from "../../languages/i18n";
 
 const translations = [
   "Willkommen auf", // German
@@ -56,33 +58,25 @@ export default function Onboarding() {
   const fadeAnim = useRef(new Animated.Value(1)).current; // Define the animated value
 
   useEffect(() => {
-    // When currentPage changes, animate the fadeAnim
-    if (currentPage === 1) {
-      Animated.timing(fadeAnim, {
-        toValue: 0,
-        duration: 70,
-        useNativeDriver: true,
-      }).start();
-    } else {
-      Animated.timing(fadeAnim, {
-        toValue: 1,
-        duration: 200,
-        useNativeDriver: true,
-      }).start();
-    }
+    // Adjust the fadeAnim based on currentPage to hide the Next button on the last page
+    const targetOpacity = currentPage < 2 ? 1 : 0; // Hide on last page
+    Animated.timing(fadeAnim, {
+      toValue: targetOpacity,
+      duration: 200,
+      useNativeDriver: true,
+    }).start();
   }, [currentPage]);
 
   const handleScroll = (event) => {
     const { contentOffset } = event.nativeEvent;
     const viewSize = event.nativeEvent.layoutMeasurement.width;
-
-    // Calculate current page
     const pageNum = Math.floor(contentOffset.x / viewSize);
     setCurrentPage(pageNum);
   };
 
   const handleNextButton = () => {
     if (currentPage < 2) {
+      // Adjust this to reflect the index of the last page
       scrollViewRef.current.scrollTo({
         x: (currentPage + 1) * width,
         animated: true,
@@ -102,104 +96,23 @@ export default function Onboarding() {
         style={styles.container}
       >
         <FirstPage />
-
-        {/* <FifthPage /> */}
+        <View style={{ width }}>
+          <Tutorial />
+        </View>
         <View style={{ width }}>
           <Start />
         </View>
       </ScrollView>
-      {/* {currentPage < 5 && ( */}
-      <Animated.View
-        style={{ opacity: fadeAnim }}
-        pointerEvents={currentPage === 1 ? "none" : "auto"}
-      >
-        <NextButton onPress={handleNextButton} />
-      </Animated.View>
-      {/* )} */}
+
+      {/* Adjust the visibility of the NextButton based on currentPage */}
+      {currentPage < 2 && (
+        <Animated.View style={{ opacity: fadeAnim }}>
+          <NextButton onPress={handleNextButton} />
+        </Animated.View>
+      )}
     </BackgroundWrapper>
   );
 }
-
-// const NextButton = ({ onPress, ...props }) => {
-//   const scaleAnim = useRef(new Animated.Value(1)).current;
-
-//   const handlePressIn = () => {
-//     Animated.timing(scaleAnim, {
-//       toValue: 0.9,
-//       duration: 100,
-//       useNativeDriver: true,
-//     }).start();
-//   };
-
-//   const handlePressOut = () => {
-//     Animated.timing(scaleAnim, {
-//       toValue: 1,
-//       duration: 100,
-//       useNativeDriver: true,
-//     }).start();
-//   };
-
-//   const renderDottedCircle = (radius, dots, dotSize) => {
-//     const angleStep = (2 * Math.PI) / dots;
-
-//     return (
-//       <View
-//         style={{
-//           width: 2 * radius,
-//           height: 2 * radius,
-//           position: "relative",
-//           alignItems: "center",
-//           justifyContent: "center",
-//         }}
-//       >
-//         <AntDesign name="arrowright" size={35} color={"white"} />
-//       </View>
-//     );
-//   };
-
-//   return (
-//     <Pressable
-//       onPressIn={handlePressIn}
-//       onPressOut={handlePressOut}
-//       onPress={onPress}
-//     >
-//       <Animated.View
-//         {...props}
-//         style={[
-//           {
-//             position: "absolute",
-//             bottom: 60,
-//             height: 80,
-//             width: 80,
-//             alignSelf: "center",
-//             padding: 10,
-//             borderRadius: 45,
-//             backgroundColor: "#233D97",
-//             justifyContent: "center",
-//             alignItems: "center",
-
-//             transform: [{ scale: scaleAnim }],
-
-//             borderWidth: 1,
-//             borderColor: "#ddd",
-//             // padding: 5,
-//             shadowColor: "#000",
-//             shadowOffset: {
-//               width: 0,
-//               height: 2,
-//             },
-//             shadowOpacity: 0.25,
-//             shadowRadius: 3.84,
-
-//             elevation: 5,
-//           },
-//         ]}
-//       >
-//         {renderDottedCircle(34, 30, 1)}
-//       </Animated.View>
-//     </Pressable>
-//   );
-// };
 
 const FirstPage = () => {
   const [index, setIndex] = useState(0);
@@ -273,7 +186,7 @@ const FirstPage = () => {
           marginHorizontal: 20,
         }}
       >
-        L'app pour te faire voter aux élections européennes de 2024 !
+        {i18n.t("onboarding.firstScreen.subtitle")}
       </CustomText>
 
       <View style={{ width: "85%", alignSelf: "center", marginTop: 30 }}>
@@ -303,7 +216,7 @@ const FirstPage = () => {
               width: "80%",
             }}
           >
-            Le premier jeu de soirée pour t'intéresser à la politique
+            {i18n.t("onboarding.firstScreen.firstRow")}
           </CustomText>
         </View>
 
@@ -335,8 +248,7 @@ const FirstPage = () => {
               width: "85%",
             }}
           >
-            Trouve ta tête de liste avec le mode solo et découvre le classement
-            global !
+            {i18n.t("onboarding.firstScreen.secondRow")}
           </CustomText>
         </View>
         <View
@@ -367,7 +279,7 @@ const FirstPage = () => {
               width: "85%",
             }}
           >
-            Disponible dans les 27 pays de l'UE, et traduite en 23 langues
+            {i18n.t("onboarding.firstScreen.thirdRow")}
           </CustomText>
         </View>
       </View>
