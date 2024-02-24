@@ -12,6 +12,7 @@ import CustomText from "../../components/CustomText";
 import { signInAnonymously } from "firebase/auth";
 import { auth } from "../../../firebaseConfig";
 import { useUser } from "../../context/userContext";
+import i18n from "../../languages/i18n";
 
 export default function Start() {
   const navigation = useNavigation();
@@ -25,6 +26,14 @@ export default function Start() {
     setUser(user);
 
     navigation.navigate("Navigator");
+  };
+
+  const handleOpenPrivacyCharter = () => {
+    navigation.navigate("PrivacyCharter");
+  };
+
+  const handleOpenTransparencyCharter = () => {
+    navigation.navigate("TransparencyCharter");
   };
 
   return (
@@ -45,8 +54,7 @@ export default function Start() {
           marginTop: 10,
         }}
       >
-        Avant de commencer...
-        {/* {i18n.t("onboardingScreen.firstScreen.mainTitle")} */}
+        {i18n.t("onboarding.thirdScreen.title")}
       </CustomText>
       <View style={{ marginHorizontal: 20, marginTop: 20 }}>
         <View>
@@ -58,14 +66,14 @@ export default function Start() {
               lineHeight: 20,
             }}
           >
-            Nous ne collectons aucune donnée personnelle.
+            {i18n.t("onboarding.thirdScreen.firstRow.title")}
           </CustomText>
         </View>
         <CustomText style={{ color: "white", fontSize: 15, marginTop: 5 }}>
-          Toutes les données utilisées dans l'app sont anonymes, et sont limités
-          au strict nécessaire pour le bon fonctionnement de l'app !
+          {i18n.t("onboarding.thirdScreen.firstRow.description")}
         </CustomText>
         <TouchableOpacity
+          onPress={() => handleOpenPrivacyCharter()}
           style={{
             flexDirection: "row",
             alignItems: "center",
@@ -78,7 +86,7 @@ export default function Start() {
           }}
         >
           <CustomText style={{ fontSize: 15, color: "white" }}>
-            Lire notre charte sur la vie privée
+            {i18n.t("onboarding.thirdScreen.firstRow.readChart")}
           </CustomText>
         </TouchableOpacity>
       </View>
@@ -93,7 +101,7 @@ export default function Start() {
               lineHeight: 20,
             }}
           >
-            Adeno est apartisane, neutre, et transparente.
+            {i18n.t("onboarding.thirdScreen.secondRow.title")}
           </Text>
         </View>
         <Text
@@ -104,11 +112,11 @@ export default function Start() {
             marginTop: 5,
           }}
         >
-          Toutes les données utilisées dans l'app sont anonymes, et sont limités
-          au strict nécessaire pour le bon fonctionnement de l'app !
+          {i18n.t("onboarding.thirdScreen.secondRow.description")}
         </Text>
 
         <TouchableOpacity
+          onPress={() => handleOpenTransparencyCharter()}
           style={{
             flexDirection: "row",
             alignItems: "center",
@@ -121,7 +129,7 @@ export default function Start() {
           }}
         >
           <CustomText style={{ fontSize: 15, color: "white" }}>
-            Lire notre charte sur la transparence
+            {i18n.t("onboarding.thirdScreen.secondRow.readChart")}
           </CustomText>
         </TouchableOpacity>
       </View>
@@ -140,9 +148,7 @@ export default function Start() {
               lineHeight: 15,
             }}
           >
-            Adeno est un projet citoyen, créé par une équipe de bénévoles, sans
-            vocation lucrative, qui n'a pour objectif que d'aller te faire voter
-            !
+            {i18n.t("onboarding.thirdScreen.footerText")}
           </Text>
         </View>
         <Text
@@ -154,7 +160,7 @@ export default function Start() {
             marginTop: 5,
           }}
         >
-          PS : nous sommes open-source ✌️
+          {i18n.t("onboarding.thirdScreen.psText")}
         </Text>
       </View>
 
@@ -186,7 +192,7 @@ const StartButton = ({ onPress }) => {
           color: "white",
         }}
       >
-        C'est parti !
+        {i18n.t("onboarding.thirdScreen.startButton")}
       </CustomText>
     </Pressable>
   );

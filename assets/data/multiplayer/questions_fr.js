@@ -418,7 +418,7 @@ export default [
     theme: 11,
   },
   {
-    text: "Faut-il établir un contrôle strict des parlements nationaux sur le parlement européen?",
+    text: "Faut-il établir un contrôle strict des parlements nationaux sur le Parlement européen?",
     choices: {
       for: [7, 7, 2], // Populiste / Nationaliste / Socialiste
       against: [3, 4, 6], // Libéral / Ecologiste / Anticapitaliste
@@ -427,7 +427,7 @@ export default [
     theme: 11,
   },
   {
-    text: "Faudrait-il des tête de liste au niveau européen pour les élections?",
+    text: "Faudrait-il des têtes de liste au niveau européen pour les élections?",
     choices: {
       for: [3, 4, 1, 2], // Libéral / Ecologiste / Conservateur / Socialiste
       against: [7, 7, 6], // Populiste / Nationaliste / Anticapitaliste

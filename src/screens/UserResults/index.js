@@ -1,6 +1,5 @@
 import {
   View,
-  Text,
   StyleSheet,
   Image,
   FlatList,
@@ -25,6 +24,10 @@ export default function UserResults({ route }) {
 
   const showDetailedResults = (group) => {
     navigation.navigate("GroupResultsDetails", { group });
+  };
+
+  const handleShareResults = () => {
+    navigation.navigate("ShareResults", { favoriteGroups });
   };
 
   return (
@@ -52,7 +55,7 @@ export default function UserResults({ route }) {
           source={require("../../../assets/icon.png")}
         />
         <CustomText style={{ color: "white", fontSize: 17, marginLeft: 10 }}>
-          Avec Adeno
+          {i18n.t("allUserResults.withAdeno")}
         </CustomText>
       </View>
 
@@ -108,6 +111,7 @@ export default function UserResults({ route }) {
               </CustomText>
             </View>
             <TouchableOpacity
+              onPress={handleShareResults}
               style={{
                 alignSelf: "center",
                 padding: 10,

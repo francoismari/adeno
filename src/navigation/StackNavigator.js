@@ -27,6 +27,9 @@ import GroupResultsDetails from "../screens/UserResults/GroupResultsDetails";
 import QuestionContext from "../screens/SoloMode/QuestionContext";
 import ScientificCouncil from "../screens/ScientificCouncil";
 import File from "../screens/Discover/File";
+import PrivacyCharter from "../screens/Onboarding/PrivacyCharter";
+import TransparencyCharter from "../screens/Onboarding/TransparencyCharter";
+import ShareResults from "../screens/UserResults/ShareResults";
 
 const Stack = createStackNavigator();
 
@@ -98,6 +101,12 @@ function StackNavigator({ initialRouteName }) {
         <Stack.Screen name="SetStudyInfos" component={SetStudyInfos} />
         <Stack.Screen name="QuestionContext" component={QuestionContext} />
         <Stack.Screen name="ScientificCouncil" component={ScientificCouncil} />
+        <Stack.Screen name="PrivacyCharter" component={PrivacyCharter} />
+        <Stack.Screen
+          name="TransparencyCharter"
+          component={TransparencyCharter}
+        />
+        <Stack.Screen name="ShareResults" component={ShareResults} />
       </Stack.Group>
     </Stack.Navigator>
   );

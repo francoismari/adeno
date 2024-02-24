@@ -1,11 +1,11 @@
 import {
   View,
-  Text,
   ScrollView,
   StyleSheet,
   TouchableOpacity,
-  Image,
-  Dimensions,
+  Alert,
+  Share,
+  Platform,
 } from "react-native";
 import React, { useEffect, useState } from "react";
 import BackgroundWrapper from "../../components/BackgroundWrapper";
@@ -23,18 +23,33 @@ export default function Ranking() {
   const [translatedCountries, setTranslatedCountries] = useState([]);
 
   useEffect(() => {
-    setTranslatedCountries(getCountries()); // Call getCountries to fetch translated countries list
-  }, [locale]); // Dependency array includes locale to trigger re-render when locale changes
+    setTranslatedCountries(getCountries());
+  }, [locale]);
 
   const userCountry = translatedCountries.find(
     (country) => country.code === locale.userLocale
   );
 
+  const handleShareApp = async () => {
+    try {
+      await Share.share({
+        message: `Install Adeno on the ${
+          Platform.OS === "ios" ? "App Store" : "Google Play"
+        } and get your results for the 2024 European elections! https://linktr.ee/adeno.eu`,
+      });
+    } catch (error) {
+      Alert.alert(
+        "Erreur",
+        "Erreur lors du partage d'Adeno, veuillez réessayer."
+      );
+    }
+  };
+
   console.log("USER COUTNRY:  ", userCountry);
 
   return (
     <BackgroundWrapper>
-      <MainHeader title={i18n.t('ranking.title')} emoji={"🏅"} />
+      <MainHeader title={i18n.t("ranking.title")} emoji={"🏅"} />
       <ScrollView
         contentContainerStyle={{ paddingBottom: 150 }}
         showsVerticalScrollIndicator={false}
@@ -80,7 +95,10 @@ export default function Ranking() {
                 : "Le classement dans ton pays sera bientôt disponible ! Partage Adeno à tes amis pour que celui-ci soit le plus représentatif 😎"}
             </CustomText>
 
-            <TouchableOpacity style={{ marginBottom: 17, marginTop: 10 }}>
+            <TouchableOpacity
+              onPress={() => handleShareApp()}
+              style={{ marginBottom: 17, marginTop: 10 }}
+            >
               <CustomText
                 style={{
                   fontFamily: "FrancoisOne",
@@ -91,13 +109,16 @@ export default function Ranking() {
                   // marginTop: 10,
                 }}
               >
-                {i18n.t('ranking.shareAppText')}
+                {i18n.t("ranking.shareAppText")}
               </CustomText>
             </TouchableOpacity>
           </View>
         </CardWrapper>
 
-        <CardWrapper title={`${i18n.t("ranking.europeCard.title")} 🇪🇺`} color={"#5354E8"}>
+        <CardWrapper
+          title={`${i18n.t("ranking.europeCard.title")} 🇪🇺`}
+          color={"#5354E8"}
+        >
           <Podium />
           <View style={{ marginTop: -125 }}>
             <View
@@ -134,7 +155,10 @@ export default function Ranking() {
             </CustomText>
           </View>
 
-          <TouchableOpacity style={{ marginBottom: 17, marginTop: 10 }}>
+          <TouchableOpacity
+            onPress={() => handleShareApp()}
+            style={{ marginBottom: 17, marginTop: 10 }}
+          >
             <CustomText
               style={{
                 fontFamily: "FrancoisOne",
@@ -145,7 +169,7 @@ export default function Ranking() {
                 // marginTop: 10,
               }}
             >
-              Partager Adeno
+              {i18n.t("ranking.shareAppText")}
             </CustomText>
           </TouchableOpacity>
         </CardWrapper>

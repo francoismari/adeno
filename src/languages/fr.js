@@ -29,10 +29,10 @@ export default {
           "Toutes les données utilisées dans l'app sont anonymes, et sont limités au strict nécessaire pour le bon fonctionnement de l'app !",
         readChart: "Lire notre charte sur la vie privée",
       },
-      firstRow: {
+      secondRow: {
         title: "Adeno est apartisane, neutre, et transparente.",
         description:
-          "Toutes les données utilisées dans l'app sont anonymes, et sont limités au strict nécessaire pour le bon fonctionnement de l'app !",
+          "Adeno n'est lié à aucun organisme gouvernemental et est un projet entieremment indépendant.",
         readChart: "Lire notre charte sur la transparence",
       },
       startButton: "C'est parti !",
@@ -46,11 +46,11 @@ export default {
     startButtonText: "Commencer",
     multiplayerCard: {
       title: "Mode multijoueur 🎮",
-      subtitle: "Commence une partie et challenge\ntes potes !",
+      subtitle: "Commence une partie\net challenge tes potes !",
     },
     soloCard: {
       title: "Mode solo 🎯",
-      subtitle: "2 modes & 100 questions pour trouver\nta tête de liste !",
+      subtitle: "2 modes & 100 questions\npour trouver ta tête de liste !",
     },
     headListCard: {
       title: "Ma tête de liste 🇪🇺",
@@ -94,8 +94,13 @@ export default {
       title: "Nos partenaires",
     },
   },
+  allFiles: {
+    title: "Les fiches",
+    subtitle: "Pour tout comprendre sur l'UE !",
+  },
   allUserResults: {
     title: "Mes résultats",
+    withAdeno: "Avec Adeno",
     inSummaryTitle: "En bref",
     shareMyResults: "Partager mes résultats",
     seeMoreText: "Voir plus",
@@ -104,7 +109,7 @@ export default {
     title: "Mode solo",
     expressCard: {
       title: "Mode express ⏱️",
-      subtitle: "20 questions pour trouver\nta tête de liste !",
+      subtitle: "30 questions pour trouver\nta tête de liste !",
     },
     classicCard: {
       title: "Mode classique 🗳️",
@@ -112,9 +117,32 @@ export default {
         "Réponds à 100 questions, et trouve un résultat adapté à tes convictions !",
     },
   },
+  expressMode: {
+    title: "Mode express",
+    cardTitle:
+      "Trouve le groupe qui te correspond en répondant à 30 questions !",
+    warningText:
+      "Attention : pour des résultats plus fiables et des questions sur des sujets plus précis, utilise le mode classique !",
+    letsGoText: "C'est parti",
+  },
+  expressResults: {
+    title: "Mon résultat",
+    inSummaryTitle: "En bref",
+    continueWithClassicMode: "Continuer avec le mode classique",
+    goBack: "Retour",
+  },
+  classicMode: {
+    randomCard: {
+      title: "Aléatoire",
+      subtitle: "Tous les thèmes",
+    },
+  },
   randomQuestionScreen: {
     title: "Aléatoire",
     showContextText: "Afficher le contexte",
+    allQuestionsAnswered: "Tu as répondu à toutes les questions !",
+    showResultsText: "Afficher mes résultats",
+    goBack: "Retour",
   },
   contextScreen: {
     title: "Le contexte",
@@ -176,8 +204,8 @@ export default {
   multiplayerResults: {
     title: "Les résultats",
     youAreTheMost: "tu es le +",
-    youMatch: "Tu matches à",
-    withList: "avec la liste de",
+    youMatch: "Tu te rapproches à",
+    withList: "de la liste de",
     seeNext: "Voir le suivant",
     resultsFooter: {
       anotherRound: "Un autre tour ?",
@@ -214,14 +242,31 @@ export default {
     se: "Suède",
     uk: "Royaume-Uni",
   },
+  setStudyInfos: {
+    title: "Participe à la plus grande étude sur l'Europe !",
+  },
   settingsScreen: {
     title: "Réglages",
     multiplayerCard: {
       title: "Mode multijoueur",
+      timeByQuestionText: "Temps de réponse par question",
+      setTimeByQuestionModal: {
+        title: "Modifier le temps",
+        saveButton: "Enregistrer",
+      },
     },
     soloCard: {
       title: "Mode solo",
       resetResultsText: "Réinitialiser mes résultats",
+      studyInfos: {
+        title: "Participe à la grande étude des jeunes en Europe",
+        description:
+          "Tes réponses aux questions du mode solo seront enregistrées de manière anonyme, et permettront de réaliser une grande étude sur les comportements éléctoraux des jeunes en Europe, supervisée par un",
+        council:
+          "conseil scientifique de professeurs, chercheurs, et intellectuels",
+        startButtonText: "Répondre à l'étude",
+        userParticipates: "Tu participes à la grande étude sur l'Europe !",
+      },
     },
     createdByCard: {
       title: "Créée par",
@@ -237,6 +282,10 @@ export default {
     },
     teamCard: {
       title: "L'équipe",
+    },
+    contactCard: {
+      title: "Nous contacter",
+      text: "Tu peux nous contacter sur",
     },
     allRightsReserved: "tous droits réservés",
   },

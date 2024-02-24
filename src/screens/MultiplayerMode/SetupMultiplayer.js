@@ -158,7 +158,7 @@ const PlayersList = ({ players, setPlayers, setModalVisible }) => {
         ListEmptyComponent={() => (
           <View
             style={{
-              marginTop: "30%",
+              marginTop: "20%",
               justifyContent: "center",
               alignItems: "center",
             }}

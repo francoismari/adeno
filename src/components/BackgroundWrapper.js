@@ -6,15 +6,12 @@ import { useSafeAreaInsets } from "react-native-safe-area-context";
 const BackgroundWrapper = ({ children, style, disableTop, bottom }) => {
   const insets = useSafeAreaInsets();
 
-  // Adjust the top padding for Android to account for the status bar height,
-  // ensuring the gradient is visible in the safe area.
   const topPadding = disableTop
     ? 0
     : Platform.OS === "android"
     ? StatusBar.currentHeight
     : insets.top;
 
-  // Optionally adjust bottom padding for Android if needed
   const bottomPadding = bottom
     ? Platform.OS === "android"
       ? Math.max(insets.bottom, 16)

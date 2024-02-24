@@ -18,7 +18,7 @@ export default {
       soloBox: {
         title: "Solo mode",
         description:
-          "Answer 100 questions on 10 themes and get an opinion on the main groups in the European parliaments! You will also see which list leader you match in your country.",
+          "Answer 100 questions on 10 themes and get an opinion on the main groups in the European parliaments! You will also see which list leader you correspond to in your country.",
       },
     },
     thirdScreen: {
@@ -32,7 +32,7 @@ export default {
       secondRow: {
         title: "Adeno is non-partisan, neutral, and transparent.",
         description:
-          "All data used in the app is anonymous, and is limited to what is strictly necessary for the app to function properly!",
+          "Adeno is not linked with any governement entity and is fully independant.",
         readChart: "Read our transparency charter",
       },
       startButton: "Let's go!",
@@ -93,8 +93,13 @@ export default {
       title: "Our partners",
     },
   },
+  allFiles: {
+    title: "The Fact Sheets",
+    subtitle: "To understand everything about the EU!",
+  },
   allUserResults: {
     title: "My results",
+    withAdeno: "With Adeno",
     inSummaryTitle: "In summary",
     shareMyResults: "Share my results",
     seeMoreText: "See more",
@@ -103,17 +108,39 @@ export default {
     title: "Solo Mode",
     expressCard: {
       title: "Express Mode ⏱️",
-      subtitle: "20 questions to find\nyour top pick!",
+      subtitle: "30 questions to find\nyour top pick!",
     },
     classicCard: {
       title: "Classic Mode 🗳️",
       subtitle:
-        "Answer 100 questions, and find a result that matche your beliefs!",
+        "Answer 100 questions, and find a result that correspond to your beliefs!",
+    },
+  },
+  expressMode: {
+    title: "Express Mode",
+    cardTitle: "Find the group that suits you by answering 30 questions!",
+    warningText:
+      "Warning: for more reliable results and questions on more specific topics, use the classic mode!",
+    letsGoText: "Let's go",
+  },
+  expressResults: {
+    title: "My result",
+    inSummaryTitle: "In summary",
+    continueWithClassicMode: "Continue with classic mode",
+    goBack: "Go back",
+  },
+  classicMode: {
+    randomCard: {
+      title: "Random",
+      subtitle: "All themes",
     },
   },
   randomQuestionScreen: {
     title: "Random",
     showContextText: "Show context",
+    allQuestionsAnswered: "You have answered all the questions!",
+    showResultsText: "View my results",
+    goBack: "Go back",
   },
   contextScreen: {
     title: "The context",
@@ -175,8 +202,8 @@ export default {
   multiplayerResults: {
     title: "The results",
     youAreTheMost: "you are the most",
-    youMatch: "You match",
-    withList: "with the list of",
+    youMatch: "You are close to",
+    withList: "to the list of",
     seeNext: "See next",
     resultsFooter: {
       anotherRound: "Another round?",
@@ -213,14 +240,31 @@ export default {
     se: "Sweden",
     uk: "United Kingdom",
   },
+  setStudyInfos: {
+    title: "Participate in the largest study on Europe!",
+  },
   settingsScreen: {
     title: "Settings",
     multiplayerCard: {
       title: "Multiplayer Mode",
+      timeByQuestionText: "Time duration by question",
+      setTimeByQuestionModal: {
+        title: "Edit time",
+        saveButton: "Save",
+      },
     },
     soloCard: {
       title: "Solo Mode",
       resetResultsText: "Reset my results",
+      studyInfos: {
+        title: "Participate in the major study of young people in Europe",
+        description:
+          "Your responses to the solo mode questions will be recorded anonymously, and will contribute to a major study on the voting behaviors of young people in Europe, supervised by a",
+        council:
+          "scientific council of professors, researchers, and intellectuals",
+        startButtonText: "Join the study",
+        userParticipates: "You are participating in the major study on Europe!",
+      },
     },
     createdByCard: {
       title: "Created by",
@@ -236,6 +280,10 @@ export default {
     },
     teamCard: {
       title: "The Team",
+    },
+    contactCard: {
+      title: "Contact Us",
+      text: "You can contact us on",
     },
     allRightsReserved: "all rights reserved",
   },

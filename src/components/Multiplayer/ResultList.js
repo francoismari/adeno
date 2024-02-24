@@ -1,4 +1,10 @@
-import { View, Text, ScrollView, TouchableOpacity, Dimensions } from "react-native";
+import {
+  ScrollView,
+  TouchableOpacity,
+  Dimensions,
+  Platform,
+  StyleSheet,
+} from "react-native";
 import React, { useRef, useState } from "react";
 import MultiplayerResultCard from "./MultiplayerResultCard";
 import i18n from "../../languages/i18n";
@@ -20,7 +26,7 @@ export default function ResultList({ results }) {
     <>
       <ScrollView
         ref={scrollViewRef}
-        contentContainerStyle={{ paddingBottom: 150 }}
+        contentContainerStyle={styles.scrollContainer}
         showsHorizontalScrollIndicator={false}
         horizontal
       >
@@ -29,23 +35,7 @@ export default function ResultList({ results }) {
         ))}
       </ScrollView>
 
-      <TouchableOpacity
-        onPress={handleNextPress}
-        style={{
-          position: "absolute",
-          bottom: 300, // Adjust this value as needed to position the button correctly
-          // width: 80,
-          // height: 80,
-          paddingVertical: 10,
-          paddingHorizontal: 15,
-          borderRadius: 50,
-          backgroundColor: "#FAD41F", // Example button color
-          alignSelf: "center",
-          alignItems: "center",
-          justifyContent: "center",
-          flexDirection: "row",
-        }} // Define this style according to your app's design
-      >
+      <TouchableOpacity onPress={handleNextPress} style={styles.nextButton}>
         <CustomText style={{ fontSize: 18, color: "white" }}>
           {i18n.t("multiplayerResults.seeNext")}
         </CustomText>
@@ -54,3 +44,19 @@ export default function ResultList({ results }) {
     </>
   );
 }
+
+const styles = StyleSheet.create({
+  scrollContainer: { paddingBottom: 150 },
+  nextButton: {
+    position: "absolute",
+    bottom: Platform.OS == "android" ? 270 : 300,
+    paddingVertical: 10,
+    paddingHorizontal: 15,
+    borderRadius: 50,
+    backgroundColor: "#FAD41F",
+    alignSelf: "center",
+    alignItems: "center",
+    justifyContent: "center",
+    flexDirection: "row",
+  },
+});

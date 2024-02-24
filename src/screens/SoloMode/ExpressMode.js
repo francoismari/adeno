@@ -1,21 +1,21 @@
-import { View, Text, Pressable, Alert, FlatList } from "react-native";
-import React, { useEffect, useState } from "react";
+import { View, Text, Pressable, FlatList, Animated } from "react-native";
+import React, { useEffect, useRef, useState } from "react";
 import BackgroundWrapper from "../../components/BackgroundWrapper";
-import BackButton from "../../components/BackButton";
 import { useNavigation } from "@react-navigation/native";
 import CustomText from "../../components/CustomText";
 import CenteredHeader from "../../components/CenteredHeader";
 import AsyncStorage from "@react-native-async-storage/async-storage";
-import { BlurView } from "expo-blur";
-import { Feather } from "@expo/vector-icons";
 import shuffleArray from "../../utils/shuffleArray";
 import questions_en from "../../../assets/data/solo/questions_en";
 import { useUser } from "../../context/userContext";
 import questionsByLocale from "../../../assets/data/solo/questionsByLocale";
 import QuestionHeader from "../../components/Solo/QuestionHeader";
+import i18n from "../../languages/i18n";
+import { auth, db } from "../../../firebaseConfig";
+import { collection, addDoc } from "firebase/firestore";
 
 export default function ExpressMode() {
-  const { locale } = useUser();
+  const { user, locale } = useUser();
 
   const navigation = useNavigation();
 
@@ -42,6 +42,22 @@ export default function ExpressMode() {
   }, [locale]);
 
   const handleAnswer = async (questionId, partyId, categoryId) => {
+    if (user?.responses) {
+      const studyResponseRef = collection(db, "studyResponses"); // Reference to the 'studyResponses' collection
+
+      const response = {
+        questionId,
+        answerId: partyId,
+        userId: auth.currentUser.uid,
+      };
+
+      try {
+        await addDoc(studyResponseRef, response);
+      } catch (e) {
+        console.error("Error adding document: ", e);
+      }
+    }
+
     const newAnswer = { questionId, partyId, categoryId };
     const updatedAnsweredQuestions = [...answeredQuestions, newAnswer];
     await AsyncStorage.setItem(
@@ -75,7 +91,10 @@ export default function ExpressMode() {
 
   return (
     <BackgroundWrapper>
-      <CenteredHeader title={"Mode express"} handleGoBack={handleGoBack} />
+      <CenteredHeader
+        title={i18n.t("expressMode.title")}
+        handleGoBack={handleGoBack}
+      />
 
       {isReady ? (
         <ExpressScreen
@@ -83,6 +102,8 @@ export default function ExpressMode() {
           data={currentQuestion.answers}
           handleAnswer={handleAnswer}
           currentQuestion={currentQuestion}
+          totalQuestions={expressQuestions.length}
+          currentQuestionIndex={expressQuestions.indexOf(currentQuestion) + 1} // +1 because array indexes start at 0
         />
       ) : (
         <RulesScreen handleStartGame={handleStartGame} />
@@ -106,23 +127,14 @@ const RulesScreen = ({ handleStartGame }) => {
       >
         <Text
           style={{
-            fontSize: 25,
-            fontFamily: "FrancoisOne",
-            alignSelf: "center",
-          }}
-        >
-          ÉCRAN À REVOIR
-        </Text>
-
-        <Text
-          style={{
             fontFamily: "FrancoisOne",
             fontSize: 20,
             lineHeight: 25,
             marginTop: 10,
+            textAlign: "center",
           }}
         >
-          🧑‍💼 Trouve la tête de liste qui te correspond
+          {i18n.t("expressMode.cardTitle")}
         </Text>
         <Text
           style={{
@@ -134,8 +146,7 @@ const RulesScreen = ({ handleStartGame }) => {
             textAlign: "center",
           }}
         >
-          ⚠️ Attention : pour des résultats plus fiables et des questions sur
-          des sujets plus précis, utilise le mode classique !
+          ⚠️ {i18n.t("expressMode.warningText")}
         </Text>
       </View>
 
@@ -144,7 +155,13 @@ const RulesScreen = ({ handleStartGame }) => {
   );
 };
 
-const ExpressScreen = ({ navigation, handleAnswer, currentQuestion }) => {
+const ExpressScreen = ({
+  navigation,
+  handleAnswer,
+  currentQuestion,
+  totalQuestions,
+  currentQuestionIndex,
+}) => {
   const shuffledAnswers = currentQuestion
     ? shuffleArray([...currentQuestion.answers])
     : [];
@@ -152,11 +169,53 @@ const ExpressScreen = ({ navigation, handleAnswer, currentQuestion }) => {
   const handleShowContext = () => {
     navigation.navigate("QuestionContext", {
       context: currentQuestion.learnMore,
+      sources: currentQuestion.sources,
     });
   };
 
+  const progressAnim = useRef(new Animated.Value(0)).current;
+  const targetWidth = (currentQuestionIndex / totalQuestions) * 100;
+
+  useEffect(() => {
+    Animated.timing(progressAnim, {
+      toValue: targetWidth,
+      duration: 500,
+      useNativeDriver: false,
+    }).start();
+  }, [currentQuestionIndex, targetWidth, progressAnim]);
+
   return (
     <View>
+      <View
+        style={{
+          flexDirection: "row",
+          alignItems: "center",
+          alignSelf: "center",
+          marginBottom: 10,
+        }}
+      >
+        <View
+          style={{
+            height: 10,
+            backgroundColor: "white",
+            borderRadius: 10,
+            marginRight: 10,
+            width: "88%",
+          }}
+        >
+          <Animated.View
+            style={{
+              height: "100%",
+              width: progressAnim.interpolate({
+                inputRange: [0, 100],
+                outputRange: ["0%", "100%"], // Interpolate width from 0% to 100%
+              }),
+              backgroundColor: "#3031B3",
+              borderRadius: 10,
+            }}
+          />
+        </View>
+      </View>
       {currentQuestion && (
         <>
           <QuestionHeader
@@ -199,7 +258,7 @@ const ExpressScreen = ({ navigation, handleAnswer, currentQuestion }) => {
             keyExtractor={(item) => item.id.toString()}
             contentContainerStyle={{
               paddingHorizontal: 20,
-              paddingBottom: 50,
+              paddingBottom: 300,
             }}
           />
         </>
@@ -227,7 +286,7 @@ const StartButton = ({ handleStartGame }) => {
       <CustomText
         style={{ fontSize: 27, fontFamily: "FrancoisOne", color: "#182D7C" }}
       >
-        C'est parti
+        {i18n.t("expressMode.letsGoText")}
       </CustomText>
     </Pressable>
   );

@@ -10,8 +10,6 @@ import {
 import React, { useEffect, useState } from "react";
 import { auth, db } from "../../../../firebaseConfig";
 import { getDoc, doc, onSnapshot, updateDoc } from "firebase/firestore";
-import { LinearGradient } from "expo-linear-gradient";
-import { Feather, AntDesign } from "@expo/vector-icons";
 import { useNavigation } from "@react-navigation/native";
 import { useUser } from "../../../context/userContext";
 import BackgroundWrapper from "../../../components/BackgroundWrapper";

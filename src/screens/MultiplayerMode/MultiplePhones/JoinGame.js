@@ -86,15 +86,6 @@ export default function JoinGame({ route }) {
       </CustomText>
 
       <View style={{ marginHorizontal: 50, marginTop: 15, marginBottom: 20 }}>
-        {/* <LinearGradient
-            colors={["#09D8AE", "#000000", "#AA71EC"]}
-            start={{ x: 0, y: 0 }}
-            end={{ x: 1, y: 1 }}
-            style={{
-              borderRadius: 5,
-              padding: 1,
-            }}
-          > */}
         <TextInput
           placeholder={"ABCDEF..."}
           value={roomCode}
@@ -108,7 +99,6 @@ export default function JoinGame({ route }) {
             backgroundColor: "white", // Set background color to match your theme
           }}
         />
-        {/* </LinearGradient> */}
       </View>
 
       <Pressable

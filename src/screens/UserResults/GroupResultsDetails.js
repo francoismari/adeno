@@ -1,12 +1,15 @@
 import React, { useState, useEffect } from "react";
-import { View, Text, Image, ScrollView } from "react-native";
+import { View, Image, ScrollView } from "react-native";
 import AsyncStorage from "@react-native-async-storage/async-storage";
 import CenteredTitleHeader from "../../components/CenteredTitleHeader";
 import CustomText from "../../components/CustomText";
 import questions from "../../../assets/data/solo/questions_fr";
-import themes from "../../../assets/data/themes";
+import getTheme from "../../../assets/data/themes/getTheme";
+import { useUser } from "../../context/userContext";
 
 export default function GroupResultsDetails({ navigation, route }) {
+  const {locale} = useUser();
+
   const { group } = route.params;
   const [organizedAnswers, setOrganizedAnswers] = useState({});
   const [themePercentage, setThemePercentage] = useState({});
@@ -131,14 +134,14 @@ export default function GroupResultsDetails({ navigation, route }) {
               }}
             >
               <CustomText style={{ fontSize: 18, color: "white" }}>
-                {themes.find((theme) => theme.id === parseInt(category))?.emoji}{" "}
-                {themes.find((theme) => theme.id === parseInt(category))?.name}
+                {getTheme(locale.userLocale).find((theme) => theme.id === parseInt(category))?.emoji}{" "}
+                {getTheme(locale.userLocale).find((theme) => theme.id === parseInt(category))?.name}
               </CustomText>
               <View
                 style={{
-                  backgroundColor: themes.find(
+                  backgroundColor: getTheme(locale.userLocale).find(
                     (theme) => theme.id === parseInt(category)
-                  )?.colors[0],
+                  )?.mainColor,
                   paddingVertical: 4,
                   paddingHorizontal: 6,
                   borderRadius: 8,

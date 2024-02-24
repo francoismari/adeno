@@ -18,7 +18,7 @@ export default function QuestionHeader({
             marginHorizontal: 20,
             paddingVertical: 5,
             paddingHorizontal: 10,
-            backgroundColor: themeDetails.colors[0],
+            backgroundColor: themeDetails.mainColor,
             alignSelf: "flex-start",
             borderRadius: 10,
             marginBottom: 5,

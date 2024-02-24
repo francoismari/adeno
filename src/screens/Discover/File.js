@@ -21,7 +21,7 @@ export default function File({ navigation, route }) {
         <CustomText style={{ color: "white", fontSize: 30, marginBottom: 10 }}>
           {name}
         </CustomText>
-        <CustomText style={{ color: "white", fontSize: 20 }}>{text}</CustomText>
+        <Text style={{ color: "white", fontSize: 20 }}>{text}</Text>
       </ScrollView>
     </BackgroundWrapper>
   );

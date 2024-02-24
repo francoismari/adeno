@@ -14,7 +14,6 @@ import MainHeader from "../components/MainHeader";
 import CardWrapper from "../components/CardWrapper";
 import { useIsFocused, useNavigation } from "@react-navigation/native";
 import CustomText from "../components/CustomText";
-// import groups from "../../assets/data/files/groups";
 import AsyncStorage from "@react-native-async-storage/async-storage";
 import i18n from "../languages/i18n";
 import getGroups from "../../assets/data/files/groups/getGroups";
@@ -242,16 +241,32 @@ const UserHeadList = ({ favoriteGroup, favoriteGroups }) => {
               marginTop: 10,
             }}
           >
-            <Image
-              source={favoriteGroup.imageUrl}
+            <TouchableOpacity
+              onPress={handleSeeResults}
               style={{
-                width: 89,
-                height: 89,
-                borderRadius: 50,
-                // backgroundColor: "red",
-                zIndex: 10,
+                shadowColor: "#000",
+                shadowOffset: {
+                  width: 0,
+                  height: 2,
+                },
+                shadowOpacity: 0.25,
+                shadowRadius: 3.84,
+
+                elevation: 5,
               }}
-            />
+            >
+              <Image
+                source={favoriteGroup.imageUrl}
+                style={{
+                  width: 89,
+                  height: 89,
+                  borderRadius: 50,
+                  zIndex: 10,
+                  borderWidth: 0.5,
+                  borderColor: "lightgray",
+                }}
+              />
+            </TouchableOpacity>
             <View
               style={{
                 zIndex: 10,
@@ -333,7 +348,9 @@ const UserHeadList = ({ favoriteGroup, favoriteGroups }) => {
             </CustomText>
           </View>
 
-          <CustomText style={{ color: "gray", alignSelf: "center", marginBottom: 10}}>
+          <CustomText
+            style={{ color: "gray", alignSelf: "center", marginBottom: 10 }}
+          >
             {favoriteGroup.fullname}
           </CustomText>
 
@@ -384,17 +401,10 @@ const UserHeadList = ({ favoriteGroup, favoriteGroups }) => {
             onPress={handleOpenSoloMode}
             style={{ marginTop: 10 }}
           >
-            <CustomText
-              style={{
-                fontFamily: "FrancoisOne",
-                textTransform: "uppercase",
-                textAlign: "center",
-                color: "#294AC0",
-                fontSize: 16,
-              }}
-            >
-              {i18n.t("home.headListCard.startButtonText")}
-            </CustomText>
+            <StartButton
+              playText={i18n.t("home.headListCard.startButtonText")}
+              color={"#294AC0"}
+            />
           </TouchableOpacity>
         </View>
       )}

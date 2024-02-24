@@ -1,13 +1,10 @@
-// Import necessary libraries and components
-import React, { useState, useEffect, useRef } from "react";
+import React, { useState, useEffect } from "react";
 import {
   View,
-  Text,
   TouchableOpacity,
   StyleSheet,
   Alert,
   Dimensions,
-  Animated,
   ActivityIndicator,
 } from "react-native";
 import {
@@ -20,59 +17,53 @@ import {
 import { auth, db } from "../../../../firebaseConfig";
 import BackgroundWrapper from "../../../components/BackgroundWrapper";
 import CustomText from "../../../components/CustomText";
-import themes from "../../../../assets/data/themes";
-import { LinearGradient } from "expo-linear-gradient";
 import i18n from "../../../languages/i18n";
-import questions_en from "../../../../assets/data/multiplayer/questions_en";
 import { useUser } from "../../../context/userContext";
 import multiplayerQuestionsByLocale from "../../../../assets/data/multiplayer/getMultiplayerQuestions";
 import ProgressBar from "../../../components/Multiplayer/ProgressBar";
+import getTheme from "../../../../assets/data/themes/getTheme";
 
-// The Quiz Component
 const MultiplePhonesQuestions = ({ route, navigation }) => {
-  const { roomCode } = route.params; // Assume roomCode is passed as a param
+  const { roomCode } = route.params;
 
   const { locale } = useUser();
 
   const [currentQuestionIndex, setCurrentQuestionIndex] = useState(0);
-  const [timeLeft, setTimeLeft] = useState(10); // 10 seconds per question
+  const [timeLeft, setTimeLeft] = useState(10);
   const [isWaitingForOthers, setIsWaitingForOthers] = useState(false);
 
   const [questions, setQuestions] = useState([]);
 
   useEffect(() => {
     const roomRef = doc(db, "rooms", roomCode);
-    // Subscribe to changes in the room document
+
     const unsubscribe = onSnapshot(roomRef, (doc) => {
       if (doc.exists()) {
         const data = doc.data();
         const numberOfPlayers = data.players.length;
         const totalQuestions = (() => {
           if (numberOfPlayers >= 2 && numberOfPlayers <= 4) {
-            return 30; // Ensures at least 30 questions for 2 to 4 players
+            return 30;
           } else if (numberOfPlayers > 4 && numberOfPlayers < 10) {
-            return Math.min(numberOfPlayers * 7, 50); // Scales the number but caps at 50 for 7 to 9 players
+            return Math.min(numberOfPlayers * 7, 50);
           } else if (numberOfPlayers === 10) {
-            return 50; // Caps at 50 for 10 players
+            return 50;
           }
-          return 0; // Default case if there are less than 2 players
+          return 0;
         })();
 
         const selectedQuestions =
           multiplayerQuestionsByLocale[locale.userLocale] ||
           multiplayerQuestionsByLocale["en"];
 
-        // Dynamically set questions based on number of players
         setQuestions(selectedQuestions.slice(0, totalQuestions));
 
         const allUsersFinished =
           data.players.length === data.completedUsers.length;
 
         if (allUsersFinished) {
-          // If all users have finished, navigate to the results screen
           navigation.navigate("MultiplePhonesResults", { roomCode });
         } else {
-          // Otherwise, check if the current user has finished and set a flag to show a waiting message
           const currentUserFinished = data.completedUsers.includes(
             auth.currentUser.uid
           );
@@ -91,7 +82,7 @@ const MultiplePhonesQuestions = ({ route, navigation }) => {
     if (timeLeft > 0) {
       timer = setTimeout(() => setTimeLeft(timeLeft - 1), 1000);
     } else {
-      handleAnswer("timeout"); // Handle timeout as an answer
+      handleAnswer("timeout");
     }
     return () => clearTimeout(timer);
   }, [timeLeft, currentQuestionIndex]);
@@ -114,7 +105,7 @@ const MultiplePhonesQuestions = ({ route, navigation }) => {
       Alert.alert("Error saving response");
     }
 
-    // Check if it's the last question
+    // last question
     if (currentQuestionIndex === questions.length - 1) {
       const roomRef = doc(db, "rooms", roomCode);
       try {
@@ -126,14 +117,16 @@ const MultiplePhonesQuestions = ({ route, navigation }) => {
         console.error("Error marking user as completed: ", error);
       }
     } else {
-      // Move to the next question
+      // next question
       setCurrentQuestionIndex(currentQuestionIndex + 1);
-      setTimeLeft(10); // Reset the timer for the next question
+      setTimeLeft(10);
     }
   };
 
   const theme = questions[currentQuestionIndex]
-    ? themes.find((t) => t.id === questions[currentQuestionIndex].theme)
+    ? getTheme(locale.userLocale).find(
+        (t) => t.id === questions[currentQuestionIndex].theme
+      )
     : null;
 
   return questions[currentQuestionIndex] ? (
@@ -197,10 +190,7 @@ const MultiplePhonesQuestions = ({ route, navigation }) => {
                 >
                   <View style={{ alignSelf: "center" }}>
                     {theme && (
-                      <LinearGradient
-                        colors={theme.colors}
-                        start={{ x: 0, y: 0 }}
-                        end={{ x: 1, y: 1 }}
+                      <View
                         style={{
                           flexDirection: "row",
                           alignItems: "center",
@@ -208,6 +198,7 @@ const MultiplePhonesQuestions = ({ route, navigation }) => {
                           paddingHorizontal: 10,
                           borderRadius: 10,
                           marginBottom: 18,
+                          backgroundColor: theme.mainColor,
                         }}
                       >
                         <CustomText style={{ fontSize: 19, marginRight: 5 }}>
@@ -222,7 +213,7 @@ const MultiplePhonesQuestions = ({ route, navigation }) => {
                         >
                           {theme.name}
                         </CustomText>
-                      </LinearGradient>
+                      </View>
                     )}
                   </View>
                 </View>

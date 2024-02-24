@@ -1,81 +1,327 @@
+import React, { useState, useContext } from "react";
 import {
   View,
-  Text,
-  Button,
   Platform,
   Alert,
   TouchableOpacity,
   Dimensions,
   ScrollView,
 } from "react-native";
-import React, { useState, useContext } from "react";
 import { doc, setDoc } from "firebase/firestore";
 import CustomText from "../../components/CustomText";
 import CloseButton from "../../components/CloseButton";
 import { useUser } from "../../context/userContext";
 import { auth, db } from "../../../firebaseConfig";
+import i18n from "../../languages/i18n";
 
-const questions = [
-  {
-    question: "Avez-vous l'intention de voter aux prochaines élections ?",
-    choices: [
-      "Oui, je veux voter.",
-      "Non, je ne veux pas voter.",
-      "Je ne suis pas sûr(e)/Je n'ai pas décidé.",
-    ],
-  },
-  {
-    question:
-      "Qu'est-ce qui vous pousse à vouloir voter ou à ne pas vouloir voter ?",
-    choices: [
-      "Les sujets importants qui se passent dans le pays ou ma ville.",
-      "Les personnes qui se présentent pour être élues.",
-      "Ce que je pense ou ressens personnellement.",
-      "Des problèmes pour aller voter (manque de temps, lieu trop loin, etc.).",
-      "Je ne sais pas assez sur la politique ou les élections pour décider.",
-      "Autre raison (précisez si vous voulez).",
-    ],
-  },
-  {
-    question: "Si vous ne voulez pas voter, pouvez-vous nous dire pourquoi ?",
-    choices: [
-      "C'est compliqué ou je n'ai pas le temps pour voter.",
-      "Aucun des candidats ne me semble bon.",
-      "Je pense que mon vote ne change rien.",
-      "Je suis mécontent(e) de la politique en général.",
-      "Je ne peux pas voter (trop jeune, pas la bonne nationalité, etc.).",
-      "Autre raison (précisez si vous voulez).",
-    ],
-  },
-  {
-    question: "Avez-vous déjà voté dans le passé ?",
-    choices: ["Oui, à chaque fois.", "Oui, mais pas toujours.", "Non, jamais."],
-  },
-  {
-    question: "Qu'est-ce qui pourrait vous encourager à voter ?",
-    choices: [
-      "Avoir plus d'informations simples sur les candidats et ce qu'ils proposent.",
-      "Rendre le vote plus facile (par exemple, voter en ligne, bureaux de vote plus proches).",
-      "Des sujets de vote qui me concernent directement.",
-      "Des campagnes qui expliquent l'importance de voter.",
-      "Changer la manière dont les élections se déroulent.",
-      "Autre chose (précisez si vous voulez).",
-    ],
-  },
-];
+const questionData = {
+  questions: [
+    {
+      id: "voted_before",
+      question: {
+        fr: "Avez-vous déjà voté aux élections européennes dans le passé ?",
+        en: "Have you ever voted in the European elections before?",
+      },
+      choices: [
+        {
+          text: { fr: "Oui, à chaque fois.", en: "Yes, every time." },
+          value: "always",
+        },
+        {
+          text: { fr: "Oui, mais pas toujours.", en: "Yes, but not always." },
+          value: "sometimes",
+        },
+        { text: { fr: "Jamais.", en: "Never." }, value: "never" },
+        {
+          text: {
+            fr: "Je n’avais pas le droit de vote.",
+            en: "I was not eligible to vote.",
+          },
+          value: "ineligible",
+        },
+      ],
+    },
+    {
+      id: "intent_to_vote",
+      question: {
+        fr: "Avez-vous l’intention de voter aux prochaines élections européennes de juin 2024 ?",
+        en: "Do you intend to vote in the next European elections in June 2024?",
+      },
+      choices: [
+        { text: { fr: "Oui.", en: "Yes." }, value: "yes" },
+        { text: { fr: "Non.", en: "No." }, value: "no" },
+        {
+          text: {
+            fr: "Je n’ai pas encore décidé.",
+            en: "I have not decided yet.",
+          },
+          value: "undecided",
+        },
+        {
+          text: {
+            fr: "Je n’aurai pas le droit de vote.",
+            en: "I will not have the right to vote.",
+          },
+          value: "will_be_ineligible",
+        },
+      ],
+      followUp: {
+        yes: "yes_reasons",
+        no: "no_reasons",
+      },
+    },
+    {
+      id: "yes_reasons",
+      question: {
+        fr: "Pour quelle(s) raison(s) avez-vous l’intention d’aller voter aux élections européennes ?",
+        en: "For what reasons do you intend to vote in the European elections?",
+      },
+      choices: [
+        {
+          text: {
+            fr: "Je considère que le vote est un devoir citoyen.",
+            en: "I consider voting a civic duty.",
+          },
+          value: "civic_duty",
+        },
+        {
+          text: {
+            fr: "Je me sens concerné(e) par les enjeux des élections européennes.",
+            en: "I feel concerned by the stakes of the European elections.",
+          },
+          value: "feels_concerned",
+        },
+        {
+          text: {
+            fr: "Je me sens bien représenté(e) par un parti politique.",
+            en: "I feel well represented by a political party.",
+          },
+          value: "well_represented",
+        },
+        {
+          text: {
+            fr: "Je pense avoir suffisamment de connaissances et d’informations au sujet des élections européennes pour voter.",
+            en: "I believe I have enough knowledge and information about the European elections to vote.",
+          },
+          value: "informed",
+        },
+        {
+          text: {
+            fr: "Je suis engagé(e) dans un parti politique et je fais campagne.",
+            en: "I am engaged in a political party and campaigning.",
+          },
+          value: "engaged_campaigning",
+        },
+        {
+          text: {
+            fr: "Je pense que mon vote a un impact.",
+            en: "I think my vote has an impact.",
+          },
+          value: "vote_impact",
+        },
+        {
+          text: { fr: "Je vote toujours.", en: "I always vote." },
+          value: "always_vote",
+        },
+        {
+          text: {
+            fr: "Aucune des réponses ne me satisfait.",
+            en: "None of the answers satisfy me.",
+          },
+          value: "none_satisfy",
+        },
+      ],
+    },
+    {
+      id: "no_reasons",
+      question: {
+        fr: "Pour quelle(s) raison(s) n’avez-vous pas l’intention d’aller voter aux élections européennes ?",
+        en: "For what reasons do you not intend to vote in the European elections?",
+      },
+      choices: [
+        {
+          text: {
+            fr: "Je n’ai pas l’âge de voter.",
+            en: "I am not of voting age.",
+          },
+          value: "underage",
+        },
+        {
+          text: {
+            fr: "Je suis mal inscrit ou non inscrit sur les listes électorales.",
+            en: "I am poorly registered or not registered on the electoral rolls.",
+          },
+          value: "poorly_registered",
+        },
+        {
+          text: {
+            fr: "Je n’ai pas facilement accès aux bureaux de vote.",
+            en: "I do not have easy access to polling stations.",
+          },
+          value: "difficult_access",
+        },
+        {
+          text: {
+            fr: "Je ne connais pas les enjeux politiques européens.",
+            en: "I am not familiar with the European political issues.",
+          },
+          value: "unfamiliar_issues",
+        },
+        {
+          text: {
+            fr: "Je ne suis pas intéressé(e) par les élections européennes.",
+            en: "I am not interested in the European elections.",
+          },
+          value: "not_interested",
+        },
+        {
+          text: {
+            fr: "Je suis mécontent de la politique européenne qui est menée.",
+            en: "I am dissatisfied with the European politics being conducted.",
+          },
+          value: "dissatisfied",
+        },
+        {
+          text: {
+            fr: "Je ne pense pas que mon vote pour les élections européennes sera utile.",
+            en: "I do not think my vote in the European elections will be useful.",
+          },
+          value: "vote_not_useful",
+        },
+        {
+          text: {
+            fr: "Je considère que l’abstention est un moyen d’expression comme un autre pour se faire entendre.",
+            en: "I consider abstention as another way of expressing oneself to be heard.",
+          },
+          value: "abstention_as_expression",
+        },
+        {
+          text: { fr: "Je ne vote jamais.", en: "I never vote." },
+          value: "never_vote",
+        },
+        {
+          text: {
+            fr: "Aucune des réponses ne me satisfait.",
+            en: "None of the answers satisfy me.",
+          },
+          value: "none_satisfy",
+        },
+      ],
+    },
+    {
+      id: "encouragement_to_vote",
+      question: {
+        fr: "Ce qui pourrait vous encourager à voter :",
+        en: "What could encourage you to vote:",
+      },
+      choices: [
+        {
+          text: {
+            fr: "Avoir un bureau de vote près de chez moi.",
+            en: "Having a polling station near my home.",
+          },
+          value: "nearby_polling_station",
+        },
+        {
+          text: {
+            fr: "Pouvoir voter par correspondance.",
+            en: "Being able to vote by mail.",
+          },
+          value: "vote_by_mail",
+        },
+        {
+          text: {
+            fr: "Pouvoir voter depuis mon ordinateur.",
+            en: "Being able to vote from my computer.",
+          },
+          value: "vote_from_computer",
+        },
+        {
+          text: {
+            fr: "Faciliter l’inscription sur les listes électorales.",
+            en: "Making it easier to register on the electoral rolls.",
+          },
+          value: "easier_registration",
+        },
+        {
+          text: {
+            fr: "Accéder facilement aux programmes des partis politiques qui se présentent aux élections européennes.",
+            en: "Easy access to the programs of political parties running in the European elections.",
+          },
+          value: "access_to_programs",
+        },
+        {
+          text: {
+            fr: "Mieux connaître les programmes des partis politiques qui se présentent aux élections européennes.",
+            en: "Better understanding of the programs of political parties running in the European elections.",
+          },
+          value: "understand_programs",
+        },
+        {
+          text: {
+            fr: "Mieux connaître les candidats.",
+            en: "Better knowledge of the candidates.",
+          },
+          value: "know_candidates",
+        },
+        {
+          text: {
+            fr: "Avoir une meilleure connaissance des enjeux des élections européennes.",
+            en: "Having a better understanding of the stakes of the European elections.",
+          },
+          value: "understand_stakes",
+        },
+        {
+          text: {
+            fr: "Que l’Union Européenne change de politique.",
+            en: "That the European Union changes its policy.",
+          },
+          value: "eu_policy_change",
+        },
+        {
+          text: {
+            fr: "Médiatiser davantage les questions européennes.",
+            en: "To further publicize European issues.",
+          },
+          value: "publicize_issues",
+        },
+        {
+          text: {
+            fr: "Aucune des réponses ne me satisfait.",
+            en: "None of the answers satisfy me.",
+          },
+          value: "none_satisfy",
+        },
+      ],
+    },
+  ],
+};
 
 export default function SetStudyInfos({ navigation }) {
   const [userStep, setUserStep] = useState(0);
   const [responses, setResponses] = useState([]);
   const { locale, setUser } = useUser();
 
-  const handleClose = () => {
-    navigation.goBack();
-  };
+  const currentLocale = locale.userLocale || "fr"; // Default to French if locale not found
 
-  const handleChoice = (choice) => {
-    setResponses((currentResponses) => [...currentResponses, choice]);
-    if (userStep < questions.length - 1) {
+  const handleChoice = (choiceValue) => {
+    const currentQuestion = questionData.questions[userStep];
+    setResponses([
+      ...responses,
+      { questionId: currentQuestion.id, choiceValue },
+    ]);
+
+    if (currentQuestion.followUp && currentQuestion.followUp[choiceValue]) {
+      const nextQuestionId = currentQuestion.followUp[choiceValue];
+      const nextQuestionIndex = questionData.questions.findIndex(
+        (q) => q.id === nextQuestionId
+      );
+      if (nextQuestionIndex !== -1) {
+        setUserStep(nextQuestionIndex);
+      } else {
+        handleFinish();
+      }
+    } else if (userStep < questionData.questions.length - 1) {
       setUserStep(userStep + 1);
     } else {
       handleFinish();
@@ -84,26 +330,52 @@ export default function SetStudyInfos({ navigation }) {
 
   const handleFinish = async () => {
     try {
-      // const { user } = await signInAnonymously(auth);
-      // setUser(user); // Set user in context
-
-      // Create a document with the user's ID in the 'users' collection
       await setDoc(doc(db, "users", auth.currentUser.uid), {
         uid: auth.currentUser.uid,
         responses,
-        locale: locale.userLocale,
+        locale: currentLocale,
       });
-
       setUser({
         uid: auth.currentUser.uid,
         responses,
+        locale: currentLocale,
       });
-
       navigation.goBack();
     } catch (error) {
-      console.error("Error signing in anonymously and saving data: ", error);
+      console.error("Error saving data: ", error);
       Alert.alert("Error", error.message);
     }
+  };
+
+  const handleClose = () => {
+    navigation.goBack();
+  };
+
+  const renderQuestion = () => {
+    const currentQuestion = questionData.questions[userStep];
+    return (
+      <View>
+        <CustomText style={{ fontSize: 24, textAlign: "center", margin: 20 }}>
+          {currentQuestion.question[currentLocale]}
+        </CustomText>
+        {currentQuestion.choices.map((choice, index) => (
+          <TouchableOpacity
+            key={index}
+            onPress={() => handleChoice(choice.value)}
+            style={{
+              backgroundColor: "#EEE",
+              padding: 10,
+              margin: 5,
+              borderRadius: 5,
+            }}
+          >
+            <CustomText style={{ fontSize: 20, textAlign: "center" }}>
+              {choice.text[currentLocale]}
+            </CustomText>
+          </TouchableOpacity>
+        ))}
+      </View>
+    );
   };
 
   return (
@@ -133,7 +405,7 @@ export default function SetStudyInfos({ navigation }) {
           marginHorizontal: 20,
         }}
       >
-        Participe à la plus grande étude sur l'Europe !
+        {i18n.t('setStudyInfos.title')}
       </CustomText>
 
       <View
@@ -146,53 +418,9 @@ export default function SetStudyInfos({ navigation }) {
           height: Dimensions.get("screen").height * 0.6,
         }}
       >
-        {questions[userStep] && (
-          <>
-            <CustomText
-              style={{
-                fontSize: 24,
-                textAlign: "center",
-                marginTop: 10,
-                marginBottom: 15,
-                marginHorizontal: 20,
-              }}
-            >
-              {questions[userStep].question}
-            </CustomText>
-            <ScrollView contentContainerStyle={{ flexGrow: 1, paddingTop: 2 }}>
-              {questions[userStep].choices.map((choice, index) => (
-                <TouchableOpacity
-                  key={index}
-                  onPress={() => handleChoice(choice)}
-                  style={{
-                    backgroundColor: "white",
-                    marginBottom: 10,
-                    justifyContent: "center",
-                    alignItems: "center",
-                    borderRadius: 10,
-                    padding: 10,
-                    elevation: 5,
-                    shadowColor: "#000",
-                    shadowOffset: { width: 0, height: 2 },
-                    shadowOpacity: 0.25,
-                    shadowRadius: 3.84,
-                    marginHorizontal: 10,
-                  }}
-                >
-                  <CustomText
-                    style={{
-                      fontSize: 20,
-                      textAlign: "center",
-                      color: "#4647D3",
-                    }}
-                  >
-                    {choice}
-                  </CustomText>
-                </TouchableOpacity>
-              ))}
-            </ScrollView>
-          </>
-        )}
+        <ScrollView contentContainerStyle={{ flexGrow: 1 }}>
+          {renderQuestion()}
+        </ScrollView>
       </View>
     </View>
   );

@@ -9,6 +9,7 @@ Deux ans après la Déclaration, naît la Communauté européenne du charbon et 
 
 De leur côté les pays du Benelux ont créé un modèle de coopération économique qui a fortement intéressé les autres pays. C’est ainsi qu’après plusieurs conférences préparatoires à Messine (Italie), Venise et Val Duchesse (Belgique) qu’en 1957, les traités de Rome, créant la Communauté européenne de l'énergie atomique (Euratom) et, surtout, la Communauté économique européenne (CEE). La CEE vise à généraliser le rapprochement à l'ensemble de l'économie : l'objectif est la création d'un marché commun et d'une union douanière entre les pays membres. La CEE et l'Euratom sont à l'origine de l'Union européenne telle que nous la connaissons aujourd'hui, et bientôt suivirent les premiers élargissements.
 `,
+    emoji: "🇪🇺",
   },
   {
     name: "Le 1er élargissement",
@@ -19,5 +20,6 @@ Le processus d'adhésion du Royaume-Uni fut également difficile au début. Enco
 Cependant, du côté continental européen, le Royaume-Uni fut accueilli avec scepticisme - surtout en France sous la présidence de Charles de Gaulle : à deux reprises, les demandes d'adhésion du Royaume-Uni furent bloquées par le veto du président français (1963 et 1967) avant que le Royaume-Uni ne rejoigne finalement la CEE en 1973.
 
 Le premier élargissement marque un tournant important dans le développement de la communauté européenne. D'une part, l'espace économique de la communauté s'est considérablement agrandi, mais surtout, son orientation politique a également changé. Depuis le début de son adhésion, le Royaume-Uni a été un acteur majeur du courant gouvernemental, accordant une grande importance à la souveraineté des États membres et se concentrant sur les relations transatlantiques.`,
+    emoji: "🌍",
   },
 ];

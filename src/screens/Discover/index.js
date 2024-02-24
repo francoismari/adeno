@@ -1,7 +1,5 @@
 import {
   View,
-  Text,
-  Pressable,
   TouchableOpacity,
   ScrollView,
   Linking,
@@ -37,6 +35,18 @@ export default function Discover() {
   };
 
   const filesThemes = getFilesThemes(locale.userLocale);
+
+  const sortedPartners = partners.sort((a, b) => {
+    const nameA = a.name;
+    const nameB = b.name;
+    if (nameA < nameB) {
+      return -1;
+    }
+    if (nameA > nameB) {
+      return 1;
+    }
+    return 0;
+  });
 
   return (
     <BackgroundWrapper>
@@ -327,8 +337,9 @@ export default function Discover() {
           </View>
 
           <View style={{ marginHorizontal: 15 }}>
-            {partners.map((partner, index) => (
-              <View
+            {sortedPartners.map((partner, index) => (
+              <TouchableOpacity
+                onPress={() => Linking.openURL(partner.link)}
                 style={{
                   marginBottom: 10,
                   flexDirection: "row",
@@ -343,7 +354,7 @@ export default function Discover() {
                 <CustomText style={{ fontSize: 15, marginLeft: 10 }}>
                   {partner.name}
                 </CustomText>
-              </View>
+              </TouchableOpacity>
             ))}
           </View>
         </View>

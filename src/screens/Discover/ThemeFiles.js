@@ -1,11 +1,9 @@
 import React from "react";
-import { View, Text, FlatList, Pressable } from "react-native";
-import countries from "../../../assets/data/files/countries";
+import { FlatList, Pressable } from "react-native";
 import BackgroundWrapper from "../../components/BackgroundWrapper";
 import CenteredHeader from "../../components/CenteredHeader";
 import figures from "../../../assets/data/files/figures";
 import CustomText from "../../components/CustomText";
-import i18n from "../../languages/i18n";
 import { useUser } from "../../context/userContext";
 import getCountries from "../../../assets/data/files/countries";
 import getInstitutions from "../../../assets/data/files/institutions/getInstitutions";
@@ -15,6 +13,7 @@ import getSymbols from "../../../assets/data/files/symbols/getSymbols";
 import getElections from "../../../assets/data/files/elections/getElections";
 import getEnlargements from "../../../assets/data/files/enlargements/getEnlargements";
 import getTreaties from "../../../assets/data/files/treaties/getTreaties";
+import getPrinciples from "../../../assets/data/files/principles/getPrinciples";
 
 const ThemeFiles = ({ navigation, route }) => {
   const { theme } = route.params;
@@ -35,8 +34,10 @@ const ThemeFiles = ({ navigation, route }) => {
         return getInstitutions();
       case 4:
         return figures;
+      case 5:
+        return getPrinciples();
       case 6:
-        return getTreaties()
+        return getTreaties();
       case 7:
         return getEnlargements();
       case 8:

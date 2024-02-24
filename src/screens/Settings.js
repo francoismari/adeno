@@ -21,81 +21,7 @@ import { signOut } from "firebase/auth";
 import { deleteDoc, doc } from "firebase/firestore";
 import { auth, db } from "../../firebaseConfig";
 import i18n from "../languages/i18n";
-
-const team = [
-  {
-    name: "Pauline Bizet",
-    role: "Bénévole (à completer)",
-  },
-  {
-    name: "Ithier Bariety",
-    role: "Bénévole (à completer)",
-  },
-  {
-    name: "Maxime Laporte",
-    role: "Bénévole (à completer)",
-  },
-  {
-    name: "Marco Demichelis",
-    role: "Bénévole (à completer)",
-  },
-  {
-    name: "Emmie Hallot",
-    role: "Bénévole (à completer)",
-  },
-  {
-    name: "Elise Torche",
-    role: "Responsable pôle éditorial",
-  },
-  {
-    name: "Alix Poncet",
-    role: "Bénévole (à completer)",
-  },
-  {
-    name: "Igor Thiam",
-    role: "Bénévole (à completer)",
-  },
-  {
-    name: "Alexandre Alecse",
-    role: "Bénévole (à completer)",
-  },
-  {
-    name: "Louise R",
-    role: "Bénévole (à completer)",
-  },
-  {
-    name: "Léna Bergougnan-Dijou",
-    role: "Bénévole (à completer)",
-  },
-  {
-    name: "Apolline Choux",
-    role: "Bénévole (à completer)",
-  },
-  {
-    name: "Emi Heiler",
-    role: "Bénévole (à completer)",
-  },
-  {
-    name: "Adelaïde Brouillet",
-    role: "Bénévole (à completer)",
-  },
-  {
-    name: "Alice Nigon",
-    role: "Bénévole (à completer)",
-  },
-  {
-    name: "May Barthelemy",
-    role: "Bénévole (à completer)",
-  },
-  {
-    name: "Emma Constantin",
-    role: "Bénévole (à completer)",
-  },
-  {
-    name: "Laurie Segreto",
-    role: "Responsable communication",
-  },
-];
+import team from "../../assets/data/team";
 
 export default function Settings() {
   const navigation = useNavigation();
@@ -128,7 +54,6 @@ export default function Settings() {
     } else if (tempTime == "") {
       setModalVisible(false);
     } else {
-      // Handle invalid input, e.g., show an alert
       Alert.alert(
         "Temps de réponse invalide",
         "Il faut que tu choisisses un temps de réponse entre 10 et 20 secondes !"
@@ -150,10 +75,7 @@ export default function Settings() {
       }
 
       await deleteDoc(doc(db, "users", userId));
-
-      // Sign out the user
       await signOut(auth);
-
       setUser(null);
 
       console.log("User signed out and data deleted.");
@@ -188,26 +110,32 @@ export default function Settings() {
     return names.length > 1 ? names[1] : names[0];
   };
 
-  // Sort the team by the second word of their name
   const sortedTeam = team.sort((a, b) => {
-    const nameA = getSecondWord(a.name).toUpperCase(); // Ignore case
-    const nameB = getSecondWord(b.name).toUpperCase(); // Ignore case
+    const nameA = getSecondWord(a.name).toUpperCase();
+    const nameB = getSecondWord(b.name).toUpperCase();
     if (nameA < nameB) {
       return -1;
     }
     if (nameA > nameB) {
       return 1;
     }
-    return 0; // names must be equal
+    return 0;
   });
 
   const handleOpenScientificCouncil = () => {
     navigation.navigate("ScientificCouncil");
   };
 
+  const handleOpenContact = () => {
+    Linking.openURL("mailto:hello@adeno.app");
+  };
+
   return (
     <View style={{ flex: 1, backgroundColor: "#5354E8" }}>
-      <CenteredTitleHeader title={"Réglages"} handleClose={handleClose} />
+      <CenteredTitleHeader
+        title={i18n.t("settingsScreen.title")}
+        handleClose={handleClose}
+      />
 
       <ScrollView>
         <CategoryWrapper title={i18n.t("settingsScreen.multiplayerCard.title")}>
@@ -220,7 +148,7 @@ export default function Settings() {
             }}
           >
             <CustomText style={{ fontSize: 17 }}>
-              Temps de réponse par question
+              {i18n.t("settingsScreen.multiplayerCard.timeByQuestionText")}
             </CustomText>
             <TouchableOpacity
               style={{
@@ -251,7 +179,7 @@ export default function Settings() {
                 🇪🇺
               </CustomText>
               <CustomText>
-                Tu participes à la grande étude sur l'Europe !
+                {i18n.t("settingsScreen.soloCard.studyInfos.userParticipates")}
               </CustomText>
             </View>
           ) : (
@@ -263,19 +191,15 @@ export default function Settings() {
                   textAlign: "center",
                 }}
               >
-                Participe à la grande étude des jeunes en Europe
+                {i18n.t("settingsScreen.soloCard.studyInfos.title")}
               </Text>
               <CustomText style={{ color: "gray", textAlign: "center" }}>
-                Tes réponses aux questions du mode solo seront enregistrées de
-                manière anonyme, et permettront de réaliser une grande étude sur
-                les comportements éléctoraux des jeunes en Europe, supervisée
-                par un{" "}
+                {i18n.t("settingsScreen.soloCard.studyInfos.description")}{" "}
                 <Text
                   style={{ color: "#5354E8" }}
                   onPress={handleOpenScientificCouncil}
                 >
-                  conseil scientifique de professeurs, chercheurs, et
-                  intellectuels
+                  {i18n.t("settingsScreen.soloCard.studyInfos.council")}
                 </Text>
                 .
               </CustomText>
@@ -291,7 +215,7 @@ export default function Settings() {
                 }}
               >
                 <CustomText style={{ fontSize: 20, color: "white" }}>
-                  C'est parti !
+                  {i18n.t("settingsScreen.soloCard.studyInfos.startButtonText")}
                 </CustomText>
               </TouchableOpacity>
             </>
@@ -342,7 +266,7 @@ export default function Settings() {
               alignSelf: "center",
               marginTop: 10,
             }}
-            resizeMode={'contain'}
+            resizeMode={"contain"}
           />
 
           <CustomText style={{ color: "gray" }}>
@@ -358,7 +282,14 @@ export default function Settings() {
                 marginTop: 20,
               }}
             >
-              <TouchableOpacity style={{ alignItems: "center" }}>
+              <TouchableOpacity
+                onPress={() =>
+                  Linking.openURL(
+                    "https://www.linkedin.com/in/alexis-costa-b83b66b5/"
+                  )
+                }
+                style={{ alignItems: "center" }}
+              >
                 <Image
                   source={require("../../assets/data/images/inceptio/alexis.jpg")}
                   style={{ width: 60, height: 60, borderRadius: 30 }}
@@ -372,6 +303,9 @@ export default function Settings() {
               </TouchableOpacity>
 
               <TouchableOpacity
+                onPress={() =>
+                  Linking.openURL("https://www.linkedin.com/in/laurie-segreto")
+                }
                 style={{ alignItems: "center", marginHorizontal: 20 }}
               >
                 <Image
@@ -386,7 +320,14 @@ export default function Settings() {
                 </CustomText>
               </TouchableOpacity>
 
-              <TouchableOpacity style={{ alignItems: "center" }}>
+              <TouchableOpacity
+                onPress={() =>
+                  Linking.openURL(
+                    "https://www.linkedin.com/in/vladimirmélineconseiletstratégie/"
+                  )
+                }
+                style={{ alignItems: "center" }}
+              >
                 <Image
                   source={require("../../assets/data/images/inceptio/vladimir.jpg")}
                   style={{ width: 60, height: 60, borderRadius: 30 }}
@@ -405,42 +346,60 @@ export default function Settings() {
         <CategoryWrapper title={i18n.t("settingsScreen.teamCard.title")}>
           {sortedTeam.map((member, index) => {
             return (
-              <View style={{ marginBottom: 10 }}>
+              <TouchableOpacity
+                onPress={() => Linking.openURL(member.link)}
+                style={{ marginBottom: 10 }}
+              >
                 <CustomText style={{ fontSize: 17 }}>{member.name}</CustomText>
                 <CustomText style={{ fontSize: 14, color: "gray" }}>
                   {member.role}
                 </CustomText>
-              </View>
+              </TouchableOpacity>
             );
           })}
         </CategoryWrapper>
 
-        <CustomText
-          style={{
-            fontFamily: "FrancoisOne",
-            color: "white",
-            textAlign: "center",
-          }}
-        >
-          © 2024, Adeno
-        </CustomText>
-        <CustomText
-          style={{
-            fontFamily: "FrancoisOne",
-            color: "white",
-            textAlign: "center",
-            marginTop: -2,
-          }}
-        >
-          {i18n.t('settingsScreen.allRightsReserved')}
-        </CustomText>
+        <CategoryWrapper title={i18n.t("settingsScreen.contactCard.title")}>
+          <CustomText style={{ marginTop: 10, textAlign: "center" }}>
+            {i18n.t("settingsScreen.contactCard.text")}{" "}
+            <Text
+              onPress={() => handleOpenContact()}
+              style={{ color: "#5354E8" }}
+            >
+              hello@adeno.app
+            </Text>{" "}
+            !
+          </CustomText>
+        </CategoryWrapper>
 
-        <View style={{ marginHorizontal: 20 }}>
+        <View style={{ marginBottom: 40 }}>
+          <CustomText
+            style={{
+              fontFamily: "FrancoisOne",
+              color: "white",
+              textAlign: "center",
+            }}
+          >
+            © 2024, Adeno
+          </CustomText>
+          <CustomText
+            style={{
+              fontFamily: "FrancoisOne",
+              color: "white",
+              textAlign: "center",
+              marginTop: -2,
+            }}
+          >
+            {i18n.t("settingsScreen.allRightsReserved")}
+          </CustomText>
+        </View>
+
+        {/* <View style={{ marginHorizontal: 20 }}>
           <Text style={{ color: "white" }}>Debug dev:</Text>
           <TouchableOpacity onPress={() => AsyncStorage.removeItem("isSetUp")}>
             <Text style={{ color: "white" }}>Reset onboarding</Text>
           </TouchableOpacity>
-        </View>
+        </View> */}
       </ScrollView>
 
       <Modal
@@ -453,7 +412,11 @@ export default function Settings() {
       >
         <View style={styles.centeredView}>
           <View style={styles.modalView}>
-            <CustomText style={styles.modalTitle}>Modifier le temps</CustomText>
+            <CustomText style={styles.modalTitle}>
+              {i18n.t(
+                "settingsScreen.multiplayerCard.setTimeByQuestionModal.title"
+              )}
+            </CustomText>
             <TextInput
               style={styles.modalTextInput}
               placeholder="10"
@@ -464,7 +427,9 @@ export default function Settings() {
             />
             <Pressable style={styles.modalButton} onPress={saveMultiplayerTime}>
               <CustomText style={styles.modalButtonText}>
-                Enregistrer
+                {i18n.t(
+                  "settingsScreen.multiplayerCard.setTimeByQuestionModal.saveButton"
+                )}
               </CustomText>
             </Pressable>
           </View>
@@ -596,7 +561,6 @@ const styles = StyleSheet.create({
   },
   modalButtonText: {
     color: "white",
-    // fontWeight: "bold",
     textAlign: "center",
     fontSize: 20,
     fontFamily: "FrancoisOne",

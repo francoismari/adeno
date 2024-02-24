@@ -1,18 +1,13 @@
 import React, { useEffect, useState, useRef } from "react";
 import {
   View,
-  Text,
   Animated,
   SafeAreaView,
   ScrollView,
   Dimensions,
   StyleSheet,
-  Pressable,
 } from "react-native";
 import BackgroundWrapper from "../../components/BackgroundWrapper";
-import AsyncStorage from "@react-native-async-storage/async-storage";
-import { useNavigation } from "@react-navigation/native";
-import { Ionicons, AntDesign } from "@expo/vector-icons";
 import Start from "./Start";
 import Tutorial from "./Tutorial";
 import CustomText from "../../components/CustomText";

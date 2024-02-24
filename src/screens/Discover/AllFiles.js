@@ -12,6 +12,7 @@ import CenteredHeader from "../../components/CenteredHeader";
 import CustomText from "../../components/CustomText";
 import getFilesThemes from "../../../assets/data/files/getFilesThemes";
 import { useUser } from "../../context/userContext";
+import i18n from "../../languages/i18n";
 
 export default function AllFiles({ navigation }) {
   const { locale } = useUser();
@@ -30,8 +31,8 @@ export default function AllFiles({ navigation }) {
     <BackgroundWrapper>
       <CenteredHeader
         handleGoBack={handleGoBack}
-        title={"Les fiches"}
-        subtitle={"Pour tout comprendre sur l'Union Européenne !"}
+        title={i18n.t('allFiles.title')}
+        subtitle={i18n.t('allFiles.subtitle')}
       />
 
       <FlatList

@@ -3,11 +3,15 @@ import React, { useEffect, useState } from "react";
 import CustomText from "../../components/CustomText";
 import BackgroundWrapper from "../../components/BackgroundWrapper";
 import CenteredHeader from "../../components/CenteredHeader";
-import themes from "../../../assets/data/themes";
 import AsyncStorage from "@react-native-async-storage/async-storage";
 import { useIsFocused } from "@react-navigation/native";
+import getTheme from "../../../assets/data/themes/getTheme";
+import { useUser } from "../../context/userContext";
+import i18n from "../../languages/i18n";
 
 export default function ClassicMode({ navigation }) {
+  const { locale } = useUser();
+
   const [progress, setProgress] = useState({});
   const isFocused = useIsFocused();
 
@@ -18,7 +22,7 @@ export default function ClassicMode({ navigation }) {
         ? JSON.parse(answeredQuestions)
         : [];
 
-      const progressData = themes.reduce((acc, theme) => {
+      const progressData = getTheme(locale.userLocale).reduce((acc, theme) => {
         const answeredForTheme = answeredArray.filter(
           (question) => question.categoryId === theme.id
         ).length;
@@ -53,16 +57,18 @@ export default function ClassicMode({ navigation }) {
         contentContainerStyle={{ paddingBottom: 50 }}
       >
         <RandomButton handleStartRandom={handleStartRandom} />
-        {themes.map((theme, index) => {
-          return (
-            <ThemeButton
-              key={theme.id} // Added key prop for optimization
-              theme={theme}
-              handleStartWithTheme={handleStartWithTheme}
-              progress={progress[theme.id] || 0}
-            />
-          );
-        })}
+        {getTheme(locale.userLocale)
+          .slice(0, 10)
+          .map((theme, index) => {
+            return (
+              <ThemeButton
+                key={theme.id} // Added key prop for optimization
+                theme={theme}
+                handleStartWithTheme={handleStartWithTheme}
+                progress={progress[theme.id] || 0}
+              />
+            );
+          })}
       </ScrollView>
     </BackgroundWrapper>
   );
@@ -86,10 +92,10 @@ const RandomButton = ({ handleStartRandom }) => {
       </CustomText>
       <View style={{ marginLeft: 15 }}>
         <CustomText style={{ fontSize: 20, fontWeight: "500" }}>
-          Aléatoire
+          {i18n.t("classicMode.randomCard.title")}
         </CustomText>
         <CustomText style={{ fontSize: 15, color: "gray", marginTop: -5 }}>
-          Tous les thèmes
+        {i18n.t("classicMode.randomCard.subtitle")}
         </CustomText>
       </View>
     </Pressable>
@@ -98,8 +104,6 @@ const RandomButton = ({ handleStartRandom }) => {
 
 const ThemeButton = ({ theme, handleStartWithTheme, progress }) => {
   const progressBarWidth = `${(progress / 10) * 100}%`;
-
-  // console.log(theme.name + ' ' + );
 
   return (
     <Pressable
@@ -129,23 +133,19 @@ const ThemeButton = ({ theme, handleStartWithTheme, progress }) => {
               height: 10,
               backgroundColor: "#E0E0E0",
               borderRadius: 10,
-              // flex: 1, // Use flex to ensure it fills the available space
               marginRight: 10,
-              width: '92%'
+              width: "92%",
             }}
           >
             <View
               style={{
                 height: "100%",
-                width: progressBarWidth, // Use the calculated width directly
+                width: progressBarWidth,
                 backgroundColor: "#3031B3",
                 borderRadius: 10,
               }}
             />
           </View>
-          {/* <CustomText style={{ fontSize: 15, color: "gray" }}>
-            {progress}/10
-          </CustomText> */}
         </View>
       </View>
     </Pressable>

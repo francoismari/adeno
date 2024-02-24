@@ -6,6 +6,7 @@ import CenteredHeader from "../../components/CenteredHeader";
 import CustomText from "../../components/CustomText";
 import getGroups from "../../../assets/data/files/groups/getGroups";
 import { useUser } from "../../context/userContext";
+import i18n from "../../languages/i18n";
 
 export default function ExpressResults({ navigation }) {
   const [favoriteGroups, setFavoriteGroups] = useState(null);
@@ -62,7 +63,10 @@ export default function ExpressResults({ navigation }) {
 
   return (
     <BackgroundWrapper>
-      <CenteredHeader handleGoBack={handleGoBack} title={"Mon résultat"} />
+      <CenteredHeader
+        handleGoBack={handleGoBack}
+        title={i18n.t("expressResults.title")}
+      />
       {favoriteGroups && (
         <View style={{ flex: 1, marginTop: 80 }}>
           <ImageBackground
@@ -112,16 +116,38 @@ export default function ExpressResults({ navigation }) {
                 borderRadius: 15,
               }}
             >
-              <CustomText style={{ fontSize: 20 }}>
+              <CustomText style={{ fontSize: 20, textAlign: "center" }}>
                 {favoriteGroups[0].name} -{" "}
                 {Math.round(favoriteGroups[0].percentage)}%
+              </CustomText>
+            </View>
+            <View
+              style={{
+                position: "absolute",
+                bottom: -65,
+                // backgroundColor: "#F5D020",
+                alignSelf: "center",
+                transform: [{ rotate: "-2deg" }],
+                paddingVertical: 5,
+                paddingHorizontal: 10,
+                borderRadius: 15,
+              }}
+            >
+              <CustomText
+                style={{
+                  color: "white",
+                  fontSize: 20,
+                  textTransform: "capitalize",
+                }}
+              >
+                {favoriteGroups[0].adjective}
               </CustomText>
             </View>
           </ImageBackground>
           <View
             style={{
               position: "absolute",
-              top: 250,
+              top: 280,
               alignSelf: "center",
               marginBottom: 15,
               backgroundColor: "#8080E0",
@@ -150,7 +176,7 @@ export default function ExpressResults({ navigation }) {
                     // alignSelf: "flex-start",
                   }}
                 >
-                  En bref
+                  {i18n.t('expressResults.inSummaryTitle')}
                 </CustomText>
               </View>
             </View>
@@ -188,14 +214,14 @@ export default function ExpressResults({ navigation }) {
               <CustomText
                 style={{ color: "white", textAlign: "center", fontSize: 20 }}
               >
-                Continuer avec le mode classique
+                {i18n.t('expressResults.continueWithClassicMode')}
               </CustomText>
             </Pressable>
             <Pressable onPress={handleGoBack}>
               <CustomText
                 style={{ color: "white", textAlign: "center", fontSize: 20 }}
               >
-                Retour
+                {i18n.t('expressResults.goBack')}
               </CustomText>
             </Pressable>
           </View>

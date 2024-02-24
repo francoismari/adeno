@@ -85,6 +85,8 @@ export default function SelectMultiplayerMode({ navigation }) {
             {i18n.t("selectMultiplayerMode.multiplePhones")}
           </CustomText>
         </Pressable>
+
+        <CustomText style={{marginTop: 20, color: 'white', textAlign: 'center'}}>{i18n.t("expressMode.warningText")}</CustomText>
       </View>
     </BackgroundWrapper>
   );

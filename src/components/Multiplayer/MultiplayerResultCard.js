@@ -117,7 +117,7 @@ const MultiplayerResultCard = ({ result }) => {
       >
         {i18n.t("multiplayerResults.youMatch")}{" "}
         {Math.round(result.matchingPercentage)}%{" "}
-        {i18n.t("multiplayerResults.withList")} {result.partyDetails?.name}
+        {i18n.t("multiplayerResults.withList")} {result.partyDetails?.fullname}
       </CustomText>
       <CustomText
         style={{

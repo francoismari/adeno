@@ -1,0 +1,154 @@
+Date : 2024-02-20 23:05:21
+Directory : /Users/francoismari/dev/adeno/app/assets
+Total : 112 files,  102383 codes, 75 comments, 440 blanks, all 102898 lines
+
+Languages
++------------+------------+------------+------------+------------+------------+
+| language   | files      | code       | comment    | blank      | total      |
++------------+------------+------------+------------+------------+------------+
+| JavaScript |        112 |    102,383 |         75 |        440 |    102,898 |
++------------+------------+------------+------------+------------+------------+
+
+Directories
++--------------------------------------------------------------------------------------+------------+------------+------------+------------+------------+
+| path                                                                                 | files      | code       | comment    | blank      | total      |
++--------------------------------------------------------------------------------------+------------+------------+------------+------------+------------+
+| .                                                                                    |        112 |    102,383 |         75 |        440 |    102,898 |
+| . (Files)                                                                            |          2 |         47 |          0 |          2 |         49 |
+| data                                                                                 |        110 |    102,336 |         75 |        438 |    102,849 |
+| data (Files)                                                                         |          2 |        104 |          0 |          2 |        106 |
+| data/files                                                                           |         56 |      3,715 |         46 |        373 |      4,134 |
+| data/files (Files)                                                                   |          5 |        234 |         46 |          9 |        289 |
+| data/files/competences                                                               |          3 |        462 |          0 |         81 |        543 |
+| data/files/elections                                                                 |          3 |         70 |          0 |          8 |         78 |
+| data/files/enlargements                                                              |          3 |         47 |          0 |         18 |         65 |
+| data/files/figures                                                                   |          3 |        200 |          0 |          6 |        206 |
+| data/files/groups                                                                    |         24 |      2,029 |          0 |         28 |      2,057 |
+| data/files/history                                                                   |          3 |         12 |          0 |          6 |         18 |
+| data/files/institutions                                                              |          3 |        193 |          0 |          6 |        199 |
+| data/files/principles                                                                |          3 |        138 |          0 |         28 |        166 |
+| data/files/symbols                                                                   |          3 |         86 |          0 |         30 |        116 |
+| data/files/treaties                                                                  |          3 |        244 |          0 |        153 |        397 |
+| data/multiplayer                                                                     |          3 |        911 |          7 |         10 |        928 |
+| data/solo                                                                            |         25 |     97,440 |          1 |         25 |     97,466 |
+| data/themes                                                                          |         24 |        166 |         21 |         28 |        215 |
++--------------------------------------------------------------------------------------+------------+------------+------------+------------+------------+
+
+Files
++--------------------------------------------------------------------------------------+------------+------------+------------+------------+------------+
+| filename                                                                             | language   | code       | comment    | blank      | total      |
++--------------------------------------------------------------------------------------+------------+------------+------------+------------+------------+
+| /Users/francoismari/dev/adeno/app/assets/colors.js                                   | JavaScript |          3 |          0 |          1 |          4 |
+| /Users/francoismari/dev/adeno/app/assets/data/council.js                             | JavaScript |         62 |          0 |          1 |         63 |
+| /Users/francoismari/dev/adeno/app/assets/data/files/competences/en.js                | JavaScript |        225 |          0 |          1 |        226 |
+| /Users/francoismari/dev/adeno/app/assets/data/files/competences/fr.js                | JavaScript |        225 |          0 |         76 |        301 |
+| /Users/francoismari/dev/adeno/app/assets/data/files/competences/getCompetences.js    | JavaScript |         12 |          0 |          4 |         16 |
+| /Users/francoismari/dev/adeno/app/assets/data/files/countries.js                     | JavaScript |         33 |          0 |          3 |         36 |
+| /Users/francoismari/dev/adeno/app/assets/data/files/elections/en.js                  | JavaScript |         29 |          0 |          2 |         31 |
+| /Users/francoismari/dev/adeno/app/assets/data/files/elections/fr.js                  | JavaScript |         29 |          0 |          2 |         31 |
+| /Users/francoismari/dev/adeno/app/assets/data/files/elections/getElections.js        | JavaScript |         12 |          0 |          4 |         16 |
+| /Users/francoismari/dev/adeno/app/assets/data/files/enlargements/en.js               | JavaScript |         18 |          0 |          7 |         25 |
+| /Users/francoismari/dev/adeno/app/assets/data/files/enlargements/fr.js               | JavaScript |         17 |          0 |          7 |         24 |
+| /Users/francoismari/dev/adeno/app/assets/data/files/enlargements/getEnlargements.js  | JavaScript |         12 |          0 |          4 |         16 |
+| /Users/francoismari/dev/adeno/app/assets/data/files/figures.js                       | JavaScript |         94 |          0 |          1 |         95 |
+| /Users/francoismari/dev/adeno/app/assets/data/files/figures/en.js                    | JavaScript |         94 |          0 |          1 |         95 |
+| /Users/francoismari/dev/adeno/app/assets/data/files/figures/fr.js                    | JavaScript |         94 |          0 |          1 |         95 |
+| /Users/francoismari/dev/adeno/app/assets/data/files/figures/getFigures.js            | JavaScript |         12 |          0 |          4 |         16 |
+| /Users/francoismari/dev/adeno/app/assets/data/files/filesThemes_en.js                | JavaScript |         48 |         25 |          1 |         74 |
+| /Users/francoismari/dev/adeno/app/assets/data/files/filesThemes_fr.js                | JavaScript |         49 |         21 |          1 |         71 |
+| /Users/francoismari/dev/adeno/app/assets/data/files/getFilesThemes.js                | JavaScript |         10 |          0 |          3 |         13 |
+| /Users/francoismari/dev/adeno/app/assets/data/files/groups/getGroups.js              | JavaScript |         50 |          0 |          5 |         55 |
+| /Users/francoismari/dev/adeno/app/assets/data/files/groups/groups_bg.js              | JavaScript |         86 |          0 |          1 |         87 |
+| /Users/francoismari/dev/adeno/app/assets/data/files/groups/groups_cs.js              | JavaScript |         86 |          0 |          1 |         87 |
+| /Users/francoismari/dev/adeno/app/assets/data/files/groups/groups_da.js              | JavaScript |         86 |          0 |          1 |         87 |
+| /Users/francoismari/dev/adeno/app/assets/data/files/groups/groups_de.js              | JavaScript |         87 |          0 |          1 |         88 |
+| /Users/francoismari/dev/adeno/app/assets/data/files/groups/groups_el.js              | JavaScript |         86 |          0 |          1 |         87 |
+| /Users/francoismari/dev/adeno/app/assets/data/files/groups/groups_en.js              | JavaScript |         86 |          0 |          1 |         87 |
+| /Users/francoismari/dev/adeno/app/assets/data/files/groups/groups_es.js              | JavaScript |         86 |          0 |          1 |         87 |
+| /Users/francoismari/dev/adeno/app/assets/data/files/groups/groups_et.js              | JavaScript |         86 |          0 |          1 |         87 |
+| /Users/francoismari/dev/adeno/app/assets/data/files/groups/groups_fi.js              | JavaScript |         86 |          0 |          1 |         87 |
+| /Users/francoismari/dev/adeno/app/assets/data/files/groups/groups_fr.js              | JavaScript |         86 |          0 |          1 |         87 |
+| /Users/francoismari/dev/adeno/app/assets/data/files/groups/groups_ga.js              | JavaScript |         86 |          0 |          1 |         87 |
+| /Users/francoismari/dev/adeno/app/assets/data/files/groups/groups_hr.js              | JavaScript |         86 |          0 |          1 |         87 |
+| /Users/francoismari/dev/adeno/app/assets/data/files/groups/groups_hu.js              | JavaScript |         86 |          0 |          1 |         87 |
+| /Users/francoismari/dev/adeno/app/assets/data/files/groups/groups_it.js              | JavaScript |         86 |          0 |          1 |         87 |
+| /Users/francoismari/dev/adeno/app/assets/data/files/groups/groups_lt.js              | JavaScript |         86 |          0 |          1 |         87 |
+| /Users/francoismari/dev/adeno/app/assets/data/files/groups/groups_lv.js              | JavaScript |         86 |          0 |          1 |         87 |
+| /Users/francoismari/dev/adeno/app/assets/data/files/groups/groups_mt.js              | JavaScript |         86 |          0 |          1 |         87 |
+| /Users/francoismari/dev/adeno/app/assets/data/files/groups/groups_nl.js              | JavaScript |         86 |          0 |          1 |         87 |
+| /Users/francoismari/dev/adeno/app/assets/data/files/groups/groups_pl.js              | JavaScript |         86 |          0 |          1 |         87 |
+| /Users/francoismari/dev/adeno/app/assets/data/files/groups/groups_pt.js              | JavaScript |         86 |          0 |          1 |         87 |
+| /Users/francoismari/dev/adeno/app/assets/data/files/groups/groups_ro.js              | JavaScript |         86 |          0 |          1 |         87 |
+| /Users/francoismari/dev/adeno/app/assets/data/files/groups/groups_sk.js              | JavaScript |         86 |          0 |          1 |         87 |
+| /Users/francoismari/dev/adeno/app/assets/data/files/groups/groups_sl.js              | JavaScript |         86 |          0 |          1 |         87 |
+| /Users/francoismari/dev/adeno/app/assets/data/files/history/en.js                    | JavaScript |          0 |          0 |          1 |          1 |
+| /Users/francoismari/dev/adeno/app/assets/data/files/history/fr.js                    | JavaScript |          0 |          0 |          1 |          1 |
+| /Users/francoismari/dev/adeno/app/assets/data/files/history/getHistory.js            | JavaScript |         12 |          0 |          4 |         16 |
+| /Users/francoismari/dev/adeno/app/assets/data/files/institutions/en.js               | JavaScript |         78 |          0 |          1 |         79 |
+| /Users/francoismari/dev/adeno/app/assets/data/files/institutions/fr.js               | JavaScript |        103 |          0 |          1 |        104 |
+| /Users/francoismari/dev/adeno/app/assets/data/files/institutions/getInstitutions.js  | JavaScript |         12 |          0 |          4 |         16 |
+| /Users/francoismari/dev/adeno/app/assets/data/files/principles/en.js                 | JavaScript |         63 |          0 |         12 |         75 |
+| /Users/francoismari/dev/adeno/app/assets/data/files/principles/fr.js                 | JavaScript |         63 |          0 |         12 |         75 |
+| /Users/francoismari/dev/adeno/app/assets/data/files/principles/getPrinciples.js      | JavaScript |         12 |          0 |          4 |         16 |
+| /Users/francoismari/dev/adeno/app/assets/data/files/symbols/en.js                    | JavaScript |         37 |          0 |         13 |         50 |
+| /Users/francoismari/dev/adeno/app/assets/data/files/symbols/fr.js                    | JavaScript |         37 |          0 |         13 |         50 |
+| /Users/francoismari/dev/adeno/app/assets/data/files/symbols/getSymbols.js            | JavaScript |         12 |          0 |          4 |         16 |
+| /Users/francoismari/dev/adeno/app/assets/data/files/treaties/en.js                   | JavaScript |        103 |          0 |         67 |        170 |
+| /Users/francoismari/dev/adeno/app/assets/data/files/treaties/fr.js                   | JavaScript |        129 |          0 |         83 |        212 |
+| /Users/francoismari/dev/adeno/app/assets/data/files/treaties/getTreaties.js          | JavaScript |         12 |          0 |          3 |         15 |
+| /Users/francoismari/dev/adeno/app/assets/data/multiplayer/getMultiplayerQuestions.js | JavaScript |          7 |          0 |          2 |          9 |
+| /Users/francoismari/dev/adeno/app/assets/data/multiplayer/questions_en.js            | JavaScript |        452 |          0 |          1 |        453 |
+| /Users/francoismari/dev/adeno/app/assets/data/multiplayer/questions_fr.js            | JavaScript |        452 |          7 |          7 |        466 |
+| /Users/francoismari/dev/adeno/app/assets/data/partners.js                            | JavaScript |         42 |          0 |          1 |         43 |
+| /Users/francoismari/dev/adeno/app/assets/data/solo/questionsByLocale.js              | JavaScript |         19 |          1 |          3 |         23 |
+| /Users/francoismari/dev/adeno/app/assets/data/solo/questions_bg.js                   | JavaScript |      4,646 |          0 |          1 |      4,647 |
+| /Users/francoismari/dev/adeno/app/assets/data/solo/questions_cs.js                   | JavaScript |      4,627 |          0 |          1 |      4,628 |
+| /Users/francoismari/dev/adeno/app/assets/data/solo/questions_da.js                   | JavaScript |      4,637 |          0 |          1 |      4,638 |
+| /Users/francoismari/dev/adeno/app/assets/data/solo/questions_de.js                   | JavaScript |      4,650 |          0 |          1 |      4,651 |
+| /Users/francoismari/dev/adeno/app/assets/data/solo/questions_dk.js                   | JavaScript |          0 |          0 |          1 |          1 |
+| /Users/francoismari/dev/adeno/app/assets/data/solo/questions_el.js                   | JavaScript |      4,651 |          0 |          1 |      4,652 |
+| /Users/francoismari/dev/adeno/app/assets/data/solo/questions_en.js                   | JavaScript |      4,636 |          0 |          1 |      4,637 |
+| /Users/francoismari/dev/adeno/app/assets/data/solo/questions_es.js                   | JavaScript |      4,644 |          0 |          1 |      4,645 |
+| /Users/francoismari/dev/adeno/app/assets/data/solo/questions_et.js                   | JavaScript |      4,626 |          0 |          1 |      4,627 |
+| /Users/francoismari/dev/adeno/app/assets/data/solo/questions_fi.js                   | JavaScript |      4,637 |          0 |          1 |      4,638 |
+| /Users/francoismari/dev/adeno/app/assets/data/solo/questions_fr.js                   | JavaScript |      4,645 |          0 |          1 |      4,646 |
+| /Users/francoismari/dev/adeno/app/assets/data/solo/questions_ga.js                   | JavaScript |          0 |          0 |          1 |          1 |
+| /Users/francoismari/dev/adeno/app/assets/data/solo/questions_hr.js                   | JavaScript |      4,628 |          0 |          1 |      4,629 |
+| /Users/francoismari/dev/adeno/app/assets/data/solo/questions_hu.js                   | JavaScript |      4,644 |          0 |          0 |      4,644 |
+| /Users/francoismari/dev/adeno/app/assets/data/solo/questions_it.js                   | JavaScript |      4,642 |          0 |          1 |      4,643 |
+| /Users/francoismari/dev/adeno/app/assets/data/solo/questions_lt.js                   | JavaScript |      4,633 |          0 |          0 |      4,633 |
+| /Users/francoismari/dev/adeno/app/assets/data/solo/questions_lv.js                   | JavaScript |      4,639 |          0 |          1 |      4,640 |
+| /Users/francoismari/dev/adeno/app/assets/data/solo/questions_mt.js                   | JavaScript |      4,646 |          0 |          1 |      4,647 |
+| /Users/francoismari/dev/adeno/app/assets/data/solo/questions_nl.js                   | JavaScript |          0 |          0 |          1 |          1 |
+| /Users/francoismari/dev/adeno/app/assets/data/solo/questions_pl.js                   | JavaScript |      4,644 |          0 |          1 |      4,645 |
+| /Users/francoismari/dev/adeno/app/assets/data/solo/questions_pt.js                   | JavaScript |      4,635 |          0 |          1 |      4,636 |
+| /Users/francoismari/dev/adeno/app/assets/data/solo/questions_ro.js                   | JavaScript |      4,642 |          0 |          1 |      4,643 |
+| /Users/francoismari/dev/adeno/app/assets/data/solo/questions_sk.js                   | JavaScript |      4,634 |          0 |          1 |      4,635 |
+| /Users/francoismari/dev/adeno/app/assets/data/solo/questions_sl.js                   | JavaScript |      4,635 |          0 |          1 |      4,636 |
+| /Users/francoismari/dev/adeno/app/assets/data/themes/getTheme.js                     | JavaScript |          8 |         21 |          5 |         34 |
+| /Users/francoismari/dev/adeno/app/assets/data/themes/theme_cs.js                     | JavaScript |          0 |          0 |          1 |          1 |
+| /Users/francoismari/dev/adeno/app/assets/data/themes/theme_de.js                     | JavaScript |          0 |          0 |          1 |          1 |
+| /Users/francoismari/dev/adeno/app/assets/data/themes/theme_el.js                     | JavaScript |          0 |          0 |          1 |          1 |
+| /Users/francoismari/dev/adeno/app/assets/data/themes/theme_fi.js                     | JavaScript |          0 |          0 |          1 |          1 |
+| /Users/francoismari/dev/adeno/app/assets/data/themes/theme_ga.js                     | JavaScript |          0 |          0 |          1 |          1 |
+| /Users/francoismari/dev/adeno/app/assets/data/themes/theme_hu.js                     | JavaScript |          0 |          0 |          1 |          1 |
+| /Users/francoismari/dev/adeno/app/assets/data/themes/theme_it.js                     | JavaScript |          0 |          0 |          1 |          1 |
+| /Users/francoismari/dev/adeno/app/assets/data/themes/theme_lv.js                     | JavaScript |          0 |          0 |          1 |          1 |
+| /Users/francoismari/dev/adeno/app/assets/data/themes/themes_bg.js                    | JavaScript |          0 |          0 |          1 |          1 |
+| /Users/francoismari/dev/adeno/app/assets/data/themes/themes_da.js                    | JavaScript |          0 |          0 |          1 |          1 |
+| /Users/francoismari/dev/adeno/app/assets/data/themes/themes_en.js                    | JavaScript |         79 |          0 |          1 |         80 |
+| /Users/francoismari/dev/adeno/app/assets/data/themes/themes_es.js                    | JavaScript |          0 |          0 |          1 |          1 |
+| /Users/francoismari/dev/adeno/app/assets/data/themes/themes_et.js                    | JavaScript |          0 |          0 |          1 |          1 |
+| /Users/francoismari/dev/adeno/app/assets/data/themes/themes_fr.js                    | JavaScript |         79 |          0 |          1 |         80 |
+| /Users/francoismari/dev/adeno/app/assets/data/themes/themes_hr.js                    | JavaScript |          0 |          0 |          1 |          1 |
+| /Users/francoismari/dev/adeno/app/assets/data/themes/themes_lt.js                    | JavaScript |          0 |          0 |          1 |          1 |
+| /Users/francoismari/dev/adeno/app/assets/data/themes/themes_mt.js                    | JavaScript |          0 |          0 |          1 |          1 |
+| /Users/francoismari/dev/adeno/app/assets/data/themes/themes_nl.js                    | JavaScript |          0 |          0 |          1 |          1 |
+| /Users/francoismari/dev/adeno/app/assets/data/themes/themes_pl.js                    | JavaScript |          0 |          0 |          1 |          1 |
+| /Users/francoismari/dev/adeno/app/assets/data/themes/themes_pt.js                    | JavaScript |          0 |          0 |          1 |          1 |
+| /Users/francoismari/dev/adeno/app/assets/data/themes/themes_ro.js                    | JavaScript |          0 |          0 |          1 |          1 |
+| /Users/francoismari/dev/adeno/app/assets/data/themes/themes_sk.js                    | JavaScript |          0 |          0 |          1 |          1 |
+| /Users/francoismari/dev/adeno/app/assets/data/themes/themes_sl.js                    | JavaScript |          0 |          0 |          1 |          1 |
+| /Users/francoismari/dev/adeno/app/assets/frMockCandidates.js                         | JavaScript |         44 |          0 |          1 |         45 |
+| Total                                                                                |            |    102,383 |         75 |        440 |    102,898 |
++--------------------------------------------------------------------------------------+------------+------------+------------+------------+------------+
