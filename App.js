@@ -1,10 +1,7 @@
 import { NavigationContainer } from "@react-navigation/native";
-import StackNavigator from "./src/navigation/StackNavigator";
-import * as Font from "expo-font";
 import * as SplashScreen from "expo-splash-screen";
-import { useEffect, useState } from "react";
-import { UserProvider, useUser } from "./src/context/userContext";
-import Initializer from "./Initializer";
+import { UserProvider } from "./src/context/userContext";
+import Initializer from "./src/screens/Initializer";
 
 SplashScreen.preventAutoHideAsync();
 

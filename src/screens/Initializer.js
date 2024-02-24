@@ -1,19 +1,19 @@
 import { useCallback, useEffect, useState } from "react";
-import { useUser } from "./src/context/userContext";
+import { useUser } from "../context/userContext";
 
 import * as Font from "expo-font";
 import * as Localization from "expo-localization";
 import * as SplashScreen from "expo-splash-screen";
 import AsyncStorage from "@react-native-async-storage/async-storage";
 
-import { auth, db } from "./firebaseConfig";
+import { auth, db } from "../../firebaseConfig";
 import { doc, getDoc } from "firebase/firestore";
-import i18n from "./src/languages/i18n";
-import StackNavigator from "./src/navigation/StackNavigator";
+import i18n from "../languages/i18n";
+import StackNavigator from "../navigation/StackNavigator";
 import { View } from "react-native";
 
 let customFonts = {
-  FrancoisOne: require("./assets/fonts/FrancoisOne-Regular.ttf"),
+  FrancoisOne: require("../../assets/fonts/FrancoisOne-Regular.ttf"),
 };
 
 function Initializer() {
