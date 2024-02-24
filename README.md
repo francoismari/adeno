@@ -1,5 +1,5 @@
 # Adeno
-The first open-source European game to vote for the 2024 elections!
+The first open-source European game to vote for the 2024 elections! 🇪🇺
 
 ## Solo mode
 
