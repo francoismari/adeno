@@ -6,6 +6,7 @@ import CustomText from "../../components/CustomText";
 import questions from "../../../assets/data/solo/questions_fr";
 import getTheme from "../../../assets/data/themes/getTheme";
 import { useUser } from "../../context/userContext";
+import { handleClose } from "../../utils/navigationUtils";
 
 export default function GroupResultsDetails({ navigation, route }) {
   const {locale} = useUser();
@@ -75,13 +76,9 @@ export default function GroupResultsDetails({ navigation, route }) {
     setThemePercentage(themePercentageCalculated);
   };
 
-  const handleClose = () => {
-    navigation.goBack();
-  };
-
   return (
     <View style={{ flex: 1, backgroundColor: "#5354E8" }}>
-      <CenteredTitleHeader handleClose={handleClose} title={group.name} />
+      <CenteredTitleHeader handleClose={handleClose(navigation)} title={group.name} />
       <View
         style={{
           shadowColor: "#000",

@@ -16,7 +16,7 @@
     ],
     "ios": {
       "supportsTablet": false,
-      "buildNumber": "1",
+      "buildNumber": "2",
       "bundleIdentifier": "com.francoismari.adeno"
     },
     "android": {

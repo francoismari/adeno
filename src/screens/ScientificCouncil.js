@@ -4,17 +4,14 @@ import CenteredTitleHeader from "../components/CenteredTitleHeader";
 import CustomText from "../components/CustomText";
 import council from "../../assets/data/council";
 import i18n from "../languages/i18n";
+import { handleClose } from "../utils/navigationUtils";
 
 export default function ScientificCouncil({ navigation }) {
-  const handleClose = () => {
-    navigation.goBack();
-  };
-
   return (
     <View style={{ flex: 1, backgroundColor: "#5354E8" }}>
       <CenteredTitleHeader
         title={i18n.t("councilScreen.title")}
-        handleClose={handleClose}
+        handleClose={handleClose(navigation)}
       />
 
       <ScrollView contentContainerStyle={{ paddingHorizontal: 20 }}>

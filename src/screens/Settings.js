@@ -22,6 +22,7 @@ import { deleteDoc, doc } from "firebase/firestore";
 import { auth, db } from "../../firebaseConfig";
 import i18n from "../languages/i18n";
 import team from "../../assets/data/team";
+import { handleClose } from "../utils/navigationUtils";
 
 export default function Settings() {
   const navigation = useNavigation();
@@ -31,10 +32,6 @@ export default function Settings() {
   const [multiplayerTime, setMultiplayerTime] = useState("10");
   const [modalVisible, setModalVisible] = useState(false);
   const [tempTime, setTempTime] = useState(multiplayerTime);
-
-  const handleClose = () => {
-    navigation.goBack();
-  };
 
   useEffect(() => {
     const getMultiplayerTime = async () => {
@@ -63,26 +60,6 @@ export default function Settings() {
 
   const handleSetStudyInfos = () => {
     navigation.navigate("SetStudyInfos");
-  };
-
-  const handleSignOutAndDeleteData = async () => {
-    try {
-      const userId = auth.currentUser.uid;
-
-      if (!userId) {
-        console.log("No user is signed in.");
-        return;
-      }
-
-      await deleteDoc(doc(db, "users", userId));
-      await signOut(auth);
-      setUser(null);
-
-      console.log("User signed out and data deleted.");
-    } catch (error) {
-      console.error("Error signing out and deleting user data: ", error);
-      Alert.alert("Error", error.message);
-    }
   };
 
   const handleResetResults = () => {
@@ -134,7 +111,7 @@ export default function Settings() {
     <View style={{ flex: 1, backgroundColor: "#5354E8" }}>
       <CenteredTitleHeader
         title={i18n.t("settingsScreen.title")}
-        handleClose={handleClose}
+        handleClose={handleClose(navigation)}
       />
 
       <ScrollView>

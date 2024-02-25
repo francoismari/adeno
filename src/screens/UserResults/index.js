@@ -13,14 +13,11 @@ import CenteredTitleHeader from "../../components/CenteredTitleHeader";
 import { LinearGradient } from "expo-linear-gradient";
 import { Feather } from "@expo/vector-icons";
 import i18n from "../../languages/i18n";
+import { handleClose } from "../../utils/navigationUtils";
 
 export default function UserResults({ route }) {
   const navigation = useNavigation();
   const { favoriteGroups } = route.params;
-
-  const handleClose = () => {
-    navigation.goBack();
-  };
 
   const showDetailedResults = (group) => {
     navigation.navigate("GroupResultsDetails", { group });
@@ -33,7 +30,7 @@ export default function UserResults({ route }) {
   return (
     <View style={{ flex: 1, backgroundColor: "#5354E8" }}>
       <CenteredTitleHeader
-        handleClose={handleClose}
+        handleClose={handleClose(navigation)}
         title={i18n.t("allUserResults.title")}
       />
 

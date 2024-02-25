@@ -1,12 +1,11 @@
 import {
   View,
-  Text,
-  ScrollView,
   FlatList,
   TouchableOpacity,
   Pressable,
   Animated,
   Image,
+  StyleSheet,
 } from "react-native";
 import React, { useEffect, useRef, useState } from "react";
 import BackgroundWrapper from "../components/BackgroundWrapper";
@@ -95,11 +94,12 @@ export default function Home() {
         renderItem={({ item }) => <LevelContainer level={item} />}
         ListFooterComponent={() => (
           <UserHeadList
+            navigation={navigation}
             favoriteGroup={favoriteGroup}
             favoriteGroups={favoriteGroups}
           />
         )}
-        contentContainerStyle={{ paddingBottom: 140 }}
+        contentContainerStyle={styles.mainList}
         showsVerticalScrollIndicator={false}
       />
     </BackgroundWrapper>
@@ -107,77 +107,53 @@ export default function Home() {
 }
 
 const LevelContainer = ({ level }) => {
-  // console.log("LEVEL : ", level);
-
-  // Animated value for scaling
   const scaleAnim = useRef(new Animated.Value(1)).current;
 
-  // Function to scale up
   const onPressIn = () => {
     Animated.spring(scaleAnim, {
-      toValue: 0.9, // Scale to 110%
+      toValue: 0.9,
       useNativeDriver: true,
     }).start();
   };
 
-  // Function to scale down
   const onPressOut = () => {
     Animated.spring(scaleAnim, {
-      toValue: 1, // Scale back to 100%
+      toValue: 1,
       useNativeDriver: true,
     }).start();
   };
 
   return (
     <Animated.View
-      style={{
-        transform: [{ scale: scaleAnim }],
-        marginHorizontal: 20,
-        marginTop: 20,
-        marginBottom: 20,
-      }}
+      style={[
+        styles.levelContainer,
+        {
+          transform: [{ scale: scaleAnim }],
+        },
+      ]}
     >
       <Pressable
         onPressIn={onPressIn}
         onPressOut={onPressOut}
         onPress={level.onPressStart}
-        style={{
-          backgroundColor: "white",
-          borderWidth: 3,
-          borderColor: level.mainColor,
-          paddingTop: 26,
-          borderRadius: 26,
-        }}
+        style={[
+          styles.levelPressable,
+          {
+            borderColor: level.mainColor,
+          },
+        ]}
       >
         <View
-          style={{
-            marginTop: -40,
-            alignSelf: "center",
-            backgroundColor: level.mainColor,
-            paddingHorizontal: 8,
-            paddingVertical: 3,
-            borderRadius: 10,
-            transform: [{ rotate: "-1deg" }],
-          }}
+          style={[
+            styles.levelTitleContainer,
+            { backgroundColor: level.mainColor },
+          ]}
         >
-          <CustomText
-            style={{ fontSize: 20, color: "white", fontFamily: "FrancoisOne" }}
-          >
-            {level.title}
-          </CustomText>
+          <CustomText style={styles.levelTitle}>{level.title}</CustomText>
         </View>
 
         <CustomText
-          style={{
-            alignSelf: "center",
-            textAlign: "center",
-            marginHorizontal: 30,
-            fontFamily: "FrancoisOne",
-            lineHeight: 20,
-            fontSize: 17,
-            color: level.mainColor,
-            marginTop: 15,
-          }}
+          style={[styles.levelDescription, { color: level.mainColor }]}
         >
           {level.description}
         </CustomText>
@@ -191,36 +167,19 @@ const LevelContainer = ({ level }) => {
 const StartButton = ({ playText, color }) => {
   return (
     <View
-      style={{
-        width: "150",
-        paddingHorizontal: 30,
-        paddingVertical: 6,
-        alignSelf: "center",
-        backgroundColor: color,
-        borderRadius: 12,
-        marginBottom: 16,
-        marginTop: 12,
-      }}
+      style={[
+        styles.startButtonContainer,
+        {
+          backgroundColor: color,
+        },
+      ]}
     >
-      <CustomText
-        style={{
-          color: "white",
-          textTransform: "uppercase",
-          fontSize: 17,
-          fontFamily: "FrancoisOne",
-        }}
-      >
-        {playText}
-      </CustomText>
+      <CustomText style={styles.startButtonText}>{playText}</CustomText>
     </View>
   );
 };
 
-const UserHeadList = ({ favoriteGroup, favoriteGroups }) => {
-  const navigation = useNavigation();
-
-  // console.log(favoriteGroups);
-
+const UserHeadList = ({ navigation, favoriteGroup, favoriteGroups }) => {
   const handleSeeResults = () => {
     navigation.navigate("UserResults", { favoriteGroups });
   };
@@ -233,84 +192,25 @@ const UserHeadList = ({ favoriteGroup, favoriteGroups }) => {
     <CardWrapper title={i18n.t("home.headListCard.title")} color={"#5354E8"}>
       {favoriteGroup ? (
         <>
-          <View
-            style={{
-              alignSelf: "center",
-              justifyContent: "center",
-              marginRight: 10,
-              marginTop: 10,
-            }}
-          >
+          <View style={styles.favoriteGroupContainer}>
             <TouchableOpacity
               onPress={handleSeeResults}
-              style={{
-                shadowColor: "#000",
-                shadowOffset: {
-                  width: 0,
-                  height: 2,
-                },
-                shadowOpacity: 0.25,
-                shadowRadius: 3.84,
-
-                elevation: 5,
-              }}
+              style={styles.favoriteGroupImage}
             >
               <Image
                 source={favoriteGroup.imageUrl}
-                style={{
-                  width: 89,
-                  height: 89,
-                  borderRadius: 50,
-                  zIndex: 10,
-                  borderWidth: 0.5,
-                  borderColor: "lightgray",
-                }}
+                style={styles.favoriteGroupImage}
               />
             </TouchableOpacity>
-            <View
-              style={{
-                zIndex: 10,
-                width: 74,
-                height: 74,
-                // backgroundColor: "#228B22",
-                position: "absolute",
-                transform: [{ rotate: "8deg" }],
-                top: 20,
-                right: -40,
-                borderRadius: 50,
-                justifyContent: "center",
-                alignItems: "center",
-              }}
-            >
+            <View style={styles.favoriteGroupEmojiContainer}>
               <CustomText style={{ fontSize: 35 }}>
                 {favoriteGroup.emoji}
               </CustomText>
             </View>
           </View>
 
-          <View
-            style={{
-              flex: 1,
-              marginHorizontal: 15,
-              backgroundColor: "#F2F2F2",
-              flexDirection: "row",
-              padding: 10,
-              alignItems: "center",
-              borderRadius: 10,
-              marginTop: 15,
-            }}
-          >
-            <View
-              style={{
-                width: 40,
-                height: 40,
-                backgroundColor: "white",
-                borderRadius: 20,
-                justifyContent: "center",
-                alignItems: "center",
-                transform: [{ rotate: "8deg" }],
-              }}
-            >
+          <View style={styles.listNotAvailableContainer}>
+            <View style={styles.listNotAvailableIcon}>
               <CustomText style={{ fontSize: 20 }}>⏳</CustomText>
             </View>
             <View style={{ flexShrink: 1, marginLeft: 10 }}>
@@ -323,83 +223,42 @@ const UserHeadList = ({ favoriteGroup, favoriteGroups }) => {
             </View>
           </View>
 
-          <View
-            style={{
-              flexDirection: "row",
-              alignItems: "center",
-              alignSelf: "center",
-              marginTop: 5,
-            }}
-          >
-            <CustomText
-              style={{
-                textAlign: "center",
-                fontSize: 25,
-                fontFamily: "FrancoisOne",
-              }}
-            >
+          <View style={styles.favoriteGroupNameContainer}>
+            <CustomText style={styles.favoriteGroupNameText}>
               {favoriteGroup.name}
             </CustomText>
             <CustomText style={{ marginHorizontal: 10, fontSize: 30 }}>
               🫶
             </CustomText>
-            <CustomText style={{ fontSize: 25 }}>
+            <CustomText style={styles.favoriteGroupPercentageText}>
               {Math.round(favoriteGroup.percentage)}%
             </CustomText>
           </View>
 
-          <CustomText
-            style={{ color: "gray", alignSelf: "center", marginBottom: 10 }}
-          >
+          <CustomText style={styles.favoriteGroupFullNameText}>
             {favoriteGroup.fullname}
           </CustomText>
 
-          <CustomText
-            style={{
-              fontSize: 14,
-              fontFamily: "FrancoisOne",
-              lineHeight: 15,
-              color: "#9B9B9B",
-              marginTop: 5,
-              textAlign: "center",
-              marginHorizontal: 20,
-            }}
-          >
+          <CustomText style={styles.favoriteGroupExplanationText}>
             {favoriteGroup.explaination}
           </CustomText>
           <TouchableOpacity
             onPress={handleSeeResults}
-            style={{ marginBottom: 17, marginTop: 10 }}
+            style={styles.seeAllResultsButton}
           >
-            <CustomText
-              style={{
-                fontFamily: "FrancoisOne",
-                textTransform: "uppercase",
-                textAlign: "center",
-                color: "#5354E8",
-                fontSize: 16,
-              }}
-            >
+            <CustomText style={styles.seeAllResultsText}>
               {i18n.t("home.headListCard.seeAllResultsText")}
             </CustomText>
           </TouchableOpacity>
         </>
       ) : (
-        <View
-          style={{
-            padding: 10,
-            justifyContent: "center",
-            alignItems: "center",
-          }}
-        >
-          <CustomText
-            style={{ fontSize: 17, marginHorizontal: 20, textAlign: "center" }}
-          >
+        <View style={styles.noResultContainer}>
+          <CustomText style={styles.noResultText}>
             {i18n.t("home.headListCard.noResultText")}
           </CustomText>
           <TouchableOpacity
             onPress={handleOpenSoloMode}
-            style={{ marginTop: 10 }}
+            style={styles.startButton}
           >
             <StartButton
               playText={i18n.t("home.headListCard.startButtonText")}
@@ -411,3 +270,152 @@ const UserHeadList = ({ favoriteGroup, favoriteGroups }) => {
     </CardWrapper>
   );
 };
+
+const styles = StyleSheet.create({
+  mainList: { paddingBottom: 140 },
+  levelContainer: { marginHorizontal: 20, marginTop: 20, marginBottom: 20 },
+  levelPressable: {
+    backgroundColor: "white",
+    borderWidth: 3,
+    paddingTop: 26,
+    borderRadius: 26,
+  },
+  levelTitleContainer: {
+    marginTop: -40,
+    alignSelf: "center",
+    paddingHorizontal: 8,
+    paddingVertical: 3,
+    borderRadius: 10,
+    transform: [{ rotate: "-1deg" }],
+  },
+  levelTitle: { fontSize: 20, color: "white", fontFamily: "FrancoisOne" },
+  levelDescription: {
+    alignSelf: "center",
+    textAlign: "center",
+    marginHorizontal: 30,
+    fontFamily: "FrancoisOne",
+    lineHeight: 20,
+    fontSize: 17,
+    marginTop: 15,
+  },
+  startButtonContainer: {
+    width: "150",
+    paddingHorizontal: 30,
+    paddingVertical: 6,
+    alignSelf: "center",
+    borderRadius: 12,
+    marginBottom: 16,
+    marginTop: 12,
+  },
+  startButtonText: {
+    color: "white",
+    textTransform: "uppercase",
+    fontSize: 17,
+    fontFamily: "FrancoisOne",
+  },
+  favoriteGroupContainer: {
+    alignSelf: "center",
+    justifyContent: "center",
+    marginRight: 10,
+    marginTop: 10,
+  },
+  favoriteGroupImage: {
+    shadowColor: "#000",
+    shadowOffset: {
+      width: 0,
+      height: 2,
+    },
+    shadowOpacity: 0.25,
+    shadowRadius: 3.84,
+    elevation: 5,
+    width: 89,
+    height: 89,
+    borderRadius: 50,
+    zIndex: 10,
+    borderWidth: 0.5,
+    borderColor: "lightgray",
+  },
+  favoriteGroupEmojiContainer: {
+    zIndex: 10,
+    width: 74,
+    height: 74,
+    position: "absolute",
+    transform: [{ rotate: "8deg" }],
+    top: 20,
+    right: -40,
+    borderRadius: 50,
+    justifyContent: "center",
+    alignItems: "center",
+  },
+  listNotAvailableContainer: {
+    flex: 1,
+    marginHorizontal: 15,
+    backgroundColor: "#F2F2F2",
+    flexDirection: "row",
+    padding: 10,
+    alignItems: "center",
+    borderRadius: 10,
+    marginTop: 15,
+  },
+  listNotAvailableIcon: {
+    width: 40,
+    height: 40,
+    backgroundColor: "white",
+    borderRadius: 20,
+    justifyContent: "center",
+    alignItems: "center",
+    transform: [{ rotate: "8deg" }],
+  },
+  favoriteGroupNameContainer: {
+    flexDirection: "row",
+    alignItems: "center",
+    alignSelf: "center",
+    marginTop: 5,
+  },
+  favoriteGroupNameText: {
+    textAlign: "center",
+    fontSize: 25,
+    fontFamily: "FrancoisOne",
+  },
+  favoriteGroupPercentageText: {
+    fontSize: 25,
+  },
+  favoriteGroupFullNameText: {
+    color: "gray",
+    alignSelf: "center",
+    marginBottom: 10,
+  },
+  favoriteGroupExplanationText: {
+    fontSize: 14,
+    fontFamily: "FrancoisOne",
+    lineHeight: 15,
+    color: "#9B9B9B",
+    marginTop: 5,
+    textAlign: "center",
+    marginHorizontal: 20,
+  },
+  seeAllResultsButton: {
+    marginBottom: 17,
+    marginTop: 10,
+  },
+  seeAllResultsText: {
+    fontFamily: "FrancoisOne",
+    textTransform: "uppercase",
+    textAlign: "center",
+    color: "#5354E8",
+    fontSize: 16,
+  },
+  noResultContainer: {
+    padding: 10,
+    justifyContent: "center",
+    alignItems: "center",
+  },
+  noResultText: {
+    fontSize: 17,
+    marginHorizontal: 20,
+    textAlign: "center",
+  },
+  startButton: {
+    marginTop: 10,
+  },
+});

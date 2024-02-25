@@ -38,13 +38,13 @@ const styles = StyleSheet.create({
   headerContainer: {
     flexDirection: "row",
     alignItems: "center",
-    height: 85, // Adjust the height as needed
+    height: 85,
     paddingBottom: 10,
   },
   backButtonContainer: {
     flex: 1,
-    height: "100%", // Ensures the button aligns with the header's height
-    justifyContent: "center", // Centers the button vertically
+    height: "100%",
+    justifyContent: "center",
   },
   titleContainer: {
     flex: 5,

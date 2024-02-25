@@ -4,21 +4,18 @@ import { Feather } from "@expo/vector-icons";
 import CustomText from "../../components/CustomText";
 import i18n from "../../languages/i18n";
 import CenteredTitleHeader from "../../components/CenteredTitleHeader";
-import ViewShot from "react-native-view-shot"; // Import ViewShot
-import * as Sharing from "expo-sharing"; // Import Sharing from expo-sharing
+import ViewShot from "react-native-view-shot";
+import * as Sharing from "expo-sharing";
+import { handleClose } from "../../utils/navigationUtils";
 
 export default function ShareResults({ navigation, route }) {
   const { favoriteGroups } = route.params;
-  const viewShotRef = useRef(); // Create a ref for ViewShot
-
-  const handleClose = () => {
-    navigation.goBack();
-  };
+  const viewShotRef = useRef();
 
   const handleShare = async () => {
-    const uri = await viewShotRef.current.capture(); // Capture the view shot
+    const uri = await viewShotRef.current.capture();
     try {
-      await Sharing.shareAsync(uri); // Use expo-sharing to share the image
+      await Sharing.shareAsync(uri);
     } catch (error) {
       console.error("Error sharing the image", error);
     }
@@ -26,7 +23,7 @@ export default function ShareResults({ navigation, route }) {
 
   return (
     <View style={{ flex: 1, backgroundColor: "#5354E8" }}>
-      <CenteredTitleHeader handleClose={handleClose} title={""} />
+      <CenteredTitleHeader handleClose={handleClose(navigation)} title={""} />
 
       <View
         style={{
@@ -152,7 +149,7 @@ export default function ShareResults({ navigation, route }) {
         </ViewShot>
 
         <TouchableOpacity
-          onPress={handleShare} // Add onPress event to handle sharing
+          onPress={handleShare}
           style={{
             backgroundColor: "#7879ED",
             padding: 20,

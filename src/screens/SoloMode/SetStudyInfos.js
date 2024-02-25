@@ -13,6 +13,7 @@ import CloseButton from "../../components/CloseButton";
 import { useUser } from "../../context/userContext";
 import { auth, db } from "../../../firebaseConfig";
 import i18n from "../../languages/i18n";
+import { handleClose } from "../../utils/navigationUtils";
 
 const questionData = {
   questions: [
@@ -347,10 +348,6 @@ export default function SetStudyInfos({ navigation }) {
     }
   };
 
-  const handleClose = () => {
-    navigation.goBack();
-  };
-
   const renderQuestion = () => {
     const currentQuestion = questionData.questions[userStep];
     return (
@@ -386,7 +383,7 @@ export default function SetStudyInfos({ navigation }) {
         paddingTop: Platform.OS === "android" ? 20 : 0,
       }}
     >
-      <CloseButton handleClose={handleClose} />
+      <CloseButton handleClose={handleClose(navigation)} />
       <CustomText
         style={{
           fontSize: 60,
@@ -405,7 +402,7 @@ export default function SetStudyInfos({ navigation }) {
           marginHorizontal: 20,
         }}
       >
-        {i18n.t('setStudyInfos.title')}
+        {i18n.t("setStudyInfos.title")}
       </CustomText>
 
       <View

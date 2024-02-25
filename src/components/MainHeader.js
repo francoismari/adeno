@@ -66,9 +66,8 @@ const styles = StyleSheet.create({
     paddingHorizontal: 12,
     borderRadius: 15,
   },
-  // Define platform-specific styles
   titleContainerIos: {
-    paddingVertical: 2, // Use the iOS-specific padding or keep the original value
+    paddingVertical: 2,
   },
   emojiContainer: {
     position: "absolute",

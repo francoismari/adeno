@@ -11,10 +11,7 @@ import { doc, getDoc } from "firebase/firestore";
 import i18n from "../languages/i18n";
 import StackNavigator from "../navigation/StackNavigator";
 import { View } from "react-native";
-
-let customFonts = {
-  FrancoisOne: require("../../assets/fonts/FrancoisOne-Regular.ttf"),
-};
+import customFonts from "../../assets/fonts/customFonts";
 
 function Initializer() {
   const { setUser, setLocale } = useUser();
@@ -29,7 +26,7 @@ function Initializer() {
 
         const userLocale = Localization.getLocales()[0].languageCode;
         const languageTag = Localization.getLocales()[0].languageTag;
-        // console.log("LOCALIZATION DATA:", Localization.getLocales()[0]);
+        // console.log("LOCALIZATION:", Localization.getLocales()[0]);
         i18n.locale = userLocale;
 
         console.log("USER LOCALE: ", userLocale);
@@ -38,22 +35,18 @@ function Initializer() {
         setLocale({ userLocale, languageTag: languageTag });
 
         const setUpValue = await AsyncStorage.getItem("isSetUp");
-        console.log("isSetUp value:", setUpValue); // Debugging log
+        // console.log("isSetUp value:", setUpValue);
 
         setInitialRouteName(setUpValue !== null ? "Navigator" : "Onboarding");
 
         if (setUpValue) {
-          // set user data
-
           const unsubscribe = auth.onAuthStateChanged(async (firebaseUser) => {
             if (firebaseUser) {
-              console.log("LAUNCH, FIREBASE USER: ", firebaseUser);
+              // console.log("LAUNCH, FIREBASE USER: ", firebaseUser);
 
               try {
                 const userDoc = doc(db, "users", firebaseUser.uid);
                 const userDocData = await getDoc(userDoc);
-
-                console.log("LAUNCH, USER DATA: ", firebaseUser);
 
                 setUser(userDocData.data());
               } catch (error) {

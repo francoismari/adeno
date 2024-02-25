@@ -17,7 +17,6 @@ const CustomText = ({ children, style, ...props }) => {
 const styles = StyleSheet.create({
   defaultStyle: {
     fontFamily: "FrancoisOne",
-    // Add any default styles you want for your text component
   },
 });
 
