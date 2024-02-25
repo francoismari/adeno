@@ -253,7 +253,6 @@ export default function Settings() {
           <View style={{ alignSelf: "center" }}>
             <View
               style={{
-                // width: "100%",
                 flexDirection: "row",
                 alignItems: "center",
                 marginTop: 20,
@@ -268,7 +267,7 @@ export default function Settings() {
                 style={{ alignItems: "center" }}
               >
                 <Image
-                  source={require("../../assets/data/images/inceptio/alexis.jpg")}
+                  source={require("../../assets/images/inceptio/alexis.jpg")}
                   style={{ width: 60, height: 60, borderRadius: 30 }}
                 />
                 <CustomText style={{ textAlign: "center", marginTop: 5 }}>
@@ -286,7 +285,7 @@ export default function Settings() {
                 style={{ alignItems: "center", marginHorizontal: 20 }}
               >
                 <Image
-                  source={require("../../assets/data/images/inceptio/laurie.jpg")}
+                  source={require("../../assets/images/inceptio/laurie.jpg")}
                   style={{ width: 60, height: 60, borderRadius: 30 }}
                 />
                 <CustomText style={{ textAlign: "center", marginTop: 2 }}>
@@ -306,7 +305,7 @@ export default function Settings() {
                 style={{ alignItems: "center" }}
               >
                 <Image
-                  source={require("../../assets/data/images/inceptio/vladimir.jpg")}
+                  source={require("../../assets/images/inceptio/vladimir.jpg")}
                   style={{ width: 60, height: 60, borderRadius: 30 }}
                 />
                 <CustomText style={{ textAlign: "center", marginTop: 2 }}>
@@ -463,7 +462,7 @@ const CreatedByContainer = () => {
       onPress={() => Linking.openURL("https://instagram.com/matthieu.mlrd")}
     >
       <Image
-        source={require("../../assets/data/images/photo_Matthieu_Adeno.jpg")}
+        source={require("../../assets/images/photo_Matthieu_Adeno.jpg")}
         style={{ width: 90, height: 90, borderRadius: 45 }}
       />
       <View
