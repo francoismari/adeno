@@ -1,6 +1,7 @@
 import { View, Text, SafeAreaView, Dimensions } from "react-native";
 import React from "react";
 import CustomText from "../../components/CustomText";
+import i18n from "../../languages/i18n";
 
 export default function Tutorial() {
   return (
@@ -54,14 +55,12 @@ export default function Tutorial() {
               marginTop: 5,
             }}
           >
-            Mode multijoueur
+            {i18n.t('onboarding.secondScreen.multiplayerBox.title')}
           </CustomText>
           <CustomText
             style={{ color: "white", textAlign: "center", marginTop: 10 }}
           >
-            Joue avec tes potes, créé des parties et réponds à des questions sur
-            les principaux enjeux européens pour voir tes positions et celles de
-            tes amis !
+            {i18n.t('onboarding.secondScreen.multiplayerBox.description')}
           </CustomText>
         </View>
 
@@ -99,14 +98,12 @@ export default function Tutorial() {
               marginTop: 5,
             }}
           >
-            Mode solo
+            {i18n.t('onboarding.secondScreen.soloBox.title')}
           </CustomText>
           <CustomText
             style={{ color: "white", textAlign: "center", marginTop: 10 }}
           >
-            Réponds à 100 questions sur 10 thèmes et fais-toi un avis sur les
-            principaux groupes aux parlements européens ! Tu verras également à
-            quelle tête de liste tu corresponds dans ton pays.
+            {i18n.t('onboarding.secondScreen.soloBox.description')}
           </CustomText>
         </View>
       </View>

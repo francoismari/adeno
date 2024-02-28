@@ -2,7 +2,7 @@ export default {
   onboarding: {
     firstScreen: {
       subtitle: "L'app pour te faire voter aux élections européennes de 2024 !",
-      firstRow: "Le premier jeu pour t'intéresser à la politique",
+      firstRow: "Le premier jeu pour t'intéresser aux européennes",
       secondRow:
         "Trouve ta tête de liste avec le mode solo et découvre le classement global !",
       thirdRow:
@@ -13,12 +13,12 @@ export default {
       multiplayerBox: {
         title: "Mode multijoueur",
         description:
-          "Joue avec tes potes, créé des parties et réponds à des questions sur les principaux enjeux européens pour voir tes positions et celles de tes amis !",
+          "Lance une partie avec tes amis, donne ton avis sur les principaux enjeux européens et découvre leurs positions !",
       },
       soloBox: {
         title: "Mode solo",
         description:
-          "Réponds à 100 questions sur 10 thèmes et fais-toi un avis sur les principaux groupes aux parlements européens ! Tu verras également à quelle tête de liste tu corresponds dans ton pays.",
+          "Réponds à 100 questions sur 10 thèmes pour te faire un avis sur les groupes politiques du Parlement européen ! Tu découvriras la tête de liste qui correspond le plus à tes convictions.",
       },
     },
     thirdScreen: {
