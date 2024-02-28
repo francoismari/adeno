@@ -50,7 +50,7 @@ function Initializer() {
 
                 setUser(userDocData.data());
               } catch (error) {
-                console.error("Failed to fetch user data or clothes", error);
+                console.error("Failed to fetch user data", error);
               }
             } else {
               setUser(null);

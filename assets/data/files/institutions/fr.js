@@ -9,6 +9,7 @@ export default [
         \nLe Parlement européen joue également un rôle international en ratifiant les traités conclus par l'Union.
         \nEn matière de contrôle, le Parlement exerce un contrôle continu sur la Commission à travers divers mécanismes, notamment des motions de censure qui peuvent entraîner la démission collective de la Commission en cas d'approbation.`,
     emoji: "🏛️",
+    source: "https://www.touteleurope.eu/institutions/le-parlement-europeen/",
   },
   {
     name: "La Comission européenne",
@@ -20,6 +21,8 @@ export default [
     \nLe fonctionnement interne de la Commission est marqué par le renforcement du rôle du Président, qui détient un pouvoir croissant dans la désignation des commissaires, la définition des orientations politiques, et l'organisation interne de la Commission. Fonctionnant selon le principe de collégialité, chaque commissaire n'a pas de pouvoir de décision individuel, et les décisions nécessitent un vote majoritaire du collège des commissaires. 
     `,
     emoji: "🇪🇺",
+    source:
+      "https://www.touteleurope.eu/institutions/la-commission-europeenne/",
   },
   {
     name: "Le Conseil de l'UE",
@@ -29,6 +32,7 @@ export default [
     \nLes attributions du Conseil mettent en évidence la centralité des États dans le processus décisionnel de l'Union européenne. En tant que branche législative, il adopte la majorité des actes de droit dérivé avec le Parlement, jouant un rôle crucial malgré la concurrence croissante du Parlement. En qualité de branche de l'autorité budgétaire, il adopte le budget de l'Union en collaboration avec le Parlement et conserve le rôle décisionnel exclusif pour les questions relatives aux ressources propres.
     \nEnfin, le Conseil exerce un rôle prépondérant dans les relations extérieures de l'UE. Il mandate la Commission pour les négociations internationales, notamment à l'OMC, et ratifie les traités de l'Union, résultant de négociations avec des États tiers ou d'autres organisations internationales. Ces traités sont ensuite soumis à l'approbation du Parlement pour entrer en vigueur.`,
     emoji: "🤝",
+    source: "https://www.touteleurope.eu/dossier/conseil-de-lunion-europeenne/",
   },
   {
     name: "Le Conseil européen",
@@ -36,6 +40,7 @@ export default [
     \nLe Conseil européen agit en amont des autres institutions, intervenant pour relancer l'activité de l'Union en cas de blocage, ouvrir la coopération dans de nouveaux domaines, effectuer des arbitrages budgétaires importants et exprimer des positions communes sur des questions de relations extérieures, en particulier dans le domaine de la politique étrangère et de sécurité commune (PESC-PESDC). Sa prise de décision se fait généralement par consensus, à moins que les traités ne spécifient le contraire.
     \nSon rôle fondamentalement politique le place au-dessus ou en amont du "triangle institutionnel". Depuis sa création, le Conseil européen a gagné en influence, reflétant le renforcement de l'intergouvernementalisme et la reprise en main de la construction européenne par les États. Les décisions normatives de l'UE, qu'elles soient législatives ou budgétaires, sont largement influencées par les orientations politiques du Conseil européen. Malgré son rôle structurellement subordonné dans l'adoption d'actes au Conseil de l'UE, la Commission européenne, originellement un organe d'impulsion, a vu son rôle réduit, devenant souvent un simple relai juridique des impulsions du Conseil européen. Ainsi, bien que le Conseil européen et le Parlement européen n'occupent pas exactement la même sphère politique, le Parlement émerge comme le principal contrepoids au Conseil européen dans le système institutionnel de l'Union.`,
     emoji: "👤",
+    source: "https://www.touteleurope.eu/dossier/conseil-europeen/",
   },
   {
     name: "Le Conseil des régions",
@@ -43,12 +48,15 @@ export default [
     \nLa consultation du Comité des Régions est obligatoire pour les domaines suivants : cohésion économique, sociale et territoriale ; fonds structurels ; emploi et affaires sociales ; éducation, jeunesse, formation professionnelle, culture et sport ; environnement, énergie et changement climatique ; transports ; réseaux transeuropéens ; santé publique.
     \nLes 329 membres de l'assemblée du CdR ont un mandat de cinq ans et sont nommés par le Conseil, sur proposition des États membres. La France, l'Allemagne et l'Italie présentent chacune 24 délégués, les plus nombreux, tandis que Malte, avec 5 délégués, en présente le moins. Pour être membre du Comité, il faut impérativement posséder un mandat électoral au sein d'une collectivité territoriale régionale ou locale, ou être politiquement responsable envers une assemblée élue.`,
     emoji: "🌍",
+    source:
+      "https://www.touteleurope.eu/l-europe-en-region/qu-est-ce-que-le-comite-europeen-des-regions/",
   },
   {
-    name: "La banque centrale",
+    name: "La Banque centrale",
     text: `La Banque centrale européenne (BCE) est l'institution centrale du système euro et a été fondée en 1998 dans le cadre de l'Union économique et monétaire européenne. Elle est responsable de la politique monétaire dans la zone euro, son objectif principal étant de maintenir la stabilité des prix. Sa mission- déterminée par les traités européens - consiste à assurer la stabilité des prix à travers la définition des taux d’intérêts dans le but de maîtriser l’inflation et de préserver la valeur de la monnaie. La BCE est aussi chargée de l’émission de la monnaie unique, la gestion des réserves euro et assume une fonction de supervision bancaire depuis 2014.
     \nL’Eurosystème, composé de la BCE et des banques centrales des 20 pays membres de la zone euro, met en œuvre la politique monétaire unique, gère les réserves et conduit les opérations de change. La coopération financière et monétaire entre l’Eurosystème et les pays hors zone euro est assurée par le Système européen de banques centrales (SEBC), qui rassemble les banques centrales de tous les Etats membres de l’UE. Elle dispose de son propre budget et agit indépendamment. Depuis 2019, Christine Lagarde est la présidente de la BCE. Son siège est à Francfort-sur-le-Main (Allemagne).`,
     emoji: "💶",
+    source: "https://www.touteleurope.eu/dossier/banque-centrale-europeenne/",
   },
   {
     name: "Eurogroupe",
@@ -58,6 +66,7 @@ export default [
     \nLes réunions comprennent les ministres de la zone euro, le président de l'Eurogroupe, des représentants de la Commission, de la Banque centrale européenne et du Mécanisme européen de stabilité. Les résultats sont présentés au public lors de conférences de presse, et le président représente l'Eurogroupe au Conseil Ecofin et lors du sommet de la zone euro.
     \nLe président de l'Eurogroupe est élu pour un mandat de deux ans et demi renouvelable par les membres de l'Eurogroupe. Actuellement, depuis le 13 juillet 2020, Paschal Donohoe, ministre des finances d'Irlande, occupe cette fonction. Son rôle comprend la présidence des réunions, la définition des ordres du jour, l'élaboration du programme de travail à long terme et la représentation de l'Eurogroupe au niveau international.`,
     emoji: "💼",
+    source: "https://www.touteleurope.eu/le-glossaire-de-l-europe/eurogroupe/",
   },
   {
     name: "La cour de justice et le tribunal de l'UE",
@@ -65,6 +74,8 @@ export default [
     \nActuellement, le système judiciaire de l'Union se compose de deux instances : la CJUE, composée de 27 juges et 11 avocats généraux, et le Tribunal de l'Union, qui compte deux juges par État membre, totalisant actuellement 54 juges. Ces juges et avocats généraux sont nommés pour des mandats de six ans renouvelables, assurant une stricte indépendance et impartialité. Les décisions du Tribunal de l'Union peuvent faire l'objet d'un recours devant la CJUE en cas de violation du droit. La CJUE fonctionne en première instance pour les recours institutionnels et les renvois préjudiciels, et en instance d'appel pour les recours individuels traités antérieurement par le Tribunal de l'Union européenne, garantissant ainsi l'uniformité du droit de l'Union.
     \nLa mission du juge de l'Union peut être schématiquement résumée en quatre fonctions principales : en tant que juridiction internationale, il règle les différends interétatiques liés à l'application des traités ; en tant que juridiction constitutionnelle, il supervise la répartition des compétences entre les États membres et l'Union, préservant les équilibres verticaux et horizontaux ; en tant que juridiction administrative, il contrôle la légalité des actes de l'UE et engage la responsabilité des institutions ; en tant que juridiction régulatrice, il assure l'uniformité d'application du droit de l'UE.`,
     emoji: "⚖️",
+    source:
+      "https://www.touteleurope.eu/institutions/la-cour-de-justice-de-l-union-europeenne-cjue/",
   },
   {
     name: "Le Service Action Extérieure",
@@ -73,6 +84,8 @@ export default [
     \nLe Haut Représentant défend la politique étrangère et de sécurité de l’UE à l'échelle internationale, coordonne les travaux de la Commission européenne sur les relations extérieures, et préside les réunions des ministres des affaires étrangères, de la défense et du développement. En mettant en œuvre la politique étrangère et de sécurité de l'UE en collaboration avec les États membres et en utilisant les ressources européennes et nationales, le SEAE contribue à garantir la cohérence de la politique étrangère de l'UE dans toute l’Union.
     \nLe SEAE est également composé d'experts issus du Conseil de l'UE, de la Commission européenne et des services diplomatiques des pays de l'UE à Bruxelles, ainsi que d'un réseau d'ambassades de l'UE dans le monde entier.`,
     emoji: "🌐",
+    source:
+      "https://www.touteleurope.eu/l-ue-dans-le-monde/le-service-europeen-pour-l-action-exterieure-seae/",
   },
   {
     name: "Le conseil économique & social",
@@ -82,6 +95,8 @@ export default [
     \nTroisièmement, le CESE promeut les valeurs fondamentales de la construction européenne et œuvre à faire progresser la démocratie, la démocratie participative et le rôle des organisations de la société civile en Europe et dans le monde entier.
     \nLe fonctionnement du CESE repose sur son statut d'organe consultatif, offrant une plateforme officielle aux représentants des milieux socioprofessionnels et d'autres organisations en Europe pour exprimer leurs points de vue sur les questions européennes. `,
     emoji: "🗣️",
+    source:
+      "https://www.touteleurope.eu/institutions/le-comite-economique-et-social-europeen-cese/",
   },
   {
     name: "La médiatrice européenne",
@@ -90,6 +105,8 @@ export default [
     \nLe Médiateur présente annuellement son rapport d'activité devant le Parlement européen, rendant compte des plaintes traitées et des enquêtes menées. En 2020, 2 148 nouvelles plaintes ont été traitées, avec 1 262 demandes d'information recevant une réponse. Les principales causes de plaintes sont liées à la transparence des institutions européennes.
     \nLe processus de dépôt d'une plainte doit s'effectuer dans les deux ans suivant la prise de connaissance du problème, en précisant l'identité du plaignant et l'institution visée. Le Médiateur peut demander des réponses et des informations, organiser des réunions, et formuler des recommandations en cas de constat de mauvaise administration. Cependant, il n'a pas le pouvoir d'enquêter sur des plaintes contre des autorités nationales, régionales, ou locales, des activités relevant de tribunaux ou médiateurs nationaux, des entreprises ou des particuliers.`,
     emoji: "🔍",
+    source:
+      "https://www.touteleurope.eu/fonctionnement-de-l-ue/a-quoi-sert-le-mediateur-europeen/",
   },
   {
     name: "La banque d'investissement",
@@ -99,5 +116,7 @@ export default [
     \nLes actionnaires de la BEI sont les pays membres de l'UE, prenant des décisions à travers le Conseil des gouverneurs, le Conseil d'administration, et le Comité de direction. La BEI fonctionne de manière indépendante, collaborant avec d'autres institutions de l'UE, notamment la Commission européenne, le Parlement européen, et le Conseil de l'UE.
     \nLa BEI agit en fonction des mérites de chaque projet et des opportunités offertes par les marchés financiers. En interne, son activité de prêt est guidée par des priorités spécifiques définies dans l'UE, tandis qu'à l'extérieur de l'UE, elle soutient les politiques de développement et de coopération de l'UE dans le monde entier. Son rôle est de financer des projets contribuant aux objectifs de l'Union, tant à l'intérieur qu'à l'extérieur de l'UE. La présidente actuelle est Nadia Calviño.`,
     emoji: "🏦",
+    source:
+      "https://www.touteleurope.eu/institutions/qu-est-ce-que-la-banque-europeenne-d-investissement-bei/",
   },
 ];

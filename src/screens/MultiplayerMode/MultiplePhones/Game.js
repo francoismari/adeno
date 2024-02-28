@@ -109,16 +109,20 @@ export default function Game({ route }) {
                   style={{
                     paddingVertical: 10,
                     // borderWidth: 1,
-                    borderRadius: 5,
+                    // borderRadius: 5,
                     justifyContent: "center",
                     alignItems: "center",
-                    backgroundColor: "white",
+                    // backgroundColor: "white",
+                    borderWidth: 1,
+                    borderRadius: 15,
+                    borderColor: "white",
                   }}
                 >
                   <CustomText
                     style={{
                       fontSize: 30,
                       letterSpacing: 5,
+                      color: "white",
                     }}
                   >
                     {roomCode}
@@ -138,7 +142,7 @@ export default function Game({ route }) {
                     justifyContent: "center",
                     alignItems: "center",
                     backgroundColor: "white",
-                    borderRadius: 5,
+                    borderRadius: 15,
                     marginTop: 14,
                   }}
                 >
@@ -180,17 +184,7 @@ const RoomDetails = ({ roomDetails }) => {
     const fetchPlayerData = async () => {
       const fetchedPlayersData = await Promise.all(
         roomDetails.players.map(async (player) => {
-          const userRef = doc(db, "users", player.uid);
-          const userSnap = await getDoc(userRef);
-
-          if (userSnap.exists()) {
-            return {
-              ...player,
-              profilePicUrl: userSnap.data().profilePicUrl,
-            };
-          } else {
-            return player; // or handle the error if needed
-          }
+          return player;
         })
       );
       setPlayersData(fetchedPlayersData);

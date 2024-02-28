@@ -4,6 +4,8 @@ import {
   Dimensions,
   Platform,
   StyleSheet,
+  View,
+  Text,
 } from "react-native";
 import React, { useRef, useState } from "react";
 import MultiplayerResultCard from "./MultiplayerResultCard";
@@ -30,8 +32,8 @@ export default function ResultList({ results }) {
         showsHorizontalScrollIndicator={false}
         horizontal
       >
-        {Object.entries(results).map(([player, result]) => (
-          <MultiplayerResultCard result={result} />
+        {Object.entries(results).map(([player, resultsArray]) => (
+          <MultiplayerResultCard result={resultsArray} player={player} />
         ))}
       </ScrollView>
 
@@ -49,7 +51,7 @@ const styles = StyleSheet.create({
   scrollContainer: { paddingBottom: 150 },
   nextButton: {
     position: "absolute",
-    bottom: Platform.OS == "android" ? 270 : 300,
+    bottom: Platform.OS == "android" ? 150 : 180,
     paddingVertical: 10,
     paddingHorizontal: 15,
     borderRadius: 50,

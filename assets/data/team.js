@@ -26,7 +26,7 @@ export default [
   },
   {
     name: "Elise Torche",
-    role: "Responsable pôle éditorial",
+    role: "Co-responsable pôle édito et ambassadeurs",
     link: "https://www.instagram.com/elise.trc/",
   },
   {
@@ -35,7 +35,7 @@ export default [
     link: "https://www.instagram.com/alixpnct/",
   },
   {
-    name: "Igor Thiam",
+    name: "Igor Tiam",
     role: "Bénévole",
     link: "https://www.instagram.com/igortmski/",
   },
@@ -46,7 +46,7 @@ export default [
   },
   {
     name: "Louise Réquillart",
-    role: "Bénévole",
+    role: "Responsable relations presse",
     link: "https://www.linkedin.com/in/louise-r%C3%A9quillart-b1b615191",
   },
   {
@@ -60,7 +60,7 @@ export default [
     link: "https://www.linkedin.com/in/emily-heider-75b5102b0",
   },
   {
-    name: "Adelaïde Brouillet",
+    name: "Adélaïde Brouillet",
     role: "Bénévole",
     link: "https://www.linkedin.com/in/ad%C3%A9la%C3%AFde-brouillet-a44243235",
   },
@@ -88,5 +88,15 @@ export default [
     name: "Alexis Costa",
     role: "Responsable financier",
     link: "https://www.linkedin.com/in/alexis-costa-b83b66b5/",
+  },
+  {
+    name: "Antoine Meillier-Sacco",
+    role: "Bénévole",
+    link: "https://www.instagram.com/nexus_evorra/",
+  },
+  {
+    name: "Vladimir Méline",
+    role: "Reponsable événementiel",
+    link: "https://www.linkedin.com/in/vladimirmélineconseiletstratégie/",
   },
 ];

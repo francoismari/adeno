@@ -4,6 +4,8 @@ export default [
     text: `L'Union européenne fonctionne en tant qu'Union douanière, ce qui implique l'instauration d'une protection douanière commune dans ses relations commerciales avec les États tiers. Cette caractéristique se traduit par l'application d'un même droit de douane, établi au niveau européen dans un tarif douanier commun, quel que soit le point d'entrée sur le territoire européen d'une marchandise importée. Les droits de douane ainsi perçus par les administrations nationales sont ensuite reversés au budget de l'Union européenne, constituant une part significative de ses ressources propres, représentant environ 12% des recettes.
         \nEn lien avec cette Union douanière, l'Union européenne dispose d'une politique commerciale commune. Elle bénéficie en principe d'une compétence exclusive pour conclure des accords commerciaux avec des États tiers, illustrée par des exemples tels que le CETA avec le Canada. De plus, cette compétence exclusive s'étend aux négociations multilatérales, notamment dans le cadre de l'Organisation mondiale du commerce (OMC). Cette politique commerciale commune renforce la cohérence et l'efficacité des relations commerciales extérieures de l'Union européenne en permettant une approche unifiée dans la conclusion d'accords et dans les négociations internationales.`,
     emoji: "🛃",
+    source:
+      "https://www.touteleurope.eu/fonctionnement-de-l-ue/marche-unique-union-douaniere-accord-de-libre-echange-quelles-differences/",
   },
   {
     name: "Concurrence",
@@ -12,64 +14,55 @@ export default [
         \nEnfin, le droit de la concurrence a influencé certains services publics opérant dans des secteurs économiques, en imposant des conditions pour permettre la mise en concurrence et prévenir les avantages indus liés à une position dominante. Les services publics non économiques, relevant des activités régaliennes, échappent toutefois à ces règles, préservant ainsi leur mission d'intérêt général.
         `,
     emoji: "⚖️",
+    source:
+      "https://www.touteleurope.eu/economie-et-social/la-concurrence-dans-l-union-europeenne/",
   },
   {
     name: "Politique monétaire",
     text: `La politique monétaire de l'Union européenne est mise en œuvre par la Banque centrale européenne (BCE) au sein du Système européen des banques centrales (SEBC), comprenant également les Banques centrales nationales (BCN). La politique monétaire vise à atteindre les objectifs de croissance, plein emploi et équilibre extérieur, avec deux principaux objectifs : stabiliser les prix et stimuler l'activité économique.
-  
-  La BCE fonctionne davantage en tant qu'organe de politique monétaire que budgétaire, axant ses efforts sur la stabilité des prix et le maintien de l'inflation annuelle supérieure à 2%. Elle engage un dialogue avec toutes les institutions européennes pour coordonner ses actions.
-  
-  Le principal objectif du SEBC est la stabilité des prix, avec des missions telles que la mise en œuvre d'une politique monétaire unique, la gestion des réserves de change, la fixation des taux d'intérêt, la surveillance des marchés financiers, et la garantie de la sécurité du système.
-  
-  La politique monétaire repose sur deux types de politiques : conventionnelles et non-conventionnelles :
-  
-  Les politiques conventionnelles reposent sur des outils traditionnels à la disposition des Banques centrales. Les taux directeurs, tels que le taux de refinancement, le taux de rémunération des dépôts, et le taux de prêt marginal, influencent les activités des banques commerciales. De plus, les réserves obligatoires imposent aux banques commerciales de déposer une partie de leurs fonds auprès des BCN, régulant ainsi la disponibilité des crédits.
-  
-  Lorsque les taux directeurs se rapprochent de zéro, la BCE recourt à des politiques non conventionnelles, notamment le quantitative easing. Cette stratégie implique le rachat de dette publique et d'autres actifs financiers pour injecter de l'argent dans l'économie, favorisant l'inflation et la relance. Ces mesures sont considérées comme exceptionnelles et temporaires.
-  
-  Ces deux types de politiques visent  globalement à stabiliser les prix, car une hausse de l'inflation peut dévaluer la monnaie, tandis qu'une baisse peut entraîner la déflation. Toutes les banques nationales ont l'obligation de détenir un compte à la BCE.`,
+\nLa BCE fonctionne davantage en tant qu'organe de politique monétaire que budgétaire, axant ses efforts sur la stabilité des prix et le maintien de l'inflation annuelle supérieure à 2%. Elle engage un dialogue avec toutes les institutions européennes pour coordonner ses actions.
+\nLe principal objectif du SEBC est la stabilité des prix, avec des missions telles que la mise en œuvre d'une politique monétaire unique, la gestion des réserves de change, la fixation des taux d'intérêt, la surveillance des marchés financiers, et la garantie de la sécurité du système.
+\nLa politique monétaire repose sur deux types de politiques : conventionnelles et non-conventionnelles :
+\nLes politiques conventionnelles reposent sur des outils traditionnels à la disposition des Banques centrales. Les taux directeurs, tels que le taux de refinancement, le taux de rémunération des dépôts, et le taux de prêt marginal, influencent les activités des banques commerciales. De plus, les réserves obligatoires imposent aux banques commerciales de déposer une partie de leurs fonds auprès des BCN, régulant ainsi la disponibilité des crédits.
+\nLorsque les taux directeurs se rapprochent de zéro, la BCE recourt à des politiques non conventionnelles, notamment le quantitative easing. Cette stratégie implique le rachat de dette publique et d'autres actifs financiers pour injecter de l'argent dans l'économie, favorisant l'inflation et la relance. Ces mesures sont considérées comme exceptionnelles et temporaires.
+\nCes deux types de politiques visent  globalement à stabiliser les prix, car une hausse de l'inflation peut dévaluer la monnaie, tandis qu'une baisse peut entraîner la déflation. Toutes les banques nationales ont l'obligation de détenir un compte à la BCE.`,
     emoji: "💶",
+    source:
+      "https://www.touteleurope.eu/economie-et-social/le-fonctionnement-de-l-euro/",
   },
   {
     name: "Politique Budgétaire",
     text: `La politique budgétaire de l'Union européenne constitue l'un des principaux instruments de la politique économique, impliquant l'utilisation du budget, comprenant les dépenses et les recettes, pour influencer la conjoncture économique. Depuis la création du Fonds social européen en 1957, la promotion de l'emploi est devenue une priorité dans la politique de dépenses de la Communauté économique européenne, marquant le début des politiques budgétaires.
-  
-  Avec l'entrée dans l'Union économique et monétaire, les pays renoncent à l'instrument monétaire, ne conservant que le budget pour orienter leur politique économique. Les politiques budgétaires nationales varient en fonction de différents déterminants tels que le solde budgétaire, l'endettement public, et la conjoncture économique, entraînant une certaine hétérogénéité entre les États membres (EM).
-  
-  L'interdépendance des pays de la zone euro soulève la question des externalités budgétaires, où les politiques budgétaires dans un EM peuvent influencer les conditions économiques des pays de la zone. Les canaux de transmission des chocs budgétaires comprennent les échanges commerciaux, la compétitivité, la politique monétaire, et les aspects financiers, tels que la dette souveraine.
-  
-  La politique budgétaire au sein de la zone euro peut être contra-cyclique ou pro-cyclique, visant à réduire ou accentuer les fluctuations de la croissance économique. Les mesures d'urgence prises pendant la pandémie de Covid-19 ont illustré les différences nationales dans les politiques budgétaires, facilitées par la suspension du pacte de stabilité budgétaire.
-  
-  La nécessité d'instaurer des règles budgétaires se justifie par le financement des politiques budgétaires par l'endettement des États. Le pacte de stabilité et de croissance établit des critères tels que la stabilité des prix, de la monnaie, des taux d'intérêt, et des finances publiques.
-  
-  L'intégration budgétaire dans la zone euro reste un défi majeur. La mise en place de règles doit concilier l'objectif de stabilité tout en laissant une certaine souplesse aux États. Les débats portent sur l'établissement d'un budget pour la zone euro et sur la nécessité d'un fédéralisme budgétaire pour lutter contre les asymétries structurelles et stabiliser les chocs conjoncturels.`,
+\nAvec l'entrée dans l'Union économique et monétaire, les pays renoncent à l'instrument monétaire, ne conservant que le budget pour orienter leur politique économique. Les politiques budgétaires nationales varient en fonction de différents déterminants tels que le solde budgétaire, l'endettement public, et la conjoncture économique, entraînant une certaine hétérogénéité entre les États membres (EM).
+\nL'interdépendance des pays de la zone euro soulève la question des externalités budgétaires, où les politiques budgétaires dans un EM peuvent influencer les conditions économiques des pays de la zone. Les canaux de transmission des chocs budgétaires comprennent les échanges commerciaux, la compétitivité, la politique monétaire, et les aspects financiers, tels que la dette souveraine.
+\nLa politique budgétaire au sein de la zone euro peut être contra-cyclique ou pro-cyclique, visant à réduire ou accentuer les fluctuations de la croissance économique. Les mesures d'urgence prises pendant la pandémie de Covid-19 ont illustré les différences nationales dans les politiques budgétaires, facilitées par la suspension du pacte de stabilité budgétaire.
+\nLa nécessité d'instaurer des règles budgétaires se justifie par le financement des politiques budgétaires par l'endettement des États. Le pacte de stabilité et de croissance établit des critères tels que la stabilité des prix, de la monnaie, des taux d'intérêt, et des finances publiques.
+\nL'intégration budgétaire dans la zone euro reste un défi majeur. La mise en place de règles doit concilier l'objectif de stabilité tout en laissant une certaine souplesse aux États. Les débats portent sur l'établissement d'un budget pour la zone euro et sur la nécessité d'un fédéralisme budgétaire pour lutter contre les asymétries structurelles et stabiliser les chocs conjoncturels.`,
     emoji: "📊",
+    source:
+      "https://www.touteleurope.eu/fonctionnement-de-l-ue/economie-et-budget-comment-les-etats-europeens-sont-ils-coordonnes/",
   },
   {
     name: "Conservation des ressources Maritimes",
     text: `L'Union Européenne joue un rôle croissant dans la conservation des ressources maritimes et la préservation de la biodiversité marine. Bien que les traités européens initiaux ne se soient pas beaucoup intéressés à l'espace marin, les compétences de l'UE se sont développées, lui permettant désormais d'affirmer sa présence sur la scène maritime internationale.
-  
-  La préservation de la biodiversité marine est au cœur des préoccupations de l'UE. La Commission européenne a fixé l'objectif ambitieux de protéger 30 % des mers de l'UE d'ici 2030, en étendant notamment les zones Natura 2000, des sites naturels et semi-naturels d'une biodiversité exceptionnelle. Un projet de législation visant à restaurer les écosystèmes dégradés a été publié en juin 2022, avec des objectifs contraignants pour la restauration des habitats et des espèces spécifiques.
-  
-  La gestion des stocks de poissons est également une priorité pour l'UE, car le poisson et les produits de l'aquaculture constituent une composante importante d'un régime alimentaire sain. L'UE est le plus grand marché mondial des produits de la mer, et la surpêche peut menacer la capacité de reproduction des stocks, affectant ainsi la sécurité alimentaire et l'économie.
-  
-  La lutte contre les déchets plastiques est un autre enjeu majeur pour la santé des espaces maritimes. L'UE s'est engagée dans des initiatives mondiales pour réduire la pollution plastique, notamment en adhérant à une coalition pour un traité international contraignant sur les déchets marins et la pollution plastique. Des mesures ont également été proposées pour limiter les microplastiques dans les produits et réduire leur rejet dans l'environnement.
-  
-  Dans le cadre de l'initiative "Clean Oceans", l'UE a investi des milliards d'euros dans des projets visant à réduire les déchets plastiques à l'échelle mondiale. De plus, une zone de réduction des émissions polluantes des navires a été créée dans toute la Méditerranée, imposant aux navires l'utilisation de carburants moins polluants.`,
+\nLa préservation de la biodiversité marine est au cœur des préoccupations de l'UE. La Commission européenne a fixé l'objectif ambitieux de protéger 30 % des mers de l'UE d'ici 2030, en étendant notamment les zones Natura 2000, des sites naturels et semi-naturels d'une biodiversité exceptionnelle. Un projet de législation visant à restaurer les écosystèmes dégradés a été publié en juin 2022, avec des objectifs contraignants pour la restauration des habitats et des espèces spécifiques.
+\nLa gestion des stocks de poissons est également une priorité pour l'UE, car le poisson et les produits de l'aquaculture constituent une composante importante d'un régime alimentaire sain. L'UE est le plus grand marché mondial des produits de la mer, et la surpêche peut menacer la capacité de reproduction des stocks, affectant ainsi la sécurité alimentaire et l'économie.
+\nLa lutte contre les déchets plastiques est un autre enjeu majeur pour la santé des espaces maritimes. L'UE s'est engagée dans des initiatives mondiales pour réduire la pollution plastique, notamment en adhérant à une coalition pour un traité international contraignant sur les déchets marins et la pollution plastique. Des mesures ont également été proposées pour limiter les microplastiques dans les produits et réduire leur rejet dans l'environnement.
+\nDans le cadre de l'initiative "Clean Oceans", l'UE a investi des milliards d'euros dans des projets visant à réduire les déchets plastiques à l'échelle mondiale. De plus, une zone de réduction des émissions polluantes des navires a été créée dans toute la Méditerranée, imposant aux navires l'utilisation de carburants moins polluants.`,
     emoji: "🌊",
+    source:
+      "https://www.touteleurope.eu/agriculture-et-peche/mers-et-oceans-quel-role-pour-l-union-europeenne/",
   },
   {
     name: "Marché Intérieur",
     text: `Le marché intérieur de l'Union européenne est un espace vital de prospérité et de liberté, offrant un accès sans entraves aux biens, services, emplois, débouchés économiques et culture. La constante évolution du marché, fruit d'efforts incessants, profite tant aux consommateurs qu'aux entreprises de l'Union. L'avènement du marché numérique représente une opportunité majeure pour stimuler l'économie grâce au commerce électronique et simplifier les formalités administratives via l'e-administration.
-  
-  Depuis sa genèse avec le traité de Rome en 1957, le marché commun vise à libéraliser les échanges entre États membres pour accroître la prospérité économique et favoriser une union plus étroite entre les peuples européens.
-  
-  L'Acte unique européen de 1986 a inscrit cet objectif dans le traité instituant la Communauté économique européenne, définissant le marché intérieur comme un espace dépourvu de frontières intérieures où la libre circulation des biens, des personnes, des services et des capitaux est garantie. Depuis sa création en 1993, le marché unique s'est progressivement ouvert à la concurrence, générant des emplois et éliminant de nombreux obstacles commerciaux.
-  
-  L'Acte pour le marché unique, adopté en deux phases en 2011 et 2012, a renforcé cet élan en proposant plusieurs mesures pour exploiter pleinement les opportunités offertes par le marché unique, stimuler l'emploi et accroître la confiance envers les entreprises. Cette construction du marché intérieur s'est inscrite dans une perspective libérale, considérant la suppression des barrières commerciales comme un moteur de croissance et de création d'emplois.
-  
-  Le processus s'est articulé autour de plusieurs jalons importants, notamment l'établissement de l'union douanière en 1968, l'Acte unique européen de 1986 qui a fixé l'achèvement du marché intérieur pour 1993, et le traité de Maastricht en 1992 qui a jeté les bases de l'adoption de l'euro comme monnaie unique, illustrant ainsi la progression vers une Europe économique intégrée et dynamique.`,
+\nDepuis sa genèse avec le traité de Rome en 1957, le marché commun vise à libéraliser les échanges entre États membres pour accroître la prospérité économique et favoriser une union plus étroite entre les peuples européens.
+\nL'Acte unique européen de 1986 a inscrit cet objectif dans le traité instituant la Communauté économique européenne, définissant le marché intérieur comme un espace dépourvu de frontières intérieures où la libre circulation des biens, des personnes, des services et des capitaux est garantie. Depuis sa création en 1993, le marché unique s'est progressivement ouvert à la concurrence, générant des emplois et éliminant de nombreux obstacles commerciaux.
+\nL'Acte pour le marché unique, adopté en deux phases en 2011 et 2012, a renforcé cet élan en proposant plusieurs mesures pour exploiter pleinement les opportunités offertes par le marché unique, stimuler l'emploi et accroître la confiance envers les entreprises. Cette construction du marché intérieur s'est inscrite dans une perspective libérale, considérant la suppression des barrières commerciales comme un moteur de croissance et de création d'emplois.
+\nLe processus s'est articulé autour de plusieurs jalons importants, notamment l'établissement de l'union douanière en 1968, l'Acte unique européen de 1986 qui a fixé l'achèvement du marché intérieur pour 1993, et le traité de Maastricht en 1992 qui a jeté les bases de l'adoption de l'euro comme monnaie unique, illustrant ainsi la progression vers une Europe économique intégrée et dynamique.`,
     emoji: "🛍️",
+    source:
+      "https://www.touteleurope.eu/fonctionnement-de-l-ue/le-marche-unique/",
   },
   {
     name: "Politique sociale",
@@ -85,6 +78,8 @@ export default [
   
   En bref, l'enjeu de la politique sociale européenne est de créer une communauté solidaire de citoyens partageant des droits et des devoirs.`,
     emoji: "👫",
+    source:
+      "https://www.touteleurope.eu/economie-et-social/l-europe-sociale-en-3-minutes/",
   },
   {
     name: "Cohésion territoriale",
@@ -96,6 +91,8 @@ export default [
   
   Cependant, les politiques de cohésion ont évolué au fil du temps, passant d'un objectif de convergence à une orientation vers la compétitivité territoriale. Ceci s'inscrit dans un contexte plus large de stratégies comme la Stratégie de Lisbonne (2000) et la Stratégie Europe 2020, qui mettent l'accent sur l'innovation, les technologies de pointe et la compétitivité régionale.`,
     emoji: "🤝",
+    source:
+      "https://www.touteleurope.eu/l-europe-en-region/qu-est-ce-que-la-politique-de-cohesion-de-l-union-europeenne/",
   },
   {
     name: "Agriculture & Pêche",
@@ -111,6 +108,7 @@ export default [
   
   Dans l’UE, ce sont l’Espagne, le Danemark et la France qui sont les plus gros producteurs de produits de la mer, mais à l’échelle du continent, 4 pays du top 10 ne font pas partie de l’UE (Norvège, Islande, Royaume-Uni et Turquie)`,
     emoji: "🌾",
+    source: "https://www.touteleurope.eu/theme/agriculture-et-peche/",
   },
   {
     name: "Environnement",
@@ -126,6 +124,7 @@ export default [
   
   L'UE veille à ce que sa politique environnementale soit conforme à des principes clés tels que la précaution, la prévention, la correction de la pollution à la source et le principe du "pollueur-payeur". De plus, elle s'engage à ne pas nuire à l'environnement, comme en témoigne l'introduction du principe du "do not harm" dans son budget pluriannuel 2021-2027 et son plan de relance.`,
     emoji: "🌱",
+    source: "https://www.touteleurope.eu/theme/environnement/",
   },
   {
     name: "Protection des consommateurs",
@@ -142,6 +141,8 @@ export default [
   Ces efforts démontrent l'engagement continu de l'UE à maintenir des normes élevées de protection des consommateurs, adaptées aux défis émergents de l'économie numérique et aux besoins des consommateurs européens.
   `,
     emoji: "🛡️",
+    source:
+      "https://www.touteleurope.eu/l-europe-et-moi/comment-l-union-europeenne-assure-t-elle-la-protection-des-consommateurs/",
   },
   {
     name: "Transport",
@@ -157,6 +158,7 @@ export default [
   - L'innovation et la numérisation, en promouvant l'usage de technologies avancées pour des transports plus efficaces et moins polluants.
   - La durabilité, en mettant en œuvre des stratégies pour réduire les émissions de gaz à effet de serre du secteur des transports et en soutenant le passage à des modes de transport à faible émission.`,
     emoji: "🚆",
+    source: "https://www.touteleurope.eu/dossier/transports/",
   },
   {
     name: "Réseaux transeuropéens",
@@ -178,6 +180,8 @@ export default [
   - Énergie (RTE-E) : Le réseau transeuropéen d'énergie se concentre sur l'interconnexion des réseaux électriques et gaziers pour améliorer la sécurité de l'approvisionnement, intégrer les énergies renouvelables et faciliter le marché intérieur de l'énergie.
   - Télécommunications (RTE-TÉ) : Le réseau transeuropéen de télécommunications soutient le déploiement de services et d'infrastructures numériques, tels que les réseaux à large bande et la 5G, essentiels pour la digitalisation de l'économie et de la société européennes.`,
     emoji: "🌍",
+    source:
+      "https://www.touteleurope.eu/economie-et-social/le-reseau-trans-europeen-de-transport/",
   },
   {
     name: "Espace de liberté, sécurité & justice",
@@ -189,6 +193,8 @@ export default [
   
   Les divergences entre les États membres persistent, reflétant des visions nationales variées sur ces questions cruciales. Les enjeux liés à la souveraineté nationale et aux préoccupations nationales en matière de sécurité rendent les négociations au sein de l'ELSJ complexes et parfois laborieuses.`,
     emoji: "⚖️",
+    source:
+      "https://www.touteleurope.eu/fonctionnement-de-l-ue/l-espace-de-liberte-de-securite-et-de-justice/",
   },
   {
     name: "Recherche, technologie, espace",
@@ -215,69 +221,61 @@ export default [
   La coopération internationale joue un rôle essentiel dans la stratégie de l'UE en matière de recherche, de technologie et d'espace. L'UE collabore avec des pays et des organisations du monde entier pour partager des connaissances, des ressources et des meilleures pratiques, ainsi que pour relever conjointement des défis mondiaux tels que le changement climatique et les maladies pandémiques.
   `,
     emoji: "🔬",
+    source:
+      "https://www.touteleurope.eu/economie-et-social/l-europe-de-la-recherche-et-de-l-innovation/",
   },
   {
     name: "Industrie",
     text: `La politique industrielle de l'Union européenne (UE) joue un rôle fondamental dans le renforcement de la compétitivité, la promotion de l'innovation, et la transition vers une économie verte et numérique. Elle vise à soutenir le développement industriel des États membres tout en assurant une croissance durable et inclusive.
-  
-  Objectifs de la Politique Industrielle de l'UE
-  
-  L'UE cherche à créer un environnement favorable pour les entreprises, en particulier les PME, afin de stimuler la croissance économique, l'emploi, et l'innovation. Les principaux objectifs sont :
-  - Renforcer la compétitivité : Assurer que les industries européennes restent compétitives au niveau mondial tout en promouvant l'innovation et la recherche.
-  - Faciliter la transition écologique : Accompagner l'industrie dans la transition vers la neutralité climatique, en ligne avec le Pacte vert pour l'Europe.
-  - Promouvoir la digitalisation : Soutenir l'intégration des technologies numériques dans les processus industriels et les produits.
-  - Améliorer le marché unique : Assurer le bon fonctionnement du marché unique pour les biens et les services, facilitant ainsi les échanges commerciaux et l'accès aux marchés.
-  
-  Compétence et Instruments de l'UE
-  
-  L'UE utilise une gamme d'instruments et de politiques pour mettre en œuvre sa politique industrielle, notamment :
-  - La législation européenne : Pour harmoniser les normes et réglementations, favorisant ainsi un environnement équitable pour toutes les entreprises.
-  - Les financements et investissements : Via des programmes tels que Horizon Europe pour la recherche et l'innovation, le Fonds européen pour les investissements stratégiques (FEIS) pour stimuler les investissements dans les secteurs clés, et les fonds structurels et d'investissement européens pour le développement régional.
-  - Les stratégies sectorielles : Pour soutenir des secteurs spécifiques tels que l'acier, l'automobile, et les technologies de l'information et de la communication (TIC), en adressant les défis propres à chaque secteur.
-  
-  Impact et Perspectives
-  
-  La politique industrielle de l'UE vise à positionner l'Europe comme un leader mondial dans les industries propres et numériques, tout en assurant une transition juste qui prend en compte les besoins des travailleurs et des régions affectées par les changements structurels. En soutenant l'innovation, la durabilité et la compétitivité, l'UE cherche à garantir que son industrie peut prospérer dans une économie mondialisée et faire face aux défis futurs, notamment en matière de changement climatique et de concurrence internationale.
-  
-  L'évolution continue de la politique industrielle sera cruciale pour atteindre les objectifs à long terme de l'UE, tels que la neutralité climatique d'ici 2050 et la mise en place d'une économie européenne résiliente et numérisée.
-  `,
+\nObjectifs de la Politique Industrielle de l'UE
+\nL'UE cherche à créer un environnement favorable pour les entreprises, en particulier les PME, afin de stimuler la croissance économique, l'emploi, et l'innovation. Les principaux objectifs sont :
+- Renforcer la compétitivité : Assurer que les industries européennes restent compétitives au niveau mondial tout en promouvant l'innovation et la recherche.
+- Faciliter la transition écologique : Accompagner l'industrie dans la transition vers la neutralité climatique, en ligne avec le Pacte vert pour l'Europe.
+- Promouvoir la digitalisation : Soutenir l'intégration des technologies numériques dans les processus industriels et les produits.
+- Améliorer le marché unique : Assurer le bon fonctionnement du marché unique pour les biens et les services, facilitant ainsi les échanges commerciaux et l'accès aux marchés.
+\nCompétence et Instruments de l'UE
+\nL'UE utilise une gamme d'instruments et de politiques pour mettre en œuvre sa politique industrielle, notamment :
+- La législation européenne : Pour harmoniser les normes et réglementations, favorisant ainsi un environnement équitable pour toutes les entreprises.
+- Les financements et investissements : Via des programmes tels que Horizon Europe pour la recherche et l'innovation, le Fonds européen pour les investissements stratégiques (FEIS) pour stimuler les investissements dans les secteurs clés, et les fonds structurels et d'investissement européens pour le développement régional.
+- Les stratégies sectorielles : Pour soutenir des secteurs spécifiques tels que l'acier, l'automobile, et les technologies de l'information et de la communication (TIC), en adressant les défis propres à chaque secteur.
+\nImpact et Perspectives
+\nLa politique industrielle de l'UE vise à positionner l'Europe comme un leader mondial dans les industries propres et numériques, tout en assurant une transition juste qui prend en compte les besoins des travailleurs et des régions affectées par les changements structurels. En soutenant l'innovation, la durabilité et la compétitivité, l'UE cherche à garantir que son industrie peut prospérer dans une économie mondialisée et faire face aux défis futurs, notamment en matière de changement climatique et de concurrence internationale.
+\nL'évolution continue de la politique industrielle sera cruciale pour atteindre les objectifs à long terme de l'UE, tels que la neutralité climatique d'ici 2050 et la mise en place d'une économie européenne résiliente et numérisée.`,
     emoji: "🏭",
+    source: "https://www.touteleurope.eu/tag/industrie/",
   },
   {
     name: "Culture",
     text: `La politique culturelle de l'Union européenne (UE) vise à promouvoir la diversité culturelle, encourager la création et le dialogue interculturel, et renforcer la compétitivité du secteur de la culture européenne.
-  
-  Les principaux objectifs de la politique culturelle de l'UE incluent :
-  - Promouvoir la diversité culturelle et linguistique : L'UE s'efforce de préserver et de promouvoir la richesse de l'identité culturelle européenne dans toute sa diversité.
-  - Encourager la mobilité des artistes et des professionnels de la culture : Faciliter la circulation transfrontalière des artistes, des professionnels de la culture et des œuvres culturelles.
-  - Stimuler la compétitivité du secteur culturel et créatif : Soutenir l'innovation et la créativité dans les industries culturelles et créatives pour stimuler la croissance économique et l'emploi.
-  - Renforcer la cohésion sociale et le dialogue interculturel : Utiliser la culture comme un moyen de favoriser l'inclusion sociale, la compréhension mutuelle et le dialogue entre les peuples et les cultures.
-  
-  La compétence de l'UE dans le domaine de la culture est principalement d'appui, de coordination ou de complément des actions des États membres. Les instruments et programmes clés incluent :
-  - Programme Europe Créative : Principal programme de l'UE visant à soutenir les secteurs de la culture et de l'audiovisuel, en encourageant la mobilité des professionnels de la culture, le soutien aux œuvres audiovisuelles, la musique, le livre, et les arts.
-  - Année européenne du patrimoine culturel : Initiative visant à promouvoir le patrimoine culturel comme une ressource partagée pour renforcer le sentiment d'identité européenne.
-  - Capitales européennes de la culture : Programme annuel qui sélectionne une ou plusieurs villes européennes pour mettre en valeur leur vie et leur développement culturels pendant un an.
-  
-  La politique culturelle de l'UE joue un rôle essentiel dans la valorisation et la préservation de la culture européenne, en encourageant la diversité culturelle et en soutenant le développement économique à travers les industries créatives. Elle vise à construire une Europe plus unie et inclusive, en reconnaissant la culture comme un pilier central de l'intégration européenne.`,
+\nLes principaux objectifs de la politique culturelle de l'UE incluent :
+- Promouvoir la diversité culturelle et linguistique : L'UE s'efforce de préserver et de promouvoir la richesse de l'identité culturelle européenne dans toute sa diversité.
+- Encourager la mobilité des artistes et des professionnels de la culture : Faciliter la circulation transfrontalière des artistes, des professionnels de la culture et des œuvres culturelles.
+- Stimuler la compétitivité du secteur culturel et créatif : Soutenir l'innovation et la créativité dans les industries culturelles et créatives pour stimuler la croissance économique et l'emploi.
+- Renforcer la cohésion sociale et le dialogue interculturel : Utiliser la culture comme un moyen de favoriser l'inclusion sociale, la compréhension mutuelle et le dialogue entre les peuples et les cultures.
+\nLa compétence de l'UE dans le domaine de la culture est principalement d'appui, de coordination ou de complément des actions des États membres. Les instruments et programmes clés incluent :
+- Programme Europe Créative : Principal programme de l'UE visant à soutenir les secteurs de la culture et de l'audiovisuel, en encourageant la mobilité des professionnels de la culture, le soutien aux œuvres audiovisuelles, la musique, le livre, et les arts.
+- Année européenne du patrimoine culturel : Initiative visant à promouvoir le patrimoine culturel comme une ressource partagée pour renforcer le sentiment d'identité européenne.
+- Capitales européennes de la culture : Programme annuel qui sélectionne une ou plusieurs villes européennes pour mettre en valeur leur vie et leur développement culturels pendant un an.
+\nLa politique culturelle de l'UE joue un rôle essentiel dans la valorisation et la préservation de la culture européenne, en encourageant la diversité culturelle et en soutenant le développement économique à travers les industries créatives. Elle vise à construire une Europe plus unie et inclusive, en reconnaissant la culture comme un pilier central de l'intégration européenne.`,
     emoji: "🎭",
+    source: "https://www.touteleurope.eu/dossier/culture/",
   },
   {
     name: "Tourisme",
     text: `La politique touristique de l'Union européenne (UE) vise à promouvoir l'Europe comme destination de premier plan, à soutenir la compétitivité du secteur touristique européen, et à encourager le développement durable et responsable du tourisme à travers ses États membres. Bien que le tourisme relève principalement de la compétence des États membres eux-mêmes, l'UE joue un rôle crucial en fournissant un cadre pour la coopération et le soutien au développement touristique.
-  
-  Les principaux objectifs de la politique touristique de l'UE comprennent :
+  \nLes principaux objectifs de la politique touristique de l'UE comprennent :
   - Promouvoir la durabilité et la qualité du tourisme européen : Encourager des pratiques responsables qui préservent les ressources naturelles et culturelles.
   - Améliorer la compétitivité du secteur touristique : Soutenir l'innovation, la numérisation et l'acquisition de compétences au sein de l'industrie touristique pour améliorer l'expérience des visiteurs.
   - Promouvoir la diversité des destinations européennes : Mettre en valeur la richesse culturelle et naturelle de l'Europe pour attirer les visiteurs vers des destinations moins connues et réduire la pression sur les lieux surfréquentés.
   - Faciliter la coopération entre les États membres : Encourager l'échange de bonnes pratiques et la coordination des politiques touristiques pour relever les défis communs.
-  
-  L'UE soutient le secteur touristique à travers divers programmes et initiatives :
+  \nL'UE soutient le secteur touristique à travers divers programmes et initiatives :
   - Programme COSME : Le programme pour la compétitivité des entreprises et des petites et moyennes entreprises (PME), qui inclut un volet pour soutenir le tourisme, en particulier les PME du secteur.
   - Politique régionale de l'UE : Les fonds structurels et d'investissement européens soutiennent le développement touristique dans les régions, en améliorant les infrastructures et en valorisant le patrimoine culturel et naturel.
   - Stratégies pour un tourisme durable : Initiatives visant à promouvoir un tourisme respectueux de l'environnement, socialement inclusif et économiquement bénéfique pour les communautés locales.
-  
-  La politique touristique de l'UE vise à renforcer le rôle du tourisme comme moteur de croissance économique durable, d'emploi et de développement régional. En soutenant la diversification des offres touristiques et en promouvant des pratiques durables, l'UE cherche à assurer que le tourisme contribue positivement à la société et à l'économie tout en minimisant les impacts négatifs sur l'environnement et les communautés locales.`,
+  \nLa politique touristique de l'UE vise à renforcer le rôle du tourisme comme moteur de croissance économique durable, d'emploi et de développement régional. En soutenant la diversification des offres touristiques et en promouvant des pratiques durables, l'UE cherche à assurer que le tourisme contribue positivement à la société et à l'économie tout en minimisant les impacts négatifs sur l'environnement et les communautés locales.`,
     emoji: "🗺️",
+    source:
+      "https://www.touteleurope.eu/l-europe-et-moi/la-politique-europeenne-du-tourisme/",
   },
   {
     name: "Education, formation professionnelle, jeunesse, sport",
@@ -296,5 +294,7 @@ export default [
         L'UE s'efforce de créer un espace européen d'éducation d'ici 2025, visant à renforcer l'identité européenne à travers l'éducation et la culture et à promouvoir une économie basée sur la connaissance et l'innovation. La politique de l'UE dans ces domaines vise également à soutenir les jeunes dans le développement de compétences essentielles, à encourager un mode de vie actif et sain, et à renforcer les valeurs communes de liberté, de tolérance et de non-discrimination.
         `,
     emoji: "📚",
+    source:
+      "https://www.touteleurope.eu/dossier/education-formation-et-erasmus/",
   },
 ];

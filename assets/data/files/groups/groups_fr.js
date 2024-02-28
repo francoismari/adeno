@@ -6,10 +6,10 @@ export default [
     emoji: "💙",
     imageUrl: require("../../../data/images/groups/PPE.png"),
     value: "Centrism",
-    adjective: "modéré",
-    pluralAdjective: "modérés",
+    adjective: "conservateur",
+    pluralAdjective: "conservateurs",
     explaination:
-      "Tu valorises l'unité et les valeurs démocratiques centristes, en mettant l'accent sur une approche modérée et de droite-centriste.",
+      "Tu valorises l'unité et les valeurs démocratiques, en mettant l'accent sur une approche conservatrice et de droite-centriste.",
   },
   {
     id: 2,

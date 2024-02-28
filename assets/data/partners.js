@@ -89,10 +89,4 @@ export default [
     image: require("../images/partners/hec-paris.png"),
     link: "https://www.hec.edu/",
   },
-  {
-    id: 16,
-    name: "Parlons démocratie",
-    image: require("../images/partners/parlons-democratie.png"),
-    link: "https://www.parlons-democratie.fr",
-  },
 ];

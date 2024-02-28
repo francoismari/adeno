@@ -12,6 +12,7 @@ La protection des droits fondamentaux a évolué avec l'arrêt STAUDER en 1969, 
       `du Bois, Pierre. « L'Union européenne et les droits de l'homme », Relations internationales, vol. 132, no. 4, 2007, pp. 33-39.`,
     ],
     emoji: "👥",
+    source: 'https://www.touteleurope.eu/dossier/droits-fondamentaux-et-du-citoyen/',
   },
   {
     name: "Liberté",
@@ -28,6 +29,7 @@ L'utilisation de l'euro facilite l'intégration du marché unique en éliminant 
       "https://ehne.fr/fr/encyclopedie/th%C3%A9matiques/l%E2%80%99europe-politique/libert%C3%A9-et-citoyennet%C3%A9-en-europe/libert%C3%A9-et-citoyennet%C3%A9-en-europe",
     ],
     emoji: "🕊️",
+    source: 'https://www.touteleurope.eu/dossier/droits-fondamentaux-et-du-citoyen/'
   },
   {
     name: "Démocratie",
@@ -40,6 +42,7 @@ Bien que le Parlement européen joue un rôle central dans la garantie du princi
       "https://www.robert-schuman.eu/questions-d-europe/0578-la-democratie-europeenne-un-systeme-fondamental-a-proteger",
     ],
     emoji: "🗳️",
+    source: 'https://www.touteleurope.eu/dossier/droits-fondamentaux-et-du-citoyen/'
   },
   {
     name: "Egalité",
@@ -58,6 +61,7 @@ Ce principe d'égalité est ainsi appliqué de manière extensive par la Cour, n
       "https://www.europarl.europa.eu/factsheets/fr/sheet/59/l-egalite-entre-les-hommes-et-les-femmes",
     ],
     emoji: "⚖️",
+    source: 'https://www.touteleurope.eu/dossier/droits-fondamentaux-et-du-citoyen/',
   },
   {
     name: "Etat de Droit",
@@ -70,5 +74,6 @@ D'autre part, cette conformité à la règle de droit requiert la présence d'un
       "https://www.touteleurope.eu/fonctionnement-de-l-ue/l-etat-de-droit-est-une-valeur-des-etats-europeens-et-de-l-union-europeenne/",
     ],
     emoji: "📜",
+    source: 'https://www.touteleurope.eu/dossier/droits-fondamentaux-et-du-citoyen/',
   },
 ];

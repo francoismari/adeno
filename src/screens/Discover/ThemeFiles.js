@@ -51,8 +51,8 @@ const ThemeFiles = ({ navigation, route }) => {
     }
   };
 
-  const handleGoToFile = (name, text) => {
-    navigation.navigate("File", { name, text });
+  const handleGoToFile = (name, text, source) => {
+    navigation.navigate("File", { name, text, source });
   };
 
   const data = fetchDataForTheme(theme.id);
@@ -65,7 +65,7 @@ const ThemeFiles = ({ navigation, route }) => {
         keyExtractor={(item, index) => `theme-item-${index}`}
         renderItem={({ item }) => (
           <Pressable
-            onPress={() => handleGoToFile(item.name, item.text)}
+            onPress={() => handleGoToFile(item.name, item.text, item.source)}
             style={{
               padding: 10,
               backgroundColor: "white",

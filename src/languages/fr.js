@@ -26,18 +26,18 @@ export default {
       firstRow: {
         title: "Nous ne collectons aucune donnée personnelle.",
         description:
-          "Toutes les données utilisées dans l'app sont anonymes, et sont limités au strict nécessaire pour le bon fonctionnement de l'app !",
+          "Toutes les données utilisées dans l'app sont anonymes, et sont limitées au strict nécessaire pour le bon fonctionnement de l'app !",
         readChart: "Lire notre charte sur la vie privée",
       },
       secondRow: {
         title: "Adeno est apartisane, neutre, et transparente.",
         description:
-          "Adeno n'est lié à aucun organisme gouvernemental et est un projet entieremment indépendant.",
+          "Adeno est un projet entièrement indépendant et lié à aucun organisme gouvernemental.",
         readChart: "Lire notre charte sur la transparence",
       },
       startButton: "C'est parti !",
       footerText:
-        "Adeno est un projet citoyen, créé par une équipe de bénévoles, sans vocation lucrative, qui n'a pour objectif que d'aller te faire voter !",
+        "Adeno est un projet citoyen, créé par une équipe de bénévoles, sans vocation lucrative, et qui n’a qu’un seul objectif : te donner les clés pour voter aux prochaines élections européennes !",
       psText: "PS : nous sommes open-source ✌️",
     },
   },
