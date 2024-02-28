@@ -8,8 +8,9 @@ import ro from "./ro";
 import nl from "./nl";
 import lt from "./lt";
 import hu from "./hu";
+import pl from "./pl";
 
-const i18n = new I18n({ en, fr, de, it, es, ro,  nl, lt, hu});
+const i18n = new I18n({ en, fr, de, it, es, ro,  nl, lt, hu, pl});
 i18n.defaultLocale = "en";
 // i18n.locale = "en";
 
