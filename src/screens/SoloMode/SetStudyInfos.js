@@ -6,6 +6,7 @@ import {
   TouchableOpacity,
   Dimensions,
   ScrollView,
+  Button,
 } from "react-native";
 import { doc, setDoc } from "firebase/firestore";
 import CustomText from "../../components/CustomText";
@@ -14,6 +15,7 @@ import { useUser } from "../../context/userContext";
 import { auth, db } from "../../../firebaseConfig";
 import i18n from "../../languages/i18n";
 import { handleClose } from "../../utils/navigationUtils";
+import Checkbox from "expo-checkbox";
 
 const questionData = {
   questions: [
@@ -41,6 +43,7 @@ const questionData = {
           value: "ineligible",
         },
       ],
+      allowMultiple: false,
     },
     {
       id: "intent_to_vote",
@@ -70,6 +73,7 @@ const questionData = {
         yes: "yes_reasons",
         no: "no_reasons",
       },
+      allowMultiple: false,
     },
     {
       id: "yes_reasons",
@@ -132,6 +136,7 @@ const questionData = {
           value: "none_satisfy",
         },
       ],
+      allowMultiple: true,
     },
     {
       id: "no_reasons",
@@ -149,7 +154,7 @@ const questionData = {
         },
         {
           text: {
-            fr: "Je suis mal inscrit ou non inscrit sur les listes électorales.",
+            fr: "Je suis mal inscrit(e) ou non inscrit(e) sur les listes électorales.",
             en: "I am poorly registered or not registered on the electoral rolls.",
           },
           value: "poorly_registered",
@@ -177,7 +182,7 @@ const questionData = {
         },
         {
           text: {
-            fr: "Je suis mécontent de la politique européenne qui est menée.",
+            fr: "Je suis mécontent(e) de la politique européenne qui est menée.",
             en: "I am dissatisfied with the European politics being conducted.",
           },
           value: "dissatisfied",
@@ -191,7 +196,7 @@ const questionData = {
         },
         {
           text: {
-            fr: "Je considère que l’abstention est un moyen d’expression comme un autre pour se faire entendre.",
+            fr: "Je considère que l’abstention est un moyen d’expression pour se faire entendre.",
             en: "I consider abstention as another way of expressing oneself to be heard.",
           },
           value: "abstention_as_expression",
@@ -208,6 +213,7 @@ const questionData = {
           value: "none_satisfy",
         },
       ],
+      allowMultiple: true,
     },
     {
       id: "encouragement_to_vote",
@@ -274,7 +280,7 @@ const questionData = {
         },
         {
           text: {
-            fr: "Que l’Union Européenne change de politique.",
+            fr: "Que l’Union européenne change de politique.",
             en: "That the European Union changes its policy.",
           },
           value: "eu_policy_change",
@@ -300,29 +306,41 @@ const questionData = {
 
 export default function SetStudyInfos({ navigation }) {
   const [userStep, setUserStep] = useState(0);
-  const [responses, setResponses] = useState([]);
-  const { locale, setUser } = useUser();
+  const [responses, setResponses] = useState({});
+  const { locale, setUser } = useUser(); // Assuming useUser() hook provides user locale
 
-  const currentLocale = locale.userLocale || "fr"; // Default to French if locale not found
+  const currentLocale = locale.userLocale || "fr";
 
-  const handleChoice = (choiceValue) => {
+  const handleChoice = (choiceValue, allowMultiple) => {
     const currentQuestion = questionData.questions[userStep];
-    setResponses([
-      ...responses,
-      { questionId: currentQuestion.id, choiceValue },
-    ]);
+    const questionId = currentQuestion.id;
 
-    if (currentQuestion.followUp && currentQuestion.followUp[choiceValue]) {
-      const nextQuestionId = currentQuestion.followUp[choiceValue];
-      const nextQuestionIndex = questionData.questions.findIndex(
-        (q) => q.id === nextQuestionId
-      );
-      if (nextQuestionIndex !== -1) {
-        setUserStep(nextQuestionIndex);
-      } else {
-        handleFinish();
-      }
-    } else if (userStep < questionData.questions.length - 1) {
+    if (allowMultiple) {
+      // If multiple selections are allowed, toggle the choice in the array
+      setResponses((prevResponses) => {
+        const currentChoices = prevResponses[questionId] || [];
+        const choiceIndex = currentChoices.indexOf(choiceValue);
+        if (choiceIndex > -1) {
+          // Remove the choice if it already exists
+          currentChoices.splice(choiceIndex, 1);
+        } else {
+          // Add the choice if it doesn't exist
+          currentChoices.push(choiceValue);
+        }
+        return { ...prevResponses, [questionId]: [...currentChoices] };
+      });
+    } else {
+      // For single selection, directly set the response
+      setResponses((prevResponses) => ({
+        ...prevResponses,
+        [questionId]: [choiceValue],
+      }));
+    }
+  };
+
+  const handleNextQuestion = () => {
+    const isLastQuestion = userStep === questionData.questions.length - 1;
+    if (!isLastQuestion) {
       setUserStep(userStep + 1);
     } else {
       handleFinish();
@@ -331,25 +349,27 @@ export default function SetStudyInfos({ navigation }) {
 
   const handleFinish = async () => {
     try {
+      // Save the responses to Firestore and navigate back
       await setDoc(doc(db, "users", auth.currentUser.uid), {
-        uid: auth.currentUser.uid,
         responses,
         locale: currentLocale,
+        uid: auth.currentUser.uid,
       });
       setUser({
-        uid: auth.currentUser.uid,
         responses,
         locale: currentLocale,
+        uid: auth.currentUser.uid,
       });
       navigation.goBack();
     } catch (error) {
-      console.error("Error saving data: ", error);
       Alert.alert("Error", error.message);
     }
   };
 
   const renderQuestion = () => {
     const currentQuestion = questionData.questions[userStep];
+    const allowMultiple = currentQuestion.allowMultiple || false;
+
     return (
       <View>
         <CustomText style={{ fontSize: 24, textAlign: "center", margin: 20 }}>
@@ -358,19 +378,35 @@ export default function SetStudyInfos({ navigation }) {
         {currentQuestion.choices.map((choice, index) => (
           <TouchableOpacity
             key={index}
-            onPress={() => handleChoice(choice.value)}
+            onPress={() => handleChoice(choice.value, allowMultiple)}
             style={{
-              backgroundColor: "#EEE",
+              flexDirection: "row",
+              alignItems: "center",
+              marginVertical: 5,
+              backgroundColor: responses[currentQuestion.id]?.includes(
+                choice.value
+              )
+                ? "#ddd"
+                : "transparent",
               padding: 10,
-              margin: 5,
               borderRadius: 5,
             }}
           >
-            <CustomText style={{ fontSize: 20, textAlign: "center" }}>
+            <Checkbox
+              value={responses[currentQuestion.id]?.includes(choice.value)}
+              onValueChange={() => handleChoice(choice.value, allowMultiple)}
+            />
+            <CustomText style={{ fontSize: 20, marginLeft: 10 }}>
               {choice.text[currentLocale]}
             </CustomText>
           </TouchableOpacity>
         ))}
+        <Button
+          title={
+            userStep === questionData.questions.length - 1 ? "Finish" : "Next"
+          }
+          onPress={handleNextQuestion}
+        />
       </View>
     );
   };
@@ -412,7 +448,7 @@ export default function SetStudyInfos({ navigation }) {
           marginHorizontal: 20,
           marginTop: 25,
           borderRadius: 20,
-          height: Dimensions.get("screen").height * 0.6,
+          height: Dimensions.get("window").height * 0.6,
         }}
       >
         <ScrollView contentContainerStyle={{ flexGrow: 1 }}>

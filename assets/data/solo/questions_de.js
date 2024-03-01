@@ -1,39 +1,39 @@
 export default [
   {
-    question: "Was denkst du über Freihandelsabkommen?",
+    question: "Neue Freihandelsabkommen zwischen der EU und anderen Staaten...",
     answers: [
       {
-        text: "Wird unsere Autonomie nicht stärken, ohne unsere Abhängigkeit von den USA und China zu verringern.",
+        text: "werden unsere Autonomie nicht stärken, ohne unsere Abhängigkeit von den USA und China zu verringern.",
         partyId: 7,
         id: 1,
       },
       {
-        text: "Muss beschleunigt werden, da sie ein Hebel für Menschenrechte und Wettbewerbsfähigkeit sind.",
+        text: "müssen beschleunigt werden, da sie ein Instrument zur Verbreitung von Menschenrechten und Wettbewerbsfähigkeit sind.",
         partyId: 5,
         id: 2,
       },
       {
-        text: "Garantieren die Sicherheit der Lieferketten in dieser unsicheren Zeit.",
+        text: "garantieren die Sicherheit der Lieferketten in dieser unsicheren Zeit.",
         partyId: 1,
         id: 3,
       },
       {
-        text: "Modern, grün und inklusiv gegenüber Drittländern zu sein ist sehr wichtig für unsere strategische Autonomie.",
+        text: "müssen modern, grün und inklusiv gegenüber Drittländern sein, um unsere strategische Autonomie zu behalten.",
         partyId: 3,
         id: 4,
       },
       {
-        text: "Es ist von größter Bedeutung, muss aber das ehrgeizige Programm für nachhaltige Entwicklung respektieren.",
+        text: "sind sehr wichtig, müssen aber das ehrgeizige Programm für nachhaltige Entwicklung respektieren.",
         partyId: 2,
         id: 5,
       },
       {
-        text: "Nicht auf Kosten unserer ökologischen, strategischen und gesellschaftlichen Ambitionen geschehen.",
+        text: "dürfen nicht auf Kosten unserer ökologischen, strategischen und gesellschaftlichen Ambitionen geschehen.",
         partyId: 4,
         id: 6,
       },
       {
-        text: "Ermöglicht kein nachhaltiges Wachstum, im Gegensatz zu Fair-Trade-Verträgen.",
+        text: "ermöglichen kein nachhaltiges Wachstum, im Gegensatz zu Fair-Trade-Verträgen.",
         partyId: 6,
         id: 7,
       },
@@ -44,43 +44,43 @@ export default [
     id: 1,
     sources:
       "https://www.consilium.europa.eu/fr/policies/trade-policy/trade-agreements/",
+    express: false,
   },
   {
-    question:
-      "Sollten die größten Umweltverschmutzer auf EU-Ebene besteuert werden?",
+    question: "Die zukünftigen CO2-Zölle auf Importe...",
     answers: [
       {
-        text: "Sind eine Gelegenheit, das Risiko von Kohlenstofflecks zu reduzieren und die Wettbewerbsfähigkeit der EU zu verbessern.",
+        text: "sind eine Gelegenheit, das Risiko von Kohlenstofflecks zu reduzieren und die Wettbewerbsfähigkeit der EU zu verbessern.",
         partyId: 7,
         id: 1,
       },
       {
-        text: "Müssen schrittweise eingeführt werden, um die Wettbewerbsfähigkeit Europas nicht zu beeinträchtigen.",
+        text: "müssen schrittweise eingeführt werden, um die Wettbewerbsfähigkeit Europas nicht zu beeinträchtigen.",
         partyId: 5,
         id: 2,
       },
       {
-        text: "Ermöglichen die Reduzierung der weltweiten Emissionen, dürfen jedoch das ETS-System nicht ersetzen.",
+        text: "ermöglichen die Reduzierung der weltweiten Emissionen, dürfen jedoch das ETS-System nicht ersetzen.",
         partyId: 1,
         id: 3,
       },
       {
-        text: "Ein wesentliches Element des Green Deals, das den europäischen Kohlenstoffmarkt widerspiegeln soll.",
+        text: "sind ein wesentliches Element des Green Deals, das den europäischen Kohlenstoffmarkt widerspiegeln soll.",
         partyId: 3,
         id: 4,
       },
       {
-        text: "Sind wichtig im Kampf gegen unfairen globalen Wettbewerb, wenn sie mit einer Abschaffung der kostenlosen Quoten einhergehen.",
+        text: "sind wichtig im Kampf gegen unfairen globalen Wettbewerb, wenn sie mit einer Abschaffung der kostenlosen Quoten einhergehen.",
         partyId: 2,
         id: 5,
       },
       {
-        text: "Sind weltweit wichtig zum Schutz des Klimas, wenn sie nicht die Industrien und Bürger Europas benachteiligen.",
+        text: "sind weltweit wichtig zum Schutz des Klimas, wenn sie nicht die Industrien und Bürger Europas benachteiligen.",
         partyId: 4,
         id: 6,
       },
       {
-        text: "Sie sind der erste Schritt zur Etablierung eines ökologischen und solidarischen Protektionismus ohne Marktlogik.",
+        text: "sie sind der erste Schritt zur Etablierung eines ökologischen und solidarischen Protektionismus frei von Marktlogik.",
         partyId: 6,
         id: 7,
       },
@@ -91,13 +91,14 @@ export default [
     id: 2,
     sources:
       "https://www.consilium.europa.eu/en/infographics/fit-for-55-cbam-carbon-border-adjustment-mechanism/",
+    express: false,
   },
   {
     question:
-      "Welche Auswirkungen hatten die Sanktionen der EU gegen Russland seit Beginn des Krieges in der Ukraine?",
+      "Wie würdest du den Einfluss der Sanktionen der EU gegen Russland seit Beginn des Krieges in der Ukraine beschreiben?",
     answers: [
       {
-        text: "Katastrophal, die Inflation steigt und die Energiekrise in Europa ist angekommen.",
+        text: "Katastrophal, die steigende Inflation und die Energiekrise in Europa sind die Folgen.",
         partyId: 7,
         id: 1,
       },
@@ -112,22 +113,22 @@ export default [
         id: 3,
       },
       {
-        text: "Fürchtbar, aber es ist besser, genauer zu zielen, um den Angreifer weiter zu schwächen.",
+        text: "Sie sind stark, aber es muss zielgericheter sanktioniert werden, um den Angreifer weiter zu schwächen.",
         partyId: 3,
         id: 4,
       },
       {
-        text: "Angesichts eines Mangels an Bereitschaft müssen die eingefrorenen russischen Vermögen beschlagnahmt und der Ukraine übergeben werden.",
+        text: "Begrenzt, angesichts eines Mangels an Bereitschaft müssen die eingefrorenen russischen Vermögen beschlagnahmt und der Ukraine übergeben werden.",
         partyId: 2,
         id: 5,
       },
       {
-        text: "Enttäuschend, weil sie nicht dem Ziel entsprechen, Russland daran zu hindern, diesen Völkermordkrieg weiter zu finanzieren.",
+        text: "Enttäuschend, weil sie nicht dem Ziel entsprechen, Russland daran zu hindern, diesen Krieg und Völkermord weiter zu finanzieren.",
         partyId: 4,
         id: 6,
       },
       {
-        text: "Schädlich haben sie eine Krise der Lebenshaltungskosten und einen Rückgang der realen Löhne in Europa ausgelöst.",
+        text: "Schädlich, sie haben eine Krise der Lebenshaltungskosten und einen Rückgang der realen Löhne in Europa ausgelöst.",
         partyId: 6,
         id: 7,
       },
@@ -138,42 +139,43 @@ export default [
     id: 3,
     sources:
       "https://www.consilium.europa.eu/fr/policies/sanctions/restrictive-measures-against-russia-over-ukraine/sanctions-against-russia-explained/",
+    express: false,
   },
   {
-    question: "Müssen strenge Haushaltsregeln auf EU-Ebene eingeführt werden?",
+    question: "Bezüglich strenger Haushaltsregeln auf EU-Ebene sollte... ",
     answers: [
       {
-        text: "Die Ermessensbefugnisse der Kommission in diesem Bereich einschränken",
+        text: "die Kommission weniger Ermessungsspielraum in diesem Bereich haben.",
         partyId: 7,
         id: 1,
       },
       {
-        text: "Die aktuellen Regeln beibehalten, die klar und einheitlich sind.",
+        text: "die EU die aktuellen Regeln beibehalten, da diese klar und einheitlich sind.",
         partyId: 5,
         id: 2,
       },
       {
-        text: "Inklusive weniger flexibler und glaubwürdiger Regeln zur Sicherung der Stabilität des Euro",
+        text: "die Einführung weniger flexibler und glaubwürdigerer Regeln zur Sicherung der Stabilität des Euro der nächste Schritt sein.",
         partyId: 1,
         id: 3,
       },
       {
-        text: "Aus der Sparlogik ausbrechen, um das Wachstum und die Widerstandsfähigkeit der europäischen Wirtschaft zu gewährleisten.",
+        text: "aus der Sparlogik ausgebrochen werden, um das Wachstum und die Widerstandsfähigkeit der europäischen Wirtschaft zu gewährleisten.",
         partyId: 3,
         id: 4,
       },
       {
-        text: "Eine starke soziale Dimension einschließen, um die Verpflichtungen des sozialen Pfeilers der EU zu respektieren.",
+        text: "eine starke soziale Dimension einbezogen werden, um die sozialen Verpflichtungen der EU zu respektieren.",
         partyId: 2,
         id: 5,
       },
       {
-        text: "Aus dem Dogma der Austerität ausbrechen, um mehr öffentliche Verschuldung zu ermöglichen",
+        text: "aus dem Dogma der Austerität ausgebrochen werden, um mehr öffentliche Verschuldung zu ermöglichen.",
         partyId: 4,
         id: 6,
       },
       {
-        text: "Mehr Demokratie und Flexibilität zur Sicherung von grünen und digitalen Investitionen.",
+        text: "mehr Demokratie und Flexibilität zur Sicherung von grünen und digitalen Investitionen eingeführt werden.",
         partyId: 6,
         id: 7,
       },
@@ -182,7 +184,8 @@ export default [
     learnMore:
       "Eines der wichtigsten Instrumente dieser Regeln ist der Stabilitäts- und Wachstumspakt (SWP), der 1997 eingeführt und 2011 überarbeitet wurde. Der SWP zielt darauf ab, sicherzustellen, dass die Mitgliedsländer ihre öffentlichen Defizite kontrollieren und ihre öffentliche Verschuldung reduzieren.",
     id: 4,
-    sources: null,
+    sources: "",
+    express: false,
   },
   {
     question: "Muss der EU-Haushalt durch mehr Eigenmittel finanziert werden?",
@@ -198,22 +201,22 @@ export default [
         id: 2,
       },
       {
-        text: "Ja, für mehr Transparenz, Stabilität und weniger politische Entscheidungen",
+        text: "Ja, für mehr Transparenz, Stabilität und weniger politische Entscheidungen.",
         partyId: 1,
         id: 3,
       },
       {
-        text: "Ja, ohne Einführung einer europäischen Unternehmenssteuer (zu überdenken)",
+        text: "Ja, aber ohne Einführung einer europäischen Unternehmenssteuer.",
         partyId: 3,
         id: 4,
       },
       {
-        text: "Aber die Priorität liegt vor allem darin, den Gesamthaushalt zu erhöhen",
+        text: "Ja, aber die Priorität liegt vor allem darin, den Gesamthaushalt zu erhöhen.",
         partyId: 2,
         id: 5,
       },
       {
-        text: "Ja, indem die Steuerkompetenzen der Union und des Parlaments gestärkt werden.",
+        text: "Ja, indem die Kompetenzen der Union und des Parlaments bezüglich der Besteuerung gestärkt werden.",
         partyId: 4,
         id: 6,
       },
@@ -228,44 +231,44 @@ export default [
       "Der Haushalt der Europäischen Union (EU) wird aus zwei Hauptquellen finanziert: den nationalen Beiträgen und den Eigenmitteln. Die nationalen Beiträge sind Beträge, die von jedem Mitgliedsstaat entsprechend seines nationalen Reichtums gezahlt werden, in der Regel berechnet als Prozentsatz ihres Bruttonationaleinkommens. Eigenmittel sind Gelder, die direkt von der EU eingezogen werden, wie Zölle auf Importe oder Agrarzölle. Im Gegensatz zu den nationalen Beiträgen werden die Eigenmittel nicht von den Mitgliedsstaaten festgelegt. Sie sind entscheidend für die Finanzierung der Politiken und Programme der EU.",
     id: 5,
     sources:
-      "https://www.europarl.europa.eu/factsheets/fr/sheet/27/recettes-de-l-union ",
+      "https://www.europarl.europa.eu/factsheets/fr/sheet/27/recettes-de-l-union",
     express: true,
   },
   {
-    question: "Der Konjunkturplan nach der Covid-Krise ist...",
+    question: "Der Europäische Aufbauplan nach der Covid-Krise ist...",
     answers: [
       {
-        text: "Ein illegaler Mechanismus, der die EU über Generationen hinweg verschuldet hat",
+        text: "ein illegaler Mechanismus, der die EU über Generationen hinweg verschuldet hat.",
         partyId: 7,
         id: 1,
       },
       {
-        text: "Ein nachteiliges Instrument für die ärmeren Mitgliedstaaten.",
+        text: "ein nachteiliges Instrument für die ärmeren Mitgliedstaaten.",
         partyId: 5,
         id: 2,
       },
       {
-        text: "Das größte Wirtschaftsförderprogramm, das jemals von der Europäischen Union geschaffen wurde.",
+        text: "das größte Wirtschaftsförderprogramm, das jemals von der Europäischen Union geschaffen wurde.",
         partyId: 1,
         id: 3,
       },
       {
-        text: "Eine Solidaritätsbekundung, die die EU zum größten Ausgeber von grünen Anleihen der Welt macht.",
+        text: "eine Solidaritätsbekundung, die die EU zum größten Ausgeber von grünen Anleihen der Welt macht.",
         partyId: 3,
         id: 4,
       },
       {
-        text: "Eine ehrgeizige, kollektive und demokratische europäische Antwort.",
+        text: "eine ehrgeizige, kollektive und demokratische europäische Antwort.",
         partyId: 2,
         id: 5,
       },
       {
-        text: "Ein historischer Moment, der von neuen eigenen Ressourcen und mehr grünen Zielen begleitet werden muss.",
+        text: "ein historischer Moment, der von neuen eigenen Ressourcen und mehr grünen Zielen begleitet werden muss.",
         partyId: 4,
         id: 6,
       },
       {
-        text: "Ein wichtiger positiver Moment für die Union und muss bewahrt werden.",
+        text: "ein wichtiger positiver Moment für die Union, der beibehalten werden muss.",
         partyId: 6,
         id: 7,
       },
@@ -281,37 +284,37 @@ export default [
     question: "Die Erhöhung der Zinssätze im Kampf gegen die Inflation...",
     answers: [
       {
-        text: "Hätte stärker sein sollen, aber die EZB hat nicht unabhängig gehandelt",
+        text: "hätte stärker sein sollen, aber die EZB hat nicht unabhängig gehandelt.",
         partyId: 7,
         id: 1,
       },
       {
-        text: "Hätte schneller und wichtiger sein sollen",
+        text: "hätte schneller und bedeutender sein sollen.",
         partyId: 5,
         id: 2,
       },
       {
-        text: "Man muss Vertrauen in die unabhängige Tätigkeit der EZB haben.",
+        text: "sollte durch mehr Vertrauen in die unabhängige Tätigkeit der EZB begleitet werden.",
         partyId: 1,
         id: 3,
       },
       {
-        text: "Muss die Auswirkungen auf die Kaufkraft und die Bürger berücksichtigen",
+        text: "muss die Auswirkungen auf die Kaufkraft und die Bürger berücksichtigen.",
         partyId: 3,
         id: 4,
       },
       {
-        text: "Löse nichts, es ist besser, die Gehälter zu erhöhen",
+        text: "ist keine Lösung. Es ist besser, die Gehälter zu erhöhen.",
         partyId: 2,
         id: 5,
       },
       {
-        text: "Ist eine schlechte Strategie, da sie Familien verarmt, ohne den Preisanstieg zu kontrollieren.",
+        text: "ist eine schlechte Strategie, da sie Familien verarmt, ohne den Preisanstieg zu kontrollieren.",
         partyId: 4,
         id: 6,
       },
       {
-        text: "Es ist eine politische Entscheidung, die bestrafend ist - es ist an der Zeit, die Löhne und die Kaufkraft zu verteidigen.",
+        text: "es ist eine belastende politische Entscheidung - es ist an der Zeit, die Löhne und die Kaufkraft zu verteidigen.",
         partyId: 6,
         id: 7,
       },
@@ -322,87 +325,89 @@ export default [
     id: 7,
     sources:
       "https://www.ecb.europa.eu/press/pr/date/2023/html/ecb.mp230914~aab39f8c21.fr.html",
+    express: false,
   },
   {
-    question: "Wäre ein digitalisierter Euro eine gute Sache?",
+    question: "Die Einführung eines digitalen Euros...",
     answers: [
       {
-        text: "Würde zu staatlicher Kontrolle über die Zahlungen der Bürger führen.",
+        text: "würde zu staatlicher Kontrolle über die Zahlungen der Bürger führen.",
         partyId: 7,
         id: 1,
       },
       {
-        text: "Erfüllt kein echtes Bedürfnis",
+        text: "erfüllt kein echtes Bedürfnis.",
         partyId: 5,
         id: 2,
       },
       {
-        text: "Muss klar sein und sicherstellen, dass er Bargeld nicht ersetzt.",
+        text: "muss klar sein und sicherstellen, dass das Bargeld nicht ersetzt wird.",
         partyId: 1,
         id: 3,
       },
       {
-        text: "Es sollte ein vertrauenswürdiges Instrument für die Europäer sein, das ergänzend zu Bargeld eingesetzt wird.",
+        text: "soll ein vertrauenswürdiges Instrument für die Europäer sein, das ergänzend zu Bargeld eingesetzt wird.",
         partyId: 3,
         id: 4,
       },
       {
-        text: "Vermeiden eines Verlusts an monetärer Souveränität",
+        text: "muss den Verlust von monetärer Souveränität vermeiden.",
         partyId: 2,
         id: 5,
       },
       {
-        text: "Es sollte ein effizienteres und inklusiveres Zahlungssystem sein.",
+        text: "sollte ein effizienteres und inklusiveres Zahlungssystem sein.",
         partyId: 4,
         id: 6,
       },
       {
-        text: "Ist eine wichtige Innovation, sollte aber nicht zur Privatisierung von Geld führen.",
+        text: "ist eine wichtige Innovation, die aber nicht zur Privatisierung von Geld führen darf.",
         partyId: 6,
         id: 7,
       },
     ],
     category: 1,
     learnMore:
-      "Das Digital Euro-Projekt ist eine Initiative der Europäischen Zentralbank (EZB), die darauf abzielt, die Schaffung einer digitalen Version des Euro zu erkunden, die als Ergänzung zu Bargeld und Bankeneinlagen dient. Diese digitale Zentralbankwährung (CBDC) würde den Bürgern und Unternehmen eine sichere und effiziente Alternative für elektronische Transaktionen bieten. Die Hauptziele des Projekts liegen in der Gewährleistung der Währungsstabilität, der Förderung finanzieller Innovation und der Wahrung der Währungssouveränität der Eurozone vor dem Hintergrund globaler technologischer Entwicklungen, insbesondere privater Kryptowährungen.",
+      "Die Einführung eines digitalen Euros ist eine Initiative der Europäischen Zentralbank (EZB), die darauf abzielt, die Schaffung einer digitalen Version des Euro zu erproben, die als Ergänzung zu Bargeld und Bankeneinlagen dient. Diese digitale Zentralbankwährung (CBDC) würde den Bürgern und Unternehmen eine sichere und effiziente Alternative für elektronische Transaktionen bieten. Die Hauptziele des Projekts liegen in der Gewährleistung der Währungsstabilität, der Förderung finanzieller Innovation und der Wahrung der Währungssouveränität der Eurozone vor dem Hintergrund globaler technologischer Entwicklungen, insbesondere privater Kryptowährungen.",
     id: 8,
     sources: "https://www.ecb.europa.eu/paym/digital_euro/html/index.en.html",
+    express: false,
   },
   {
     question: "Der Aktionsplan für die Kreislaufwirtschaft ermöglicht...",
     answers: [
       {
-        text: "Die Wiederansiedlung unserer Industrien zu ermöglichen, indem wir lokale Lieferketten schaffen und sehr viele Arbeitsplätze ohne ökologische Einschränkungen schaffen.",
+        text: "die Wiederansiedlung europäischer Industrien, indem lokale Lieferketten geschaffen werden und sehr viele Arbeitsplätze ohne ökologische Einschränkungen entstehen.",
         partyId: 7,
         id: 1,
       },
       {
-        text: "Wenig bedeutet, wenn die Staaten die bestehenden europäischen Vorschriften über Abfälle nicht einhalten.",
+        text: "wenig, wenn die Staaten die bestehenden europäischen Vorschriften über Abfälle nicht einhalten.",
         partyId: 5,
         id: 2,
       },
       {
-        text: "Von der Umstellung auf eine Kreislaufwirtschaft begleiten Unternehmer dabei, ihre Geschäftsmodelle zu ändern.",
+        text: "eine Umstellung auf eine Kreislaufwirtschaft, indem Unternehmer ihre Geschäftsmodelle verändern.",
         partyId: 1,
         id: 3,
       },
       {
-        text: "Die Verwendung von Kunststoff zu reduzieren und ihn aus erneuerbaren Materialien herzustellen.",
+        text: "die Verwendung von Kunststoff zu reduzieren und ihn aus erneuerbaren Materialien herzustellen.",
         partyId: 3,
         id: 4,
       },
       {
-        text: "Zu einem vollständig zirkulären System zu streben, das die Grenzen unseres Planeten respektiert.",
+        text: "ein vollständig zirkuläres System anzustreben, das die Grenzen unseres Planeten respektiert.",
         partyId: 2,
         id: 5,
       },
       {
-        text: "Mit verbindlichen Reduktionszielen, die Solidarität und den Respekt für den Planeten einschließen zu haben",
+        text: "verbindliche Reduktionsziele zu etablieren, die die Solidarität und den Respekt für den Planeten miteinschließen.",
         partyId: 4,
         id: 6,
       },
       {
-        text: "Eine Stärkung des Kapitalismus, der die Grenzen des Planeten ignoriert",
+        text: "eine Stärkung des Kapitalismus, der die Grenzen des Planeten ignoriert.",
         partyId: 6,
         id: 7,
       },
@@ -413,27 +418,28 @@ export default [
     id: 9,
     sources:
       "https://environment.ec.europa.eu/strategy/circular-economy-action-plan_en",
+    express: false,
   },
   {
-    question: "Bei allem Zugang zu Wohnraum für alle muss Europa",
+    question: "Beim Zugang zu Wohnraum für alle muss Europa...",
     answers: [
       {
-        text: "Sich zurückhalten, weil dies einer kommunistischen Wirtschaftsplanung entsprechen würde.",
+        text: "sich zurückhalten, weil dies einer kommunistischen Wirtschaftsplanung entsprechen würde.",
         partyId: 7,
         id: 1,
       },
       {
-        text: "Da sie in diesem Bereich keine Kompetenz hat, sollte sie sich heraushalten.",
+        text: "sich heraushalten, da die EU in diesem Bereich keine Kompetenz hat.",
         partyId: 5,
         id: 2,
       },
       {
-        text: "Stärkung seiner Maßnahmen im Rahmen des europäischen Sozialfonds und der europäischen Garantie für Kinder",
+        text: "seine Maßnahmen im Rahmen des europäischen Sozialfonds und der europäischen Garantie für Kinder stärken.",
         partyId: 1,
         id: 3,
       },
       {
-        text: "Effiziente und koordinierte Politiken zur Unterstützung der Gemeinden umsetzen",
+        text: "effiziente und koordinierte Politiken zur Unterstützung der Gemeinden umsetzen.",
         partyId: 3,
         id: 4,
       },
@@ -443,19 +449,19 @@ export default [
         id: 5,
       },
       {
-        text: "Die Wohnungsnot-Krise durch den Schutz der Bürger auf europäischer Ebene bewältigen.",
+        text: "die Wohnungsnot-Krise durch den Schutz der Bürger auf europäischer Ebene bewältigen.",
         partyId: 4,
         id: 6,
       },
       {
-        text: "Ein echte Sozialstrategie haben und die Mietpreisbegrenzung ermöglichen",
+        text: "ein echte Sozialstrategie haben und die Mietpreisbegrenzung ermöglichen.",
         partyId: 6,
         id: 7,
       },
     ],
     category: 1,
     learnMore:
-      "Der Kontext des Wohnens in Europa zeigt verschiedene Herausforderungen wie den Mangel an bezahlbarem Wohnraum in einigen Regionen, die Schwierigkeiten des Zugangs zum Wohnen für vulnerable Gruppen und zunehmende Ungleichheiten beim Wohnen. Die Europäische Union (EU) hat eine Strategie verabschiedet, um das Recht auf Wohnen als grundlegendes Recht zu gewährleisten. Diese Strategie zielt darauf ab, einen gerechten Zugang zu angemessenem Wohnraum für alle europäischen Bürger sicherzustellen. Zu ihren Hauptzielen gehören der Kampf gegen Obdachlosigkeit, die Verhinderung von Diskriminierung beim Wohnen und die Förderung von inklusiven und nachhaltigen Wohnpolitiken.",
+      "Die Wohnraumthematik in Europa zeigt verschiedene Herausforderungen wie den Mangel an bezahlbarem Wohnraum in einigen Regionen, die Schwierigkeiten des Zugangs zum Wohnen für vulnerable Gruppen und zunehmende Ungleichheiten beim Wohnen. Die Europäische Union (EU) hat eine Strategie verabschiedet, um das Recht auf Wohnen als grundlegendes Recht zu gewährleisten. Diese Strategie zielt darauf ab, einen gerechten Zugang zu angemessenem Wohnraum für alle europäischen Bürger sicherzustellen. Zu ihren Hauptzielen gehören der Kampf gegen Obdachlosigkeit, die Verhinderung von Diskriminierung beim Wohnen und die Förderung von inklusiven und nachhaltigen Wohnpolitiken.",
     id: 10,
     sources:
       "https://www.europarl.europa.eu/news/fr/press-room/20210114IPR95632/l-acces-a-un-logement-decent-devrait-etre-un-droit-fondamental-europeen",
@@ -470,12 +476,12 @@ export default [
         id: 1,
       },
       {
-        text: "Nein, die Mitgliedstaaten müssen strategisch ihre Energiemischung wählen.",
+        text: "Nein, die Mitgliedstaaten müssen ihren Energiemix strategisch wählen.",
         partyId: 5,
         id: 2,
       },
       {
-        text: "Ja, um einen stabilen, kostengünstigen und sauberen Zugang zu Energie zu gewährleisten, unter Einhaltung der Marktprinzipien",
+        text: "Ja, um einen stabilen, kostengünstigen und sauberen Zugang zu Energie zu gewährleisten, unter Einhaltung der Marktprinzipien.",
         partyId: 1,
         id: 3,
       },
@@ -490,12 +496,12 @@ export default [
         id: 5,
       },
       {
-        text: "Ja, besonders erneuerbare Energien werden gefördert.",
+        text: "Ja, besonders erneuerbare Energien müssen gefördert werden.",
         partyId: 4,
         id: 6,
       },
       {
-        text: "Ja, aber dieser Markt muss aufgebrochen und auf die Superprofite besteuert werden.",
+        text: "Ja, aber der Markt muss zerschlagen und die Superprofite besteuert werden.",
         partyId: 6,
         id: 7,
       },
@@ -512,59 +518,60 @@ export default [
     question: "Die Nutzung von Atomenergie als Energiequelle in der EU...",
     answers: [
       {
-        text: "Es ist entscheidend, um unsere energetische Unabhängigkeit zu gewährleisten.",
+        text: "ist entscheidend, um die energetische Unabhängigkeit zu gewährleisten.",
         partyId: 7,
         id: 1,
       },
       {
-        text: "Ist die einzige Option für eine bezahlbare, zuverlässige und saubere Energie.",
+        text: "ist die einzige Option für eine bezahlbare, zuverlässige und saubere Energie.",
         partyId: 5,
         id: 2,
       },
       {
-        text: "Ist eine wichtige Technologie mit niedrigem Kohlenstoffgehalt, die strenge Sicherheitsstandards haben muss.",
+        text: "ist eine wichtige Technologie mit niedrigem CO2-Ausstoß, die strenge Sicherheitsstandards haben muss.",
         partyId: 1,
         id: 3,
       },
       {
-        text: "Ermöglicht die Diversifizierung des Energiemixes und stärkt die industrielle Souveränität Europas.",
+        text: "ermöglicht die Diversifizierung des Energiemixes und stärkt die industrielle Souveränität Europas.",
         partyId: 3,
         id: 4,
       },
       {
-        text: "Ist weder grün noch nachhaltig, kann aber zur Übergang zur Kohlenstoffneutralität beitragen",
+        text: "ist weder grün noch nachhaltig, kann aber als Übergang zur CO2-Neutralität beitragen.",
         partyId: 2,
         id: 5,
       },
       {
-        text: "Ist nicht nachhaltig, teuer, riskant und ungeeignet im Kampf gegen die Klimakrise.",
+        text: "ist nicht nachhaltig, teuer, riskant und ungeeignet im Kampf gegen die Klimakrise.",
         partyId: 4,
         id: 6,
       },
       {
-        text: "Steht im Widerspruch zu den Zielen der nachhaltigen Entwicklung",
+        text: "steht im Widerspruch zu den Zielen der nachhaltigen Entwicklung.",
         partyId: 6,
         id: 7,
       },
     ],
     category: 2,
     learnMore:
-      "Die Rolle der Kernenergie in Europa ist signifikant und macht 25,2 % des gesamten Stroms aus, der 2021 in der Europäischen Union produziert wurde. Trotz eines allgemeinen Rückgangstrends bei der Nutzung von Kernenergie seit der Fukushima-Katastrophe im Jahr 2011 variiert die Situation stark von Land zu Land. Die EU ist weiterhin uneins in Bezug auf Atomkraft: Bedenken hinsichtlich Sicherheits- und Umweltrisiken sowie dem Problem radioaktiver Abfälle stehen dem Potenzial der Kernenergie als kohlenstoffarmer Energiequelle gegenüber.",
+      "Die Rolle der Kernenergie in Europa ist signifikant und macht 25,2 % des gesamten Stroms aus, der 2021 in der Europäischen Union produziert wurde. Trotz eines allgemeinen Rückgangstrends bei der Nutzung von Kernenergie seit der Fukushima-Katastrophe im Jahr 2011 variiert die Situation stark von Land zu Land. Die EU ist weiterhin uneins in Bezug auf Atomkraft: Bedenken hinsichtlich Sicherheits- und Umweltrisiken sowie dem Problem radioaktiver Abfälle stehen dem Potenzial der Kernenergie als CO2-arme Energiequelle gegenüber.",
     id: 12,
     sources:
       "https://www.europarl.europa.eu/factsheets/fr/sheet/62/l-energie-nucleaire , https://www.touteleurope.eu/environnement/energie-nucleaire-quels-sont-les-principaux-pays-producteurs-en-europe/",
+    express: false,
   },
   {
     question:
       "Ist die Entwicklung eines transeuropäischen Energienetzwerks notwendig?",
     answers: [
       {
-        text: "Es ist entscheidend im Hinblick auf technologische Neutralität und strategische Autonomie, alle Energieträger zu bevorzugen.",
+        text: "Es ist entscheidend im Hinblick auf technologische Neutralität und strategische Autonomie, alle Energiequellen zu fördern.",
         partyId: 7,
         id: 1,
       },
       {
-        text: "Es ist ein erster Schritt, um die europäische Abhängigkeit von russischer Energie zu brechen.",
+        text: "Es ist ein erster Schritt, um die europäische Abhängigkeit von russischer Energie zu reduzieren.",
         partyId: 5,
         id: 2,
       },
@@ -574,22 +581,22 @@ export default [
         id: 3,
       },
       {
-        text: "Es ist unerlässlich, in diesem Bereich ehrgeiziger zu sein, um sich von diktatorischen Gaslieferungen zu befreien.",
+        text: "Es ist unerlässlich, in diesem Bereich ehrgeiziger zu sein, um sich von Abhängigkeiten von Diktaturen zu befreien.",
         partyId: 3,
         id: 4,
       },
       {
-        text: "Ja, um den grünen Übergang zu erleichtern und zu beschleunigen, indem die Stabilität und Sicherheit der Energieversorgung gestärkt werden.",
+        text: "Ja, um die grüne Transition zu erleichtern und zu beschleunigen, indem die Stabilität und Sicherheit der Energieversorgung gestärkt werden.",
         partyId: 2,
         id: 5,
       },
       {
-        text: "Ja, aber man muss sich mehr auf erneuerbare Energien anstelle fossiler Energien konzentrieren.",
+        text: "Ja, aber man muss sich mehr auf erneuerbare Energien, als auf fossile Energien konzentrieren.",
         partyId: 4,
         id: 6,
       },
       {
-        text: "Nur wenn er mit den nationalen Energieplänen in Einklang steht und Zugang zu fairen und erschwinglichen Preisen ermöglicht.",
+        text: "Nur wenn es mit den nationalen Energieplänen in Einklang steht und Zugang zu fairen und erschwinglichen Preisen ermöglicht.",
         partyId: 6,
         id: 7,
       },
@@ -600,18 +607,19 @@ export default [
     id: 13,
     sources:
       "https://www.europarl.europa.eu/RegData/etudes/fiches_techniques/2017/N52942/doc_fr.pdf , https://www.europarl.europa.eu/news/fr/press-room/20220401IPR26530/le-pe-reforme-le-deploiement-des-infrastructures-energetiques-transeuropeennes , https://www.consilium.europa.eu/fr/infographics/ten-e-energy-infrastructure/",
+    express: false,
   },
   {
     question:
-      "Sollte man bei einigen Maßnahmen des Green Deals zurücktreten oder eine Pause einlegen?",
+      "Sollten einige Maßnahmen des Green Deals zurückgenommen oder ausgebremst werden?",
     answers: [
       {
-        text: "Ja, man sollte ideologisches Denken aufgeben und mehr Pragmatismus zeigen.",
+        text: "Ja, man sollte ideologisches Denken aufgeben und pragmatischer sein.",
         partyId: 7,
         id: 1,
       },
       {
-        text: "Der exorbitante Kosten des Green Deals erfordert eine Verlangsamung.",
+        text: "Die exorbitanten Kosten des Green Deals erforderen eine langsamere Umsetzung.",
         partyId: 5,
         id: 2,
       },
@@ -621,7 +629,7 @@ export default [
         id: 3,
       },
       {
-        text: "Es ist notwendig, Regulierung zu vermeiden, um sicherzustellen, dass die Gesetze einfach, verständlich und finanziert sind.",
+        text: "Es ist notwendig, Regulierung zu vermeiden, um sicherzustellen, dass die Gesetze einfach, verständlich und finanzierbar sind.",
         partyId: 3,
         id: 4,
       },
@@ -636,53 +644,54 @@ export default [
         id: 6,
       },
       {
-        text: "Er muss für mehr Effizienz und soziale Gerechtigkeit neu durchdacht werden.",
+        text: "Der Green Deal muss effizienter werden und sozialer gedacht werden.",
         partyId: 6,
         id: 7,
       },
     ],
     category: 2,
     learnMore:
-      "Der Europäische Grüne Deal ist eine Strategie der EU, die 2019 von der Europäischen Kommission vorgestellt wurde und darauf abzielt, bis 2050 Klimaneutralität zu erreichen. Dies beinhaltet eine drastische Reduzierung von Treibhausgasemissionen, die Förderung erneuerbarer Energien und den Übergang zu einer nachhaltigen Wirtschaft. Um dieses ehrgeizige Ziel zu erreichen, sind alle Zuständigkeitsbereiche der EU von den Initiativen des Grünen Deals betroffen. Der Plan sieht finanzielle Unterstützung für betroffene Regionen und Sektoren vor, um einen gerechten Übergang zu gewährleisten.",
+      "Der Europäische Green Deal ist eine Strategie der EU, die 2019 von der Europäischen Kommission vorgestellt wurde und darauf abzielt, bis 2050 Klimaneutralität zu erreichen. Dies beinhaltet eine drastische Reduzierung von Treibhausgasemissionen, die Förderung erneuerbarer Energien und den Übergang zu einer nachhaltigen Wirtschaft. Um dieses ehrgeizige Ziel zu erreichen, sind alle Zuständigkeitsbereiche der EU von den Initiativen des Green Deals betroffen. Der Plan sieht finanzielle Unterstützung für betroffene Regionen und Sektoren vor, um einen gerechten Übergang zu gewährleisten.",
     id: 14,
     sources:
       "https://commission.europa.eu/strategy-and-policy/priorities-2019-2024/european-green-deal_fr , https://www.touteleurope.eu/environnement/qu-est-ce-que-le-pacte-vert-pour-l-europe/",
+    express: false,
   },
   {
-    question: "Die Vereinigung der Energie...",
+    question: "Die europäische Energieunion...",
     answers: [
       {
-        text: "Ist katastrophal und hat die Energiekrise verschärft.",
+        text: "ist katastrophal und hat die Energiekrise verschärft.",
         partyId: 7,
         id: 1,
       },
       {
-        text: "Zeigt Dogmatismus, indem er die Kernenergie ablehnt.",
+        text: "ist zu dogmatisch, da sie Kernenergie ablehnt.",
         partyId: 5,
         id: 2,
       },
       {
-        text: "ist entscheidend, um die Widerstandsfähigkeit gegenüber externen Schocks zu stärken",
+        text: "ist entscheidend, um die Widerstandsfähigkeit gegenüber externen Schocks zu stärken.",
         partyId: 1,
         id: 3,
       },
       {
-        text: "Soll eine höhere Energieeffizienz umsetzen, die mehr grüne Energie integriert.",
+        text: "soll eine höhere Energieeffizienz umsetzen, die mehr grüne Energie miteinbezieht.",
         partyId: 3,
         id: 4,
       },
       {
-        text: "Muss korrigiert werden, um eine bessere Vorhersagbarkeit der Strompreise zu gewährleisten und die Bürger zu schützen.",
+        text: "muss korrigiert werden, um die Strompreise besser voraussagen zu können und so die Bürger besser schützen zu können.",
         partyId: 2,
         id: 5,
       },
       {
-        text: "Muss unsere Abhängigkeit von fossilen Energien reduzieren.",
+        text: "muss unsere Abhängigkeit von fossilen Energien reduzieren.",
         partyId: 4,
         id: 6,
       },
       {
-        text: "Die Preise müssen blockiert werden und dürfen nicht dazu dienen, Kriegsverbrechen zu finanzieren.",
+        text: "muss die Preise blockieren und darf nicht dazu dienen, Kriegsverbrechen zu finanzieren.",
         partyId: 6,
         id: 7,
       },
@@ -695,7 +704,7 @@ export default [
     express: true,
   },
   {
-    question: "Ist die Schaffung eines Sozialfonds für das Klima notwendig?",
+    question: "Ist die Schaffung eines Klimasozialfonds notwendig?",
     answers: [
       {
         text: "Es handelt sich um einen heuchlerischen Mechanismus, der die Energiearmut nicht lindern wird.",
@@ -703,12 +712,12 @@ export default [
         id: 1,
       },
       {
-        text: "Nein, das ist keine Verantwortung der EU.",
+        text: "Nein, das ist kein Verantwortungsbereich der EU.",
         partyId: 5,
         id: 2,
       },
       {
-        text: "Es ist notwendig, aber im Moment nicht ausreichend.",
+        text: "Er ist notwendig, aber im Moment nicht ausreichend.",
         partyId: 1,
         id: 3,
       },
@@ -718,27 +727,28 @@ export default [
         id: 4,
       },
       {
-        text: "Er wird vulnerablen Haushalten helfen, ihren Übergang zu bewältigen und die Investitionen erhöhen.",
+        text: "Er wird vulnerablen Haushalten helfen, die Auswirkungen der grünen Transition zu bewältigen und die Investitionen erhöhen.",
         partyId: 2,
         id: 5,
       },
       {
-        text: "Er wird sich an der Klimarechtigkeit beteiligen, die notwendig ist, um soziale Gerechtigkeit zu erreichen.",
+        text: "Er wird zur Klimagerechtigkeit beitragen, die notwendig ist, um soziale Gerechtigkeit zu erreichen.",
         partyId: 4,
         id: 6,
       },
       {
-        text: "Es sollte viel wichtiger sein, um effektiv zu sein.",
+        text: "Um wirklich etwas zu bewirken, muss der Fonds deutlich erhöht werden.",
         partyId: 6,
         id: 7,
       },
     ],
     category: 2,
     learnMore:
-      "Der Sozialfonds für das Klima ist eine Initiative der Europäischen Union, die darauf abzielt, die sozialen Auswirkungen des ökologischen Übergangs zu mildern. Mit einem Budget von bis zu 86,7 Milliarden Euro wird er Investitionen zur Anpassung von Haushalten und Unternehmen finanzieren, die am anfälligsten für diese Entwicklungen sind. Das Budget stammt aus den Einnahmen aus dem Verkauf von Emissionsrechten auf dem Sekundärmarkt für Kohlenstoff. Die Staaten müssen auch 25 % der durchgeführten Maßnahmen mitfinanzieren.",
+      "Der Klimasozialfonds ist eine Initiative der Europäischen Union, die darauf abzielt, die sozialen Auswirkungen des ökologischen Übergangs zu mildern. Mit einem Budget von bis zu 86,7 Milliarden Euro wird er Investitionen zur Anpassung von Haushalten und Unternehmen finanzieren, die am anfälligsten für diese Entwicklungen sind. Das Budget stammt aus den Einnahmen aus dem Verkauf von Emissionsrechten auf dem Sekundärmarkt für CO2 Emmissionen. Die Staaten müssen 25 % der durchgeführten Maßnahmen mitfinanzieren.",
     id: 16,
     sources:
       "https://www.europarl.europa.eu/news/fr/press-room/20221212IPR64528/accord-sur-la-creation-du-fonds-social-pour-le-climat , https://www.touteleurope.eu/environnement/fonds-social-pour-le-climat-comment-la-commission-veut-elle-concilier-ambition-environnementale-et-justice-sociale/",
+    express: false,
   },
   {
     question: "Welchen Platz sollte die EU den fossilen Energien einräumen?",
@@ -749,12 +759,12 @@ export default [
         id: 1,
       },
       {
-        text: "Es ist unrealistisch, aufgrund technischer Gründe auf Öl und Gas zu verzichten.",
+        text: "Aus technischen Gründen ist es unrealistisch auf Öl und Gas zu verzichten.",
         partyId: 5,
         id: 2,
       },
       {
-        text: "Es muss schrittweise von fossilen Brennstoffen weggegangen werden, um bis 2050 eine CO2-Neutralität zu erreichen.",
+        text: "Fossilen Brennstoffe müssen schrittweise abgebaut werden, um bis 2050 die CO2-Neutralität zu erreichen.",
         partyId: 1,
         id: 3,
       },
@@ -764,17 +774,17 @@ export default [
         id: 4,
       },
       {
-        text: "Es ist eine umweltbedingte Notwendigkeit, die Ressourcen auf saubere Energien umzuleiten.",
+        text: "Es ist eine ökologische Notwendigkeit, die Ressourcen für saubere Energien zu nutzen.",
         partyId: 2,
         id: 5,
       },
       {
-        text: "Es ist notwendig, fossile Energien zu beenden, indem die Subventionen bis 2025 eingestellt werden.",
+        text: "Es ist notwendig, die Förderung fossiler Energien zu beenden, indem die Subventionen bis 2025 eingestellt werden.",
         partyId: 4,
         id: 6,
       },
       {
-        text: "Man muss aufhören, die Zerstörung des Planeten zu finanzieren, um den Klimaschutz zu finanzieren.",
+        text: "Die EU muss aufhören, die Zerstörung des Planeten zu finanzieren, um stattdessen den Klimaschutz zu finanzieren.",
         partyId: 6,
         id: 7,
       },
@@ -792,7 +802,7 @@ export default [
       "Ist das REpowerEU-Instrument, das darauf abzielt, die Abhängigkeit von russischen fossilen Brennstoffen bis 2030 zu beenden, nützlich?",
     answers: [
       {
-        text: "Es sind nur Ziele, die die EU sich nicht die Mittel gibt, um zu erreichen.",
+        text: "Die EU stellt nicht genügend Mittel bereit, um die Ziele zu erreichen.",
         partyId: 7,
         id: 1,
       },
@@ -802,7 +812,7 @@ export default [
         id: 2,
       },
       {
-        text: "Es ist wichtig, um den Energiemix zu verändern und unsere Energieabhängigkeit zu verringern.",
+        text: "Es ist wichtig, um den Energiemix zu diversifizieren und unsere Energieabhängigkeit zu verringern.",
         partyId: 1,
         id: 3,
       },
@@ -812,17 +822,17 @@ export default [
         id: 4,
       },
       {
-        text: "Er muss den Übergang zu erneuerbaren Energien beschleunigen.",
+        text: "Es muss den Übergang zu erneuerbaren Energien beschleunigen.",
         partyId: 2,
         id: 5,
       },
       {
-        text: "Er muss die Haushalte in der Energiekrise und dem ökologischen Wandel unterstützen.",
+        text: "Es muss die Haushalte in der Energiekrise und dem ökologischen Wandel unterstützen.",
         partyId: 4,
         id: 6,
       },
       {
-        text: "Unzureichend, es ist notwendig, die Preise zu regulieren und die übermäßigen Gewinne der Energieunternehmen zu besteuern",
+        text: "Die Maßnahmen sind unzureichend. Die Preise müssen reguliert und die übermäßigen Gewinne der Energieunternehmen besteuert werden.",
         partyId: 6,
         id: 7,
       },
@@ -833,42 +843,43 @@ export default [
     id: 18,
     sources:
       "https://commission.europa.eu/strategy-and-policy/priorities-2019-2024/european-green-deal/repowereu-affordable-secure-and-sustainable-energy-europe_fr",
+    express: false,
   },
   {
     question: "Der Anteil erneuerbarer Energien in Europa...",
     answers: [
       {
-        text: "Keine Priorität angesichts der wirtschaftlichen Situation in Europa.",
+        text: "ist angesichts der wirtschaftlichen Situation in Europa keine Priorität.",
         partyId: 7,
         id: 1,
       },
       {
-        text: "Darf nicht weiterentwickelt werden, es bedarf einer Aussetzung der überschwänglichen Ambitionen der Kommission.",
+        text: "darf nicht weiterentwickelt werden, es bedarf einer Aussetzung der überschwänglichen Ambitionen der Kommission.",
         partyId: 5,
         id: 2,
       },
       {
-        text: "Mit innovativen Lösungen muss ein Anteil von 42,5% erreicht werden.",
+        text: "muss mit innovativen Lösungen 42,5% erreichen.",
         partyId: 1,
         id: 3,
       },
       {
-        text: "Muss bis 2030 45 % des europäischen Energiemixes erreichen",
+        text: "muss bis 2030 45 % des europäischen Energiemixes ausmachen.",
         partyId: 3,
         id: 4,
       },
       {
-        text: "Muss 45% erreichen, da sie eine Lösung für steigende Energiepreise sind.",
+        text: "muss 45% erreichen, da erneuerbare Energien eine Lösung für steigende Energiepreise sind.",
         partyId: 2,
         id: 5,
       },
       {
-        text: "Muss bis 2040 100% erreichen und bis 2030 56% erreichen.",
+        text: "muss bis 2040 100% erreichen und bis 2030 56% erreichen.",
         partyId: 4,
         id: 6,
       },
       {
-        text: "Muss bis 2030 50 % erreichen",
+        text: "muss bis 2030 50 % erreichen.",
         partyId: 6,
         id: 7,
       },
@@ -879,43 +890,44 @@ export default [
     id: 19,
     sources:
       "https://www.consilium.europa.eu/fr/press/press-releases/2023/10/09/renewable-energy-council-adopts-new-rules/",
+    express: false,
   },
   {
     question:
       "Im Bereich der Energietransition im Luftfahrtsektor ist es erforderlich...",
     answers: [
       {
-        text: "Bei der Hälfte der CO2-Emissionen der Luftfahrt auf Langstreckenflüge konzentrieren.",
+        text: "sich auf Langstreckenflüge zu konzentrieren, die die Hälfte der CO2-Emmissionen ausmachen.",
         partyId: 7,
         id: 1,
       },
       {
-        text: "Zusätzliche und teure Verpflichtungen für diesen geschwächten Sektor reduzieren",
+        text: "zusätzliche und teure Verpflichtungen für diesen geschwächten Sektor zu reduzieren.",
         partyId: 5,
         id: 2,
       },
       {
-        text: "Eine flexiblere Definition von nachhaltigem Flugzeugtreibstoff, um Innovation zu fördern.",
+        text: "eine flexiblere Definition von nachhaltigem Flugzeugtreibstoff einzuführen, um Innovation zu fördern.",
         partyId: 1,
         id: 3,
       },
       {
-        text: "Förderung der Innovation von nachhaltigem Flugkraftstoff und Steigerung seiner Nutzung.",
+        text: "die Innovation von nachhaltigem Flugzeugtreibstoff und die Steigerung seiner Nutzung zu fördern.",
         partyId: 3,
         id: 4,
       },
       {
-        text: "Höhere Ziele und schnellere Maßnahmen zur Gewährleistung des Übergangs in diesem Sektor",
+        text: "höhere Ziele zu definieren und schnellere Maßnahmen zur Gewährleistung des Übergangs in diesem Sektor umzusetzen.",
         partyId: 2,
         id: 5,
       },
       {
-        text: "Eine strenge Definition von nachhaltigem Flugzeugtreibstoff und eine Steigerung ihrer Produktion.",
+        text: "eine strenge Definition von nachhaltigem Flugzeugtreibstoff einzuführen und die Produktion zu steigern.",
         partyId: 4,
         id: 6,
       },
       {
-        text: "Nachhaltigen Flugzeugkraftstoff streng definieren und kein Greenwashing betreiben",
+        text: "nachhaltigen Flugzeugtreibstoff streng zu definieren und kein Greenwashing zu betreiben.",
         partyId: 6,
         id: 7,
       },
@@ -926,96 +938,98 @@ export default [
     id: 20,
     sources:
       "https://www.europarl.europa.eu/thinktank/fr/document/EPRS_BRI(2022)698900",
+    express: false,
   },
   {
     question: "Fake News und Desinformation sind gefährlich.",
     answers: [
       {
-        text: "Es liegt im Interesse aller, die freien Stimmen der europäischen Völker zu verteidigen.",
+        text: "Ja, es liegt im Interesse aller, die Meinungsfreiheit in allen Ländern Europas zu verteidigen.",
         partyId: 7,
         id: 1,
       },
       {
-        text: "Die Desinformationskampagnen versuchen, unsere gesellschaftlichen Diskussionen zu beeinflussen.",
+        text: "Ja, verschiedene Desinformationskampagnen versuchen, unsere gesellschaftlichen Diskussionen zu beeinflussen.",
         partyId: 5,
         id: 2,
       },
       {
-        text: "Schnell und überlegt handeln.",
+        text: "Ja, wir müssen schnell und überlegt handeln.",
         partyId: 1,
         id: 3,
       },
       {
-        text: "Es ist eine Priorität, Fehlinformationen zu bekämpfen.",
+        text: "Ja, es sollte eine Priorität sein, Desinformationen zu bekämpfen.",
         partyId: 3,
         id: 4,
       },
       {
-        text: "Es ist wichtig, die Fehlinformation zu beenden.",
+        text: "Ja, es ist wichtig Desinformationen zu beenden.",
         partyId: 2,
         id: 5,
       },
       {
-        text: "Die EU muss digitale Plattformen regulieren, um Fehlinformationen zu vermeiden.",
+        text: "Ja, die EU muss digitale Plattformen regulieren, um Desinformationen zu vermeiden.",
         partyId: 4,
         id: 6,
       },
       {
-        text: "Das europäische Konzept von Fehlinformationen ist selektiv und beinhaltet nicht die Konflikte, die vom Westen geschaffen wurden.",
+        text: "Nein, das europäische Konzept von Desinformationen ist selektiv und beinhaltet nicht die Konflikte, die vom Westen geschaffen wurden.",
         partyId: 6,
         id: 7,
       },
     ],
     category: 3,
     learnMore:
-      "Die EU handelt gegen die Verbreitung von Desinformation und Online-Desinformation, um den Schutz europäischer Werte und demokratischer Systeme sicherzustellen. Die Kommission hat dazu einen Verhaltenskodex eingeführt und fördert die Zusammenarbeit der Staaten in diesem Kampf. Der Aktionsplan für die europäische Demokratie legt die Verantwortlichkeiten und Pflichten von Online-Plattformen im Kampf gegen Desinformation fest.",
+      'Die EU handelt gegen die Verbreitung von Desinformationen und Online-Desinformationen, um den Schutz europäischer Werte und demokratischer Systeme sicherzustellen. Die Kommission hat dazu einen Verhaltenskodex eingeführt und fördert die Zusammenarbeit der Mitgliedsstaaten in diesem Kampf. Der sogenannte "Aktionsplan für die europäische Demokratie" legt die Verantwortlichkeiten und Pflichten von Online-Plattformen im Kampf gegen Desinformation fest.',
     id: 21,
     sources:
       "https://digital-strategy.ec.europa.eu/fr/policies/online-disinformation",
+    express: false,
   },
   {
     question:
       "Die Tatsache, dass die 27 Staats- und Regierungschefs im Rat der EU einstimmig sprechen müssen...",
     answers: [
       {
-        text: "Ermöglicht es den Mitgliedsstaaten, Entscheidungen zu blockieren, die ihren Interessen entgegenstehen.",
+        text: "ermöglicht es den Mitgliedsstaaten, Entscheidungen zu blockieren, die gegen ihre Interessen sind.",
         partyId: 7,
         id: 1,
       },
       {
-        text: "Zum Schutz vor einem föderalistischen Staatsstreich aufzubewahren.",
+        text: "sollte beibehalten werden, um zu verhindern, dass ein föderaler europäischer Staat enstehen kann. ",
         partyId: 5,
         id: 2,
       },
       {
-        text: "Sollte aufgegeben werden, insbesondere für die Außenpolitik.",
+        text: "sollte aufgegeben werden, insbesondere für außenpolitische Entscheidungen.",
         partyId: 1,
         id: 3,
       },
       {
-        text: "Es muss gestoppt werden, um das Aufkommen eines geopolitischen Europas zu ermöglichen.",
+        text: "muss gestoppt werden, damit eine einheitliche europäische Außenpolitik möglich werden kann. ",
         partyId: 3,
         id: 4,
       },
       {
-        text: "Muss durch die Abstimmung mit qualifizierter Mehrheit und neue Kompetenzen ersetzt werden",
+        text: "muss durch die Abstimmung mit qualifizierter Mehrheit und neue Kompetenzen ersetzt werden.",
         partyId: 2,
         id: 5,
       },
       {
-        text: "Muss außerhalb des Bereichs Sicherheit und Verteidigung entfernt werden.",
+        text: "muss für alle Bereiche, bis auf den Bereich der Sicherheit und Verteidigung, abgeschafft werden.",
         partyId: 4,
         id: 6,
       },
       {
-        text: "Zu bewahren, denn die Abstimmung mit qualifizierter Mehrheit ist undemokratisch.",
+        text: "muss beibehalten werden, denn die Abstimmung mit qualifizierter Mehrheit ist undemokratisch.",
         partyId: 6,
         id: 7,
       },
     ],
     category: 3,
     learnMore:
-      "Der Rat muss in bestimmten Bereichen wie der Gemeinsamen Außen- und Sicherheitspolitik, der Staatsbürgerschaft, dem EU-Beitritt, der Harmonisierung der indirekten Besteuerung, der Finanzierung der EU einstimmig abstimmen. Diese Anforderung der Einstimmigkeit blockiert oft die Verhandlungen und wird in Frage gestellt. Manche würden eine qualifizierte Mehrheit bevorzugen. Es sei darauf hingewiesen, dass Enthaltung der Annahme nicht im Wege steht; ein Staat muss gegen einen Text stimmen, damit die Einstimmigkeit nicht erreicht wird.",
+      "Der Rat muss in bestimmten Bereichen wie der Gemeinsamen Außen- und Sicherheitspolitik, der Staatsbürgerschaft, dem EU-Beitritt, der Harmonisierung der indirekten Besteuerung, der Finanzierung der EU einstimmig abstimmen. Diese Anforderung der Einstimmigkeit blockiert oft die Verhandlungen und wird deswegen in Frage gestellt. Manche würden eine qualifizierte Mehrheit bevorzugen. Übrigens steht die Enthaltung eines Staats der Annahme eines EU-Entschlusses nicht im Wege; ein Staat muss gegen einen Text stimmen, damit die Einstimmigkeit nicht erreicht wird.",
     id: 22,
     sources:
       "https://www.consilium.europa.eu/fr/council-eu/voting-system/unanimity/",
@@ -1023,56 +1037,57 @@ export default [
   },
   {
     question:
-      "Am effektivsten zur Verbesserung der Rolle des Europäischen Parlaments ist...",
+      "Die sinnvollste Maßnahme, um die Rolle des Europäischen Parlaments zu verbessern ist...",
     answers: [
       {
-        text: "Seine Befugnisse nicht zu stärken.",
+        text: "es nicht weiter zu stärken.",
         partyId: 7,
         id: 1,
       },
       {
-        text: "Die Aufstockung seiner Befugnisse auf Kosten der Mitgliedstaaten zu vermeiden.",
+        text: "den Ausbau seiner Befugnisse auf Kosten der Mitgliedstaaten zu vermeiden.",
         partyId: 5,
         id: 2,
       },
       {
-        text: "Eine Charta über die Rolle der Parlamente zu erstellen",
+        text: "eine Charta über die Rolle der Parlamente zu erstellen.",
         partyId: 1,
         id: 3,
       },
       {
-        text: "Die Einschränkung beschleunigter gesetzgeberischer Verfahren",
+        text: "die beschleunigten gesetzgeberischen Verfahren einzuschränken.",
         partyId: 3,
         id: 4,
       },
       {
-        text: "Online paneuropäische Konsultationen zu organisieren",
+        text: "digitale paneuropäische Bürger-Befragungen zu organisieren.",
         partyId: 2,
         id: 5,
       },
       {
-        text: "Sein Recht auf legislative Initiative zu stärken",
+        text: "sein Recht auf legislative Initiativen zu stärken.",
         partyId: 4,
         id: 6,
       },
       {
-        text: "Die direkte Beteiligung der Bürgerinnen und Bürger zu stärken",
+        text: "die direkte Beteiligung der Bürger zu stärken.",
         partyId: 6,
         id: 7,
       },
     ],
     category: 3,
     learnMore:
-      "Als wichtige Institution der EU repräsentiert das Europäische Parlament die europäischen Bürger und hat erhebliche legislative, haushaltsbezogene und kontrollierende Befugnisse. Mit seinen demokratisch gewählten Mitgliedern beteiligt es sich an der Verabschiedung von EU-Gesetzen und beeinflusst Bereiche von der Umwelt bis zur Wirtschaft. Das Europäische Parlament übt auch Kontrolle über die EU-Institutionen aus, insbesondere durch die Genehmigung der Europäischen Kommission. Durch seine spezialisierten Ausschüsse und dynamischen Plenarsitzungen gestaltet es transparent und verantwortungsvoll die Zukunft Europas, wobei es die Stimme der europäischen Bürger repräsentiert. Die aufeinander folgenden Verträge haben seine Befugnisse gestärkt, insbesondere bei der Kontrolle der Einhaltung des Rechtsstaatsprinzips durch die Mitgliedstaaten.",
+      "Als wichtige Institution der EU repräsentiert das Europäische Parlament die europäischen Bürger und hat erhebliche legislative, haushaltsbezogene und kontrollierende Befugnisse. Mit seinen demokratisch gewählten Mitgliedern beteiligt es sich an der Verabschiedung von EU-Gesetzen und beeinflusst Bereiche von Themen wie Umwelt bis zur Wirtschaft. Das Europäische Parlament übt auch Kontrolle über die EU-Institutionen aus, insbesondere durch die Wahl der Europäischen Kommission. Durch seine spezialisierten Ausschüsse und  Plenarsitzungen gestaltet es transparent und verantwortungsvoll die Zukunft Europas, wobei es die Stimme der europäischen Bürger repräsentiert. Die EU-Verträge haben seine Befugnisse nach und nach gestärkt: zum Beispiel kann das Parlament nun die Einhaltung des Rechtsstaatsprinzips durch die Mitgliedstaaten stärker kontrollieren.",
     id: 23,
     sources:
       "https://www.europarl.europa.eu/factsheets/en/sheet/19/the-european-parliament-powers",
+    express: false,
   },
   {
-    question: "Soll die Medienfreiheit gestärkt werden?",
+    question: "Soll die Medienfreiheit innerhalb der EU gestärkt werden?",
     answers: [
       {
-        text: "Man muss sie nur auf nationaler Ebene stärken.",
+        text: "Die Medienfreiheit soll nur auf nationaler Ebene gestärkt werden.",
         partyId: 7,
         id: 1,
       },
@@ -1082,7 +1097,7 @@ export default [
         id: 2,
       },
       {
-        text: "Ganz klar, es ist eine entscheidende Säule der Demokratie.",
+        text: "Ja, denn sie ist eine entscheidende Säule der Demokratie.",
         partyId: 1,
         id: 3,
       },
@@ -1092,110 +1107,111 @@ export default [
         id: 4,
       },
       {
-        text: "Es ist wesentlich, um den Einfluss der Regierungen zu reduzieren.",
+        text: "Ja, denn Medienfreiheit ist wichtig, um den Einfluss der Regierungen zu reduzieren.",
         partyId: 2,
         id: 5,
       },
       {
-        text: "Ja, es ist eine unvermeidbare Herausforderung, denn die Demokratie ist fragil.",
+        text: "Ja, die Garantie der Medienfreiheit ist eine Herausforderung, denn die Demokratie ist fragil.",
         partyId: 4,
         id: 6,
       },
       {
-        text: "Insbesondere gegen große Plattformen und autoritäre Mächte.",
+        text: "Ja, insbesondere gegen große Plattformen und autoritäre Mächte.",
         partyId: 6,
         id: 7,
       },
     ],
     category: 3,
     learnMore:
-      "Das Media Freedom Act (verabschiedet 2022) zielt darauf ab, die Medienfreiheit und die Vielfalt der Informationen zu schützen. Es garantiert eine freie und faire Medienumgebung, indem es eine übermäßige Medienkonzentration verhindert und die redaktionelle Unabhängigkeit stärkt. Durch innovative Maßnahmen wie die Transparenz der Medieneigentümer und den Schutz von Journalisten verteidigt dieses Gesetz die Demokratie und europäische Werte. Indem es die Meinungsvielfalt fördert und gegen Desinformation kämpft, strebt das Media Freedom Act danach, die EU an die Spitze in der Verteidigung der Meinungsfreiheit zu stellen.",
+      "Der Media Freedom Act (verabschiedet 2022) zielt darauf ab, die Medienfreiheit und die Vielfalt von Informationen zu schützen. Er garantiert eine freie und faire Medienlandschaft, indem er eine übermäßige Medienkonzentration verhindert und die redaktionelle Unabhängigkeit stärkt. Durch innovative Maßnahmen wie die Transparenz der Medieneigentümer und der Schutz von Journalisten verteidigt dieses Gesetz die Demokratie und europäische Werte. Indem er die Meinungsvielfalt fördert und gegen Desinformation kämpft, will Media Freedom Act die EU an die Spitze der Meinungsfreiheit zu stellen.",
     id: 24,
     sources: "https://ec.europa.eu/commission/presscorner/detail/fr/ip_22_5504",
     express: true,
   },
   {
     question:
-      "Wird der Korruptionsskandal Qatargate langfristig zu mehr Transparenz führen?",
+      "Wird der Korruptionsskandal Katargate langfristig zu mehr Transparenz führen?",
     answers: [
       {
-        text: "Zunächst muss das Finanzierungssystem der NGOs beendet werden.",
+        text: "Nein, zunächst muss das Finanzierungssystem der NGOs beendet werden.",
         partyId: 7,
         id: 1,
       },
       {
-        text: "Es gab nur unzureichende Maßnahmen, es ist notwendig, die Fonds besser zu kontrollieren.",
+        text: "Nein, es gab nur unzureichende Maßnahmen, die Fonds müssen besser kontrolliert werden.",
         partyId: 5,
         id: 2,
       },
       {
-        text: "Es muss eine europäische Ethikbehörde geschaffen werden.",
+        text: "Ja, indem eine europäische Ethikbehörde geschaffen wird.",
         partyId: 1,
         id: 3,
       },
       {
-        text: "Es muss eine unabhhängige europäische Ethikbehörde geschaffen werden, die unabhängig von unseren europäischen Institutionen ist.",
+        text: "Ja, indem eine europäische Ethikbehörde geschaffen wird, die unabhängig von den anderen europäischen Institutionen ist.",
         partyId: 3,
         id: 4,
       },
       {
-        text: "Es ist notwendig, die eingeleiteten Reformen zur Steigerung der Transparenz fortzusetzen.",
+        text: "Ja, aber es ist notwendig, die eingeleiteten Reformen zur Steigerung der Transparenz fortzusetzen.",
         partyId: 2,
         id: 5,
       },
       {
-        text: "Fast nichts wurde getan, um die Transparenz zu verbessern.",
+        text: "Nein, seitdem wurde fast nichts getan, um die Transparenz zu verbessern.",
         partyId: 4,
         id: 6,
       },
       {
-        text: "Es hat sich nichts geändert.",
+        text: "Nein, es hat sich nichts geändert.",
         partyId: 6,
         id: 7,
       },
     ],
     category: 3,
     learnMore:
-      'Der "Qatargate" ist ein Korruptionsskandal, der das Europäische Parlament erschüttert hat. Involviert sind Bestechungsvorwürfe und Absprachen mit Katar, was zu umfassenden Untersuchungen und verschärften Anti-Korruptionsmaßnahmen geführt hat. Die Behörden haben strengere Überprüfungsverfahren für Lobbying-Aktivitäten und Ausgaben der EU-Abgeordneten eingeführt. Zudem wurden Transparenzregeln verschärft, um eine verantwortungsvollere Regierungsführung sicherzustellen und Interessenkonflikte zu minimieren. Dieser Skandal hat die Notwendigkeit einer strengen Überwachung und robuster Anti-Korruptionsmaßnahmen innerhalb der europäischen Institutionen verdeutlicht.',
+      'Der "Katargate" ist ein Korruptionsskandal, der das Europäische Parlament erschüttert hat. Involviert sind Bestechungsvorwürfe und Absprachen mit Katar, was zu umfassenden Untersuchungen und verschärften Anti-Korruptionsmaßnahmen geführt hat. Die Behörden haben strengere Überprüfungsverfahren für Lobbying-Aktivitäten und Ausgaben der EU-Abgeordneten eingeführt. Zudem wurden Transparenzregeln verschärft, um eine verantwortungsvollere Regierungsführung sicherzustellen und Interessenkonflikte zu minimieren. Dieser Skandal hat die Notwendigkeit einer strengen Überwachung und robuster Anti-Korruptionsmaßnahmen innerhalb der europäischen Institutionen verdeutlicht.',
     id: 25,
     sources:
       "https://www.touteleurope.eu/institutions/qatargate-tout-comprendre-au-scandale-de-corruption-qui-touche-le-parlement-europeen/",
+    express: false,
   },
   {
     question: "Die Konferenz über die Zukunft Europas ist...",
     answers: [
       {
-        text: "Eine nutzlose Übung",
+        text: "nutzlos.",
         partyId: 7,
         id: 1,
       },
       {
-        text: "Eine instrumentalisierung von gefälschten Konsultationen.",
+        text: "ein falsches Mittel, das instrumentalisiert wurde.",
         partyId: 5,
         id: 2,
       },
       {
-        text: "Ein Mittel zur Stärkung der europäischen Demokratie",
+        text: "ein Mittel zur Stärkung der europäischen Demokratie.",
         partyId: 1,
         id: 3,
       },
       {
-        text: "Eine neue Bürgermethode zur Lösung europäischer Probleme.",
+        text: "eine neue Bürgermethode zur Lösung europäischer Probleme.",
         partyId: 3,
         id: 4,
       },
       {
-        text: "Ist eine große Bürgerchance, die Union zu aktualisieren.",
+        text: "eine große Chance für alle Bürger, um die Zukunft der Union zu gestallten.",
         partyId: 2,
         id: 5,
       },
       {
-        text: "Ein unverzichtbares demokratisches Gespräch",
+        text: "eine unverzichtbare demokratische Debate.",
         partyId: 4,
         id: 6,
       },
       {
-        text: "Nicht ambitioniert genug.",
+        text: "nicht ambitioniert genug.",
         partyId: 6,
         id: 7,
       },
@@ -1206,49 +1222,50 @@ export default [
     id: 26,
     sources:
       "https://www.consilium.europa.eu/fr/policies/conference-on-the-future-of-europe/",
+    express: false,
   },
   {
     question: "Für die Europawahl…",
     answers: [
       {
-        text: "Die Listen müssen national bleiben.",
+        text: "müssen die Parteilisten national bleiben.",
         partyId: 7,
         id: 1,
       },
       {
-        text: "Die Organisation der europäischen Wahlen sollte national bleiben.",
+        text: "sollte die Organisation der Wahlen national bleiben.",
         partyId: 5,
         id: 2,
       },
       {
-        text: "Man braucht einen europäischen Wahlkreis, um für europäische Parteien zu wählen.",
+        text: "braucht es europäische Wahlkreise, um für europäische Parteien zu wählen.",
         partyId: 1,
         id: 3,
       },
       {
-        text: "Es werden transnationale Listen und Spitzenkandidaten benötigt.",
+        text: "werden transnationale Listen und Spitzenkandidaten benötigt.",
         partyId: 3,
         id: 4,
       },
       {
-        text: "Es sind länderübergreifende, gerechtere und inklusivere Listen erforderlich.",
+        text: "sind länderübergreifende, gerechtere und inklusivere Listen erforderlich.",
         partyId: 2,
         id: 5,
       },
       {
-        text: "Es ist notwendig, dass die europäischen Vertreter direkt von den Bürgern gewählt werden.",
+        text: "ist es notwendig, dass die europäischen Vertreter direkt von den Bürgern gewählt werden.",
         partyId: 4,
         id: 6,
       },
       {
-        text: "Die Priorität ist die Herstellung von Geschlechtergleichheit im Europäischen Parlament.",
+        text: "sollte die Herstellung von Geschlechtergleichheit im Europäischen Parlament Priorität haben.",
         partyId: 6,
         id: 7,
       },
     ],
     category: 3,
     learnMore:
-      "Die Europäische Union plant mutige Wahlreformen, um die Europawahlen zu beleben. Mit einheitlichen Regeln und transnationalen Listen soll die Demokratie gestärkt und Korruption ausgerottet werden. Transnationale Listen geben den Wählern die Möglichkeit, Kandidaten aus einer gemeinsamen Liste mehrerer EU-Länder zu wählen, was eine vielfältige Vertretung im Europäischen Parlament fördert. Ein Schlüsselelement ist die Verstetigung des Spitzenkandidaten-Systems, wodurch den Wählern die Macht gegeben wird, ihren Favoriten für das Amt des Präsidenten der Europäischen Kommission zu wählen.",
+      "Die Europäische Union plant Wahlreformen, um die Europawahlen lebendiger zu gestallten. Mit einheitlichen Regeln und transnationalen Listen soll die Demokratie gestärkt und Korruption ausgerottet werden. Transnationale Listen geben den Wählern die Möglichkeit, Kandidaten aus einer gemeinsamen Liste mehrerer EU-Länder zu wählen, was eine vielfältige Vertretung im Europäischen Parlament fördert. Ein Schlüsselelement ist die Verbreitung des Spitzenkandidaten-Systems, wodurch den Wählern die Macht gegeben wird, ihren Favoriten für das Amt des Präsidenten der Europäischen Kommission zu wählen.",
     id: 27,
     sources:
       "https://www.europarl.europa.eu/news/fr/headlines/eu-affairs/20220422STO27706/des-regles-communes-et-des-listes-transnationales-pour-les-elections-europeennes",
@@ -1256,86 +1273,87 @@ export default [
   },
   {
     question:
-      "Sollte die EU das Übereinkommen zur Verhütung und Bekämpfung von Gewalt gegen Frauen ratifizieren?",
+      "Sollte die EU das Übereinkommen des Europarats zur Verhütung und Bekämpfung von Gewalt gegen Frauen und häuslicher Gewaltzur ratifizieren?",
     answers: [
       {
-        text: "Ist eine Instrumentalisierung der EU, um die Souveränität der Mitgliedstaaten einzuschränken.",
+        text: "Nein, hier wird die EU instrumentalisiert, um die Souveränität der Mitgliedstaaten einzuschränken.",
         partyId: 7,
         id: 1,
       },
       {
-        text: "Ist unwirksam, da sie auf der Gender-Theorie basiert.",
+        text: "Nein, denn es ist unwirksam, da sie auf der Gender-Theorie basiert.",
         partyId: 5,
         id: 2,
       },
       {
-        text: "Wird das Leben von Frauen in Europa retten, erfordert jedoch eine nationale Umsetzung",
+        text: "Ja, da es das Leben von Frauen in Europa retten wird; die Umsetzung muss allerdings auf nationaler Ebene geschehen. ",
         partyId: 1,
         id: 3,
       },
       {
-        text: "Stärkt den Kampf gegen geschlechtsspezifische Gewalt und legt der EU rechtliche Verpflichtungen auf",
+        text: "Ja, denn es stärkt den Kampf gegen geschlechtsspezifische Gewalt und legt der EU rechtliche Verpflichtungen auf.",
         partyId: 3,
         id: 4,
       },
       {
-        text: "Ist zu begrüßen, aber erfolgt zu spät und ist nicht ausreichend.",
+        text: "Ja, es ist zu begrüßen, erfolgt aber zu spät und ist nicht ausreichend.",
         partyId: 2,
         id: 5,
       },
       {
-        text: "Ist nur ein minimales Instrument im Kampf gegen Gewalt gegen Frauen.",
+        text: "Ja, es ist nur das mindeste Instrument im Kampf gegen Gewalt gegen Frauen.",
         partyId: 4,
         id: 6,
       },
       {
-        text: "Muss ratifiziert werden, da die Rechte der Frauen in Europa bedroht sind",
+        text: "Ja, es muss ratifiziert werden, da die Rechte der Frauen in Europa bedroht sind.",
         partyId: 6,
         id: 7,
       },
     ],
     category: 3,
     learnMore:
-      "Die Istanbul-Konvention, ein Vertrag des Europarats, zielt darauf ab, Frauen vor allen Formen von Gewalt zu schützen, die Geschlechtergleichstellung zu fördern und häusliche Gewalt zu verhindern. Sie ermutigt die Mitgliedsstaaten, nationale Gesetze und Politiken zur Bekämpfung von Gewalt gegen Frauen zu verabschieden, Opfer zu unterstützen und Täter von Gewalt zu verfolgen. Die Istanbul-Konvention hat einen bedeutenden Einfluss auf die Rechte von Frauen, indem sie das Bewusstsein für geschlechtsspezifische Gewalt stärkt und rechtlichen Schutz bietet, um eine gerechtere Gesellschaft zu fördern.",
+      "Die Istanbul-Konvention ist ein Vertrag des Europarats, der darauf abziehlt, Frauen vor allen Formen von Gewalt zu schützen, die Geschlechtergleichstellung zu fördern und häusliche Gewalt zu verhindern. Sie ermutigt die Mitgliedsstaaten, nationale Gesetze zur Bekämpfung von Gewalt gegen Frauen zu verabschieden, Opfer zu unterstützen und Täter von Gewalt zu verfolgen. Die Istanbul-Konvention hat einen bedeutenden Einfluss auf die Rechte von Frauen, indem sie das Bewusstsein für geschlechtsspezifische Gewalt stärkt und rechtlichen Schutz bietet, um eine gerechtere Gesellschaft zu fördern.",
     id: 28,
     sources:
       "https://www.europarl.europa.eu/RegData/etudes/ATAG/2020/659334/EPRS_ATA(2020)659334_FR.pdf",
+    express: false,
   },
   {
-    question: "Die Missachtung der Rechtsstaatlichkeit",
+    question: "Die Missachtung der Rechtsstaatlichkeit...",
     answers: [
       {
-        text: "Darf den Zugang zu europäischen Mitteln nicht verhindern.",
+        text: "darf den Zugang zu europäischen Finanzmitteln nicht verhindern.",
         partyId: 7,
         id: 1,
       },
       {
-        text: "Darf nicht zu einer Missachtung der Gleichbehandlung der Staaten führen.",
+        text: "darf nicht zu einer Ungleichbehandlung der Mitgliedsstaaten führen.",
         partyId: 5,
         id: 2,
       },
       {
-        text: "Muss zur Aussetzung des Stimmrechts im Rat führen und zu Sanktionen führen.",
+        text: "muss zur Aussetzung des Stimmrechts im Rat und zu Sanktionen führen.",
         partyId: 1,
         id: 3,
       },
       {
-        text: "Muss verstärkt überwacht werden und den Zugang zu den Mitteln aussetzen",
+        text: "muss verstärkt überwacht werden, der Zugang zu den Finanzmitteln muss ausgesetzt werden.",
         partyId: 3,
         id: 4,
       },
       {
-        text: "Muss den Zugang zu den europäischen Fonds verhindern und das Stimmrecht im Rat aussetzen.",
+        text: "muss zum Verlust des Stimmrechts im Rat führen und den Zugang zu den europäischen Finanzmitteln verhindern.",
         partyId: 2,
         id: 5,
       },
       {
-        text: "Die Berechtigung, von der Regel der Einstimmigkeit in der Außen- und Haushaltspolitik abzuweichen",
+        text: "rechtfertigt die Abweichung von der Regel der Einstimmigkeit in der Außen- und Haushaltspolitik.",
         partyId: 4,
         id: 6,
       },
       {
-        text: "Verhindern, in der EU zu präsidiert, Geld und Stimmrechte zu erhalten.",
+        text: "sollte dazu führen, dass die EU Ratspräsidenschaft nicht angetreten werden kann und das Gelder sowie Stimmrechte den entsprechenden Staaten entzogen werden.",
         partyId: 6,
         id: 7,
       },
@@ -1346,10 +1364,11 @@ export default [
     id: 29,
     sources:
       "https://commission.europa.eu/strategy-and-policy/policies/justice-and-fundamental-rights/upholding-rule-law_fr",
+    express: false,
   },
   {
     question:
-      "Die nationalen Parlamente werden in der EU angemessen berücksichtigt?",
+      "Werden die nationalen Parlamente in der EU angemessen berücksichtigt?",
     answers: [
       {
         text: "Nicht genug, ihre Kontrolle über die Kommission und das Europäische Parlament muss gestärkt werden.",
@@ -1357,226 +1376,231 @@ export default [
         id: 1,
       },
       {
-        text: "Nicht genug, sie sollten in der Lage sein, europäische Gesetze abzulehnen",
+        text: "Nicht genug, sie sollten in der Lage sein, europäische Gesetze abzulehnen.",
         partyId: 5,
         id: 2,
       },
       {
-        text: "Die nationalen Parlamente sollten stärker in die Verabschiedung europäischer Gesetzgebung einbezogen werden.",
+        text: "Nicht genug, die nationalen Parlamente sollten stärker in die Verabschiedung europäischer Gesetzgebung einbezogen werden.",
         partyId: 1,
         id: 3,
       },
       {
-        text: "Es ist notwendig, die Beziehungen zu den nationalen Parlamenten zu stärken.",
+        text: "Ja, es ist notwendig, die Beziehungen zu den nationalen Parlamenten weiter zu stärken.",
         partyId: 3,
         id: 4,
       },
       {
-        text: "Nicht ausreichend, es ist notwendig, ihnen ein indirektes Initiativrecht über das Europäische Parlament zu gewähren.",
+        text: "Nicht ausreichend, es ist notwendig, ihnen ein indirektes Initiativrecht durch das Europäische Parlament zu gewähren.",
         partyId: 2,
         id: 5,
       },
       {
-        text: "Die Zusammenarbeit mit nationalen und regionalen Parlamenten muss verstärkt werden.",
+        text: "Nein, die Zusammenarbeit mit nationalen und regionalen Parlamenten muss verstärkt werden.",
         partyId: 4,
         id: 6,
       },
       {
-        text: "Die Zusammenarbeit muss im Interesse einer geteilten Verantwortung in der EU gestärkt werden.",
+        text: "Nein, die Zusammenarbeit muss im Interesse einer geteilten Verantwortung in der EU gestärkt werden.",
         partyId: 6,
         id: 7,
       },
     ],
     category: 3,
     learnMore:
-      "Die Mitglieder des Europäischen Parlaments haben die Notwendigkeit betont, die Rolle der nationalen Parlamente in der Europäischen Union neu zu bewerten. Sie erkennen an, dass diese Institutionen eine entscheidende Rolle im demokratischen Prozess der EU spielen, indem sie die Bürger auf nationaler Ebene vertreten. Sie identifizieren jedoch Lücken in ihrer Beteiligung an europäischen Angelegenheiten, was zu einem Mangel an demokratischer Legitimität und einem Vertrauensverlust der Bürger führt. Die Verbesserung der Rolle der nationalen Parlamente in der EU würde eine direktere Vertretung der europäischen Bürger gewährleisten und die Demokratie innerhalb der Union stärken, während sie den zunehmenden Herausforderungen der europäischen Governance gerecht wird.",
+      "Laut den Mitgliedern des Europäischen Parlaments ist es notwendig, die Rolle der nationalen Parlamente in der Europäischen Union neu zu bewerten. Die EU-Parlamentarier erkennen an, dass diese Institutionen eine entscheidende Rolle im demokratischen Prozess der EU spielen, weil sie die Bürger auf nationaler Ebene vertreten. Allerdings gibt es Lücken in ihrer Beteiligung an europäischen Angelegenheiten, was zu einem Mangel an demokratischer Legitimität und einem Vertrauensverlust der Bürger führt. Die Verbesserung der Rolle der nationalen Parlamente in der EU würde eine direktere Vertretung der europäischen Bürger gewährleisten und die Demokratie innerhalb der Union stärken, während sie den zunehmenden Herausforderungen der europäischen Politik gerecht wird.",
     id: 30,
     sources:
       "https://www.europarl.europa.eu/news/en/press-room/20240112IPR16766/improve-national-parliaments-role-in-european-democracy-meps-say",
+    express: false,
   },
   {
     question: "Sollte Überfischung eingeschränkt werden?",
     answers: [
       {
-        text: "Das Ende des Schleppnetz-Fischfangs wird unsere Märkte mit importierten Produkten überschwemmen.",
+        text: "Nein, denn das Ende der Schleppnetzfischerei wird die europäischen Märkte mit importierten Produkten überschwemmen.",
         partyId: 7,
         id: 1,
       },
       {
-        text: "Die Erhöhung der Einschränkung ist ungerecht und passt nicht zur Realität.",
+        text: "Nein, denn die Erhöhung der Einschränkung ist ungerecht und nicht an die Realität angepasst.",
         partyId: 5,
         id: 2,
       },
       {
-        text: "Die aktuellen Anforderungen sind zu sehr auf den Umweltschutz ausgerichtet und nicht auf die Wettbewerbsfähigkeit.",
+        text: "Nein, denn die aktuellen Regelungen sind zu sehr auf den Umweltschutz ausgerichtet und nicht auf die Wettbewerbsfähigkeit.",
         partyId: 1,
         id: 3,
       },
       {
-        text: "Der Bodenfischfang kann leicht nachhaltig sein und muss nicht vollständig verboten werden.",
+        text: "Ja, der Bodenfischfang kann leicht nachhaltig sein und muss nicht vollständig verboten werden.",
         partyId: 3,
         id: 4,
       },
       {
-        text: "Es ist erforderlich, auf internationaler Ebene gegen illegalen und ungerechten Fischfang vorzugehen.",
+        text: "Ja, denn es ist erforderlich, auf internationaler Ebene gegen illegalen Fischfang vorzugehen.",
         partyId: 2,
         id: 5,
       },
       {
-        text: "Es ist besser, die aktuellen Standards anzuwenden und nachhaltige Praktiken zu fördern.",
+        text: "Nein, es ist besser, zuerst die aktuellen Standards anzuwenden und nachhaltige Praktiken zu fördern.",
         partyId: 4,
         id: 6,
       },
       {
-        text: "Es muss das Grundschleppnetzverbot geben, da der Fischfang die größte Bedrohung für die Ozeane ist.",
+        text: "Ja, man muss die Grundschleppnetzfischerei verbieten, da der Fischfang die größte Bedrohung für die Ozeane ist.",
         partyId: 6,
         id: 7,
       },
     ],
     category: 4,
     learnMore:
-      'Die Europäische Kommission hat ein Maßnahmenpaket zur Verbesserung der Nachhaltigkeit von Fischerei und Aquakultur vorgelegt, durch Energiewende, Schutz mariner Ökosysteme und Stärkung der gemeinsamen Fischereipolitik. Das Ziel ist es, die Abhängigkeit von fossilen Brennstoffen zu verringern, den Einfluss auf Ökosysteme zu bremsen und den Sektor bis 2050 kohlenstoffneutral zu machen. Eine Partnerschaft für die Energiewende und ein "Pakt für Fischerei und Ozeane" zielen darauf ab, die Bemühungen zu koordinieren. Diese Maßnahmen tragen dazu bei, die marinen Ressourcen zu schützen und eine nachhaltige Zukunft für die Fischereigemeinschaften der EU zu gewährleisten.',
+      'Die Europäische Kommission hat ein Maßnahmenpaket zur Verbesserung der Nachhaltigkeit von Fischerei und Aquakultur vorgelegt, die eine Energiewende, den Schutz mariner Ökosysteme und die Stärkung der gemeinsamen Fischereipolitik beiinhaltet. Das Ziel ist es, die Abhängigkeit von fossilen Brennstoffen zu verringern, den Einfluss auf Ökosysteme zu bremsen und den Sektor bis 2050 kohlenstoffneutral zu machen. Eine Partnerschaft für die Energiewende und der "Pakt für Fischerei und Ozeane" zielen darauf ab, diese Bemühungen zu koordinieren. Diese Maßnahmen tragen dazu bei, die marinen Ressourcen zu schützen und eine nachhaltige Zukunft für die Fischereigemeinschaften der EU zu gewährleisten.',
     id: 31,
     sources: "https://ec.europa.eu/commission/presscorner/detail/fr/ip_23_828",
+    express: false,
   },
   {
     question:
-      "Was die Standards für die Wiederverwendung und das Recycling von Kunststoffverpackungen betrifft",
+      "Die Standards für die Wiederverwendung und das Recycling von Kunststoffverpackungen ...",
     answers: [
       {
-        text: "Ge­fährden die Lebensmittel­sicherheit und den Schutz der Produkte während des Transports.",
+        text: "ge\u00adfährden die Lebensmittel\u00adsicherheit und den Schutz der Produkte während des Transports.",
         partyId: 7,
         id: 1,
       },
       {
-        text: "Es wird zu einer Preiserhöhung bei Verpackungen und zu einer Erhöhung der Produktkosten führen.",
+        text: "werden zu einer Preiserhöhung bei Verpackungen und zu einer Erhöhung der Produktkosten führen.",
         partyId: 5,
         id: 2,
       },
       {
-        text: "Die europäische Recyclingkette ist bereits sehr effizient.",
+        text: "sind bereits sehr effizient, die europäische Recyclingkette funktionniert.",
         partyId: 1,
         id: 3,
       },
       {
-        text: "Sie ermöglichen eine Harmonisierung und eine Reduzierung des Verbrauchs und der Menge.",
+        text: "ermöglichen eine Harmonisierung und eine Reduzierung des Verbrauchs und der Menge der benutzten Produkte.",
         partyId: 3,
         id: 4,
       },
       {
-        text: "Es sollte wiederverwendbare Verpackungen obligatorisch machen.",
+        text: "sollten wiederverwendbare Verpackungen verpflichtend einführen.",
         partyId: 2,
         id: 5,
       },
       {
-        text: "Wir müssen unsere Wegwerfgesellschaft bei allen Produkten bremsen.",
+        text: "müssen unsere Wegwerfgesellschaft bei allen Produkten bremsen.",
         partyId: 4,
         id: 6,
       },
       {
-        text: "Es ist notwendig, das Verbot der Herstellung und Vermarktung dieser Abfälle durchzusetzen.",
+        text: "sollen ein Verbot der Herstellung und Vermarktung dieser Abfälle durchsetzen.",
         partyId: 6,
         id: 7,
       },
     ],
     category: 4,
     learnMore:
-      "Jedes Jahr produziert die EU 2,2 Milliarden Tonnen Abfall, wovon 27% kommunaler Abfall sind, hauptsächlich aus Haushalten. Die Abfallbewirtschaftung variiert zwischen den Ländern, aber die EU strebt an, das Recycling zu erhöhen und Deponien zu reduzieren, um die Kreislaufwirtschaft zu fördern. Obwohl die durchschnittliche Produktion von Haushaltsabfällen pro Einwohner zwischen 2018 und 2021 gestiegen ist, verbessern sich die Bewirtschaftungspraktiken, mit einer Zunahme des Recyclings und der Kompostierung sowie einer Verringerung der Deponien. Derzeit werden 49,6% der Haushaltsabfälle in der EU recycelt oder kompostiert, mit dem Ziel von 60% bis 2030.",
+      "Jedes Jahr produziert die EU 2,2 Milliarden Tonnen Abfall, wovon 27% kommunaler Abfall sind, hauptsächlich aus Haushalten. Die Abfallbewirtschaft variiert zwischen den Ländern, aber die EU strebt an, das Recycling zu erhöhen und Deponien zu reduzieren, um die Kreislaufwirtschaft zu fördern. Obwohl die durchschnittliche Produktion von Haushaltsabfällen pro Einwohner zwischen 2018 und 2021 gestiegen ist, verbessern sich die Bewirtschaftungspraktiken, mit einer Zunahme des Recyclings und der Kompostierung und einer Verringerung der Deponien. Derzeit werden 49,6% der Haushaltsabfälle in der EU recycelt oder kompostiert, bis 2030 sollen es 60% sein.",
     id: 32,
     sources:
       "https://www.europarl.europa.eu/news/fr/headlines/society/20180328STO00751/gestion-des-dechets-dans-l-ue-faits-et-chiffres-infographie#:~:text=Selon%20des%20statistiques%20datant%20de,d%C3%A9chets%20municipaux%20d'ici%202030.",
+    express: false,
   },
   {
-    question: "Wie kann man die Wälder vor Abholzung schützen?",
+    question: "Wie können die Wälder vor Abholzung geschützt werden?",
     answers: [
       {
-        text: "Es muss eine protektionistische und souveräne Strategie bevorzugt und die Freihandelsabkommen gestoppt werden.",
+        text: "Durch das Anwenden einer protektionistische Strategie und den Stopp von Freihandelsabkommen.",
         partyId: 7,
         id: 1,
       },
       {
-        text: "Sie darf nicht zu Lasten der Lebensmittel- und Holzexporte der EU erfolgen.",
+        text: "Indem darauf geachtet wird, dass der Schutz nicht zu Lasten der Lebensmittel- und Holzexporte durchgesetzt wird.",
         partyId: 5,
         id: 2,
       },
       {
-        text: "Es müssen strenge Kontrollen und Sanktionen gegen Länder eingeführt werden, die dies praktizieren.",
+        text: "Indem strenge Kontrollen und Sanktionen gegen Länder eingeführt werden, die Abholzung praktizieren.",
         partyId: 1,
         id: 3,
       },
       {
-        text: "Es müssen klare und transparente Regeln aufgestellt und Unternehmen verantwortlich gemacht werden.",
+        text: "Indem klare und transparente Regeln aufgestellt werden und die zuständigen Unternehmen zur Verantwortung gezogen werden.",
         partyId: 3,
         id: 4,
       },
       {
-        text: "Es ist notwendig, den Marktzugang für Unternehmen zu regulieren.",
+        text: "Indem der Marktzugang für Unternehmen reguliert wird. ",
         partyId: 2,
         id: 5,
       },
       {
-        text: "Es ist notwendig, unsere Banken dazu zu zwingen, die Finanzierung der Abholzung einzustellen.",
+        text: "Indem die Banken dazu gebracht werden, die Finanzierung der Abholzung einzustellen.",
         partyId: 4,
         id: 6,
       },
       {
-        text: "Alle Produkte, die zur Abholzung führen, sollten nicht mehr in Europa verkauft werden.",
+        text: "Indem alle Produkte, die zur Abholzung führen, nicht mehr in Europa verkauft werden dürfen. ",
         partyId: 6,
         id: 7,
       },
     ],
     category: 4,
     learnMore:
-      "Die Wälder bedecken 30% der weltweiten Landfläche und bieten eine Vielzahl von Umwelt- und Wirtschaftsdienstleistungen, indem sie 80% der terrestrischen Biodiversität beherbergen. Die globale Entwaldung, hauptsächlich aufgrund der Ausdehnung landwirtschaftlicher Flächen, bedroht jedoch diese Ökosysteme. Die EU hat Regeln angenommen, um die globale Entwaldung zu reduzieren, indem sie Produkte, die mit dieser Entwaldung in Verbindung stehen, reguliert. Diese Regeln verpflichten Händler, angemessene Sorgfalt walten zu lassen, um den Handel mit Produkten zu vermeiden, die zur Entwaldung beitragen. Ziel ist es, Wälder, Biodiversität zu schützen und den Klimawandel zu bekämpfen.",
+      "Die Wälder bedecken 30% der weltweiten Landfläche und bieten eine Vielzahl von Umwelt- und Wirtschaftsdienstleistungen, indem sie 80% der Biodiversitätan Land beherbergen. Die globale Abholzung, hauptsächlich durch die Ausdehnung landwirtschaftlicher Flächen, bedroht jedoch diese Ökosysteme. Die EU hat Regeln angenommen, um die globale Abholzung zu reduzieren, indem sie Produkte, die mit damit in Verbindung stehen, reguliert. Diese Regeln verpflichten Händler, angemessene Sorgfalt walten zu lassen, um den Handel mit Produkten zu vermeiden, die zur Abholzung beitragen. Ziel ist es, die Wälder und Biodiversität zu schützen und den Klimawandel zu bekämpfen.",
     id: 33,
     sources:
       "https://www.consilium.europa.eu/fr/policies/deforestation/#:~:text=L'huile%20de%20palme%20est,et%20le%20caoutchouc%20de%203%20%25.",
+    express: false,
   },
   {
-    question: "Um die Luftqualität in Europa zu verbessern, müssen wir...",
+    question: "Um die Luftqualität in Europa zu verbessern, müssen...",
     answers: [
       {
-        text: "Es ist wichtiger, die Merkmale der Gebiete zu berücksichtigen, um die Wirtschaft nicht zu beeinträchtigen.",
+        text: "die geografischen Merkmale der betroffenen Gebiete besser berücksichtigt werden, um die Wirtschaft nicht zu beeinträchtigen.",
         partyId: 7,
         id: 1,
       },
       {
-        text: "Nicht die Regeln der WHO respektieren und mehr investieren.",
+        text: "die Regeln der WHO nicht mehr respektieren und dafür mehr investiert werden.",
         partyId: 5,
         id: 2,
       },
       {
-        text: "Incentives schaffen und Optionen mit geringen Emissionen fördern",
+        text: "Anregungen geschaffen werden und Optionen mit geringen Emissionen gefördert werden.",
         partyId: 1,
         id: 3,
       },
       {
-        text: "Man muss die Ambitionen erhöhen, um sie bis 2035 mit den Leitlinien der WHO in Einklang zu bringen.",
+        text: "müssen die Ambitionen erhöht werden, um sie bis 2035 mit den Leitlinien der WHO in Einklang zu bringen.",
         partyId: 3,
         id: 4,
       },
       {
-        text: "Sicherstellen, dass die Luftqualität weiterhin steigt",
+        text: "Maßnahmen durchgesetzt werden, damit die Luftqualität weiterhin steigt.",
         partyId: 2,
         id: 5,
       },
       {
-        text: "Reine Luft ist ein Recht und es müssen Maßnahmen gegen diejenigen ergriffen werden, die die Luftqualität beeinträchtigen.",
+        text: "Maßnahmen gegen diejenigen ergriffen werden, die die Luftqualität beeinträchtigen. ",
         partyId: 4,
         id: 6,
       },
       {
-        text: "Den Richtlinien der WHO folgen, um die Auswirkungen auf die menschliche Gesundheit zu reduzieren",
+        text: "die Richtlinien der WHO befolgt werden, um die Auswirkungen auf die menschliche Gesundheit zu reduzieren.",
         partyId: 6,
         id: 7,
       },
     ],
     category: 4,
     learnMore:
-      "Luftverschmutzung ist das wichtigste Umweltrisiko für die Gesundheit in Europa und verursacht jedes Jahr Hunderttausende von vorzeitigen Todesfällen. Die von der EU vorgeschlagenen Regeln zielen darauf ab, die Luftqualität zu verbessern, indem sie strengere Standards für Luftschadstoffe festlegen, die mit den Empfehlungen der WHO übereinstimmen. Diese Regeln verpflichten auch die Mitgliedstaaten, Aktionspläne zur Reduzierung der Verschmutzung zu erstellen, stärken den Zugang zur Justiz für betroffene Bürger und fördern die grenzüberschreitende Zusammenarbeit. Das Ziel ist es, die mit Luftverschmutzung verbundenen Todesfälle erheblich zu reduzieren und die öffentliche Gesundheit zu verbessern.",
+      "Luftverschmutzung ist das größte Umweltrisiko für die Gesundheit in Europa und verursacht jedes Jahr Hunderttausende von vorzeitigen Todesfällen. Die von der EU vorgeschlagenen Regeln zielen darauf ab, die Luftqualität zu verbessern, indem sie strengere Standards für Luftschadstoffe festlegen, die mit den Empfehlungen der WHO übereinstimmen. Diese Regeln verpflichten auch die Mitgliedstaaten, Aktionspläne zur Reduzierung der Verschmutzung zu erstellen. Außerdem stärken sie den Zugang zur Justiz für betroffene Bürger und fördern die grenzüberschreitende Zusammenarbeit. Das Ziel ist es, die mit Luftverschmutzung verbundenen Todesfälle erheblich zu reduzieren und die öffentliche Gesundheit zu verbessern.",
     id: 34,
     sources:
       "https://www.consilium.europa.eu/fr/policies/air-quality/#:~:text=En%202021%2C%20la%20Commission%20europ%C3%A9enne,pacte%20vert%20pour%20l'Europe.",
+    express: false,
   },
   {
     question: "Sollte Glyphosat verboten werden?",
@@ -1607,19 +1631,19 @@ export default [
         id: 5,
       },
       {
-        text: "Ja, es ist gefährlich für die Ökosysteme und für die Menschen.",
+        text: "Ja, denn es ist gefährlich für die Ökosysteme und für die Menschen.",
         partyId: 4,
         id: 6,
       },
       {
-        text: "Ja, er ist ein Gift für Menschen und die Natur",
+        text: "Ja, denn es ist ein Gift für Menschen und die Natur. ",
         partyId: 6,
         id: 7,
       },
     ],
     category: 4,
     learnMore:
-      "Die EU-Mitgliedstaaten wurden aufgefordert, Stellung zu beziehen, ob sie Glyphosat, ein Totalherbizid zur Bekämpfung unerwünschter Pflanzen auf Ackerflächen, ablehnen oder genehmigen. Bei Fehlen einer europäischen Entscheidung behalten die Mitgliedstaaten die Verantwortung für nationale Zulassungen von glyphosathaltigen Produkten. Die Kommission behält sich das Recht vor, die Genehmigung um 10 Jahre zu verlängern, mit neuen Bedingungen wie dem Verbot der Verwendung als Entlaubungsmittel vor der Ernte, basierend auf Sicherheitsbewertungen durch spezialisierte Agenturen.",
+      "Die EU-Mitgliedstaaten wurden aufgefordert, zu erklären, ob sie Glyphosat, ein Herbizid zur Bekämpfung unerwünschter Pflanzen auf Ackerflächen, ablehnen oder genehmigen. Bei Fehlen einer europäischen Entscheidung behalten die Mitgliedstaaten die Verantwortung für die nationale Zulassungen von glyphosathaltigen Produkten. Die Kommission hat das Recht, die Genehmigung um 10 Jahre zu verlängern, mit neuen Bedingungen wie dem Verbot der Verwendung als Entlaubungsmittel vor der Ernte, die auf den Sicherheitsbewertungen durch spezialisierte Agenturen basieren.",
     id: 35,
     sources:
       "https://france.representation.ec.europa.eu/informations/glyphosate-les-etats-membres-nont-pas-atteint-la-majorite-qualifiee-pour-renouveler-ou-rejeter-son-2023-11-16_fr",
@@ -1630,111 +1654,112 @@ export default [
       "Ein Gesetz zur Einführung von Maßnahmen zur Wiederherstellung der Natur...",
     answers: [
       {
-        text: "Ist zu erdrückend für die Bauern und bedroht die Lebensmittelsicherheit.",
+        text: "ist zu erdrückend für die Bauern und bedroht die Lebensmittelsicherheit.",
         partyId: 7,
         id: 1,
       },
       {
-        text: "Trampelt rücksichtslos auf den Kompetenzen der Mitgliedsstaaten herum und verursacht nicht gedeckte Kosten",
+        text: "trampelt rücksichtslos auf den Kompetenzen der Mitgliedsstaaten herum und verursacht nicht gedeckte Kosten.",
         partyId: 5,
         id: 2,
       },
       {
-        text: "Es soll nicht gegen Landwirte, Fischer und Waldbesitzer vorgegangen werden.",
+        text: "darf nicht gegen die Interessen von Landwirten, Fischern und Waldbesitzern gehen.",
         partyId: 1,
         id: 3,
       },
       {
-        text: "Ist eine wesentliche Säule des Green Deals zur Erreichung unserer Klimaziele",
+        text: "ist eine wesentliche Säule des Green Deals und Hilft unserer Klimaziele zu erreichen.",
         partyId: 3,
         id: 4,
       },
       {
-        text: "Wird einen bewohnbaren Planeten für zukünftige Generationen bewahren",
+        text: "wird einen bewohnbaren Planeten für zukünftige Generationen bewahren.",
         partyId: 2,
         id: 5,
       },
       {
-        text: "Ermöglicht es, die Natur zu erhalten und die Klimaziele zu erreichen.",
+        text: "ermöglicht es, die Natur zu erhalten und die Klimaziele zu erreichen.",
         partyId: 4,
         id: 6,
       },
       {
-        text: "Sollte angesichts des Klimanotstands einstimmig sein.",
+        text: "sollte angesichts des Klimanotstands für Einstimmigkeit sorgen. ",
         partyId: 6,
         id: 7,
       },
     ],
     category: 4,
     learnMore:
-      "Die Europäische Kommission hat einen Gesetzesvorschlag zur Wiederherstellung beschädigter Lebensräume in der EU vorgelegt, der auf den Klima- und Biodiversitätszielen ausgerichtet ist und darauf abzielt, bis 2030 mindestens 20 % der Land- und Meeresgebiete wiederherzustellen sowie bis 2050 alle Ökosysteme, die eine Wiederherstellung erfordern. Die Mitgliedstaaten müssen nationale Pläne ausarbeiten, die Maßnahmen zur Erreichung dieser Ziele detaillieren, wobei Vorrang den Natura 2000-Gebieten eingeräumt wird. Spezifische Maßnahmen für landwirtschaftliche und forstwirtschaftliche Ökosysteme sind ebenso enthalten wie ein Mechanismus zur Bewertung des finanziellen Bedarfs. Im Falle schwerwiegender Auswirkungen auf die Verfügbarkeit von landwirtschaftlichen Flächen kann ein „Notstopp“ die Ziele aussetzen.",
+      "Die Europäische Kommission hat einen Gesetzesvorschlag zur Wiederherstellung beschädigter Lebensräume in der EU vorgelegt, der auf den Klima- und Biodiversitätszielen ausgerichtet ist und darauf abzielt, bis 2030 mindestens 20 % der Land- und Meeresgebiete wiederherzustellen sowie  alle Ökosysteme, die bis 2050 eine Wiederherstellung erfordern. Die Mitgliedstaaten müssen nationale Pläne ausarbeiten, die Maßnahmen zur Erreichung dieser Ziele detaillieren, wobei den Natura 2000-Gebieten Vorrang eingeräumt wird. Spezifische Maßnahmen für landwirtschaftliche und forstwirtschaftliche Ökosysteme sind ebenso enthalten wie ein Mechanismus zur Bewertung des finanziellen Bedarfs. Im Falle schwerwiegender Auswirkungen auf die Verfügbarkeit von landwirtschaftlichen Flächen kann ein „Notstopp“ diese Ziele aussetzen.",
     id: 36,
     sources:
       "https://www.europarl.europa.eu/news/fr/press-room/20231031IPR08714/loi-sur-la-restauration-de-la-nature-les-deputes-concluent-un-accord",
     express: true,
   },
   {
-    question: "Um die CO2-Neutralität zu erreichen, muss man...",
+    question: "Um die CO2-Neutralität zu erreichen, muss...",
     answers: [
       {
-        text: "Die Bürokratie reduzieren und die Förderverfahren vereinfachen.",
+        text: "die Bürokratie reduziert werden und die Förderverfahren vereinfacht werden.",
         partyId: 7,
         id: 1,
       },
       {
-        text: "Auf Atomenergie setzen",
+        text: "auf Atomenergie gesetzt werden.",
         partyId: 5,
         id: 2,
       },
       {
-        text: "Eine umfassende Strategie zur technologischen und energetischen Autonomie und Effizienz.",
+        text: "eine umfassende Strategie zur technologischen und energetischen Autonomie und Effizienz eingeführt werden.",
         partyId: 1,
         id: 3,
       },
       {
-        text: "Die Produktion grüner Technologien in Europa beschleunigen.",
+        text: "die Produktion grüner Technologien in Europa beschleunigt werden.",
         partyId: 3,
         id: 4,
       },
       {
-        text: "Eine europäische Industrie entwickeln, die keine Kohlendioxidemissionen ausstößt.",
+        text: "eine europäische Industrie entwickelt werden, die keine Kohlendioxidemissionen ausstößt.",
         partyId: 2,
         id: 5,
       },
       {
-        text: "Sich auf eine Netto-Null-Wirtschaft konzentrieren und nicht auf technokratische Lösungen.",
+        text: "sich auf eine Netto-Null-Wirtschaft konzentriert werden und nicht auf technokratische Lösungen.",
         partyId: 4,
         id: 6,
       },
       {
-        text: "Mehr Regulierung durchsetzen, um hochwertige Arbeitsplätze und eine gesunde Lebensumgebung zu garantieren.",
+        text: "die Anzahl der Regulierungen steigen, um hochwertige Arbeitsplätze und eine gesunde Lebensumgebung garantieren zu können.",
         partyId: 6,
         id: 7,
       },
     ],
     category: 4,
     learnMore:
-      'Der Klimawandel führt zu extremen Bedingungen wie Dürren, Hitzewellen und Überschwemmungen, die Europa und die weltweite Biodiversität beeinflussen. Um die Erwärmung auf 1,5 °C zu begrenzen, strebt die EU bis 2050 die Kohlenstoffneutralität gemäß dem Pariser Abkommen an. Das europäische Klimaschutzgesetz macht dieses Ziel verbindlich. Natürliche Kohlenstoffsenken wie Wälder sind entscheidend für die Aufnahme von CO2, erfordern jedoch eine nachhaltige Bewirtschaftung. Die Kompensation von CO2 durch grüne Investitionen und der Mechanismus zur Anpassung der Grenzemissionen sind Strategien zur Reduzierung der Emissionen. Die EU verfolgt ehrgeizige Klimaziele mit dem gesetzlichen Paket "Fit for 55".',
+      'Der Klimawandel führt zu extremen Bedingungen wie Dürren, Hitzewellen und Überschwemmungen, die Europa und die weltweite Biodiversität beeinflussen. Um die Erwärmung auf 1,5 °C zu begrenzen, strebt die EU bis 2050 die CO2neutralität gemäß dem Pariser Abkommen an. Das europäische Klimaschutzgesetz macht dieses Ziel verbindlich. Natürliche Kohlenstoffsenken wie Wälder sind entscheidend für die Aufnahme von CO2, erfordern jedoch eine nachhaltige Bewirtschaftung. Die Kompensation von CO2 durch grüne Investitionen und der Mechanismus zur Anpassung der Grenzemissionen sind Strategien zur Reduzierung der CO2-Emissionen. Außerdem verfolgt die EU mit dem Gesetz-Paket "Fit for 55" ehrgeizige Klimaziele.',
     id: 37,
     sources:
       "https://www.europarl.europa.eu/pdfs/news/expert/2019/10/story/20190926STO62270/20190926STO62270_fr.pdf",
+    express: false,
   },
   {
     question:
-      "Auf welche Weise sollte die EU in Bezug auf Informationen zur geplanten Obsoleszenz handeln?",
+      "Wie sollte sich die EU gegenüber Strategien der geplanten Obsoleszenz verhalten?",
     answers: [
       {
-        text: "Ohne Eingriff, da dies die Verwaltungsbelastung der Unternehmen erhöhen würde.",
+        text: "Sie sollte nicht eingreiffen, da dies die Verwaltungsbelastung der Unternehmen erhöhen würde.",
         partyId: 7,
         id: 1,
       },
       {
-        text: "Die Unternehmer dazu anregen, Verbrauchern zuverlässige Informationen zur Verfügung zu stellen.",
+        text: "Sie sollte die Unternehmen dazu anregen, Verbrauchern zuverlässige Informationen zur Verfügung zu stellen.",
         partyId: 5,
         id: 2,
       },
       {
-        text: "Legislativ verpflichtende Maßnahmen zur Bekämpfung dieses Problems einführen",
+        text: "Sie sollte legislativ verpflichtende Maßnahmen zur Bekämpfung dieses Problems einführen.",
         partyId: 1,
         id: 3,
       },
@@ -1744,33 +1769,34 @@ export default [
         id: 4,
       },
       {
-        text: "Die kommerzielle Kommunikation verbieten, wenn die Designmerkmale des Produkts seine Lebensdauer einschränken.",
+        text: "Sie sollte Werbung für das Produkt verbieten, wenn die Designmerkmale des Produkts seine Lebensdauer einschränken.",
         partyId: 2,
         id: 5,
       },
       {
-        text: "Sie muss als unlautere Praxis anerkannt und bestraft werden",
+        text: "Sie muss geplante Obsoleszenz als unlautere Praxis anerkennen und bestrafen.",
         partyId: 4,
         id: 6,
       },
       {
-        text: "Ein Informationspflicht über die Verfügbarkeit von Ersatzteilen einführen und ein Recht auf Reparatur schaffen.",
+        text: "Sie soll eine Informationspflicht über die Verfügbarkeit von Ersatzteilen und ein Recht auf Reparatur einführen.",
         partyId: 6,
         id: 7,
       },
     ],
     category: 4,
     learnMore:
-      'Die Umweltkommission hat Maßnahmen vorgeschlagen, um europäische Produkte umweltfreundlicher und nachhaltiger zu gestalten. Ziel ist es, die geplante Obsoleszenz zu verbieten und von den Herstellern Software-Updates und Ersatzteile zu verlangen. Jedes Produkt soll mit einem "Produktpass" versehen werden, um die Verbraucher über ihre Umweltauswirkungen zu informieren. Unternehmen müssen jegliche Zerstörung unverkaufter Produkte erklären und rechtfertigen. Die Kommission sollte bestimmte Produkte in ihrem ursprünglichen Arbeitsplan priorisieren. Dieser Vorschlag ist Teil eines breiteren Bemühens um eine Kreislaufwirtschaft.',
+      'Die Umweltkommission hat Maßnahmen vorgeschlagen, um europäische Produkte umweltfreundlicher und nachhaltiger zu gestalten. Ziel ist es, die geplante Obsoleszenz zu verbieten und von den Herstellern Software-Updates und Ersatzteile zu verlangen. Jedes Produkt soll mit einem "Produktpass" versehen werden, um die Verbraucher über ihre Umweltauswirkungen zu informieren. Außerdem,  müssen Unternehmen die Zerstörung unverkaufter Produkte erklären und rechtfertigen. Die Kommission hat bestimmte Produkte in ihrem ursprünglichen Arbeitsplan priorisiert. Der Vorschlag zur geplanten Obsoleszenz ist Teil eines breiteren Bemühens um eine Kreislaufwirtschaft.',
     id: 38,
     sources:
       "https://www.europarl.europa.eu/news/fr/press-room/20230612IPR97206/ecoconception-nouvelles-regles-sur-la-durabilite-des-produits#:~:text=Le%20rapport%20interdit%20l'obsolescence,des%20accessoires%20pendant%20une%20dur%C3%A9e",
+    express: false,
   },
   {
     question: "Sollen Verbrennungsmotoren verboten werden?",
     answers: [
       {
-        text: "Nein, das ist illusorisch, denn es gibt keine Bewegung ohne CO2-Emissionen.",
+        text: "Nein, das ist illusorisch, wir können uns nicht Fortbewegen ohne CO2-Emissionen auszustoßen.",
         partyId: 7,
         id: 1,
       },
@@ -1780,17 +1806,17 @@ export default [
         id: 2,
       },
       {
-        text: "Das ist eine Verrücktheit für Arbeitsplätze und den Wettbewerb in Europa.",
+        text: "Nein, das wäre unverantwortbar für die Arbeitsplätze und den Wettbewerb in Europa.",
         partyId: 1,
         id: 3,
       },
       {
-        text: "Ja, im Jahr 2035, aber indem man die sozialen Herausforderungen mit der Schaffung eines fairen Übergangsfonds begleitet.",
+        text: "Ja, ab 2035, aber indem man die sozialen Herausforderungen mit der Schaffung eines fairen Übergangsfonds begleitet.",
         partyId: 3,
         id: 4,
       },
       {
-        text: "Ab 2035 müssen die auf den Markt kommenden Autos kohlenstoffneutral sein.",
+        text: "Ja, ab 2035 müssen die auf den Markt kommenden Autos CO2-neutral sein.",
         partyId: 2,
         id: 5,
       },
@@ -1800,14 +1826,14 @@ export default [
         id: 6,
       },
       {
-        text: "Nein, dies würde der Wirtschaft schaden und das Haushaltsbudget belasten.",
+        text: "Nein, das würde der Wirtschaft schaden und den Haushalt belasten.",
         partyId: 6,
         id: 7,
       },
     ],
     category: 4,
     learnMore:
-      'Der Rat hat strengere CO2-Regeln für neue Autos und Lieferwagen genehmigt, um die Emissionen im Straßenverkehr zu reduzieren. Die Ziele umfassen eine Reduzierung von 55 % der CO2-Emissionen für neue Autos und 50 % für neue Lieferwagen bis 2030-2034, gefolgt von null CO2-Emissionen ab 2035. Es wird ein regulatorischer Anreizmechanismus für Null- und Niedrigemissionsfahrzeuge eingeführt. Die Verordnung enthält auch Bestimmungen über synthetische Kraftstoffe und eine Überprüfungsklausel im Jahr 2026. Diese Maßnahme ist Teil des Pakets "Anpassung an das Ziel 55" zur Reduzierung der Treibhausgasemissionen der EU.',
+      'Der Rat hat strengere CO2-Regeln für neue Autos und Lieferwagen genehmigt, um die Emissionen im Straßenverkehr zu reduzieren. Die Ziele umfassen eine Reduzierung von 55 % der CO2-Emissionen für neue Autos und 50 % für neue Lieferwagen bis 2030-2034, gefolgt von null CO2-Emissionen ab 2035. Es wird geplant einen Anreizmechanismus für Null- und Niedrigemissionsfahrzeuge einzuführen. Die Verordnung enthält auch Bestimmungen über synthetische Kraftstoffe und eine Überprüfungsklausel für das Jahr 2026. Diese Maßnahme ist Teil des Pakets "Anpassung an das Ziel 55" zur Reduzierung der Treibhausgasemissionen der EU.',
     id: 39,
     sources:
       "https://www.consilium.europa.eu/fr/press/press-releases/2023/03/28/fit-for-55-council-adopts-regulation-on-co2-emissions-for-new-cars-and-vans/",
@@ -1818,383 +1844,393 @@ export default [
       "Die fluorhaltigen Gase, die die Ozonschicht schädigen, sollten...",
     answers: [
       {
-        text: "Aufbewahrt, weil sie für viele Branchen von Bedeutung sind und bei der ökologischen Transition helfen.",
+        text: "weiter benutzt werden, da sie für viele Branchen von Bedeutung sind und bei der ökologischen Transformation helfen.",
         partyId: 7,
         id: 1,
       },
       {
-        text: "Für ihre Verwendung in bestimmten Bereichen aufbewahrt",
+        text: "für ihre Verwendung in bestimmten Bereichen beibehalten werden.",
         partyId: 5,
         id: 2,
       },
       {
-        text: "Flexible Verbote, um die Effizienz und Sicherheit des Übergangs zu gewährleisten",
+        text: "flexibel verboten werden, um die Effizienz und Sicherheit des Übergangs zu gewährleisten.",
         partyId: 1,
         id: 3,
       },
       {
-        text: "Das Ziel einer verstärkten Einschränkung zum Schutz der Natur und der öffentlichen Gesundheit.",
+        text: "verstärkt eingeschränkt werden, um die Natur und die Gesundheit aller zu schützen.",
         partyId: 3,
         id: 4,
       },
       {
-        text: "Reduziert gemäß strengem Zeitplan und Quotenreduzierung",
+        text: "nach einem strengen Zeitplan reduziert werden und einer Quotenreduzierung folgen. ",
         partyId: 2,
         id: 5,
       },
       {
-        text: "Auf globaler Ebene verboten.",
+        text: "auf globaler Ebene verboten werden.",
         partyId: 4,
         id: 6,
       },
       {
-        text: "Völlig verboten, da sie sogar schädlicher sind als CO2.",
+        text: "völlig verboten werden, da sie sogar schädlicher sind als CO2.",
         partyId: 6,
         id: 7,
       },
     ],
     category: 4,
     learnMore:
-      "Auf Anfrage des Parlaments wurde eine Vereinbarung getroffen, um bis 2050 die Fluorkohlenwasserstoffe (HFKW) zu beseitigen, mit einer Reduktionsstraße zwischen 2024 und 2049. Diese Vereinbarung zielt darauf ab, die Regeln mit dem Ziel der EU-Klimaneutralität zu vereinheitlichen. Sie verschärft das Verbot der Markteinführung von Produkten mit fluorierten Gasen, beschleunigt die Einführung klimafreundlicher Lösungen und legt Termine fest, um den Einsatz von fluorierten Gasen in verschiedenen Sektoren zu beenden. Die Vereinbarung legt auch strenge Bedingungen für die Verwendung von Gasen mit einem hohen Treibhauspotenzial fest. Das Parlament und der Rat müssen die Vereinbarung noch formell genehmigen.",
+      "Auf Anfrage des Parlaments wurde eine Vereinbarung getroffen, um bis 2050 die Fluorkohlenwasserstoffe (HFKW) zu beseitigen, nach einer Reduktionsphase zwischen 2024 und 2049. Diese Vereinbarung zielt darauf ab, die Regeln mit dem Ziel der EU-Klimaneutralität zu vereinheitlichen. Sie verschärft das Verbot der Markteinführung von Produkten mit fluorierten Gasen, beschleunigt die Einführung klimafreundlicher Lösungen und legt Termine fest, um den Einsatz von fluorierten Gasen in verschiedenen Sektoren zu beenden. Die Vereinbarung legt auch strenge Bedingungen für die Verwendung von Gasen mit einem hohen Treibhauseffekt fest. Das Parlament und der Rat müssen die Vereinbarung noch formell genehmigen.",
     id: 40,
     sources:
       "https://www.europarl.europa.eu/news/fr/press-room/20230717IPR03026/accord-sur-la-reduction-des-emissions-de-gaz-fluores-dans-l-ue",
+    express: false,
   },
   {
-    question:
-      "Eine Steuer auf digitale Giganten auf europäischer Ebene könnte...",
+    question: "Eine Steuer auf Internetriesen auf europäischer Ebene könnte...",
     answers: [
       {
-        text: "Verbraucher betreffen, die möglicherweise den Preis dafür zahlen würden.",
+        text: "die Endverbraucher treffen, welche möglicherweise den Preis dafür zahlen würden.",
         partyId: 7,
         id: 1,
       },
       {
-        text: "Die Steuereinnahmen der Mitgliedstaaten zugunsten der EU reduzieren.",
+        text: "die Steuereinnahmen der Mitgliedstaaten zugunsten der EU reduzieren.",
         partyId: 5,
         id: 2,
       },
       {
-        text: "Den digitalen Markt fairer machen.",
+        text: "den digitalen Markt gerechter gestalten.",
         partyId: 1,
         id: 3,
       },
       {
-        text: "Eine gerechte Besteuerung als eigene Einnahmequelle für die EU ermöglichen.",
+        text: "eine gerechte Besteuerung als eigene Einnahmequelle für die EU ermöglichen.",
         partyId: 3,
         id: 4,
       },
       {
-        text: "Eine Mindeststeuer in den Mitgliedsländern durchsetzen.",
+        text: "eine Mindeststeuer in den Mitgliedsländern durchsetzen.",
         partyId: 2,
         id: 5,
       },
       {
-        text: "Die Steuerflucht dieser Akteure reduzieren.",
+        text: "die Steuerflucht dieser Akteure reduzieren.",
         partyId: 4,
         id: 6,
       },
       {
-        text: "Sein ein Maß für soziale Gerechtigkeit",
+        text: "eine Maßnahme für soziale Gerechtigkeit sein. ",
         partyId: 6,
         id: 7,
       },
     ],
     category: 5,
     learnMore:
-      "Die GAFA-Steuer zielt darauf ab, die Digitalriesen für ihre Aktivitäten in der EU zu besteuern. Ursprünglich von der Europäischen Kommission im Jahr 2018 vorgeschlagen, zielt sie auf Unternehmen ab, die einen erheblichen digitalen Umsatz erzielen, aber nur wenig Steuern zahlen. Trotz anfänglicher Unterstützung haben einige Mitgliedstaaten ihre Umsetzung blockiert, was zu Debatten und Anpassungen in ihrer Ausgestaltung geführt hat. Das Ziel ist eine faire Besteuerung sicherzustellen und gegen Steuerflucht großer Technologieunternehmen, die in Europa tätig sind, vorzugehen. Trotzdem haben anhaltende Meinungsverschiedenheiten zwischen den Mitgliedstaaten ihre Umsetzung verzögert, obwohl es eine Bereitschaft zur Steuerreform gibt.",
+      "Die GAFA-Steuer zielt darauf ab, die Internetriesen für ihre Aktivitäten in der EU zu besteuern. Ursprünglich von der Europäischen Kommission im Jahr 2018 vorgeschlagen, zielt sie auf Unternehmen ab, die einen erheblichen digitalen Umsatz erzielen, aber nur wenig Steuern zahlen. Trotz anfänglicher Unterstützung haben einige Mitgliedstaaten ihre Umsetzung blockiert, was zu Debatten und Anpassungen in ihrer Ausgestaltung geführt hat. Das Ziel ist eine gerechte Besteuerung sicherzustellen und gegen Steuerflucht großer Technologieunternehmen, die in Europa tätig sind, vorzugehen. Obwohl es eine Bereitschaft zur Steuerreform gibt, haben anhaltende Meinungsverschiedenheiten zwischen den Mitgliedstaaten ihre Umsetzung verzögert. ",
     id: 41,
     sources:
       "https://www.touteleurope.eu/economie-et-social/qu-est-ce-que-la-taxe-gafa/#:~:text=Les%20entreprises%20concern%C3%A9es%20sont%20celles,d%27affaires%20r%C3%A9alis%C3%A9%20en%20France.",
     express: true,
   },
   {
-    question: "Was die zielgerichtete Online-Werbung betrifft, muss...",
+    question: "Was die zielgerichtete Online-Werbung betrifft, muss man...",
     answers: [
       {
-        text: "Das Verbieten, weil es zu einem Datenleck nach China und in die USA führt.",
+        text: "diese verbieten, da sie zu einem Datenleck nach China und in den USA führt.",
         partyId: 7,
         id: 1,
       },
       {
-        text: "Nicht verbieten, da seine Verwendung sowohl für KMU als auch für die Benutzer vorteilhaft ist, solange sie die Kontrolle darüber haben.",
+        text: "diese nicht verbieten, da ihre Verwendung sowohl für kleine und mittlere Unternehmen als auch für die Benutzer vorteilhaft ist, solange sie die Kontrolle darüber haben.",
         partyId: 5,
         id: 2,
       },
       {
-        text: "Das Verbieten für Minderjährige und wenn es diskriminierend ist",
+        text: "diese für Minderjährige und wenn sie diskriminierend sind verbieten.",
         partyId: 1,
         id: 3,
       },
       {
-        text: "Dass die Verbraucher auf informierte Weise zustimmen können.",
+        text: "es möglich machen, dass Verbraucher auf informierte Weise zustimmen können.",
         partyId: 3,
         id: 4,
       },
       {
-        text: "Es auf der Grundlage der Zustimmung des Benutzers zu erlauben, aber auf sensiblen persönlichen Daten zu verbieten",
+        text: "diese auf Grundlage der Zustimmung des Benutzers erlauben, aber im Bezug auf sensiblen und persönlichen Daten verbieten.",
         partyId: 2,
         id: 5,
       },
       {
-        text: "Das Verbieten sowie das Mikro-Targeting unter Verwendung persönlicher Daten",
+        text: "diese verbieten, ebenso wie das Mikro-Targeting unter Verwendung persönlicher Daten.",
         partyId: 4,
         id: 6,
       },
       {
-        text: "Das Verbot für alle Benutzer",
+        text: "diese für alle Benutzer verbieten. ",
         partyId: 6,
         id: 7,
       },
     ],
     category: 5,
     learnMore:
-      "Die europäische Regulierung zur Kontrolle von zielgerichteter Werbung zielt darauf ab, den Schutz der Verbraucher online zu stärken. Teil des Digital Services Act, legt sie strenge Regeln für digitale Plattformen fest, um Transparenz, Verantwortlichkeit und den Schutz der Nutzer zu gewährleisten. Dieses Gesetz verlangt, dass zielgerichtete Werbung klar identifiziert wird und Nutzer mehr Kontrolle über ihre persönlichen Daten haben. Es zielt auch darauf ab, der Online-Desinformation entgegenzuwirken, indem Transparenz- und Überprüfungsmaßnahmen für politische Werbung vorgeschrieben werden. Diese Initiative markiert einen wichtigen Schritt in der Regulierung des europäischen digitalen Marktes.",
+      "Die europäische Regulierung zur Kontrolle von zielgerichteter Werbung zielt darauf ab, den Schutz der Verbraucher online zu stärken. Als Teil des Digital Services Act, legt sie strenge Regeln für digitale Plattformen fest, um Transparenz, Verantwortlichkeit und den Schutz der Nutzer zu gewährleisten. Dieses Gesetz verlangt, dass zielgerichtete Werbung klar identifiziert wird und Nutzer mehr Kontrolle über ihre persönlichen Daten haben. Es zielt auch darauf ab, der Online-Desinformation entgegenzuwirken, indem Transparenz- und Überprüfungsmaßnahmen für politische Werbung vorgeschrieben werden. Diese Initiative markiert einen wichtigen Schritt in der Regulierung des europäischen digitalen Marktes.",
     id: 42,
     sources:
       "https://www.consilium.europa.eu/fr/policies/digital-services-act/",
+    express: false,
   },
   {
     question:
       "Die Verwendung von künstlicher Intelligenz zur biometrischen Identifizierung muss...",
     answers: [
       {
-        text: "Sich auf Grenz- und Einwanderungskontrollen mit einer moderaten Überwachung beschränken",
+        text: "sich auf Grenz- und Einwanderungskontrollen im Rahmen einer moderaten Überwachung beschränken.",
         partyId: 7,
         id: 1,
       },
       {
-        text: "Nur die Bekämpfung terroristischer Anschläge oder die Kontrolle der Grenzen betreffen.",
+        text: "nur die Bekämpfung terroristischer Anschläge oder die Kontrolle der Grenzen betreffen.",
         partyId: 5,
         id: 2,
       },
       {
-        text: "Ermächtigt für die Suche nach vermissten Personen oder die Verhinderung terroristischer Anschläge.",
-        partyId: 3,
+        text: "nur die Bekämpfung von Terroranschlägen oder strafrechtliche Ermittlungen betreffen.",
+        partyId: 1,
         id: 3,
       },
       {
-        text: "In öffentlichen, privaten und Online-Bereichen ferngehalten werden.",
-        partyId: 2,
+        text: "nur für die Suche nach vermissten Personen, oder der Verhinderung terroristischer Anschläge erlaubt sein.",
+        partyId: 3,
         id: 4,
       },
       {
-        text: "In öffentlichen Räumen vollständig verboten sein",
-        partyId: 4,
+        text: "in öffentlichen, privaten und Online-Bereichen verboten sein.",
+        partyId: 2,
         id: 5,
       },
       {
-        text: "Speziell für das Migrationsmanagement verboten sein",
-        partyId: 6,
+        text: "in öffentlichen Räumen vollständig verboten sein.",
+        partyId: 4,
         id: 6,
+      },
+      {
+        text: "speziell für das Migrationsmanagement verboten sein.",
+        partyId: 6,
+        id: 7,
       },
     ],
     category: 5,
     learnMore:
-      "Die europäische Regulierung künstlicher Intelligenz (KI), verkörpert durch das EU KI-Gesetz, ist eine proaktive Antwort auf die Herausforderungen, die durch diese aufkommende Technologie entstehen. Sie zielt darauf ab, ihre Nutzung zu regeln, während sie ihre ethische und verantwortungsbewusste Entwicklung fördert. Es sind spezifische Bestimmungen zur biometrischen Identifizierung im öffentlichen Raum vorgesehen, um die Grundrechte der Bürger zu schützen. Das EU KI-Gesetz verlangt eine strenge Regulierung dieser Praxis, insbesondere in Bezug auf Transparenz, Einwilligung und Datensicherheit. Diese Gesetzgebung markiert einen entscheidenden Schritt hin zu einer ethischen und sicheren Nutzung von KI, was den Schutz individueller Rechte innerhalb der EU gewährleistet.",
+      "Die europäische Regulierung künstlicher Intelligenz (KI), verkörpert durch das den EU AI Act, ist eine proaktive Antwort auf die Herausforderungen, die durch diese aufkommende Technologie entstehen. Sie zielt darauf ab, ihre Nutzung zu regeln, während sie ihre ethische und verantwortungsbewusste Entwicklung fördert. Es sind spezifische Bestimmungen zur biometrischen Identifizierung im öffentlichen Raum vorgesehen, um die Grundrechte der Bürger zu schützen. Der AI Act verlangt eine strenge Regulierung dieser Praxis, insbesondere in Bezug auf Transparenz, Einwilligung und Datensicherheit. Diese Gesetzgebung markiert einen entscheidenden Schritt hin zu einer ethischen und sicheren Nutzung von KI, was den Schutz individueller Rechte innerhalb der EU gewährleistet.",
     id: 43,
     sources:
       "https://www.europarl.europa.eu/news/en/headlines/society/20230601STO93804/eu-ai-act-first-regulation-on-artificial-intelligence",
+    express: false,
   },
   {
     question: "Eine Regulierung des europäischen Datenmarktes ist...",
     answers: [
       {
-        text: "Erforderlich, um wettbewerbsfähig zu bleiben und das Aufkommen europäischer Digitalgiganten zu fördern",
+        text: "erforderlich, um wettbewerbsfähig zu bleiben und das Aufkommen europäischer Digitalkonzerne zu fördern.",
         partyId: 7,
         id: 1,
       },
       {
-        text: "Unnötig, dies ist eine Zuständigkeit der Mitgliedstaaten.",
+        text: "unnötig. Dies ist die Zuständigkeit der Mitgliedstaaten.",
         partyId: 5,
         id: 2,
       },
       {
-        text: "Notwendig für das Wachstum und zum Schutz von Geschäftsgeheimnissen und geistigem Eigentum.",
+        text: "notwendig für das Wachstum und zum Schutz von Geschäftsgeheimnissen und geistigem Eigentum. ",
         partyId: 1,
         id: 3,
       },
       {
-        text: "Eine Frage der Wettbewerbsfähigkeit und Datenkontrolle durch Verbraucher.",
+        text: "eine Frage der Wettbewerbsfähigkeit und Datenkontrolle durch Verbraucher.",
         partyId: 3,
         id: 4,
       },
       {
-        text: "Es ist nützlich, europäische Unternehmen und Bürger zu schützen.",
+        text: "nützlich, um europäische Unternehmen und Bürger zu schützen.",
         partyId: 2,
         id: 5,
       },
       {
-        text: "Erforderlich für eine umweltfreundliche digitale Entwicklung",
+        text: "erforderlich für eine umweltfreundliche digitale Entwicklung. ",
         partyId: 4,
         id: 6,
       },
       {
-        text: "Dringend ist es, Daten und Whistleblower zu schützen.",
+        text: "zum Schutz von Daten und Whistleblowern dringend notwendig.",
         partyId: 6,
         id: 7,
       },
     ],
     category: 5,
     learnMore:
-      "Die Idee eines europäischen Datenmarktes wird von der Europäischen Kommission zur Förderung der digitalen Wirtschaft gefördert. Das Data Act zielt darauf ab, die Erhebung, Speicherung und Weitergabe von Daten innerhalb der EU zu regulieren, um den Schutz der Rechte der Nutzer und die Sicherheit der Daten zu gewährleisten. Es legt Standards für das Datenmanagement, Transparenz und die Interoperabilität von Systemen fest. Der europäische Datenmarkt würde Innovation und Wettbewerb fördern und dabei die Grundsätze der Privatsphäre und des Datenschutzes respektieren. Diese Initiative könnte die digitale Wirtschaft der EU ankurbeln und ihre globale Position stärken.",
+      "Die Idee eines europäischen Datenmarktes wird von der Europäischen Kommission zur Stimulierung der digitalen Wirtschaft gefördert. Der Data Act zielt darauf ab, die Erhebung, Speicherung und Weitergabe von Daten innerhalb der EU zu regulieren, um den Schutz der Rechte der Nutzer und die Sicherheit der Daten zu gewährleisten. Er legt Standards für das Datenmanagement, Transparenz und die Interoperabilität von Systemen fest. Der europäische Datenmarkt würde Innovation und Wettbewerb fördern und dabei die Grundsätze der Privatsphäre und des Datenschutzes respektieren. Diese Initiative könnte die digitale Wirtschaft der EU ankurbeln und ihre globale Position stärken.",
     id: 44,
     sources: "https://digital-strategy.ec.europa.eu/fr/policies/data-act",
+    express: false,
   },
   {
     question: "Im Kampf gegen illegale Inhalte muss man...",
     answers: [
       {
-        text: "Das Entfernen von Inhalten ohne gerichtliche Kontrolle verbieten.",
+        text: "das Entfernen von Inhalten ohne gerichtliche Kontrolle verbieten. ",
         partyId: 7,
         id: 1,
       },
       {
-        text: "Zuerst die Meinungsfreiheit schützen.",
+        text: "zuerst die Meinungsfreiheit schützen.",
         partyId: 5,
         id: 2,
       },
       {
-        text: "Um eine schnelle Entfernung zu gewährleisten und die Verbreitung krimineller Inhalte zu verhindern.",
+        text: "eine schnelle Entfernung gewährleisten, um die Verbreitung krimineller Inhalte zu verhindern.",
         partyId: 1,
         id: 3,
       },
       {
-        text: "Eine gesündere und sicherere Umgebung für Verbraucher.",
+        text: "eine gesündere und sicherere Umgebung für Verbraucher schaffen.",
         partyId: 3,
         id: 4,
       },
       {
-        text: "Eine genaue Gesetzgebung schaffen, die Plattformen zur Verantwortung zieht.",
+        text: "eine präzise Gesetzgebung schaffen, die Plattformen zur Verantwortung zieht.",
         partyId: 2,
         id: 5,
       },
       {
-        text: "Möge die Mäßigung durch eine transparente und faire menschliche Kontrolle erfolgen.",
+        text: "sicherstellen, dass eine transparente und gerechte Kontrolle von Menschen vorgenommen wird.",
         partyId: 4,
         id: 6,
       },
       {
-        text: "Eine größere Kontrolle der öffentlichen Behörden und der Justiz.",
+        text: "eine stärkere Kontrolle durch die öffentlichen Behörden und die Justiz erfolgen.",
         partyId: 6,
         id: 7,
       },
     ],
     category: 5,
     learnMore:
-      "Die EU-Verordnung über illegale Online-Inhalte legt Plattformen eine erhöhte Verantwortung zur schnellen Entfernung dieser Inhalte auf. Plattformen müssen wirksame Verfahren zur Erkennung und Entfernung von illegalen Inhalten einführen, dabei die Grundrechte der Nutzer respektieren. Maßnahmen umfassen schnelle Benachrichtigungs- und Entfernungsverpflichtungen sowie transparente Berichte über ergriffene Maßnahmen. Diese Verordnung zielt darauf ab, eine sicherere Online-Umgebung zu schaffen, die Meinungsfreiheit zu wahren und die Zusammenarbeit zwischen Plattformen, Behörden und Zivilgesellschaft zur Bekämpfung von illegalen Inhalten zu fördern.",
+      "Die EU-Verordnung über illegale Online-Inhalte legt Plattformen eine erhöhte Verantwortung zur schnellen Entfernung dieser Inhalte auf. Plattformen müssen wirksame Verfahren zur Erkennung und Entfernung von illegalen Inhalten einführen und dabei die Grundrechte der Nutzer respektieren. Maßnahmen umfassen schnelle Benachrichtigungs- und Entfernungsverpflichtungen sowie transparente Berichte über ergriffene Maßnahmen. Diese Verordnung zielt darauf ab, eine sicherere Online-Umgebung zu schaffen, die Meinungsfreiheit zu wahren und die Zusammenarbeit zwischen Plattformen, Behörden und Zivilgesellschaft zur Bekämpfung von illegalen Inhalten zu fördern.",
     id: 45,
     sources:
       "https://digital-strategy.ec.europa.eu/fr/policies/illegal-content-online-platforms",
     express: true,
   },
   {
-    question: "Was ist die Priorität im Bereich digitale Technologie?",
+    question: "Was ist die Priorität im Bereich der digitalen Technologie?",
     answers: [
       {
-        text: "Europäische Weltklasse-Schauspieler ins Rampenlicht bringen",
+        text: "Europäische Akteure von weltweiter Bedeutung zu etablieren. ",
         partyId: 7,
         id: 1,
       },
       {
-        text: "Nicht regulieren",
+        text: "Keine Regulierung. ",
         partyId: 5,
         id: 2,
       },
       {
-        text: "Fördern und die Verbraucher in den Mittelpunkt der digitalen Wirtschaft stellen",
+        text: "Die Förderung der Branche und die Verbraucher in den Mittelpunkt der digitalen Wirtschaft stellen.",
         partyId: 1,
         id: 3,
       },
       {
-        text: "Innovation fördern, um strategische digitale Fähigkeiten in Europa zu entwickeln",
+        text: "Die Förderung von Innovation, um strategische digitale Fähigkeiten in Europa zu entwickeln.",
         partyId: 3,
         id: 4,
       },
       {
-        text: "Eine inklusive digitale Europa aufbauen mit gleichberechtigtem Zugang zur Digitalisierung",
+        text: "Ein inklusives digitales Europa aufbauen mit gleichberechtigtem Zugang zur Digitalisierung.",
         partyId: 2,
         id: 5,
       },
       {
-        text: "Die digitale Revolution zum Schutz der Rechte und Freiheiten der Bürger nutzen.",
+        text: "Die digitale Revolution zum Wohl der Bürger nutzen, indem grundlegende Rechte und Freiheiten geschützt werden.",
         partyId: 4,
         id: 6,
       },
       {
-        text: "Die Gesellschaft nicht polarisieren und Ungleichheiten verstärken",
+        text: "Die Gesellschaft nicht polarisieren und Ungleichheiten verstärken.",
         partyId: 6,
         id: 7,
       },
     ],
     category: 5,
     learnMore:
-      "Europa steht an einer entscheidenden digitalen Weggabelung, mit beispiellosen Herausforderungen und Chancen konfrontiert. Das Programm Digital Europe schlägt einen ehrgeizigen Fahrplan vor, um das volle Potenzial der Digitalisierung zu nutzen und gleichzeitig Herausforderungen wie Datensicherheit, Regulierung von Online-Plattformen und die digitale Transformation von Unternehmen und öffentlichen Dienstleistungen anzugehen. Die EU handelt, um einen fairen, wettbewerbsfähigen und sicheren digitalen Markt sowie eine inklusive und innovative digitale Gesellschaft sicherzustellen. Die Herausforderung besteht darin, Europa als weltweiten Marktführer im digitalen Bereich zu positionieren und gleichzeitig die fundamentalen europäischen Werte zu wahren.",
+      "Europa steht an einem entscheidenden digitalen Wendepunkt und sieht sich beispiellosen Herausforderungen und Chancen gegenüber. Das Digital Europe-Programm bietet einen ehrgeizigen Fahrplan, um das volle Potenzial der Digitalisierung zu erschließen und gleichzeitig Herausforderungen wie Datenschutz, Regulierung von Online-Plattformen und die digitale Transformation von Unternehmen und öffentlichen Diensten anzugehen. Die EU arbeitet daran, einen fairen, wettbewerbsfähigen und sicheren digitalen Markt sowie eine inklusive und innovative digitale Gesellschaft zu gewährleisten. Die Herausforderung besteht darin, Europa als weltweiten Vorreiter im digitalen Bereich zu positionieren, während die fundamentalen europäischen Werte bewahrt werden.",
     id: 46,
     sources:
       "https://www.touteleurope.eu/l-europe-et-moi/digital-europe-le-programme-pour-une-europe-numerique/",
+    express: false,
   },
   {
-    question: "Die Geoblocking von audiovisuellen Inhalten...",
+    question: "Das Geoblocking von audiovisuellen Inhalten sollte...",
     answers: [
       {
-        text: "Es muss aufrechterhalten werden, um die Ausnahme und kulturelle Vielfalt zu schützen.",
+        text: "aufrechterhalten werden, um die Besonderheit und kulturelle Vielfalt zu schützen.",
         partyId: 7,
         id: 1,
       },
       {
-        text: "Muss gelöscht werden, um die Schaffung des Binnenmarktes zu ermöglichen.",
+        text: "abgeschafft werden, um die Schaffung eines einheitlichen Marktes zu ermöglichen.",
         partyId: 5,
         id: 2,
       },
       {
-        text: "Muss gelöscht werden, indem die Finanzierung der audiovisuellen Kreation geschützt wird.",
+        text: "abgeschafft werden, während die Finanzierung der audiovisuellen Kreation geschützt wird.",
         partyId: 1,
         id: 3,
       },
       {
-        text: "Muss gelöscht werden, um den gleichen Zugang zu den gleichen Ressourcen zu ermöglichen",
+        text: "abgeschafft werden, um einen gleichberechtigten Zugang zu denselben Ressourcen zu ermöglichen.",
         partyId: 3,
         id: 4,
       },
       {
-        text: "Darf nicht gelöscht werden, um die Finanzierung der Erstellung dieser Inhalte fortzusetzen.",
+        text: "nicht abgeschafft werden, um die Schaffung dieser Inhalte weiter zu finanzieren. ",
         partyId: 2,
         id: 5,
       },
       {
-        text: "Muss gelöscht werden, während unabhhängige Arbeitende und KMU des Sektors geschützt werden.",
+        text: "abgeschafft werden, während die selbstständigen Arbeitenden und kleine und mittlere Unternehmen des Sektors geschützt werden.",
         partyId: 4,
         id: 6,
       },
       {
-        text: "Muss erhöht werden, um die kulturelle Vielfalt zu gewährleisten.",
+        text: "erhöht werden, um die kulturelle Vielfalt zu gewährleisten.",
         partyId: 6,
         id: 7,
       },
     ],
     category: 5,
     learnMore:
-      "Die Geoblocking-Technologie beschränkt den Zugang zu Waren und Dienstleistungen basierend auf dem geografischen Standort des Nutzers. Die EU hat Maßnahmen ergriffen, um diese ungerechte Diskriminierung zu beenden, indem sie Vorschriften verabschiedet hat, die in bestimmten Fällen wie Online-Einkäufen von Waren und Dienstleistungen ungerechtfertigtes Geoblocking verbieten. Diese Vorschriften zielen darauf ab, einen offeneren und wettbewerbsfähigeren digitalen Binnenmarkt zu fördern, indem sie es Verbrauchern ermöglichen, fairen und diskriminierungsfreien Zugang zu Online-Angeboten in der gesamten Europäischen Union zu erhalten.",
+      "Das Geoblocking beschränkt den Zugang zu Waren und Dienstleistungen basierend auf dem geografischen Standort des Nutzers. Die EU hat Maßnahmen ergriffen, um diese ungerechte Diskriminierung zu beenden, indem sie Vorschriften erlassen hat, die das ungerechtfertigte Geoblocking in bestimmten Fällen verbieten, wie zum Beispiel beim Online-Kauf von Waren und Dienstleistungen. Diese Regelung zielt darauf ab, einen offeneren und wettbewerbsfähigeren digitalen Binnenmarkt zu fördern, indem sie den Verbrauchern einen fairen und diskriminierungsfreien Zugang zu Online-Angeboten in der gesamten Europäischen Union ermöglicht.",
     id: 47,
     sources: "https://www.consilium.europa.eu/fr/policies/geo-blocking/",
+    express: false,
   },
   {
     question:
-      "Im Falle von Subventionen für die Halbleiterindustrie, was hat Vorrang?",
+      "Was hat im Fall von Subventionen für die Halbleiterindustrie Vorrang?",
     answers: [
       {
-        text: "Unsere Souveränität garantieren, indem die Entstehung eines europäischen Halbleiter-Riesen subventioniert wird.",
+        text: "Die Sicherung der Souveränität, indem die Entstehung eines europäischen Halbleiter- Riesen subventioniert wird.",
         partyId: 7,
         id: 1,
       },
       {
-        text: "Man darf nicht subventionieren, denn das verzerrt den Binnenmarkt.",
+        text: "Es sollte nicht subventioniert werden, denn das verzerrt den Binnenmarkt.",
         partyId: 5,
         id: 2,
       },
       {
-        text: "Die Förderung des Wachstums des Sektors durch die Förderung der öffentlich-privaten Zusammenarbeit",
+        text: "Das Wachstum des Sektors stärken, indem die öffentlich-private Zusammenarbeit gefördert wird.",
         partyId: 1,
         id: 3,
       },
@@ -2204,17 +2240,17 @@ export default [
         id: 4,
       },
       {
-        text: "Die Priorität besteht darin, eine zuverlässige Logistikkette zu schaffen.",
+        text: "Eine zuverlässige Logistikkette zu schaffen.",
         partyId: 2,
         id: 5,
       },
       {
-        text: "Sicherstellen, dass Subventionen an die Einhaltung von Umweltstandards gebunden sind",
+        text: "Sicherstellen, dass Subventionen an die Einhaltung von Umweltstandards gebunden sind.",
         partyId: 4,
         id: 6,
       },
       {
-        text: "Verhindern, dass nicht-europäische Unternehmen von Subventionen profitieren (auch wenn sie sich in Europa niederlassen).",
+        text: "Verhindern, dass nicht-europäische Unternehmen von den Subventionen profitieren (auch wenn diese sich in Europa niederlassen).",
         partyId: 6,
         id: 7,
       },
@@ -2225,42 +2261,43 @@ export default [
     id: 48,
     sources:
       "https://commission.europa.eu/strategy-and-policy/priorities-2019-2024/europe-fit-digital-age/european-chips-act_fr",
+    express: false,
   },
   {
-    question: "Im Bereich der Cybersicherheit ist es erforderlich...",
+    question: "Im Bereich der Cybersicherheit sollte man...",
     answers: [
       {
-        text: "Die Staaten in ihrem freien Willen lassen, denn Verteidigung ist ein unantastbares Vorrecht der Staaten.",
+        text: "den Staaten ihren Entscheidungsspielraum lassen, da die Verteidigung eine unantastbare Angelegenheit der Staaten ist.",
         partyId: 7,
         id: 1,
       },
       {
-        text: "Die Stärkung des Informationsaustauschs und der Zusammenarbeit zur Schaffung eines widerstandsfähigen europäischen Cyber-Raums.",
+        text: "den Informationsaustausch und die Zusammenarbeit stärken, um einen widerstandsfähigen europäischen Cyber-Raum zu schaffen. ",
         partyId: 5,
         id: 2,
       },
       {
-        text: "Sicherheit von Anfang an bei der Produktentwicklung gewährleisten und schnell auf Sicherheitslücken reagieren",
+        text: "die Sicherheit bereits bei der Produktentwicklung gewährleisten und schnell auf Sicherheitslücken reagieren.",
         partyId: 1,
         id: 3,
       },
       {
-        text: "Eine paneuropäische digitale Schutzschirm aufbauen, um ein Mindestmaß an Sicherheit in der EU einzuführen.",
+        text: "ein paneuropäisches digitales Schutzschild erschaffen, um ein Mindestmaß an Sicherheit in der EU zu gewährleisten.",
         partyId: 3,
         id: 4,
       },
       {
-        text: "Strenge Regeln für die kritischen Infrastrukturen der EU festlegen (Krankenhäuser, Energieanlagen)",
+        text: "strengere Regeln für die kritischen Infrastrukturen der EU festlegen (Krankenhäuser, Energieanlagen etc.)",
         partyId: 2,
         id: 5,
       },
       {
-        text: "Höhere Sicherheitsstandards einführen, um den Schutz der EU zu stärken",
+        text: "höhere Sicherheitsstandards einführen, um die EU besser zu schützen. ",
         partyId: 4,
         id: 6,
       },
       {
-        text: "Die Widerstandsfähigkeit für alle stärken: Institutionen, aber auch KMU und Bürger.",
+        text: "die Widerstandsfähigkeit für alle stärken: Institutionen, sowie kleine und mittlere Unternehmen und Bürger.",
         partyId: 6,
         id: 7,
       },
@@ -2270,6 +2307,7 @@ export default [
       "Die EU hat sich verpflichtet, ein ehrgeiziges Programm zur Stärkung der Cybersicherheit in Europa umzusetzen, was in unserer digitalen Welt von entscheidender Bedeutung ist. Dieses Programm zielt darauf ab, unsere persönlichen Daten, unsere kritische Infrastruktur und unsere Computersysteme vor Cyberangriffen zu schützen. Es fördert die Zusammenarbeit zwischen den Mitgliedstaaten, Unternehmen und der Zivilgesellschaft, um Bedrohungen im Online-Bereich zu erkennen und zu bekämpfen. Die EU investiert in Forschung, Ausbildung und die Entwicklung innovativer Technologien, um unsere digitale Widerstandsfähigkeit zu stärken. Durch Aufklärung und Schulung der Bürger über Risiken strebt die EU danach, einen sicheren und vertrauenswürdigen Cyberspace für alle Europäer zu schaffen.",
     id: 49,
     sources: "https://digital-strategy.ec.europa.eu/fr/policies/cybersecurity",
+    express: false,
   },
   {
     question:
@@ -2281,12 +2319,12 @@ export default [
         id: 1,
       },
       {
-        text: "Nein, dies wird das Risiko einer Überwachung durch die EU verstärken.",
+        text: "Nein, dies würde das Risiko einer Überwachung durch die EU verstärken.",
         partyId: 5,
         id: 2,
       },
       {
-        text: "Ja, für einen erleichterten Zugang zu öffentlichen Dienstleistungen und sicheren Plattformen",
+        text: "Ja, für einen erleichterten Zugang zu öffentlichen Dienstleistungen und sicheren Plattformen.",
         partyId: 1,
         id: 3,
       },
@@ -2313,15 +2351,14 @@ export default [
     ],
     category: 5,
     learnMore:
-      "Die digitale Identität ist ein Schlüsselbegriff in der modernen digitalen Welt, und die EU arbeitet an ihrer Entwicklung, um das Leben der Bürger online zu vereinfachen. Das bedeutet, ein sicheres und praktisches Mittel zu haben, um bei Online-Transaktionen wie der Eröffnung eines Bankkontos oder dem Unterzeichnen von Verträgen nachzuweisen, wer man ist. Dies wirft jedoch wichtige Fragen zum Schutz der Privatsphäre und zur Datensicherheit auf. Die EU bemüht sich sicherzustellen, dass digitale Identitäten sicher, privat und interoperabel in der gesamten Europäischen Union sind und den Bürgern so einen bequemen und sicheren Zugang zu Online-Diensten bieten.",
+      "Die digitale Identität ist ein Schlüsselkonzept in der modernen digitalen Welt, und die EU arbeitet an ihrer Entwicklung, um das Leben der Bürger online zu vereinfachen. Dies bedeutet, einen sicheren und bequemen Weg zu haben, um bei Online-Transaktionen wie der Eröffnung eines Bankkontos oder der Unterzeichnung von Verträgen zu beweisen, wer Sie sind. Dies wirft jedoch wichtige Fragen zum Schutz der Privatsphäre und zur Datensicherheit auf. Die EU bemüht sich sicherzustellen, dass digitale Identitäten sicher, privat und interoperabel in der gesamten Europäischen Union sind, um den Bürgern einen bequemen und sicheren Zugang zu Online-Diensten zu ermöglichen.",
     id: 50,
     sources:
       "https://commission.europa.eu/strategy-and-policy/priorities-2019-2024/europe-fit-digital-age/european-digital-identity_fr#:~:text=L%27identit%C3%A9%20num%C3%A9rique%20de%20l,%2C%20dans%20toute%20l%27UE.",
     express: true,
   },
   {
-    question:
-      "Inwieweit sollte die GAP die ökologische Transformation integrieren?",
+    question: "Inwieweit sollte die GAP den ökologischen Wandel integrieren?",
     answers: [
       {
         text: "Die Priorität ist die Wettbewerbsfähigkeit der europäischen Landwirte und Viehzüchter.",
@@ -2329,7 +2366,7 @@ export default [
         id: 1,
       },
       {
-        text: "Es ist wichtig, die Landwirte bei der ökologischen Transition zu unterstützen, unter Berücksichtigung der lokalen Gegebenheiten.",
+        text: "Es ist notwendig, die Landwirte bei der ökologischen Transition zu unterstützen, unter Berücksichtigung der lokalen Gegebenheiten.",
         partyId: 5,
         id: 2,
       },
@@ -2344,7 +2381,7 @@ export default [
         id: 4,
       },
       {
-        text: "Sie muss es vollständig integrieren und international bekräftigen.",
+        text: "Sie muss den ökologischen Wandel vollständig integrieren und international bekräftigen.",
         partyId: 2,
         id: 5,
       },
@@ -2354,23 +2391,24 @@ export default [
         id: 6,
       },
       {
-        text: "Es muss aufhören, landwirtschaftliche Akteure zu subventionieren, die Praktiken anwenden, die der Umwelt und der Gesundheit schaden.",
+        text: "Man muss aufhören, landwirtschaftliche Akteure zu subventionieren, die Praktiken anwenden, die der Umwelt und der Gesundheit schaden.",
         partyId: 6,
         id: 7,
       },
     ],
     category: 6,
     learnMore:
-      "Die Gemeinsame Agrarpolitik (GAP) der EU, die seit 1962 besteht, unterstützt Landwirte und die ländliche Entwicklung, indem sie die Ernährungssicherheit, Marktstabilität und angemessene Einkommen gewährleistet. Sie nutzt Subventionen, Programme für die ländliche Entwicklung und Regulierungsmechanismen. Der ökologische Wandel bezeichnet eine grundlegende Veränderung in wirtschaftlichen, sozialen und Umweltpraktiken, um negative Auswirkungen auf die Umwelt zu reduzieren und Nachhaltigkeit zu fördern. Es geht daher darum, welche Maßnahmen die GAP ergreifen muss, um den ökologischen Wandel zu erleichtern, wie viele Subventionen bereitgestellt werden sollten und in welcher Menge.",
+      "Die Gemeinsame Agrarpolitik (GAP) der EU, die seit 1962 besteht, unterstützt Landwirte und die ländliche Entwicklung, indem sie die Ernährungssicherheit, Marktstabilität und angemessene Einkommen gewährleistet. Sie nutzt Subventionen, Programme für die ländliche Entwicklung und Regulierungsmechanismen. Der ökologische Wandel bezeichnet eine grundlegende Veränderung in wirtschaftlichen, sozialen und Umweltpraktiken, um negative Auswirkungen auf die Umwelt zu reduzieren und Nachhaltigkeit zu fördern. Es geht also darum, welche Maßnahmen die GAP ergreifen muss, um den ökologischen Wandel zu erleichtern, wie viele Subventionen bereitgestellt werden müssen und in welchem Umfang.",
     id: 51,
     sources: "https://agriculture.ec.europa.eu/common-agricultural-policy_fr",
+    express: false,
   },
   {
     question:
       "Sollte der Einsatz von Pestiziden in der Landwirtschaft reduziert werden?",
     answers: [
       {
-        text: "Nein, denn das ist nicht der Wunsch der Landwirte.",
+        text: "Nein, denn dies ist nicht der Wunsch der Landwirte.",
         partyId: 7,
         id: 1,
       },
@@ -2380,17 +2418,17 @@ export default [
         id: 2,
       },
       {
-        text: "Nur durch das Vorhandensein glaubwürdiger Alternativen, die das Wachstum der europäischen Agrarproduktion ermöglichen.",
+        text: "Nur wenn glaubwürdiger Alternativen vorhanden sind, die das Wachstum der europäischen Agrarproduktion ermöglichen.",
         partyId: 1,
         id: 3,
       },
       {
-        text: "Ja, es ist notwendig, eine Strategie zur Suche nach Alternativen zu Pestiziden und endokrinen Disruptoren zu entwickeln.",
+        text: "Ja, es ist notwendig eine Strategie zur Suche nach Alternativen zu Pestiziden und endokrinen Disruptoren zu entwickeln.",
         partyId: 3,
         id: 4,
       },
       {
-        text: "Ja, es ist wichtig, biologische und chemiefreie Methoden sowie Produkte mit geringem Risiko zu fördern.",
+        text: "Ja, es ist notwendig, biologische und chemiefreie Methoden sowie Produkte mit geringem Risiko zu fördern.",
         partyId: 2,
         id: 5,
       },
@@ -2407,32 +2445,33 @@ export default [
     ],
     category: 6,
     learnMore:
-      'Pestizide werden in der EU aus verschiedenen Gründen eingesetzt, insbesondere zum Schutz von Kulturen vor Schädlingen, Krankheiten und Unkraut. Die Verwendung von Pestiziden wirft jedoch aufgrund ihrer potenziell schädlichen Auswirkungen Bedenken im Bereich der öffentlichen Gesundheit und der Umwelt auf. Im Mai 2020 hat die Europäische Kommission die Überprüfung der Richtlinie 2009/128/EG über die nachhaltige Verwendung von Pestiziden eingeleitet, mit dem Ziel, die Nutzung und die damit verbundenen Risiken chemischer Pestizide bis 2030 um 50 % zu reduzieren. Im Juni 2022 wurde ein Vorschlag für eine Verordnung zur Harmonisierung der nationalen Richtlinien zu Pestiziden vorgelegt, der den Zielen des Europäischen Grünen Deals entspricht. Dieser Vorschlag, der im Juli 2022 dem Rat "Agrar- und Fischerei" vorgelegt wurde, wirft Bedenken hinsichtlich seiner Folgenabschätzung auf, die die jüngsten Auswirkungen des Krieges in der Ukraine auf die Lebensmittelsicherheit und die landwirtschaftliche Wettbewerbsfähigkeit der EU nicht berücksichtigt hat',
+      'Pestizide werden in der EU aus verschiedenen Gründen eingesetzt, insbesondere zum Schutz der Kulturen vor Schädlingen, Krankheiten und Unkraut. Die Verwendung von Pestiziden wirft jedoch aufgrund ihrer potenziell schädlichen Auswirkungen Bedenken im Bereich der öffentlichen Gesundheit und der Umwelt auf. Im Mai 2020 hat die Europäische Kommission die Überprüfung der Richtlinie 2009/128/EG über die nachhaltige Verwendung von Pestiziden eingeleitet, mit dem Ziel, die Nutzung und die damit verbundenen Risiken chemischer Pestizide bis 2030 um 50 % zu reduzieren. Im Juni 2022 schlug sie eine Verordnung zur Harmonisierung der nationalen Politiken über Pestizide vor, die mit den Zielen des Europäischen Grünen Deals übereinstimmt. Dieser Vorschlag, der im Juli 2022 dem Rat "Landwirtschaft und Fischerei" vorgelegt wurde, wirft Bedenken hinsichtlich seiner Folgenabschätzung auf, die die jüngsten Auswirkungen des Krieges in der Ukraine auf die Lebensmittelsicherheit und die landwirtschaftliche Wettbewerbsfähigkeit der EU nicht berücksichtigt hat.',
     id: 52,
     sources:
       "https://www.consilium.europa.eu/fr/press/press-releases/2022/12/19/council-calls-for-a-complementary-impact-assessment-on-the-sustainable-use-of-plant-protection-products-proposal/",
+    express: false,
   },
   {
     question:
       "Was wäre die wichtigste Maßnahme, um für das Wohlergehen der Tiere zu handeln?",
     answers: [
       {
-        text: "Setzen Sie auf lokale Produktion und lehnen Sie künstliches oder synthetisches Fleisch ab",
+        text: "Auf lokale Produktion setzen und künstliches oder synthetisches Fleisch ablehnen.",
         partyId: 7,
         id: 1,
       },
       {
-        text: "Weiterhin Bemühungen unternehmen, um Tierversuche mit Kosmetika zu reduzieren.",
+        text: "Weiterhin die Bemühungen fortsetzen, klinische Versuche von Kosmetika an Tieren zu reduzieren. ",
         partyId: 5,
         id: 2,
       },
       {
-        text: "Hilfe für Züchter und das Verbot des Imports, der nicht den europäischen Normen entspricht.",
+        text: "Unterstützung für Landwirte und ein Verbot von Importen, die nicht den europäischen Standards entsprechen.",
         partyId: 1,
         id: 3,
       },
       {
-        text: "Fördern der Käfigfreien Tierhaltung.",
+        text: "Die Förderung der käfigfreien Tierhaltung. ",
         partyId: 2,
         id: 4,
       },
@@ -2442,29 +2481,30 @@ export default [
         id: 5,
       },
       {
-        text: "Allmählich die intensive Tierhaltung verbieten.",
+        text: "Allmähliche Abschaffung der Intensivtierhaltung.",
         partyId: 6,
         id: 6,
       },
       {
-        text: "Die Bedingungen für den Transport von Nutztieren verschärfen, was ein traumatischer Schritt ist.",
+        text: "Die Verschärfung der Bedingungen für den Transport von Nutztieren, der eine traumatische Phase darstellt.",
         partyId: 4,
         id: 7,
       },
     ],
     category: 6,
     learnMore:
-      "Die Europäische Kommission schlägt neue Regeln vor, um das Wohlergehen von Hunden und Katzen in der EU sowie die Bedingungen für den Transport von Tieren zu verbessern. Der illegale Handel hat tatsächlich zugenommen und zu bedauerlichen Lebensbedingungen geführt. Die neuen Regeln zielen darauf ab, die EU-Standards für das Wohlergehen von Tieren zu harmonisieren, einschließlich Unterkunft, Pflege, Transport und Behandlung. Sie zielen auch darauf ab, die Reisezeiten zu begrenzen, den minimalen Platz zu erhöhen und den Transport von Tieren bei extremen Temperaturen zu verbieten. Gleichzeitig setzt die Kommission ihre Arbeit an einem Verbot der Pelztierhaltung in der EU fort, als Antwort auf Bürgerbedenken.",
+      "Die Europäische Kommission schlägt neue Regeln vor, um das Wohlergehen von Hunden und Katzen in der EU sowie die Bedingungen für den Transport von Tieren zu verbessern. Der illegale Handel hat in der Tat zugenommen und zu bedauerlichen Lebensbedingungen geführt. Die neuen Regeln zielen darauf ab, die EU-Standards für das Tierwohl zu harmonisieren, einschließlich Unterbringung, Pflege, Transport und Behandlung. Sie zielen auch darauf ab, die Reisezeiten zu begrenzen, den minimalen Platz zu erhöhen und den Transport von Tieren bei extremen Temperaturen zu verbieten. Gleichzeitig setzt die Kommission ihre Arbeit an einem Verbot der Pelztierzucht in der EU fort, als Reaktion auf das Anliegen der Bürger. ",
     id: 53,
     sources:
       "https://commission.europa.eu/news/improving-welfare-animals-2023-12-07_fr#:~:text=La%20Commission%20europ%C3%A9enne%20a%20propos%C3%A9,%C3%A0%20fourrure%20dans%20l'UE.",
+    express: false,
   },
   {
     question:
-      "Wie kann die Fischerei- und Meeresressourcenpolitik in den kommenden Jahren betrachtet werden?",
+      "Wie könnte die Fischerei- und Meeresressourcenpolitik in den kommenden Jahren aussehen?",
     answers: [
       {
-        text: "Wir müssen pragmatisch sein und nicht utopisch, um kleine Unternehmen zu schützen.",
+        text: "Es ist wichtig, pragmatisch zu sein und nicht utopisch, um kleine Unternehmen zu schützen.",
         partyId: 7,
         id: 1,
       },
@@ -2479,36 +2519,37 @@ export default [
         id: 3,
       },
       {
-        text: "Es ist erforderlich, die Kontrolle durch die obligatorische Meldung verlorener Fischereiwerkzeuge im Meer zu verbessern.",
+        text: "Es bedarf einer verbesserten Kontrolle durch die obligatorische Meldung von verlorenen Fischereigeräten im Meer.",
         partyId: 3,
         id: 4,
       },
       {
-        text: "Es ist notwendig, Umweltschutz und Wettbewerbsfähigkeit unserer Produktionen miteinander zu verbinden.",
+        text: "Es ist notwendig, Umweltschutz und Wettbewerbsfähigkeit der Produktionen miteinander zu verbinden.",
         partyId: 2,
         id: 5,
       },
       {
-        text: "Es bedarf einer Anreizregelung bei der Verteilung von Fangquoten nach Umweltkriterien.",
+        text: "Es bedarf einer Anreizregelung, bei der die Verteilung von Fangquoten nach Umweltkriterien erfolgt. ",
         partyId: 4,
         id: 6,
       },
       {
-        text: "Es muss der Schwerpunkt auf kleine Akteure gelegt werden, da dies am besten für das europäische sozioökonomische Gefüge ist.",
+        text: "Es muss der Schwerpunkt auf kleine Akteure gelegt werden, da sie das sozioökonomische Gefüge Europas am stärksten prägen.",
         partyId: 6,
         id: 7,
       },
     ],
     category: 6,
     learnMore:
-      "Die Europäische Union (EU) ist im Jahr 2017 der fünftgrößte Produzent von Fischerei und Aquakultur weltweit, mit 5,9 Millionen Tonnen Fisch. Trotzdem trägt dieser Sektor mit weniger als 1 % zum BIP der EU bei und beschäftigt etwa 267.000 Personen. Mehr als 50 % des Fischerei-Bedarfs der EU stammen aus Drittländern. Die Gemeinsame Fischereipolitik (GFP), die 1983 ins Leben gerufen wurde, zielt darauf ab, eine nachhaltige Nutzung mariner Ressourcen zu gewährleisten und angemessene Einkommen zu sichern. Die GFP wird alle zehn Jahre reformiert, die letzte Reform stammt aus dem Jahr 2013. Die Ziele der GFP sind in Artikel 39 des Vertrags über die Arbeitsweise der Europäischen Union (AEUV) festgelegt und umfassen die Steigerung der Fischereiproduktivität, die Aufrechterhaltung eines fairen Lebensstandards, die Stabilisierung der Märkte, die Sicherstellung der Versorgungssicherheit und angemessene Preise für die Verbraucher. Die GFP konzentriert sich auf die nachhaltige Bewirtschaftung der",
+      "Die Europäische Union (EU) ist im Jahr 2017 der fünftgrößte Produzent von Fischerei und Aquakultur weltweit, mit 5,9 Millionen Tonnen Fisch. Trotzdem trägt dieser Sektor mit weniger als 1 % zum BIP der EU bei und beschäftigt etwa 267.000 Menschen. Mehr als 50 % des Fischereiimports der EU stammen aus Drittländern. Die Gemeinsame Fischereipolitik (GFP), die 1983 ins Leben gerufen wurde, zielt darauf ab, eine nachhaltige Nutzung der Meeresressourcen zu gewährleisten und angemessene Einkommen sicherzustellen. Die GFP wird alle zehn Jahre reformiert, wobei die letzte Reform aus dem Jahr 2013 stammt. Die Ziele der GFP sind im Artikel 39 des Vertrags über die Arbeitsweise der Europäischen Union (AEUV) festgelegt und umfassen die Steigerung der Fischereiproduktivität, die Aufrechterhaltung eines fairen Lebensstandards, die Stabilisierung der Märkte, die Sicherung der Versorgung und angemessene Preise für Verbraucher. Die GFP konzentriert sich auf die nachhaltige Bewirtschaftung und den Schutz der Fischbestände, strukturelle Unterstützungsmaßnahmen, die gemeinsame Marktorganisation und internationale Fischereiabkommen.",
     id: 54,
     sources:
       "https://www.europarl.europa.eu/doceo/document/TA-9-2024-0046_FR.html",
+    express: false,
   },
   {
     question:
-      "Wie können jungen Landwirten die Installation ermöglicht werden?",
+      "Wie kann man jungen Landwirten ermöglichen, sich niederzulassen?",
     answers: [
       {
         text: "Es ist notwendig, die Verwaltungsabläufe zu reduzieren und die Landwirte vor unfairem externen Wettbewerb zu schützen.",
@@ -2516,39 +2557,39 @@ export default [
         id: 1,
       },
       {
-        text: "Bei der Bekämpfung der Vernachlässigung ländlicher Gebiete",
+        text: "Indem man gegen die Vernachlässigung ländlicher Gebiete vorgeht. ",
         partyId: 5,
         id: 2,
       },
       {
-        text: "Indem ein Recht auf Probezeit geschaffen wird, durch spezielle Strukturen.",
+        text: "Indem durch spezielle Strukturen ein Recht auf eine Probezeit geschaffen wird.",
         partyId: 1,
         id: 3,
       },
       {
-        text: "Dank besserer Einkommensgarantien durch die GAP.",
+        text: "Dank besserer Einkommensgarantien im Rahmen der GAP.",
         partyId: 3,
         id: 4,
       },
       {
-        text: "Indem der Schwerpunkt auf Ausbildung und deren Zugänglichkeit liegt.",
+        text: "Indem man den Schwerpunkt auf Ausbildung und dessen Zugänglichkeit legt.",
         partyId: 2,
         id: 5,
       },
       {
-        text: "Durch die Ausrichtung der Landwirtschaft auf die Ziele zur Reduzierung des Pestizidgebrauchs und zum Tierschutz.",
+        text: "Indem man Landwirtschaft und Ziele zur Reduzierung des Pestizideinsatzes und zum Tierschutz in Einklang bringt.",
         partyId: 4,
         id: 6,
       },
       {
-        text: "Im Kampf gegen die Konzentration von landwirtschaftlichen Flächen in den Händen großer Unternehmen.",
+        text: "Indem man gegen die Konzentration von landwirtschaftlichen Flächen in den Händen großer Unternehmen kämpft.",
         partyId: 6,
         id: 7,
       },
     ],
     category: 6,
     learnMore:
-      "Die Besorgnisse im Zusammenhang mit dem Alter der Landwirte sind auf den Rückgang der Anzahl landwirtschaftlicher Arbeitskräfte und das Fehlen einer Generationsablösung zurückzuführen. Die Überalterung der landwirtschaftlichen Bevölkerung ist besonders besorgniserregend, und dieses Phänomen wird auf europäischer Ebene beobachtet, wobei im Jahr 2016 etwa 34 % der Landwirte 65 Jahre oder älter waren. Die Europäische Kommission hat Maßnahmen vorgeschlagen, insbesondere spezielle Unterstützungen für junge Landwirte, um ihre Ansiedlung zu fördern. Die neue Reform der Gemeinsamen Agrarpolitik (GAP) sieht ebenfalls Anpassungen vor, um junge Landwirte zu unterstützen, aber einige Akteure sind der Ansicht, dass diese Maßnahmen nicht ausreichen, um das Problem der Generationsablösung zu lösen.",
+      "Die Bedenken in Bezug auf das Alter der Landwirte lassen sich durch die Abnahme der landwirtschaftlichen Arbeitskräfte und das Fehlen eines Generationswechsel erklären. Die Überalterung der landwirtschaftlichen Bevölkerung ist besonders besorgniserregend, und dieses Phänomen wird auf europäischer Ebene beobachtet, wobei etwa 34 % der Landwirte im Jahr 2016 65 Jahre oder älter waren. Die Europäische Kommission hat Maßnahmen vorgeschlagen, darunter spezifische Unterstützungsmaßnahmen für junge Landwirte, um ihre Ansiedlung zu fördern. Die neue Reform der Gemeinsamen Agrarpolitik (GAP) sieht ebenfalls Anpassungen vor, um junge Landwirte zu unterstützen, aber einige Akteure sind der Ansicht, dass diese Maßnahmen nicht ausreichen, um das Problem der Generationserneuerung zu lösen.",
     id: 55,
     sources:
       "https://www.gouvernement.fr/argumentaire/des-nouvelles-avancees-pour-faciliter-l-installation-des-jeunes-agriculteurs",
@@ -2556,30 +2597,30 @@ export default [
   },
   {
     question:
-      "Welchen Ansatz soll man für geografische Angaben und Qualität wählen?",
+      "Welchen Ansatz sollte man für geografische Angaben und Qualitätskennzeichnungen wählen?",
     answers: [
       {
-        text: "Einfache und klare Angaben, überwacht von den Mitgliedsstaaten",
+        text: "Einfache und klare Angaben, welche von den Mitgliedsstaaten überwacht werden.",
         partyId: 7,
         id: 1,
       },
       {
-        text: "Eine strengere Kontrolle von Betrug in Zusammenarbeit mit den Bundesländern.",
+        text: "Eine strengere Kontrolle von Betrugsfällen in Zusammenarbeit mit den Staaten.",
         partyId: 5,
         id: 2,
       },
       {
-        text: "Es muss sichergestellt werden, dass die internationalen Anzeigen abgedeckt sind, um Nachahmungen zu vermeiden.",
+        text: "Es ist wichtig, sicherzustellen, dass die geografischen Angaben international anerkannt werden, um Nachahmungen zu vermeiden.",
         partyId: 1,
         id: 3,
       },
       {
-        text: "Klare und einfache Anweisungen, überprüft von der Europäischen Kommission.",
+        text: "Klare und einfache Angaben, welche von der Europäischen Kommission überprüft werden. ",
         partyId: 3,
         id: 4,
       },
       {
-        text: "Den Schwerpunkt auf das Herkunftsland legen, das von der Kommission kontrolliert wird.",
+        text: "Den Schwerpunkt auf das Ursprungsgebiet legen, welches von der Kommission überprüft wird.",
         partyId: 2,
         id: 5,
       },
@@ -2589,29 +2630,30 @@ export default [
         id: 6,
       },
       {
-        text: "Die administrativen und finanziellen Zugang zu diesen Informationen vereinfachen.",
+        text: "Den administrativen und finanziellen Zugang zu diesen Angaben vereinfachen.",
         partyId: 6,
         id: 7,
       },
     ],
     category: 6,
     learnMore:
-      "Die Qualitätsrichtlinie der EU zielt darauf ab, spezifische Produktbezeichnungen zu schützen, indem ihre einzigartigen Merkmale in Bezug auf ihre geografische Herkunft und ihr traditionelles Know-how hervorgehoben werden. Geografische Angaben (GI) gewährleisten diese Authentizität, indem sie Verbrauchern ermöglichen, informierte Entscheidungen zu treffen und Herstellern dabei helfen, ihre Produkte besser zu vermarkten. Produkte mit GI sind in Registern aufgeführt, die ihre Merkmale und Spezifikationen detailliert auflisten. Diese Angaben, die als geistiges Eigentum angesehen werden, spielen eine wichtige Rolle in den Handelsverhandlungen der EU. Andere EU-Qualitätssysteme bevorzugen auch traditionelle Produktionsmethoden oder Produkte aus spezifischen geografischen Gebieten.",
+      "Die Qualitätspolitik der EU zielt darauf ab, spezifische Produktbezeichnungen zu schützen, indem ihre einzigartigen Merkmale in Bezug auf ihre geografische Herkunft und ihr traditionelles Know-how hervorgehoben werden. Geografische Angaben (GI) gewährleisten diese Authentizität, indem sie Verbrauchern ermöglichen, informierte Entscheidungen zu treffen und Herstellern dabei helfen, ihre Produkte besser zu vermarkten. Produkte mit GI sind in Registern aufgeführt, die ihre Merkmale und Spezifikationen detailliert auflisten. Diese Angaben, die als geistiges Eigentum angesehen werden, spielen eine wichtige Rolle in den Handelsverhandlungen der EU. Andere EU-Qualitätssysteme bevorzugen auch traditionelle Produktionsmethoden oder Produkte aus spezifischen geografischen Gebieten.",
     id: 56,
     sources:
       "https://agriculture.ec.europa.eu/farming/geographical-indications-and-quality-schemes_fr",
+    express: false,
   },
   {
     question:
       "Sollte der Status des Wolfs als vom Aussterben bedrohte Art überprüft werden?",
     answers: [
       {
-        text: "Weil sie die Bewohner ländlicher Gebiete in Gefahr bringen.",
+        text: "Ja, da sie die Bewohner ländlicher Gebiete in Gefahr bringen.",
         partyId: 7,
         id: 1,
       },
       {
-        text: "Ja, es muss dem übermäßigen Schutz der Wölfe zu Lasten der Züchter ein Ende gesetzt werden.",
+        text: "Ja, es ist notwendig, dem übermäßigen Schutz der Wölfe auf Kosten der Viehzüchter ein Ende zu setzen.",
         partyId: 5,
         id: 2,
       },
@@ -2626,27 +2668,28 @@ export default [
         id: 4,
       },
       {
-        text: "Es reicht nicht aus, den Status zu ändern, um eine Antwort zu geben, es braucht ein ernsthaftes Regelwerk.",
+        text: "Es reicht nicht aus, den Status zu ändern, es braucht einen echten rechtlichen Rahmen.",
         partyId: 2,
         id: 5,
       },
       {
-        text: "Nein, Maßnahmen zur Unterstützung von Landwirten und die Erlaubnis, problematische Wölfe zu entfernen, reichen aus.",
+        text: "Nein, die Maßnahmen zur Unterstützung der Landwirte und die Genehmigung zur Beseitigung problematischer Wölfe sind ausreichend.",
         partyId: 4,
         id: 6,
       },
       {
-        text: "Nein, die Population der Wölfe ist immer noch anfällig und muss weiterhin geschützt werden.",
+        text: "Nein, die Population der Wölfe ist immer noch gefährdet und muss geschützt bleiben.",
         partyId: 6,
         id: 7,
       },
     ],
     category: 6,
     learnMore:
-      "Die Rückkehr des Wolfes in Gebieten der EU führt zu Spannungen mit den örtlichen Landwirten und Jägern, insbesondere in Abwesenheit wirksamer Viehschutzmaßnahmen. Präsidentin von der Leyen ruft zu lokalem und nationalem Handeln auf und betont die bestehende Flexibilität in der EU-Gesetzgebung. Die Rückkehr des Wolfes wirft Bedenken auf, ist jedoch entscheidend für das ökologische Gleichgewicht, auch wenn sie mit Risiken durch Vieh-Attacken verbunden ist. Eine Überprüfung des Status des Wolfes als bedrohte Art hätte Auswirkungen auf Jagd- und Regulierungsgenehmigungen, die hauptsächlich von Landwirten zur Herdenschutz gefordert werden.",
+      "Die Rückkehr des Wolfes in Gebieten der EU führt zu Spannungen mit den örtlichen Landwirten und Jägern, insbesondere in Abwesenheit wirksamer Viehschutzmaßnahmen. Kommissionspräsidentin von der Leyen ruft zu lokalem und nationalem Handeln auf und betont die bestehende Flexibilität in der EU-Gesetzgebung. Die Rückkehr des Wolfes wirft Bedenken auf, ist jedoch entscheidend für das ökologische Gleichgewicht, auch wenn sie mit Risiken durch Vieh-Attacken verbunden ist. Eine Überprüfung des Status des Wolfes als bedrohte Art hätte Auswirkungen auf Jagd- und Regulierungsgenehmigungen, die hauptsächlich von Landwirten zur Herdenschutz gefordert werden.",
     id: 57,
     sources:
       "https://www.euractiv.fr/section/agriculture-alimentation/news/la-commission-propose-de-sortir-le-loup-de-son-statut-despece-strictement-protegee/",
+    express: false,
   },
   {
     question:
@@ -2658,32 +2701,32 @@ export default [
         id: 1,
       },
       {
-        text: "Die administrativen und finanziellen Belastungen für Landwirte reduzieren.",
+        text: "Die Reduzierung der administrativen und finanziellen Belastungen für Landwirte. ",
         partyId: 5,
         id: 2,
       },
       {
-        text: "Die Zuschüsse und Unterstützungen müssen den Landwirten gewährt werden, die im Sinne der Ernährungssicherheit handeln.",
+        text: "Die Subventionen und Hilfen sollten den Landwirten zugewiesen werden, die zur Sicherung der Lebensmittelversorgung beitragen.",
         partyId: 1,
         id: 3,
       },
       {
-        text: "Die Lebensmittelsicherheit verbessern.",
+        text: "Die Verbesserung der Lebensmittelsicherheit.",
         partyId: 3,
         id: 4,
       },
       {
-        text: "Eine Strategie für die langfristige Erneuerung der Generationen von Landwirten.",
+        text: "Eine Strategie für den langfristigen Generationswechsel von Landwirten.",
         partyId: 2,
         id: 5,
       },
       {
-        text: "Die ökologische Transition sicherstellen",
+        text: "Die ökologische Transformation sicherstellen.",
         partyId: 4,
         id: 6,
       },
       {
-        text: "Das sozio-ökologische Modell der europäischen Landwirtschaft ändern",
+        text: "Das sozio-ökologische Modell der europäischen Landwirtschaft ändern.",
         partyId: 6,
         id: 7,
       },
@@ -2698,10 +2741,10 @@ export default [
   },
   {
     question:
-      "Welche Strategie soll man übernehmen, um den Zugang zu Proteinen zu gewährleisten?",
+      "Welche Strategie sollte verfolgt werden, um den Zugang zu Proteinen zu gewährleisten?",
     answers: [
       {
-        text: "Die europäische Kochkultur und die Lebensmittelsicherheit sollten uns darauf setzen lassen, auf Fleisch und Hülsenfrüchte zu setzen.",
+        text: "Die europäische Kochkultur und die Lebensmittelsicherheit sollten uns dazu veranlassen, auf Fleisch und Hülsenfrüchte zu setzen.",
         partyId: 7,
         id: 1,
       },
@@ -2711,7 +2754,7 @@ export default [
         id: 2,
       },
       {
-        text: "Eine bessere und umfangreichere Produktion sollte sowohl für den menschlichen als auch für den tierischen Verzehr gefördert werden.",
+        text: "Eine bessere und umfangreichere Produktion sollte sowohl für den menschlichen, als auch für den tierischen Verzehr gefördert werden.",
         partyId: 1,
         id: 3,
       },
@@ -2742,13 +2785,14 @@ export default [
     id: 59,
     sources:
       "https://www.europarl.europa.eu/doceo/document/TA-9-2023-0375_FR.html",
+    express: false,
   },
   {
     question:
       "Sind Freihandelsabkommen für die europäische Landwirtschaft von Vorteil?",
     answers: [
       {
-        text: "Nein, Freihandelsabkommen stellen eine Gefahr für unsere landwirtschaftlichen Betriebe dar.",
+        text: "Nein, Freihandelsabkommen stellen eine Gefahr für die landwirtschaftlichen Betriebe dar.",
         partyId: 7,
         id: 1,
       },
@@ -2763,7 +2807,7 @@ export default [
         id: 3,
       },
       {
-        text: "Sie sind wirtschaftlich, umweltfreundlich und förderlich für ihre Ernährungssicherheit.",
+        text: "Ja, sie sind vorteilhaft in wirtschaftlicher und ökologischer Hinsicht und förderlich für die Ernährungssicherheit.",
         partyId: 3,
         id: 4,
       },
@@ -2773,7 +2817,7 @@ export default [
         id: 5,
       },
       {
-        text: "Nein, weil wir Abkommen mit Ländern unterzeichnen, die Umweltstandards nicht respektieren.",
+        text: "Nein, weil wir Abkommen mit Ländern unterzeichnen, welche die Umweltstandards nicht respektieren.",
         partyId: 4,
         id: 6,
       },
@@ -2785,7 +2829,7 @@ export default [
     ],
     category: 6,
     learnMore:
-      "Seit Ende der 2000er Jahre hat die EU ihre Handelspolitik gestärkt, indem sie zahlreiche Abkommen unterzeichnet hat, um neue Märkte für europäische Unternehmen zu öffnen. Diese Abkommen, wie CETA mit Kanada oder JEFTA mit Japan, zielen darauf ab, Handelshemmnisse abzubauen, das Wirtschaftswachstum zu fördern und Streitigkeiten transparent zu regeln. Sie werden jedoch kritisiert wegen mangelnder Transparenz, potenziellem Einfluss auf europäische Standards und Arbeitsplätze sowie potenziellen Auswirkungen auf die Demokratie. Trotzdem führt die EU die Verhandlungen über neue Abkommen fort, insbesondere mit dem Mercosur, Mexiko und Neuseeland, während sie auch Gespräche mit Thailand und Australien führt.",
+      "Seit dem Ende der 2000er Jahre hat die EU ihre Handelspolitik verstärkt und zahlreiche Abkommen unterzeichnet, um neuen Märkten für europäische Unternehmen zu öffnen. Diese Abkommen, wie zum Beispiel das CETA mit Kanada oder das JEFTA mit Japan, zielen darauf ab, Handelshemmnisse abzubauen, das Wirtschaftswachstum zu fördern und Streitigkeiten transparent zu regeln. Sie werden jedoch für ihre mangelnde Transparenz, ihr potenzielles Auswirken auf europäische Normen und Arbeitsplätze sowie ihre potenzielle Auswirkung auf die Demokratie kritisiert. Trotzdem setzt die EU die Verhandlungen über neue Abkommen fort, unter anderem mit dem Mercosur, Mexiko und Neuseeland, während Gespräche mit Thailand und Australien geführt werden.",
     id: 60,
     sources:
       "https://www.touteleurope.eu/economie-et-social/ceta-jefta-mercosur-qu-est-ce-qu-un-accord-de-libre-echange-de-nouvelle-generation/",
@@ -2796,77 +2840,78 @@ export default [
       "In Bezug auf den möglichen Beitritt der Ukraine und Moldawiens zur Europäischen Union...",
     answers: [
       {
-        text: "Sie sollte idealerweise ohne jegliche Behandlung behandelt werden.",
+        text: "sollten sie idealerweise ohne jegliche Vorzugsbehandlung behandelt werden.",
         partyId: 7,
         id: 1,
       },
       {
-        text: "Sie ist natürlich, angesichts der Fortschritte, die in beiden Ländern gemacht wurden.",
+        text: "ist ein Beitritt der Länder angesichts ihrer Fortschritte natürlich.",
         partyId: 5,
         id: 2,
       },
       {
-        text: "Sie ist notwendig und verdient, sie muss vor 2030 erfolgen, wenn die Reformen umgesetzt werden.",
+        text: "ist ein Beitritt notwendig und verdient und muss vor 2030 erfolgen, wenn die Reformen umgesetzt werden.",
         partyId: 1,
         id: 3,
       },
       {
-        text: "Sie gehören zur europäischen Familie, aber die EU muss sich auf die Erweiterung vorbereiten.",
+        text: "gehören die Länder zur europäischen Familie, aber die EU muss sich auf die Erweiterung vorbereiten.",
         partyId: 3,
         id: 4,
       },
       {
-        text: "Es ist ein wichtiges Symbol, aber zunächst muss der Wiederaufbau ermöglicht werden.",
+        text: "ist ein Beitritt st ein wichtiges Symbol, aber zunächst muss der Wiederaufbau ermöglicht werden.",
         partyId: 2,
         id: 5,
       },
       {
-        text: "Es ist eine gute Nachricht, ihr Platz ist in der EU.",
+        text: "ist ein möglciher Beitritt eine gute Nachricht, der Platz der Länder ist in der EU.",
         partyId: 4,
         id: 6,
       },
       {
-        text: "sie muss aufgrund ihres demokratischen und wirtschaftlichen Standards zurückgewiesen werden.",
+        text: "muss ein Beitritt zurückgewiesen werden, da die demokratischen und wirtschaftlichen Standards nicht erfüllt werden.",
         partyId: 6,
         id: 7,
       },
     ],
     category: 7,
     learnMore:
-      "Die Ukraine ist eine ehemalige Sowjetrepublik, die seit 2014 militärischen Druck von Russland ausgesetzt ist. Im Jahr 2022 wurde ein Teil ihres Territoriums von Russland angegriffen, und der Krieg dauert bis heute an. Dieser Krieg findet statt, während die Ukraine einen Prozess der Demokratisierung und Modernisierung der Wirtschaft eingeleitet hat, um sich der EU anzunähern. Moldawien, ein kleiner Staat zwischen Rumänien und der Ukraine, verfolgt die gleichen demokratischen Projekte. Obwohl es nicht direkt von Russland angegriffen wurde, erklärte ein Teil seines Territoriums (die Region Transnistrien) 2016 einseitig seine Autonomie und beantragte erfolglos seine Integration in Russland. Ende 2023 empfahl die Europäische Kommission angesichts der Bemühungen beider Länder und der außergewöhnlichen Situation dem Rat der EU, Beitrittsverhandlungen zu eröffnen.",
+      "Die Ukraine ist eine ehemalige Sowjetrepublik, die seit 2014 militärischem Druck von Russland ausgesetzt ist. 2022 wurde ein Teil des ukrainischen Territoriums von Russland angegriffen, und dieser Krieg dauert bis heute an. Dieser Krieg findet zu einer Zeit statt, in der in der Ukraine ein Demokratisierungs- und wirtschaftlicher Modernisierungsprozess mit dem Ziel der Annäherung an die EU stattfand. Moldawien ist ein kleiner Staat zwischen Rumänien und der Ukraine und erfuhr die gleichen demokratischen Entwicklungen, und, obwohl nicht unmittelbar von Russland angegriffen, haben sich bestimmte Gebiete (Transnistrien) unilateral für autonom erklärt und in 2016 erfolglos die Reintegration Russlands erfragt. Ende 2023 hat die Kommission vor dem Hintergrund der Anstrengungen der beiden Länder dem Rat der EU die Aufnahme von Beitrittsverhandlungen für beide Länder empfohlen.",
     id: 61,
     sources: "https://www.eeas.europa.eu/eeas/standwithukraine_en",
+    express: false,
   },
   {
     question: "Wie sollen die Beziehungen mit China betrachtet werden?",
     answers: [
       {
-        text: "Eine wichtige Beziehung, ohne abhängig zu sein.",
+        text: "Es ist eine wichtige Beziehung, aber Abhängigkeiten müssen vermieden werden.",
         partyId: 7,
         id: 1,
       },
       {
-        text: "Wir müssen unsere Abhängigkeit von einer autoritären und kommunistischen Regierung reduzieren.",
+        text: "Die Abhängigkeiten von einer autoritären und kommunistischen Regierung müssen reduziert werden.",
         partyId: 5,
         id: 2,
       },
       {
-        text: "Es ist notwendig, die europäische Zusammenarbeit zu stärken, um diesem systemischen Rivalen zu begegnen.",
+        text: "Es ist notwendig, die europäische Zusammenarbeit zu stärken, um diesem systemischen Rivalen entgegen zu treten.",
         partyId: 1,
         id: 3,
       },
       {
-        text: "Es ist ein Handelspartner, aber auch ein Rivale und systemischer Wettbewerber",
+        text: "China ist ein Handelspartner, aber auch ein Rivale und systemischer Wettbewerber.",
         partyId: 3,
         id: 4,
       },
       {
-        text: "Es bedarf einer gemeinsamen und realistischen europäischen Strategie, die auf dem Dialog mit Peking basiert.",
+        text: "Es bedarf einer gemeinsamen und realistischen europäischen Strategie, die auf Dialog mit Peking basiert.",
         partyId: 2,
         id: 5,
       },
       {
-        text: "Es ist wichtig, eine realistische Strategie zu verfolgen, die es ermöglicht, mit China bei globalen Themen zusammenzuarbeiten.",
+        text: "Es ist wichtig, eine realistische Strategie zu verfolgen, die es ermöglicht mit China bei globalen Themen zusammenzuarbeiten.",
         partyId: 4,
         id: 6,
       },
@@ -2878,22 +2923,23 @@ export default [
     ],
     category: 7,
     learnMore:
-      "China ist der drittgrößte Handelspartner der Europäischen Union, hinter dem Vereinigten Königreich und den USA, und macht 10 % des Handelsvolumens der EU aus. Allerdings ist der chinesische Staat tendenziell autoritär, und sein derzeitiger Präsident Xi Jinping hat volle Macht bis 2028, was die verfassungsmäßige Begrenzung von zwei Amtszeiten überschreitet. Der chinesische Staat betreibt auch eine Politik der ethnischen Säuberung in der muslimischen Region Xinjiang im Osten des Landes. Schwer zu akzeptieren aus menschenrechtlicher Sicht, hat China auch expansionsorientierte Bestrebungen, die gegen das Völkerrecht und die nationale Souveränität vieler Länder verstoßen.",
+      "China ist nach Großbritannien und den USA der drittgrößte Handelspartner der Europäischen Union und macht 10% des EU-Handels aus. Der chinesische Staat weist jedoch eine autoritäre Tendenz auf und sein derzeitiger Präsident Xi Jinping hat bis 2028 volle Machtbefugnisse und überschreitet damit die verfassungsmäßige Grenze von zwei Amtszeiten.  Der chinesische Staat betreibt außerdem eine Politik der ethnischen Säuberung in der muslimisch bevölkerten Region Xinjiang im Osten des Landes. Aus menschenrechtlicher Sicht kaum akzeptabel, verfolgt China auch expansionistische Ziele, die gegen das Völkerrecht und die nationale Souveränität vieler Länder verstoßen.",
     id: 62,
     sources:
       "https://www.europarl.europa.eu/news/fr/press-room/20210910IPR11917/la-vision-du-parlement-concernant-la-nouvelle-strategie-de-l-ue-pour-la-chine",
+    express: false,
   },
   {
     question:
       "Sollte man eine Erweiterung der EU auf die Balkanländer in Betracht ziehen?",
     answers: [
       {
-        text: "Dies ist die strategische Priorität der Europäischen Union und ihrer Mitgliedsstaaten.",
+        text: "Es handelt sich um die strategische Priorität der Europäischen Union und ihrer Mitgliedsstaaten.",
         partyId: 7,
         id: 1,
       },
       {
-        text: "Die Situationen variieren stark je nach Land.",
+        text: "Die Situationen variieren je nach Land stark.",
         partyId: 5,
         id: 2,
       },
@@ -2903,7 +2949,7 @@ export default [
         id: 3,
       },
       {
-        text: "Ja, es geht um die Glaubwürdigkeit der Union als einziger tragfähiger Verbündeter für die Region.",
+        text: "Ja, es geht um die Glaubwürdigkeit der EU als einziger tragfähiger Verbündeter für die Region.",
         partyId: 3,
         id: 4,
       },
@@ -2913,68 +2959,70 @@ export default [
         id: 5,
       },
       {
-        text: "Ja, wir müssen uns beeilen, sonst überlassen wir die Region anderen Mächten.",
+        text: "Ja, es muss schneller gehandelt werden, sonst verlieren wir die Region an andere Mächte.",
         partyId: 4,
         id: 6,
       },
       {
-        text: "Es muss darauf geachtet werden, keine Doppelstandards bei der Erweiterung anzuwenden.",
+        text: "Es muss darauf geachtet werden, bei der Erweiterung nicht mit doppeltem Maß zu messen.",
         partyId: 6,
         id: 7,
       },
     ],
     category: 7,
     learnMore:
-      "Die EU nutzt Erweiterungen als eine Politik zur schrittweisen Befriedung des Kontinents. Zu diesem Zweck traten im Jahr 2004 viele der ehemaligen Sowjetrepubliken der EU bei. Im Jahr 1999, als die aufeinanderfolgenden Unabhängigkeitskriege der Republiken des ehemaligen Jugoslawien zu Ende gingen, startete die EU ein schrittweises Programm zur Assoziation mit dem ultimativen Ziel des Beitritts. Im Jahr 2013 trat das erste Land des ehemaligen Jugoslawien, Kroatien, der EU bei, dann dem Schengen-Raum und schließlich der Eurozone, wodurch es vollständig in die EU integriert wurde. Alle anderen Länder sind offizielle Kandidaten (mit Ausnahme des Kosovo) und Verhandlungen wurden aufgenommen und laufen in unterschiedlichem Tempo.",
+      "Die EU nutzt Erweiterungen als Mittel zur schrittweisen Befriedung des Kontinents. Mit diesem Ziel trat 2004 ein Großteil der ehemaligen Sowjetrepubliken der EU bei. Als 1999 die aufeinanderfolgenden Unabhängigkeitskriege der jugoslawischen Republiken zu Ende gingen, startete die EU ein schrittweises Assoziierungsprogramm mit dem Endziel, die Mitgliedschaft zu erreichen. Im Jahr 2013 trat das erste Land des ehemaligen Jugoslawien, Kroatien, der EU, dann Schengen und schließlich der Eurozone bei, wodurch es vollständig in die EU integriert wurde. Alle anderen Länder sind offizielle Beitrittskandidaten (mit Ausnahme Kosovos) und es wurden Verhandlungen aufgenommen, die unterschiedlich schnell voranschreiten.",
     id: 63,
     sources:
       "https://www.europarl.europa.eu/factsheets/fr/sheet/168/the-western-balkans",
+    express: false,
   },
   {
     question:
       "In der aktuellen Situation zwischen Israel und Palästina schätze ich, dass...",
     answers: [
       {
-        text: "Die Hamas ist allein verantwortlich für diese Situation, in der sich Israel legitim verteidigt.",
+        text: "die Hamas allein für diese Situation verantwortlich ist, Israel verteidigt sich legitim.",
         partyId: 7,
         id: 1,
       },
       {
-        text: "Israel muss alles tun, um sich vor terroristischen Angriffen auf seinem Boden zu schützen.",
+        text: "Israel alles tun muss, um sich vor terroristischen Angriffen auf eigenem Boden zu schützen.",
         partyId: 5,
         id: 2,
       },
       {
-        text: "Israel hat das Recht, sich gegen die Hamas zu verteidigen, indem die Palästinenser verschont werden.",
+        text: "Israel das Recht hat, sich gegen die Hamas zu verteidigen, dabei die Palästinenser aber verschonen sollte.",
         partyId: 1,
         id: 3,
       },
       {
-        text: "Die Unterzeichnung eines dauerhaften Waffenstillstands zur Vermeidung einer humanitären Katastrophe ist entscheidend",
+        text: "die Unterzeichnung eines dauerhaften Waffenstillstands zur Vermeidung einer humanitären Katastrophe äußerst wichtig ist.",
         partyId: 3,
         id: 4,
       },
       {
-        text: "Es ist Frieden und eine Zwei-Staaten-Lösung, die Vorrang haben sollte.",
+        text: "der Frieden und eine Zwei-Staaten-Lösung bevorzugt werden sollten.",
         partyId: 2,
         id: 5,
       },
       {
-        text: "Es handelt sich um eine weitere Demonstration der kolonialen Besetzung Palästinas durch Israel.",
+        text: "es sich erneut um eine Demostration der kolonialen Besetzung Palästinas durch Israel handelt.",
         partyId: 4,
         id: 6,
       },
       {
-        text: "Israel begeht Völkermord gegen die Palästinenser.",
+        text: "Israel einen Völkermord an den Palästinensern begeht.",
         partyId: 6,
         id: 7,
       },
     ],
     category: 7,
     learnMore:
-      "Der israelisch-palästinensische Konflikt ist ein Konflikt im Nahen Osten, der hauptsächlich zwei Staaten betrifft, die zwei Bevölkerungsgruppen vertreten: eine jüdische (durch den Staat Israel) und eine muslimische (der Staat Palästina, der von den Vereinten Nationen nicht offiziell anerkannt wird). Seit 1948 erschüttern mehrere Kriege und Krisen, sowohl interne als auch mit ausländischen Konfliktparteien, die Region. Seit dem 7. Oktober wurden die Spannungen durch terroristische Angriffe wieder angefacht, was eine äußerst gewaltsame militärische Reaktion nach sich zog. Dies ist ein äußerst komplexes, sensibles und politisiertes Thema, das hier nicht zusammengefasst werden kann. Wir ermutigen Sie daher, sich über vertrauenswürdige Quellen zu informieren.",
+      "Der israelisch-palästinensische Konflikt ist ein Konflikt im Nahen Osten, in dem sich hauptsächlich zwei Staaten gegenüberstehen, die zwei Bevölkerungsgruppen repräsentieren: eine jüdischen Glaubens (vertreten durch den Staat Isräel) und eine muslimischen Glaubens (den Staat Palästina, der von den Vereinten Nationen nicht offiziell anerkannt wird). Seit 1948 wurde die Region von mehreren Kriegen und Krisen erschüttert, an welchen sowohl zivile als auch ausländische Kriegsparteien beteiligt waren. Seit dem 7. Oktober wurden die Spannungen durch Terroranschläge neu entfacht, die zu einer äußerst gewalttätigen militärischen Reaktion führten. Es handelt sich hierbei um ein äußerst komplexes, sensibles und politisiertes Thema, welches hier nicht zusammengefasst werden kann. Wir empfehlen Ihnen daher, sich aus zuverlässigen Quellen zu informieren.",
     id: 64,
     sources: "https://www.eeas.europa.eu/eeas/middle-east-peace-process_en",
+    express: false,
   },
   {
     question:
@@ -2986,12 +3034,12 @@ export default [
         id: 1,
       },
       {
-        text: "Man sollte keine Kompetenzen im Zusammenhang mit der GASP delegieren.",
+        text: "Man sollte keine Kompetenzen im Zusammenhang mit der GASP an die EU delegieren.",
         partyId: 5,
         id: 2,
       },
       {
-        text: "Es bedarf mehr Zusammenarbeit und Koordination für die GASP.",
+        text: "Es braucht mehr Zusammenarbeit und Koordination bei der GASP.",
         partyId: 1,
         id: 3,
       },
@@ -3006,65 +3054,66 @@ export default [
         id: 5,
       },
       {
-        text: "Es muss auf die Menschenrechte und den Fortschritt ausgerichtet sein.",
+        text: "Sie muss auf die Menschenrechte und den Fortschritt ausgerichtet sein.",
         partyId: 4,
         id: 6,
       },
       {
-        text: "Weniger auf die wirtschaftlichen Interessen von multinationalen Unternehmen ausgerichtet.",
+        text: "Sie muss weniger auf die wirtschaftlichen Interessen multinationaler Unternehmen ausgerichtet sein.",
         partyId: 6,
         id: 7,
       },
     ],
     category: 7,
     learnMore:
-      'Die Gemeinsame Außen- und Sicherheitspolitik (GASP) ist die Struktur, die es der EU ermöglicht, Positionen zur Außenpolitik zu haben. Es handelt sich um eine Hoheitskompetenz, die normalerweise den Mitgliedstaaten gehört, die sie jedoch manchmal an die EU delegieren, da sie ein größeres wirtschaftliches und demographisches Gewicht hat. Auf administrativer Ebene verfügt die EU über einen eigenen diplomatischen Dienst, den Europäischen Auswärtigen Dienst. Auf politischer Ebene werden die Entscheidungen vom Rat der EU getroffen, in dem die Mitgliedstaaten vertreten sind. Damit eine Entscheidung in Bezug auf die GASP im Rat angenommen wird, ist die einstimmige Zustimmung der Anwesenden erforderlich, was bedeutet, dass ein Land die anderen 26 blockieren kann. Dies unterscheidet sich vom allgemeinen Arbeitsweise des Rates, wo die Abstimmungen mit einer "qualifizierten Mehrheit" erfolgen (auch bekannt als "doppelte Mehrheit"), wobei die Zustimmung von 55% der Mitgliedstaaten erreicht werden muss, die mindestens 65% der Bevölkerung der EU repräsentieren.',
+      'Die Gemeinsame Außen- und Sicherheitspolitik (GASP) ist die Struktur, die es der EU ermöglicht, außenpolitische Positionen zu vertreten. Es handelt sich hierbei um eine hoheitliches Recht der Mitgliedstaaten, die dieses jedoch manchmal an die EU delegieren, welche ein größeres wirtschaftliches und demografisches Gewicht hat. Auf administrativer Ebene hat die EU ihren eigenen diplomatischen Dienst, den Europäischen Auswärtigen Dienst. Auf politischer Ebene werden Entscheidungen vom Rat der EU getroffen, in welchem die Mitgliedsstaaten vertreten sind. Damit ein GASP-Beschluss im Rat angenommen wird, ist die Einstimmigkeit der Stimmen der Anwesenden erforderlich, was bedeutet, dass ein einziges Land alle 26 anderen blockieren kann. Dies unterscheidet sich von der allgemeinen Arbeitsweise des Rates, wo Abstimmungen mit "qualifizierter Mehrheit" (auch "doppelte Mehrheit" genannt) erfolgen, wobei die Ja-Stimmen 55% der Mitgliedsstaaten, die mindestens 65% der EU-Bevölkerung repräsentieren, umfassen müssen.',
     id: 65,
     sources:
       "https://eur-lex.europa.eu/FR/legal-content/glossary/common-foreign-and-security-policy-cfsp.html",
+    express: false,
   },
   {
-    question: "Die NATO ist eine Organisation...",
+    question: "Die NATO...",
     answers: [
       {
-        text: "der Zusammenarbeit zur Verteidigung Europas",
+        text: "ist eine Organisation der Zusammenarbeit, die Europas Verteidigung ermöglicht.",
         partyId: 7,
         id: 1,
       },
       {
-        text: "essentiell, da es die einzige tragfähige Verteidigungsquelle in Europa ist",
+        text: "ist essentiell, da es die einzige tragfähige Verteidigungsinstanz in Europa ist.",
         partyId: 5,
         id: 2,
       },
       {
-        text: "wichtig, der eine europäische Verteidigungssäule benötigt, um gestärkt zu werden",
+        text: "ist eine wichtige Organisation, die eine eigeneuropäische Verteidigung benötigt, um gestärkt zu werden.",
         partyId: 1,
         id: 3,
       },
       {
-        text: "ermöglicht die Entwicklung einer echten Europäischen Union der Verteidigung",
+        text: "ermöglicht die Entwicklung einer wirklichen Europäischen Union der Verteidigung.",
         partyId: 3,
         id: 4,
       },
       {
-        text: "Partner der EU durch seine kollektive Verteidigungsstruktur",
+        text: "ist durch seine kollektive Verteidigungsstruktur Partnerorganisation der EU.",
         partyId: 2,
         id: 5,
       },
       {
-        text: "zusätzlich zur europäischen Verteidigung ohne Zwang für die Mitgliedsstaaten",
+        text: "ist eine komplementäre Organisation zur europäischen Verteidigung, ohne Zwang für die Mitgliedsstaaten.",
         partyId: 4,
         id: 6,
       },
       {
-        text: "der das Ziel der Förderung des Friedens in der EU nicht respektiert",
+        text: "respektiert das Ziel der Förderung des Friedens der EU nicht.",
         partyId: 6,
         id: 7,
       },
     ],
     category: 7,
     learnMore:
-      "Die Nordatlantikvertragsorganisation (NATO) ist ein Bündnis zur Verteidigung und militärischen Zusammenarbeit, das 31 Länder einschließt, darunter die Vereinigten Staaten, Kanada, das Vereinigte Königreich und die meisten EU-Länder (außer Österreich und Irland). Sie wurde gegründet, um einen Angriff der Sowjetunion auf europäische Länder zu verhindern. Artikel 5 des Vertrags sieht vor, dass ein Angriff auf ein Mitglied des Bündnisses als Angriff auf alle Mitglieder des Bündnisses betrachtet wird, was eine direkte Attacke abschreckt, da die NATO 55% der weltweiten Militärausgaben ausmacht und über 3 Millionen Soldaten im Dienst hat. Mit dem Krieg in der Ukraine trat Finnland 2023 der NATO bei und Schweden soll dies 2024 ebenfalls tun. Die Mitgliedschaft in der militärischen Organisation ist jedoch theoretisch an eine jährliche Ausgabe von 2% des BIP eines Mitgliedsstaats für Aktivitäten innerhalb der NATO gebunden, ein Kriterium, das die meisten Mitglieder nicht erfüllen.",
+      "Die Nordatlantikvertrags-Organisation (NATO) ist ein Verteidigungsbündnis basierend auf militärischer Kooperation zwischen 31 Ländern, darunter die USA, Kanada, Großbritannien und die meisten EU-Länder (außer Österreich und Irland). Sie wurde mit dem Ziel gegründet, einen Angriff der Sowjetunion gegen europäische Staaten zu verhindern. Artikel 5 des Vertrags sieht vor, dass jeder Angriff gegen ein Mitglied des Bündnisses ein Angriff gegen alle Mitglieder des Bündnisses ist. Dies schreckt von einem Frontalangriff ab, da die NATO 55% der weltweiten Militärausgaben ausmacht und über 3 Millionen Soldaten im Dienst hat. Aufgrund des Krieges in der Ukraine trat Finnland 2023 der NATO bei, und Schweden wird dies voraussichtlich 2024 auch tun. Die Mitgliedschaft in der Militärorganisation ist jedoch theoretisch davon abhängig, dass ein Mitgliedsstaat jährlich 2% seines BIP für Maßnahmen innerhalb der NATO ausgibt, ein Kriterium, das die meisten Mitglieder nicht erfüllen.",
     id: 66,
     sources: "https://www.nato.int/",
     express: true,
@@ -3073,44 +3122,44 @@ export default [
     question: "Die Beziehung der EU zu den USA ist...",
     answers: [
       {
-        text: "eine strategische Beziehung, die vertieft werden muss, um sich von China zu emanzipieren",
+        text: "eine strategische Beziehung, die vertieft werden muss, um sich von China zu emanzipieren.",
         partyId: 7,
         id: 1,
       },
       {
-        text: "Die EU kann sowohl kommerzielle als auch defensive Interessen vertreten, ohne dass sie eine eigene Armee benötigt.",
+        text: "sowohl von kommerzieller als auch verteidigungstechnischer Natur, ohne dass die EU eine eigene Armee benötigt.",
         partyId: 5,
         id: 2,
       },
       {
-        text: "eine bewegte Zusammenarbeit, die die Autonomie der EU nicht beeinträchtigen sollte",
+        text: "eine bewegte Zusammenarbeit, die die Autonomie der EU nicht beeinträchtigen sollte.",
         partyId: 1,
         id: 3,
       },
       {
-        text: "ist die geopolitische Priorität des Jahrzehnts, die gestärkt werden muss",
+        text: "die geopolitische Priorität des Jahrzehnts, die es zu stärken gilt.",
         partyId: 3,
         id: 4,
       },
       {
-        text: "eine Allianz, solange die Demokraten an der Macht sind",
+        text: "eine Allianz, solange die Demokraten an der Macht sind.",
         partyId: 2,
         id: 5,
       },
       {
-        text: "Eine Partnerschaft, die Frieden und Stabilität in Europa und der Welt garantiert.",
+        text: "eine Partnerschaft, die Frieden und Stabilität in Europa und der Welt garantiert.",
         partyId: 4,
         id: 6,
       },
       {
-        text: "schädlich sowohl auf militärischer als auch auf sozialer Ebene",
+        text: "sowohl auf militärischer, als auch auf sozialer Ebene schädlich.",
         partyId: 6,
         id: 7,
       },
     ],
     category: 7,
     learnMore:
-      "Die Vereinigten Staaten von Amerika sind neben dem wichtigsten Handelspartner der EU (18%) vor allem ein Sicherheitspartner und der größte Beitragende der NATO. Die USA haben auch historisch zum Sieg der demokratischen Kräfte im Zweiten Weltkrieg und zum Wiederaufbau der Wirtschaften in Westeuropa nach dem Krieg beigetragen. Dennoch nehmen die Meinungsverschiedenheiten zwischen den USA und Europa zu, insbesondere während der Amtszeiten der republikanischen Partei (Bush, Trump...). Im Allgemeinen entfernt sich die US-Außenpolitik von Europa, um sich Asien zuzuwenden.",
+      "Die Vereinigten Staaten von Amerika sind nicht nur der wichtigste Handelspartner der EU (18%), sondern auch ein Sicherheitspartner und der größte Beitragende der NATO. Außerdem haben die USA historisch zum Sieg der demokratischen Kräfte im Zweiten Weltkrieg und zum Wiederaufbau der Wirtschaften in Westeuropa nach dem Krieg beigetragen. Jedoch nehmen die Meinungsverschiedenheiten zwischen den USA und Europa zu, insbesondere während der Amtszeiten der republikanischen Partei (Bush, Trump...). Im Allgemeinen entfernt sich die US-Außenpolitik von Europa, um sich Asien zuzuwenden.",
     id: 67,
     sources:
       "https://www.eeas.europa.eu/eeas/european-union-united-states-relations_en",
@@ -3120,50 +3169,51 @@ export default [
     question: "In Bezug auf die Beziehungen zur Türkei muss die EU...",
     answers: [
       {
-        text: "beenden Sie die Verhandlungen über den Beitritt und die Normalisierung",
+        text: "die Verhandlungen über den Beitritt und die Normalisierung beenden.",
         partyId: 7,
         id: 1,
       },
       {
-        text: "ohne die Beziehungen einzufrieren zu dialogieren, insbesondere über die Visaliberalisierung",
+        text: "ohne die Beziehungen einzufrieren einen Dialog fördern, insbesondere über die Visafreiheit.",
         partyId: 5,
         id: 2,
       },
       {
-        text: "den Beitrittsprozess aufgrund der aktuellen Regierung aussetzen",
+        text: "den Beitrittsprozess aufgrund der aktuellen Regierung aussetzen.",
         partyId: 1,
         id: 3,
       },
       {
-        text: "eine andere Form der Zusammenarbeit suchen und den Beitritt aufgeben",
+        text: "eine andere Form der Zusammenarbeit finden und den Beitritt aufgeben.",
         partyId: 3,
         id: 4,
       },
       {
-        text: "geschlossen bleiben, bis die Türkei unsere Werte respektiert.",
+        text: "geschlossen bleiben, bis die Türkei die europäischen Werte respektiert.",
         partyId: 2,
         id: 5,
       },
       {
-        text: "den vom türkischen Volk gewünschten Beitrittsprozess fortsetzen",
+        text: "den vom türkischen Volk gewünschten Beitrittsprozess fortsetzen.",
         partyId: 4,
         id: 6,
       },
       {
-        text: "Ein Ende der Doppelmoral setzten und die Türkei verurteilen",
+        text: "die Doppelmoral beenden und die Handlungen der türkischen Regierung verurteilen.",
         partyId: 6,
         id: 7,
       },
     ],
     category: 7,
     learnMore:
-      "Die Türkei ist ein Land in Asien, das einen Teil seines Gebiets in Europa hat, grenzt an Griechenland und Bulgarien und war in der europäischen Geschichte sehr präsent. Sie wurde 1963 assoziiertes Mitglied der EG und begann den offiziellen Beitrittsprozess 1999. Allerdings haben die Verhandlungen, die 2003 begannen, noch nicht zu einem Abschluss geführt, da das Land die von der EU geforderten Reformen nicht umsetzt und sich nicht vollständig kooperativ zeigt, insbesondere in Bezug auf die Migrationskrise und den Krieg in der Ukraine.",
+      "Die Türkei ist ein Land in Asien, das einen Teil seines Gebiets in Europa hat, an Griechenland und Bulgarien grenzt und in der europäischen Geschichte sehr präsent war. Das Land wurde 1963 assoziiertes Mitglied der EWG und begann den offiziellen Beitrittsprozess 1999. Allerdings sind die Verhandlungen, die 2003 begannen, noch nichtabgeschlossen, da das Land die von der EU geforderten Reformen nicht umsetzt und sich nicht vollständig kooperativ zeigt, insbesondere in Bezug auf die Migrationskrise und den Krieg in der Ukraine.",
     id: 68,
     sources:
       "https://www.europarl.europa.eu/news/fr/press-room/20210517IPR04118/les-relations-ue-turquie-a-un-niveau-historiquement-bas",
+    express: false,
   },
   {
-    question: "Es muss die europäische Verteidigungsindustrie gestärkt werden.",
+    question: "Sollte die europäische Verteidigungsindustrie gestärkt werden?",
     answers: [
       {
         text: "Nein, denn dies würde die nationalen Industrien schwächen.",
@@ -3181,7 +3231,7 @@ export default [
         id: 3,
       },
       {
-        text: "Ja, um eine weiterführende Entwicklung der europäischen Verteidigung zu ermöglichen",
+        text: "Ja, um eine stärkere Entwicklung der europäischen Verteidigung zu ermöglichen.",
         partyId: 3,
         id: 4,
       },
@@ -3196,67 +3246,68 @@ export default [
         id: 6,
       },
       {
-        text: "Nein, soziale Rechte werden der Rüstungsindustrie geopfert.",
+        text: "Nein, soziale Rechte werden zugunsten der Rüstungsindustrie geopfert.",
         partyId: 6,
         id: 7,
       },
     ],
     category: 7,
     learnMore:
-      "5 EU-Länder (Frankreich, Italien, Deutschland, Spanien und Polen + Vereinigtes Königreich) gehören zu den 10 Ländern weltweit, die am meisten Waffen exportieren. Zusammen exportieren Frankreich und Italien mehr als China und Russland zusammen. Jedoch hat der Krieg in der Ukraine die Schwierigkeiten bei der Verwendung der verschiedenen nationalen Waffenmodelle (insbesondere Panzer und Luftfahrzeuge) verdeutlicht. Mehrere Einzelprojekte sind derzeit in Arbeit (zum Beispiel für Hubschrauber), aber sie sind besonders schwer umzusetzen.",
+      "5 europäische Staaten (Frankreich, Italien, Deutschland, Spanien und Polen + Vereinigtes Königreich) gehören zu den 10 Ländern weltweit, die am meisten Waffen exportieren. Zusammen exportieren Frankreich und Italien mehr als China und Russland zusammen. Jedoch hat der Krieg in der Ukraine die Schwierigkeiten bei der Verwendung der verschiedenen nationalen Waffenmodelle (insbesondere Panzer und Luftfahrzeuge) verdeutlicht. Mehrere Einzelprojekte sind derzeit in Arbeit (zum Beispiel für Hubschrauber), sie sind aber besonders schwer umzusetzen.",
     id: 69,
     sources: "https://ec.europa.eu/commission/presscorner/detail/en/ip_23_5364",
     express: true,
   },
   {
     question:
-      "Die Politik der Partnerschaften und der Entwicklungshilfe der EU in Drittländer muss...",
+      "Die Politik der Partnerschaften und der Entwicklungshilfe der EU in Drittländer sollte...",
     answers: [
       {
-        text: "Ermöglichen Sie lokale Zusammenarbeit zum Schutz der EU vor externen Bedrohungen.",
+        text: "die lokale Zusammenarbeit zum Schutz der EU vor externen Bedrohungen ermöglichen.",
         partyId: 7,
         id: 1,
       },
       {
-        text: "Die inneren Interessen der EU bedienen, da globale Probleme Europa beeinflussen.",
+        text: "den innenpolitischen Interessen der EU dienen, da globale Probleme Europa beeinflussen.",
         partyId: 5,
         id: 2,
       },
       {
-        text: "Stabilität und Fortschritt in allen Bereichen schaffen, vorrangig in der Nachbarschaft der EU.",
+        text: "Stabilität und Fortschritt in allen Bereichen schaffen, insbesondere in Nachbarstaaten der EU.",
         partyId: 1,
         id: 3,
       },
       {
-        text: "Förderung von Sicherheit und wirtschaftlicher Entwicklung insbesondere in der Nachbarschaft der EU und in Afrika",
+        text: "Sicherheit und wirtschaftliche Entwicklung, insbesondere in Nachbarstaaten und in Afrika fördern.",
         partyId: 3,
         id: 4,
       },
       {
-        text: "gegen Einkommensunterschiede und den Klimawandel kämpfen, um Armut zu bekämpfen",
+        text: "gegen Einkommensunterschiede und den Klimawandel vorgehen, um Armut zu bekämpfen.",
         partyId: 2,
         id: 5,
       },
       {
-        text: "Den Schwerpunkt auf Frieden und die Ziele des Kampfes gegen den Klimawandel legen",
+        text: "den Schwerpunkt auf Frieden und die Ziele des Kampfes gegen den Klimawandel legen.",
         partyId: 4,
         id: 6,
       },
       {
-        text: "Förderung der Achtung der Menschenrechte und Abschluss von gegenseitig vorteilhaften Abkommen",
+        text: "die Achtung der Menschenrechte und den Abschluss von gegenseitig vorteilhaften Abkommen fördern.",
         partyId: 6,
         id: 7,
       },
     ],
     category: 7,
     learnMore:
-      "Die Länder der Europäischen Union haben eine lange Geschichte der Zusammenarbeit mit anderen Ländern auf der Welt. Dies setzt sich mit der Europäischen Union fort, die seit 1964 internationale Abkommen abschließt, insbesondere für den freien Handel, was den Export europäischer Produkte anregt, aber auch die Einfuhr ausländischer Produkte erhöht. Es kann auch Entwicklungsabkommen für Demokratie oder Umwelt geben, um international auf globale Themen wie den Klimawandel oder politische Krisen zu reagieren. Die EU strebt nach Beteiligung an einer multilateralen Weltordnung, die nicht der Hegemonie eines oder mehrerer Staaten unterliegt.",
+      "Die europäischen Staaten haben eine lange Geschichte der Zusammenarbeit mit anderen Ländern auf der Welt. Dies setzt sich mit der Europäischen Union fort, die seit 1964 internationale Abkommen abschließt, insbesondere für den freien Handel, was den Export europäischer Produkte anregt, aber auch die Einfuhr ausländischer Produkte erhöht. Es kann sich auch um Entwicklungsabkommen für Demokratie oder Umwelt handeln, um international auf globale Thematiken wie den Klimawandel oder politische Krisen zu reagieren. Die EU strebt nach Beteiligung an einer multilateralen Weltordnung, die nicht der Hegemonie eines oder mehrerer Staaten unterliegt.",
     id: 70,
     sources:
       "https://www.eeas.europa.eu/eeas/international-cooperation-partnership_en",
+    express: false,
   },
   {
-    question: "eine harmonisierte europäische Migrationspolitik ist …",
+    question: "Eine harmonisierte europäische Migrationspolitik ist …",
     answers: [
       {
         text: "völlig ineffektiv und wird die Migrationskrisen verschärfen.",
@@ -3264,17 +3315,17 @@ export default [
         id: 1,
       },
       {
-        text: "Der erste Schritt, um ein großes Problem anzugehen.",
+        text: "der erste Schritt, um ein großes Problem anzugehen.",
         partyId: 5,
         id: 2,
       },
       {
-        text: "erforderlich, um die Kontrolle über unsere Außengrenzen zurückzugewinnen und den Migrationsdruck auf die EU zu verringern",
+        text: "erforderlich, um die Kontrolle über unsere Außengrenzen zurückzugewinnen und den Migrationsdruck auf die EU zu verringern.",
         partyId: 1,
         id: 3,
       },
       {
-        text: "eine gemeinsame und nachhaltige europäische Politik",
+        text: "eine gemeinsame und nachhaltige europäische Politik.",
         partyId: 3,
         id: 4,
       },
@@ -3284,12 +3335,12 @@ export default [
         id: 5,
       },
       {
-        text: "Unanwendbar und verstärkt Praktiken, die die Menschenrechte verletzen.",
+        text: "unanwendbar und verstärkt Praktiken, die die Menschenrechte verletzen.",
         partyId: 4,
         id: 6,
       },
       {
-        text: "markiert das Ende des individuellen Rechts auf Asyl in der EU",
+        text: "bedeutet das Ende des individuellen Rechts auf Asyl in der EU.",
         partyId: 6,
         id: 7,
       },
@@ -3300,12 +3351,13 @@ export default [
     id: 71,
     sources:
       "https://www.consilium.europa.eu/fr/press/press-releases/2023/12/20/the-council-and-the-european-parliament-reach-breakthrough-in-reform-of-eu-asylum-and-migration-system/",
+    express: false,
   },
   {
     question: "Müssen Asylverfahren vereinfacht werden?",
     answers: [
       {
-        text: "Kein Asylantrag darf innerhalb der EU gestellt werden.",
+        text: "Es sollten keine Asylanträge innerhalb der EU gestellt werden.",
         partyId: 7,
         id: 1,
       },
@@ -3315,7 +3367,7 @@ export default [
         id: 2,
       },
       {
-        text: "Es muss ein Verfahren geben, das die Unterstützung derjenigen gewährleistet, die tatsächlich Schutz benötigen, und die effektive Rückkehr derjenigen, die dies nicht tun.",
+        text: "Es braucht ein Verfahren, das die Unterstützung derjenigen gewährleistet, die tatsächlich Schutz benötigen, und die effektive Rückkehr derjenigen, die diesen nicht brauchen.",
         partyId: 1,
         id: 3,
       },
@@ -3325,7 +3377,7 @@ export default [
         id: 4,
       },
       {
-        text: "Die Asylverfahren müssen optional sein und unbegleitete Minderjährige sowie Kinder unter 12 Jahren und ihre Familie ausschließen.",
+        text: "Die Asylverfahren müssen optional sein und unbegleitete Minderjährige, sowie Kinder unter 12 Jahren und ihre Familie ausschließen.",
         partyId: 2,
         id: 5,
       },
@@ -3335,7 +3387,7 @@ export default [
         id: 6,
       },
       {
-        text: "Sie müssen auf der Achtung des Völkerrechts und der Verpflichtungen, auf der Würde und der Solidarität basieren.",
+        text: "Sie müssen auf der Achtung des Völkerrechts, auf der Würde  des Menschen und der Solidarität basieren.",
         partyId: 6,
         id: 7,
       },
@@ -3346,60 +3398,60 @@ export default [
     id: 72,
     sources:
       "https://www.consilium.europa.eu/fr/policies/eu-migration-policy/eu-migration-asylum-reform-pact/asylum-procedure/#:~:text=Le%20r%C3%A8glement%20sur%20les%20proc%C3%A9dures%20d'asile%20contient%20une%20r%C3%A8gle,demandes%20sont%20infond%C3%A9es%20ou%20irrecevables.",
+    express: false,
   },
   {
     question: "Die europäische Verwaltung von Asyl und Migration ist...",
     answers: [
       {
-        text: "Katastrophal, die EU ist nicht in der Lage, ihre Außengrenzen zu kontrollieren und zu sichern.",
+        text: "katastrophal, denn die EU ist nicht in der Lage, ihre Außengrenzen zu kontrollieren und zu sichern.",
         partyId: 7,
         id: 1,
       },
       {
-        text: "verheerend, es müssen die Abreisen der Migranten aus Afrika verhindert werden, die kein Asylrecht haben werden",
+        text: "verheerend, die Abreisen der Migranten aus Afrika, die kein Asylrecht haben werden, müssen verhindert werden.",
         partyId: 5,
         id: 2,
       },
       {
-        text: "Lückenhaft, das Dublin-System muss reformiert werden.",
+        text: "lückenhaft, das Dublin-System muss reformiert werden.",
         partyId: 1,
         id: 3,
       },
       {
-        text: "Unangepasst, es bedarf einer gemeinsamen und starken Antwort auf die Migrationsherausforderungen, die ad-hoc-Lösungen beendet.",
+        text: "unangepasst, denn es bedarf einer gemeinsamen und starken Antwort auf die Migrationsherausforderungen, die ad-hoc-Lösungen beendet.",
         partyId: 3,
         id: 4,
       },
       {
-        text: "unvollständig, es bedarf eines Solidaritätsmechanismus, der auf Umsiedlung und Vorliebe für Personen ausgerichtet ist",
+        text: "unvollständig, es bedarf eines Solidaritätsmechanismus, der die Umsiedlung und die Präferenzen der Personen berücksichtigt.",
         partyId: 2,
         id: 5,
       },
       {
-        text: "ineffizient, es müssen sichere Wege für eine menschliche Migration bieten lassen.",
+        text: "ineffizient, es müssen sichere Wege für eine humane Migration geschaffen werden.",
         partyId: 4,
         id: 6,
       },
       {
-        text: "Ineffektiv kann Europa nicht Solidarität, den Schutz der Ersteinreisenden Länder und das Asylrecht gewährleisten.",
+        text: "ineffektiv, Europa schafft es nicht, Solidarität, den Schutz der Ersteintrittsländer und das Asylrecht zu gewährleisten.",
         partyId: 6,
         id: 7,
       },
     ],
     category: 8,
     learnMore:
-      "Die Dublin-Verordnung ist eine Regel der EU, die festlegt, welches Mitgliedsland für die Prüfung eines Asylantrags zuständig ist. Sie zielt darauf ab, mehrfache Anträge in verschiedenen Ländern zu vermeiden, indem in der Regel das erste Einreiseland als verantwortlich bestimmt wird. Dies hat jedoch oft einen unverhältnismäßigen Druck auf Ersteinreiseländer wie Griechenland oder Italien ausgeübt. Daher läuft eine Reform, um die Last gerechter auf alle Mitgliedsstaaten zu verteilen und die Bearbeitung von Asylanträgen zu verbessern, während gleichzeitig eine effektive und langfristig nachhaltige Verwaltung der Migration in der EU sichergestellt wird.",
+      "Die Dublin-Verordnung ist ein Rechtsakt der EU, der festlegt, welches Mitgliedsland für die Prüfung eines Asylantrags zuständig ist. Er zielt darauf ab, mehrfache Anträge in verschiedenen Ländern zu vermeiden, indem in der Regel dem Ersteinreiseland die Verantwortung zukommt. Dies hat jedoch oft einen unverhältnismäßigen Druck auf Ersteinreiseländer wie Griechenland oder Italien ausgeübt. Daher läuft eine Reform, um die Last gerechter auf alle Mitgliedsstaaten zu verteilen und die Bearbeitung von Asylanträgen zu verbessern, während gleichzeitig eine langfristig effektive und nachhaltige Verwaltung der Migration in der EU sichergestellt wird.",
     id: 73,
     sources:
       "https://www.consilium.europa.eu/fr/policies/eu-migration-policy/eu-migration-asylum-reform-pact/asylum-migration-management/#:~:text=r%C3%A8gles%20de%20Dublin-,Le%20r%C3%A8glement%20relatif%20%C3%A0%20la%20gestion%20de%20l'asile%20et,et%20durable%20%C3%A0%20long%20terme.",
     express: true,
   },
   {
-    question:
-      "Die Filterung von Migranten in einer unregelmäßigen Situation ...",
+    question: "Das Screening von irregulären Migranten...",
     answers: [
       {
-        text: "Das wird Masseneinwanderung ermöglichen und sollte strenger sein.",
+        text: "wird Masseneinwanderung ermöglichen und sollte strenger sein.",
         partyId: 7,
         id: 1,
       },
@@ -3409,7 +3461,7 @@ export default [
         id: 2,
       },
       {
-        text: "ist erforderlich, um eine bessere Betreuung von Personen ohne Aufenthaltsstatus an den Außengrenzen der EU zu ermöglichen.",
+        text: "ist erforderlich, um eine bessere Betreuung von Personen ohne Aufenthaltsstatus an den EU-Außengrenzen zu ermöglichen.",
         partyId: 1,
         id: 3,
       },
@@ -3419,39 +3471,40 @@ export default [
         id: 4,
       },
       {
-        text: "ermöglicht es, jede Person, die unregelmäßig in die EU eintritt, zu registrieren und zu kontrollieren, während die geltenden Asylgarantien gewährleistet werden.",
+        text: "ermöglicht es, jede Person, die irregulär in die EU eintritt, zu registrieren und zu kontrollieren, während die geltenden Asylgarantien gewährleistet werden.",
         partyId: 2,
         id: 5,
       },
       {
-        text: "Das Risiko einer Zunahme von ethnischen Profilen und rassistischer Diskriminierung.",
+        text: "bedeutet das Risiko einer Zunahme ethnischer Profilierung und rassistischer Diskriminierung.",
         partyId: 4,
         id: 6,
       },
       {
-        text: "Ermöglicht es jedem Antragsteller, im Rahmen des Grenzverfahrens begleitet zu werden.",
+        text: "ermöglicht es jedem Antragsteller, im Rahmen des Grenzverfahrens begleitet zu werden.",
         partyId: 6,
         id: 7,
       },
     ],
     category: 8,
     learnMore:
-      "Das Konzept der Migrantenfiltrierung zielt darauf ab, einen systematischen Evaluierungsprozess an den EU-Grenzen einzurichten, um ihre Zulässigkeit festzustellen. Die geplante Reform sieht einheitliche Regeln für die Filterung vor, mit klaren Kriterien zur Bewertung von internationalen Schutzanträgen. Dies umfasst Sicherheitskontrollen und Überprüfungen von Vorstrafen, sowie medizinische und soziale Bewertungen, um sicherzustellen, dass nur Migranten, die den Einreisebedingungen entsprechen, in die EU einreisen dürfen. Diese Reform zielt darauf ab, die Effizienz und Kohärenz des Asylverfahrens zu verbessern, während eine menschliche und respektvolle Herangehensweise an die grundlegenden Rechte der Migranten gewährleistet wird.",
+      "Das Konzept des Migrantenscreenings zielt darauf ab, einen systematischen Evaluierungsprozess an den EU-Grenzen einzurichten, um ihre Zulässigkeit festzustellen. Die geplante Reform sieht einheitliche Regeln für des Screenings vor, mit klaren Kriterien zur Bewertung von internationalen Schutzanträgen. Dies umfasst Sicherheitskontrollen und Überprüfungen von Vorstrafen, sowie medizinische und soziale Bewertungen, um sicherzustellen, dass nur Migranten, die den Einreisebedingungen entsprechen, in die EU einreisen dürfen. Diese Reform zielt darauf ab, die Effizienz und Kohärenz des Asylverfahrens zu verbessern, während eine menschliche und die Grundrechte der Migranten respektierende Herangehensweise gewährleistet wird.",
     id: 74,
     sources:
       "https://eur-lex.europa.eu/legal-content/FR/TXT/HTML/?uri=CELEX:52020PC0612#:~:text=L%27article%204%20pr%C3%A9voit%20que,remplit%20les%20conditions%20d%27entr%C3%A9e.",
+    express: false,
   },
   {
     question:
       "Wird die Erstellung einer biometrischen Datenbank im Bereich der Migration nützlich sein?",
     answers: [
       {
-        text: "Sie wird nicht für die schnelle Identifizierung von Personen nützlich sein.",
+        text: "Sie wird für die schnelle Identifizierung von Personen nicht nützlich sein.",
         partyId: 7,
         id: 1,
       },
       {
-        text: "Sie muss auch für staatenlose Personen anwendbar sein, zusätzlich zu Angehörigen von Drittstaaten.",
+        text: "Sie muss zusätzlich zu Angehörigen von Drittstaaten auch für staatenlose Personen anwendbar sein.",
         partyId: 5,
         id: 2,
       },
@@ -3461,12 +3514,12 @@ export default [
         id: 3,
       },
       {
-        text: "Dies wird dazu beitragen, die Grundrechte zu gewährleisten und Minderjährige zu schützen.",
+        text: "Sie wird dazu beitragen, Grundrechte zu gewährleisten und Minderjährige zu schützen.",
         partyId: 3,
         id: 4,
       },
       {
-        text: "Die obligatorische Erfassung der Fingerabdrücke von Kindern wird angefochten.",
+        text: "Die verpflichtende Erfassung der Fingerabdrücke von Kindern ist umstritten.",
         partyId: 2,
         id: 5,
       },
@@ -3476,21 +3529,22 @@ export default [
         id: 6,
       },
       {
-        text: "Sie geht über ihre Reichweite hinaus und wird repressiv eingesetzt.",
+        text: "Sie geht über ihren Anwendungsbereich hinaus und wird repressiv eingesetzt.",
         partyId: 6,
         id: 7,
       },
     ],
     category: 8,
     learnMore:
-      "Die EU plant im Rahmen ihres Eurodac-Projekts die Schaffung einer Datenbank zur Registrierung von Fingerabdrücken von Asylbewerbern und irregulären Migranten. Diese Datenbank soll es den europäischen Behörden ermöglichen, die Bewegungen der Migranten zu verfolgen und Mehrfachasylanträge zu erkennen. Ziel ist es, die Grenzverwaltung zu stärken und gegen irreguläre Einwanderung vorzugehen. Es wurden jedoch Bedenken hinsichtlich des Schutzes personenbezogener Daten und der Privatsphäre der Einzelpersonen geäußert. Das Eurodac-Projekt ist entscheidend für ein effizientes und sicheres Migrationsmanagement in Europa, erfordert jedoch angemessene Garantien im Bereich des Datenschutzes.",
+      "Die EU plant im Rahmen ihres Eurodac-Projekts die Schaffung einer Datenbank zur Registrierung von Fingerabdrücken von Asylbewerbern und irregulären Migranten. Diese Datenbank soll es den europäischen Behörden ermöglichen, die Bewegungen der Migranten nachzuvollziehen und Mehrfachasylanträge zu erkennen. Ziel ist es, die Grenzverwaltung zu stärken und gegen irreguläre Einwanderung vorzugehen. Es wurden jedoch Bedenken hinsichtlich des Schutzes personenbezogener Daten und der Privatsphäre der Einzelpersonen geäußert. Das Eurodac-Projekt ist entscheidend für ein effizientes und sicheres Migrationsmanagement in Europa, erfordert jedoch angemessene Garantien im Hinblick auf Datenschutz.",
     id: 75,
     sources:
       "https://www.edps.europa.eu/data-protection/european-it-systems/eurodac_fr",
+    express: false,
   },
   {
     question:
-      "Muss man den Mitgliedsstaaten unterstützen, die mit einer Situation einer Migrationskrise konfrontiert sind?",
+      "Sollte man die Mitgliedsstaaten unterstützen, die mit einer Migrationskrise konfrontiert sind?",
     answers: [
       {
         text: "Man sollte nicht darauf bestehen, dass Migranten in andere EU-Länder umgesiedelt werden.",
@@ -3508,12 +3562,12 @@ export default [
         id: 3,
       },
       {
-        text: "Eine größere Solidarität zwischen den Mitgliedsstaaten unter migratorischem Druck ist notwendig.",
+        text: "Eine größere Solidarität zwischen den Mitgliedsstaaten ist notwendig.",
         partyId: 3,
         id: 4,
       },
       {
-        text: "Es braucht ein obligatorisches Solidarsystem und die Verteilung der Verantwortung der Personen.",
+        text: "Es braucht ein verpflichtendes Solidaritätssystem und die Verteilung der Verantwortung der Personen.",
         partyId: 2,
         id: 5,
       },
@@ -3530,7 +3584,7 @@ export default [
     ],
     category: 8,
     learnMore:
-      "Der Krisenmechanismus im Bereich Migration ist ein Instrument, das zwischen den EU-Mitgliedstaaten vorgesehen ist, um auf Notlagen im Bereich der Migration zu reagieren. Er zielt darauf ab, die Last der Migrationsströme gerecht auf die Mitgliedstaaten zu verteilen, wenn eine Krise eintritt. Dieser Mechanismus bietet eine koordinierte und solidarische Antwort, um Mitgliedstaaten zu entlasten, die einem übermäßigen Druck ausgesetzt sind. Er soll eine effizientere und gerechtere Steuerung der Migration innerhalb der EU gewährleisten, die Rechte der Migranten bewahren und die Solidarität zwischen den Mitgliedstaaten stärken.",
+      "Der Krisenmechanismus im Bereich Migration ist ein Instrument, das zwischen den EU-Mitgliedstaaten vorgesehen ist, um auf Notlagen im Bereich der Migration zu reagieren. Er zielt darauf ab, im Falle einer Krise die Last der Migrationsströme gerecht auf die Mitgliedstaaten zu verteilen. Dieser Mechanismus bietet eine koordinierte und solidarische Antwort, um Mitgliedstaaten zu entlasten, die einem übermäßigen Druck ausgesetzt sind. Er soll eine effizientere und gerechtere Steuerung der Migration innerhalb der EU gewährleisten, die Rechte der Migranten bewahren und die Solidarität zwischen den Mitgliedstaaten stärken.",
     id: 76,
     sources:
       "https://www.touteleurope.eu/societe/pacte-migratoire-europeen-en-s-accordant-sur-le-mecanisme-de-crise-les-etats-membres-entretiennent-l-espoir-d-une-conclusion-d-ici-quelques-mois/",
@@ -3545,7 +3599,7 @@ export default [
         id: 1,
       },
       {
-        text: "Man muss vor allem kontrollieren, wem das Geld verteilt wird.",
+        text: "Man muss vor allem kontrollieren, an wen das Geld verteilt wird.",
         partyId: 5,
         id: 2,
       },
@@ -3560,7 +3614,7 @@ export default [
         id: 4,
       },
       {
-        text: "Die EU kann kein autoritäres Regime finanzieren, um die Verwaltung von Migranten an es zu übergeben.",
+        text: "Die EU darf kein autoritäres Regime finanzieren, um diesem die Verwaltung von Migranten zu überlassen.",
         partyId: 2,
         id: 5,
       },
@@ -3577,56 +3631,58 @@ export default [
     ],
     category: 8,
     learnMore:
-      "Die Migrationsvereinbarungen haben Auswirkungen auf die Entwicklungshilfe, indem sie eine Verbindung zwischen der Zusammenarbeit in der Migrationspolitik und der Entwicklungshilfe herstellen. Sie ermutigen Drittländer, bei der Bewältigung des Migrationsstroms zusammenzuarbeiten, im Austausch gegen finanzielle Unterstützung und verstärkte Entwicklungshilfe. Dies kann zu einer Erhöhung der finanziellen Hilfe, Investitionen in Infrastruktur und technischer Unterstützung für Herkunfts- und Transitländer der Migranten führen. Allerdings wirft dies auch Fragen zur Konditionalität der Hilfe und deren potenzielle Auswirkungen auf die Migrationspolitik der Drittländer auf.",
+      "Die Migrationsabkommen haben Auswirkungen auf die Entwicklungshilfe, indem sie eine Verbindung zwischen der Zusammenarbeit in der Migrationspolitik und der Entwicklungshilfe herstellen. Sie ermutigen Drittländer, bei der Bewältigung des Migrationsstroms zusammenzuarbeiten, im Austausch gegen finanzielle Unterstützung und verstärkte Entwicklungshilfe. Dies kann zu einer Erhöhung der finanziellen Hilfe, Investitionen in Infrastruktur und technischer Unterstützung für Herkunfts- und Transitländer führen. Allerdings wirft dies auch Fragen zur Konditionalität der Hilfe und deren potenzielle Auswirkungen auf die Migrationspolitik der Drittländer auf.",
     id: 77,
     sources:
       "https://www.europarl.europa.eu/legislative-train/theme-promoting-our-european-way-of-life/file-mff-asylum-and-migration-fund",
+    express: false,
   },
   {
     question: "Eine Reform des Schengen-Raums ist...",
     answers: [
       {
-        text: "Ursprünglich muss man sich auf den Schutz der Außengrenzen konzentrieren.",
+        text: "äußerst wichtig und muss sich auf den Schutz der Außengrenzen konzentrieren.",
         partyId: 7,
         id: 1,
       },
       {
-        text: "Grundlegend ist es wichtig, sich auf den Schutz der Außengrenzen zu konzentrieren.",
+        text: "äußerst wichtig und muss sich auf den Schutz der Außengrenzen konzentrieren.",
         partyId: 5,
         id: 2,
       },
       {
-        text: "Notwendig wird die Integration Rumäniens und Bulgariens dazu beitragen, unsere Außengrenzen besser zu schützen.",
+        text: "notwendig, die Integration Rumäniens und Bulgariens wird dazu beitragen, unsere Außengrenzen besser zu schützen.",
         partyId: 1,
         id: 3,
       },
       {
-        text: "Nützlich, sie wird die Widerstandsfähigkeit von Schengen gegenüber den aktuellen Herausforderungen stärken.",
+        text: "nützlich, denn sie wird die Widerstandsfähigkeit von Schengen gegenüber den aktuellen Herausforderungen stärken.",
         partyId: 3,
         id: 4,
       },
       {
-        text: "Wichtig ist es, zu verhindern, dass die Staaten zu leicht wieder innere Kontrollen einführen.",
+        text: "wichtig, denn es gilt zu verhindern, dass die Staaten zu leicht wieder Inlandskontrollen einführen.",
         partyId: 2,
         id: 5,
       },
       {
-        text: "Ermutigend, die freie Personenmobilität muss um jeden Preis erhalten bleiben.",
+        text: "ermutigend, die Personenverkehrsfreiheit muss um jeden Preis erhalten bleiben.",
         partyId: 4,
         id: 6,
       },
       {
-        text: "gefährlich, dies könnte die freie Personenbewegung ernsthaft beeinträchtigen.",
+        text: "gefährlich, dies könnte die Personenverkehrsfreiheit ernsthaft beeinträchtigen.",
         partyId: 6,
         id: 7,
       },
     ],
     category: 8,
     learnMore:
-      "Der Schengen-Raum ist ein Raum der freien Zirkulation, der es den europäischen Bürgern ermöglicht, ohne Kontrollen an den Binnengrenzen der EU zu reisen. Die geprüfte Reform zielt darauf ab, den Schengen-Bewertungsmechanismus zu stärken, um eine konsistente Anwendung von Regeln und Normen in allen Mitgliedstaaten sicherzustellen. Dies beinhaltet eine strengere Bewertung der Grenzverwaltung, der inneren Sicherheit und der polizeilichen Zusammenarbeit. Das Ziel ist es, die Sicherheit und das Vertrauen im Schengen-Raum zu verbessern, während die Personenfreizügigkeit erhalten bleibt.",
+      "Der Schengen-Raum ist ein Raum der Freizügigkeit, der es den europäischen Bürgern ermöglicht, ohne Kontrollen an den Binnengrenzen der EU zu reisen. Die geprüfte Reform zielt darauf ab, den Schengen-Bewertungsmechanismus zu stärken, um eine konsistente Anwendung von Regeln und Normen in allen Mitgliedstaaten sicherzustellen. Dies beinhaltet eine strengere Bewertung der Grenzverwaltung, der inneren Sicherheit und der polizeilichen Zusammenarbeit. Das Ziel ist es, die Sicherheit und das Vertrauen im Schengen-Raum zu verbessern, während die Personenfreizügigkeit erhalten bleibt.",
     id: 78,
     sources:
       "https://www.europarl.europa.eu/legislative-train/theme-promoting-our-european-way-of-life/file-revision-of-schengen-evaluation-mechanism",
+    express: false,
   },
   {
     question: "Verwaltet die Agentur Frontex die Außengrenzen der EU gut?",
@@ -3647,17 +3703,17 @@ export default [
         id: 3,
       },
       {
-        text: "Es müssen die Meld",
+        text: "Die Meldeverfahren sowie die Rolle des Grundrechtsbeauftragten müssen gestärkt werden, um Missbräuchen vorzubeugen.",
         partyId: 3,
         id: 4,
       },
       {
-        text: "Es muss sichergestellt werden, dass sie die Grundrechte respektiert und nicht in illegale Rückführungen verwickelt ist.",
+        text: "Es muss sichergestellt werden, dass sie Grundrechte respektiert und nicht illegale Rückführungen durchgeführt werden.",
         partyId: 2,
         id: 5,
       },
       {
-        text: "Die Agentur betreibt abscheuliche Praktiken, indem sie die Migranten zurückweist.",
+        text: "Die Agentur betreibt abscheuliche Praktiken, indem sie die Migranten zurückdrängt.",
         partyId: 4,
         id: 6,
       },
@@ -3669,7 +3725,7 @@ export default [
     ],
     category: 8,
     learnMore:
-      "Frontex ist die europäische Agentur für die Grenz- und Küstenwache, die gegründet wurde, um die Sicherheit an den Außengrenzen der EU zu stärken. Sie koordiniert die Bemühungen der Mitgliedstaaten, um die Grenzen zu schützen und gegen illegale Einwanderung vorzugehen. Die Bewertung ihres Grenzmanagements umfasst eine Prüfung ihrer Operationen, Ressourcen und ihrer Einhaltung europäischer Standards. Dies beinhaltet die Überwachung von Migrationsströmen, Stärkung der Kontrollkapazitäten und Kooperation mit Drittstaaten. Das Ziel ist es, eine effektive und kohärente Verwaltung der Außengrenzen der EU zu gewährleisten, um die Sicherheit und Stabilität der Union zu gewährleisten.",
+      "Frontex ist die europäische Agentur für die Grenz- und Küstenwache, die gegründet wurde, um die Sicherheit an den Außengrenzen der EU zu stärken. Sie koordiniert die Bemühungen der Mitgliedstaaten die Grenzen zu schützen und gegen illegale Einwanderung vorzugehen. Die Bewertung ihres Grenzmanagements umfasst eine Prüfung ihrer Operationen, Ressourcen und der Einhaltung europäischer Standards. Dies beinhaltet die Überwachung von Migrationsströmen, Stärkung der Kontrollkapazitäten und Kooperation mit Drittstaaten. Das Ziel ist es, eine effektive und kohärente Verwaltung der Außengrenzen der EU zu gewährleisten, um die Sicherheit und Stabilität der Union zu sicherzustellen.",
     id: 79,
     sources:
       "https://european-union.europa.eu/institutions-law-budget/institutions-and-bodies/search-all-eu-institutions-and-bodies/frontex_fr",
@@ -3680,259 +3736,260 @@ export default [
       "Für eine bessere Organisation der Aufnahme junger ukrainischer Flüchtlinge ...",
     answers: [
       {
-        text: "Es muss während der Eingangsphase ein System zur Identifizierung und Registrierung von Kindern sichergestellt werden.",
+        text: "muss während der Eintrittsphase ein System zur Identifizierung und Registrierung von Kindern sichergestellt werden.",
         partyId: 7,
         id: 1,
       },
       {
-        text: "Es muss ein spezieller Fonds geschaffen werden.",
+        text: "muss ein spezieller Fonds geschaffen werden.",
         partyId: 5,
         id: 2,
       },
       {
-        text: "Man muss ein effizientes Aufzeichnungssystem für Kinder erstellen.",
+        text: "muss ein effizientes Registrierungssystem für Kinder geschaffen werden.",
         partyId: 1,
         id: 3,
       },
       {
-        text: "Es ist notwendig, ihre Registrierung zu stärken.",
+        text: "ist es notwendig, ihre Registrierung zu stärken.",
         partyId: 3,
         id: 4,
       },
       {
-        text: "Es ist wichtig, unsere humanitäre Hilfe fortzusetzen.",
+        text: "muss unsere wichtige humanitäre Hilfe fortgesetzt werden.",
         partyId: 2,
         id: 5,
       },
       {
-        text: "Es braucht eine Politik, die auf Empfang, Solidarität und Menschlichkeit basiert.",
+        text: "braucht es eine Politik, die auf Empfang, Solidarität und Menschlichkeit basiert.",
         partyId: 4,
         id: 6,
       },
       {
-        text: "Es ist notwendig, alle flüchtenden Kinder zu schützen.",
+        text: "ist es notwendig, alle flüchtenden Kinder zu schützen.",
         partyId: 6,
         id: 7,
       },
     ],
     category: 8,
     learnMore:
-      "Besondere Empfangsmaßnahmen werden für junge Ukrainer, die vor dem Krieg fliehen und in Europa ankommen, eingerichtet. Alle Kinder, einschließlich unbegleiteter Jugendlicher, erhalten einen Schutz und Unterstützung, die ihren Bedürfnissen entsprechen. Dies umfasst den Zugang zu Unterkünften, Gesundheitsdiensten, Bildungseinrichtungen und psychosozialer Unterstützung. Die europäischen Behörden arbeiten mit lokalen Organisationen zusammen, um eine koordinierte und effektive Reaktion auf diese humanitäre Krise sicherzustellen. Das Ziel ist es, jungen ukrainischen Vertriebenen eine sichere und schützende Umgebung zu bieten, und ihnen gleichzeitig einen Zugang zu grundlegenden Rechten und notwendiger Hilfe zu gewährleisten.",
+      "Besondere Empfangsmaßnahmen werden für junge Ukrainer, die vor dem Krieg fliehen und in Europa ankommen, eingerichtet. Alle Kinder, einschließlich unbegleiteter Jugendlicher, erhalten einen Schutz und Unterstützung, die ihren Bedürfnissen entsprechen. Dies umfasst den Zugang zu Unterkünften, Gesundheitsdiensten, Bildungseinrichtungen und psychosozialer Unterstützung. Die europäischen Behörden arbeiten mit lokalen Organisationen zusammen, um eine koordinierte und effektive Reaktion auf diese humanitäre Krise sicherzustellen. Das Ziel ist es, jungen ukrainischen Vertriebenen eine sichere und schützende Umgebung zu bieten, und gleichzeitig Grundrechte und Zugang zu notwendiger Hilfe zu gewährleisten.",
     id: 80,
     sources:
       "https://eu-solidarity-ukraine.ec.europa.eu/information-people-fleeing-war-ukraine/fleeing-ukraine-protection-children_fr#:~:text=Tous%20les%20enfants%20(c'est,'entr%C3%A9e%20dans%20l'UE.",
+    express: false,
   },
   {
-    question:
-      "Angesichts der Alterung der europäischen Bevölkerung müssen wir...",
+    question: "Angesichts der alternden europäischen Bevölkerung…",
     answers: [
       {
-        text: "die Geburtenrate unterstützen, um die Auswirkungen der Bevölkerungsalterung abzuschwächen",
+        text: "müssen Maßnahmen ergriffen werden, um das Bevölkerungswachstum zu fördern. ",
         partyId: 7,
         id: 1,
       },
       {
-        text: "ist eine große Herausforderung, die pragmatisch gegen die linke Ideologie angegangen werden muss",
+        text: "muss pragmatisch gegen linke Ideologien vorgegangen werden.",
         partyId: 5,
         id: 2,
       },
       {
-        text: "Investieren in menschliche Ressourcen, um kranke und ältere Menschen besser zu pflegen.",
+        text: "muss mehr in Pflegepersonal investiert werden, um kranke und ältere Menschen besser zu pflegen.",
         partyId: 1,
         id: 3,
       },
       {
-        text: "günstige Bedingungen für aktives und gesundes Altern schaffen",
+        text: "müssen günstige Bedingungen für aktives und gesundes Altern geschaffen werden.",
         partyId: 3,
         id: 4,
       },
       {
-        text: "Darauf achten, das uneingeschränkte Respektieren der Rechte der Frauen nicht zu vergessen.",
+        text: "ist es wichtig, dass die uneingeschränkte Einhaltung der Frauenrechte nicht vergessen wird. ",
         partyId: 2,
         id: 5,
       },
       {
-        text: "sich auf die Nähe- und Kleinmaßstabsversorgung konzentrieren.",
+        text: "ist es wichtig, sich auf gemeindenahe Pflegemodelle und auf häusliche Betreuung zu konzentrieren.",
         partyId: 4,
         id: 6,
       },
       {
-        text: "Einführung eines Rechts auf Ruhe, um Langzeitkranke zu begrenzen",
+        text: "ist die Schaffung eines Anspruchs auf Erholung notwendig, um der Verbreitung von Langzeitkrankheiten entgegenzuwirken.",
         partyId: 6,
         id: 7,
       },
     ],
     category: 9,
     learnMore:
-      "Die Geburtenrate wird unter Berücksichtigung der Bevölkerungserneuerungsschwelle betrachtet, die in der Regel auf etwa 2,1 Kinder pro Frau geschätzt wird. Viele europäische Länder liegen unter diesem Schwellenwert, was zu einer Überalterung ihrer Bevölkerung führt. Bis zum Jahr 2070 werden weniger als zwei Personen im arbeitsfähigen Alter für jede Person über 65 Jahre vorhanden sein. Die Überalterung stellt eine demografische Herausforderung dar, die ökonomische und finanzielle Aspekte umfasst.",
+      "Die Geburtenrate wird unter Berücksichtigung des Reproduktionsniveaus der Bevölkerung betrachtet, das in der Regel auf etwa 2,1 Kinder pro Frau geschätzt wird. Viele europäische Länder liegen unter diesem Schwellenwert, was zu einer Überalterung ihrer Bevölkerung führt. Bis zum Jahr 2070 wird es weniger als zwei Personen im arbeitsfähigen Alter für jede Person über 65 Jahre geben. Die Alterung ist eine demografische Herausforderung, die sich mit wirtschaftlichen und haushaltspolitischen Herausforderungen überschneidet.",
     id: 81,
     sources:
       "https://www.consilium.europa.eu/fr/press/press-releases/2021/06/18/fiscal-sustainability-conclusions-on-challenges-arising-from-an-ageing-population/",
     express: true,
   },
   {
-    question: "Die Bildungsarbeit der EU sollte sich auf",
+    question: "Im Fokus der Bildungspolitik der EU sollte…",
     answers: [
       {
-        text: "nichts, das fällt nicht in seinen Zuständigkeitsbereich",
+        text: "nichts stehen, da es nicht in ihren Zuständigkeitsbereich fällt.",
         partyId: 7,
         id: 1,
       },
       {
-        text: "Der Schutz der Souveränität der Mitgliedstaaten, um jede Form von Indoktrination zu vermeiden.",
+        text: "die Beibehaltung der Souveränität der Mitgliedsstaaten stehen, um jede Form von Indoktrination zu vermeiden.",
         partyId: 5,
         id: 2,
       },
       {
-        text: "Ein flexibler Zugang zur Bildung für alle zu jedem Zeitpunkt des Lebens",
+        text: "der Zugang zu Bildung stehen und das für alle und zu jedem Zeitpunkt.",
         partyId: 1,
         id: 3,
       },
       {
-        text: "die Entwicklung individueller Konten für eine zugängliche und flexible Ausbildung",
+        text: "die Förderung individueller Bildungswege und flexibler Ausbildungen stehen.",
         partyId: 3,
         id: 4,
       },
       {
-        text: "die Anerkennung von Qualifikationen und das Ende unbezahlter Praktika",
+        text: "die Anerkennung von Qualifikationen und die Abschaffung unbezahlter Praktika stehen.",
         partyId: 2,
         id: 5,
       },
       {
-        text: "die Förderung einer inklusiven, umweltfreundlichen und digitalen Weiterbildung",
+        text: "die Förderung inklusiver, umweltfreundlicher und digitaler Weiterbildungen stehen.",
         partyId: 4,
         id: 6,
       },
       {
-        text: "die Förderung von Minderheitensprachen in der Union",
+        text: "die Förderung der Regional- und Minderheitensprachen stehen.",
         partyId: 6,
         id: 7,
       },
     ],
     category: 9,
     learnMore:
-      'Durch die Initiative "Europäischer Raum" strebt die Europäische Union die Förderung der Zusammenarbeit der Staaten im Bildungsbereich an. Letzteres zielt darauf ab, die Studentenmobilität durch Partnerschaften zwischen den Fakultäten der Mitgliedsstaaten oder Programme wie Erasmus+ zu stärken. Dennoch sehen sich diese Initiativen mit zahlreichen Herausforderungen konfrontiert, wie der europaweiten Anerkennung von Qualifikationen, Mehrsprachigkeit oder Schulabbrüchen. Schließlich ist Bildung ein vertikales Thema, das viele andere Themen (Wachstum, Innovationen, Arbeitslosigkeit usw.) überlappt.',
+      'Mit der Initiative "Europäischer Bildungsraum" strebt die Europäische Union die Förderung der Zusammenarbeit der Staaten im Bildungsbereich an. Mit Programmen wie Erasmus+  zielt sie darauf ab, die Mobilität der Studenten durch Partnerschaften zwischen den Universitäten zu stärken. Dennoch sehen sich diese Initiativen mit zahlreichen Herausforderungen konfrontiert. Dazu gehören beispielsweise die europaweite Anerkennung von Qualifikationen, oder die Anzahl von Schulabbrüchen. Der Bildungsbereich ist ein Themenfeld, das sich mit vielen anderen Bereichen (z.B. Arbeitslosigkeit, Wirtschaftswachstum, Innovation) überschneidet.',
     id: 82,
     sources: "https://www.consilium.europa.eu/fr/policies/education-area/",
+    express: false,
   },
   {
-    question:
-      "Die Maßnahmen zur Förderung der Geschlechtergleichstellung sollten zu ...",
+    question: "Das Ziel der Politik für Geschlechtergerechtigkeit ist… ",
     answers: [
       {
-        text: "Respektieren Sie das Recht der Frauen auf Selbstbestimmung, indem wir unsere Standards nicht Drittländern aufzwingen.",
+        text: "das Recht der Frau auf Selbstbestimmung, ohne dass dabei westliche Standards Drittländern aufgezwungen werden.",
         partyId: 7,
         id: 1,
       },
       {
-        text: "Förderung der Rechte und Autonomie von Frauen, ohne einen Konflikt zwischen den Geschlechtern zu schaffen.",
+        text: "die Förderung der Selbständigkeit von Frauen, ohne dass dabei ein Konflikt zwischen den Geschlechtern entsteht.",
         partyId: 5,
         id: 2,
       },
       {
-        text: "sicherstellen, dass Männer und Frauen in Europa gleich bezahlt werden",
+        text: "sicherzustellen, dass Männer und Frauen in Europa gleich bezahlt werden",
         partyId: 1,
         id: 3,
       },
       {
-        text: "die Verteidigung der Rechte und Freiheiten von Frauen als Priorität der Außenpolitik der EU zu positionieren",
+        text: "die Förderung von Frauenrechte als Priorität der europäischen Außenpolitik zu etablieren.",
         partyId: 3,
         id: 4,
       },
       {
-        text: "Förderung des Zugangs zur Gesundheit und zu sexuellen und reproduktiven Rechten weltweit",
+        text: "die Verbesserung des Zugangs zur Gesundheitsversorgung sowie die Förderung sexueller und reproduktiver Rechte weltweit.",
         partyId: 2,
         id: 5,
       },
       {
-        text: "eine Garantie für das Recht auf Bildung und reproduktive und sexuelle Gesundheit für alle",
+        text: "das Recht auf Bildung zu garantieren und reproduktive Gesundheit weltweit zu fördern. ",
         partyId: 4,
         id: 6,
       },
       {
-        text: "die Vertretung von Frauen stärken, indem ein transformativer intersektionaler Ansatz verfolgt wird",
+        text: "die Repräsentativität von Frauen durch einen intersektionalen Ansatz zu verfolgen. ",
         partyId: 6,
         id: 7,
       },
     ],
     category: 9,
     learnMore:
-      'Die Geschlechtergleichstellung ist ein grundlegendes Prinzip der Europäischen Union, das im Artikel 2 des Vertrags über die Europäische Union (EU-Vertrag) anerkannt wird. Dies wird in verschiedenen Programmen umgesetzt, wie z.B. "Bürger, Gleichheit, Rechte und Werte" (2021-2027), einer Initiative der Europäischen Union zur Förderung und zum Schutz der Grundrechte, oder auch des GAP III, der die Gleichstellung der Geschlechter und die Stärkung der Frauen in den externen Maßnahmen der EU fördert. Im Durchschnitt verdienen Frauen in Europa 16% weniger als Männer, sie stellen nur 29% der Führungspositionen in großen Unternehmen und nur 32% der Mitglieder in nationalen Parlamenten dar.',
+      "Die Gleichheit von Männern und Frauen ist ein grundlegendes Prinzip der Europäischen Union, das im Artikel 2 des Vertrags über die Europäische Union (EU-Vertrag) anerkannt wird. Das Prinzip wird in verschiedenen Programmen umgesetzt, so etwa in dem Programm „Bürgerinnen und Bürger, Gleichstellung, Rechte und Werte“ (2021-2027) oder in dem „Aktionsplan für die Gleichstellung der Geschlechter“ (GAP III). Dieses Programm soll die Gleichstellung der Geschlechter und die Stärkung der Frauen in den externen Maßnahmen der EU fördern. Im Durchschnitt verdienen Frauen in Europa 16% weniger als Männer, sie stellen nur 29% der Führungspositionen in großen Unternehmen und nur 32% der Mitglieder in nationalen Parlamenten dar.",
     id: 83,
     sources: "https://ec.europa.eu/commission/presscorner/detail/en/IP_20_2184",
+    express: false,
   },
   {
     question: "Welches Ziel soll das Erasmus-Programm verfolgen?",
     answers: [
       {
-        text: "Darauf achten, das Prinzip des Bürgers seiner eigenen Nation aufrechtzuerhalten.",
+        text: "Es ist wichtig, dass das nationalstaatliche Bewusstsein der Bürger bestehen bleibt.",
         partyId: 7,
         id: 1,
       },
       {
-        text: "Mehr europäische Universitäten schaffen und das Programm inklusiver gestalten",
+        text: "Es braucht mehr europäische Universitäten und inklusivere Programme.",
         partyId: 5,
         id: 2,
       },
       {
-        text: "Sein Publikum erweitern und die europäische Zugehörigkeit vertiefen",
+        text: "Die europäische Identität soll gefördert und ein breiteres Publikum angesprochen werden.",
         partyId: 1,
         id: 3,
       },
       {
-        text: "Mehr Inklusivität durch den Kampf gegen Diskriminierung aufgrund sozialer Bedingungen oder einer Behinderung.",
+        text: "Das Programm soll inklusiver werden, es muss aktiv gegen Diskriminierungen und Ungleichheiten vorgegangen werden.",
         partyId: 3,
         id: 4,
       },
       {
-        text: "Sich für berufliche Programme öffnen und eine Entdeckung Europas ermöglichen",
+        text: "Das Programm sollte auf Ausbildungsberufe erweitert werden und so neue Perspektiven des europäischen Austauschs schaffen. ",
         partyId: 2,
         id: 5,
       },
       {
-        text: "Er muss inklusiver und grüner sein",
+        text: "Das Programm muss inklusiver und nachhaltiger gestaltet werden.",
         partyId: 4,
         id: 6,
       },
       {
-        text: "Das Programm für die verwundbarsten Gruppen inklusiver gestalten",
+        text: "Das Programm muss inklusiver sein und die am meisten benachteiligten Gruppen fördern.",
         partyId: 6,
         id: 7,
       },
     ],
     category: 9,
     learnMore:
-      "Erasmus ist ein Bildungsaustauschprogramm der Europäischen Union, das 1987 ins Leben gerufen wurde, um die Mobilität von Studierenden zwischen den Mitgliedsländern zu fördern und interkulturelles Verständnis zu unterstützen. Es unterstützt Bildung, Ausbildung, Jugend und Sport in Europa. Das Programm 2021-2027 legt den Schwerpunkt auf soziale Inklusion, ökologische und digitale Übergänge sowie eine verstärkte Beteiligung junger Menschen am demokratischen Leben. Es zielt auch darauf ab, die Arbeitslosigkeit zu reduzieren, insbesondere bei jungen Menschen, die Bildung und Ausbildung bei Erwachsenen zu fördern und Innovation und Zusammenarbeit zu unterstützen. Allerdings wird es für sein mangelnde Zugänglichkeit und die Ungleichheiten in der Finanzierung zwischen Einrichtungen kritisiert.",
+      "Erasmus wurde 1987 ins Leben gerufen und ist ein Bildungsaustauschprogramm der EU, das die Mobilität von Studierenden zwischen den Mitgliedsländern und somit das interkulturelle Verständnis fördern soll. Das Erasmus Programm unterstützt Initiativen im Bereich der Bildung, Ausbildung, Jugend und Sport in Europa. In dem Zeitraum 2021-2027 liegt der Schwerpunkt auf sozialer Inklusion, sowie der ökologischen und digitalen Transformation. Darüber hinaus zielt Erasmus darauf ab, die demokratische Beteiligung junger Menschen zu fördern und die Arbeitslosigkeit zu reduzieren. Die Ausbildung junger Erwachsener soll durch eine enge Kooperation und Innovationen unterstützt werden. Kritisiert wird das Programm jedoch für seine mangelnde Zugänglichkeit und die ungleiche Finanzierung zwischen den Einrichtungen. ",
     id: 84,
     sources:
       "https://www.consilium.europa.eu/fr/policies/erasmus-plus-programme/",
     express: true,
   },
   {
-    question: "Die Ausrufung der EU als LGBTIQ-Freiheitszone...",
+    question: "Die Ausrufung der EU zum „Freiheitsraum für LGBTIQ-Personen“…",
     answers: [
       {
-        text: "entspricht einer ideologischen Logik, die schädlich für das Familienmodell ist.",
+        text: "entspricht einer Ideologie, die schädlich für das Familienmodell ist.",
         partyId: 7,
         id: 1,
       },
       {
-        text: "überschreitet die Zuständigkeit der EU für Fragen rund um Ehe und Familie",
+        text: "überschreitet die Zuständigkeit der EU. ",
         partyId: 5,
         id: 2,
       },
       {
-        text: "ist das Signal, dass Europa eine Freiheitszone für alle darstellt",
+        text: "ist ein wichtiges Signal, dass Europa einen Raum der Freiheiten darstellt.",
         partyId: 1,
         id: 3,
       },
       {
-        text: "eine klare und kraftvolle Botschaft der Freiheit gegen die Rhetorik des Hasses",
+        text: "ist eine klare und bedeutende Botschaft für die Freiheit und gegen die Rhetorik des Hasses.",
         partyId: 3,
         id: 4,
       },
       {
-        text: "sichert die Verteidigung der Rechte gegen die Kriminalisierung der extremen Rechten",
+        text: "schützt die individuellen Rechte vor der Kriminalisierung der extremen Rechten. ",
         partyId: 2,
         id: 5,
       },
@@ -3949,16 +4006,17 @@ export default [
     ],
     category: 9,
     learnMore:
-      'Im Jahr 2021 erklärte das Europäische Parlament die Europäische Union als „LGBTIQ-freie Zone“ als Antwort auf diskriminierende Maßnahmen, insbesondere in Polen und Ungarn. Darunter fallen die "LGBTQIA+ Free Zones". Diese Zonen, die oft mit Gemeinden oder lokalen Behörden verbunden sind, sind Orte, an denen Erklärungen oder Politiken Feindseligkeit gegenüber LGBTQIA+-Personen zum Ausdruck bringen. Diese Handlungen können von symbolischen Erklärungen bis hin zu diskriminierenden gesetzlichen Maßnahmen reichen. Heute fordern viele Abgeordnete die Einleitung von Vertragsverletzungsverfahren.',
+      "Das Europäische Parlament hat im März 2021 die EU zum Freiheitsraum für LGBTIQ-Personen erklärt. Diese Erklärung ist eine Reaktion auf die Ausrufung sogenannter „LGBT-Free Zones“ in einigen Regionen in der EU, unter anderem in Polen und Ungarn. Diese Zonen, die oft mit Gemeinden oder lokalen Behörden verbunden sind, sind Orte, an denen LGBTQIA+-feindliche Äußerungen zum Ausdruck gebracht werden. Diese Handlungen reichen von diskriminierenden Aussagen bis hin zu diskriminierenden Gesetzesakten in den entsprechenden Regionen. Vor diesem Hintergrund fordern viele EU-Parlamentarier die Einleitung von Vertragsverletzungsverfahren gegen die entsprechenden EU-Mitgliedsstaaten. ",
     id: 85,
     sources:
       "https://www.europarl.europa.eu/news/fr/press-room/20210304IPR99219/le-parlement-declare-l-union-europeenne-zone-de-liberte-lgbtiq",
+    express: false,
   },
   {
-    question: "Die Unterstützung Europas für Künstler...",
+    question: "Die Unterstützung der EU für Künstler...",
     answers: [
       {
-        text: "ist unzureichend und sollte mehr Mittel für KMU bereitstellen",
+        text: "ist unzureichend und sollte mehr Mittel für kleine und mittlere Unternehmen bereitstellen.",
         partyId: 7,
         id: 1,
       },
@@ -3968,557 +4026,565 @@ export default [
         id: 2,
       },
       {
-        text: "ist wichtig, um ihnen bei der Bewältigung der Krise zu helfen und aufstrebende Künstler zu unterstützen",
+        text: "ist notwendig, um die Bewältigung von Krisen zu ermöglichen und angehende Künstler zu unterstützen.",
         partyId: 1,
         id: 3,
       },
       {
-        text: "sollte eine europäische Kulturpolitik darstellen, indem die Zuständigkeiten der EU in diesem Bereich erweitert werden.",
+        text: "sollte europaweit koordiniert werden, die Kulturpolitik sollte Teil der Zuständigkeit der EU werden.",
         partyId: 3,
         id: 4,
       },
       {
-        text: "ist immer noch unzureichend, es muss 2% der Konjunkturpläne für die Kultur bereitgestellt werden",
+        text: "ist immer noch unzureichend, 2% des Konjunkturprogramms sollte für die Kultur bereitgestellt werden.",
         partyId: 2,
         id: 5,
       },
       {
-        text: "muss ihre künstlerische Freiheit schützen und ihnen ein Einkommen sowie soziale Absicherung gewährleisten",
+        text: "muss die künstlerische Freiheit schützen und soziale Sicherheit gewährleisten.",
         partyId: 4,
         id: 6,
       },
       {
-        text: "ist unzureichend und muss in Bezug auf Gender inklusiver werden",
+        text: "ist unzureichend und muss inklusiver gestaltet werden. ",
         partyId: 6,
         id: 7,
       },
     ],
     category: 9,
     learnMore:
-      'Die Europäische Union widmet bereits einen Teil ihres Budgets zur Unterstützung des künstlerischen Sektors. Das Programm "Kreatives Europa" mit einem Budget von 2,44 Milliarden Euro (2021-2027) zielt darauf ab, künstlerische Zusammenarbeit zu fördern, die Wettbewerbsfähigkeit des europäischen audiovisuellen Sektors und Innovation, insbesondere im digitalen Bereich, zu unterstützen. Die Hauptziele des Programms sind die Erhaltung, Entwicklung und Förderung der Vielfalt des materiellen und sprachlichen europäischen Erbes. In seiner aktuellen Form zielt das Programm darauf ab, zur Wiederbelebung des Sektors beizutragen, indem er ihn inklusiver, digitaler und umweltfreundlicher macht.',
+      'Die Europäische Union widmet bereits einen Teil ihres Budgets der Unterstützung des künstlerischen Bereichs. Das Kulturförderprogramm "Kreatives Europa" verfügt beispielsweise über ein Budget von 2,44 Milliarden Euro (2021-2027). Es zielt darauf ab, die künstlerische Zusammenarbeit zu vertiefen, die Wettbewerbsfähigkeit des europäischen audiovisuellen Sektors zu fördern und Innovationen, insbesondere im digitalen Bereich, zu unterstützen. Die Hauptziele des Programms sind somit die Erhaltung, Entwicklung und Förderung der Vielfalt des europäischen Erbes. In seiner aktuellen Form verfolgt das Kulturförderprogramm das Ziel, den künstlerischen Sektor inklusiver, nachhaltiger und digitaler zu gestalten.',
     id: 86,
     sources:
       "https://culture.ec.europa.eu/fr/creative-europe/about-the-creative-europe-programme",
+    express: false,
   },
   {
-    question: "Das Europäische Jugendjahr muss",
+    question: "Das Europäische Jahr der Jugend sollte…",
     answers: [
       {
-        text: "alle europäischen Jugendlichen konsultieren, nicht nur die städtische und bürgerliche Jugend",
+        text: "alle europäischen Jugendlichen integrieren und sich nicht nur auf die städtische und bürgerliche Jugend konzentrieren. ",
         partyId: 7,
         id: 1,
       },
       {
-        text: "ermöglichen konkrete Maßnahmen auf der Ebene der Mitgliedstaaten ohne Ideologie",
+        text: "Projekte auf Ebene der Mitgliedsstaaten ermöglichen und keiner politischen Ideologie folgen.",
         partyId: 5,
         id: 2,
       },
       {
-        text: "zu Maßnahmen für eine bessere politische Beteiligung junger Menschen führen",
+        text: "durch Projekte die Beteiligung junger Europäer an dem politischen Entscheidungsfindungsprozess fördern. ",
         partyId: 1,
         id: 3,
       },
       {
-        text: "Zu konkreten Ergebnissen in Bezug auf die Beratung von jungen Menschen, die Bezahlung von Praktika und die mentale Gesundheit gelangen.",
+        text: "konkrete Ergebnisse liefern, etwa im Bezug auf die Bezahlung von Praktika oder im Bereich der Unterstützungsprogramme für die mentale Gesundheit. ",
         partyId: 3,
         id: 4,
       },
       {
-        text: "der Ausgangspunkt für eine inklusive und grüne Politik zugunsten der Jugendlichen zu sein",
+        text: "den Ausgangspunkt für eine inklusivere und nachhaltige Politik für die junge Generation bilden. ",
         partyId: 2,
         id: 5,
       },
       {
-        text: "mehr Inklusivität ermöglichen, indem man gegen Rassismus, Diskriminierung und Geschlechtergewalt kämpft",
+        text: "als Plattform gegen Rassismus, Diskriminierung und Geschlechtergewalt dienen und so mehr Inklusivität ermöglichen.  ",
         partyId: 4,
         id: 6,
       },
       {
-        text: "führt zu Steigerungen der öffentlichen Ausgaben im Bildungsbereich",
+        text: "zu einer Steigerung der Ausgaben im Bildungsbereich führen.",
         partyId: 6,
         id: 7,
       },
     ],
     category: 9,
     learnMore:
-      "Im Jahr 2022 erklärte die Europäische Union das Jahr 2022 zum Europäischen Jugendjahr. Diese Initiative zielt darauf ab, die Rolle der Jugendlichen beim Aufbau Europas hervorzuheben, wobei der Schwerpunkt auf den Themen Umweltschutz, Inklusivität und Digitalisierung liegt. Aus diesem Anlass wurden 13.000 Aktivitäten in 67 Ländern durchgeführt, um ihre Stimmen in sozialen Medien zu fördern, Debatten und Treffen mit politischen Entscheidungsträgern zu ermöglichen.",
+      "2022 erklärte die Europäische Union das Jahr 2022 zum Europäischen Jugendjahr. Diese Initiative zielte darauf ab, die Rolle der Jugendlichen beim Aufbau Europas hervorzuheben. Der Schwerpunkt des Europäischen Jugendjahrs lag auf den Themen Umweltschutz, Inklusivität und Digitalisierung. Aus diesem Anlass wurden 13.000 Aktivitäten in 67 Ländern durchgeführt. So soll die Partizipation der Jugendlichen gefördert und Debatten sowie ein Austausch mit den politischen Entscheidungsträgern ermöglicht werden.  ",
     id: 87,
     sources: "https://youth.europa.eu/year-of-youth_fr",
+    express: false,
   },
   {
     question:
       "Die Priorität bei der Barrierefreiheit für Menschen mit Behinderungen ist...",
     answers: [
       {
-        text: "die Finanzinstrumente zugunsten von Menschen mit Behinderungen zu verbessern",
+        text: "mehr Finanzmittel für Projekte zugunsten von Menschen mit Behinderungen bereitzustellen. ",
         partyId: 7,
         id: 1,
       },
       {
-        text: "eine gemeinsame europäische Ausweis für Menschen mit Behinderungen zu erstellen",
+        text: "einen gemeinsamen europäischen Ausweis für Menschen mit Behinderungen einzuführen. ",
         partyId: 5,
         id: 2,
       },
       {
-        text: "sicherstellen, dass die Lebenswahl für alle garantiert ist und ihnen ein unabhängiges Leben ermöglichen",
+        text: "sicherzustellen, dass die freie Wahl der Lebensart für alle besteht und ein eigenständiges Leben möglich ist.  ",
         partyId: 1,
         id: 3,
       },
       {
-        text: "sicherstellen der Zugänglichkeit zum Arbeitsmarkt durch Anti-Diskriminierungsgesetze",
+        text: "den Zugang zum Arbeitsmarkt durch Einführung von Anti-Diskriminierungsgesetze zu sichern. ",
         partyId: 3,
         id: 4,
       },
       {
-        text: "die Chancengleichheit für Bildung und Beschäftigung zu schaffen",
+        text: "die Chancengleichheit im Bereich der Bildung und Arbeitswelt zu schaffen.",
         partyId: 2,
         id: 5,
       },
       {
-        text: "Die Rechte von Menschen mit Behinderungen in alle politischen Bereiche integrieren",
+        text: "die Integration der Rechte von Menschen mit Behinderungen in allen politischen Bereichen. ",
         partyId: 4,
         id: 6,
       },
       {
-        text: "die Nutzung der europäischen Mittel für Menschen mit Behinderungen zu überwachen",
+        text: "die Nutzung der europäischen Fonds für Menschen mit Behinderungen zu überwachen.",
         partyId: 6,
         id: 7,
       },
     ],
     category: 9,
     learnMore:
-      'Die Europäische Union hat einen strategischen Entwicklungsplan für die Rechte von Menschen mit Behinderungen zwischen 2021-2030 erarbeitet. Dieser fördert die Gleichberechtigung, die Verbesserung der Mobilitätshilfen, die Entwicklung von Chancen und die Teilnahme am öffentlichen Diskurs und der Wirtschaft. Dies äußert sich in Initiativen wie "Accessible EU" und der europäischen Behindertenkarte, die darauf abzielen, die Autonomie von Menschen mit Behinderungen zu fördern, indem sie den Schwerpunkt auf den Deinstitutionalisierungsprozess, soziale Absicherung und Nichtdiskriminierung am Arbeitsplatz legen.',
+      'Die Europäische Union hat eine Strategie für die Rechte von Menschen mit Behinderungen für den Zeitraum 2021-2030 erarbeitet. Das Ziel des Programms ist die Förderung der Gleichberechtigung sowie der gesellschaftlichen und wirtschaftlichen Teilhabe und die Verbesserung der Mobilitätshilfen. Diese Strategie äußert sich in Initiativen wie "Accessible EU" und der europäischen Behindertenkarte, die darauf abzielen, die Autonomie von Menschen mit Behinderungen zu fördern. Der Schwerpunkt wird somit auf die soziale Sicherheit und die Nichtdiskriminierung am Arbeitsplatz gelegt.',
     id: 88,
     sources:
       "https://ec.europa.eu/social/main.jsp?catId=1484&langId=fr#:~:text=En%20mars%202021%2C%20la%20Commission,Europe%20et%20dans%20le%20monde.",
+    express: false,
   },
   {
-    question: "Die Politik der Europäischen Union im Bereich des Sports muss…",
+    question: "Die Politik der Europäischen Union im Bereich des Sports soll…",
     answers: [
       {
-        text: "begrenzt sein, da es ein Bereich ist, der nicht politisiert werden sollte",
+        text: "begrenzt sein, da der Sport nicht politisiert werden sollte.",
         partyId: 7,
         id: 1,
       },
       {
-        text: "soll das traditionelle Sportmodell gegen seine Kommerzialisierung und die Geschlechterideologie verteidigen",
+        text: "das traditionelle Sportmodell gegen die Kommerzialisierung des Sports und Genderdebatten verteidigen.",
         partyId: 5,
         id: 2,
       },
       {
-        text: "Unterstützung europäischer Werte und Förderung der Menschenrechte bei sportlichen Veranstaltungen",
+        text: "sich für die Verbreitung der europäischen Werte und Menschenrechte bei Sportveranstaltungen einsetzen.",
         partyId: 1,
         id: 3,
       },
       {
-        text: "eine soziale Absicherung für professionelle Sportler sicherstellen und den Sektor gerechter gestalten",
+        text: "die soziale Absicherung für professionelle Sportler garantieren und sich für gerechtere Löhne einsetzen. ",
         partyId: 3,
         id: 4,
       },
       {
-        text: "gegen die Privatisierung und Kommerzialisierung kämpfen, um einen einfachen Zugang zum Sport zu gewährleisten",
+        text: "sich gegen die Privatisierung und Kommerzialisierung einsetzen, um einen einfachen Zugang zum Sport für alle zu gewährleisten.",
         partyId: 2,
         id: 5,
       },
       {
-        text: "die kommerziellen Interessen des Sports kontrollieren und die Sportausübung fördern",
+        text: "die kommerziellen Interessen des Sports kontrollieren und die Sportausübung stärker fördern.",
         partyId: 4,
         id: 6,
       },
       {
-        text: "entwickelt werden, da sie ein Schlüsselelement für soziale Inklusion und Wohlbefinden ist",
+        text: "weiterentwickelt werden, da sie ein Schlüsselelement für gesellschaftliche Teilhabe darstellt.",
         partyId: 6,
         id: 7,
       },
     ],
     category: 9,
     learnMore:
-      "Der Bereich Sport ist eine der Zuständigkeiten der Europäischen Union seit dem Vertrag von Lissabon (2009). Dieser hat Auswirkungen auf die öffentliche Gesundheit, die wirtschaftliche Entwicklung und die Soft Power. Die europäischen Initiativen konzentrieren sich auf die Integrität des Sports, indem sie soziale Inklusion durch die Förderung von Initiativen und Programmen wie Erasmus+ unterstützen. Das Europäische Parlament entwickelt Politiken zur Geschlechtergleichheit und Bekämpfung von Korruption. Die Förderung des Sports umfasst auch die Regulierung des E-Sports, um dessen Entwicklung und Integrität zu gewährleisten.",
+      "Seit dem Vertrag von Lissabon (2009) gehört der Bereich des Sports zu den Zuständigkeiten der Europäischen Union. Die Sportpolitik auf Ebene der EU verfügt über Soft Power und hat Auswirkungen auf die öffentliche Gesundheit und die wirtschaftliche Entwicklung. Die europäischen Initiativen konzentrieren sich auf die Integrität des Sports, indem sie soziale Inklusion durch die Förderung von Initiativen und Programmen wie Erasmus+ unterstützen. Das Europäische Parlament entwickelt Politiken zur Geschlechtergleichheit und Bekämpfung von Korruption. Darüber hinaus umfasst die Förderung des Sports auch die Regulierung und Entwicklung des E-Sports. ",
     id: 89,
     sources: "https://www.europarl.europa.eu/factsheets/fr/sheet/143/le-sport",
+    express: false,
   },
   {
-    question: "Das europäische Kulturerbe ist",
+    question: "Das europäische Kulturerbe ist...",
     answers: [
       {
-        text: "eine Kultur und Geschichte, die vor Wokenismus geschützt werden müssen",
+        text: "Kultur und Geschichte, die gegen woke Ideologien verteidigt werden müssen.",
         partyId: 7,
         id: 1,
       },
       {
-        text: "eine unschätzbare Ressource, die für zukünftige Generationen geschützt und finanziert werden muss",
+        text: "eine unermessliche Ressource, die für kommenden Generationen erhalten und finanziert werden muss.",
         partyId: 5,
         id: 2,
       },
       {
-        text: "eine Identität und ein wirtschaftlicher Vorteil, die geschützt werden müssen",
+        text: "eine Identität und ein finanzieller Trumpf, der beschützt werden muss.",
         partyId: 1,
         id: 3,
       },
       {
-        text: "Eine Schlüsselressource für die Wirtschaft der Regionen und die europäische Kultur.",
+        text: "eine wichtige Einnahmequelle in den lokalen Wirtschaften vieler Regionen, und gleichzeitig ein wertvoller Teil der europäischen Kultur.",
         partyId: 3,
         id: 4,
       },
       {
-        text: "im Begriff sich zu digitalisieren und die Handlungsweise der Union zu beschleunigen",
+        text: "im Begriff digitalisiert zu werden und sich im Zuge der verschnellten Handlungsweise der EU zu verändern.",
         partyId: 2,
         id: 5,
       },
       {
-        text: "ein universelles und multikulturelles Gemeingut, das dazu führt, unsere Geschichte neu zu überdenken",
+        text: "ein multikulturelles Gemeingut, das eine wichtige Rolle im Umgang mit unserer Geschichte spielt, indem es uns zum Beispiel dabei helfen kann unsere Geschichte umzudenken.",
         partyId: 4,
         id: 6,
       },
       {
-        text: "unsere Identität, die geschützt werden muss, sich aber an den digitalen und ökologischen Wandel anpassen muss.",
+        text: "unsere Identität, die zugleich erhalten und in Hinsicht auf Digitalisierungs- und Umweltfragen angepasst werden muss.",
         partyId: 6,
         id: 7,
       },
     ],
     category: 9,
     learnMore:
-      'Die Europäische Union unterstützt die nationalen Bemühungen zum Schutz und zur Förderung des europäischen Kulturerbes. Zu diesem Zweck hat die Kommission Politikdokumente wie "Für einen integrierten Ansatz zum europäischen Kulturerbe" (2014) und "Eine neue europäische Agenda für die Kultur" (2018) erstellt. Der Europäische Rat wiederum legt Maßnahmen zur Erhaltung des Erbes im Falle von Naturkatastrophen und illegalen Aktivitäten fest. Das Jahr 2018 wurde zum Europäischen Jahr des Kulturerbes erklärt.',
+      "Die Europäische Union unterstützt die nationalen Bemühungen zum Schutz und zur Förderung des europäischen Kulturerbes. Zu diesem Zweck hat die Kommission einen Europäischen Aktionsrahmen mit Initiativen wie das „Integrierte Konzept für Kulturerbe der EU“ (2014) und die „neue europäische Agenda für Kultur“ (2018) ins Leben gerufen. Der Europäische Rat wiederum legt Maßnahmen zur Erhaltung des Erbes im Falle von Naturkatastrophen und illegalen Aktivitäten fest. Das Jahr 2018 wurde zum Europäischen Jahr des Kulturerbes erklärt.",
     id: 90,
     sources:
       "https://culture.ec.europa.eu/fr/cultural-heritage/eu-policy-for-cultural-heritage/eu-competences-in-cultural-heritage",
     express: true,
   },
   {
-    question: "Die Bewältigung der Covid-Krise durch die EU hat...",
+    question: "Das Krisenmanagement der EU während der COVID-19-Pandemie...",
     answers: [
       {
-        text: "Mangelnde Transparenz beim Kauf von Impfstoffen und beim COVID-Zertifikat",
+        text: "mangelte an Transparenz beim Kauf der Impfstoffe und bei der Vergabe der COVID-Zertifikate.",
         partyId: 7,
         id: 1,
       },
       {
-        text: "Die Verhandlungen über den Kauf von Impfstoffverträgen waren von Korruption geprägt.",
+        text: "war von Korruption geprägt, insbesondere bei den Verhandlungen über den Kauf der Impfstoffe.",
         partyId: 5,
         id: 2,
       },
       {
-        text: "koordinationsmangel, aber aufgeholt durch den gruppenkauf von impfstoffen",
+        text: "war auf europäischer Ebene schlecht koordiniert, aber verbesserte sich durch den gemeinsamen Kauf von Impfstoffen.",
         partyId: 1,
         id: 3,
       },
       {
-        text: "bewiesen, dass sie nicht gut genug vorbereitet war, aber dass sie zeigen kann, wie man reagieren kann",
+        text: "hat gezeigt, wie unvorbereitet und dennoch reaktionsfähig die EU war.",
         partyId: 3,
         id: 4,
       },
       {
-        text: "aufgrund des Mangels an Kompetenz der EU im Gesundheitswesen",
+        text: "war uneffektiv, da es der EU an Kompetenzen im Gesundheitsbereich fehlt. ",
         partyId: 2,
         id: 5,
       },
       {
-        text: "verweigerte das Recht auf Zugang zur medizinischen Versorgung, um die Pharmaindustrie zu schützen",
+        text: "missachtete das Recht auf eine gute medizinische Versorgung, um die Interessen der Pharmaindustrie zu schützen. ",
         partyId: 4,
         id: 6,
       },
       {
-        text: "bevorzugt die Interessen der Pharmaindustrie auf Kosten des öffentlichen Interesses",
+        text: "konzentrierte sich auf die Interessen der Pharmaindustrie statt auf das Allgemeinwohl.",
         partyId: 6,
         id: 7,
       },
     ],
     category: 10,
     learnMore:
-      "COVID-19 trat im Dezember 2019 in Wuhan, China, auf. Im März 2020 hatten alle EU-Mitgliedsstaaten COVID-19-Fälle gemeldet. Die EU reagierte, indem sie Maßnahmen mit ihren Mitgliedsstaaten koordinierte, um die öffentliche Gesundheit zu schützen. Die Prioritäten waren die Einführung digitaler Impfzertifikate, die Unterstützung bei der Rückführung von 650.000 europäischen Bürgern, die in Drittländern festsitzen, und die Bereitstellung erheblicher Mittel für den Wiederaufbau (1,824 Billionen Euro für den Zeitraum 2021-2027). Schließlich hat die EU Initiativen wie COVAX unterstützt, um den weltweiten Zugang zu Impfstoffen zu erleichtern.",
+      "Der erste Fall von COVID-19 trat im Dezember 2019 im chinesischen Wuhan auf. Im März 2020 hatten alle EU-Mitgliedsstaaten COVID-19-Fälle gemeldet. Die EU reagierte mit Maßnahmen zum Schutz der Öffentlichkeit, indem sie die Politiken der Mitgliedsstaaten koordinierte. Zu den Prioritäten gehörten unter anderem die Einführung digitaler Impfzertifikate sowie die Unterstützung bei der Rückführung von 650.000 europäischen Bürgern, die in Drittländern festsaßen. Darüber hinaus stellte die EU mit dem Konjunkturpaket erhebliche Mittel- 1,824 Billionen Euro für den Zeitraum 2021-2027- bereit. Weiterhin hat die EU-Initiativen wie COVAX unterstützt, um den weltweiten Zugang zu Impfstoffen zu erleichtern.",
     id: 91,
     sources: "https://www.consilium.europa.eu/fr/policies/coronavirus/",
     express: true,
   },
   {
-    question: "Der europäische Raum, Gesundheitsdaten...",
+    question: "Der Europäischer Raum für Gesundheitsdaten (EHDS)…",
     answers: [
       {
-        text: "greift in die Souveränität der Staaten ein",
+        text: "greift in die Souveränität der Staaten ein.",
         partyId: 7,
         id: 1,
       },
       {
-        text: "sollte eine Opt-out-Option integrieren",
+        text: "sollte eine Opt-out-Option integrieren.",
         partyId: 5,
         id: 2,
       },
       {
-        text: "Die Qualität der Versorgung wird gesteigert, indem sie effizienter wird.",
+        text: "wird die gesundheitliche Versorgung effizienter gestalten und so ihre Qualität steigern. ",
         partyId: 1,
         id: 3,
       },
       {
-        text: "Verbessert die Diagnose und reduziert sicher die Kosten für Daten.",
+        text: "wird die medizinischen Diagnosen verbessern und vollen Datenschutz gewähren. ",
         partyId: 3,
         id: 4,
       },
       {
-        text: "Ermöglicht einen sofortigen Zugriff auf Informationen.",
+        text: "wird einen direkten und unkomplizierten Zugriff auf die Gesundheitsdaten ermöglichen. ",
         partyId: 2,
         id: 5,
       },
       {
-        text: "Ändert die Spielregeln für die Forschung und Prävention von Gesundheitskrisen",
+        text: "wird einen Wendepunkt für die Bereiche der Forschung und der Krisenprävention darstellen. ",
         partyId: 4,
         id: 6,
       },
       {
-        text: "muss das Recht der Patienten sicherstellen, auf ihre Daten zuzugreifen",
+        text: "muss sicherstellen, dass die Patienten vollen Zugriff auf ihre Gesundheitsdaten haben. ",
         partyId: 6,
         id: 7,
       },
     ],
     category: 10,
     learnMore:
-      "Der Europäische Gesundheitsdatenraum (European Health Data Space - EHDS) ist eine Initiative der Europäischen Union, die den sicheren und ethischen Austausch von Gesundheitsdaten in ganz Europa erleichtern soll. Dieser Raum soll es allen europäischen Bürgern ermöglichen, elektronisch auf ihre Gesundheitsdaten zuzugreifen. Das Ziel ist, dass jeder Europäer überall in Europa dank des vereinfachten Austauschs von medizinischen Akten behandelt werden kann. Das EHDS zielt auch darauf ab, die medizinische Forschung zu verbessern.",
+      "Der Europäische Raum für Gesundheitsdaten (European Health Data Space - EHDS) ist eine Initiative der Europäischen Union, die den sicheren und ethischen Austausch von Gesundheitsdaten in ganz Europa erleichtern soll. Dieser Raum soll es allen europäischen Bürgern ermöglichen, digital auf ihre Gesundheitsdaten zuzugreifen. Das Ziel ist, dass jeder Europäer überall in Europa dank des vereinfachten Austauschs von medizinischen Akten behandelt werden kann. Das EHDS zielt auch darauf ab, die medizinische Forschung zu verbessern.",
     id: 92,
     sources:
       "https://health.ec.europa.eu/ehealth-digital-health-and-care/european-health-data-space_fr",
+    express: false,
   },
   {
-    question: "Die Priorität in der Gesundheitspolitik ist…",
+    question: "Die Priorität der europäischen Gesundheitspolitik ist…",
     answers: [
       {
-        text: "um den Mitgliedsländern Finanzierungen zur Investition in die Gesundheit bereitzustellen",
+        text: "Investitionen der Mitgliedsstaaten im Bereich der Gesundheitsversorgung finanziell zu unterstützen. ",
         partyId: 7,
         id: 1,
       },
       {
-        text: "Die Verfügbarkeit von Medikamenten verbessern",
+        text: "die Verfügbarkeit von Medikamenten zu verbessern.",
         partyId: 5,
         id: 2,
       },
       {
-        text: "Investieren Sie besonders in die Forschung, insbesondere in Impfstoffe.",
+        text: "in Forschung, und insbesondere in Impfstoffe zu investieren. ",
         partyId: 1,
         id: 3,
       },
       {
-        text: "Die Ausbildung zur Prävention von chronischen Krankheiten",
+        text: "in die Weiterbildung zur Prävention von chronischen Krankheiten zu investieren.",
         partyId: 3,
         id: 4,
       },
       {
-        text: "Krankheiten vorbeugen und Ungleichheiten reduzieren",
+        text: "Krankheiten vorzubeugen und Ungleichheiten zu reduzieren.",
         partyId: 2,
         id: 5,
       },
       {
-        text: "Stärkung der Fähigkeiten der EU",
+        text: "die Kompetenzen der EU zu stärken. ",
         partyId: 4,
         id: 6,
       },
       {
-        text: "die Zusammenarbeit zwischen Staaten zu stärken, ohne diese Kompetenz an die EU zu übertragen",
+        text: "die Zusammenarbeit zwischen den Staaten zu stärken, ohne dabei weitere Kompetenzen an die EU zu übertragen.",
         partyId: 6,
         id: 7,
       },
     ],
     category: 10,
     learnMore:
-      'Nach dem Programm "EU für Gesundheit (2021-2027)" lauten die europäischen Prioritäten wie folgt: Prävention, Förderung eines gesunden Lebensstils, Verbraucherschutz, Innovation durch Forschung und Bereitstellung grenzüberschreitender Gesundheitsversorgung durch die europäische Krankenversicherungskarte. Die Mitgliedsstaaten sind jedoch für Fragen der Gesundheit zuständig, die EU spielt daher eine ergänzende Rolle. Sie stellt hauptsächlich Finanzmittel zur Verfügung und fördert die Zusammenarbeit zwischen den Staaten. Die EU regelt auch klinische Studien und die Zulassung von Medikamenten über die Europäische Arzneimittelagentur.',
+      'Nach dem Programm „EU4Health“ (2021-2027)" liegt die Priorität der europäischen Gesundheitspolitik auf folgenden Bereichen: gesundheitliche Prävention, Förderung eines gesunden Lebensstils, Verbraucherschutz, Innovation durch Forschung und Bereitstellung grenzüberschreitender Gesundheitsversorgung durch die europäische Krankenversicherungskarte. Da die Mitgliedsstaaten jedoch für die Themen der Gesundheit zuständig sind, spielt die EU ausschließlich eine ergänzende Rolle. Sie stellt hauptsächlich Finanzmittel zur Verfügung und fördert die Zusammenarbeit zwischen den Staaten. Die EU regelt auch klinische Studien und die Zulassung von Medikamenten über die Europäische Arzneimittelagentur.',
     id: 93,
     sources:
       "https://www.consilium.europa.eu/fr/policies/eu-health-policy/#:~:text=am%C3%A9liorer%20et%20renforcer%20la%20sant%C3%A9,l'utilisation%20efficace%20des%20ressources",
+    express: false,
   },
   {
-    question:
-      "Auf globaler Ebene muss die EU im Gesundheitsbereich tätig werden...",
+    question: "Im Gesundheitsbereich soll die EU auf globaler Ebene…",
     answers: [
       {
-        text: "Aufhören, die großen Pharmakonzerne zu bereichern",
+        text: "aufhören die großen Pharmakonzerne zu bereichern.",
         partyId: 7,
         id: 1,
       },
       {
-        text: "Die Partnerschaften mit dem Rest der Welt stärken, damit die investierten Gelder effektiv sind.",
+        text: "die Zusammenarbeit mit ihren Partnern weltweit stärken, um Fördermittel effektiver einzusetzen.",
         partyId: 5,
         id: 2,
       },
       {
-        text: "die grundlegende Ursachen für schlechte Gesundheit beseitigen",
+        text: "sich für die Beseitigung gesundheitsschädlicher Einflüsse einsetzen. ",
         partyId: 1,
         id: 3,
       },
       {
-        text: "Sich zuerst auf die Gesundheit der Europäer konzentrieren",
+        text: "sich zuerst auf die Gesundheit der Europäer konzentrieren.",
         partyId: 3,
         id: 4,
       },
       {
-        text: "die Gleichstellung der Geschlechter beim Zugang zur Gesundheitsversorgung",
+        text: "die Gleichstellung der Geschlechter beim Zugang zur Gesundheitsversorgung fördern. ",
         partyId: 2,
         id: 5,
       },
       {
-        text: "solidarität ohne grenzen zeigen",
+        text: "unbegrenzte Solidarität und Unterstützung zeigen. ",
         partyId: 4,
         id: 6,
       },
       {
-        text: "sicherstellen, dass arme Länder Zugang zu Gesundheitstechnologien haben.",
+        text: "sicherstellen, dass die Länder des Globalen Südens Zugang zu Gesundheitstechnologien haben.",
         partyId: 6,
         id: 7,
       },
     ],
     category: 10,
     learnMore:
-      'Auf globaler Ebene setzt sich die EU für die Gesundheit ein. Sie möchte, dass Medikamente und Behandlungen in allen Ländern zugänglich und erschwinglich sind. Dafür unterstützt sie finanziell diese Länder, um ihre Gesundheitssysteme zu stärken, insbesondere in Afrika. Durch den Ansatz "Eine Gesundheit" erkennt die EU die Verbindung zwischen menschlicher, tierischer und Umweltgesundheit an, die sie umfassend schützen möchte. Die EU hat viele Partnerschaften mit Organisationen wie der Weltgesundheitsorganisation geschlossen, um ihre Ziele zu erreichen.',
+      "Die EU setzt sich auf globaler Ebene für die Gesundheit ein. Sie verfolgt das Ziel, dass Medikamente und Behandlungen in allen Ländern zugänglich und erschwinglich sind. Dafür unterstützt die EU – insbesondere die afrikanischen- Länder finanziell, um die Gesundheitssysteme zu stärken. Der One Health-Ansatz der EU beruht darauf, dass die Gesundheit von Menschen, Tieren und Ökosystemen untrennbar zusammenhängt. In diesem Sinne hat die EU viele Partnerschaften mit Organisationen wie der Weltgesundheitsorganisation geschlossen, um diese Ziele zu erreichen.",
     id: 94,
     sources:
       "https://ec.europa.eu/commission/presscorner/detail/fr/qanda_22_7126",
+    express: false,
   },
   {
     question:
-      "Die Maßnahmen der EU für die Rechte der Frauen zielen darauf ab,...",
+      "Die Förderungsmaßnahmen der EU für Frauenrechte sollen darauf abzielen, dass...",
     answers: [
       {
-        text: "Unterstützung von Frauen, damit sie nicht auf Abtreibung zurückgreifen müssen",
+        text: "Frauen unterstützt werden, damit sie nicht abtreiben müssen.",
         partyId: 7,
         id: 1,
       },
       {
-        text: "für das Recht auf Leben sein, anstatt für Abtreibung.",
+        text: "das Recht auf Leben geschützt wird, anstatt sich auf Abtreibung zu konzentrieren. ",
         partyId: 5,
         id: 2,
       },
       {
-        text: "auf Sexualerziehung und Verhütung setzen",
+        text: "Sexualerziehung und Verhütungsmethoden in den Fokus gerückt werden. ",
         partyId: 1,
         id: 3,
       },
       {
-        text: "Die Legalisierung von Abtreibung, um sicherzustellen, dass ein Grundrecht auf das Leben von Frauen gewährleistet wird",
+        text: "Abtreibung legalisiert wird, sodass das Grundrecht auf Leben der Frau respektiert wird. ",
         partyId: 3,
         id: 4,
       },
       {
-        text: "das Recht auf Abtreibung garantieren",
+        text: "das Recht auf Abtreibung garantiert wird. ",
         partyId: 2,
         id: 5,
       },
       {
-        text: "eine universelle, legale und sichere Recht auf Abtreibung zu garantieren.",
+        text: "das universelle, legale und sichere Recht auf Abtreibung garantiert wird. ",
         partyId: 4,
         id: 6,
       },
       {
-        text: "die öffentliche Gesundheitspolitik über das Recht auf Schwangerschaftsabbruch hinaus zu stärken",
+        text: "die Gesundheitspolitik, auch über das Recht auf Abtreibung hinaus, gestärkt wird. ",
         partyId: 6,
         id: 7,
       },
     ],
     category: 10,
     learnMore:
-      "Die EU legt besonderen Wert auf den Kampf gegen Gewalt gegen Frauen: Die Europäische Kommission hat daher im Jahr 2022 eine Richtlinie vorgeschlagen (eine gesetzliche Maßnahme, die Ziele und Ergebnisse festlegt, die von den Mitgliedstaaten erreicht werden sollen), um Gewalt gegen Frauen zu kriminalisieren, den Schutz der Opfer zu verbessern und den Zugang zu rechtlicher Hilfe zu erleichtern ... Die EU hat auch eine Strategie für die Gleichstellung von Frauen und Männern für den Zeitraum 2020-2025 eingeführt. Schließlich haben einige europäische Abgeordnete gefordert, dass das Recht auf Abtreibung in die Charta der Grundrechte der EU aufgenommen wird.",
+      "Die EU legt besonderen Wert auf Initiativen gegen Gewalt an Frauen: Die Europäische Kommission hat im Jahr 2022 eine Richtlinie vorgeschlagen, um Gewalt gegen Frauen zu kriminalisieren, den Schutz der Opfer zu verbessern und den Zugang zu rechtlicher Hilfe zu erleichtern. Gleichzeitig hat die EU eine Strategie für die Gleichstellung von Frauen und Männern für den Zeitraum 2020-2025 eingeführt. Weiterhin haben einige europäische Abgeordnete gefordert, dass das Recht auf Abtreibung in die Charta der Grundrechte der EU aufgenommen wird.",
     id: 95,
     sources:
       "https://www.europarl.europa.eu/news/fr/press-room/20220701IPR34349/inclure-le-droit-a-l-avortement-dans-la-charte-des-droits-fondamentaux-de-l-ue",
     express: true,
   },
   {
-    question: "Die Beziehung der EU zu Pharmaunternehmen muss...",
+    question: "Die Beziehung der EU zu Pharmaunternehmen soll...",
     answers: [
       {
-        text: "Nachhaltigkeit sicherstellen und die Widerstandsfähigkeit des europäischen pharmazeutischen Sektors stärken.",
+        text: "gepflegt werden, um langfristig die Wettbewerbsfähigkeit der europäischen Pharmaindustrie zu sichern.",
         partyId: 7,
         id: 1,
       },
       {
-        text: "arbeiten daran, die Unabhängigkeit der Arzneimittelproduktion in Europa wiederherzustellen",
+        text: "daran arbeiten, dass die Unabhängigkeit der Arzneimittelproduktion in Europa wiederhergestellt wird.",
         partyId: 5,
         id: 2,
       },
       {
-        text: "sicherstellen, dass die Industrien sich in Europa ansiedeln, um europäisch zu produzieren",
+        text: "sicherstellen, dass sich mehr Unternehmen in der EU niederlassen und die Bedeutung des Produktionsstandorts EU steigt.",
         partyId: 1,
         id: 3,
       },
       {
-        text: "sicherstellen einen fairen Zugang zu kontrollierten und erschwinglichen Medikamenten",
+        text: "sicherstellen, dass es einen fairen, kontrollierten und bezahlbaren Zugang zu Medikamenten gibt.",
         partyId: 3,
         id: 4,
       },
       {
-        text: "die Unabhängigkeit der EU im Gesundheitssektor zu gewährleisten",
+        text: "die Unabhängigkeit der EU im Gesundheitssektor zu gewährleisten.",
         partyId: 2,
         id: 5,
       },
       {
-        text: "den Rahmen verlassen, in dem die Industrie subventioniert wird, aber frei ihre Preise festlegt",
+        text: "mehr auf die Mechanismen des freien Markts, statt auf Subventionen setzen. ",
         partyId: 4,
         id: 6,
       },
       {
-        text: "eine verstärkte Kontrolle über die Unterstützung, die es den Pharmazeutikunternehmen gewährt, zu ermöglichen",
+        text: "die Verwendung der staatlichen Unterstützungen an die Pharmaindustrie stärker kontrollieren. ",
         partyId: 6,
         id: 7,
       },
     ],
     category: 10,
     learnMore:
-      "Die Europäische Union (EU) pflegt enge Beziehungen zur pharmazeutischen Industrie auf ihrem Territorium. Dies ist ein Mittel für die EU, Medikamente zu kontrollieren und gleichzeitig die Forschung zu finanzieren. Die EU regelt teilweise die Qualität, Zuverlässigkeit, Wirksamkeit und Preise von Medikamenten. Zu ihren Prioritäten gehört die Stärkung der Preistransparenz, die Verbesserung des Pharmabudgetmanagements, die Beschleunigung der Marktzulassung von Medikamenten in Krisenzeiten und die Förderung der rationalen Nutzung von Arzneimitteln. Sie drängt die Mitgliedstaaten zu mehr Kooperation in diesem Bereich.",
+      "Die Europäische Union (EU) pflegt enge Beziehungen zur europäischen Pharmaindustrie. Die Beziehungen zu der Industrie ermöglichen es der EU, Medikamente zu kontrollieren und gleichzeitig Forschungsinitiativen finanziell zu unterstützen. Die EU ist teilweise für die Regulierung der Preise, Qualität, Zuverlässigkeit und Wirksamkeit der Medikamente verantwortlich. Zu ihren Prioritäten gehört die Verbesserung der Preistransparenz und des Budgetmanagements der Pharmaindustrie sowie die Beschleunigung der Marktzulassung von Medikamenten in Krisenzeiten. Darüber hinaus regt die EU die Mitgliedsstaaten zu mehr Kooperation an.",
     id: 96,
     sources:
       "https://www.consilium.europa.eu/fr/press/press-releases/2016/06/17/epsco-conclusions-balance-pharmaceutical-system/",
+    express: false,
   },
   {
     question: "Die europäische Initiative für psychische Gesundheit...",
     answers: [
       {
-        text: "soll gegen die Ursachen kämpfen, die Armut und soziale Isolation zunehmen lassen",
+        text: "soll gegen die Ursachen der Armut und sozialen Isolation kämpfen.",
         partyId: 7,
         id: 1,
       },
       {
-        text: "soll innovative und ehrgeizige Pilotprogramme erstellen",
+        text: "soll innovative und ehrgeizige Pilotprogramme für die psychische Gesundheit entwickeln.",
         partyId: 5,
         id: 2,
       },
       {
-        text: "ist erforderlich, um Opfer von psychischen Erkrankungen zu schützen und Diskriminierung zu vermeiden",
+        text: "ist wichtig, um Erkrankte zu schützen und Diskriminierungen vorzubeugen. ",
         partyId: 1,
         id: 3,
       },
       {
-        text: "soll sich in Handlungen in der Schule vom frühesten Alter an ausdrücken.",
+        text: "soll bereits in Schulen auf die Bedeutung der psychischen Gesundheit aufmerksam machen. ",
         partyId: 3,
         id: 4,
       },
       {
-        text: "sollte nicht nur Empfehlungen geben, sondern legislativ tätig werden, wo es möglich ist.",
+        text: "soll sich nicht auf Empfehlungen beschränken, sondern wenn möglich, auch legale Schritte vornehmen. ",
         partyId: 2,
         id: 5,
       },
       {
-        text: "muss sich in erster Linie an die LGBTQI+ Gemeinschaft richten",
+        text: "soll sich in erster Linie an die LGBTQI+ Gemeinschaft richten.",
         partyId: 4,
         id: 6,
       },
       {
-        text: "Darf nicht unter Unterfinanzierung leiden, sonst wird der Zugang zur Gesundheitsversorgung weiterhin abnehmen.",
+        text: "darf nicht unterfinanziert sein, sonst wird der Zugang zur Gesundheitsversorgung weiterhin abnehmen.",
         partyId: 6,
         id: 7,
       },
     ],
     category: 10,
     learnMore:
-      "Das Europäische Parlament hat kürzlich die Bedeutung der psychischen Gesundheit hervorgehoben und konkrete Maßnahmen zu ihrem Schutz gefordert. Angesichts der wachsenden Herausforderungen im Zusammenhang mit psychischen Störungen hat es die Auswirkungen der COVID-19-Pandemie auf das psychologische Wohlbefinden aller anerkannt. Das Parlament betont die Notwendigkeit, den Zugang zur psychischen Gesundheitsversorgung zu verbessern, insbesondere für vulnerable Gruppen wie Jugendliche, Ältere und systemrelevante Arbeitskräfte. Das Parlament hebt auch die Bedeutung hervor, die Stigmatisierung von psychischen Störungen zu bekämpfen und das Bewusstsein zu fördern.",
+      "Das Europäische Parlament hat kürzlich die Bedeutung der psychischen Gesundheit hervorgehoben und konkrete Maßnahmen zu ihrem Schutz gefordert. Vor dem Hintergrund der COVID-19-Pandemie und angesichts der wachsenden Herausforderungen im Zusammenhang mit psychischen Störungen hat es die Notwendigkeit formuliert, den Zugang zur psychischen Gesundheitsversorgung zu verbessern. Besonders vulnerable Gruppen wie Jugendliche, Ältere und systemrelevante Arbeitskräfte sollen von schneller Unterstützung profitieren können. Darüber hinaus betont das Parlament die Wichtigkeit, gegen die Stigmatisierung von psychischen Störungen vorzugehen und mehr Bewusstsein für mentale Gesundheit zu fördern. ",
     id: 97,
     sources:
       "https://www.europarl.europa.eu/topics/fr/article/20220624STO33809/le-parlement-appelle-a-l-action-pour-proteger-la-sante-mentale",
+    express: false,
   },
   {
-    question: "Die wichtigste Kennzahl des Europäischen Sozialfonds (ESF) ist…",
+    question: "Der Kernaspekt des Europäischen Sozialfonds (ESF) ist…",
     answers: [
       {
-        text: "Es ist skandalös, dass dieser Plan die Migrationsschwemme finanziert.",
+        text: "skandalös, da dieser die Massenimmigration nach Europa finanziert.",
         partyId: 7,
         id: 1,
       },
       {
-        text: "Er schafft einen stabilen rechtlichen Rahmen für die Mitfinanzierung nationaler Sozialpolitiken.",
+        text: "die Schaffung eines stabilen rechtlichen Rahmens für die Finanzierung nationaler Sozialpolitiken.",
         partyId: 5,
         id: 2,
       },
@@ -4528,120 +4594,122 @@ export default [
         id: 3,
       },
       {
-        text: "die Erhöhung der Mindestressourcen, um die Bedürftigsten zu unterstützen.",
+        text: "die Erhöhung des Mindestbetrags der Mittel, um die Bedürftigsten zu unterstützen.",
         partyId: 3,
         id: 4,
       },
       {
-        text: "die Verpflichtung für Staaten mit hoher Kinderarmut, einen Mindestanteil des ESF für diese Sache zu verwenden",
+        text: "die Staaten mit hoher Kinderarmut dazu zu verpflichten, einen Mindestanteil des ESF für die Bekämpfung der Kinderarmut einzusetzen. ",
         partyId: 2,
         id: 5,
       },
       {
-        text: "die 88 Milliarden für Solidarität und soziale Gerechtigkeit",
+        text: "der Betrag von 88 Milliarden Euro für Ausgaben für Solidarität und soziale Gerechtigkeit.",
         partyId: 4,
         id: 6,
       },
       {
-        text: "Die Verpflichtung, einen Mindestbetrag an Mitteln für soziale Inklusion zu verwenden",
+        text: "die Verpflichtung, einen Mindestbetrag an Mitteln für soziale Inklusion zu verwenden.",
         partyId: 6,
         id: 7,
       },
     ],
     category: 10,
     learnMore:
-      "Der Europäische Sozialfonds Plus (ESF+) ist ein Finanzierungsprogramm in Höhe von fast 88 Milliarden Euro, das darauf abzielt, Beschäftigung, Bildung und Ausbildung in Europa zu unterstützen. Er zielt darauf ab, die soziale Integration zu stärken, Chancengleichheit auf dem Arbeitsmarkt zu fördern und vulnerable Arbeitnehmer wie junge Menschen, Menschen mit Behinderungen und Migranten zu unterstützen. Der ESF+ trägt zur Umsetzung des wirtschaftlichen Wiederaufbauplans der EU nach COVID-19 bei.",
+      "Der Europäische Sozialfonds Plus (ESF+) ist ein Finanzierungsprogramm der EU mit einem Budget von fast 88 Milliarden Euro, das darauf abzielt, Beschäftigung und Bildung in Europa zu fördern. Weitere Ziele des ESF+ sind die Stärkung der sozialen Integration, die Förderung der Chancengleichheit auf dem Arbeitsmarkt und die Unterstützung vulnerabler Arbeitnehmer, wie junge Menschen, Migranten oder Menschen mit Behinderungen. Darüber hinaus trägt der ESF+ zur Umsetzung des wirtschaftlichen Wiederaufbauplans der EU nach der COVID-19-Pandemie bei.",
     id: 98,
     sources:
       "https://www.consilium.europa.eu/fr/press/press-releases/2021/01/28/european-social-fund-plus-council-and-parliament-reach-a-provisional-deal/",
+    express: false,
   },
   {
-    question: "Die Arbeitsgesundheitspolitik muss sich darauf konzentrieren,",
+    question: "Die Arbeitsgesundheitspolitik der EU sollte…",
     answers: [
       {
-        text: "massiv investieren, um Sicherheit zu gewährleisten",
+        text: "in die Sicherheit der Arbeitnehmer investieren.",
         partyId: 7,
         id: 1,
       },
       {
-        text: "aktuell für die digitale Welt und Telearbeit zu sein",
+        text: "zeitgemäß mit Digitalisierung und Homeoffice umgehen.",
         partyId: 5,
         id: 2,
       },
       {
-        text: "angemessen bleiben in Bezug auf die neuen Trends auf dem Arbeitsmarkt und die Bedeutung, die dem Wohlbefinden beigemessen wird",
+        text: "angemessen auf neue Tendenzen im Arbeitsmarkt eingehen und Wert auf das Wohlbefinden der Arbeitnehmer legen.",
         partyId: 1,
         id: 3,
       },
       {
-        text: "ein Ziel von Null Todesfällen bei Arbeitsunfällen zu erreichen",
+        text: "die Rate der Arbeitsunfälle mit tödlichem Ausgang auf 0% reduzieren.",
         partyId: 3,
         id: 4,
       },
       {
-        text: "psychosoziale Risiken vorbeugen und die Nutzung KI regulieren",
+        text: "psychosoziale Risken vorbeugen und die Verwendung von KI regulieren.",
         partyId: 2,
         id: 5,
       },
       {
-        text: "ambitionierter sein, um die Sterblichkeit bei der Arbeit auszurotten",
+        text: "ehrgeiziger an der Reduzierung der Sterbeziffer bei Arbeitsunfällen arbeiten.",
         partyId: 4,
         id: 6,
       },
       {
-        text: "die Risiken, am Arbeitsplatz krank zu werden, zu beseitigen",
+        text: "Risiken der Erkrankung am Arbeitsplatz beseitigen.",
         partyId: 6,
         id: 7,
       },
     ],
     category: 10,
     learnMore:
-      "Die EU drängt ihre Mitgliedstaaten dazu, faire und sichere Arbeitsbedingungen zu fördern, indem sie grundlegende Rechte der Arbeitnehmer wie sozialen Schutz gewährleisten. Die EU möchte alle Formen von Gewalt, Diskriminierung und Belästigung am Arbeitsplatz ausrotten, Regeln für Telearbeit einführen und auch flexiblere Arbeitszeiten befürworten, um den Stress zu reduzieren.",
+      "Die EU regt ihre Mitgliedstaaten dazu an, faire und sichere Arbeitsbedingungen wie grundlegende Arbeitnehmerrechte zu gewährleisten. Die EU möchte alle Formen von Gewalt, Diskriminierung und Belästigung am Arbeitsplatz abschaffen, Regeln für Arbeit im Home-Office einführen und den Ausbau flexiblerer Arbeitszeiten fördern, um Stress zu reduzieren. ",
     id: 99,
     sources: "https://www.consilium.europa.eu/fr/policies/protecting-workers/",
+    express: false,
   },
   {
     question: "Eine europäische Richtlinie über Mindestlöhne…",
     answers: [
       {
-        text: "zerstören den Arbeitskodex und die sozialen Errungenschaften",
+        text: "würde Arbeitsbedingungen und die von Arbeitnehmern errungenen sozialen Rechte gefährden.",
         partyId: 7,
         id: 1,
       },
       {
-        text: "es muss klar angegeben werden, dass die Mitgliedstaaten die Entscheidungsträger sind.",
+        text: "muss sicherstellen, dass die europäischen Mitgliedsstaaten Entscheidungsträger bleiben.",
         partyId: 5,
         id: 2,
       },
       {
-        text: "ist entgegen den Verträgen und fördert den Euroskeptizismus in Skandinavien",
+        text: "steht im Widerspruch mit den Europäischen Verträgen und könnte EU-Skepsis in Skandinavien anregen.",
         partyId: 1,
         id: 3,
       },
       {
-        text: "Ermöglicht allen EU-Arbeitnehmern einen anständigen Lebensstandard.",
+        text: "erlaubt allen Arbeitnehmern in der EU anständige Lebensstandards.",
         partyId: 3,
         id: 4,
       },
       {
-        text: "Ermöglicht eine würdige Lebensqualität für alle, die arbeiten.",
+        text: "ermöglicht Arbeitnehmern menschenwürdige Lebensumstände.",
         partyId: 2,
         id: 5,
       },
       {
-        text: "führt Europa voran, indem die Armutsquote am Arbeitsplatz um 10 % reduziert wird",
+        text: "wird soziale Aspekte in der EU voranbringen, indem Armut trotz Erwerbstätigkeit um 10% gesenkt wird.",
         partyId: 4,
         id: 6,
       },
       {
-        text: "soll Gewerkschaften und Tarifverträge stärken",
+        text: "muss Gewerkschaften und Tarifvereinbarungen stärken.",
         partyId: 6,
         id: 7,
       },
     ],
     category: 10,
     learnMore:
-      "Die europäische Richtlinie zu Mindestlöhnen von 2022 zielt darauf ab, einen fairen Mindestlohn in der EU zu etablieren, der angemessene Lebensbedingungen für die Arbeitnehmer gewährleistet. Die Höhe der monatlichen Mindestlöhne in den Mitgliedsländern der EU variiert stark: Sie beträgt 332 € in Bulgarien gegenüber 2 256 € in Luxemburg (Eurostat 2022). Die EU möchte diese Unterschiede reduzieren und die Mindestlöhne harmonisieren. Jedes Land muss einen monatlichen Mindestlohn festlegen, der seiner sozioökonomischen Situation angemessen ist. Die EU will sozialen Zusammenhalt fördern, Armut reduzieren und Arbeitnehmer, insbesondere Frauen, schützen.",
+      "Die europäische Richtlinie über angemessene Mindestlöhnen aus dem Jahr 2022 zielt darauf ab, einen fairen Mindestlohn in der EU zu etablieren, der angemessene Lebensbedingungen für die Arbeitnehmer gewährleistet. Die Höhe der monatlichen Mindestlöhne in den Mitgliedsländern der EU variiert stark. In Bulgarien beträgt der Mindestlohn 332 € monatlich, während er in Luxemburg bei 2 256 €  pro Monat liegt (Eurostat 2022). Die EU möchte diese Unterschiede reduzieren und die Mindestlöhne harmonisieren. Jedes Land muss einen monatlichen Mindestlohn festlegen, der der sozioökonomischen Situation angemessen ist. So will die EU den sozialen Zusammenhalt fördern, Armut reduzieren und Arbeitnehmer, insbesondere Frauen, schützen.",
     id: 100,
     sources:
       "https://www.europarl.europa.eu/topics/fr/article/20210628STO07263/salaire-minimum-equitable-agir-pour-des-conditions-de-vie-decentes-dans-l-ue#:~:text=Le%20salaire%20minimum%20dans%20l,du%20co%C3%BBt%20de%20la%20vie.",

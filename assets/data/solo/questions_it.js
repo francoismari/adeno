@@ -3,37 +3,37 @@ export default [
     question: "Cosa pensi degli accordi di libero scambio?",
     answers: [
       {
-        text: "Non rafforzerà la nostra autonomia senza una riduzione della nostra dipendenza dagli USA e dalla Cina.",
+        text: "Non rafforzano la nostra autonomia senza una riduzione della nostra dipendenza dagli USA e dalla Cina.",
         partyId: 7,
         id: 1,
       },
       {
-        text: "Deve essere accelerato poiché sono un motore per i diritti umani e la competitività.",
+        text: "Devono essere accelerati poiché sono un motore per i diritti umani e la competitività.",
         partyId: 5,
         id: 2,
       },
       {
-        text: "Garantirebbe la sicurezza delle catene di valore in questo periodo incerto.",
+        text: "Participono a garantire la sicurezza delle catene di valore in questo periodo incerto.",
         partyId: 1,
         id: 3,
       },
       {
-        text: "Moderni, verdi e inclusivi con i paesi terzi è molto importante per la nostra autonomia strategica.",
+        text: "Se sono moderni, verdi e inclusivi con i paesi terzi, sono molto importanti per la nostra autonomia strategica.",
         partyId: 3,
         id: 4,
       },
       {
-        text: "È di importanza vitale ma deve rispettare l'ambizioso programma di sviluppo sostenibile.",
+        text: "È di importanza vitale ma devono rispettare l'ambizioso programma di sviluppo sostenibile.",
         partyId: 2,
         id: 5,
       },
       {
-        text: "Non deve essere fatto a scapito delle nostre ambizioni ecologiche, strategiche e sociali.",
+        text: "Non devono essere fatti a scapito delle nostre ambizioni ecologiche, strategiche e sociali.",
         partyId: 4,
         id: 6,
       },
       {
-        text: "Non permette una crescita sostenibile, a differenza dei trattati di commercio equo.",
+        text: "Non permettono una crescita sostenibile, a differenza dei trattati di commercio equo.",
         partyId: 6,
         id: 7,
       },
@@ -44,43 +44,43 @@ export default [
     id: 1,
     sources:
       "https://www.consilium.europa.eu/fr/policies/trade-policy/trade-agreements/",
+    express: false,
   },
   {
-    question:
-      '"È necessario tassare i maggiori inquinatori a livello dell\'UE?"',
+    question: "È necessario tassare i maggiori inquinatori a livello dell'UE?",
     answers: [
       {
-        text: "Sono un'opportunità per ridurre il rischio di fuga di carbonio e migliorare la competitività dell'UE.",
+        text: "Sì, è un'opportunità per ridurre il rischio di fuga di carbonio e migliorare la competitività dell'UE.",
         partyId: 7,
         id: 1,
       },
       {
-        text: "Devono essere implementate gradualmente per non danneggiare la competitività europea.",
+        text: "Sì, ma devono essere implementate gradualmente per non danneggiare la competitività europea.",
         partyId: 5,
         id: 2,
       },
       {
-        text: "Permetteranno di ridurre le emissioni globali ma non dovrebbero sostituire il sistema dell'ETS.",
+        text: "Sì, permetteranno di ridurre le emissioni globali ma non dovrebbero sostituire il sistema dell'ETS.",
         partyId: 1,
         id: 3,
       },
       {
-        text: "Un elemento essenziale del green deal che deve riflettere il mercato europeo del carbonio.",
+        text: "Sì, è un elemento essenziale del green deal che deve riflettere il mercato europeo del carbonio.",
         partyId: 3,
         id: 4,
       },
       {
-        text: "Sono importanti per combattere la concorrenza sleale a livello mondiale, se accompagnati dall'eliminazione delle quote gratuite.",
+        text: "Sì, sono importanti per combattere la concorrenza sleale a livello mondiale, se accompagnati dall'eliminazione delle quote gratuite.",
         partyId: 2,
         id: 5,
       },
       {
-        text: "Sono importanti per la protezione del clima a livello mondiale purché non penalizzino le industrie e i cittadini europei.",
+        text: "Sì, sono importanti per la protezione del clima a livello mondiale purché non penalizzino le industrie e i cittadini europei.",
         partyId: 4,
         id: 6,
       },
       {
-        text: "Sono un primo passo verso l'istituzione di un protezionismo ecologico e solidale senza logica di mercato.",
+        text: "Sì, sono un primo passo verso l'istituzione di un protezionismo ecologico e solidale senza logica di mercato.",
         partyId: 6,
         id: 7,
       },
@@ -91,13 +91,14 @@ export default [
     id: 2,
     sources:
       "https://www.consilium.europa.eu/en/infographics/fit-for-55-cbam-carbon-border-adjustment-mechanism/",
+    express: false,
   },
   {
     question:
       "Quali effetti hanno avuto le sanzioni dell'UE contro la Russia dall'inizio della guerra in Ucraina?",
     answers: [
       {
-        text: "Catastrofiche, l'inflazione è aumentata e la crisi energetica in Europa è arrivata.",
+        text: "Catastrofici, l'inflazione è aumentata e la crisi energetica in Europa è accaduta.",
         partyId: 7,
         id: 1,
       },
@@ -127,7 +128,7 @@ export default [
         id: 6,
       },
       {
-        text: '"Infestanti, hanno scatenato una crisi del costo della vita e un calo dei salari reali in Europa."',
+        text: "Infestanti, hanno scatenato una crisi del costo della vita e un calo dei salari reali in Europa.",
         partyId: 6,
         id: 7,
       },
@@ -138,6 +139,7 @@ export default [
     id: 3,
     sources:
       "https://www.consilium.europa.eu/fr/policies/sanctions/restrictive-measures-against-russia-over-ukraine/sanctions-against-russia-explained/",
+    express: false,
   },
   {
     question:
@@ -149,7 +151,7 @@ export default [
         id: 1,
       },
       {
-        text: "Conservare le attuali regole che sono chiare e uniformi",
+        text: "Conservare le regole attuali che sono chiare e uniformi",
         partyId: 5,
         id: 2,
       },
@@ -183,7 +185,8 @@ export default [
     learnMore:
       "Uno dei principali strumenti di queste regole è il Patto di stabilità e di crescita (PSC), istituito nel 1997 e revisionato nel 2011. Il PSC mira a garantire che i paesi membri mantengano i propri deficit pubblici sotto controllo e riducano il proprio debito pubblico.",
     id: 4,
-    sources: null,
+    sources: "",
+    express: false,
   },
   {
     question:
@@ -200,12 +203,12 @@ export default [
         id: 2,
       },
       {
-        text: '"Sì, per maggiore trasparenza, stabilità e meno decisioni politiche"',
+        text: "Sì, per maggiore trasparenza, stabilità e meno decisioni politiche",
         partyId: 1,
         id: 3,
       },
       {
-        text: "Sì, senza introdurre una tassa sulle società europee (da rivedere)",
+        text: "Sì, senza introdurre una tassa sulle imprese europee",
         partyId: 3,
         id: 4,
       },
@@ -230,7 +233,7 @@ export default [
       "Il bilancio dell'Unione europea (UE) è finanziato da due fonti principali: i contributi nazionali e le risorse proprie. I contributi nazionali sono somme versate da ciascuno Stato membro in base alla propria ricchezza nazionale, di solito calcolate come percentuale del proprio reddito nazionale lordo. Le risorse proprie sono fondi raccolti direttamente dall'UE, come i dazi sulle importazioni o i diritti agricoli. A differenza dei contributi nazionali, le risorse proprie non sono determinate dagli Stati membri. Sono fondamentali per finanziare le politiche e i programmi dell'UE.",
     id: 5,
     sources:
-      "https://www.europarl.europa.eu/factsheets/fr/sheet/27/recettes-de-l-union ",
+      "https://www.europarl.europa.eu/factsheets/fr/sheet/27/recettes-de-l-union",
     express: true,
   },
   {
@@ -274,7 +277,7 @@ export default [
     ],
     category: 1,
     learnMore:
-      "NextGenerationEU è un programma di ripresa economica dell'Unione europea (UE) in risposta alla crisi provocata dalla pandemia di COVID-19. Con un budget di 750 miliardi di euro, mira a sostenere la ripresa economica e sociale in tutta Europa. Questo finanziamento è ottenuto tramite l'emissione di debito comune, garantito dal bilancio dell'UE. I fondi saranno destinati ad iniziative volte a rafforzare la resilienza, la transizione ecologica e la trasformazione digitale, nonché a sostenere i settori più colpiti dalla crisi. NextGenerationEU rappresenta una risposta collettiva e ambiziosa dell'UE ai attuali desafíos.",
+      "NextGenerationEU è un programma di ripresa economica dell'Unione europea (UE) in risposta alla crisi provocata dalla pandemia di COVID-19. Con un budget di 750 miliardi di euro, mira a sostenere la ripresa economica e sociale in tutta Europa. Questo finanziamento è ottenuto tramite l'emissione di debito comune, garantito dal bilancio dell'UE. I fondi saranno destinati ad iniziative volte a rafforzare la resilienza, la transizione ecologica e la trasformazione digitale, nonché a sostenere i settori più colpiti dalla crisi. NextGenerationEU rappresenta una risposta collettiva e ambiziosa dell'UE alle sfide attuali.",
     id: 6,
     sources: "https://next-generation-eu.europa.eu/index_en",
     express: true,
@@ -303,7 +306,7 @@ export default [
         id: 4,
       },
       {
-        text: '"Non risolve nulla, è meglio aumentare i salari"',
+        text: "Non risolve nulla, è meglio aumentare i salari",
         partyId: 2,
         id: 5,
       },
@@ -324,6 +327,7 @@ export default [
     id: 7,
     sources:
       "https://www.ecb.europa.eu/press/pr/date/2023/html/ecb.mp230914~aab39f8c21.fr.html",
+    express: false,
   },
   {
     question: "Sarebbe una buona cosa avere un euro digitalizzato?",
@@ -369,6 +373,7 @@ export default [
       "Il progetto di euro digitale è un'iniziativa della Banca centrale europea (BCE) volta a esplorare la creazione di una versione digitale dell'euro, complementare al denaro contante e ai depositi bancari. Questa valuta digitale della banca centrale (CBDC) offrirebbe ai cittadini e alle imprese un'alternativa sicura ed efficace per effettuare transazioni elettroniche. Gli interessi principali del progetto risiedono nella garanzia della stabilità monetaria, nella promozione dell'innovazione finanziaria e nella salvaguardia della sovranità monetaria della zona euro di fronte alle evoluzioni tecnologiche globali, in particolare alle criptovalute private.",
     id: 8,
     sources: "https://www.ecb.europa.eu/paym/digital_euro/html/index.en.html",
+    express: false,
   },
   {
     question: "Il piano d'azione sull'economia circolare permette...",
@@ -384,22 +389,22 @@ export default [
         id: 2,
       },
       {
-        text: "Passare a un'economia circolare che accompagna gli imprenditori nel cambiare i loro modelli economici.",
+        text: "Di passare a un'economia circolare che accompagna gli imprenditori nel cambiare i loro modelli economici.",
         partyId: 1,
         id: 3,
       },
       {
-        text: "Ridurre l'uso di plastica e produrlo a partire da materiali rinnovabili",
+        text: "Di ridurre l'uso di plastica e produrlo a partire da materiali rinnovabili",
         partyId: 3,
         id: 4,
       },
       {
-        text: "Tendere verso un sistema completamente circolare che rispetti i limiti del nostro pianeta.",
+        text: "Di rendere verso un sistema completamente circolare che rispetti i limiti del nostro pianeta.",
         partyId: 2,
         id: 5,
       },
       {
-        text: "Avere obiettivi di riduzione vincolanti che includono solidarietà e rispetto per il pianeta.",
+        text: "Di avere obiettivi di riduzione vincolanti che includono solidarietà e rispetto per il pianeta.",
         partyId: 4,
         id: 6,
       },
@@ -415,18 +420,19 @@ export default [
     id: 9,
     sources:
       "https://environment.ec.europa.eu/strategy/circular-economy-action-plan_en",
+    express: false,
   },
   {
     question:
-      "sulla questione dell'accesso all'alloggio per tutti, l'Europa deve",
+      "Sulla questione dell'accesso all'alloggio per tutti, l'Europa deve",
     answers: [
       {
-        text: "A trattenersi dall'intervenire perché ciò rientrerebbe in una pianificazione economica comunista",
+        text: "Trattenersi dall'intervenire perché ciò rientrerebbe in una pianificazione economica comunista",
         partyId: 7,
         id: 1,
       },
       {
-        text: '"Restare fuori poiché non ha competenze in questo settore"',
+        text: "Restare fuori poiché non ha competenze in questo settore",
         partyId: 5,
         id: 2,
       },
@@ -441,7 +447,7 @@ export default [
         id: 4,
       },
       {
-        text: "Vietato speculare finanziariamente perché la casa è un diritto fondamentale su cui si basa il modello sociale europeo.",
+        text: "Vietare la speculazione finanziaria perché la casa è un diritto fondamentale su cui si basa il modello sociale europeo.",
         partyId: 2,
         id: 5,
       },
@@ -478,22 +484,22 @@ export default [
         id: 2,
       },
       {
-        text: '"Sì, per garantire un accesso a un\'energia stabile, poco costosa e pulita che rispetti i principi di mercato"',
+        text: "Sì, per garantire un accesso a un'energia stabile, poco costosa e pulita che rispetti i principi di mercato",
         partyId: 1,
         id: 3,
       },
       {
-        text: '"Sì bilanciando la stabilità per i consumatori e i principi di concorrenza sul mercato"',
+        text: "Sì bilanciando la stabilità per i consumatori e i principi di concorrenza sul mercato",
         partyId: 3,
         id: 4,
       },
       {
-        text: '"Sì, proteggendo in particolare i gruppi socialmente vulnerabili"',
+        text: "Sì, proteggendo in particolare i gruppi socialmente vulnerabili",
         partyId: 2,
         id: 5,
       },
       {
-        text: '"Sì, incoraggiando particolarmente le energie rinnovabili"',
+        text: "Sì, incoraggiando particolarmente le energie rinnovabili",
         partyId: 4,
         id: 6,
       },
@@ -505,7 +511,7 @@ export default [
     ],
     category: 2,
     learnMore:
-      "Nel 2022, i prezzi dell'energia nell'UE hanno raggiunto il loro livello storico più alto. In questo contesto, l'UE ha adottato misure per attenuare i costi energetici per i consumatori e le imprese. Tra gli aspetti della regolamentazione dei prezzi vi era in particolare il limite dei ricavi dei produttori di elettricità. Come risposta a lungo termine alla crisi energetica, l'UE sta lavorando su una riforma del mercato dell'elettricità per proteggere i consumatori dalle fluttuazioni dei prezzi.",
+      "Nel 2022, i prezzi dell'energia nell'UE hanno raggiunto il loro livello storico più alto. In questo contesto, l'UE ha adottato misure per attenuare l'aumento dei costi energetici per i consumatori e le imprese. Tra gli aspetti della regolamentazione dei prezzi vi era in particolare il limite dei ricavi dei produttori di elettricità. Come risposta a lungo termine alla crisi energetica, l'UE sta lavorando su una riforma del mercato dell'elettricità per proteggere i consumatori dalle fluttuazioni dei prezzi.",
     id: 11,
     sources:
       "https://www.europarl.europa.eu/factsheets/fr/sheet/45/marche-interieur-de-l-energie , https://www.consilium.europa.eu/fr/policies/electricity-market-reform/ , https://www.consilium.europa.eu/fr/policies/energy-prices-and-security-of-supply/",
@@ -540,12 +546,12 @@ export default [
         id: 5,
       },
       {
-        text: "Non è sostenibile, costoso, rischioso e inappropriato per affrontare la crisi climatica.",
+        text: "Non è sostenibile, ed è costoso, rischioso e inappropriato per affrontare la crisi climatica.",
         partyId: 4,
         id: 6,
       },
       {
-        text: "E' contrario agli obiettivi di sviluppo sostenibile",
+        text: "È contrario agli obiettivi di sviluppo sostenibile",
         partyId: 6,
         id: 7,
       },
@@ -556,6 +562,7 @@ export default [
     id: 12,
     sources:
       "https://www.europarl.europa.eu/factsheets/fr/sheet/62/l-energie-nucleaire , https://www.touteleurope.eu/environnement/energie-nucleaire-quels-sont-les-principaux-pays-producteurs-en-europe/",
+    express: false,
   },
   {
     question:
@@ -587,7 +594,7 @@ export default [
         id: 5,
       },
       {
-        text: '"Sì, ma è necessario concentrarsi maggiormente sulle energie rinnovabili anziché sulle energie fossili"',
+        text: "Sì, ma è necessario concentrarsi maggiormente sulle energie rinnovabili anziché sulle energie fossili",
         partyId: 4,
         id: 6,
       },
@@ -603,6 +610,7 @@ export default [
     id: 13,
     sources:
       "https://www.europarl.europa.eu/RegData/etudes/fiches_techniques/2017/N52942/doc_fr.pdf , https://www.europarl.europa.eu/news/fr/press-room/20220401IPR26530/le-pe-reforme-le-deploiement-des-infrastructures-energetiques-transeuropeennes , https://www.consilium.europa.eu/fr/infographics/ten-e-energy-infrastructure/",
+    express: false,
   },
   {
     question:
@@ -619,7 +627,7 @@ export default [
         id: 2,
       },
       {
-        text: '"No, ma bisogna tenere conto degli interessi di tutti i cittadini europei."',
+        text: "No, ma bisogna tenere conto degli interessi di tutti i cittadini europei.",
         partyId: 1,
         id: 3,
       },
@@ -629,12 +637,12 @@ export default [
         id: 4,
       },
       {
-        text: "\"No, bisogna continuare a perseguire le leggi sull'ambientalismo e sulla qualità dell'aria\"",
+        text: "No, bisogna continuare a perseguire le leggi sull'ambientalismo e sulla qualità dell'aria",
         partyId: 2,
         id: 5,
       },
       {
-        text: '"No, la priorità è realizzare il Green Deal giusto e sociale."',
+        text: "No, la priorità è realizzare il Green Deal giusto e sociale.",
         partyId: 4,
         id: 6,
       },
@@ -650,6 +658,7 @@ export default [
     id: 14,
     sources:
       "https://commission.europa.eu/strategy-and-policy/priorities-2019-2024/european-green-deal_fr , https://www.touteleurope.eu/environnement/qu-est-ce-que-le-pacte-vert-pour-l-europe/",
+    express: false,
   },
   {
     question: "L'unione dell'energia...",
@@ -680,7 +689,7 @@ export default [
         id: 5,
       },
       {
-        text: "Dobbiamo ridurre la nostra dipendenza dalle energie fossili.",
+        text: "Deve permettere di ridurre la nostra dipendenza dalle energie fossili.",
         partyId: 4,
         id: 6,
       },
@@ -716,7 +725,7 @@ export default [
         id: 3,
       },
       {
-        text: '"Accompagnerà i più fragili nella transizione ecologica"',
+        text: "Accompagnerà i più fragili nella transizione ecologica",
         partyId: 3,
         id: 4,
       },
@@ -742,6 +751,7 @@ export default [
     id: 16,
     sources:
       "https://www.europarl.europa.eu/news/fr/press-room/20221212IPR64528/accord-sur-la-creation-du-fonds-social-pour-le-climat , https://www.touteleurope.eu/environnement/fonds-social-pour-le-climat-comment-la-commission-veut-elle-concilier-ambition-environnementale-et-justice-sociale/",
+    express: false,
   },
   {
     question: "Che spazio l'UE dovrebbe concedere alle energie fossili?",
@@ -795,7 +805,7 @@ export default [
       "Lo strumento REpowerEU che mira a porre fine alla dipendenza dai combustibili fossili russi entro il 2030 è utile?",
     answers: [
       {
-        text: '"Sono solo obiettivi che l\'UE non si dà i mezzi per raggiungere"',
+        text: "Sono solo obiettivi che l'UE non si dà i mezzi per raggiungere",
         partyId: 7,
         id: 1,
       },
@@ -810,7 +820,7 @@ export default [
         id: 3,
       },
       {
-        text: "\"Sì, per garantire l'indipendenza dell'UE accelerando la transizione energetica\"",
+        text: "Sì, per garantire l'indipendenza dell'UE accelerando la transizione energetica",
         partyId: 3,
         id: 4,
       },
@@ -825,7 +835,7 @@ export default [
         id: 6,
       },
       {
-        text: "Insufficienti, è necessario regolare i prezzi e tassare i superprofitti delle imprese energetiche.",
+        text: "No, è necessario regolare i prezzi e tassare i superprofitti delle imprese energetiche.",
         partyId: 6,
         id: 7,
       },
@@ -836,6 +846,7 @@ export default [
     id: 18,
     sources:
       "https://commission.europa.eu/strategy-and-policy/priorities-2019-2024/european-green-deal/repowereu-affordable-secure-and-sustainable-energy-europe_fr",
+    express: false,
   },
   {
     question: "La quota delle energie rinnovabili in Europa...",
@@ -882,6 +893,7 @@ export default [
     id: 19,
     sources:
       "https://www.consilium.europa.eu/fr/press/press-releases/2023/10/09/renewable-energy-council-adopts-new-rules/",
+    express: false,
   },
   {
     question:
@@ -898,7 +910,7 @@ export default [
         id: 2,
       },
       {
-        text: "Una definizione più flessibile dei biocarburanti per l'aviazione sostenibile al fine di promuovere l'innovazione.",
+        text: "Avere una definizione più flessibile dei biocarburanti per l'aviazione sostenibile al fine di promuovere l'innovazione.",
         partyId: 1,
         id: 3,
       },
@@ -908,12 +920,12 @@ export default [
         id: 4,
       },
       {
-        text: "Obiettivi più ambiziosi e misure più rapide per garantire la transizione in questo settore.",
+        text: "Avere obiettivi più ambiziosi e misure più rapide per garantire la transizione in questo settore.",
         partyId: 2,
         id: 5,
       },
       {
-        text: "Una definizione rigorosa del carburante per aviazione sostenibile e un aumento della loro produzione.",
+        text: "Avere una definizione rigorosa del carburante per aviazione sostenibile e un aumento della loro produzione.",
         partyId: 4,
         id: 6,
       },
@@ -929,9 +941,10 @@ export default [
     id: 20,
     sources:
       "https://www.europarl.europa.eu/thinktank/fr/document/EPRS_BRI(2022)698900",
+    express: false,
   },
   {
-    question: "Le fake news e la disinformazione sono pericolose.",
+    question: "A proposito di fake news e di disinformazione...",
     answers: [
       {
         text: "È nell'interesse di tutti difendere le voci libere dei popoli europei.",
@@ -975,6 +988,7 @@ export default [
     id: 21,
     sources:
       "https://digital-strategy.ec.europa.eu/fr/policies/online-disinformation",
+    express: false,
   },
   {
     question:
@@ -1070,6 +1084,7 @@ export default [
     id: 23,
     sources:
       "https://www.europarl.europa.eu/factsheets/en/sheet/19/the-european-parliament-powers",
+    express: false,
   },
   {
     question: "Dobbiamo rafforzare la libertà dei media?",
@@ -1100,7 +1115,7 @@ export default [
         id: 5,
       },
       {
-        text: '"Sì, è una sfida inevitabile perché la democrazia è fragile."',
+        text: "Sì, è una sfida inevitabile perché la democrazia è fragile.",
         partyId: 4,
         id: 6,
       },
@@ -1152,7 +1167,7 @@ export default [
         id: 6,
       },
       {
-        text: '"Niente è cambiato."',
+        text: "No, niente è cambiato.",
         partyId: 6,
         id: 7,
       },
@@ -1163,6 +1178,7 @@ export default [
     id: 25,
     sources:
       "https://www.touteleurope.eu/institutions/qatargate-tout-comprendre-au-scandale-de-corruption-qui-touche-le-parlement-europeen/",
+    express: false,
   },
   {
     question: "La Conferenza sul futuro dell'Europa è...",
@@ -1209,6 +1225,7 @@ export default [
     id: 26,
     sources:
       "https://www.consilium.europa.eu/fr/policies/conference-on-the-future-of-europe/",
+    express: false,
   },
   {
     question: "Per le elezioni del Parlamento europeo…",
@@ -1272,12 +1289,12 @@ export default [
         id: 2,
       },
       {
-        text: '"Salverà la vita delle donne in Europa ma richiede un\'applicazione nazionale"',
+        text: "Sì, salverà la vita delle donne in Europa ma richiede un'applicazione nazionale",
         partyId: 1,
         id: 3,
       },
       {
-        text: '"Rafforza la lotta contro la violenza di genere e impone obblighi giuridici all\'UE"',
+        text: "Sì, rafforza la lotta contro la violenza di genere e impone obblighi giuridici all'UE",
         partyId: 3,
         id: 4,
       },
@@ -1303,9 +1320,10 @@ export default [
     id: 28,
     sources:
       "https://www.europarl.europa.eu/RegData/etudes/ATAG/2020/659334/EPRS_ATA(2020)659334_FR.pdf",
+    express: false,
   },
   {
-    question: "Il mancato rispetto dello Stato di diritto.",
+    question: "Il mancato rispetto dello Stato di diritto...",
     answers: [
       {
         text: "Non deve impedire l'accesso ai fondi europei",
@@ -1333,12 +1351,12 @@ export default [
         id: 5,
       },
       {
-        text: "Giustifico l'eccezione alla regola dell'unanimità in politica estera e di bilancio.",
+        text: "Giustifica l'eccezione alla regola dell'unanimità in politica estera e di bilancio.",
         partyId: 4,
         id: 6,
       },
       {
-        text: '"Prevenire di presiedere, di ricevere denaro e diritti di voto nell\'UE"',
+        text: "Deve impedire di presiedere, di ricevere denaro e di avere diritti di voto nell'UE",
         partyId: 6,
         id: 7,
       },
@@ -1349,12 +1367,13 @@ export default [
     id: 29,
     sources:
       "https://commission.europa.eu/strategy-and-policy/policies/justice-and-fundamental-rights/upholding-rule-law_fr",
+    express: false,
   },
   {
     question: "I parlamenti nazionali sono ben considerati a livello dell'UE?",
     answers: [
       {
-        text: '"Non abbastanza, è necessario rafforzare il loro controllo sulla Commissione e sul Parlamento europeo"',
+        text: "Non abbastanza, è necessario rafforzare il loro controllo sulla Commissione e sul Parlamento europeo",
         partyId: 7,
         id: 1,
       },
@@ -1395,6 +1414,7 @@ export default [
     id: 30,
     sources:
       "https://www.europarl.europa.eu/news/en/press-room/20240112IPR16766/improve-national-parliaments-role-in-european-democracy-meps-say",
+    express: false,
   },
   {
     question: "È necessario limitare la pesca eccessiva?",
@@ -1405,7 +1425,7 @@ export default [
         id: 1,
       },
       {
-        text: '"Aumentare la restrizione è ingiusto e inadatto alla realtà"',
+        text: "Aumentare la restrizione è ingiusto e inadatto alla realtà",
         partyId: 5,
         id: 2,
       },
@@ -1437,13 +1457,14 @@ export default [
     ],
     category: 4,
     learnMore:
-      "La Commissione dell'UE ha presentato un pacchetto di misure per migliorare la sostenibilità della pesca e dell'acquacoltura, attraverso la transizione energetica, la protezione degli ecosistemi marini e il potenziamento della politica comune della pesca. L'obiettivo è ridurre la dipendenza dai combustibili fossili, limitare l'impatto sugli ecosistemi e rendere il settore neutrale dal punto di vista del carbonio entro il 2050. Un partenariato per la transizione energetica e un \"Patto per la pesca e gli oceani\" mirano a coordinare gli sforzi. Queste misure contribuiranno a preservare le risorse marine e garantire un futuro sostenibile per le comunità di pescatori dell'UE.",
+      "La Commissione europea ha presentato un pacchetto di misure per migliorare la sostenibilità della pesca e dell'acquacoltura, attraverso la transizione energetica, la protezione degli ecosistemi marini e il potenziamento della politica comune della pesca. L'obiettivo è ridurre la dipendenza dai combustibili fossili, limitare l'impatto sugli ecosistemi e rendere il settore neutrale dal punto di vista del carbonio entro il 2050. Un partenariato per la transizione energetica e un \"Patto per la pesca e gli oceani\" mirano a coordinare gli sforzi. Queste misure contribuiranno a preservare le risorse marine e garantire un futuro sostenibile per le comunità di pescatori dell'UE.",
     id: 31,
     sources: "https://ec.europa.eu/commission/presscorner/detail/fr/ip_23_828",
+    express: false,
   },
   {
     question:
-      "Riguardo agli standard relativi al riutilizzo e al riciclo degli imballaggi di plastica",
+      "Riguardo agli standard relativi al riuso e al riciclo degli imballaggi di plastica...",
     answers: [
       {
         text: "Compromettono la sicurezza alimentare e la protezione dei prodotti durante il trasporto.",
@@ -1466,7 +1487,7 @@ export default [
         id: 4,
       },
       {
-        text: "È necessario rendere obbligatori gli imballaggi riutilizzabili.",
+        text: "È necessario rendere obbligatori gli imballaggi riusabili.",
         partyId: 2,
         id: 5,
       },
@@ -1487,6 +1508,7 @@ export default [
     id: 32,
     sources:
       "https://www.europarl.europa.eu/news/fr/headlines/society/20180328STO00751/gestion-des-dechets-dans-l-ue-faits-et-chiffres-infographie#:~:text=Selon%20des%20statistiques%20datant%20de,d%C3%A9chets%20municipaux%20d'ici%202030.",
+    express: false,
   },
   {
     question: "Come proteggere le foreste dalla deforestazione?",
@@ -1533,17 +1555,18 @@ export default [
     id: 33,
     sources:
       "https://www.consilium.europa.eu/fr/policies/deforestation/#:~:text=L'huile%20de%20palme%20est,et%20le%20caoutchouc%20de%203%20%25.",
+    express: false,
   },
   {
     question: "Per migliorare la qualità dell'aria in Europa è necessario...",
     answers: [
       {
-        text: "Meglio tenere conto delle caratteristiche dei territori per non influenzare l'economia.",
+        text: "Tenere meglio conto delle caratteristiche dei territori per non influenzare l'economia.",
         partyId: 7,
         id: 1,
       },
       {
-        text: "Non rispettare le regole dell'OMS e investire di più.",
+        text: "Andare oltre le regole dell'OMS e investire di più.",
         partyId: 5,
         id: 2,
       },
@@ -1553,7 +1576,7 @@ export default [
         id: 3,
       },
       {
-        text: "È necessario aumentare le ambizioni per allinearle alle linee guida dell'OMS entro il 2035.",
+        text: "Aumentare le ambizioni per allinearle alle linee guida dell'OMS entro il 2035.",
         partyId: 3,
         id: 4,
       },
@@ -1579,12 +1602,13 @@ export default [
     id: 34,
     sources:
       "https://www.consilium.europa.eu/fr/policies/air-quality/#:~:text=En%202021%2C%20la%20Commission%20europ%C3%A9enne,pacte%20vert%20pour%20l'Europe.",
+    express: false,
   },
   {
-    question: '"È necessario vietare il glifosato?"',
+    question: "È necessario vietare il glifosato?",
     answers: [
       {
-        text: '"No, perché non c\'è alternativa"',
+        text: "No, perché non c'è alternativa",
         partyId: 7,
         id: 1,
       },
@@ -1594,17 +1618,17 @@ export default [
         id: 2,
       },
       {
-        text: '"No, il glifosato è un pesticida molto importante per l\'agricoltura."',
+        text: "No, il glifosato è un pesticida molto importante per l'agricoltura.",
         partyId: 1,
         id: 3,
       },
       {
-        text: '"No, ma è necessario introdurre restrizioni d\'uso"',
+        text: "No, ma è necessario introdurre restrizioni d'uso",
         partyId: 3,
         id: 4,
       },
       {
-        text: '"Sì, a meno che non sia del tutto innocuo per le persone e l\'ambiente"',
+        text: "Sì, a meno che non sia del tutto innocuo per le persone e l'ambiente",
         partyId: 2,
         id: 5,
       },
@@ -1614,7 +1638,7 @@ export default [
         id: 6,
       },
       {
-        text: '"Sì, è un veleno per gli esseri umani e la natura"',
+        text: "Sì, è un veleno per gli esseri umani e la natura",
         partyId: 6,
         id: 7,
       },
@@ -1683,12 +1707,12 @@ export default [
         id: 1,
       },
       {
-        text: '"Scommettere sul nucleare"',
+        text: "Usare l'energia nucleare di più",
         partyId: 5,
         id: 2,
       },
       {
-        text: "Una strategia globale di autonomia ed efficienza tecnologica ed energetica",
+        text: "Avere una strategia globale di autonomia ed efficienza tecnologica ed energetica",
         partyId: 1,
         id: 3,
       },
@@ -1719,6 +1743,7 @@ export default [
     id: 37,
     sources:
       "https://www.europarl.europa.eu/pdfs/news/expert/2019/10/story/20190926STO62270/20190926STO62270_fr.pdf",
+    express: false,
   },
   {
     question:
@@ -1730,32 +1755,32 @@ export default [
         id: 1,
       },
       {
-        text: "Incentivare gli imprenditori a fornire informazioni affidabili ai consumatori.",
+        text: "Incentivando gli imprenditori a fornire informazioni affidabili ai consumatori.",
         partyId: 5,
         id: 2,
       },
       {
-        text: "Stabilire degli obblighi legislativi per combattere questo.",
+        text: "Stabilendo degli obblighi legislativi per combattere questo.",
         partyId: 1,
         id: 3,
       },
       {
-        text: "Deve rafforzare il diritto all'informazione dei consumatori",
+        text: "Rafforzando il diritto all'informazione dei consumatori",
         partyId: 3,
         id: 4,
       },
       {
-        text: '"Vietato fare comunicazioni commerciali se le caratteristiche di progettazione del prodotto ne limitano la durata"',
+        text: "Vietando comunicazioni commerciali se le caratteristiche di progettazione del prodotto ne limitano la durata",
         partyId: 2,
         id: 5,
       },
       {
-        text: "Deve essere riconosciuta come una pratica sleale e sanzionata.",
+        text: "Riconoscendola come una pratica sleale e sanzionata.",
         partyId: 4,
         id: 6,
       },
       {
-        text: "Imporre un obbligo di informazione sulla disponibilità dei pezzi di ricambio e creare un diritto alla riparazione.",
+        text: "Imponendo un obbligo di informazione sulla disponibilità dei pezzi di ricambio e creare un diritto alla riparazione.",
         partyId: 6,
         id: 7,
       },
@@ -1766,17 +1791,18 @@ export default [
     id: 38,
     sources:
       "https://www.europarl.europa.eu/news/fr/press-room/20230612IPR97206/ecoconception-nouvelles-regles-sur-la-durabilite-des-produits#:~:text=Le%20rapport%20interdit%20l'obsolescence,des%20accessoires%20pendant%20une%20dur%C3%A9e",
+    express: false,
   },
   {
     question: "Dovrebbero essere proibite le auto a motore a combustione?",
     answers: [
       {
-        text: '"No, è illusorio perché non c\'è spostamento senza emissioni di CO2."',
+        text: "No, è illusorio perché non c'è spostamento senza emissioni di CO2.",
         partyId: 7,
         id: 1,
       },
       {
-        text: '"No, bisogna lasciare che il mercato decida quale sia la migliore soluzione."',
+        text: "No, bisogna lasciare che il mercato decida quale sia la migliore soluzione.",
         partyId: 5,
         id: 2,
       },
@@ -1839,12 +1865,12 @@ export default [
         id: 4,
       },
       {
-        text: "Ridotta secondo un calendario rigoroso e una riduzione delle quote",
+        text: "Ridotti secondo un calendario rigoroso e una riduzione delle quote",
         partyId: 2,
         id: 5,
       },
       {
-        text: "Vietato a livello globale",
+        text: "Vietati a livello globale",
         partyId: 4,
         id: 6,
       },
@@ -1860,13 +1886,14 @@ export default [
     id: 40,
     sources:
       "https://www.europarl.europa.eu/news/fr/press-room/20230717IPR03026/accord-sur-la-reduction-des-emissions-de-gaz-fluores-dans-l-ue",
+    express: false,
   },
   {
     question:
       "Una tassa sui giganti del digitale a livello europeo potrebbe...",
     answers: [
       {
-        text: '"Assegnare ai consumatori finali che rischiano di pagarne il prezzo."',
+        text: "Impattare i consumatori finali che rischiano di pagarne il prezzo.",
         partyId: 7,
         id: 1,
       },
@@ -1881,7 +1908,7 @@ export default [
         id: 3,
       },
       {
-        text: "Per consentire una fiscalità equa che diventi una risorsa propria per l'UE",
+        text: "Consentire una fiscalità equa che diventi una risorsa propria per l'UE",
         partyId: 3,
         id: 4,
       },
@@ -1913,17 +1940,17 @@ export default [
     question: "Riguardo alla pubblicità mirata online, è necessario...",
     answers: [
       {
-        text: '"Vietato perché porta a una fuga di dati verso la Cina e gli Stati Uniti"',
+        text: "Vietarla perché porta a una fuga di dati verso la Cina e gli Stati Uniti",
         partyId: 7,
         id: 1,
       },
       {
-        text: "Non vietarlo poiché il suo utilizzo è benefico per le PMI e gli utenti fintanto che ne mantengono il controllo.",
+        text: "Non vietarla poiché il suo utilizzo è benefico per le PMI e gli utenti fintanto che ne mantengono il controllo.",
         partyId: 5,
         id: 2,
       },
       {
-        text: '"Vietarlo ai minori e se è discriminatorio."',
+        text: "Vietarla ai minori e se è discriminatorio.",
         partyId: 1,
         id: 3,
       },
@@ -1933,17 +1960,17 @@ export default [
         id: 4,
       },
       {
-        text: "Autorizzarlo sulla base del consenso dell'utente ma vietarlo per i dati personali sensibili",
+        text: "Autorizzarlo sulla base del consenso dell'utente ma vietarlo per i dati personali sensibili.",
         partyId: 2,
         id: 5,
       },
       {
-        text: '"Vietato, così come il miraggio e il miraggio basato su dati personali"',
+        text: "Vietarla, così come il miraggio e il miraggio basato su dati personali.",
         partyId: 4,
         id: 6,
       },
       {
-        text: '"Vietarlo a tutti gli utenti"',
+        text: "Vietarla per tutti gli utenti.",
         partyId: 6,
         id: 7,
       },
@@ -1954,6 +1981,7 @@ export default [
     id: 42,
     sources:
       "https://www.consilium.europa.eu/fr/policies/digital-services-act/",
+    express: false,
   },
   {
     question:
@@ -1965,29 +1993,34 @@ export default [
         id: 1,
       },
       {
-        text: "Riguarda esclusivamente la lotta contro gli attacchi terroristici o il controllo delle frontiere.",
+        text: "Riguardare esclusivamente la lotta contro gli attacchi terroristici o il controllo delle frontiere.",
         partyId: 5,
         id: 2,
       },
       {
+        text: "riguardano solo la lotta contro gli attentati terroristici o le indagini penali",
+        partyId: 1,
+        id: 3,
+      },
+      {
         text: "Essere autorizzata per la ricerca di persone scomparse o la prevenzione degli attacchi terroristici.",
         partyId: 3,
-        id: 3,
+        id: 4,
       },
       {
         text: "Essere vietata a distanza nello spazio pubblico, privato e online.",
         partyId: 2,
-        id: 4,
+        id: 5,
       },
       {
         text: "Essere completamente vietata negli spazi pubblici.",
         partyId: 4,
-        id: 5,
+        id: 6,
       },
       {
         text: "Essere vietata specificamente per la gestione della migrazione.",
         partyId: 6,
-        id: 6,
+        id: 7,
       },
     ],
     category: 5,
@@ -1996,6 +2029,7 @@ export default [
     id: 43,
     sources:
       "https://www.europarl.europa.eu/news/en/headlines/society/20230601STO93804/eu-ai-act-first-regulation-on-artificial-intelligence",
+    express: false,
   },
   {
     question: "Una regolamentazione del mercato europeo dei dati è...",
@@ -2041,12 +2075,13 @@ export default [
       "L'idea di un mercato europeo dei dati è promossa dalla Commissione europea per stimolare l'economia digitale. Il Data Act mira a regolare la raccolta, l'archiviazione e la condivisione dei dati all'interno dell'UE, garantendo la protezione dei diritti degli utenti e la sicurezza dei dati. Stabilisce standard per la governance dei dati, la trasparenza e l'interoperabilità dei sistemi. Il mercato europeo dei dati favorirebbe l'innovazione e la concorrenza nel rispetto dei principi di privacy e protezione dei dati. Questa iniziativa potrebbe dynamizzare l'economia digitale dell'UE e rafforzare la sua posizione globale.",
     id: 44,
     sources: "https://digital-strategy.ec.europa.eu/fr/policies/data-act",
+    express: false,
   },
   {
     question: "Nella lotta contro i contenuti illegali bisogna...",
     answers: [
       {
-        text: '"Vietare il ritiro dei contenuti senza controllo giudiziario."',
+        text: "Vietare il ritiro dei contenuti senza controllo giudiziario.",
         partyId: 7,
         id: 1,
       },
@@ -2061,7 +2096,7 @@ export default [
         id: 3,
       },
       {
-        text: "Un ambiente più sano e sicuro per i consumatori",
+        text: "Avere un ambiente più sano e sicuro per i consumatori",
         partyId: 3,
         id: 4,
       },
@@ -2076,7 +2111,7 @@ export default [
         id: 6,
       },
       {
-        text: "Un maggiore controllo delle autorità pubbliche e della giustizia.",
+        text: "Avere un maggiore controllo delle autorità pubbliche e della giustizia.",
         partyId: 6,
         id: 7,
       },
@@ -2098,7 +2133,7 @@ export default [
         id: 1,
       },
       {
-        text: '"Non regolare"',
+        text: "Evitare il sovraccarico regolamentare",
         partyId: 5,
         id: 2,
       },
@@ -2123,7 +2158,7 @@ export default [
         id: 6,
       },
       {
-        text: '"Non polarizzare la società e rafforzare le disuguaglianze"',
+        text: "Evitare la polarizzazione della società e l'aumento delle disuguaglianze",
         partyId: 6,
         id: 7,
       },
@@ -2134,6 +2169,7 @@ export default [
     id: 46,
     sources:
       "https://www.touteleurope.eu/l-europe-et-moi/digital-europe-le-programme-pour-une-europe-numerique/",
+    express: false,
   },
   {
     question: "Il geoblocking dei contenuti audiovisivi...",
@@ -2179,6 +2215,7 @@ export default [
       "Il geobloccaggio limita l'accesso ai beni e servizi in base alla posizione geografica dell'utente. L'UE ha preso misure per porre fine a questa discriminazione ingiusta adottando una regolamentazione che vieta il geobloccaggio ingiustificato in alcuni casi, come gli acquisti online di beni e servizi. Questa regolamentazione mira a promuovere un mercato unico digitale più aperto e competitivo, consentendo ai consumatori di beneficiare di un accesso equo e non discriminatorio alle offerte online in tutta l'Unione europea.",
     id: 47,
     sources: "https://www.consilium.europa.eu/fr/policies/geo-blocking/",
+    express: false,
   },
   {
     question:
@@ -2190,12 +2227,12 @@ export default [
         id: 1,
       },
       {
-        text: "Non bisogna sovvenzionare in quanto falsa il mercato unico.",
+        text: "Non bisogna sovvenzionarla in quanto falsa il mercato unico.",
         partyId: 5,
         id: 2,
       },
       {
-        text: "Rafforzare la crescita del settore incoraggiando la cooperazione pubblico-privata.",
+        text: "Rafforzare la crescita del settore incoraggiando la cooperazione pubblico-privato.",
         partyId: 1,
         id: 3,
       },
@@ -2226,9 +2263,10 @@ export default [
     id: 48,
     sources:
       "https://commission.europa.eu/strategy-and-policy/priorities-2019-2024/europe-fit-digital-age/european-chips-act_fr",
+    express: false,
   },
   {
-    question: "pensare in modo preventivo.",
+    question: "A proposito di cybersicurezza, l'UE deve...",
     answers: [
       {
         text: "Lasciare agli Stati il loro libero arbitrio perché la difesa è una prerogativa inviolabile degli Stati.",
@@ -2268,9 +2306,10 @@ export default [
     ],
     category: 5,
     learnMore:
-      "L'UE si impegna in un ambizioso programma per rafforzare la cybersecurity in Europa, essenziale nel nostro mondo digitale. Questo programma mira a proteggere i nostri dati personali, le nostre infrastrutture critiche e i nostri sistemi informatici contro gli attacchi informatici. Promuove la cooperazione tra gli Stati membri, le imprese e la società civile per individuare e contrastare le minacce online. L'UE investe nella ricerca, nella formazione e nello sviluppo di tecnologie innovative per rafforzare la nostra resilienza digitale. Sensibilizzando ed educando i cittadini sui rischi, l'UE aspira a creare uno spazio cibernetico sicuro e affidabile per tutti gli Europei.",
+      "L'UE si impegna in un ambizioso programma per rafforzare la cybersicurezza in Europa, essenziale nel nostro mondo digitale. Questo programma mira a proteggere i nostri dati personali, le nostre infrastrutture critiche e i nostri sistemi informatici contro gli attacchi informatici. Promuove la cooperazione tra gli Stati membri, le imprese e la società civile per individuare e contrastare le minacce online. L'UE investe nella ricerca, nella formazione e nello sviluppo di tecnologie innovative per rafforzare la nostra resilienza digitale. Sensibilizzando ed educando i cittadini sui rischi, l'UE aspira a creare uno spazio cibernetico sicuro e affidabile per tutti gli Europei.",
     id: 49,
     sources: "https://digital-strategy.ec.europa.eu/fr/policies/cybersecurity",
+    express: false,
   },
   {
     question: "La creazione di un'identità digitale europea è utile?",
@@ -2286,7 +2325,7 @@ export default [
         id: 2,
       },
       {
-        text: '"Sì, per un accesso facilitato ai servizi pubblici e sicuro alle piattaforme"',
+        text: "Sì, per un accesso facilitato ai servizi pubblici e sicuro alle piattaforme.",
         partyId: 1,
         id: 3,
       },
@@ -2301,7 +2340,7 @@ export default [
         id: 5,
       },
       {
-        text: '"Sì, ma non deve creare disuguaglianze indirette nell\'accesso al servizio pubblico"',
+        text: "Sì, ma non deve creare disuguaglianze indirette nell'accesso al servizio pubblico.",
         partyId: 4,
         id: 6,
       },
@@ -2339,12 +2378,12 @@ export default [
         id: 3,
       },
       {
-        text: "Dobbiamo sostenere gli agricoltori che investono in pratiche di produzione biologica.",
+        text: "Dobbiamo sostenere gli agricoltori che investono davvero nella produzione biologica.",
         partyId: 3,
         id: 4,
       },
       {
-        text: "Deve integrarlo pienamente e affermarlo a livello internazionale.",
+        text: "Deve integrarla pienamente e affermarla a livello internazionale.",
         partyId: 2,
         id: 5,
       },
@@ -2364,12 +2403,13 @@ export default [
       "La PAC, Politica Agricola Comune dell'UE dal 1962, sostiene gli agricoltori e lo sviluppo rurale garantendo sicurezza alimentare, stabilità dei mercati e redditi dignitosi. Utilizza sovvenzioni, programmi di sviluppo rurale e meccanismi di regolamentazione. La transizione ecologica indica un cambiamento fondamentale nelle pratiche economiche, sociali ed ambientali per ridurre l'impatto negativo sull'ambiente e promuovere la sostenibilità. Quindi è importante capire quali mezzi la PAC deve mettere in atto per facilitare la transizione ecologica, quanti fondi devono essere allocati e in che quantità.",
     id: 51,
     sources: "https://agriculture.ec.europa.eu/common-agricultural-policy_fr",
+    express: false,
   },
   {
     question: "È necessario ridurre l'uso di pesticidi in agricoltura?",
     answers: [
       {
-        text: '"No, perché non è il desiderio degli agricoltori."',
+        text: "No, perché non è il desiderio degli agricoltori.",
         partyId: 7,
         id: 1,
       },
@@ -2384,12 +2424,12 @@ export default [
         id: 3,
       },
       {
-        text: '"Si, è necessaria una strategia per la ricerca di alternative ai pesticidi e agli interferenti endocrini."',
+        text: "Sì, è necessaria una strategia per la ricerca di alternative ai pesticidi e agli interferenti endocrini.",
         partyId: 3,
         id: 4,
       },
       {
-        text: '"Sì, è necessario incoraggiare i metodi non chimici biologici e i prodotti a basso rischio."',
+        text: "Sì, è necessario incoraggiare i metodi non chimici biologici e i prodotti a basso rischio.",
         partyId: 2,
         id: 5,
       },
@@ -2410,13 +2450,14 @@ export default [
     id: 52,
     sources:
       "https://www.consilium.europa.eu/fr/press/press-releases/2022/12/19/council-calls-for-a-complementary-impact-assessment-on-the-sustainable-use-of-plant-protection-products-proposal/",
+    express: false,
   },
   {
     question:
       "Qual è la misura più importante da adottare per il benessere degli animali?",
     answers: [
       {
-        text: "Scommettere sulla produzione locale e rifiutare la carne artificiale o sintetica.",
+        text: "Puntare sulla produzione locale e rifiutare la carne artificiale o sintetica.",
         partyId: 7,
         id: 1,
       },
@@ -2426,7 +2467,7 @@ export default [
         id: 2,
       },
       {
-        text: "Aiuti agli allevatori e divieto delle importazioni non conformi alle norme europee.",
+        text: "Aiuti agli allevatori e vietare le importazioni non conformi alle norme europee.",
         partyId: 1,
         id: 3,
       },
@@ -2457,6 +2498,7 @@ export default [
     id: 53,
     sources:
       "https://commission.europa.eu/news/improving-welfare-animals-2023-12-07_fr#:~:text=La%20Commission%20europ%C3%A9enne%20a%20propos%C3%A9,%C3%A0%20fourrure%20dans%20l'UE.",
+    express: false,
   },
   {
     question:
@@ -2504,12 +2546,13 @@ export default [
     id: 54,
     sources:
       "https://www.europarl.europa.eu/doceo/document/TA-9-2024-0046_FR.html",
+    express: false,
   },
   {
     question: "Come permettere ai giovani agricoltori di insediarsi?",
     answers: [
       {
-        text: "Occorre ridurre le procedure amministrative e proteggere gli agricoltori dalla concorrenza sleale esterna.",
+        text: "Riducendo le procedure amministrative e proteggere gli agricoltori dalla concorrenza sleale esterna.",
         partyId: 7,
         id: 1,
       },
@@ -2572,12 +2615,12 @@ export default [
         id: 3,
       },
       {
-        text: "Indicazioni chiare e semplici, controllate dalla Commissione europea.",
+        text: "Indicazioni chiare e semplici, con il controllo della Commissione europea.",
         partyId: 3,
         id: 4,
       },
       {
-        text: "Porre l'accento sul territorio d'origine, controllato dalla Commissione.",
+        text: "Porre l'accento sul territorio d'origine, con il controllo della Commissione.",
         partyId: 2,
         id: 5,
       },
@@ -2598,13 +2641,14 @@ export default [
     id: 56,
     sources:
       "https://agriculture.ec.europa.eu/farming/geographical-indications-and-quality-schemes_fr",
+    express: false,
   },
   {
     question:
       "È necessario riesaminare lo status del lupo come specie in via di estinzione?",
     answers: [
       {
-        text: '"Sì perché mettono in pericolo gli abitanti delle zone rurali"',
+        text: "Sì perché mettono in pericolo gli abitanti delle zone rurali.",
         partyId: 7,
         id: 1,
       },
@@ -2645,6 +2689,7 @@ export default [
     id: 57,
     sources:
       "https://www.euractiv.fr/section/agriculture-alimentation/news/la-commission-propose-de-sortir-le-loup-de-son-statut-despece-strictement-protegee/",
+    express: false,
   },
   {
     question:
@@ -2676,7 +2721,7 @@ export default [
         id: 5,
       },
       {
-        text: '"Assicurare la transizione ecologica"',
+        text: "Assicurare la transizione ecologica.",
         partyId: 4,
         id: 6,
       },
@@ -2703,7 +2748,7 @@ export default [
         id: 1,
       },
       {
-        text: "bisogna una strategia europea per la produzione di proteine vegetali e animali",
+        text: "Bisogna una strategia europea per la produzione di proteine vegetali e animali",
         partyId: 5,
         id: 2,
       },
@@ -2739,6 +2784,7 @@ export default [
     id: 59,
     sources:
       "https://www.europarl.europa.eu/doceo/document/TA-9-2023-0375_FR.html",
+    express: false,
   },
   {
     question:
@@ -2770,12 +2816,12 @@ export default [
         id: 5,
       },
       {
-        text: '"No, perché firmiamo accordi con paesi che non rispettano l\'ambiente"',
+        text: "No, perché firmiamo accordi con paesi che non rispettano l'ambiente.",
         partyId: 4,
         id: 6,
       },
       {
-        text: '"No, stanno solo peggiorando gli standard europei."',
+        text: "No, stanno solo peggiorando gli standard europei.",
         partyId: 6,
         id: 7,
       },
@@ -2798,7 +2844,7 @@ export default [
         id: 1,
       },
       {
-        text: "Lei è naturale, dati i progressi fatti nei due paesi.",
+        text: "È naturale, dati i progressi fatti nei due paesi.",
         partyId: 5,
         id: 2,
       },
@@ -2808,12 +2854,12 @@ export default [
         id: 3,
       },
       {
-        text: "fanno parte della famiglia europea, ma l'UE deve prepararsi all'allargamento",
+        text: "Entrambi fanno parte della famiglia europea, ma l'UE deve prepararsi all'allargamento",
         partyId: 3,
         id: 4,
       },
       {
-        text: "È un simbolo importante ma bisogna prima consentire la ricostruzione.",
+        text: "È un simbolo importante ma bisogna prima aiutare alla ricostruzione.",
         partyId: 2,
         id: 5,
       },
@@ -2823,7 +2869,7 @@ export default [
         id: 6,
       },
       {
-        text: "deve essere respinta a causa del loro standard democratico ed economico",
+        text: "Deve essere respinta a causa del loro standard democratico ed economico",
         partyId: 6,
         id: 7,
       },
@@ -2833,6 +2879,7 @@ export default [
       "L'Ucraina è una ex repubblica sovietica che dal 2014 subisce pressioni militari dalla Russia. Nel 2022, una parte del suo territorio è stata attaccata dalla Russia, e la guerra continua ancora oggi. Questa guerra avviene mentre l'Ucraina ha avviato un processo di democratizzazione e modernizzazione dell'economia con l'obiettivo di avvicinarsi all'UE. La Moldavia, piccolo stato tra la Romania e l'Ucraina, sta seguendo gli stessi progetti democratici, e sebbene non sia direttamente attaccata dalla Russia, una parte del suo territorio (la regione della Transnistria) si è dichiarata unilateralmente autonoma e ha chiesto l'integrazione nella Russia nel 2016, senza successo. Alla fine del 2023, considerando gli sforzi compiuti dai due paesi e di fronte alla situazione eccezionale, la Commissione europea ha raccomandato al Consiglio dell'UE di aprire i negoziati di adesione.",
     id: 61,
     sources: "https://www.eeas.europa.eu/eeas/standwithukraine_en",
+    express: false,
   },
   {
     question: "Come bisogna considerare i rapporti con la Cina?",
@@ -2853,12 +2900,12 @@ export default [
         id: 3,
       },
       {
-        text: "è un partner commerciale, ma anche un rivale e un concorrente sistemico",
+        text: "È un partner commerciale, ma anche un rivale e un concorrente sistemico",
         partyId: 3,
         id: 4,
       },
       {
-        text: "Occorre una strategia europea comune e realistica, basata sul dialogo con Pechino.",
+        text: "Occorre avere una strategia europea comune e realistica, basata sul dialogo con Pechino.",
         partyId: 2,
         id: 5,
       },
@@ -2879,9 +2926,10 @@ export default [
     id: 62,
     sources:
       "https://www.europarl.europa.eu/news/fr/press-room/20210910IPR11917/la-vision-du-parlement-concernant-la-nouvelle-strategie-de-l-ue-pour-la-chine",
+    express: false,
   },
   {
-    question: "\"È necessario considerare l'allargamento dell'UE ai Balcani?\"",
+    question: "È necessario considerare l'allargamento dell'UE ai Balcani?",
     answers: [
       {
         text: "È la priorità strategica dell'Unione europea e dei suoi Stati membri.",
@@ -2899,22 +2947,22 @@ export default [
         id: 3,
       },
       {
-        text: '"Sì, è questione di credibilità dell\'Unione come unico alleato valido per la regione"',
+        text: "Sì, è questione di credibilità dell'Unione come unico alleato valido per la regione",
         partyId: 3,
         id: 4,
       },
       {
-        text: '"Sì, purché questi paesi rispettino la politica estera comune e riconoscano i loro sforzi."',
+        text: "Sì, purché questi paesi rispettino la politica estera comune e riconoscano i loro sforzi.",
         partyId: 2,
         id: 5,
       },
       {
-        text: '"Sì, bisogna accelerare altrimenti lasciamo la regione ad altre potenze."',
+        text: "Sì, bisogna accelerare altrimenti lasciamo la regione ad altre potenze.",
         partyId: 4,
         id: 6,
       },
       {
-        text: "bisogna fare attenzione a non applicare un doppio standard nell'espansione",
+        text: "Bisogna fare attenzione a non applicare un doppio standard nell'espansione",
         partyId: 6,
         id: 7,
       },
@@ -2925,6 +2973,7 @@ export default [
     id: 63,
     sources:
       "https://www.europarl.europa.eu/factsheets/fr/sheet/168/the-western-balkans",
+    express: false,
   },
   {
     question:
@@ -2951,7 +3000,7 @@ export default [
         id: 4,
       },
       {
-        text: "è la pace e una soluzione a due stati che deve prevalere.",
+        text: "È la pace ed una soluzione a due stati che devono prevalere.",
         partyId: 2,
         id: 5,
       },
@@ -2968,9 +3017,10 @@ export default [
     ],
     category: 7,
     learnMore:
-      "Il conflitto israelo-palestinese è un conflitto in Medio Oriente che oppone principalmente due stati rappresentanti due popolazioni, una di fede ebraica (rappresentata dallo Stato di Israele) e l'altra di fede musulmana (Lo Stato di Palestina, non ufficialmente riconosciuto dalle Nazioni Unite). Dal 1948, diverse guerre e crisi, sia civili che coinvolgenti belligeranti stranieri, scuotono la regione. Dal 7 ottobre, le tensioni sono state ravvivate da attacchi terroristici, che hanno portato a una risposta militare molto violenta. Si tratta di un argomento estremamente complesso, sensibile e politicizzato che non può essere riassunto qui, vi incoraggiamo quindi a informarvi attraverso fonti affidabili.",
+      "Il conflitto israelo-palestinese è un conflitto in Medio Oriente che oppone principalmente due stati rappresentanti due popolazioni, una di fede ebraica (rappresentata dallo Stato di Israele) e l'altra di fede musulmana (Lo Stato di Palestina, non ufficialmente riconosciuto dalle Nazioni Unite). Dal 1948, diverse guerre e crisi, sia civili che coinvolgenti belligeranti stranieri, scuotono la regione. Dal 7 ottobre, le tensioni sono state ravvivate da attacchi terroristici, che hanno portato a una risposta militare molto violenta. Si tratta di un argomento estremamente complesso, sensibile e politicizzato che non può essere riassunto qui, vi incoraggiamo quindi ad informarvi attraverso fonti affidabili.",
     id: 64,
     sources: "https://www.eeas.europa.eu/eeas/middle-east-peace-process_en",
+    express: false,
   },
   {
     question:
@@ -2982,7 +3032,7 @@ export default [
         id: 1,
       },
       {
-        text: "Non bisogna delegare le competenze relative alla PESC.",
+        text: "Non occorre delegare le competenze relative alla PESC.",
         partyId: 5,
         id: 2,
       },
@@ -3007,7 +3057,7 @@ export default [
         id: 6,
       },
       {
-        text: "Meno incentrata sugli interessi economici delle multinazionali.",
+        text: "Meno incentrata sugli interessi economici delle imprese multinazionali.",
         partyId: 6,
         id: 7,
       },
@@ -3018,49 +3068,50 @@ export default [
     id: 65,
     sources:
       "https://eur-lex.europa.eu/FR/legal-content/glossary/common-foreign-and-security-policy-cfsp.html",
+    express: false,
   },
   {
     question: "La NATO è un'organizzazione...",
     answers: [
       {
-        text: "di cooperazione che permette una difesa dell'Europa",
+        text: "di cooperazione che permette una difesa dell'Europa.",
         partyId: 7,
         id: 1,
       },
       {
-        text: "essenziale, poiché è l'unica fonte di difesa sostenibile in Europa",
+        text: "essenziale, poiché è l'unica fonte di difesa sostenibile in Europa.",
         partyId: 5,
         id: 2,
       },
       {
-        text: "importante, avendo bisogno di un pilastro di difesa europeo per rafforzarsi",
+        text: "importante, che ha bisogno di un pilastro di difesa europeo per rafforzarsi",
         partyId: 1,
         id: 3,
       },
       {
-        text: "permettendo di andare verso una vera Unione Europea della Difesa",
+        text: "che permette di andare verso una vera Unione Europea della Difesa.",
         partyId: 3,
         id: 4,
       },
       {
-        text: "partner dell'UE attraverso la sua struttura di difesa collettiva\"",
+        text: "partner dell'UE attraverso la sua struttura di difesa collettiva.",
         partyId: 2,
         id: 5,
       },
       {
-        text: "complementare alla difesa europea senza vincoli per gli Stati Membri",
+        text: "complementare alla difesa europea senza vincoli per gli Stati Membri.",
         partyId: 4,
         id: 6,
       },
       {
-        text: "\"che non rispetta l'obiettivo di promozione della pace dell'UE\"",
+        text: "che non rispetta l'obiettivo di promozione della pace dell'UE.",
         partyId: 6,
         id: 7,
       },
     ],
     category: 7,
     learnMore:
-      "L'Organizzazione del Trattato dell'Atlantico del Nord (NATO) è un'alleanza di difesa e cooperazione militare che coinvolge 31 paesi, tra cui gli Stati Uniti, il Canada, il Regno Unito e la maggior parte dei paesi dell'UE (esclusi Austria e Irlanda). È stata creata con l'obiettivo di prevenire un'aggressione dell'Unione Sovietica contro i paesi europei. L'articolo 5 del trattato prevede che qualsiasi aggressione contro uno dei membri dell'alleanza sarà considerata un'aggressione contro tutti i membri dell'alleanza, il che ha l'effetto di dissuadere qualsiasi attacco frontale, poiché la NATO rappresenta il 55% delle spese militari globali e conta più di 3 milioni di soldati in servizio. Con la guerra in Ucraina, la Finlandia è entrata a far parte della NATO nel 2023 e la Svezia dovrebbe fare lo stesso nel 2024. Tuttavia, l'adesione all'organizzazione militare è teoricamente subordinata a una spesa annua del 2% del PIL di uno stato membro per l'azione all'interno della NATO, un criterio",
+      "L'Organizzazione del Trattato dell'Atlantico del Nord (NATO) è un'alleanza di difesa e cooperazione militare che coinvolge 31 paesi, tra cui gli Stati Uniti, il Canada, il Regno Unito e la maggior parte dei paesi dell'UE (esclusi Austria e Irlanda). È stata creata con l'obiettivo di prevenire un'aggressione dell'Unione Sovietica contro i paesi europei. L'articolo 5 del trattato prevede che qualsiasi aggressione contro uno dei membri dell'alleanza sarà considerata un'aggressione contro tutti i membri dell'alleanza, il che ha l'effetto di dissuadere qualsiasi attacco frontale, poiché la NATO rappresenta il 55% delle spese militari globali e conta più di 3 milioni di soldati in servizio. Con la guerra in Ucraina, la Finlandia è entrata a far parte della NATO nel 2023 e la Svezia dovrebbe fare lo stesso nel 2024. Tuttavia, l'adesione all'organizzazione militare è teoricamente subordinata a una spesa annua del 2% del PIL di uno stato membro per l'azione all'interno della NATO, un criterio che non soddisfatto da maggior parte dei membri europei.",
     id: 66,
     sources: "https://www.nato.int/",
     express: true,
@@ -3069,37 +3120,37 @@ export default [
     question: "Il rapporto dell'UE con gli Stati Uniti è...",
     answers: [
       {
-        text: "una relazione strategica da approfondire per emanciparsi dalla Cina",
+        text: "una relazione strategica da approfondire per emanciparci dalla Cina.",
         partyId: 7,
         id: 1,
       },
       {
-        text: "commerciale e difensiva senza che l'UE abbia bisogno di un proprio esercito",
+        text: "commerciale e difensiva senza che l'UE abbia bisogno di un proprio esercito.",
         partyId: 5,
         id: 2,
       },
       {
-        text: "una collaborazione movimentata che non dovrebbe influenzare l'autonomia dell'UE",
+        text: "una collaborazione movimentata che non dovrebbe influenzare l'autonomia dell'UE.",
         partyId: 1,
         id: 3,
       },
       {
-        text: "è la priorità geoastrategica del decennio che bisogna rafforzare",
+        text: "è la priorità geoastrategica del decennio che bisogna rafforzare.",
         partyId: 3,
         id: 4,
       },
       {
-        text: "un'alleanza finché i Democratici sono al potere",
+        text: "un'alleanza finché i Democratici sono al potere.",
         partyId: 2,
         id: 5,
       },
       {
-        text: "una partnership che garantisce la pace e la stabilità in Europa e nel mondo",
+        text: "una partnership che garantisce la pace e la stabilità in Europa e nel mondo.",
         partyId: 4,
         id: 6,
       },
       {
-        text: "nocivo sia dal punto di vista militare che sociale",
+        text: "nocivo sia dal punto di vista militare che sociale.",
         partyId: 6,
         id: 7,
       },
@@ -3116,12 +3167,12 @@ export default [
     question: "Rispetto alle relazioni con la Turchia, l'UE deve...",
     answers: [
       {
-        text: "interrompere i negoziati di adesione e normalizzazione",
+        text: "interrompere i negoziati di adesione e normalizzazione.",
         partyId: 7,
         id: 1,
       },
       {
-        text: "dialogare senza bloccare i rapporti, in particolare sulla liberalizzazione dei visti",
+        text: "dialogare senza bloccare i rapporti, in particolare sulla liberalizzazione dei visti.",
         partyId: 5,
         id: 2,
       },
@@ -3131,12 +3182,12 @@ export default [
         id: 3,
       },
       {
-        text: "cercare un altro formato di collaborazione e abbandonare l'adesione",
+        text: "cercare un altro formato di collaborazione e abbandonare l'adesione.",
         partyId: 3,
         id: 4,
       },
       {
-        text: '"essere chiusi finché la Turchia non rispetta i nostri valori."',
+        text: "chiudere le negoziazioni finché la Turchia non rispetta i nostri valori.",
         partyId: 2,
         id: 5,
       },
@@ -3157,17 +3208,18 @@ export default [
     id: 68,
     sources:
       "https://www.europarl.europa.eu/news/fr/press-room/20210517IPR04118/les-relations-ue-turquie-a-un-niveau-historiquement-bas",
+    express: false,
   },
   {
     question: "Occorre rafforzare l'industria della difesa europea.",
     answers: [
       {
-        text: '"No, perché indebolirebbe le industrie nazionali"',
+        text: "No, perché indebolirebbe le industrie nazionali.",
         partyId: 7,
         id: 1,
       },
       {
-        text: '"Sì, è necessario sostenere di più la nostra industria della difesa"',
+        text: "Sì, è necessario sostenere di più la nostra industria della difesa.",
         partyId: 5,
         id: 2,
       },
@@ -3182,12 +3234,12 @@ export default [
         id: 4,
       },
       {
-        text: '"Sì, bisogna promuovere la competitività e l\'efficienza di questa industria."',
+        text: "Sì, bisogna promuovere la competitività e l'efficienza di questa industria.",
         partyId: 2,
         id: 5,
       },
       {
-        text: "Sì perché è frammentata e non efficace.",
+        text: "Sì, perché è frammentata e non efficace.",
         partyId: 4,
         id: 6,
       },
@@ -3214,7 +3266,7 @@ export default [
         id: 1,
       },
       {
-        text: "\"Servire gli interessi interni dell'UE, poiché i problemi globali influenzano l'Europa\"",
+        text: "Servire gli interessi interni dell'UE, poiché i problemi globali influenzano l'Europa.",
         partyId: 5,
         id: 2,
       },
@@ -3224,12 +3276,12 @@ export default [
         id: 3,
       },
       {
-        text: "promuovere la sicurezza e lo sviluppo economico soprattutto nelle vicinanze dell'UE e in Africa",
+        text: "Promuovere la sicurezza e lo sviluppo economico soprattutto nelle vicinanze dell'UE e in Africa.",
         partyId: 3,
         id: 4,
       },
       {
-        text: "combattere le disuguaglianze di reddito e il cambiamento climatico per eradicare la povertà",
+        text: "Combattere le disuguaglianze di reddito e il cambiamento climatico per eradicare la povertà.",
         partyId: 2,
         id: 5,
       },
@@ -3250,6 +3302,7 @@ export default [
     id: 70,
     sources:
       "https://www.eeas.europa.eu/eeas/international-cooperation-partnership_en",
+    express: false,
   },
   {
     question: "Una politica migratoria europea armonizzata è...",
@@ -3260,27 +3313,27 @@ export default [
         id: 1,
       },
       {
-        text: "Il primo passo per affrontare un problema importante.",
+        text: "il primo passo per affrontare un problema importante.",
         partyId: 5,
         id: 2,
       },
       {
-        text: "necessario per riprendere il controllo delle nostre frontiere esterne e ridurre la pressione migratoria verso l'UE",
+        text: "necessario per riprendere il controllo delle nostre frontiere esterne e ridurre la pressione migratoria verso l'UE.",
         partyId: 1,
         id: 3,
       },
       {
-        text: "una politica europea comune e sostenibile",
+        text: "una politica europea comune e sostenibile.",
         partyId: 3,
         id: 4,
       },
       {
-        text: "capace di giungere a soluzioni sostenibili e comuni in materia di migrazione e asilo",
+        text: "capace di giungere a soluzioni sostenibili e comuni in materia di migrazione e asilo.",
         partyId: 2,
         id: 5,
       },
       {
-        text: '"inapplicabile e rafforza le pratiche che violano i diritti umani."',
+        text: "inapplicabile e rafforza le pratiche che violano i diritti umani.",
         partyId: 4,
         id: 6,
       },
@@ -3296,12 +3349,13 @@ export default [
     id: 71,
     sources:
       "https://www.consilium.europa.eu/fr/press/press-releases/2023/12/20/the-council-and-the-european-parliament-reach-breakthrough-in-reform-of-eu-asylum-and-migration-system/",
+    express: false,
   },
   {
     question: "Sì, bisogna semplificare le procedure d'asilo.",
     answers: [
       {
-        text: "\"Nessuna richiesta di asilo deve essere fatta all'interno dell'UE.\"",
+        text: "Nessuna richiesta di asilo deve essere fatta all'interno dell'UE.",
         partyId: 7,
         id: 1,
       },
@@ -3342,12 +3396,13 @@ export default [
     id: 72,
     sources:
       "https://www.consilium.europa.eu/fr/policies/eu-migration-policy/eu-migration-asylum-reform-pact/asylum-procedure/#:~:text=Le%20r%C3%A8glement%20sur%20les%20proc%C3%A9dures%20d'asile%20contient%20une%20r%C3%A8gle,demandes%20sont%20infond%C3%A9es%20ou%20irrecevables.",
+    express: false,
   },
   {
     question: "La gestione europea dell'asilo e delle migrazioni è ...",
     answers: [
       {
-        text: "catastrofico, l'UE non è in grado di controllare e sicurizzare le sue frontiere esterne.",
+        text: "catastrofica, l'UE non è in grado di controllare e sicurizzare le sue frontiere esterne.",
         partyId: 7,
         id: 1,
       },
@@ -3357,27 +3412,27 @@ export default [
         id: 2,
       },
       {
-        text: "Lacunoso, è necessaria una riforma del sistema di Dublino.",
+        text: "lacunosa, è necessaria una riforma del sistema di Dublino.",
         partyId: 1,
         id: 3,
       },
       {
-        text: '"Inadeguato, è necessaria una risposta comune e forte alle sfide migratorie, ponendo fine alle soluzioni ad hoc."',
+        text: "inadeguata, è necessaria una risposta comune e forte alle sfide migratorie, ponendo fine alle soluzioni ad hoc.",
         partyId: 3,
         id: 4,
       },
       {
-        text: "incompleta, occorre un meccanismo di solidarietà incentrato sulla ricollocazione e la preferenza delle persone",
+        text: "incompleta, occorre un meccanismo di solidarietà incentrato sulla ricollocazione e la preferenza delle persone.",
         partyId: 2,
         id: 5,
       },
       {
-        text: "Inefficace, bisogna essere in grado di fornire vie sicure per una migrazione umana.",
+        text: "inefficace, bisogna essere in grado di fornire vie sicure per una migrazione umana.",
         partyId: 4,
         id: 6,
       },
       {
-        text: "Inefficace, l'Europa non riesce a garantire la solidarietà, la protezione dei paesi di prima accoglienza e il diritto di asilo.",
+        text: "inefficace, l'Europa non riesce a garantire la solidarietà, la protezione dei paesi di prima accoglienza e il diritto di asilo.",
         partyId: 6,
         id: 7,
       },
@@ -3394,17 +3449,17 @@ export default [
     question: "Il filtraggio dei migranti in situazione irregolare...",
     answers: [
       {
-        text: '"permetterà l\'immigrazione di massa e deve essere più rigorosa."',
+        text: "permetterà l'immigrazione di massa e deve essere più rigorosa.",
         partyId: 7,
         id: 1,
       },
       {
-        text: "deve essere completato con controlli più rigidi alle frontiere.",
+        text: "deve essere completato con controlli più rigidi ai confini.",
         partyId: 5,
         id: 2,
       },
       {
-        text: "È necessario per consentire una migliore gestione degli arrivi in situazione irregolare alle frontiere esterne dell'UE.",
+        text: "è necessario per consentire una migliore gestione degli arrivi in situazione irregolare ai confini esterni dell'UE.",
         partyId: 1,
         id: 3,
       },
@@ -3414,17 +3469,17 @@ export default [
         id: 4,
       },
       {
-        text: '"permetterà di registrare e controllare ogni persona che entra nell\'UE in modo irregolare garantendo nel contempo le norme di asilo applicabili."',
+        text: "permetterà di registrare e controllare ogni persona che entra nell'UE in modo irregolare garantendo nel contempo le norme di asilo applicabili.",
         partyId: 2,
         id: 5,
       },
       {
-        text: "rischio di portare ad un aumento dei profili etnici e della discriminazione razziale.",
+        text: "rischia di portare ad un aumento dei profili etnici e della discriminazione razziale.",
         partyId: 4,
         id: 6,
       },
       {
-        text: "Permetterà a ciascun richiedente di essere accompagnato nel contesto della procedura di confine.",
+        text: "permetterà a ciascun richiedente di essere accompagnato nel contesto della procedura di spostamento.",
         partyId: 6,
         id: 7,
       },
@@ -3435,6 +3490,7 @@ export default [
     id: 74,
     sources:
       "https://eur-lex.europa.eu/legal-content/FR/TXT/HTML/?uri=CELEX:52020PC0612#:~:text=L%27article%204%20pr%C3%A9voit%20que,remplit%20les%20conditions%20d%27entr%C3%A9e.",
+    express: false,
   },
   {
     question:
@@ -3446,12 +3502,12 @@ export default [
         id: 1,
       },
       {
-        text: "Deve essere applicabile anche agli apolidi oltre che ai cittadini di paesi terzi.",
+        text: "Dovrebbe essere applicabile anche agli apolidi oltre che ai cittadini di paesi terzi.",
         partyId: 5,
         id: 2,
       },
       {
-        text: "Permetterà di combattere l'immigrazione illegale e i crimini.",
+        text: "Permetterà di combattere l'immigrazione illegale e la criminalità.",
         partyId: 1,
         id: 3,
       },
@@ -3466,7 +3522,7 @@ export default [
         id: 5,
       },
       {
-        text: "E' in contraddizione logica con l'armonizzazione dell'asilo.",
+        text: "È in contraddizione logica con l'armonizzazione dell'asilo.",
         partyId: 4,
         id: 6,
       },
@@ -3482,6 +3538,7 @@ export default [
     id: 75,
     sources:
       "https://www.edps.europa.eu/data-protection/european-it-systems/eurodac_fr",
+    express: false,
   },
   {
     question:
@@ -3555,12 +3612,12 @@ export default [
         id: 4,
       },
       {
-        text: '"L\'UE non può finanziare un regime autoritario per affidargli la gestione dei migranti."',
+        text: "L'UE non può finanziare un regime autoritario per affidargli la gestione dei migranti.",
         partyId: 2,
         id: 5,
       },
       {
-        text: '"Questi accordi non porteranno mai a meno migrazione e calpestano i nostri valori."',
+        text: "Questi accordi non porteranno mai a meno migrazione e calpestano i nostri valori.",
         partyId: 4,
         id: 6,
       },
@@ -3576,6 +3633,7 @@ export default [
     id: 77,
     sources:
       "https://www.europarl.europa.eu/legislative-train/theme-promoting-our-european-way-of-life/file-mff-asylum-and-migration-fund",
+    express: false,
   },
   {
     question: "Una riforma dello spazio Schengen è…",
@@ -3586,12 +3644,12 @@ export default [
         id: 1,
       },
       {
-        text: "Primo di tutto, è necessario concentrarsi sulla protezione delle frontiere esterne.",
+        text: "prima di tutto, è necessario concentrarsi sulla protezione delle frontiere esterne.",
         partyId: 5,
         id: 2,
       },
       {
-        text: "necessario, l'integrazione della Romania e della Bulgaria permetterà di proteggere meglio le nostre frontiere esterne.",
+        text: "necessaria, l'integrazione della Romania e della Bulgaria permetterà di proteggere meglio le nostre frontiere esterne.",
         partyId: 1,
         id: 3,
       },
@@ -3606,12 +3664,12 @@ export default [
         id: 5,
       },
       {
-        text: "Incoraggiante, è necessario preservare a tutti i costi la libera circolazione delle persone.",
+        text: "incoraggiante, è necessario preservare a tutti i costi la libera circolazione delle persone.",
         partyId: 4,
         id: 6,
       },
       {
-        text: "Pericolosa, ciò potrebbe influenzare gravemente la libera circolazione delle persone.",
+        text: "pericolosa, ciò potrebbe influenzare gravemente la libera circolazione delle persone.",
         partyId: 6,
         id: 7,
       },
@@ -3622,12 +3680,13 @@ export default [
     id: 78,
     sources:
       "https://www.europarl.europa.eu/legislative-train/theme-promoting-our-european-way-of-life/file-revision-of-schengen-evaluation-mechanism",
+    express: false,
   },
   {
     question: "Gestisce correttamente Frontex i confini esterni dell'UE?",
     answers: [
       {
-        text: '"No, ogni nazione dovrebbe essere in grado di proteggere meglio le proprie frontiere."',
+        text: "No, ogni nazione dovrebbe essere in grado di proteggere meglio le proprie frontiere.",
         partyId: 7,
         id: 1,
       },
@@ -3647,7 +3706,7 @@ export default [
         id: 4,
       },
       {
-        text: "bisogna assicurarsi che rispetti i diritti fondamentali e che non sia coinvolta in rimpatri illegali.",
+        text: "Bisogna assicurarsi che rispetti i diritti fondamentali e che non sia coinvolta in rimpatri illegali.",
         partyId: 2,
         id: 5,
       },
@@ -3675,7 +3734,7 @@ export default [
       "Per una migliore gestione dell'accoglienza dei giovani rifugiati ucraini...",
     answers: [
       {
-        text: "Occorre garantire, durante la fase di ingresso, un sistema di identificazione e registrazione dei bambini.",
+        text: "occorre garantire, durante la fase di ingresso, un sistema di identificazione e registrazione dei bambini.",
         partyId: 7,
         id: 1,
       },
@@ -3690,22 +3749,22 @@ export default [
         id: 3,
       },
       {
-        text: "bisogna potenziare il loro record.",
+        text: "bisogna potenziare la registrazione.",
         partyId: 3,
         id: 4,
       },
       {
-        text: "bisogna continuare il nostro importante aiuto umanitario",
+        text: "bisogna continuare il nostro importante aiuto umanitario.",
         partyId: 2,
         id: 5,
       },
       {
-        text: "Occorre una politica basata sull'accoglienza e sulla solidarietà e improntata all'umanità.",
+        text: "occorre una politica basata sull'accoglienza e sulla solidarietà e improntata all'umanità.",
         partyId: 4,
         id: 6,
       },
       {
-        text: "Serve una protezione per tutti i bambini rifugiati.",
+        text: "serve una protezione per tutti i bambini rifugiati.",
         partyId: 6,
         id: 7,
       },
@@ -3716,18 +3775,19 @@ export default [
     id: 80,
     sources:
       "https://eu-solidarity-ukraine.ec.europa.eu/information-people-fleeing-war-ukraine/fleeing-ukraine-protection-children_fr#:~:text=Tous%20les%20enfants%20(c'est,'entr%C3%A9e%20dans%20l'UE.",
+    express: false,
   },
   {
     question:
       "Di fronte all'invecchiamento della popolazione europea, è necessario...",
     answers: [
       {
-        text: '"sostenere il tasso di natalità al fine di attenuare gli effetti dell\'invecchiamento della popolazione"',
+        text: "sostenere il tasso di natalità al fine di attenuare gli effetti dell'invecchiamento della popolazione.",
         partyId: 7,
         id: 1,
       },
       {
-        text: "è una sfida importante da affrontare in modo pragmatico contro l'ideologia di sinistra.",
+        text: "pensarci come una sfida importante da affrontare in modo pragmatico contro l'ideologia di sinistra.",
         partyId: 5,
         id: 2,
       },
@@ -3737,12 +3797,12 @@ export default [
         id: 3,
       },
       {
-        text: "creare le condizioni favorevoli per un invecchiamento attivo e in buona salute",
+        text: "creare le condizioni favorevoli per un invecchiamento attivo e in buona salute.",
         partyId: 3,
         id: 4,
       },
       {
-        text: "garantire di non dimenticare il pieno rispetto dei diritti delle donne",
+        text: "garantire di non dimenticare il pieno rispetto dei diritti delle donne.",
         partyId: 2,
         id: 5,
       },
@@ -3752,7 +3812,7 @@ export default [
         id: 6,
       },
       {
-        text: "istituire un diritto al riposo per limitare le malattie a lungo termine",
+        text: "istituire un diritto al riposo per limitare le malattie a lungo termine.",
         partyId: 6,
         id: 7,
       },
@@ -3766,15 +3826,16 @@ export default [
     express: true,
   },
   {
-    question: "L'azione dell'UE in materia di istruzione deve concentrarsi su",
+    question:
+      "L'azione dell'UE in materia di istruzione deve concentrarsi su...",
     answers: [
       {
-        text: '"niente, non è di sua competenza"',
+        text: "niente, non è di sua competenza.",
         partyId: 7,
         id: 1,
       },
       {
-        text: "la preservazione della sovranità degli Stati membri per evitare qualsiasi forma di indottrinamento",
+        text: "la preservazione della sovranità degli Stati membri per evitare qualsiasi forma di indottrinamento.",
         partyId: 5,
         id: 2,
       },
@@ -3799,7 +3860,7 @@ export default [
         id: 6,
       },
       {
-        text: "la promozione delle lingue minoritarie nell'Unione",
+        text: "la promozione delle lingue minoritarie nell'Unione.",
         partyId: 6,
         id: 7,
       },
@@ -3809,6 +3870,7 @@ export default [
       "Attraverso l'iniziativa \"spazio europeo\" l'Unione europea cerca di promuovere la collaborazione degli Stati nel settore dell'istruzione. Quest'ultimo mira a rafforzare la mobilità degli studenti, attraverso partenariati tra le facoltà degli Stati membri o tramite programmi come Erasmus+. Tuttavia, queste iniziative si confrontano con molte sfide, come il riconoscimento europeo delle qualifiche, il multilinguismo o i casi di abbandono scolastico. Infine, l'istruzione è un argomento trasversale che interseca molti altri (crescita, innovazioni, disoccupazione ecc.)",
     id: 82,
     sources: "https://www.consilium.europa.eu/fr/policies/education-area/",
+    express: false,
   },
   {
     question: "L'azione a favore dell'uguaglianza di genere deve portare a...",
@@ -3819,32 +3881,32 @@ export default [
         id: 1,
       },
       {
-        text: '"promuovere i diritti e l\'autonomia delle donne senza creare conflitti tra i sessi."',
+        text: "promuovere i diritti e l'autonomia delle donne senza creare conflitti tra i sessi.",
         partyId: 5,
         id: 2,
       },
       {
-        text: "garantire che uomini e donne siano pagati in modo equo in Europa",
+        text: "garantire che uomini e donne siano pagati in modo equo in Europa.",
         partyId: 1,
         id: 3,
       },
       {
-        text: "porre la difesa dei diritti e delle libertà delle donne come una priorità dell'azione esterna dell'UE",
+        text: "porre la difesa dei diritti e delle libertà delle donne come una priorità dell'azione esterna dell'UE.",
         partyId: 3,
         id: 4,
       },
       {
-        text: "promuovere l'accesso alla salute e ai diritti sessuali e riproduttivi in tutto il mondo",
+        text: "promuovere l'accesso alla salute e ai diritti sessuali e riproduttivi in tutto il mondo.",
         partyId: 2,
         id: 5,
       },
       {
-        text: "assicurare un diritto all'istruzione e alla salute riproduttiva e sessuale per tutte",
+        text: "assicurare un diritto all'istruzione e alla salute riproduttiva e sessuale per tutte.",
         partyId: 4,
         id: 6,
       },
       {
-        text: "rafforzare la rappresentazione delle donne adottando un'approccio intersezionale trasformativo",
+        text: "rafforzare la rappresentazione delle donne adottando un'approccio intersezionale trasformativo.",
         partyId: 6,
         id: 7,
       },
@@ -3854,12 +3916,13 @@ export default [
       "L'uguaglianza di genere è un principio fondamentale dell'Unione europea riconosciuto nell'articolo 2 del Trattato sull'Unione europea (TUE). Questo viene attuato in vari programmi, come \"cittadini, uguaglianza, diritti e valori\" (2021-2027), un'iniziativa dell'Unione europea volta a promuovere e proteggere i diritti fondamentali, o il GAP III che promuove l'uguaglianza di genere e l'empowerment delle donne nelle azioni esterne dell'UE. In media, in Europa, le donne guadagnano il 16% in meno degli uomini, rappresentando solo il 29% delle posizioni di dirigenza nelle grandi aziende e solo il 32% dei membri dei parlamenti nazionali.",
     id: 83,
     sources: "https://ec.europa.eu/commission/presscorner/detail/en/IP_20_2184",
+    express: false,
   },
   {
     question: "Quale obiettivo deve perseguire il programma Erasmus?",
     answers: [
       {
-        text: "Fare in modo di mantenere il principio del cittadino della propria nazione",
+        text: "Fare in modo di mantenere il principio del cittadino della propria nazione.",
         partyId: 7,
         id: 1,
       },
@@ -3874,12 +3937,12 @@ export default [
         id: 3,
       },
       {
-        text: "più inclusività combattendo le discriminazioni sulla condizione sociale o su una disabilità.",
+        text: "Avere più inclusività combattendo le discriminazioni sulla condizione sociale o su una disabilità.",
         partyId: 3,
         id: 4,
       },
       {
-        text: "Aprirsi ai programmi professionali e permettere una scoperta dell'Europa",
+        text: "Aprirsi ai programmi professionali e permettere una scoperta dell'Europa per tutti.",
         partyId: 2,
         id: 5,
       },
@@ -3889,7 +3952,7 @@ export default [
         id: 6,
       },
       {
-        text: "rendere il programma più inclusivo per i gruppi più vulnerabili",
+        text: "Rendere il programma più inclusivo per i gruppi più vulnerabili.",
         partyId: 6,
         id: 7,
       },
@@ -3906,37 +3969,37 @@ export default [
     question: "La proclamazione dell'UE come zona di libertà LGBTIQ...",
     answers: [
       {
-        text: "corrisponde a una logica ideologica dannosa per il modello familiare",
+        text: "corrisponde a una logica ideologica dannosa per il modello familiare.",
         partyId: 7,
         id: 1,
       },
       {
-        text: "supera la competenza dell'UE sulle questioni legate al matrimonio e alla famiglia",
+        text: "supera la competenza dell'UE sulle questioni legate al matrimonio e alla famiglia.",
         partyId: 5,
         id: 2,
       },
       {
-        text: "è il segnale che l'Europa rappresenta una zona di libertà per tutti",
+        text: "è il segnale che l'Europa rappresenta una zona di libertà per tutti.",
         partyId: 1,
         id: 3,
       },
       {
-        text: "Un messaggio chiaro e potente di libertà contro le retoriche dell'odio.",
+        text: "un messaggio chiaro e potente di libertà contro le retoriche dell'odio.",
         partyId: 3,
         id: 4,
       },
       {
-        text: '"assicura la difesa dei diritti contro la criminalizzazione dell\'estrema destra"',
+        text: "assicura la difesa dei diritti contro la criminalizzazione dell'estrema destra.",
         partyId: 2,
         id: 5,
       },
       {
-        text: "è solo un primo passo che deve essere seguito da effetti più forti",
+        text: "è solo un primo passo che deve essere seguito da effetti più forti.",
         partyId: 4,
         id: 6,
       },
       {
-        text: "È una prima misura per combattere le discriminazioni e l'omofobia",
+        text: "è una prima misura per combattere le discriminazioni e l'omofobia.",
         partyId: 6,
         id: 7,
       },
@@ -3947,12 +4010,13 @@ export default [
     id: 85,
     sources:
       "https://www.europarl.europa.eu/news/fr/press-room/20210304IPR99219/le-parlement-declare-l-union-europeenne-zone-de-liberte-lgbtiq",
+    express: false,
   },
   {
     question: "Il sostegno dell'Europa agli artisti...",
     answers: [
       {
-        text: "è insufficiente e dovrebbe destinare più fondi alle PMI",
+        text: "è insufficiente e dovrebbe destinare più fondi alle PMI.",
         partyId: 7,
         id: 1,
       },
@@ -3962,7 +4026,7 @@ export default [
         id: 2,
       },
       {
-        text: "È importante per aiutarli a riprendersi dalla crisi e sostenere gli artisti emergenti.",
+        text: "è importante per aiutarli a riprendersi dalla crisi e sostenere gli artisti emergenti.",
         partyId: 1,
         id: 3,
       },
@@ -3977,12 +4041,12 @@ export default [
         id: 5,
       },
       {
-        text: "deve proteggere la loro libertà artistica e garantire loro un reddito e una sicurezza sociale",
+        text: "deve proteggere la loro libertà artistica e garantire loro un reddito e una sicurezza sociale.",
         partyId: 4,
         id: 6,
       },
       {
-        text: "è insufficiente e deve diventare più inclusivo in termini di genere",
+        text: "è insufficiente e deve diventare più inclusivo in termini di genere.",
         partyId: 6,
         id: 7,
       },
@@ -3993,42 +4057,43 @@ export default [
     id: 86,
     sources:
       "https://culture.ec.europa.eu/fr/creative-europe/about-the-creative-europe-programme",
+    express: false,
   },
   {
-    question: "L'anno europeo della gioventù deve",
+    question: "L'anno europeo della gioventù deve...",
     answers: [
       {
-        text: "consultare tutti i giovani europei, non solo i giovani urbani e borghesi",
+        text: "consultare tutti i giovani europei, non solo i giovani urbani e borghesi.",
         partyId: 7,
         id: 1,
       },
       {
-        text: "permettere azioni concrete condotte a livello degli Stati membri senza ideologia",
+        text: "permettere azioni concrete condotte a livello degli Stati membri senza ideologia.",
         partyId: 5,
         id: 2,
       },
       {
-        text: '"guidare verso azioni per un maggior coinvolgimento politico dei giovani"',
+        text: "guidare verso azioni per un maggior coinvolgimento politico dei giovani.",
         partyId: 1,
         id: 3,
       },
       {
-        text: "giungere a risultati concreti sulla consultazione dei giovani, la retribuzione degli stage e la salute mentale",
+        text: "giungere a risultati concreti sulla consultazione dei giovani, la retribuzione degli stage e la salute mentale.",
         partyId: 3,
         id: 4,
       },
       {
-        text: "essere il punto di partenza per una politica equa, inclusiva e verde a favore dei giovani",
+        text: "essere il punto di partenza per una politica equa, inclusiva e verde a favore dei giovani.",
         partyId: 2,
         id: 5,
       },
       {
-        text: "permettere maggiore inclusività combattendo il razzismo, le discriminazioni e le violenze di genere",
+        text: "permettere maggiore inclusività combattendo il razzismo, le discriminazioni e le violenze di genere.",
         partyId: 4,
         id: 6,
       },
       {
-        text: "sbloccare un aumento delle spese pubbliche in materia di istruzione",
+        text: "sbloccare un aumento delle spese pubbliche in materia di istruzione.",
         partyId: 6,
         id: 7,
       },
@@ -4038,43 +4103,44 @@ export default [
       "Nel 2022, l'Unione europea proclamò il 2022 come anno europeo della gioventù. Questa iniziativa mira a mettere in evidenza il ruolo dei giovani nella costruzione dell'Europa, concentrandosi sui temi dell'ecologia, dell'inclusione e del digitale. In questa occasione sono state organizzate 13.000 attività in 67 paesi, promuovendo il loro coinvolgimento sui social media, dibattiti e incontri con i leader politici.",
     id: 87,
     sources: "https://youth.europa.eu/year-of-youth_fr",
+    express: false,
   },
   {
     question:
-      '"La priorità in materia di accessibilità per le persone disabili è..."',
+      "La priorità in materia di accessibilità per le persone disabili è...",
     answers: [
       {
-        text: "aumentare gli strumenti finanziari a favore delle persone disabili",
+        text: "aumentare gli strumenti finanziari a favore delle persone disabili.",
         partyId: 7,
         id: 1,
       },
       {
-        text: '"di istituire una carta d\'identità europea comune per le persone disabili"',
+        text: "istituire una carta d'identità europea comune per le persone disabili.",
         partyId: 5,
         id: 2,
       },
       {
-        text: "garantire la scelta di vita per tutti e permettere loro una vita indipendente",
+        text: "garantire la scelta di vita per tutti e permettere loro una vita indipendente.",
         partyId: 1,
         id: 3,
       },
       {
-        text: "garantire l'accessibilità del mercato del lavoro tramite una legislazione anti-discriminazione",
+        text: "garantire l'accessibilità del mercato del lavoro tramite una legislazione anti-discriminazione.",
         partyId: 3,
         id: 4,
       },
       {
-        text: "creare parità di opportunità per l'istruzione e l'occupazione",
+        text: "creare parità di opportunità per l'istruzione e l'occupazione.",
         partyId: 2,
         id: 5,
       },
       {
-        text: "integrare i diritti delle persone disabili in tutti i settori politici",
+        text: "integrare i diritti delle persone disabili in tutti i settori politici.",
         partyId: 4,
         id: 6,
       },
       {
-        text: "monitorare l'utilizzo dei fondi europei destinati alle persone disabili",
+        text: "monitorare l'utilizzo dei fondi europei destinati alle persone disabili.",
         partyId: 6,
         id: 7,
       },
@@ -4085,42 +4151,43 @@ export default [
     id: 88,
     sources:
       "https://ec.europa.eu/social/main.jsp?catId=1484&langId=fr#:~:text=En%20mars%202021%2C%20la%20Commission,Europe%20et%20dans%20le%20monde.",
+    express: false,
   },
   {
     question: "La politica dell'Unione europea nel campo dello sport deve…",
     answers: [
       {
-        text: "essere limitata perché è un settore che non deve essere politicizzato",
+        text: "essere limitata perché è un settore che non deve essere politicizzato.",
         partyId: 7,
         id: 1,
       },
       {
-        text: "deve difendere il modello tradizionale dello sport di fronte alla sua commercializzazione e all'ideologia di genere",
+        text: "deve difendere il modello tradizionale dello sport di fronte alla sua commercializzazione e all'ideologia di genere.",
         partyId: 5,
         id: 2,
       },
       {
-        text: "sostenere i valori europei e promuovere i diritti umani durante gli eventi sportivi",
+        text: "sostenere i valori europei e promuovere i diritti umani durante gli eventi sportivi.",
         partyId: 1,
         id: 3,
       },
       {
-        text: "assicurare una protezione sociale agli atleti professionisti e rendere il settore più egualitario",
+        text: "assicurare una protezione sociale agli atleti professionisti e rendere il settore più egualitario.",
         partyId: 3,
         id: 4,
       },
       {
-        text: "combattere la privatizzazione e la commercializzazione per garantire un accesso facile allo sport",
+        text: "combattere la privatizzazione e la commercializzazione per garantire un accesso facile allo sport.",
         partyId: 2,
         id: 5,
       },
       {
-        text: "controllare gli interessi commerciali dello sport e promuovere la pratica sportiva",
+        text: "controllare gli interessi commerciali dello sport e promuovere la pratica sportiva.",
         partyId: 4,
         id: 6,
       },
       {
-        text: '"essere sviluppata perché è un elemento chiave dell\'inclusione sociale e del benessere"',
+        text: "essere sviluppata perché è un elemento chiave dell'inclusione sociale e del benessere.",
         partyId: 6,
         id: 7,
       },
@@ -4130,22 +4197,23 @@ export default [
       "Il settore dello sport è una delle competenze dell'Unione europea dall'entrata in vigore del Trattato di Lisbona (2009). Questo presenta sfide in termini di salute pubblica, sviluppo economico e soft power. Le iniziative europee si concentrano sull'integrità dello sport promuovendo l'inclusione sociale attraverso la promozione di iniziative e programmi come Erasmus+. Il Parlamento europeo ha sviluppato politiche sull'uguaglianza di genere e sulla lotta alla corruzione. La promozione dello sport passa anche attraverso la regolamentazione degli sport elettronici, garantendone lo sviluppo e l'integrità.",
     id: 89,
     sources: "https://www.europarl.europa.eu/factsheets/fr/sheet/143/le-sport",
+    express: false,
   },
   {
-    question: "Il patrimonio culturale europeo è",
+    question: "Il patrimonio culturale europeo è...",
     answers: [
       {
-        text: "una cultura e una storia che devono essere protette contro il wokismo",
+        text: "una cultura e una storia che devono essere protette contro il wokismo.",
         partyId: 7,
         id: 1,
       },
       {
-        text: "una risorsa inestimabile che deve essere protetta e finanziata per le generazioni future",
+        text: "una risorsa inestimabile che deve essere protetta e finanziata per le generazioni future.",
         partyId: 5,
         id: 2,
       },
       {
-        text: "un'identità e un vantaggio economico da proteggere",
+        text: "un'identità e un vantaggio economico da proteggere.",
         partyId: 1,
         id: 3,
       },
@@ -4155,17 +4223,17 @@ export default [
         id: 4,
       },
       {
-        text: "in corso di evoluzione verso la sua digitalizzazione e l'accelerazione dell'azione dell'Unione",
+        text: "in corso di evoluzione verso la sua digitalizzazione e l'accelerazione dell'azione dell'Unione.",
         partyId: 2,
         id: 5,
       },
       {
-        text: "un bene comune universale e multiculturale, che porta a ripensare la nostra storia",
+        text: "un bene comune universale e multiculturale, che porta a ripensare la nostra storia.",
         partyId: 4,
         id: 6,
       },
       {
-        text: '"La nostra identità deve essere protetta ma deve adattarsi alla transizione digitale ed ecologica."',
+        text: "la nostra identità deve essere protetta ma deve adattarsi alla transizione digitale ed ecologica.",
         partyId: 6,
         id: 7,
       },
@@ -4179,20 +4247,20 @@ export default [
     express: true,
   },
   {
-    question: "La gestione della crisi da Covid da parte dell'UE ha...",
+    question: "La gestione della crisi da Covid da parte dell'UE...",
     answers: [
       {
-        text: "mancanza di trasparenza sull'acquisto dei vaccini e sul certificato COVID",
+        text: "ha mancato di trasparenza sull'acquisto dei vaccini e sul certificato COVID.",
         partyId: 7,
         id: 1,
       },
       {
-        text: "è stata segnata dalla corruzione nella negoziazione dei contratti di acquisto dei vaccini",
+        text: "è stata segnata dalla corruzione nella negoziazione dei contratti di acquisto dei vaccini.",
         partyId: 5,
         id: 2,
       },
       {
-        text: "mancanza di coordinazione ma si è rimediata con l'acquisto collettivo di vaccini",
+        text: "ha mancato di coordinazione ma si è rimediata con l'acquisto collettivo di vaccini.",
         partyId: 1,
         id: 3,
       },
@@ -4207,12 +4275,12 @@ export default [
         id: 5,
       },
       {
-        text: "\"negato il diritto all'accesso alle cure per proteggere l'industria farmaceutica\"",
+        text: "ha negato il diritto all'accesso alle cure per proteggere l'industria farmaceutica.",
         partyId: 4,
         id: 6,
       },
       {
-        text: "\"privilegiato gli interessi dell'industria farmaceutica a discapito dell'interesse pubblico\"",
+        text: "ha privilegiato gli interessi dell'industria farmaceutica a discapito dell'interesse pubblico.",
         partyId: 6,
         id: 7,
       },
@@ -4228,22 +4296,22 @@ export default [
     question: "Lo spazio europeo dei dati relativi alla salute...",
     answers: [
       {
-        text: '"interferisce con la sovranità degli Stati"',
+        text: "interferisce con la sovranità degli Stati.",
         partyId: 7,
         id: 1,
       },
       {
-        text: "deve includere un'opzione di opt-out",
+        text: "deve includere un'opzione di opt-out.",
         partyId: 5,
         id: 2,
       },
       {
-        text: '"innalzerà la qualità delle cure essendo più efficace"',
+        text: "innalzerà la qualità delle cure essendo più efficace.",
         partyId: 1,
         id: 3,
       },
       {
-        text: "migliorerà le diagnosi e ridurrà i costi in modo sicuro dei dati",
+        text: "migliorerà le diagnosi e ridurrà i costi in modo sicuro dei dati.",
         partyId: 3,
         id: 4,
       },
@@ -4253,12 +4321,12 @@ export default [
         id: 5,
       },
       {
-        text: "cambierà le sorti per la ricerca e la prevenzione delle crisi sanitarie",
+        text: "cambierà le sorti per la ricerca e la prevenzione delle crisi sanitarie.",
         partyId: 4,
         id: 6,
       },
       {
-        text: "deve garantire il diritto dei pazienti di accedere ai propri dati",
+        text: "deve garantire il diritto dei pazienti di accedere ai propri dati.",
         partyId: 6,
         id: 7,
       },
@@ -4269,9 +4337,10 @@ export default [
     id: 92,
     sources:
       "https://health.ec.europa.eu/ehealth-digital-health-and-care/european-health-data-space_fr",
+    express: false,
   },
   {
-    question: '"La priorità in materia di politica sanitaria è…"',
+    question: "La priorità in materia di politica sanitaria è…",
     answers: [
       {
         text: "di fornire finanziamenti ai paesi membri per investire nella salute",
@@ -4279,7 +4348,7 @@ export default [
         id: 1,
       },
       {
-        text: "migliorare la disponibilità dei farmaci",
+        text: "migliorare la disponibilità dei farmaci.",
         partyId: 5,
         id: 2,
       },
@@ -4289,22 +4358,22 @@ export default [
         id: 3,
       },
       {
-        text: "La formazione nella prevenzione, in particolare per i malati cronici.",
+        text: "la formazione nella prevenzione, in particolare per i malati cronici.",
         partyId: 3,
         id: 4,
       },
       {
-        text: "prevenire le malattie e ridurre le disuguaglianze",
+        text: "prevenire le malattie e ridurre le disuguaglianze.",
         partyId: 2,
         id: 5,
       },
       {
-        text: "rafforzare le competenze dell'UE",
+        text: "rafforzare le competenze dell'UE.",
         partyId: 4,
         id: 6,
       },
       {
-        text: "rafforzare la cooperazione tra gli Stati senza trasferire questa competenza all'UE",
+        text: "rafforzare la cooperazione tra gli Stati senza trasferire questa competenza all'UE.",
         partyId: 6,
         id: 7,
       },
@@ -4315,42 +4384,43 @@ export default [
     id: 93,
     sources:
       "https://www.consilium.europa.eu/fr/policies/eu-health-policy/#:~:text=am%C3%A9liorer%20et%20renforcer%20la%20sant%C3%A9,l'utilisation%20efficace%20des%20ressources",
+    express: false,
   },
   {
     question: "A livello mondiale, l'azione dell'UE per la salute deve...",
     answers: [
       {
-        text: '"smettere di arricchire le grandi aziende farmaceutiche"',
+        text: "smettere di arricchire le grandi aziende farmaceutiche.",
         partyId: 7,
         id: 1,
       },
       {
-        text: "rafforzare le partnership con il resto del mondo affinché gli investimenti siano efficaci",
+        text: "rafforzare le partnership con il resto del mondo affinché gli investimenti siano efficaci.",
         partyId: 5,
         id: 2,
       },
       {
-        text: "eliminare le cause fondamentali della cattiva salute",
+        text: "eliminare le cause fondamentali della cattiva salute.",
         partyId: 1,
         id: 3,
       },
       {
-        text: "concentrarsi prima sulla salute degli europei",
+        text: "concentrarsi prima sulla salute degli europei.",
         partyId: 3,
         id: 4,
       },
       {
-        text: "assicurare l'uguaglianza di genere nell'accesso alla salute",
+        text: "assicurare l'uguaglianza di genere nell'accesso alla salute.",
         partyId: 2,
         id: 5,
       },
       {
-        text: "dimostrare una solidarietà senza frontiere",
+        text: "dimostrare una solidarietà senza frontiere.",
         partyId: 4,
         id: 6,
       },
       {
-        text: "assicurare che i paesi poveri abbiano accesso alle tecnologie sanitarie",
+        text: "assicurare che i paesi poveri abbiano accesso alle tecnologie sanitarie.",
         partyId: 6,
         id: 7,
       },
@@ -4361,42 +4431,43 @@ export default [
     id: 94,
     sources:
       "https://ec.europa.eu/commission/presscorner/detail/fr/qanda_22_7126",
+    express: false,
   },
   {
     question: "L'azione dell'UE per i diritti delle donne mira a...",
     answers: [
       {
-        text: "sostenere le donne per permettere loro di non ricorrere all'aborto",
+        text: "sostenere le donne per permettere loro di non ricorrere all'aborto.",
         partyId: 7,
         id: 1,
       },
       {
-        text: "essere a favore del diritto alla vita piuttosto che dell'aborto",
+        text: "essere a favore del diritto alla vita piuttosto che dell'aborto.",
         partyId: 5,
         id: 2,
       },
       {
-        text: "scommettere sull'educazione sessuale e la contraccezione",
+        text: "puntare sull'educazione sessuale e la contraccezione.",
         partyId: 1,
         id: 3,
       },
       {
-        text: "legalizzare l'aborto per garantire un diritto fondamentale per la vita delle donne",
+        text: "legalizzare l'aborto per garantire un diritto fondamentale per la vita delle donne.",
         partyId: 3,
         id: 4,
       },
       {
-        text: "garantire il diritto all'aborto",
+        text: "garantire il diritto all'aborto.",
         partyId: 2,
         id: 5,
       },
       {
-        text: "garantire un diritto all'aborto universale, legale e sicuro",
+        text: "garantire un diritto all'aborto universale, legale e sicuro.",
         partyId: 4,
         id: 6,
       },
       {
-        text: "rafforzare la politica della salute pubblica oltre al diritto all'IVG",
+        text: "rafforzare la politica della salute pubblica oltre al diritto all'IVG.",
         partyId: 6,
         id: 7,
       },
@@ -4413,37 +4484,37 @@ export default [
     question: "Il rapporto dell'UE con le industrie farmaceutiche deve...",
     answers: [
       {
-        text: "essere sostenibile e rafforzare la resilienza del settore farmaceutico europeo",
+        text: "essere sostenibile e rafforzare la resilienza del settore farmaceutico europeo.",
         partyId: 7,
         id: 1,
       },
       {
-        text: "Lavorare per ripristinare l'indipendenza della produzione di farmaci in Europa.",
+        text: "permettere di ripristinare l'indipendenza della produzione di farmaci in Europa.",
         partyId: 5,
         id: 2,
       },
       {
-        text: "garantire che le industrie si stabiliscano in Europa per produrre europeo",
+        text: "garantire che le industrie si stabiliscano in Europa per produrre sul nostro territorio.",
         partyId: 1,
         id: 3,
       },
       {
-        text: "garantire un accesso equo a farmaci controllati ed accessibili",
+        text: "garantire un accesso equo a farmaci controllati ed accessibili.",
         partyId: 3,
         id: 4,
       },
       {
-        text: "garantire l'indipendenza dell'UE nel settore della salute",
+        text: "garantire l'indipendenza dell'UE nel settore della salute.",
         partyId: 2,
         id: 5,
       },
       {
-        text: '"uscire dallo schema in cui l\'industria è sovvenzionata ma fissa liberamente i suoi prezzi"',
+        text: "uscire dallo schema in cui l'industria è sovvenzionata ma fissa liberamente i suoi prezzi.",
         partyId: 4,
         id: 6,
       },
       {
-        text: "Permettere un controllo rafforzato sul sostegno che fornisce alle società farmaceutiche.",
+        text: "permettere un controllo rafforzato sul sostegno che fornisce alle società farmaceutiche.",
         partyId: 6,
         id: 7,
       },
@@ -4454,22 +4525,23 @@ export default [
     id: 96,
     sources:
       "https://www.consilium.europa.eu/fr/press/press-releases/2016/06/17/epsco-conclusions-balance-pharmaceutical-system/",
+    express: false,
   },
   {
     question: "L'iniziativa europea per la salute mentale...",
     answers: [
       {
-        text: "deve lottare contro le cause che sono la povertà e l'isolamento sociale in aumento",
+        text: "deve lottare contro le cause che sono la povertà e l'isolamento sociale in aumento.",
         partyId: 7,
         id: 1,
       },
       {
-        text: "deve creare programmi pilota innovativi e ambiziosi",
+        text: "deve creare programmi pilota innovativi e ambiziosi.",
         partyId: 5,
         id: 2,
       },
       {
-        text: "è necessario per proteggere le vittime della salute mentale ed evitare le discriminazioni",
+        text: "è necessario per proteggere le vittime della salute mentale ed evitare le discriminazioni.",
         partyId: 1,
         id: 3,
       },
@@ -4479,17 +4551,17 @@ export default [
         id: 4,
       },
       {
-        text: "non deve limitarsi a raccomandazioni ma legisLare dove possibile",
+        text: "non deve limitarsi a raccomandazioni ma legisLare dove possibile.",
         partyId: 2,
         id: 5,
       },
       {
-        text: "deve rivolgersi prioritariamente alla comunità LGBTQI+",
+        text: "deve rivolgersi prioritariamente alla comunità LGBTQI+.",
         partyId: 4,
         id: 6,
       },
       {
-        text: "non deve soffrire di sottofinanziamento altrimenti l'accesso alle cure continuerà a diminuire",
+        text: "non deve soffrire di sottofinanziamento altrimenti l'accesso alle cure continuerà a diminuire.",
         partyId: 6,
         id: 7,
       },
@@ -4500,12 +4572,13 @@ export default [
     id: 97,
     sources:
       "https://www.europarl.europa.eu/topics/fr/article/20220624STO33809/le-parlement-appelle-a-l-action-pour-proteger-la-sante-mentale",
+    express: false,
   },
   {
     question: "La chiave di lettura del Fondo Sociale Europeo (FSE) è...",
     answers: [
       {
-        text: "è scandaloso che questo piano finanzi l'immigrazione subacquea",
+        text: "scandaloso perché questo piano finanza la migrazione di massa.",
         partyId: 7,
         id: 1,
       },
@@ -4515,7 +4588,7 @@ export default [
         id: 2,
       },
       {
-        text: "La lotta contro la povertà dei bambini nell'UE",
+        text: "la lotta contro la povertà dei bambini nell'UE.",
         partyId: 1,
         id: 3,
       },
@@ -4530,12 +4603,12 @@ export default [
         id: 5,
       },
       {
-        text: '"i 88 miliardi per la solidarietà e la giustizia sociale"',
+        text: "i 88 miliardi per la solidarietà e la giustizia sociale.",
         partyId: 4,
         id: 6,
       },
       {
-        text: "\"l'obbligo di utilizzare un minimo di fondi per l'inclusione sociale\"",
+        text: "l'obbligo di utilizzare un minimo di fondi per l'inclusione sociale.",
         partyId: 6,
         id: 7,
       },
@@ -4546,17 +4619,18 @@ export default [
     id: 98,
     sources:
       "https://www.consilium.europa.eu/fr/press/press-releases/2021/01/28/european-social-fund-plus-council-and-parliament-reach-a-provisional-deal/",
+    express: false,
   },
   {
-    question: "La politica della salute sul lavoro deve concentrarsi su",
+    question: "La politica della salute sul lavoro deve concentrarsi su...",
     answers: [
       {
-        text: "investire massicciamente per garantire la sicurezza",
+        text: "l'investimento massiccio per garantire la sicurezza.",
         partyId: 7,
         id: 1,
       },
       {
-        text: "essere aggiornati per il digitale e il lavoro da remoto",
+        text: "l'essere aggiornati per il digitale e il lavoro da remoto.",
         partyId: 5,
         id: 2,
       },
@@ -4566,22 +4640,22 @@ export default [
         id: 3,
       },
       {
-        text: "raggiungere un obiettivo di mortalità zero sugli incidenti sul lavoro",
+        text: "raggiungere un obiettivo di mortalità zero sugli incidenti sul lavoro.",
         partyId: 3,
         id: 4,
       },
       {
-        text: "prevenire i rischi psicosociali e regolamentare l'uso dell'IA",
+        text: "prevenire i rischi psicosociali e regolamentare l'uso dell'IA.",
         partyId: 2,
         id: 5,
       },
       {
-        text: "essere più ambiziosi nell'eradicare la mortalità sul lavoro",
+        text: "essere più ambiziosi nell'eradicare la mortalità sul lavoro.",
         partyId: 4,
         id: 6,
       },
       {
-        text: "eliminare i rischi di ammalarsi sul lavoro",
+        text: "eliminare i rischi di ammalarsi sul lavoro.",
         partyId: 6,
         id: 7,
       },
@@ -4591,42 +4665,43 @@ export default [
       "L'UE spinge i suoi Stati membri a promuovere condizioni di lavoro eque e sicure garantendo ai lavoratori diritti fondamentali come la protezione sociale. L'UE desidera eliminare ogni forma di violenza, discriminazione e molestie sul lavoro, stabilire regole per il lavoro da remoto e propone anche orari di lavoro più flessibili per ridurre lo stress.",
     id: 99,
     sources: "https://www.consilium.europa.eu/fr/policies/protecting-workers/",
+    express: false,
   },
   {
     question: "Una direttiva europea sui salari minimi...",
     answers: [
       {
-        text: '"distruggerebbe il codice del lavoro e le conquiste sociali"',
+        text: "distruggerebbe il codice del lavoro e le conquiste sociali.",
         partyId: 7,
         id: 1,
       },
       {
-        text: "deve chiaramente indicare che sono gli Stati membri a rimanere decisionali",
+        text: "deve chiaramente indicare che sono gli Stati membri a rimanere decisionali.",
         partyId: 5,
         id: 2,
       },
       {
-        text: "è contrario ai trattati e alimenta l'eurosceetticismo in Scandinavia",
+        text: "è contrario ai trattati e alimenta l'euroscetticismo in Scandinavia.",
         partyId: 1,
         id: 3,
       },
       {
-        text: "permette di garantire a tutti i lavoratori dell'UE uno standard di vita decente",
+        text: "permette di garantire a tutti i lavoratori dell'UE uno standard di vita decente.",
         partyId: 3,
         id: 4,
       },
       {
-        text: 'permette di garantire una vita dignitosa a tutti coloro che lavorano"',
+        text: "permette di garantire una vita dignitosa a tutti coloro che lavorano.",
         partyId: 2,
         id: 5,
       },
       {
-        text: '"fa avanzare l\'Europa sociale riducendo la povertà sul lavoro del 10 %"',
+        text: "potrà far avanzare l'Europa sociale riducendo la povertà sul lavoro del 10 %.",
         partyId: 4,
         id: 6,
       },
       {
-        text: "deve rafforzare i sindacati e i contratti collettivi",
+        text: "deve rafforzare i sindacati e i contratti collettivi.",
         partyId: 6,
         id: 7,
       },

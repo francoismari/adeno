@@ -88,7 +88,6 @@ const MultiplePhonesQuestions = ({ route, navigation }) => {
   }, [timeLeft, currentQuestionIndex]);
 
   const handleAnswer = async (stance, groupIds = []) => {
-    // Save the user's answer
     const responsesRef = doc(
       db,
       `rooms/${roomCode}/responses`,

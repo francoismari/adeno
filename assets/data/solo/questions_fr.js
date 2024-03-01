@@ -937,7 +937,7 @@ export default [
     ],
     category: 2,
     learnMore:
-      "Dans le cadre du \"Fit for 55\" de l'Union Européenne, qui vise à réduire significativement les émissions de gaz à effet de serre, l'initiative ReFuelEU Aviation joue un rôle crucial en encourageant l'industrie aéronautique à adopter des pratiques plus durables. Cette initiative se concentre sur la réduction de la dépendance aux combustibles fossiles et sur la diminution des émissions de CO2 dans le secteur de l'aviation. Les carburants d'aviation durables (SAF) sont identifiés comme la solution la plus efficace à court terme pour atteindre ces objectifs. Ainsi, ReFuelEU Aviation oblige les fournisseurs de carburant à augmenter progressivement la part de SAF, favorisant une transition énergétique dans l'aviation.",
+      "Dans le cadre du \"Fit for 55\" de l'Union européenne, qui vise à réduire significativement les émissions de gaz à effet de serre, l'initiative ReFuelEU Aviation joue un rôle crucial en encourageant l'industrie aéronautique à adopter des pratiques plus durables. Cette initiative se concentre sur la réduction de la dépendance aux combustibles fossiles et sur la diminution des émissions de CO2 dans le secteur de l'aviation. Les carburants d'aviation durables (SAF) sont identifiés comme la solution la plus efficace à court terme pour atteindre ces objectifs. Ainsi, ReFuelEU Aviation oblige les fournisseurs de carburant à augmenter progressivement la part de SAF, favorisant une transition énergétique dans l'aviation.",
     id: 20,
     sources:
       "https://www.europarl.europa.eu/thinktank/fr/document/EPRS_BRI(2022)698900",
@@ -2839,7 +2839,7 @@ export default [
   },
   {
     question:
-      "Concernant la potentielle entrée de l'Ukraine et de la Moldavie dans l'Union Européenne...",
+      "Concernant la potentielle entrée de l'Ukraine et de la Moldavie dans l'Union européenne...",
     answers: [
       {
         text: "elle doit être traitée sans aucun traitement de préférence",
@@ -2925,7 +2925,7 @@ export default [
     ],
     category: 7,
     learnMore:
-      "La Chine est le 3ème partenaire commercial de l’Union Européenne, derrière le Royaume-Uni et les USA, représentant 10% des échanges commerciaux de l’UE. Cependant, l’Etat Chinois est tendanciellement autoritaire, et son actuel président Xi Jinping a les pleins pouvoirs jusqu’en 2028, dépassant la limite constitutionnelle de deux mandats. L’Etat chinois opère également une politique de nettoyage ethnique dans la région à population musulmane du Xinjiang, à l’est du pays. Difficilement acceptable du point de vue des droits humains, la Chine a également des visées expansionnistes, qui vont à l’encontre du droit international et de la souveraineté nationale de nombreux pays.",
+      "La Chine est le 3ème partenaire commercial de l’Union européenne, derrière le Royaume-Uni et les USA, représentant 10% des échanges commerciaux de l’UE. Cependant, l’Etat Chinois est tendanciellement autoritaire, et son actuel président Xi Jinping a les pleins pouvoirs jusqu’en 2028, dépassant la limite constitutionnelle de deux mandats. L’Etat chinois opère également une politique de nettoyage ethnique dans la région à population musulmane du Xinjiang, à l’est du pays. Difficilement acceptable du point de vue des droits humains, la Chine a également des visées expansionnistes, qui vont à l’encontre du droit international et de la souveraineté nationale de nombreux pays.",
     id: 62,
     sources:
       "https://www.europarl.europa.eu/news/fr/press-room/20210910IPR11917/la-vision-du-parlement-concernant-la-nouvelle-strategie-de-l-ue-pour-la-chine",

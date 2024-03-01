@@ -35,7 +35,7 @@ export default function Home() {
       playText: i18n.t("home.startButtonText"),
       mainColor: "#FBD51F",
       secondColor: "#F5D020",
-      onPressStart: () => navigation.navigate("SelectMultiplayerMode"),
+      onPressStart: () => navigation.navigate("SetupMultiplayer"),
     },
     {
       id: 2,

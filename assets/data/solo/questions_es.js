@@ -1,14 +1,14 @@
 export default [
   {
-    question: "¿Qué opinas sobre los acuerdos de libre comercio?",
+    question: "¿Qué opinas sobre los acuerdos de librecambio?",
     answers: [
       {
-        text: "No reforzará nuestra autonomía sin una reducción de nuestra dependencia de los Estados Unidos y China.",
+        text: "No reforzará nuestra autonomía sin una reducción de nuestra dependencia hacia los Estados Unidos y China.",
         partyId: 7,
         id: 1,
       },
       {
-        text: "Debe ser acelerada porque son un motor para los derechos humanos y la competitividad.",
+        text: "Debe ser acelerada porque es un motor para los derechos humanos y la competitividad.",
         partyId: 5,
         id: 2,
       },
@@ -40,10 +40,11 @@ export default [
     ],
     category: 1,
     learnMore:
-      "La Unión Europea (UE) lleva a cabo una política comercial para fomentar el comercio con otros países. Negocia acuerdos de libre comercio para eliminar las barreras comerciales y estimular la economía. Estos acuerdos abarcan varios ámbitos como el comercio de bienes, servicios y la protección de los derechos de propiedad intelectual. El objetivo es crear oportunidades para las empresas europeas, aumentar el crecimiento económico y fortalecer los lazos con los socios comerciales. Sin embargo, esto plantea desafíos como la protección de las normas sociales, ambientales y de salud, así como la preservación de la diversidad cultural.",
+      "La Unión Europea (UE) lleva a cabo una política comercial para fomentar el negocio con otros países. Negocia acuerdos de librecambio para eliminar las barreras comerciales y estimular la economía. Estos acuerdos abarcan varios ámbitos como el comercio de bienes, servicios y la protección de los derechos de propiedad intelectual. El objetivo es crear oportunidades para las empresas europeas, aumentar el crecimiento económico y fortalecer los lazos con los socios comerciales. Sin embargo, esto plantea desafíos como la protección de las normas sociales, ambientales y de salud, así como la preservación de la diversidad cultural.",
     id: 1,
     sources:
       "https://www.consilium.europa.eu/fr/policies/trade-policy/trade-agreements/",
+    express: false,
   },
   {
     question:
@@ -91,6 +92,7 @@ export default [
     id: 2,
     sources:
       "https://www.consilium.europa.eu/en/infographics/fit-for-55-cbam-carbon-border-adjustment-mechanism/",
+    express: false,
   },
   {
     question:
@@ -138,6 +140,7 @@ export default [
     id: 3,
     sources:
       "https://www.consilium.europa.eu/fr/policies/sanctions/restrictive-measures-against-russia-over-ukraine/sanctions-against-russia-explained/",
+    express: false,
   },
   {
     question:
@@ -183,7 +186,8 @@ export default [
     learnMore:
       "Uno de los principales instrumentos de estas reglas es el Pacto de Estabilidad y Crecimiento (PEC), establecido en 1997 y revisado en 2011. El PEC tiene como objetivo garantizar que los países miembros mantengan sus déficits públicos bajo control y reduzcan su deuda pública.",
     id: 4,
-    sources: null,
+    sources: "",
+    express: false,
   },
   {
     question:
@@ -230,7 +234,7 @@ export default [
       "El presupuesto de la Unión Europea (UE) está financiado por dos fuentes principales: las contribuciones nacionales y los recursos propios. Las contribuciones nacionales son sumas pagadas por cada Estado miembro en función de su riqueza nacional, generalmente calculadas como un porcentaje de su producto nacional bruto. Los recursos propios son fondos recaudados directamente por la UE, como los aranceles de importación o los derechos agrícolas. A diferencia de las contribuciones nacionales, los recursos propios no son determinados por los Estados miembros. Son esenciales para financiar las políticas y programas de la UE.",
     id: 5,
     sources:
-      "https://www.europarl.europa.eu/factsheets/fr/sheet/27/recettes-de-l-union ",
+      "https://www.europarl.europa.eu/factsheets/fr/sheet/27/recettes-de-l-union",
     express: true,
   },
   {
@@ -324,6 +328,7 @@ export default [
     id: 7,
     sources:
       "https://www.ecb.europa.eu/press/pr/date/2023/html/ecb.mp230914~aab39f8c21.fr.html",
+    express: false,
   },
   {
     question: "¿Sería una buena idea un euro digitalizado?",
@@ -369,6 +374,7 @@ export default [
       "El proyecto de euro digital es una iniciativa del Banco Central Europeo (BCE) que tiene como objetivo explorar la creación de una versión digital del euro, complementaria al efectivo y a los depósitos bancarios. Esta moneda digital de banco central (CBDC) ofrecería a ciudadanos y empresas una alternativa segura y eficiente para realizar transacciones electrónicas. Los principales intereses del proyecto radican en garantizar la estabilidad monetaria, promover la innovación financiera y preservar la soberanía monetaria de la zona euro frente a las evoluciones tecnológicas a nivel mundial, especialmente las criptomonedas privadas.",
     id: 8,
     sources: "https://www.ecb.europa.eu/paym/digital_euro/html/index.en.html",
+    express: false,
   },
   {
     question: "El plan de acción sobre economía circular permite...",
@@ -415,6 +421,7 @@ export default [
     id: 9,
     sources:
       "https://environment.ec.europa.eu/strategy/circular-economy-action-plan_en",
+    express: false,
   },
   {
     question: "Sobre el acceso a la vivienda para todos, Europa debe.",
@@ -555,6 +562,7 @@ export default [
     id: 12,
     sources:
       "https://www.europarl.europa.eu/factsheets/fr/sheet/62/l-energie-nucleaire , https://www.touteleurope.eu/environnement/energie-nucleaire-quels-sont-les-principaux-pays-producteurs-en-europe/",
+    express: false,
   },
   {
     question:
@@ -602,6 +610,7 @@ export default [
     id: 13,
     sources:
       "https://www.europarl.europa.eu/RegData/etudes/fiches_techniques/2017/N52942/doc_fr.pdf , https://www.europarl.europa.eu/news/fr/press-room/20220401IPR26530/le-pe-reforme-le-deploiement-des-infrastructures-energetiques-transeuropeennes , https://www.consilium.europa.eu/fr/infographics/ten-e-energy-infrastructure/",
+    express: false,
   },
   {
     question:
@@ -649,6 +658,7 @@ export default [
     id: 14,
     sources:
       "https://commission.europa.eu/strategy-and-policy/priorities-2019-2024/european-green-deal_fr , https://www.touteleurope.eu/environnement/qu-est-ce-que-le-pacte-vert-pour-l-europe/",
+    express: false,
   },
   {
     question: "La unión de la energía...",
@@ -741,6 +751,7 @@ export default [
     id: 16,
     sources:
       "https://www.europarl.europa.eu/news/fr/press-room/20221212IPR64528/accord-sur-la-creation-du-fonds-social-pour-le-climat , https://www.touteleurope.eu/environnement/fonds-social-pour-le-climat-comment-la-commission-veut-elle-concilier-ambition-environnementale-et-justice-sociale/",
+    express: false,
   },
   {
     question: "¿Qué lugar debe dar la UE a las energías fósiles?",
@@ -835,6 +846,7 @@ export default [
     id: 18,
     sources:
       "https://commission.europa.eu/strategy-and-policy/priorities-2019-2024/european-green-deal/repowereu-affordable-secure-and-sustainable-energy-europe_fr",
+    express: false,
   },
   {
     question: "La proporción de energías renovables en Europa...",
@@ -881,6 +893,7 @@ export default [
     id: 19,
     sources:
       "https://www.consilium.europa.eu/fr/press/press-releases/2023/10/09/renewable-energy-council-adopts-new-rules/",
+    express: false,
   },
   {
     question:
@@ -928,6 +941,7 @@ export default [
     id: 20,
     sources:
       "https://www.europarl.europa.eu/thinktank/fr/document/EPRS_BRI(2022)698900",
+    express: false,
   },
   {
     question: "Las noticias falsas y la desinformación son peligrosas.",
@@ -974,6 +988,7 @@ export default [
     id: 21,
     sources:
       "https://digital-strategy.ec.europa.eu/fr/policies/online-disinformation",
+    express: false,
   },
   {
     question:
@@ -1069,6 +1084,7 @@ export default [
     id: 23,
     sources:
       "https://www.europarl.europa.eu/factsheets/en/sheet/19/the-european-parliament-powers",
+    express: false,
   },
   {
     question:
@@ -1163,6 +1179,7 @@ export default [
     id: 25,
     sources:
       "https://www.touteleurope.eu/institutions/qatargate-tout-comprendre-au-scandale-de-corruption-qui-touche-le-parlement-europeen/",
+    express: false,
   },
   {
     question: "La Conferencia sobre el futuro de Europa es...",
@@ -1205,10 +1222,11 @@ export default [
     ],
     category: 3,
     learnMore:
-      "\"La 'Conferencia sobre el Futuro de Europa' es una plataforma innovadora que busca involucrar a los ciudadanos europeos en el proceso de reforma de la UE. Lanzada en 2021, ofrece un espacio de diálogo abierto donde los ciudadanos pueden compartir sus ideas, preocupaciones y aspiraciones para el futuro de Europa. Esta conferencia tiene como objetivo fortalecer la democracia europea al dar voz directa a los ciudadanos en el proceso de toma de decisiones de la UE. A través de debates públicos, consultas en línea y eventos locales, promueve la participación activa de los ciudadanos en la construcción del futuro de Europa.\"",
+      "La 'Conferencia sobre el Futuro de Europa' es una plataforma innovadora que busca involucrar a los ciudadanos europeos en el proceso de reforma de la UE. Lanzada en 2021, ofrece un espacio de diálogo abierto donde los ciudadanos pueden compartir sus ideas, preocupaciones y aspiraciones para el futuro de Europa. Esta conferencia tiene como objetivo fortalecer la democracia europea al dar voz directa a los ciudadanos en el proceso de toma de decisiones de la UE. A través de debates públicos, consultas en línea y eventos locales, promueve la participación activa de los ciudadanos en la construcción del futuro de Europa.",
     id: 26,
     sources:
       "https://www.consilium.europa.eu/fr/policies/conference-on-the-future-of-europe/",
+    express: false,
   },
   {
     question: "Para las elecciones al Parlamento Europeo…",
@@ -1303,6 +1321,7 @@ export default [
     id: 28,
     sources:
       "https://www.europarl.europa.eu/RegData/etudes/ATAG/2020/659334/EPRS_ATA(2020)659334_FR.pdf",
+    express: false,
   },
   {
     question: "El incumplimiento del Estado de derecho.",
@@ -1349,6 +1368,7 @@ export default [
     id: 29,
     sources:
       "https://commission.europa.eu/strategy-and-policy/policies/justice-and-fundamental-rights/upholding-rule-law_fr",
+    express: false,
   },
   {
     question:
@@ -1396,6 +1416,7 @@ export default [
     id: 30,
     sources:
       "https://www.europarl.europa.eu/news/en/press-room/20240112IPR16766/improve-national-parliaments-role-in-european-democracy-meps-say",
+    express: false,
   },
   {
     question: "¿Debe limitarse la sobrepesca?",
@@ -1441,6 +1462,7 @@ export default [
       'La Comisión de la UE ha presentado un conjunto de medidas para mejorar la sostenibilidad de la pesca y la acuicultura, a través de la transición energética, la protección de los ecosistemas marinos y el fortalecimiento de la política pesquera común. El objetivo es reducir la dependencia de los combustibles fósiles, frenar el impacto en los ecosistemas y hacer que el sector sea neutro en carbono para 2050. Una asociación para la transición energética y un "Pacto por la pesca y los océanos" buscan coordinar los esfuerzos. Estas medidas contribuirán a preservar los recursos marinos y asegurar un futuro sostenible para las comunidades pesqueras de la UE.',
     id: 31,
     sources: "https://ec.europa.eu/commission/presscorner/detail/fr/ip_23_828",
+    express: false,
   },
   {
     question:
@@ -1488,6 +1510,7 @@ export default [
     id: 32,
     sources:
       "https://www.europarl.europa.eu/news/fr/headlines/society/20180328STO00751/gestion-des-dechets-dans-l-ue-faits-et-chiffres-infographie#:~:text=Selon%20des%20statistiques%20datant%20de,d%C3%A9chets%20municipaux%20d'ici%202030.",
+    express: false,
   },
   {
     question: "¿Cómo proteger los bosques de la deforestación?",
@@ -1534,6 +1557,7 @@ export default [
     id: 33,
     sources:
       "https://www.consilium.europa.eu/fr/policies/deforestation/#:~:text=L'huile%20de%20palme%20est,et%20le%20caoutchouc%20de%203%20%25.",
+    express: false,
   },
   {
     question: "Para mejorar la calidad del aire en Europa es necesario...",
@@ -1580,6 +1604,7 @@ export default [
     id: 34,
     sources:
       "https://www.consilium.europa.eu/fr/policies/air-quality/#:~:text=En%202021%2C%20la%20Commission%20europ%C3%A9enne,pacte%20vert%20pour%20l'Europe.",
+    express: false,
   },
   {
     question: "¿Debería prohibirse el glifosato?",
@@ -1721,6 +1746,7 @@ export default [
     id: 37,
     sources:
       "https://www.europarl.europa.eu/pdfs/news/expert/2019/10/story/20190926STO62270/20190926STO62270_fr.pdf",
+    express: false,
   },
   {
     question:
@@ -1768,6 +1794,7 @@ export default [
     id: 38,
     sources:
       "https://www.europarl.europa.eu/news/fr/press-room/20230612IPR97206/ecoconception-nouvelles-regles-sur-la-durabilite-des-produits#:~:text=Le%20rapport%20interdit%20l'obsolescence,des%20accessoires%20pendant%20une%20dur%C3%A9e",
+    express: false,
   },
   {
     question: "¿Deberían prohibirse los coches de motor de combustión?",
@@ -1861,6 +1888,7 @@ export default [
     id: 40,
     sources:
       "https://www.europarl.europa.eu/news/fr/press-room/20230717IPR03026/accord-sur-la-reduction-des-emissions-de-gaz-fluores-dans-l-ue",
+    express: false,
   },
   {
     question: "Una tasa sobre los gigantes digitales a nivel europeo podría...",
@@ -1954,6 +1982,7 @@ export default [
     id: 42,
     sources:
       "https://www.consilium.europa.eu/fr/policies/digital-services-act/",
+    express: false,
   },
   {
     question:
@@ -1970,24 +1999,29 @@ export default [
         id: 2,
       },
       {
+        text: "se refieren únicamente a la lucha contra los atentados terroristas, o a las investigaciones penales",
+        partyId: 1,
+        id: 3,
+      },
+      {
         text: "Ser autorizada para la búsqueda de personas desaparecidas o la prevención de ataques terroristas",
         partyId: 3,
-        id: 3,
+        id: 4,
       },
       {
         text: "Estar prohibida a distancia en espacios públicos, privados y en línea",
         partyId: 2,
-        id: 4,
+        id: 5,
       },
       {
         text: "Estar completamente prohibido en espacios públicos",
         partyId: 4,
-        id: 5,
+        id: 6,
       },
       {
         text: "Estar prohibida específicamente para la gestión de la migración",
         partyId: 6,
-        id: 6,
+        id: 7,
       },
     ],
     category: 5,
@@ -1996,6 +2030,7 @@ export default [
     id: 43,
     sources:
       "https://www.europarl.europa.eu/news/en/headlines/society/20230601STO93804/eu-ai-act-first-regulation-on-artificial-intelligence",
+    express: false,
   },
   {
     question: "Una regulación del mercado europeo de datos es...",
@@ -2041,6 +2076,7 @@ export default [
       "La idea de un mercado europeo de datos es promovida por la Comisión Europea para impulsar la economía digital. El Data Act tiene como objetivo regular la recopilación, el almacenamiento y el intercambio de datos dentro de la UE, garantizando la protección de los derechos de los usuarios y la seguridad de los datos. Establece estándares para la gobernanza de los datos, la transparencia y la interoperabilidad de los sistemas. El mercado europeo de datos fomentaría la innovación y la competencia respetando los principios de privacidad y protección de datos. Esta iniciativa podría dinamizar la economía digital de la UE y fortalecer su posición a nivel mundial.",
     id: 44,
     sources: "https://digital-strategy.ec.europa.eu/fr/policies/data-act",
+    express: false,
   },
   {
     question: "En la lucha contra los contenidos ilegales es necesario...",
@@ -2134,6 +2170,7 @@ export default [
     id: 46,
     sources:
       "https://www.touteleurope.eu/l-europe-et-moi/digital-europe-le-programme-pour-une-europe-numerique/",
+    express: false,
   },
   {
     question: "El bloqueo geográfico de contenidos audiovisuales...",
@@ -2179,6 +2216,7 @@ export default [
       "El geobloqueo limita el acceso a bienes y servicios según la ubicación geográfica del usuario. La UE ha tomado medidas para poner fin a esta discriminación injusta adoptando una regulación que prohibe el geobloqueo injustificado en algunos casos, como las compras en línea de bienes y servicios. Esta regulación tiene como objetivo promover un mercado único digital más abierto y competitivo al permitir a los consumidores acceder de manera justa y sin discriminación a las ofertas en línea en toda la Unión Europea.",
     id: 47,
     sources: "https://www.consilium.europa.eu/fr/policies/geo-blocking/",
+    express: false,
   },
   {
     question:
@@ -2226,6 +2264,7 @@ export default [
     id: 48,
     sources:
       "https://commission.europa.eu/strategy-and-policy/priorities-2019-2024/europe-fit-digital-age/european-chips-act_fr",
+    express: false,
   },
   {
     question: "En cuanto a ciberseguridad, se requiere...",
@@ -2271,6 +2310,7 @@ export default [
       "La UE se compromete con un programa ambicioso para fortalecer la ciberseguridad en Europa, esencial en nuestro mundo digital. Este programa tiene como objetivo proteger nuestros datos personales, infraestructuras críticas y sistemas informáticos contra los ciberataques. Promueve la cooperación entre los Estados miembros, las empresas y la sociedad civil para detectar y contrarrestar las amenazas en línea. La UE está invirtiendo en investigación, formación y desarrollo de tecnologías innovadoras para fortalecer nuestra resiliencia digital. Al concienciar y educar a los ciudadanos sobre los riesgos, la UE aspira a crear un ciberespacio seguro y confiable para todos los europeos.",
     id: 49,
     sources: "https://digital-strategy.ec.europa.eu/fr/policies/cybersecurity",
+    express: false,
   },
   {
     question: "¿Es útil la creación de una identidad digital europea?",
@@ -2363,6 +2403,7 @@ export default [
       "La PAC, Política Agrícola Común de la UE desde 1962, apoya a los agricultores y al desarrollo rural garantizando la seguridad alimentaria, la estabilidad de los mercados y unos ingresos dignos. Utiliza subvenciones, programas de desarrollo rural y mecanismos de regulación. La transición ecológica se refiere a un cambio fundamental en las prácticas económicas, sociales y medioambientales para reducir el impacto negativo en el medio ambiente y fomentar la sostenibilidad. Por lo tanto, se trata de saber qué medidas debe implementar la PAC para facilitar la transición ecológica, cuántas subvenciones deben asignarse y en qué cantidad.",
     id: 51,
     sources: "https://agriculture.ec.europa.eu/common-agricultural-policy_fr",
+    express: false,
   },
   {
     question: "¿Es necesario reducir el uso de pesticidas en la agricultura?",
@@ -2409,6 +2450,7 @@ export default [
     id: 52,
     sources:
       "https://www.consilium.europa.eu/fr/press/press-releases/2022/12/19/council-calls-for-a-complementary-impact-assessment-on-the-sustainable-use-of-plant-protection-products-proposal/",
+    express: false,
   },
   {
     question:
@@ -2456,6 +2498,7 @@ export default [
     id: 53,
     sources:
       "https://commission.europa.eu/news/improving-welfare-animals-2023-12-07_fr#:~:text=La%20Commission%20europ%C3%A9enne%20a%20propos%C3%A9,%C3%A0%20fourrure%20dans%20l'UE.",
+    express: false,
   },
   {
     question:
@@ -2499,10 +2542,11 @@ export default [
     ],
     category: 6,
     learnMore:
-      "La Unión Europea (UE) es el 5o productor mundial de pesca y acuicultura en 2017, con 5,9 millones de toneladas de pescado. A pesar de esto, este sector contribuye con menos del 1% del PIB de la UE y emplea aproximadamente a 267,000 personas. Más del 50% de las necesidades de la UE en productos pesqueros provienen de países terceros. La Política Común de la Pesca (PCP), lanzada en 1983, tiene como objetivo garantizar una explotación sostenible de los recursos marítimos y asegurar ingresos justos. La PCP se reforma cada diez años, siendo la última reforma en 2013. Los objetivos de la PCP están definidos en el artículo 39 del TFUE e incluyen el incremento de la productividad pesquera, el mantenimiento de un nivel de vida justo, la estabilización de los mercados, la garantía de seguridad en los suministros y precios razonables para los consumidores. La PCP se centra en la conservación y gestión sostenible de los recursos pesqueros, medidas estructurales",
+      "La Unión Europea (UE) es el 5o productor mundial de pesca y acuicultura en 2017, con 5,9 millones de toneladas de pescado. A pesar de esto, este sector contribuye con menos del 1% del PIB de la UE y emplea aproximadamente a 267,000 personas. Más del 50% de las necesidades de la UE en productos pesqueros provienen de países terceros. La Política Común de la Pesca (PCP), lanzada en 1983, tiene como objetivo garantizar una explotación sostenible de los recursos marítimos y asegurar ingresos justos. La PCP se reforma cada diez años, siendo la última reforma en 2013. Los objetivos de la PCP están definidos en el artículo 39 del TFUE e incluyen el incremento de la productividad pesquera, el mantenimiento de un nivel de vida justo, la estabilización de los mercados, la garantía de seguridad en los suministros y precios razonables para los consumidores. La PCP se centra en la conservación y gestión sostenible de los recursos pesqueros, medidas estructurales",
     id: 54,
     sources:
       "https://www.europarl.europa.eu/doceo/document/TA-9-2024-0046_FR.html",
+    express: false,
   },
   {
     question: "¿Cómo permitir que los jóvenes agricultores se instalen?",
@@ -2597,6 +2641,7 @@ export default [
     id: 56,
     sources:
       "https://agriculture.ec.europa.eu/farming/geographical-indications-and-quality-schemes_fr",
+    express: false,
   },
   {
     question:
@@ -2644,6 +2689,7 @@ export default [
     id: 57,
     sources:
       "https://www.euractiv.fr/section/agriculture-alimentation/news/la-commission-propose-de-sortir-le-loup-de-son-statut-despece-strictement-protegee/",
+    express: false,
   },
   {
     question:
@@ -2739,6 +2785,7 @@ export default [
     id: 59,
     sources:
       "https://www.europarl.europa.eu/doceo/document/TA-9-2023-0375_FR.html",
+    express: false,
   },
   {
     question:
@@ -2833,6 +2880,7 @@ export default [
       "Ucrania es una antigua república soviética que desde 2014 ha sufrido presiones militares de Rusia. En 2022, una parte de su territorio fue atacado por Rusia, y la guerra continúa hasta el día de hoy. Esta guerra ocurre mientras Ucrania ha iniciado un proceso de democratización y modernización de la economía con el objetivo de acercarse a la UE. Moldavia, un pequeño estado entre Rumanía y Ucrania, sigue los mismos proyectos democráticos, y aunque no ha sido directamente atacada por Rusia, una parte de su territorio (la región de Transnistria) se declaró unilateralmente autónoma y solicitó su integración a Rusia en 2016, sin éxito. A finales de 2023, considerando los esfuerzos realizados por ambos países y ante la situación excepcional, la Comisión Europea recomendó al Consejo de la UE abrir negociaciones de adhesión.",
     id: 61,
     sources: "https://www.eeas.europa.eu/eeas/standwithukraine_en",
+    express: false,
   },
   {
     question: "¿Cómo se deben considerar las relaciones con China?",
@@ -2879,6 +2927,7 @@ export default [
     id: 62,
     sources:
       "https://www.europarl.europa.eu/news/fr/press-room/20210910IPR11917/la-vision-du-parlement-concernant-la-nouvelle-strategie-de-l-ue-pour-la-chine",
+    express: false,
   },
   {
     question: "¿Deberíamos considerar la ampliación de la UE a los Balcanes?",
@@ -2925,6 +2974,7 @@ export default [
     id: 63,
     sources:
       "https://www.europarl.europa.eu/factsheets/fr/sheet/168/the-western-balkans",
+    express: false,
   },
   {
     question:
@@ -2971,6 +3021,7 @@ export default [
       "El conflicto israelí-palestino es un conflicto en Oriente Medio que enfrenta principalmente a dos estados que representan a dos poblaciones, una de religión judía (representada por el Estado de Israel), y la otra de religión musulmana (el Estado de Palestina, no reconocido oficialmente por la ONU). Desde 1948, varias guerras y crisis, tanto civiles como con beligerantes extranjeros, han sacudido la región. Desde el 7 de octubre, las tensiones se han avivado por ataques terroristas que han provocado una respuesta militar muy violenta. Se trata de un tema extremadamente complejo, sensible y politizado que no puede ser resumido aquí, por lo que le animamos a informarse a través de fuentes confiables.",
     id: 64,
     sources: "https://www.eeas.europa.eu/eeas/middle-east-peace-process_en",
+    express: false,
   },
   {
     question:
@@ -3018,6 +3069,7 @@ export default [
     id: 65,
     sources:
       "https://eur-lex.europa.eu/FR/legal-content/glossary/common-foreign-and-security-policy-cfsp.html",
+    express: false,
   },
   {
     question: "La OTAN es una organización...",
@@ -3157,6 +3209,7 @@ export default [
     id: 68,
     sources:
       "https://www.europarl.europa.eu/news/fr/press-room/20210517IPR04118/les-relations-ue-turquie-a-un-niveau-historiquement-bas",
+    express: false,
   },
   {
     question: "Es necesario fortalecer la industria de defensa europea.",
@@ -3250,6 +3303,7 @@ export default [
     id: 70,
     sources:
       "https://www.eeas.europa.eu/eeas/international-cooperation-partnership_en",
+    express: false,
   },
   {
     question: "Una política migratoria europea armonizada es...",
@@ -3296,6 +3350,7 @@ export default [
     id: 71,
     sources:
       "https://www.consilium.europa.eu/fr/press/press-releases/2023/12/20/the-council-and-the-european-parliament-reach-breakthrough-in-reform-of-eu-asylum-and-migration-system/",
+    express: false,
   },
   {
     question: "¿Deberían facilitarse los procedimientos de asilo?",
@@ -3342,6 +3397,7 @@ export default [
     id: 72,
     sources:
       "https://www.consilium.europa.eu/fr/policies/eu-migration-policy/eu-migration-asylum-reform-pact/asylum-procedure/#:~:text=Le%20r%C3%A8glement%20sur%20les%20proc%C3%A9dures%20d'asile%20contient%20une%20r%C3%A8gle,demandes%20sont%20infond%C3%A9es%20ou%20irrecevables.",
+    express: false,
   },
   {
     question: "La gestión europea del asilo y la migración es …",
@@ -3435,6 +3491,7 @@ export default [
     id: 74,
     sources:
       "https://eur-lex.europa.eu/legal-content/FR/TXT/HTML/?uri=CELEX:52020PC0612#:~:text=L%27article%204%20pr%C3%A9voit%20que,remplit%20les%20conditions%20d%27entr%C3%A9e.",
+    express: false,
   },
   {
     question:
@@ -3482,6 +3539,7 @@ export default [
     id: 75,
     sources:
       "https://www.edps.europa.eu/data-protection/european-it-systems/eurodac_fr",
+    express: false,
   },
   {
     question:
@@ -3576,6 +3634,7 @@ export default [
     id: 77,
     sources:
       "https://www.europarl.europa.eu/legislative-train/theme-promoting-our-european-way-of-life/file-mff-asylum-and-migration-fund",
+    express: false,
   },
   {
     question: "Una reforma del espacio Schengen es...",
@@ -3622,6 +3681,7 @@ export default [
     id: 78,
     sources:
       "https://www.europarl.europa.eu/legislative-train/theme-promoting-our-european-way-of-life/file-revision-of-schengen-evaluation-mechanism",
+    express: false,
   },
   {
     question:
@@ -3717,6 +3777,7 @@ export default [
     id: 80,
     sources:
       "https://eu-solidarity-ukraine.ec.europa.eu/information-people-fleeing-war-ukraine/fleeing-ukraine-protection-children_fr#:~:text=Tous%20les%20enfants%20(c'est,'entr%C3%A9e%20dans%20l'UE.",
+    express: false,
   },
   {
     question: "Ante el envejecimiento de la población europea, es necesario...",
@@ -3809,6 +3870,7 @@ export default [
       'A través de la iniciativa "espacio europeo", la Unión Europea busca promover la colaboración entre los Estados en el ámbito de la educación. Esta iniciativa tiene como objetivo fortalecer la movilidad estudiantil, ya sea a través de asociaciones entre las facultades de los Estados miembros o mediante programas como Erasmus +. Sin embargo, estas iniciativas se enfrentan a múltiples desafíos, como el reconocimiento europeo de las calificaciones, el plurilingüismo o los casos de abandono escolar. En definitiva, la educación es un tema transversal que abarca muchos otros aspectos (crecimiento, innovación, desempleo, etc.).',
     id: 82,
     sources: "https://www.consilium.europa.eu/fr/policies/education-area/",
+    express: false,
   },
   {
     question: "La acción a favor de la igualdad de género debe conducir a ...",
@@ -3854,6 +3916,7 @@ export default [
       'La igualdad de género es un principio fundamental de la Unión Europea reconocido en el artículo 2 del Tratado de la Unión Europea (TUE). Este se implementa en varios programas, como "ciudadanía, igualdad, derechos y valores" (2021-2027), una iniciativa de la Unión Europea diseñada para promover y proteger los derechos fundamentales, así como el GAP III que promueve la igualdad de género y el empoderamiento de las mujeres en las acciones externas de la UE. En promedio, en Europa, las mujeres ganan un 16% menos que los hombres, representan solo el 29% de los cargos directivos en las grandes empresas y solamente el 32% de los miembros de los parlamentos nacionales.',
     id: 83,
     sources: "https://ec.europa.eu/commission/presscorner/detail/en/IP_20_2184",
+    express: false,
   },
   {
     question: "¿Qué objetivo debe perseguir el programa Erasmus?",
@@ -3947,6 +4010,7 @@ export default [
     id: 85,
     sources:
       "https://www.europarl.europa.eu/news/fr/press-room/20210304IPR99219/le-parlement-declare-l-union-europeenne-zone-de-liberte-lgbtiq",
+    express: false,
   },
   {
     question: "El apoyo de Europa a los artistas...",
@@ -3993,6 +4057,7 @@ export default [
     id: 86,
     sources:
       "https://culture.ec.europa.eu/fr/creative-europe/about-the-creative-europe-programme",
+    express: false,
   },
   {
     question: "El año europeo de la juventud debe",
@@ -4038,6 +4103,7 @@ export default [
       "En 2022, la Unión Europea proclamó el año 2022 como el Año Europeo de la Juventud. Esta iniciativa tiene como objetivo destacar el papel de los jóvenes en la construcción de Europa, centrándose en los temas de ecología, inclusividad y digitalización. En esta ocasión, se llevaron a cabo 13,000 actividades en 67 países, promoviendo su participación en las redes sociales, debates y encuentros con líderes políticos.",
     id: 87,
     sources: "https://youth.europa.eu/year-of-youth_fr",
+    express: false,
   },
   {
     question:
@@ -4085,6 +4151,7 @@ export default [
     id: 88,
     sources:
       "https://ec.europa.eu/social/main.jsp?catId=1484&langId=fr#:~:text=En%20mars%202021%2C%20la%20Commission,Europe%20et%20dans%20le%20monde.",
+    express: false,
   },
   {
     question:
@@ -4131,6 +4198,7 @@ export default [
       "El ámbito del deporte es una de las competencias de la Unión Europea desde el Tratado de Lisboa (2009). Presenta desafíos en términos de salud pública, desarrollo económico y soft power. Las iniciativas europeas se centran en la integridad del deporte promoviendo la inclusión social a través de la promoción de iniciativas y programas como Erasmus+. El Parlamento Europeo desarrolla políticas en materia de igualdad de género y lucha contra la corrupción. La promoción del deporte también implica regular los deportes electrónicos, velando por su desarrollo e integridad.",
     id: 89,
     sources: "https://www.europarl.europa.eu/factsheets/fr/sheet/143/le-sport",
+    express: false,
   },
   {
     question: "El patrimonio cultural europeo es",
@@ -4270,6 +4338,7 @@ export default [
     id: 92,
     sources:
       "https://health.ec.europa.eu/ehealth-digital-health-and-care/european-health-data-space_fr",
+    express: false,
   },
   {
     question: "La prioridad en materia de política de salud es…",
@@ -4316,6 +4385,7 @@ export default [
     id: 93,
     sources:
       "https://www.consilium.europa.eu/fr/policies/eu-health-policy/#:~:text=am%C3%A9liorer%20et%20renforcer%20la%20sant%C3%A9,l'utilisation%20efficace%20des%20ressources",
+    express: false,
   },
   {
     question: "A nivel mundial, la acción de la UE en materia de salud debe...",
@@ -4362,6 +4432,7 @@ export default [
     id: 94,
     sources:
       "https://ec.europa.eu/commission/presscorner/detail/fr/qanda_22_7126",
+    express: false,
   },
   {
     question:
@@ -4456,6 +4527,7 @@ export default [
     id: 96,
     sources:
       "https://www.consilium.europa.eu/fr/press/press-releases/2016/06/17/epsco-conclusions-balance-pharmaceutical-system/",
+    express: false,
   },
   {
     question: "La iniciativa europea para la salud mental...",
@@ -4502,6 +4574,7 @@ export default [
     id: 97,
     sources:
       "https://www.europarl.europa.eu/topics/fr/article/20220624STO33809/le-parlement-appelle-a-l-action-pour-proteger-la-sante-mentale",
+    express: false,
   },
   {
     question: "La medida clave del Fondo Social Europeo (FSE) es…",
@@ -4548,6 +4621,7 @@ export default [
     id: 98,
     sources:
       "https://www.consilium.europa.eu/fr/press/press-releases/2021/01/28/european-social-fund-plus-council-and-parliament-reach-a-provisional-deal/",
+    express: false,
   },
   {
     question: "La política de salud laboral debe centrarse en.",
@@ -4593,6 +4667,7 @@ export default [
       "La UE empuja a sus Estados miembros a promover condiciones de trabajo justas y seguras garantizando los derechos fundamentales de los trabajadores como la protección social. La UE busca erradicar cualquier forma de violencia, discriminación y acoso en el trabajo, establecer reglas para el teletrabajo y también aboga por horarios de trabajo más flexibles para mitigar el estrés.",
     id: 99,
     sources: "https://www.consilium.europa.eu/fr/policies/protecting-workers/",
+    express: false,
   },
   {
     question: "Una directiva europea sobre los salarios mínimos...",

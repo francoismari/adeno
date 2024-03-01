@@ -6,7 +6,7 @@ import * as Localization from "expo-localization";
 import * as SplashScreen from "expo-splash-screen";
 import AsyncStorage from "@react-native-async-storage/async-storage";
 
-import { auth, db } from "../../firebaseConfig";
+import { auth, db } from "../../firebaseConfig.js";
 import { doc, getDoc } from "firebase/firestore";
 import i18n from "../languages/i18n";
 import StackNavigator from "../navigation/StackNavigator";

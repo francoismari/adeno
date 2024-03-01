@@ -2,42 +2,42 @@ export default [
   {
     id: 1,
     name: "Chopin Thierry",
-    role: "Politologue spécialiste de l’UE, conseiller spécial à L’institut Jacques Delors et enseignant au collège d’Europe et à l’Espol.",
+    role: "Politologue spécialiste de l’UE, conseiller spécial à L’institut Jacques Delors et enseignant au Collège d’Europe et à l’Espol.",
   },
   {
     id: 2,
     name: "Mathiot Pierre",
-    role: "Politologue, Directeur de Sciences Po Lille",
+    role: "Politologue, Directeur de Sciences Po Lille.",
   },
   {
     id: 3,
     name: "Bazin Anne",
-    role: "Maître de conférences en sciences politiques à Sciences Po Lille",
+    role: "Maître de conférences en sciences politiques à Sciences Po Lille.",
   },
   {
     id: 4,
     name: "Muxel Anne",
-    role: "Sociologue et politologue, enseignante à Sciences Po Paris",
+    role: "Sociologue et politologue, enseignante à Sciences Po Paris.",
   },
   {
     id: 5,
     name: "Cautres Bruno",
-    role: "Politologue, membre du CEVIPOF de Sciences Po Paris et conseiller spécial à L’Institut Montaigne",
+    role: "Politologue, membre du CEVIPOF de Sciences Po Paris et conseiller spécial à L’Institut Montaigne.",
   },
   {
     id: 6,
     name: "Lequesne Christian",
-    role: "Professeur de sciences politiques à Sciences Po Paris",
+    role: "Professeur de sciences politiques à Sciences Po Paris.",
   },
   {
     id: 7,
     name: "Kahn Sylvain",
-    role: "Professeur agrégé d’histoire et docteur en géographie, enseignant à Sciences Po Paris",
+    role: "Professeur agrégé d’histoire et docteur en géographie, enseignant à Sciences Po Paris.",
   },
   {
     id: 8,
     name: "Lorenzani Dimitri",
-    role: "Professeur de politique et gouvernance européenne au collège d’Europe",
+    role: "Professeur de politique et gouvernance européenne au Collège d’Europe.",
   },
   {
     id: 9,
@@ -46,7 +46,7 @@ export default [
   },
   {
     id: 10,
-    name: "Van Wayenberge Arnaud",
+    name: "Van Waeyenberge Arnaud",
     role: "Professeur de droit européen à HEC Paris.",
   },
   {
@@ -57,6 +57,11 @@ export default [
   {
     id: 12,
     name: "Strudel Sylvie",
-    role: "Docteur en sciences politiques, enseigne à Assas et à Sciences Po Paris",
+    role: "Professeur en science politique et enseignante à Panthéon-Assas et Sciences Po Paris.",
+  },
+  {
+    id: 13,
+    name: "Vaillant Marion",
+    role: "Maître de conférences en science politique à Panthéon-Assas",
   },
 ];

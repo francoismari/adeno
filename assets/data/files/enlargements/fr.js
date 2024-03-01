@@ -1,7 +1,7 @@
 export default [
   {
     name: "La fondation à 6",
-    text: `L’Union Européenne que nous connaissons aujourd’hui est le fruit de la lente convergence de nombreuses institutions et accords internationaux qui ont petit à petit cimenté la coopération politique des Etats européens. Trois institutions différentes ont fondé le projet européen : La CECA, la CEE et l’Euratom. 
+    text: `L’Union européenne que nous connaissons aujourd’hui est le fruit de la lente convergence de nombreuses institutions et accords internationaux qui ont petit à petit cimenté la coopération politique des Etats européens. Trois institutions différentes ont fondé le projet européen : La CECA, la CEE et l’Euratom. 
 
 La construction européenne est, dans son essence, un projet de paix. L'idée de paix s’est déjà exprimée en mai 1950 avec la célèbre Déclaration Schuman, dans laquelle le ministre des Affaires étrangères français de l'époque proposait de placer l'ensemble de la production franco-allemande de charbon et d'acier sous une Haute Autorité commune. L'objectif du projet européen était ainsi défini : la gestion commune des ressources requises par l’industrie de la guerre par plusieurs États afin d'écarter la possibilité d'un conflit.
 

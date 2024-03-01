@@ -370,12 +370,12 @@ export default function Settings() {
           </CustomText>
         </View>
 
-        <View style={{ marginHorizontal: 20 }}>
+        {/* <View style={{ marginHorizontal: 20 }}>
           <Text style={{ color: "white" }}>Debug dev:</Text>
           <TouchableOpacity onPress={() => AsyncStorage.removeItem("isSetUp")}>
             <Text style={{ color: "white" }}>Reset onboarding</Text>
           </TouchableOpacity>
-        </View>
+        </View> */}
       </ScrollView>
 
       <Modal

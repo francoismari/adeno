@@ -11,7 +11,7 @@ const MultiplayerResultCard = ({ result, player }) => {
     <View
       style={{
         width: Dimensions.get("screen").width * 0.9,
-        height: 450,
+        height: 460,
         padding: 15,
         backgroundColor: "white",
         marginHorizontal: 20,
@@ -126,11 +126,11 @@ const MultiplayerResultCard = ({ result, player }) => {
         </CustomText>
         <CustomText
           style={{
-            fontSize: 16,
+            fontSize: 14,
             color: "#9B9B9B",
             fontFamily: "FrancoisOne",
             lineHeight: 18,
-            marginTop: 10,
+            marginTop: 5,
             textAlign: "center",
           }}
         >
