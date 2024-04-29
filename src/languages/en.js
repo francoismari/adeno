@@ -18,7 +18,7 @@ export default {
       soloBox: {
         title: "Solo mode",
         description:
-          "Answer 100 questions on 10 themes and get an opinion on the main groups in the European parliaments! You will also see which list leader you correspond to in your country.",
+          "Answer 100 questions on 10 themes and get an opinion on the main groups in the European parliament! You will also see which list leader you correspond to in your country.",
       },
     },
     thirdScreen: {
@@ -60,6 +60,11 @@ export default {
       listNotAvailableSubtitle:
         "You will be notified when your party has announced its top pick in your country!",
       seeAllResultsText: "See all my results",
+      easyModeWarning: {
+        title: "With the easy mode",
+        description:
+          "For more accurate results and detailed information on your responses, use the advanced mode!",
+      },
     },
   },
   ranking: {
@@ -81,12 +86,12 @@ export default {
     },
     commitCard: {
       title: "Get Involved ✊",
-      text: `Les Engagés! is a federation under the law of 1901 founded in June 2017 with the aim of encouraging young people to get involved in community life. For nearly 6 years now, Les Engagés have been working to promote various forms of engagement among young people aged 18 to 35 by organizing debates, conferences, meetings, as well as visits within our various branches spread across several cities in France.`,
+      text: `Les Engagés! is a federation under the French law of 1901 founded in June 2017 with the aim of encouraging young people to get involved in community life. For nearly 6 years now, Les Engagés has been working to promote various forms of engagement among young people aged 18 to 35 by organizing debates, conferences, meetings, as well as visits within our various branches spread across several cities in France.`,
       joinButtonText: "Join",
     },
     informCard: {
       title: "Get Informed 🗞️",
-      text: `Le Vieux Continent is an online media whose goal is to inform and spread the European issue into the public debate, on YouTube, TikTok, and Instagram. They produce various formats such as interviews, street interviews, news analysis, debates, all centered around European topics. Starting from April 2024, the media will closely cover the European elections in France.`,
+      text: `Le Vieux Continent is an online media whose goal is to inform and spread the European topics into the public debate, on YouTube, TikTok, and Instagram. They produce various formats such as interviews, street interviews, news analysis, debates, all centered around European topics. Starting from April 2024, the media will closely cover the European elections in France.`,
       joinButtonText: "Discover",
     },
     partnerCard: {
@@ -107,17 +112,17 @@ export default {
   selectSoloMode: {
     title: "Solo Mode",
     expressCard: {
-      title: "Express Mode ⏱️",
+      title: "Easy Mode ⏱️",
       subtitle: "30 questions to find\nyour top pick!",
     },
     classicCard: {
-      title: "Classic Mode 🗳️",
+      title: "Classic Mode",
       subtitle:
-        "Answer 100 questions, and find a result that correspond to your beliefs!",
+        "Answer 100 questions, and find a result that corresponds to your beliefs!",
     },
   },
   expressMode: {
-    title: "Express Mode",
+    title: "Easy Mode",
     cardTitle: "Find the group that suits you by answering 30 questions!",
     warningText:
       "Warning: for more reliable results and questions on more specific topics, use the classic mode!",
@@ -172,7 +177,7 @@ export default {
     seconds: "seconds",
     for: "For",
     against: "Against",
-    indifferent: "Indifferent",
+    indifferent: "In between",
     alert: {
       quitPartyTitle: "Are you sure you want to quit the game?",
       cancel: "Cancel",
@@ -194,7 +199,7 @@ export default {
   gameQuestionsScreen: {
     for: "For",
     against: "Against",
-    indifferent: "Indifferent",
+    indifferent: "In between",
     waitingForPlayersTitle: "Waiting for other players!",
     waitingForPlayersSubtitle:
       "Results will be available once everyone has finished",
@@ -276,7 +281,7 @@ export default {
       subtitle:
         "Inceptio Lab, founded in 2023 and affiliated with the federation Les Engagés!, is an incubator aiming to promote entrepreneurial projects with impact, inspired by the success of the Elyze app. It offers a platform to apply skills in committed, innovative, and sustainable initiatives, while promoting the employability of its members.",
       founderMaleText: "Founder",
-      founderFemaleText: "Foundress",
+      founderFemaleText: "Founder",
     },
     teamCard: {
       title: "The Team",

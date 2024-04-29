@@ -60,6 +60,11 @@ export default {
       listNotAvailableSubtitle:
         "Saad teavituse, kui sinu partei teatab oma nimekirja liidri sinu riigis!",
       seeAllResultsText: "Vaata kõiki minu tulemusi",
+      easyModeWarning: {
+        title: "Lihtsa režiimiga",
+        description:
+          "Täpsemate tulemuste ja vastuste üksikasjaliku teabe saamiseks kasuta täiustatud režiimi!",
+      },
     },
   },
   ranking: {

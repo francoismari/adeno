@@ -1,5 +1,12 @@
 import React, { useState, useEffect } from "react";
-import { View, Text, Pressable, FlatList, ScrollView } from "react-native";
+import {
+  View,
+  Text,
+  Pressable,
+  FlatList,
+  ScrollView,
+  TouchableOpacity,
+} from "react-native";
 import AsyncStorage from "@react-native-async-storage/async-storage";
 import BackgroundWrapper from "../../components/BackgroundWrapper";
 import CustomText from "../../components/CustomText";
@@ -136,7 +143,7 @@ export default function ThemeQuestionScreen({ navigation, route }) {
             }
             showsVerticalScrollIndicator={false}
             renderItem={({ item }) => (
-              <Pressable
+              <TouchableOpacity
                 style={{
                   width: "100%",
                   borderRadius: 10,
@@ -163,7 +170,7 @@ export default function ThemeQuestionScreen({ navigation, route }) {
                 >
                   {item.text}
                 </CustomText>
-              </Pressable>
+              </TouchableOpacity>
             )}
             keyExtractor={(item) => item.id.toString()}
             contentContainerStyle={{

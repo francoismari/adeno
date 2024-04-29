@@ -30,16 +30,22 @@ const QuestionsScreen = ({ route }) => {
   const { locale } = useUser();
   const navigation = useNavigation();
 
-  const totalQuestions = (() => {
-    if (players.length >= 2 && players.length <= 4) {
-      return 30;
-    } else if (players.length > 4 && players.length <= 10) {
-      return Math.min(players.length * 7, 50);
-    } else if (players.length === 10) {
-      return 50;
-    }
-    return 20; // Fallback for scenarios not covered
-  })();
+  // const totalQuestions = (() => {
+  //   if (players.length >= 2 && players.length <= 4) {
+  //     return 30;
+  //   } else
+
+  //   if (players.length > 4 && players.length <= 10) {
+  //     return 40;
+  //   } else if (players.length === 10) {
+  //     return 50;
+  //   }
+  //   return 20;
+  // })();
+
+  const totalQuestions = 30;
+
+  console.log("TOTAL QUESTIONS: ", totalQuestions);
 
   const [questions, setQuestions] = useState([]);
   const [usedQuestions, setUsedQuestions] = useState(new Set());
@@ -74,50 +80,45 @@ const QuestionsScreen = ({ route }) => {
     let nextPlayerIndex = (currentPlayerIndex + 1) % players.length;
     setCurrentPlayerIndex(nextPlayerIndex);
 
-    // Reset timer for next question
     setTimer(time);
 
-    // If all questions have been used, allow repeat for new cycle
     if (usedQuestions.size === questions.length) {
-      setUsedQuestions(new Set()); // Optional: Reset if you want to start fresh after all questions have been used
+      setUsedQuestions(new Set());
     }
   };
 
   const handleResponse = (response) => {
     const currentPlayer = players[currentPlayerIndex].pseudo;
-    // Select a question that hasn't been used yet for any player
     let nextQuestionIndex = questions.findIndex(
       (_, index) => !usedQuestions.has(index)
     );
     if (nextQuestionIndex === -1) {
-      // If all questions were used, allow repeats
-      nextQuestionIndex = 0; // Or implement logic to start over or select randomly
+      nextQuestionIndex = 0;
     }
 
-    setUsedQuestions((prev) => new Set(prev.add(nextQuestionIndex))); // Mark the question as used
+    setUsedQuestions((prev) => new Set(prev.add(nextQuestionIndex)));
 
     setResponses((prev) => ({
       ...prev,
       [currentPlayer]: [...(prev[currentPlayer] || []), response],
     }));
 
-    // Move to the next question/player
     nextQuestion();
   };
 
   const handleCompletion = () => {
-    // Logic to handle completion, e.g., navigate to results page
     navigation.navigate("MultiplayerResults", { responses });
   };
 
-  // Call handleCompletion when totalAsked questions reaches totalQuestions
   useEffect(() => {
+    console.log("USED QUESTIONS: ", Array.from(usedQuestions).length);
+    console.log("TOTAL QUESTIONS: ", totalQuestions);
+
     if (Array.from(usedQuestions).length >= totalQuestions) {
       handleCompletion();
     }
   }, [usedQuestions, totalQuestions]);
 
-  // Prevent rendering before questions are loaded
   if (questions.length === 0) {
     return <BackgroundWrapper />;
   }
@@ -129,6 +130,23 @@ const QuestionsScreen = ({ route }) => {
     (t) => t.id === question?.theme
   );
   const currentPlayer = players[currentPlayerIndex].pseudo;
+
+  const shouldLowercase = (str) => {
+    const exceptions = [
+      "Europe",
+      "Europa",
+      "NATO",
+      "OTAN",
+      "European",
+      `Europe's`,
+    ];
+    const firstWord = str.split(" ")[0];
+    return !exceptions.includes(firstWord);
+  };
+
+  const formattedQuestionText = shouldLowercase(question.text)
+    ? question.text.charAt(0).toLowerCase() + question.text.slice(1)
+    : question.text;
 
   const handleQuitGame = () => {
     Alert.alert(i18n.t("multiplayerOnePhoneGame.alert.quitPartyTitle"), null, [
@@ -150,7 +168,6 @@ const QuestionsScreen = ({ route }) => {
       <View style={{ alignSelf: "center" }}>
         <CustomText
           style={{
-            // marginTop: 25,
             color: "white",
             fontSize: 20,
             fontFamily: "FrancoisOne",
@@ -196,7 +213,6 @@ const QuestionsScreen = ({ route }) => {
             style={{
               fontFamily: "FrancoisOne",
               fontSize: Dimensions.get("screen").width * 0.08,
-              // fontSize: 35,
               lineHeight: 40,
               marginHorizontal: 20,
               color: "white",
@@ -204,12 +220,11 @@ const QuestionsScreen = ({ route }) => {
             }}
           >
             <Text style={{ color: "#E8C51D" }}>{currentPlayer}</Text>,{" "}
-            {question.text.charAt(0).toLowerCase() + question.text.slice(1)}
+            {formattedQuestionText}
           </Text>
         </View>
       </View>
-      {/* <Text style={{ color: "white" }}>{questionNumberDisplay}</Text> */}
-      {/* <Text style={styles.timerText}>Time left: {timer}s</Text> */}
+
       <ChoicesButton question={question} handleResponse={handleResponse} />
     </BackgroundWrapper>
   );

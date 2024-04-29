@@ -31,6 +31,7 @@ export default function ResultList({ results }) {
         contentContainerStyle={styles.scrollContainer}
         showsHorizontalScrollIndicator={false}
         horizontal
+        style={{flexGrow: 0}}
       >
         {Object.entries(results).map(([player, resultsArray]) => (
           <MultiplayerResultCard result={resultsArray} player={player} />

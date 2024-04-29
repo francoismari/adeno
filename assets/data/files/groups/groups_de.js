@@ -6,10 +6,10 @@ export default [
     emoji: "💙",
     imageUrl: require("../../../data/images/groups/PPE.png"),
     value: "Zentrismus",
-    adjective: "gemäßigt",
-    pluralAdjective: "gemäßigten",
+    adjective: "zentrum-rechts",
+    pluralAdjective: "zentrum-rechten",
     explaination:
-      "Du schätzt Einheit und zentristische demokratische Werte, mit einem Schwerpunkt auf einem gemäßigten und zentrum-rechten Ansatz.",
+      "Du siehst dich als Fels in der Brandung der EU-Politik, mit einem Auge auf die Wirtschaft und dem anderen auf gemeinsamen Werte gerichtet, arbeitest du an einem Europa, das Traditionen schätzt.",
   },
   {
     id: 2,
@@ -17,11 +17,11 @@ export default [
     fullname: "Progressive Allianz der Sozialisten & Demokraten",
     emoji: "🌹",
     imageUrl: require("../../../data/images/groups/SD.png"),
-    value: "Sozialismus",
-    adjective: "sozialistisch",
-    pluralAdjective: "sozialistischen",
+    value: "Sozialdemokratie",
+    adjective: "sozialdemokratisch",
+    pluralAdjective: "sozialdemokratischen",
     explaination:
-      "Für eine gerechtere Welt, ein Tweet nach dem anderen, während du fair gehandelten Kaffee genießt.",
+      "Mit einem roten Schal als modisches Statement kämpfst du dafür, dass jeder in Europa nicht nur ein Stück vom Kuchen hat, sondern auch das Rezept kennt.",
   },
   {
     id: 3,
@@ -33,7 +33,7 @@ export default [
     adjective: "liberal",
     pluralAdjective: "liberalen",
     explaination:
-      "Bereit, dein Start-up im Herzen von Brüssel zu gründen, förderst du Innovation und Liberalismus, während du Regulierungen mit einem Lächeln betrachtest.",
+      "Du surft auf der Welle der Zukunft mit einem Smartphone in der einen und einer innovativen Geschäftsidee in der anderen Hand, überzeugt davon, dass der freie Markt Europas Zukunft gestaltet.",
   },
   {
     id: 4,
@@ -41,11 +41,11 @@ export default [
     fullname: "Die Grünen/Europäische Freie Allianz",
     emoji: "🌿",
     imageUrl: require("../../../data/images/groups/Greens.png"),
-    value: "Ökologismus",
+    value: "Grüne Politik",
     adjective: "ökologisch",
     pluralAdjective: "ökologischen",
     explaination:
-      "Den Planeten retten, eine Zoom-Konferenz nach der anderen, mit deinem wiederverwendbaren Becher immer griffbereit.",
+      "Als Teil des grünen Gewissens Europas radelst du gegen den Klimawandel an, rettest Bienen in deiner Freizeit und verwandelst Parlamentssitzungen in Brainstormings für die nächste ökologische Revolution.",
   },
   {
     id: 5,
@@ -57,7 +57,7 @@ export default [
     adjective: "konservativ",
     pluralAdjective: "konservativen",
     explaination:
-      "Du verteidigst konservative Werte, befürwortest die Bewahrung von Traditionen, soziale Stabilität und niedrigere Steuern.",
+      "Bewaffnet mit Tradition und der Überzeugung, dass weniger EU manchmal mehr ist, verteidigst du nationale Kulturgüter gegen die bürokratische Übermacht.",
   },
   {
     id: 6,
@@ -66,11 +66,11 @@ export default [
       "Konföderale Fraktion der Vereinten Europäischen Linken/Nordische Grüne Linke",
     emoji: "💢",
     imageUrl: require("../../../data/images/groups/GUE.png"),
-    value: "Radikalismus",
-    adjective: "radikal",
-    pluralAdjective: "radikalen",
+    value: "Sozialismus",
+    adjective: "sozialistisch",
+    pluralAdjective: "sozialistischen",
     explaination:
-      "Du vertrittst eine linke Perspektive, die sich auf die Rechte der Arbeitnehmer, die gerechte Verteilung des Reichtums und progressive Sozialpolitiken konzentriert.",
+      "Du träumst von einer Welt, in der Kapitalismus ein Brettspiel ist und Gleichheit der Hauptgewinn, während du mit dem Megafon für die Unterdrückten und gegen ungleiche Reichtumsverteilung demonstrierst.",
   },
   {
     id: 7,
@@ -82,6 +82,6 @@ export default [
     adjective: "nationalistisch",
     pluralAdjective: "nationalistischen",
     explaination:
-      "Hüter der Tradition, mit einer besonderen Vorliebe für Grenzen, besonders wenn sie gut geschlossen sind.",
+      "Du träumst von starken Nationalstaaten innerhalb Europas, mit einem kritischen Blick auf die EU und deren Einfluss. Dabei forderst du eine strenge Migrationspolitik und die Bewahrung nationaler Identitäten.",
   },
 ];

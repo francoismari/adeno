@@ -2,144 +2,143 @@ export default {
   onboarding: {
     firstScreen: {
       subtitle:
-        "Lietotne, kas tevi motivē balsot 2024. gada Eiropas vēlēšanās!",
-      firstRow: "Pirmā spēle, kas tevi ieinteresē politikā",
-      secondRow:
-        "Atrodi savu saraksta vadītāju solo režīmā un uzzini vispārējo reitingu!",
-      thirdRow: "Pieejams visās 27 ES valstīs, tulkots 24 valodās",
+        "Programma, kas palīdzēs jums balsot 2024. gada Eiropas Parlamenta vēlēšanās!",
+      secondRow: "Pirmā spēle, lai jūs ieinteresētu par Eiropas vēlēšanām",
+      thirdRow:
+        "Atrodi savu saraksta vadītāju viena spēlētāja režīmā un uzzini, kur esi kopvērtējumā!",
     },
     secondScreen: {
-      title: "Kā tas darbojas?",
+      title: "Pieejama visās 27 ES valstīs un tulkota 24 valodās.",
       multiplayerBox: {
-        title: "Daudzspēlētāju režīms",
+        title: "Kā tas darbojas?",
         description:
-          "Spēlē ar saviem draugiem, izveido spēles un atbildi uz jautājumiem par galvenajām Eiropas tēmām, lai redzētu savu un draugu pozīcijas!",
+          "Uzsāciet spēli kopā ar draugiem, paudiet savu viedokli par galvenajiem Eiropas jautājumiem un uzziniet, kur viņi atrodas!",
       },
       soloBox: {
-        title: "Solo režīms",
+        title: "Viena spēlētāja režīms",
         description:
-          "Atbildi uz 100 jautājumiem par 10 tēmām un veido viedokli par galvenajām grupām Eiropas parlamentā! Tu arī redzēsi, kuram saraksta vadītājam tu atbilsti savā valstī.",
+          "Atbildi uz 100 jautājumiem par 10 tēmām, lai izdomātu savu viedokli par Eiropas Parlamenta politiskajām grupām! Jūs uzzināsiet, kurš saraksta līderis visvairāk atbilst jūsu pārliecībai.",
       },
     },
     thirdScreen: {
-      title: "Pirms sāc",
+      title: "Pirms sākat",
       firstRow: {
         title: "Mēs nevācam nekādus personas datus.",
         description:
-          "Visi lietotnē izmantotie dati ir anonīmi un ierobežoti tikai ar to, kas absolūti nepieciešams lietotnes pareizai darbībai!",
-        readChart: "Lasīt mūsu privātuma politiku",
+          "Visi lietotnē izmantotie dati ir anonīmi, un tie ir tikai tie, kas noteikti nepieciešami, lai lietotne varētu pareizi darboties!",
+        readChart: "Izlasiet mūsu konfidencialitātes politiku",
       },
       secondRow: {
-        title: "Adeno ir neitrāla, objektīva un caurspīdīga.",
+        title: "Adeno ir bezpartejiska, neitrāla un pārredzama.",
         description:
-          "Adeno nav saistīta ne ar vienu valdības organizāciju un ir pilnībā neatkarīgs projekts.",
-        readChart: "Lasīt mūsu caurspīdīguma politiku",
+          "Adeno ir pilnīgi neatkarīgs projekts, un tas nav saistīts ne ar vienu valsts iestādi.",
+        readChart: "Izlasiet mūsu pārredzamības hartu",
       },
-      startButton: "Sāksim!",
+      startButton: "Sāksim darbu!",
       footerText:
-        "Adeno ir pilsoniskais projekts, ko izveidojusi brīvprātīgo komanda, bez peļņas mērķa, kura vienīgais mērķis ir tevi aicināt balsot!",
-      psText: "PS: mēs esam atvērtā pirmkoda ✌️",
+        "Adeno ir pilsoņu projekts, ko izveidojusi brīvprātīgo komanda bez peļņas motīviem un tikai ar vienu mērķi: sniegt jums atslēgas balsojumam nākamajās Eiropas Parlamenta vēlēšanās!",
+      psText: "PS: mēs esam atvērtā koda ✌️.",
     },
   },
   home: {
-    title: "Spēlē & Balso",
+    title: "Spēlējiet un balsojiet",
     startButtonText: "Sākt",
     multiplayerCard: {
-      title: "Daudzspēlētāju režīms 🎮",
-      subtitle: "Sāc spēli\nun izaicini savus draugus!",
+      title: "Multiplayer režīms 🎮",
+      subtitle: "Sāc spēli un izaicini savus draugus!",
     },
     soloCard: {
-      title: "Solo režīms 🎯",
-      subtitle: "2 režīmi & 100 jautājumi\nlai atrastu savu saraksta vadītāju!",
+      title: "Viena spēlētāja režīms 🎯",
+      subtitle: "2 režīmi un 100 jautājumi, lai atrastu savu labāko izvēli!",
     },
     headListCard: {
-      title: "Mans saraksta vadītājs 🇪🇺",
-      noResultText: "Sāc solo režīmu, lai atrastu savu saraksta vadītāju!",
-      startButtonText: "Aiziet!",
-      listNotAvailableTitle: "Tavs saraksta vadītājs vēl nav pieejams...",
+      title: "Mans topsaraksts 🇪🇺",
+      noResultText:
+        "Sāc viena spēlētāja režīmu, lai uzzinātu, kurš ir tavā saraksta augšgalā!",
+      startButtonText: "Un dodies uz priekšu!",
+      listNotAvailableTitle: "Tavs tops vēl nav pieejams...",
       listNotAvailableSubtitle:
-        "Tu tiks informēts, kad tava partija paziņos saraksta vadītāju tavā valstī!",
+        "Jūs saņemsiet brīdinājumu, kad jūsu partija būs paziņojusi savu saraksta līderi jūsu valstī!",
       seeAllResultsText: "Skatīt visus manus rezultātus",
     },
   },
   ranking: {
     title: "Reitings",
     userCountryCard: {
-      title: "Tavā valstī",
+      title: "Vietnē",
     },
     europeCard: {
       title: "Eiropā",
     },
-    shareAppText: "Dalīties ar Adeno",
+    shareAppText: "Share Adeno",
   },
   discoverEU: {
-    title: "Iepazīsti ES",
+    title: "Atklājiet ES",
     institutionsCard: {
-      title: "Institūcijas 🇪🇺",
-      subtitle: "Uzzini vairāk par Eiropas institūcijām un to darbību!",
-      showAllText: "Rādīt visu",
+      title: "Iestādes 🇪🇺",
+      subtitle: "Iepazīstiet Eiropas iestādes un to darbību!",
+      showAllText: "Parādīt visu",
     },
     commitCard: {
-      title: "Iesaisties ✊",
-      text: "Saistītie! ir federācija, kas dibināta 2017. gada jūnijā ar mērķi veicināt jauniešu iesaisti sabiedriskajā dzīvē. Gandrīz 6 gadus Saistītie ir veicinājuši dažādas iesaistes formas starp 18 līdz 35 gadus veciem jauniešiem, organizējot debates, konferences, tikšanās un apmeklējumus mūsu dažādās atrašanās vietās vairākās Francijas pilsētās.",
-      joinButtonText: "Pievienoties",
+      title: "Iesaistieties ✊",
+      text: "Les Engagés! ir bezpeļņas apvienība, kas dibināta 2017. gada jūnijā, lai mudinātu jauniešus iesaistīties sabiedrības dzīvē. Jau gandrīz 6 gadus Les Engagés darbojas, lai veicinātu dažādas iesaistīšanās formas jauniešu vecumā no 18 līdz 35 gadiem vidū, organizējot iknedēļas debates, konferences, tikšanās un apmeklējumus mūsu dažādajās filiālēs, kas izvietotas vairākās Francijas pilsētās.",
+      joinButtonText: "Pievienojies",
     },
     informCard: {
-      title: "Informējies 🗞️",
-      text: "Vecais kontinents ir tiešsaistes medijs, kura mērķis ir informēt un izplatīt Eiropas jautājumu sabiedriskajā diskusijā, YouTube, TikTok un Instagram. Šim nolūkam tie tiek veidoti dažādi formāti, piemēram, intervijas, ielas aptaujas, aktualitāšu dešifrēšana, debates, vienmēr par Eiropas tēmām. No 2024. gada aprīļa medijs cieši sekos Eiropas vēlēšanām Francijā.",
-      joinButtonText: "Atklāt",
+      title: "Saņemiet informāciju 🗞️",
+      text: "Le Vieux Continent ir tiešsaistes plašsaziņas līdzekļu organizācija, kuras mērķis ir informēt sabiedrību un pievērst lielāku uzmanību Eiropas jautājumiem YouTube, TikTok un Instagram. Šim nolūkam viņi veido dažādus formātus, tostarp intervijas, mikrotitulus, ziņu analīzi un debates, kas veltītas Eiropas jautājumiem. No 2024. gada aprīļa medijs ļoti rūpīgi atspoguļos Eiropas Parlamenta vēlēšanas Francijā.",
+      joinButtonText: "Atklājiet",
     },
     partnerCard: {
       title: "Mūsu partneri",
     },
   },
   allFiles: {
-    title: "Informācijas lapas",
+    title: "Faktu lapas",
     subtitle: "Lai saprastu visu par ES!",
   },
   allUserResults: {
     title: "Mani rezultāti",
     withAdeno: "Ar Adeno",
-    inSummaryTitle: "Kopsavilkumā",
-    shareMyResults: "Dalīties ar maniem rezultātiem",
+    inSummaryTitle: "Īsumā",
+    shareMyResults: "Kopīgojiet manus rezultātus",
     seeMoreText: "Skatīt vairāk",
   },
   selectSoloMode: {
     title: "Solo režīms",
     expressCard: {
-      title: "Ātrā režīma ⏱️",
-      subtitle: "30 jautājumi, lai atrastu savu saraksta vadītāju!",
+      title: "Express režīms ⏱️",
+      subtitle: "30 jautājumi, lai atrastu ceļu uz virsotni!",
     },
     classicCard: {
       title: "Klasiskais režīms 🗳️",
       subtitle:
-        "Atbildi uz 100 jautājumiem un atrodi rezultātu, kas atbilst tavām pārliecībām!",
+        "Atbildi uz 100 jautājumiem un atrodi savai pārliecībai atbilstošu rezultātu!",
     },
   },
   expressMode: {
-    title: "Ātrā režīma",
-    cardTitle:
-      "Atrodi grupu, kas tev vislabāk atbilst, atbildot uz 30 jautājumiem!",
+    title: "Ekspress režīms",
+    cardTitle: "Atbildot uz 30 jautājumiem, atrodi sev atbilstošu grupu!",
     warningText:
-      "Uzmanību: Precīzākiem rezultātiem un specifiskākiem jautājumiem izmanto klasisko režīmu!",
-    letsGoText: "Sāksim",
+      "Brīdinājums: lai iegūtu ticamākus rezultātus un jautājumus par konkrētākām tēmām, izmantojiet klasisko režīmu!",
+    letsGoText: "Šeit sākas",
   },
   expressResults: {
-    title: "Mans rezultāts",
-    inSummaryTitle: "Kopsavilkumā",
-    continueWithClassicMode: "Turpināt ar klasisko režīmu",
+    title: "Mani rezultāti",
+    inSummaryTitle: "Īsumā",
+    continueWithClassicMode: "Turpināt izmantot klasisko režīmu",
     goBack: "Atpakaļ",
   },
   classicMode: {
     randomCard: {
-      title: "Nejauši",
+      title: "Random",
       subtitle: "Visas tēmas",
     },
   },
   randomQuestionScreen: {
-    title: "Nejauši",
+    title: "Rādīt kontekstu",
     showContextText: "Rādīt kontekstu",
-    allQuestionsAnswered: "Esi atbildējis uz visiem jautājumiem!",
+    allQuestionsAnswered: "Jūs esat atbildējis uz visiem jautājumiem!",
     showResultsText: "Rādīt manus rezultātus",
     goBack: "Atpakaļ",
   },
@@ -147,25 +146,25 @@ export default {
     title: "Konteksts",
   },
   selectMultiplayerMode: {
-    title: "Daudzspēlētāju režīms",
-    selectText: "Izvēlies režīmu,\nkas tev vislabāk atbilst!",
+    title: " Multiplayer",
+    selectText: "Izvēlieties sev piemērotāko režīmu!",
     onePhone: "Viens tālrunis",
     multiplePhones: "Vairāki tālruņi",
   },
   setupOnePhone: {
     title: "Spēlētāji",
-    noPlayerAdded: "Nav pievienots neviens spēlētājs",
-    addPlayerText: "Pievienot spēlētāju",
-    letGoText: "Aiziet",
+    noPlayerAdded: "Nav pievienoti spēlētāji",
+    addPlayerText: "Pievienojiet spēlētāju",
+    letGoText: "Šeit mēs ejam",
     addPlayerModal: {
       title: "Pievienot spēlētāju",
       placeholder: "Spēlētāja vārds",
       addPlayerButton: "Pievienot",
       errors: {
         nameAlreadyUsedTitle: "Šis vārds jau ir pievienots",
-        nameAlreadyUsedSubtitle: "Katram spēlētājam jābūt unikālam vārdam.",
+        nameAlreadyUsedSubtitle: "Katram spēlētājam jābūt atšķirīgam vārdam.",
         moreThanTenTitle: "Pārāk daudz spēlētāju",
-        moreThanTenSubtitle: "Nevar pievienot vairāk par 10 spēlētājiem",
+        moreThanTenSubtitle: "Jūs nevarat pievienot vairāk par 10 spēlētājiem",
       },
     },
   },
@@ -173,19 +172,19 @@ export default {
     seconds: "sekundes",
     for: "Par",
     against: "Pret",
-    indifferent: "Neitrāls",
+    indifferent: "Jaukti",
     alert: {
-      quitPartyTitle: "Vai tiešām vēlies iziet no spēles?",
+      quitPartyTitle: "Vai esat pārliecināts, ka vēlaties izstāties no spēles?",
       cancel: "Atcelt",
-      quit: "Iziet",
+      quit: "Atstāj",
     },
   },
   multiplePhones: {
-    title: "Tavs segvārds",
-    pseudoPlaceholder: "Tavs segvārds",
+    title: "Jūsu lietotājvārds",
+    pseudoPlaceholder: "Jūsu segvārds",
     createPartyText: "Izveidot spēli",
     joinPartyText: "Pievienoties spēlei",
-    waitCreatorText: "Spēles veidotājam jāsāk spēle!",
+    waitCreatorText: "Spēles sākšana ir atkarīga no tās autora!",
   },
   gameScreen: {
     title: "Spēle",
@@ -195,19 +194,20 @@ export default {
   gameQuestionsScreen: {
     for: "Par",
     against: "Pret",
-    indifferent: "Neitrāls",
+    indifferent: "Jaukti",
     waitingForPlayersTitle: "Gaidām pārējos spēlētājus!",
-    waitingForPlayersSubtitle: "Rezultāti būs pieejami, kad visi būs pabeiguši",
+    waitingForPlayersSubtitle:
+      "Rezultāti būs pieejami, tiklīdz visi būs pabeiguši.",
   },
   multiplayerResults: {
     title: "Rezultāti",
-    youAreTheMost: "tu esi visvairāk",
-    youMatch: "Tu atbilsti",
-    withList: "ar sarakstu",
+    youAreTheMost: "tu esi +",
+    youMatch: "Tu tuvojies",
+    withList: "saraksta",
     seeNext: "Skatīt nākamo",
     resultsFooter: {
       anotherRound: "Vēl viena kārta?",
-      restartText: "Sākt no jauna",
+      restartText: "Sāciet no jauna",
     },
   },
   euCountries: {
@@ -241,29 +241,28 @@ export default {
     uk: "Apvienotā Karaliste",
   },
   setStudyInfos: {
-    title: "Piedalies lielākajā pētījumā par Eiropu!",
+    title: "Piedalieties lielākajā Eiropas aptaujā!",
   },
   settingsScreen: {
     title: "Iestatījumi",
     multiplayerCard: {
       title: "Daudzspēlētāju režīms",
-      timeByQuestionText: "Laiks uz jautājumu",
+      timeByQuestionText: "Atbildes laiks katram jautājumam",
       setTimeByQuestionModal: {
         title: "Mainīt laiku",
         saveButton: "Saglabāt",
       },
     },
     soloCard: {
-      title: "Solo režīms",
+      title: "Viena spēlētāja režīms",
       resetResultsText: "Atiestatīt manus rezultātus",
       studyInfos: {
-        title: "Piedalies lielajā jauniešu pētījumā Eiropā",
+        title: "Piedalieties vērienīgā pētījumā par jauniešiem Eiropā",
         description:
-          "Tavas atbildes uz solo režīma jautājumiem tiks reģistrētas anonīmi un veicinās liela pētījuma veikšanu par jauniešu vēlēšanu uzvedību Eiropā, ko uzrauga",
-        council:
-          "zinātniskā padome, ko veido profesori, pētnieki un intelektuāļi",
+          "Jūsu atbildes uz jautājumiem viena spēlētāja režīmā tiks reģistrētas anonīmi, un tās tiks izmantotas, lai veiktu vērienīgu pētījumu par Eiropas jauniešu balsošanas paradumiem, ko pārrauga",
+        council: "profesoru, pētnieku un intelektuāļu zinātniskā padome.",
         startButtonText: "Piedalīties pētījumā",
-        userParticipates: "Tu piedalies lielajā Eiropas pētījumā!",
+        userParticipates: "Jūs piedalāties vērienīgā pētījumā par Eiropu!",
       },
     },
     createdByCard: {
@@ -272,9 +271,9 @@ export default {
         "Izveidoja Matthieu Maillard un brīvprātīgo komanda visā Eiropā.",
     },
     incubatedBy: {
-      title: "Inkubējis",
+      title: "Incubated by",
       subtitle:
-        "Inceptio Lab, dibināts 2023. gadā un saistīts ar federāciju Les Engagés!, ir inkubators, kura mērķis ir veicināt uzņēmējdarbības projektus ar ietekmi, iedvesmojoties no lietotnes Elyze panākumiem. Tas piedāvā platformu prasmju pielietošanai iesaistītās, inovatīvās un ilgtspējīgās iniciatīvās, vienlaikus veicinot dalībnieku nodarbinātību.",
+        "Inceptio Lab, kas dibināta 2023. gadā un ir saistīta ar federāciju Les Engagés!, ir inkubators, kas veicina ietekmīgus uzņēmējdarbības projektus, iedvesmojoties no aplikācijas Elyze panākumiem. Tas piedāvā platformu prasmju pielietošanai apņēmīgās, inovatīvās un ilgtspējīgās iniciatīvās, vienlaikus veicinot tā dalībnieku nodarbinātības iespējas.",
       founderMaleText: "Dibinātājs",
       founderFemaleText: "Dibinātāja",
     },
@@ -282,12 +281,12 @@ export default {
       title: "Komanda",
     },
     contactCard: {
-      title: "Sazinies ar mums",
-      text: "Tu vari sazināties ar mums",
+      title: "Sazinieties ar mums",
+      text: "Jūs varat sazināties ar mums pa tālruni",
     },
     allRightsReserved: "visas tiesības aizsargātas",
   },
   councilScreen: {
-    title: "Padome",
+    title: "Valde",
   },
 };

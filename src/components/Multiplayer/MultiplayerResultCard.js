@@ -11,7 +11,7 @@ const MultiplayerResultCard = ({ result, player }) => {
     <View
       style={{
         width: Dimensions.get("screen").width * 0.9,
-        height: 460,
+        // height: 460,
         padding: 15,
         backgroundColor: "white",
         marginHorizontal: 20,
@@ -187,7 +187,7 @@ const MultiplayerResultCard = ({ result, player }) => {
                 </View>
               </View>
               <View style={{ marginLeft: 15 }}>
-                <CustomText style={{ fontSize: 18 }}>
+                <CustomText style={{ fontSize: 18, width: Dimensions.get('screen').width*0.6}}>
                   {resultDetails.partyDetails.fullname}
                 </CustomText>
                 <CustomText>{resultDetails.matchingPercentage}%</CustomText>

@@ -60,6 +60,11 @@ export default {
       listNotAvailableSubtitle:
         "Tu seras alerté(e) quand ton parti aura annoncé sa tête de liste dans ton pays !",
       seeAllResultsText: "Voir tous mes résultats",
+      easyModeWarning: {
+        title: "Avec le mode facile",
+        description:
+          "Pour des résultats plus précis et des détails sur tes réponses, utilise le mode avancé !",
+      },
     },
   },
   ranking: {
@@ -69,6 +74,8 @@ export default {
     },
     europeCard: {
       title: "En Europe",
+      description:
+        "Le classement européen global sera bientôt disponible ! Partage Adeno à tes amis pour que celui-ci soit le plus représentatif 😎",
     },
     shareAppText: "Partager Adeno",
   },
@@ -108,27 +115,27 @@ export default {
   selectSoloMode: {
     title: "Mode solo",
     expressCard: {
-      title: "Mode express ⏱️",
-      subtitle: "30 questions pour trouver\nta tête de liste !",
+      title: "Mode facile",
+      subtitle: "20 questions pour trouver\nta tête de liste !",
     },
     classicCard: {
-      title: "Mode classique 🗳️",
+      title: "Mode avancé",
       subtitle:
-        "Réponds à 100 questions, et trouve un résultat adapté à tes convictions !",
+        "Réponds à 100 questions, et trouve un résultat précis, adapté à tes convictions !",
     },
   },
   expressMode: {
-    title: "Mode express",
+    title: "Mode facile",
     cardTitle:
-      "Trouve le groupe qui te correspond en répondant à 30 questions !",
+      "Trouve le groupe qui te correspond en répondant à 20 questions !",
     warningText:
-      "Attention : pour des résultats plus fiables et des questions sur des sujets plus précis, utilise le mode classique !",
+      "Attention : pour des résultats plus fiables et des questions sur des sujets plus précis, utilise le mode avancé !",
     letsGoText: "C'est parti",
   },
   expressResults: {
     title: "Mon résultat",
     inSummaryTitle: "En bref",
-    continueWithClassicMode: "Continuer avec le mode classique",
+    continueWithClassicMode: "Continuer avec le mode avancé",
     goBack: "Retour",
   },
   classicMode: {

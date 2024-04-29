@@ -65,7 +65,7 @@ export default [
         id: 3,
       },
       {
-        text: "un élément essentiel du green deal qui doit être le miroir du marché européen du carbone",
+        text: "sont un élément essentiel du green deal qui doit être le miroir du marché européen du carbone",
         partyId: 3,
         id: 4,
       },

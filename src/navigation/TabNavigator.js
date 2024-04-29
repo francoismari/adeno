@@ -3,7 +3,7 @@ import { createBottomTabNavigator } from "@react-navigation/bottom-tabs";
 import Home from "../screens/Home";
 import Ranking from "../screens/Ranking";
 import Discover from "../screens/Discover";
-import { Platform, Pressable, StyleSheet } from "react-native";
+import { Dimensions, Platform, Pressable, StyleSheet } from "react-native";
 import CustomText from "../components/CustomText";
 import * as Haptics from "expo-haptics";
 

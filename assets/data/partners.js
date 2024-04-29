@@ -45,7 +45,7 @@ export default [
     id: 8,
     name: "Visions d'Europe",
     image: require("../images/partners/vision-d-europe.png"),
-    link: "https://www.visionsdeurope.eu",
+    link: "https://www.instagram.com/visionsdeuropespl?igsh=MW8zaWYwcThieGEzZQ==",
   },
   {
     id: 9,
@@ -88,5 +88,23 @@ export default [
     name: "HEC Paris",
     image: require("../images/partners/hec-paris.png"),
     link: "https://www.hec.edu/",
+  },
+  {
+    id: 16,
+    name: "Buddy - Ton kit de survie en milieu adulte",
+    image: require("../images/partners/buddy.png"),
+    link: "https://bit.ly/3U1DHMK",
+  },
+  {
+    id: 17,
+    name: "Eur Future",
+    image: require("../images/partners/eurfuture.jpeg"),
+    link: "https://eurfuture.org",
+  },
+  {
+    id: 18,
+    name: "Maison de l'Europe à Nantes",
+    image: require("../images/partners/maison-europe-nantes.png"),
+    link: "http://www.maisoneurope-nantes.eu/",
   },
 ];

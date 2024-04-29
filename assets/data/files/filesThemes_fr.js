@@ -1,11 +1,11 @@
 export default [
   // { id: 1, title: "Les pays", emoji: "🇪🇺", description: "Les 27 pays de l'UE" },
-  // {
-  //   id: 2,
-  //   title: "Les groupes",
-  //   emoji: "👥",
-  //   description: "Les 8 principaux groupes au Parlement européen",
-  // },
+  {
+    id: 2,
+    title: "Les groupes",
+    emoji: "👥",
+    description: "Les 7 principaux groupes au Parlement européen",
+  },
   {
     id: 3,
     title: "Les institutions",
@@ -66,5 +66,11 @@ export default [
     emoji: "🗳️",
     description:
       "Informations sur le processus électoral européen et l'importance du vote.",
+  },
+  {
+    id: 12,
+    title: "Les têtes de liste",
+    emoji: "👥",
+    description: "Tous les candidats à l'élection européenne de 2024",
   },
 ];

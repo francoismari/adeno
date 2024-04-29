@@ -177,7 +177,6 @@ const MultiplayerResults = ({ route }) => {
     let playerScores = {};
     let finalResults = {};
 
-    // Calculate scores for each player
     Object.keys(responses).forEach((player) => {
       playerScores[player] = responses[player].flat().reduce((acc, partyID) => {
         acc[partyID] = (acc[partyID] || 0) + 1;
@@ -185,12 +184,11 @@ const MultiplayerResults = ({ route }) => {
       }, {});
     });
 
-    // Determine top 3 results for each player
     Object.keys(playerScores).forEach((player) => {
       let scores = playerScores[player];
       let sortedParties = Object.keys(scores)
         .sort((a, b) => scores[b] - scores[a])
-        .slice(0, 3); // Get top 3 parties
+        .slice(0, 3);
 
       finalResults[player] = sortedParties.map((partyID) => {
         const partyDetails = getGroups(locale.userLocale).find(

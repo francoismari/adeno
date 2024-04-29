@@ -338,7 +338,35 @@ export default function SetStudyInfos({ navigation }) {
     }
   };
 
+  // const handleNextQuestion = () => {
+  //   const isLastQuestion = userStep === questionData.questions.length - 1;
+  //   if (!isLastQuestion) {
+  //     setUserStep(userStep + 1);
+  //   } else {
+  //     handleFinish();
+  //   }
+  // };
+
   const handleNextQuestion = () => {
+    const currentQuestion = questionData.questions[userStep];
+    const responseForCurrentQuestion = responses[currentQuestion.id];
+
+    // Check if there is a follow-up question based on the current response
+    if (currentQuestion.followUp && responseForCurrentQuestion) {
+      const followUpKey = responseForCurrentQuestion[0]; // Assuming single choice, hence [0]
+      const followUpQuestionId = currentQuestion.followUp[followUpKey];
+
+      if (followUpQuestionId) {
+        const followUpQuestionIndex = questionData.questions.findIndex(
+          (q) => q.id === followUpQuestionId
+        );
+        if (followUpQuestionIndex !== -1) {
+          setUserStep(followUpQuestionIndex);
+          return; // Exit the function to avoid moving to next question immediately
+        }
+      }
+    }
+
     const isLastQuestion = userStep === questionData.questions.length - 1;
     if (!isLastQuestion) {
       setUserStep(userStep + 1);
@@ -373,7 +401,7 @@ export default function SetStudyInfos({ navigation }) {
     return (
       <View>
         <CustomText style={{ fontSize: 24, textAlign: "center", margin: 20 }}>
-          {currentQuestion.question[currentLocale]}
+          {currentQuestion.question[currentLocale] ? currentQuestion.question[currentLocale] : currentQuestion.question['en']}
         </CustomText>
         {currentQuestion.choices.map((choice, index) => (
           <TouchableOpacity
@@ -397,7 +425,7 @@ export default function SetStudyInfos({ navigation }) {
               onValueChange={() => handleChoice(choice.value, allowMultiple)}
             />
             <CustomText style={{ fontSize: 20, marginLeft: 10 }}>
-              {choice.text[currentLocale]}
+              {choice.text[currentLocale] ? choice.text[currentLocale] : choice.text['en']}
             </CustomText>
           </TouchableOpacity>
         ))}

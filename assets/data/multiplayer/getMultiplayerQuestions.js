@@ -6,21 +6,23 @@ import questions_en from "./questions_en";
 import questions_et from "./questions_et";
 import questions_fr from "./questions_fr";
 import questions_hr from "./questions_hr";
-import questions_el from './questions_el'
-import questions_es from './questions_es'
-import questions_fi from './questions_fi'
-import questions_ga from './questions_ga'
-import questions_hu from './questions_hu'
-import questions_it from './questions_it'
-import questions_lt from './questions_lt'
-import questions_lv from './questions_lv'
-import questions_mt from './questions_mt'
-import questions_nl from './questions_nl'
-import questions_pl from './questions_pl'
-import questions_pt from './questions_pt'
-import questions_ro from './questions_ro'
-import questions_sk from './questions_sk'
-import questions_sl from './questions_sl'
+import questions_el from "./questions_el";
+import questions_es from "./questions_es";
+import questions_fi from "./questions_fi";
+import questions_ga from "./questions_ga";
+import questions_hu from "./questions_hu";
+import questions_it from "./questions_it";
+import questions_lt from "./questions_lt";
+import questions_lv from "./questions_lv";
+import questions_mt from "./questions_mt";
+import questions_nl from "./questions_nl";
+import questions_pl from "./questions_pl";
+import questions_pt from "./questions_pt";
+import questions_ro from "./questions_ro";
+import questions_sk from "./questions_sk";
+import questions_sl from "./questions_sl";
+import questions_nb from "./questions_nb";
+import questions_sv from "./questions_sv";
 
 const multiplayerQuestionsByLocale = {
   en: questions_en,
@@ -46,6 +48,8 @@ const multiplayerQuestionsByLocale = {
   ro: questions_ro,
   sk: questions_sk,
   sl: questions_sl,
+  nb: questions_nb,
+  sv: questions_sv,
 };
 
 export default multiplayerQuestionsByLocale;

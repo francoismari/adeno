@@ -2,23 +2,24 @@ export default {
   onboarding: {
     firstScreen: {
       subtitle:
-        "Az alkalmazás, amely motivál a 2024-es európai választásokon való részvételre!",
-      firstRow: "Az első játék, ami érdekessé teszi a politikát",
+        "Az alkalmazás, amely segít szavazni a 2024-es európai választásokon",
+      firstRow:
+        "Az első játék, amely felkelti érdeklődésedet az európai választások iránt",
       secondRow:
-        "Találd meg a listavezetődet a szóló módban és fedezd fel az általános rangsort!",
-      thirdRow: "Elérhető az EU 27 országában, 24 nyelven lefordítva",
+        "Találd meg a listavezetődet a szóló móddal, és fedezd fel a globális rangsort!",
+      thirdRow: "Mind a 27 uniós országban elérhető, és 24 nyelvre lefordítva",
     },
     secondScreen: {
       title: "Hogyan működik?",
       multiplayerBox: {
-        title: "Többjátékos mód",
+        title: "Multiplayer Mode",
         description:
-          "Játssz a barátaiddal, hozz létre játékokat és válaszolj kérdésekre az európai fő kérdésekről, hogy lásd a saját és barátaid álláspontját!",
+          "Indítson játékot barátaival, mondja el véleményét a legfontosabb európai kérdésekről, és ismerje meg az álláspontjukat !",
       },
       soloBox: {
-        title: "Szóló mód",
+        title: "Solo Mode",
         description:
-          "Válaszolj 100 kérdésre 10 témában és alakíts ki véleményt az európai parlamentek fő csoportjairól! Meg is tudod nézni, hogy melyik listavezető felel meg neked a saját országodban.",
+          "Válaszolj 100 kérdésre 10 témában, hogy véleményt alkoss az Európai Parlament politikai csoportjairól! Megtudhatod, melyik listavezető felel meg leginkább a meggyőződésednek.",
       },
     },
     thirdScreen: {
@@ -26,68 +27,68 @@ export default {
       firstRow: {
         title: "Nem gyűjtünk személyes adatokat.",
         description:
-          "Az alkalmazásban használt összes adat anonim és csak a szükséges működéshez korlátozódik!",
-        readChart: "Olvasd el adatvédelmi szabályzatunkat",
+          "Az alkalmazásban használt összes adat anonim, és az alkalmazás megfelelő működéséhez feltétlenül szükséges adatokra korlátozódik!",
+        readChart: "Olvassa el adatvédelmi szabályzatunkat",
       },
       secondRow: {
         title: "Az Adeno pártatlan, semleges és átlátható.",
         description:
-          "Az Adeno nem kapcsolódik semmilyen kormányzati szervezethez és teljesen független projekt.",
-        readChart: "Olvasd el átláthatósági szabályzatunkat",
+          "Az Adeno egy teljesen független projekt, amely nem kapcsolódik semmilyen kormányzati szervhez.",
+        readChart: "Olvassa el átláthatósági chartánkat",
       },
-      startButton: "Kezdjük!",
+      startButton: "Kezdődik!",
       footerText:
-        "Az Adeno egy polgári projekt, amelyet önkéntesek csapata hozott létre, nem profitcélból, az egyetlen célja, hogy rávegyen a szavazásra!",
-      psText: "PS: mi nyílt forráskódúak vagyunk ✌️",
+        "Az Adeno egy önkéntesekből álló csapat által létrehozott polgári projekt, amelynek nincs nyereségvágya, és amelynek egyetlen célja van: megadni Önnek a következő európai választásokon való szavazás kulcsait !",
+      psText: "PS: nyílt forráskódúak vagyunk ✌️",
     },
   },
   home: {
-    title: "Játssz & Szavazz",
-    startButtonText: "Kezdés",
+    title: "Μάγουλο & Ψηφίστε",
+    startButtonText: "Έναρξη",
     multiplayerCard: {
-      title: "Többjátékos mód 🎮",
-      subtitle: "Indíts egy játékot\nés kihívj a barátaidat!",
+      title: "Multiplayer mode 🎮",
+      subtitle: "Indíts egy játékot, hogy kihívd a társaidat !",
     },
     soloCard: {
-      title: "Szóló mód 🎯",
-      subtitle: "2 mód & 100 kérdés\na listavezetőd megtalálásához!",
+      title: "Solo Mode 🎯",
+      subtitle: "2 játékmód és 100 kérdés, hogy megtaláld a kedvencedet !",
     },
     headListCard: {
-      title: "A listavezetőm 🇪🇺",
+      title: "A toplistám 🇪🇺",
       noResultText:
-        "Indítsd el a szóló módot, hogy megtudd, ki a listavezetőd!",
-      startButtonText: "Kezdjük!",
-      listNotAvailableTitle: "A listavezetőd még nem érhető el...",
+        "Indítsd el a szóló módot, hogy megtudd, ki áll a listád élén ! ",
+      startButtonText: "Kezdődik a játék !",
+      listNotAvailableTitle: "A listád élén álló személy még nem elérhető...",
       listNotAvailableSubtitle:
-        "Értesítünk, amikor a pártod bejelenti a listavezetőt az országodban!",
-      seeAllResultsText: "Nézd meg az összes eredményemet",
+        "Önt értesítjük, ha a pártja bejelentette listavezetőjét az Ön országában !",
+      seeAllResultsText: "Lásd az összes eredményemet",
     },
   },
   ranking: {
-    title: "Rangsor",
+    title: "A rangsor",
     userCountryCard: {
-      title: "Az országomban",
+      title: "Στην",
     },
     europeCard: {
-      title: "Európában",
+      title: "Στην Ευρώπη",
     },
-    shareAppText: "Oszd meg az Adenot",
+    shareAppText: "Share Adeno",
   },
   discoverEU: {
     title: "Fedezd fel az EU-t",
     institutionsCard: {
       title: "Az intézmények 🇪🇺",
-      subtitle: "Ismerd meg az európai intézményeket és működésüket!",
-      showAllText: "Mutasd mind",
+      subtitle: "Fedezd fel az európai intézményeket és működésüket !",
+      showAllText: "Mindent megmutatni",
     },
     commitCard: {
-      title: "Vállalj kötelezettséget ✊",
-      text: "Az Elkötelezettek! egy 1901-es törvény alapján létrehozott szövetség, amelynek célja, hogy ösztönözze a fiatalokat a városi életben való részvételre. Majdnem 6 éve az Elkötelezettek különböző elkötelezettségi formákat népszerűsítenek a 18–35 éves fiatalok körében, hetente vitákat, konferenciákat, találkozókat és látogatásokat szervezve a különböző helyszíneinken Franciaország több városában.",
-      joinButtonText: "Csatlakozz",
+      title: "Vegyél részt ✊",
+      text: ` A Les Engagés! egy 1901-es jogállású szövetség, amelyet 2017 júniusában alapítottak azzal a céllal, hogy a fiatalokat arra ösztönözze, hogy vegyenek részt a város életében. A Les Engagés közel 6 éve népszerűsíti az elköteleződés különböző formáit a 18 és 35 év közötti fiatalok körében heti rendszerességgel szervezett vitákkal, konferenciákkal, találkozókkal és látogatásokkal a Franciaország több városában található különböző fiókjainkban. `,
+      joinButtonText: "Kapcsolat",
     },
     informCard: {
-      title: "Tájékozódj 🗞️",
-      text: "Az Öreg Kontinens egy online médium, amelynek célja az európai ügyek tájékoztatása és terjesztése a nyilvános vitában, YouTube-on, TikTok-on és Instagramon. E célból különböző formátumokat készítenek, mint például interjúk, utcai felmérések, aktualitások dekódolása, viták, mindig európai témák körül. 2024 áprilisától a médium szorosan követi a franciaországi európai választásokat.",
+      title: "Informáld magad🗞️",
+      text: ` A Le Vieux Continent egy online médiaszervezet, amelynek célja a nyilvánosság tájékoztatása és az európai kérdések tudatosítása a YouTube-on, a TikTok-on és az Instagramon. Ennek érdekében különböző formátumokat készítenek, mint például interjúkat, mikrofilmeket, hírelemzéseket és vitákat, amelyek mind európai kérdésekre összpontosítanak. A médium 2024 áprilisától a franciaországi európai parlamenti választásokról is nagy figyelemmel fog tudósítani.`,
       joinButtonText: "Fedezd fel",
     },
     partnerCard: {
@@ -95,130 +96,132 @@ export default {
     },
   },
   allFiles: {
-    title: "Adatlapok",
-    subtitle: "Mindent megérteni az EU-ról!",
+    title: "Az adatlapok",
+    subtitle: "Minden, amit az EU-ról tudni kell !",
   },
   allUserResults: {
-    title: "Az eredményeim",
-    withAdeno: "Az Adenoval",
-    inSummaryTitle: "Összefoglalva",
+    title: "Az én eredményeim",
+    withAdeno: "Adenóval",
+    inSummaryTitle: "Röviden",
     shareMyResults: "Eredményeim megosztása",
-    seeMoreText: "Többet látni",
+    seeMoreText: "Lásd még",
   },
   selectSoloMode: {
-    title: "Szóló mód",
+    title: "Solo Mode",
     expressCard: {
-      title: "Expressz mód ⏱️",
-      subtitle: "30 kérdés a listavezetőd megtalálásához!",
+      title: "Expressz üzemmód ⏱️",
+      subtitle: "30 kérdés, hogy megtaláld az utat a lista tetejére!",
     },
     classicCard: {
       title: "Klasszikus mód 🗳️",
       subtitle:
-        "Válaszolj 100 kérdésre, és találd meg a hozzád illő eredményt!",
+        "Válaszolj 100 kérdésre, és találd meg a meggyőződésednek megfelelő eredményt !",
     },
   },
   expressMode: {
-    title: "Expressz mód",
+    title: "Expressz üzemmód",
     cardTitle:
-      "Találd meg a hozzád illő csoportot 30 kérdés megválaszolásával!",
+      "Találd meg a számodra megfelelő zenekart 30 kérdés megválaszolásával !",
     warningText:
-      "Figyelem: pontosabb eredményekért és specifikusabb témákért használd a klasszikus módot!",
-    letsGoText: "Rajta",
+      "Figyelmeztetés: a megbízhatóbb eredményekért és a konkrétabb témájú kérdésekért használja a klasszikus módot!",
+    letsGoText: "Itt is vagyunk !",
   },
   expressResults: {
-    title: "Az eredményem",
-    inSummaryTitle: "Összefoglalva",
-    continueWithClassicMode: "Folytatás a klasszikus móddal",
+    title: "Az én eredményem",
+    inSummaryTitle: "Röviden ",
+    continueWithClassicMode: "Folytatás klasszikus üzemmóddal ",
     goBack: "Vissza",
   },
   classicMode: {
     randomCard: {
-      title: "Véletlenszerű",
-      subtitle: "Minden téma",
+      title: "Véletlenszerű ",
+      subtitle: "Minden téma ",
     },
   },
   randomQuestionScreen: {
-    title: "Véletlenszerű",
+    title: "Random ",
     showContextText: "Kontextus megjelenítése",
     allQuestionsAnswered: "Minden kérdésre válaszoltál!",
-    showResultsText: "Eredményeim megjelenítése",
+    showResultsText: "Az eredményeim megjelenítése",
     goBack: "Vissza",
   },
   contextScreen: {
-    title: "Kontextus",
+    title: "A kontextus",
   },
   selectMultiplayerMode: {
-    title: "Többjátékos mód",
-    selectText: "Válaszd ki a neked megfelelő módot!",
-    onePhone: "Egy telefon",
+    title: "Multiplayer mode",
+    selectText: ` Válassza ki az önnek legmegfelelőbb módot !`,
+    onePhone: "Csak egy telefon",
     multiplePhones: "Több telefon",
   },
   setupOnePhone: {
     title: "Játékosok",
     noPlayerAdded: "Nincs hozzáadott játékos",
     addPlayerText: "Játékos hozzáadása",
-    letGoText: "Rajta",
+    letGoText: "Itt is vagyunk",
     addPlayerModal: {
       title: "Játékos hozzáadása",
       placeholder: "Játékos neve",
       addPlayerButton: "Hozzáadás",
       errors: {
         nameAlreadyUsedTitle: "Ez a név már hozzá lett adva",
-        nameAlreadyUsedSubtitle: "Minden játékosnak egyedi neve kell legyen.",
+        nameAlreadyUsedSubtitle:
+          "Minden játékosnak más névvel kell rendelkeznie.",
         moreThanTenTitle: "Túl sok játékos",
-        moreThanTenSubtitle: "Nem adhatsz hozzá több mint 10 játékost",
+        moreThanTenSubtitle: "Nem adhatsz hozzá 10-nél több játékost",
       },
     },
   },
   multiplayerOnePhoneGame: {
-    seconds: "másodperc",
-    for: "Mellett",
-    against: "Ellen",
-    indifferent: "Közömbös",
+    seconds: "másodpercek",
+    for: "Pro",
+    against: "A Ellen",
+    indifferent: "Mitigált",
     alert: {
-      quitPartyTitle: "Biztos, hogy ki akarsz lépni a játékból?",
-      cancel: "Mégse",
+      quitPartyTitle: "Biztos, hogy ki akarsz szállni a játékból ?",
+      cancel: "Felmondani",
       quit: "Kilépés",
     },
   },
   multiplePhones: {
-    title: "Beceneved",
-    pseudoPlaceholder: "Beceneved",
-    createPartyText: "Játék létrehozása",
-    joinPartyText: "Csatlakozás egy játékhoz",
-    waitCreatorText: "A játék létrehozójának kell elindítania a játékot!",
+    title: "A beceneved",
+    pseudoPlaceholder: "A beceneved",
+    createPartyText: "Hozzon létre egy játékot",
+    joinPartyText: "Csatlakozz egy játékhoz",
+    waitCreatorText: "A játék elindítása a készítőn múlik!",
   },
   gameScreen: {
     title: "Játék",
     codeText: "Kód",
-    startButton: "Kezdés",
+    startButton: "Start ",
   },
   gameQuestionsScreen: {
-    for: "Mellett",
-    against: "Ellen",
-    indifferent: "Közömbös",
-    waitingForPlayersTitle: "Várakozás a többi játékosra!",
+    for: "Pro ",
+    against: "A Ellen ",
+    indifferent: "Mitigált ",
+    waitingForPlayersTitle: "Várjuk a többi játékost !",
     waitingForPlayersSubtitle:
-      "Az eredmények akkor válnak elérhetővé, amikor mindenki befejezte",
+      "Az eredmények akkor lesznek elérhetők, ha mindenki befejezte.",
   },
   multiplayerResults: {
-    title: "Eredmények",
-    youAreTheMost: "te vagy a leginkább",
-    youMatch: "Egyezés",
-    withList: "a listával",
-    seeNext: "Következő megtekintése",
+    title: "Az eredmények ",
+    youAreTheMost: "te vagy a +",
+    youMatch: "egyre közelebb kerülsz ",
+    withList: "a listából ",
+    seeNext: "Lásd a következőt",
     resultsFooter: {
-      anotherRound: "Még egy kör?",
-      restartText: "Újrakezdés",
+      anotherRound: "Még egy kör ?",
+      restartText: "Kezdjük újra",
     },
   },
   euCountries: {
-    at: "Ausztria",
+    at: "Αυστρία",
+    at: "Ausztria ",
     be: "Belgium",
-    bg: "Bulgária",
+    bg: "Bulgária ",
     hr: "Horvátország",
-    cy: "Ciprus",
-    cz: "Csehország",
+    cy: "Ciprus ",
+    cz: "Cseh Köztársaság",
     dk: "Dánia",
     ee: "Észtország",
     fi: "Finnország",
@@ -243,52 +246,53 @@ export default {
     uk: "Egyesült Királyság",
   },
   setStudyInfos: {
-    title: "Vegyél részt Európa legnagyobb tanulmányában!",
+    title: "Vegyen részt a legnagyobb európai tanulmányban !",
   },
   settingsScreen: {
-    title: "Beállítások",
+    title: "Beállítások ",
     multiplayerCard: {
-      title: "Többjátékos mód",
-      timeByQuestionText: "Válaszidő kérdésenként",
+      title: "Multiplayer Mode",
+      timeByQuestionText: "Kérdésenkénti válaszidő ",
       setTimeByQuestionModal: {
         title: "Idő módosítása",
-        saveButton: "Mentés",
+        saveButton: "Mentés ",
       },
     },
     soloCard: {
-      title: "Szóló mód",
-      resetResultsText: "Eredményeim alaphelyzetbe állítása",
+      title: "Solo Mode",
+      resetResultsText: "Az eredményeim visszaállítása ",
       studyInfos: {
         title:
-          "Vegyél részt a fiatalok Európáról szóló nagyszabású tanulmányában",
+          "Vegyen részt az európai fiatalokat vizsgáló nagyszabású tanulmányban ",
         description:
-          "A szóló módban adott válaszaid anonim módon lesznek rögzítve, és hozzájárulnak egy nagyszabású tanulmány elkészítéséhez a fiatalok választási magatartásáról Európában, amelyet egy",
+          "A szóló módban a kérdésekre adott válaszait anonim módon rögzítjük, és felhasználjuk az európai fiatalok választási magatartásáról szóló nagyszabású tanulmány elkészítéséhez, amelyet egy ",
         council:
-          "tudományos tanács felügyel, amely professzorokból, kutatókból és értelmiségiekből áll",
-        startButtonText: "Részvétel a tanulmányban",
-        userParticipates: "Részt veszel Európa nagyszabású tanulmányában!",
+          "professzorokból, kutatókból és értelmiségiekből álló tudományos tanács ",
+        startButtonText: "Válaszolj a tanulmányra",
+        userParticipates:
+          "Ön részt vesz az Európáról szóló nagyszabású tanulmányban !",
       },
     },
     createdByCard: {
-      title: "Készítette",
+      title: "Létrehozta ",
       subtitle:
-        "Matthieu Maillard és egy önkéntesekből álló csapat hozta létre Európa-szerte.",
+        "Matthieu Maillard és egy európai önkéntesekből álló hálózat hozta létre !",
     },
     incubatedBy: {
-      title: "Inkubálta",
+      title: "Inkubálták ",
       subtitle:
-        "Az Inceptio Lab, amelyet 2023-ban alapítottak és a Les Engagés! szövetséghez tartozik, egy inkubátor, amelynek célja az üzleti projektek támogatása hatással, az Elyze alkalmazás sikerén alapulva. Platformot kínál a tagok készségeinek alkalmazására elkötelezett, innovatív és fenntartható kezdeményezésekben, miközben elősegíti a tagok foglalkoztathatóságát.",
-      founderMaleText: "Alapító",
-      founderFemaleText: "Alapítónő",
+        "A 2023-ban alapított és a Les Engagés! szövetséghez tartozó Inceptio Lab egy inkubátorház, amelynek célja a hatásos vállalkozói projektek támogatása, az Elyze alkalmazás sikerén felbuzdulva. Platformot kínál a készségek elkötelezett, innovatív és fenntartható kezdeményezésekben való alkalmazására, miközben elősegíti tagjai foglalkoztathatóságát.",
+      founderMaleText: "Alapító ",
+      founderFemaleText: "Alapító ",
     },
     teamCard: {
       title: "A csapat",
     },
     contactCard: {
-      title: "Lépj kapcsolatba velünk",
-      text: "Elérhető vagyunk",
+      title: "Lépjen kapcsolatba velünk",
+      text: "Kapcsolatba léphet velünk a",
     },
-    allRightsReserved: "minden jog fenntartva",
+    allRightsReserved: "Minden jog fenntartva",
   },
   councilScreen: {
     title: "A tanács",

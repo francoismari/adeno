@@ -18,6 +18,9 @@ export default function ChoicesButton({ question, handleResponse }) {
 }
 
 const ChoiceButton = ({ choice, partyIDs, handleResponse }) => {
+
+  console.log(choice)
+
   return (
     <TouchableOpacity
       key={choice}
@@ -26,20 +29,20 @@ const ChoiceButton = ({ choice, partyIDs, handleResponse }) => {
         flexDirection: "row",
         width: Dimensions.get("screen").width * 0.8,
         backgroundColor: "white",
-        paddingVertical: 15,
+        paddingVertical: 10,
         justifyContent: "center",
         alignItems: "center",
         alignSelf: "center",
         marginBottom: 18,
-        borderRadius: 20,
+        borderRadius: 40,
       }}
     >
-      <CustomText style={{ fontSize: 30 }}>
+      <CustomText style={{ fontSize: Dimensions.get('screen').height*0.04 }}>
         {choice === "for" ? "👍 " : ""}
         {choice === "indifferent" ? "🤷 " : ""}
         {choice === "against" ? "👎 " : ""}
       </CustomText>
-      <CustomText style={{ fontFamily: "FrancoisOne", fontSize: 30 }}>
+      <CustomText style={{ fontFamily: "FrancoisOne", fontSize: Dimensions.get('screen').height*0.04 }}>
         {choice === "for" && i18n.t("multiplayerOnePhoneGame.for")}
         {choice === "indifferent" &&
           i18n.t("multiplayerOnePhoneGame.indifferent")}

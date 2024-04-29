@@ -1,13 +1,34 @@
 export default [
   {
-    name: "Pauline Bizet",
-    role: "Bénévole",
-    link: "https://www.instagram.com/pauline_bizet",
+    name: "Elise Torche",
+    role: "Co-responsable pôle édito et ambassadeurs",
+    link: "https://www.instagram.com/elise.trc/",
+  },
+  {
+    name: "Alexandre Alecse",
+    role: "Co-responsable pôle édito & partenaires",
+    link: "https://www.instagram.com/alexandrealecse/",
+  },
+  {
+    
+    name: "Vladimir Méline",
+    role: "Reponsable événementiel",
+    link: "https://www.linkedin.com/in/vladimirmélineconseiletstratégie/",
   },
   {
     name: "Ithier Bariety",
     role: "Bénévole",
     link: "https://www.instagram.com/ithierbariety",
+  },
+  {
+    name: "Clémence Millet",
+    role: "Bénévole",
+    link: "https://www.linkedin.com/in/cl%C3%A9mence-millet-92733422a?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app",
+  },
+  {
+    name: "Pauline Bizet",
+    role: "Bénévole",
+    link: "https://www.instagram.com/pauline_bizet",
   },
   {
     name: "Maxime Laporte",
@@ -25,11 +46,6 @@ export default [
     link: "https://www.linkedin.com/in/emmie-hallot-32a8882a6/",
   },
   {
-    name: "Elise Torche",
-    role: "Co-responsable pôle édito et ambassadeurs",
-    link: "https://www.instagram.com/elise.trc/",
-  },
-  {
     name: "Alix Poncet",
     role: "Bénévole",
     link: "https://www.instagram.com/alixpnct/",
@@ -38,11 +54,6 @@ export default [
     name: "Igor Tiam",
     role: "Bénévole",
     link: "https://www.instagram.com/igortmski/",
-  },
-  {
-    name: "Alexandre Alecse",
-    role: "Co-responsable pôle édito & partenaires",
-    link: "https://www.instagram.com/alexandrealecse/",
   },
   {
     name: "Louise Réquillart",
@@ -93,10 +104,5 @@ export default [
     name: "Antoine Meillier-Sacco",
     role: "Bénévole",
     link: "https://www.instagram.com/nexus_evorra/",
-  },
-  {
-    name: "Vladimir Méline",
-    role: "Reponsable événementiel",
-    link: "https://www.linkedin.com/in/vladimirmélineconseiletstratégie/",
   },
 ];

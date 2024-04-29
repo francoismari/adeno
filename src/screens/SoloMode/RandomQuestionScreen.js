@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { View, Pressable, FlatList, Dimensions } from "react-native";
+import { View, Pressable, FlatList, Dimensions, TouchableOpacity } from "react-native";
 import AsyncStorage from "@react-native-async-storage/async-storage";
 import BackgroundWrapper from "../../components/BackgroundWrapper";
 
@@ -140,7 +140,7 @@ export default function RandomQuestionScreen({ navigation }) {
               data={shuffleArray(questions[currentQuestionIndex].answers)}
               showsVerticalScrollIndicator={false}
               renderItem={({ item }) => (
-                <Pressable
+                <TouchableOpacity
                   style={{
                     width: "100%",
                     borderRadius: 10,
@@ -152,7 +152,8 @@ export default function RandomQuestionScreen({ navigation }) {
                   onPress={() =>
                     handleAnswer(
                       questions[currentQuestionIndex].id,
-                      item.partyId
+                      item.partyId,
+                      themeDetails.id
                     )
                   }
                 >
@@ -165,7 +166,7 @@ export default function RandomQuestionScreen({ navigation }) {
                   >
                     {item.text}
                   </CustomText>
-                </Pressable>
+                </TouchableOpacity>
               )}
               keyExtractor={(item) => item.id.toString()}
               contentContainerStyle={{

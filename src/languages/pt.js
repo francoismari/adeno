@@ -2,68 +2,78 @@ export default {
   onboarding: {
     firstScreen: {
       subtitle:
-        "O aplicativo que te motiva a votar nas eleições europeias de 2024!",
-      firstRow: "O primeiro jogo que te faz interessar por política",
+        "O aplicativo que te vai ajudar a votar nas eleições europeias de 2024!",
+      firstRow:
+        "O primeiro jogo para te fazer interessar pelas eleições europeias",
       secondRow:
-        "Encontre o líder da sua lista no modo solo e descubra o ranking geral!",
-      thirdRow: "Disponível nos 27 países da UE, traduzido em 24 línguas",
+        "Descobre o teu líder de lista no modo para um jogador e vê qual é a tua posição na classificação geral! ",
+      thirdRow:
+        "Disponível em todos os 27 países da UE e traduzido em 24 línguas.",
     },
     secondScreen: {
-      title: "Como funciona?",
+      title: "Como é que funciona?",
       multiplayerBox: {
-        title: "Modo multijogador",
+        title: "Multiplayer Mode",
         description:
-          "Jogue com seus amigos, crie partidas e responda a perguntas sobre os principais temas europeus para ver suas posições e as de seus amigos!",
+          "Começa um jogo com os teus amigos, dá a tua opinião sobre os principais temas europeus e descobre qual é a posição deles! ",
       },
       soloBox: {
-        title: "Modo solo",
+        title: "Solo mode",
         description:
-          "Responda a 100 perguntas sobre 10 temas e forme uma opinião sobre os principais grupos nos parlamentos europeus! Você também verá a qual cabeça de lista você corresponde no seu país.",
+          "Responde a 100 perguntas sobre 10 temas para te decidires sobre os grupos políticos do Parlamento Europeu! Vais descobrir qual o líder da lista que mais se aproxima das tuas convicções.",
       },
     },
     thirdScreen: {
       title: "Antes de começar",
       firstRow: {
-        title: "Não coletamos dados pessoais.",
+        title: "Não recolhemos dados pessoais.",
         description:
-          "Todos os dados utilizados no aplicativo são anônimos e limitados ao estritamente necessário para o bom funcionamento do aplicativo!",
-        readChart: "Leia nossa política de privacidade",
+          "Todos os dados utilizados na aplicação são anónimos e limitam-se ao estritamente necessário para o bom funcionamento da aplicação! ",
+        readChart: "Ler a nossa política de privacidade",
       },
       secondRow: {
         title: "Adeno é apartidária, neutra e transparente.",
         description:
-          "Adeno não está ligada a nenhuma organização governamental e é um projeto completamente independente.",
-        readChart: "Leia nossa política de transparência",
+          "A Adeno é um projeto totalmente independente e não está ligada a nenhum organismo governamental.",
+        readChart: "Ler a nossa carta sobre transparência",
       },
       startButton: "Vamos começar!",
       footerText:
-        "Adeno é um projeto cívico, criado por uma equipe de voluntários, sem fins lucrativos, com o único objetivo de te levar a votar!",
-      psText: "PS: somos de código aberto ✌️",
+        "Adeno é um projeto de cidadãos, criado por uma equipa de voluntários, sem fins lucrativos, e com um único objetivo: dar-lhe as chaves para votar nas próximas eleições europeias!",
+      psText: "PS: somos open-source ✌️",
     },
   },
   home: {
-    title: "Jogue & Vote",
-    startButtonText: "Começar",
+    title: "Jogar & Votar",
+    startButtonText: "Início",
     multiplayerCard: {
-      title: "Modo multijogador 🎮",
-      subtitle: "Inicie uma partida\ne desafie seus amigos!",
+      title: "Multiplayer Mode 🎮",
+      subtitle: "Começa um jogo e desafia os teus amigos!",
     },
     soloCard: {
-      title: "Modo solo 🎯",
-      subtitle: "2 modos & 100 perguntas\npara encontrar seu líder de lista!",
+      title: "Solo Mode 🎯",
+      subtitle:
+        "2 modos & 100 perguntas\npara encontrares a tu líder de lista!",
     },
     headListCard: {
       title: "Meu líder de lista 🇪🇺",
-      noResultText: "Inicie o modo solo para descobrir seu líder de lista!",
-      startButtonText: "Vamos lá!",
-      listNotAvailableTitle: "Seu líder de lista ainda não está disponível...",
+      noResultText:
+        "Inicia o modo para um jogador para descobrires quem está no topo da tua lista!",
+      startButtonText: "E pronto!",
+      listNotAvailableTitle:
+        "O teu top da lista ainda não está disponível... ",
       listNotAvailableSubtitle:
-        "Você será notificado quando seu partido anunciar seu líder de lista em seu país!",
-      seeAllResultsText: "Veja todos os meus resultados",
+        "Serás alertado quando o teu partido tiver anunciado o seu cabeça de lista no teu país!",
+      seeAllResultsText: "Ver todos os meus resultados",
+      easyModeWarning: {
+        title: "Com o modo fácil",
+        description:
+          "Para resultados mais precisos e detalhes sobre suas respostas, use o modo avançado!",
+      },
     },
   },
   ranking: {
-    title: "Classificação",
+    title: "A classificação",
     userCountryCard: {
       title: "No seu país",
     },
@@ -73,61 +83,60 @@ export default {
     shareAppText: "Compartilhe Adeno",
   },
   discoverEU: {
-    title: "Descubra a UE",
+    title: "Descobrir a UE",
     institutionsCard: {
       title: "As instituições 🇪🇺",
-      subtitle: "Descubra as instituições europeias e como elas funcionam!",
+      subtitle: "Descobre as instituições europeias eo seu funcionamento!",
       showAllText: "Mostrar tudo",
     },
     commitCard: {
-      title: "Engaje-se ✊",
-      text: "Engajados! é uma federação fundada em junho de 2017 com o objetivo de encorajar os jovens a se envolverem na vida cívica. Por quase 6 anos, os Engajados promovem diferentes formas de engajamento entre jovens de 18 a 35 anos, organizando debates, conferências, encontros e visitas em nossas várias sedes em várias cidades da França.",
-      joinButtonText: "Junte-se",
+      title: "Envolver-se ✊",
+      text: "Les Engagés! é uma associação sem fins lucrativos fundada em junho de 2017 para incentivar os jovens a envolverem-se na vida da comunidade. Há quase 6 anos que Les Engagés trabalha para promover diferentes formas de compromisso entre os jovens dos 18 aos 35 anos, organizando debates semanais, conferências, reuniões e visitas às nossas várias filiais espalhadas por várias cidades em França. ",
+      joinButtonText: "Aderir",
     },
     informCard: {
-      title: "Informe-se 🗞️",
-      text: "O Velho Continente é um meio de comunicação online cujo objetivo é informar e disseminar a questão europeia no debate público, no YouTube, TikTok e Instagram. Para isso, eles produzem diferentes formatos, como entrevistas, pesquisas de rua, decodificações de atualidades, debates, sempre em torno de temas europeus. A partir de abril de 2024, a mídia cobrirá de perto as eleições europeias na França.",
-      joinButtonText: "Descubra",
+      title: "Informar-se 🗞️",
+      text: "Le Vieux Continent é um meio de comunicação social em linha cujo objetivo é informar o público e dar visibilidade às questões europeias no YouTube, TikTok e Instagram. Para o efeito, produz uma série de formatos, incluindo entrevistas, micro-trotéis, análises de notícias e debates, todos centrados em questões europeias. A partir de abril de 2024, o meio fará uma cobertura muito próxima das eleições europeias em França.",
+      joinButtonText: "Descobrir",
     },
     partnerCard: {
-      title: "Nossos parceiros",
+      title: "Os nossos parceiros",
     },
   },
   allFiles: {
     title: "Fichas informativas",
-    subtitle: "Para entender tudo sobre a UE!",
+    subtitle: "Para saber tudo sobre a UE!",
   },
   allUserResults: {
-    title: "Meus resultados",
-    withAdeno: "Com Adeno",
+    title: "Os meus resultados",
+    withAdeno: "Com a Adeno",
     inSummaryTitle: "Em resumo",
-    shareMyResults: "Compartilhar meus resultados",
+    shareMyResults: "Partilhar os meus resultados",
     seeMoreText: "Ver mais",
   },
   selectSoloMode: {
-    title: "Modo solo",
+    title: "Solo mode",
     expressCard: {
-      title: "Modo expresso ⏱️",
-      subtitle: "30 perguntas para encontrar seu líder de lista!",
+      title: "Modo fácil",
+      subtitle: "30 perguntas para encontrares o teu caminho até ao topo!",
     },
     classicCard: {
-      title: "Modo clássico 🗳️",
+      title: "Modo clássico",
       subtitle:
-        "Responda a 100 perguntas e encontre um resultado que se alinhe com suas convicções!",
+        "Responde a 100 perguntas e encontra um resultado que se adeqúe às tuas convicções!",
     },
   },
   expressMode: {
-    title: "Modo expresso",
-    cardTitle:
-      "Encontre o grupo que combina com você respondendo a 30 perguntas!",
+    title: "Modo fácil",
+    cardTitle: "Encontre o grupo que lhe convém respondendo a 30 perguntas!",
     warningText:
-      "Atenção: para resultados mais precisos e perguntas sobre temas mais específicos, use o modo clássico!",
-    letsGoText: "Vamos lá",
+      "Atenção: para obter resultados mais fiáveis e perguntas sobre temas mais específicos, utilize o modo clássico!",
+    letsGoText: "Aqui vai",
   },
   expressResults: {
-    title: "Meu resultado",
-    inSummaryTitle: "Em resumo",
-    continueWithClassicMode: "Continue com o modo clássico",
+    title: "Os meus resultado",
+    inSummaryTitle: "Em poucas palavras",
+    continueWithClassicMode: "Continuar com o modo clássico",
     goBack: "Voltar",
   },
   classicMode: {
@@ -139,15 +148,15 @@ export default {
   randomQuestionScreen: {
     title: "Aleatório",
     showContextText: "Mostrar contexto",
-    allQuestionsAnswered: "Você respondeu a todas as perguntas!",
-    showResultsText: "Mostrar meus resultados",
+    allQuestionsAnswered: "Respondeu a todas as perguntas!",
+    showResultsText: "Mostrar os meus resultados",
     goBack: "Voltar",
   },
   contextScreen: {
-    title: "Contexto",
+    title: "O Contexto",
   },
   selectMultiplayerMode: {
-    title: "Modo multijogador",
+    title: "Multiplayer mode",
     selectText: "Selecione o modo\nque mais lhe convém!",
     onePhone: "Um telefone",
     multiplePhones: "Vários telefones",
@@ -155,17 +164,17 @@ export default {
   setupOnePhone: {
     title: "Jogadores",
     noPlayerAdded: "Nenhum jogador adicionado",
-    addPlayerText: "Adicionar jogador",
+    addPlayerText: "Adicionar um jogador",
     letGoText: "Vamos lá",
     addPlayerModal: {
-      title: "Adicionar jogador",
+      title: "Adicionar um jogador",
       placeholder: "Nome do jogador",
       addPlayerButton: "Adicionar",
       errors: {
         nameAlreadyUsedTitle: "Este nome já foi adicionado",
-        nameAlreadyUsedSubtitle: "Cada jogador deve ter um nome único.",
-        moreThanTenTitle: "Muitos jogadores",
-        moreThanTenSubtitle: "Você não pode adicionar mais de 10 jogadores",
+        nameAlreadyUsedSubtitle: "Cada jogador deve ter um nome diferente.",
+        moreThanTenTitle: "Demasiados jogadores",
+        moreThanTenSubtitle: "?ão pode adicionar mais de 10 jogadores",
       },
     },
   },
@@ -173,42 +182,42 @@ export default {
     seconds: "segundos",
     for: "A favor",
     against: "Contra",
-    indifferent: "Indiferente",
+    indifferent: "Misto",
     alert: {
-      quitPartyTitle: "Tem certeza de que quer sair do jogo?",
+      quitPartyTitle: "Tens a certeza de que queres sair do jogo?",
       cancel: "Cancelar",
       quit: "Sair",
     },
   },
   multiplePhones: {
-    title: "Seu pseudônimo",
-    pseudoPlaceholder: "Seu pseudônimo",
-    createPartyText: "Criar jogo",
+    title: "O seu nome de utilizador",
+    pseudoPlaceholder: "A sua alcunha",
+    createPartyText: "Criar um jogo",
     joinPartyText: "Juntar-se a um jogo",
-    waitCreatorText: "O criador do jogo deve iniciá-lo!",
+    waitCreatorText: "Cabe ao criador iniciar o jogo!",
   },
   gameScreen: {
     title: "Jogo",
     codeText: "Código",
-    startButton: "Começar",
+    startButton: "Iniciar",
   },
   gameQuestionsScreen: {
     for: "A favor",
     against: "Contra",
-    indifferent: "Indiferente",
-    waitingForPlayersTitle: "Aguardando outros jogadores!",
+    indifferent: "Misto",
+    waitingForPlayersTitle: "À espera dos outros jogadores!",
     waitingForPlayersSubtitle:
-      "Os resultados estarão disponíveis assim que todos terminarem",
+      "Os resultados estarão disponíveis quando todos tiverem terminado",
   },
   multiplayerResults: {
-    title: "Resultados",
-    youAreTheMost: "você é o/a mais",
-    youMatch: "Você combina com",
-    withList: "com a lista",
-    seeNext: "Ver o próximo",
+    title: "Os resultados",
+    youAreTheMost: "tu és o+",
+    youMatch: "Está a aproximar-se do",
+    withList: "da lista",
+    seeNext: "Ver próximo",
     resultsFooter: {
-      anotherRound: "Outra rodada?",
-      restartText: "Reiniciar",
+      anotherRound: "Outra ronda?",
+      restartText: "Començar de novo",
     },
   },
   euCountries: {
@@ -242,54 +251,53 @@ export default {
     uk: "Reino Unido",
   },
   setStudyInfos: {
-    title: "Participe do maior estudo sobre a Europa!",
+    title: "Participe no maior inquérito da Europa!",
   },
   settingsScreen: {
-    title: "Configurações",
+    title: "Definições",
     multiplayerCard: {
-      title: "Modo multijogador",
+      title: "Multiplayer Mode",
       timeByQuestionText: "Tempo de resposta por pergunta",
       setTimeByQuestionModal: {
-        title: "Alterar tempo",
-        saveButton: "Salvar",
+        title: "Alterar o tempo",
+        saveButton: "Guardar",
       },
     },
     soloCard: {
-      title: "Modo solo",
-      resetResultsText: "Redefinir meus resultados",
+      title: "Solo Mode",
+      resetResultsText: "Repor os meus resultados",
       studyInfos: {
-        title: "Participe do grande estudo sobre os jovens na Europa",
+        title: "Participa num grande estudo sobre os jovens na Europa",
         description:
-          "Suas respostas às perguntas do modo solo serão gravadas anonimamente e contribuirão para a realização de um grande estudo sobre o comportamento eleitoral dos jovens na Europa, supervisionado por um",
+          "As suas respostas às perguntas do modo de jogador único serão registadas de forma anónima e serão utilizadas para realizar um grande estudo sobre o comportamento de voto dos jovens na Europa, supervisionado por um",
         council:
-          "conselho científico de professores, pesquisadores e intelectuais",
-        startButtonText: "Participar do estudo",
-        userParticipates:
-          "Você está participando do grande estudo sobre a Europa!",
+          "supervisionado por um conselho científico composto por professores, investigadores e intelectuais.",
+        startButtonText: "Participar no estudo",
+        userParticipates: "Está a participar no grande estudo sobre a Europa!",
       },
     },
     createdByCard: {
       title: "Criado por",
       subtitle:
-        "Criado por Matthieu Maillard e uma equipe de voluntários em toda a Europa.",
+        "Criado por Matthieu Maillard e por uma rede de voluntários em toda a Europa!",
     },
     incubatedBy: {
       title: "Incubado por",
       subtitle:
-        "Inceptio Lab, fundado em 2023 e afiliado à federação Les Engagés!, é um incubador destinado a promover projetos empresariais de impacto, inspirado pelo sucesso do aplicativo Elyze. Oferece uma plataforma para aplicar habilidades em iniciativas comprometidas, inovadoras e sustentáveis, ao mesmo tempo promovendo a empregabilidade de seus membros.",
+        "O Inceptio Lab, fundado em 2023 e filiado na federação Les Engagés!, é uma incubadora que promove projectos empresariais de impacto, inspirada no sucesso da aplicação Elyze. Oferece uma plataforma de aplicação de competências em iniciativas empenhadas, inovadoras e sustentáveis, promovendo simultaneamente a empregabilidade dos seus membros. ",
       founderMaleText: "Fundador",
       founderFemaleText: "Fundadora",
     },
     teamCard: {
-      title: "Equipe",
+      title: "A equipa",
     },
     contactCard: {
-      title: "Contate-nos",
-      text: "Você pode nos contatar em",
+      title: "Contactar-nos",
+      text: "Pode contatar-nos em",
     },
     allRightsReserved: "todos os direitos reservados",
   },
   councilScreen: {
-    title: "Conselho",
+    title: "A direção",
   },
 };

@@ -17,17 +17,33 @@ import CustomText from "../components/CustomText";
 import { useNavigation } from "@react-navigation/native";
 import CenteredTitleHeader from "../components/CenteredTitleHeader";
 import { useUser } from "../context/userContext";
-import { signOut } from "firebase/auth";
-import { deleteDoc, doc } from "firebase/firestore";
-import { auth, db } from "../../firebaseConfig";
 import i18n from "../languages/i18n";
 import team from "../../assets/data/team";
 import { handleClose } from "../utils/navigationUtils";
 
+const localeCorrespondances = [
+  {
+    locale: "fr",
+    name: "Français",
+  },
+  {
+    locale: "en",
+    name: "Anglais",
+  },
+  {
+    locale: "es",
+    name: "Espagnol",
+  },
+  {
+    locale: "et",
+    name: "Estonien",
+  },
+];
+
 export default function Settings() {
   const navigation = useNavigation();
 
-  const { user, setUser } = useUser();
+  const { user, locale } = useUser();
 
   const [multiplayerTime, setMultiplayerTime] = useState("10");
   const [modalVisible, setModalVisible] = useState(false);
@@ -76,6 +92,7 @@ export default function Settings() {
           style: "destructive",
           onPress: () => {
             AsyncStorage.removeItem("answeredQuestions");
+            AsyncStorage.removeItem("easyModeAnsweredQuestions");
           },
         },
       ]
@@ -86,18 +103,6 @@ export default function Settings() {
     const names = fullName.split(" ");
     return names.length > 1 ? names[1] : names[0];
   };
-
-  const sortedTeam = team.sort((a, b) => {
-    const nameA = getSecondWord(a.name).toUpperCase();
-    const nameB = getSecondWord(b.name).toUpperCase();
-    if (nameA < nameB) {
-      return -1;
-    }
-    if (nameA > nameB) {
-      return 1;
-    }
-    return 0;
-  });
 
   const handleOpenScientificCouncil = () => {
     navigation.navigate("ScientificCouncil");
@@ -115,6 +120,36 @@ export default function Settings() {
       />
 
       <ScrollView>
+        {/* <CategoryWrapper title={"Général"}>
+          <View
+            style={{
+              flexDirection: "row",
+              justifyContent: "space-between",
+              alignItems: "center",
+              marginTop: 10,
+            }}
+          >
+            <CustomText style={{ fontSize: 17 }}>Modifier la langue</CustomText>
+            <TouchableOpacity
+              style={{
+                paddingHorizontal: 10,
+                paddingVertical: 5,
+                backgroundColor: "lightgray",
+                borderRadius: 10,
+              }}
+              onPress={() => setModalVisible(true)}
+            >
+              <CustomText>
+                {
+                  localeCorrespondances.find(
+                    (coresp) => coresp.locale === locale.userLocale
+                  ).name
+                }
+              </CustomText>
+            </TouchableOpacity>
+          </View>
+        </CategoryWrapper> */}
+
         <CategoryWrapper title={i18n.t("settingsScreen.multiplayerCard.title")}>
           <View
             style={{
@@ -320,7 +355,7 @@ export default function Settings() {
         </CategoryWrapper>
 
         <CategoryWrapper title={i18n.t("settingsScreen.teamCard.title")}>
-          {sortedTeam.map((member, index) => {
+          {team.map((member, index) => {
             return (
               <TouchableOpacity
                 onPress={() => Linking.openURL(member.link)}

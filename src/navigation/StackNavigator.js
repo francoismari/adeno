@@ -8,7 +8,6 @@ import MultiplayerResults from "../screens/MultiplayerMode/MultiplayerResults";
 import MultiplayerQuestion from "../screens/MultiplayerMode/MultiplayerQuestion";
 import OnboardingScreen from "../screens/Onboarding";
 import SelectSoloMode from "../screens/SoloMode/SelectSoloMode";
-import ExpressMode from "../screens/SoloMode/ExpressMode";
 import ClassicMode from "../screens/SoloMode/ClassicMode";
 import UserResults from "../screens/UserResults";
 import SetStudyInfos from "../screens/SoloMode/SetStudyInfos";
@@ -19,7 +18,6 @@ import MultiplePhones from "../screens/MultiplayerMode/MultiplePhones";
 import JoinGame from "../screens/MultiplayerMode/MultiplePhones/JoinGame";
 import Game from "../screens/MultiplayerMode/MultiplePhones/Game";
 import RandomQuestionScreen from "../screens/SoloMode/RandomQuestionScreen";
-import ExpressResults from "../screens/SoloMode/ExpressResults";
 import MultiplePhonesQuestions from "../screens/MultiplayerMode/MultiplePhones/MultiplePhonesQuestions";
 import MultiplePhonesResults from "../screens/MultiplayerMode/MultiplePhones/MultiplePhonesResults";
 import ThemeQuestionScreen from "../screens/SoloMode/ThemeQuestionScreen";
@@ -30,6 +28,8 @@ import File from "../screens/Discover/File";
 import PrivacyCharter from "../screens/Onboarding/PrivacyCharter";
 import TransparencyCharter from "../screens/Onboarding/TransparencyCharter";
 import ShareResults from "../screens/UserResults/ShareResults";
+import EasyMode from "../screens/SoloMode/EasyMode";
+import EasyModeResults from "../screens/SoloMode/EasyModeResults";
 
 const Stack = createStackNavigator();
 
@@ -55,7 +55,9 @@ function StackNavigator({ initialRouteName }) {
         name="SelectMultiplayerMode"
         component={SelectMultiplayerMode}
       />
-      <Stack.Screen name="ExpressMode" component={ExpressMode} />
+      
+      <Stack.Screen name="EasyMode" component={EasyMode} />
+      <Stack.Screen name="EasyModeResults" component={EasyModeResults} />
       <Stack.Screen name="ClassicMode" component={ClassicMode} />
       <Stack.Screen
         name="RandomQuestionScreen"
@@ -64,11 +66,6 @@ function StackNavigator({ initialRouteName }) {
       <Stack.Screen
         name="ThemeQuestionScreen"
         component={ThemeQuestionScreen}
-      />
-      <Stack.Screen
-        name="ExpressResults"
-        component={ExpressResults}
-        options={{ gestureEnabled: false }}
       />
 
       {/* Multiplayer Mode */}

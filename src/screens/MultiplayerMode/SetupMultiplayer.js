@@ -10,7 +10,7 @@ import {
   StyleSheet,
   TextInput,
 } from "react-native";
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import BackgroundWrapper from "../../components/BackgroundWrapper";
 import { useNavigation } from "@react-navigation/native";
 import { Entypo } from "@expo/vector-icons";
@@ -28,9 +28,11 @@ export default function SetupMultiplayer() {
   const [newPlayerName, setNewPlayerName] = useState("");
   const [isLoaded, setIsLoaded] = useState(false);
 
-  const handleStartGame = async () => {
-    // Make this function async
+  const [multiplayerTime, setMultiplayerTime] = useState("10");
+  const [timeModalVisible, setTimeModalVisible] = useState(false);
+  const [tempTime, setTempTime] = useState(multiplayerTime);
 
+  const handleStartGame = async () => {
     if (players.length >= 2) {
       setIsLoaded(true);
       try {
@@ -79,6 +81,31 @@ export default function SetupMultiplayer() {
     }
   };
 
+  useEffect(() => {
+    const getMultiplayerTime = async () => {
+      const time = await AsyncStorage.getItem("multiplayerTime");
+      if (time) {
+        setMultiplayerTime(time);
+      }
+    };
+    getMultiplayerTime();
+  }, []);
+
+  const saveMultiplayerTime = async () => {
+    if (tempTime >= 10 && tempTime <= 20) {
+      await AsyncStorage.setItem("multiplayerTime", tempTime.toString());
+      setMultiplayerTime(tempTime.toString());
+      setTimeModalVisible(false);
+    } else if (tempTime == "") {
+      setTimeModalVisible(false);
+    } else {
+      Alert.alert(
+        "Temps de réponse invalide",
+        "Il faut que tu choisisses un temps de réponse entre 10 et 20 secondes !"
+      );
+    }
+  };
+
   return (
     <BackgroundWrapper bottom>
       <CenteredHeader
@@ -115,11 +142,73 @@ export default function SetupMultiplayer() {
         </View>
       </Modal>
 
+      <Modal
+        animationType="fade"
+        transparent={true}
+        visible={timeModalVisible}
+        onRequestClose={() => {
+          setTimeModalVisible(!timeModalVisible);
+        }}
+      >
+        <View style={styles.centeredView}>
+          <View style={styles.modalView}>
+            <CustomText style={styles.modalTitle}>
+              {i18n.t(
+                "settingsScreen.multiplayerCard.setTimeByQuestionModal.title"
+              )}
+            </CustomText>
+            <TextInput
+              style={styles.modalTextInput}
+              placeholder="10"
+              onChangeText={setTempTime}
+              value={tempTime}
+              keyboardType="numeric"
+              autoFocus={true}
+            />
+            <Pressable style={styles.modalButton} onPress={saveMultiplayerTime}>
+              <CustomText style={styles.modalButtonText}>
+                {i18n.t(
+                  "settingsScreen.multiplayerCard.setTimeByQuestionModal.saveButton"
+                )}
+              </CustomText>
+            </Pressable>
+          </View>
+        </View>
+      </Modal>
+
       <PlayersList
         players={players}
         setPlayers={setPlayers}
         setModalVisible={setModalVisible}
       />
+
+      <View
+        style={{
+          flexDirection: "row",
+          justifyContent: "space-between",
+          alignItems: "center",
+          marginTop: 10,
+          backgroundColor: "white",
+          marginHorizontal: 20,
+          padding: 10,
+          borderRadius: 15,
+        }}
+      >
+        <CustomText style={{ fontSize: 17 }}>
+          {i18n.t("settingsScreen.multiplayerCard.timeByQuestionText")}
+        </CustomText>
+        <TouchableOpacity
+          style={{
+            paddingHorizontal: 10,
+            paddingVertical: 5,
+            backgroundColor: "lightgray",
+            borderRadius: 10,
+          }}
+          onPress={() => setTimeModalVisible(true)}
+        >
+          <CustomText>{multiplayerTime}s</CustomText>
+        </TouchableOpacity>
+      </View>
 
       <StartButton handleStartGame={handleStartGame} />
     </BackgroundWrapper>
@@ -130,7 +219,7 @@ const PlayersList = ({ players, setPlayers, setModalVisible }) => {
   return (
     <View
       style={{
-        height: Dimensions.get("screen").height * 0.57,
+        height: Dimensions.get("screen").height * 0.5,
         backgroundColor: "white",
         width: "90%",
         marginTop: 30,

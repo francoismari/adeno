@@ -44,52 +44,54 @@ export default [
     id: 1,
     sources:
       "https://www.consilium.europa.eu/fr/policies/trade-policy/trade-agreements/",
+    express: false,
   },
   {
-    question: "Moeten de grootste vervuilers op EU-niveau belast worden?",
+    question: "De grootste vervuilers op EU-niveau belasten...",
     answers: [
       {
-        text: "Zijn een kans om het risico op koolstoflekkage te verminderen en de concurrentiepositie van de EU te verbeteren.",
+        text: "Is een kans om het risico op ontduiking van koolstofbelasting te verminderen en de concurrentiepositie van de EU te verbeteren.",
         partyId: 7,
         id: 1,
       },
       {
-        text: "Moeten geleidelijk worden ingevoerd om de Europese concurrentiekracht niet te schaden.",
+        text: "Moet geleidelijk worden ingevoerd om de Europese concurrentiekracht niet te schaden.",
         partyId: 5,
         id: 2,
       },
       {
-        text: "Zullen helpen om de wereldwijde uitstoot te verminderen, maar mogen het ETS-systeem niet vervangen.",
+        text: "Zal helpen om de wereldwijde uitstoot te verminderen, maar mogen het ETS-systeem niet vervangen.",
         partyId: 1,
         id: 3,
       },
       {
-        text: "Een essentieel element van de groene deal dat een afspiegeling moet zijn van de Europese koolstofmarkt.",
+        text: "Is een essentieel element van de groene deal dat een afspiegeling moet zijn van de Europese koolstofmarkt.",
         partyId: 3,
         id: 4,
       },
       {
-        text: "Belangrijk zijn om de oneerlijke wereldwijde concurrentie te bestrijden, wanneer dit gepaard gaat met het schrappen van gratis quota's.",
+        text: "Is belangrijk om de oneerlijke wereldwijde concurrentie te bestrijden, wanneer dit gepaard gaat met het schrappen van gratis quota's.",
         partyId: 2,
         id: 5,
       },
       {
-        text: "Belangrijk voor de bescherming van het klimaat op mondiaal niveau als het de Europese industrieën en burgers niet benadeelt.",
+        text: "Is belangrijk voor de bescherming van het klimaat op mondiaal niveau als het de Europese industrieën en burgers niet benadeelt.",
         partyId: 4,
         id: 6,
       },
       {
-        text: "Zijn een eerste stap naar de invoering van een ecologische en solidaire vorm van protectionisme zonder marktlogica.",
+        text: "Is een eerste stap naar de invoering van een ecologische en solidaire vorm van protectionisme in tegenstelling tot marktlogica.",
         partyId: 6,
         id: 7,
       },
     ],
     category: 1,
     learnMore:
-      "De grootste vervuilers op Europees niveau zijn vaak zware industrieën zoals energieproductie, staalindustrie, chemie en cement. Deze sectoren stoten aanzienlijke hoeveelheden kooldioxide (CO2), zwaveldioxide (SO2) en andere luchtvervuilende stoffen uit, wat aanzienlijk bijdraagt aan de opwarming van de aarde en de verslechtering van de luchtkwaliteit.",
+      "De grootste vervuilers op Europees niveau zijn vaak zware industrieën zoals energieproductie, staalindustrie, chemische industrie en cement. Deze sectoren stoten aanzienlijke hoeveelheden koolstofdioxide (CO2), zwaveldioxide (SO2) en andere luchtvervuilende stoffen uit, wat aanzienlijk bijdraagt aan de opwarming van de aarde en de achteruitgang van de luchtkwaliteit.",
     id: 2,
     sources:
       "https://www.consilium.europa.eu/en/infographics/fit-for-55-cbam-carbon-border-adjustment-mechanism/",
+    express: false,
   },
   {
     question:
@@ -111,12 +113,12 @@ export default [
         id: 3,
       },
       {
-        text: "Gevaarlijk, maar het is beter om nauwkeuriger te richten om de aanvaller verder te verzwakken.",
+        text: "Effectief, maar het is beter om nauwkeuriger te richten om de agressor verder te verzwakken.",
         partyId: 3,
         id: 4,
       },
       {
-        text: "Beperkt door een gebrek aan wil, moeten de bevroren Russische activa in beslag worden genomen en aan Oekraïne worden gegeven.",
+        text: "Zijn beperkt door een gebrek aan politieke wil. De Russische activa moet in beslag worden genomen e naan Oekraïne worden gegeven. ",
         partyId: 2,
         id: 5,
       },
@@ -137,13 +139,14 @@ export default [
     id: 3,
     sources:
       "https://www.consilium.europa.eu/fr/policies/sanctions/restrictive-measures-against-russia-over-ukraine/sanctions-against-russia-explained/",
+    express: false,
   },
   {
     question:
       "Moeten er strikte begrotingsregels op EU-niveau worden ingevoerd?",
     answers: [
       {
-        text: '"De discretionaire bevoegdheden van de Commissie op dit gebied verminderen"',
+        text: "Verminder de discretionaire bevoegdheden van de Commissie op dit gebied",
         partyId: 7,
         id: 1,
       },
@@ -153,27 +156,27 @@ export default [
         id: 2,
       },
       {
-        text: '"Inclusievere en geloofwaardigere regels om de stabiliteit van de euro te garanderen"',
+        text: "Neem regels op die inclusiever en geloofwaardiger zijn om de stabiliteit van de euro te garanderen",
         partyId: 1,
         id: 3,
       },
       {
-        text: '"Uit de logica van bezuinigingen stappen om de groei en veerkracht van de Europese economie te waarborgen"',
+        text: "We moeten uit de logica van bezuinigingen stappen om de groei en veerkracht van de Europese economie te waarborgen",
         partyId: 3,
         id: 4,
       },
       {
-        text: "Het omvatten van een sterke sociale dimensie om te voldoen aan de verplichtingen van de sociale pijler van de EU.",
+        text: "Belangrijk is het omvatten van een sterke sociale dimensie om te voldoen aan de verplichtingen van de sociale pijler van de EU.",
         partyId: 2,
         id: 5,
       },
       {
-        text: "Uit de dogma van de bezuinigingen stappen om meer publieke schuld toe te staan.",
+        text: "We moeten uit de dogma van de bezuinigingen stappen om meer publieke schuld toe te staan.",
         partyId: 4,
         id: 6,
       },
       {
-        text: "Voorsien in meer democratie en flexibiliteit ter bescherming van groene en digitale investeringen.",
+        text: "We moeten voorzien in meer democratie en flexibiliteit ter bescherming van groene en digitale investeringen.",
         partyId: 6,
         id: 7,
       },
@@ -182,7 +185,8 @@ export default [
     learnMore:
       "Een van de belangrijkste instrumenten van deze regels is het Stabiliteits- en Groeipact (SGP), opgericht in 1997 en herzien in 2011. Het SGP heeft als doel ervoor te zorgen dat de lidstaten hun overheidstekorten onder controle houden en hun overheidsschuld verminderen.",
     id: 4,
-    sources: null,
+    sources: "",
+    express: false,
   },
   {
     question:
@@ -229,8 +233,8 @@ export default [
       "De begroting van de Europese Unie (EU) wordt gefinancierd door twee belangrijke bronnen: nationale bijdragen en eigen middelen. Nationale bijdragen zijn bedragen die door elk lidstaat worden betaald op basis van hun nationaal inkomen, meestal berekend als een percentage van hun bruto nationaal inkomen. Eigen middelen zijn fondsen die rechtstreeks door de EU worden geïnd, zoals douanerechten op invoer of landbouwrechten. In tegenstelling tot nationale bijdragen worden de eigen middelen niet bepaald door de lidstaten. Ze zijn essentieel voor de financiering van het EU-beleid en -programma's.",
     id: 5,
     sources:
-      "https://www.europarl.europa.eu/factsheets/fr/sheet/27/recettes-de-l-union ",
-    express: true,
+      "https://www.europarl.europa.eu/factsheets/fr/sheet/27/recettes-de-l-union",
+    express: 1,
   },
   {
     question: "Het herstelplan na de Covid-crisis is...",
@@ -276,7 +280,7 @@ export default [
       "NextGenerationEU is een economisch herstelprogramma van de Europese Unie (EU) als reactie op de crisis veroorzaakt door de COVID-19 pandemie. Met een budget van 750 miljard euro is het gericht op het ondersteunen van economisch en sociaal herstel in heel Europa. Deze financiering wordt verkregen door het uitgeven van gemeenschappelijke schulden, gegarandeerd door de EU-begroting. De fondsen zullen worden toegewezen aan initiatieven die de veerkracht, de groene transitie, de digitale transformatie versterken, evenals aan het ondersteunen van sectoren die het zwaarst getroffen zijn door de crisis. NextGenerationEU markeert een collectief en ambitieus antwoord van de EU op de huidige uitdagingen.",
     id: 6,
     sources: "https://next-generation-eu.europa.eu/index_en",
-    express: true,
+    express: 1,
   },
   {
     question: "De stijging van de rentetarieven in de strijd tegen inflatie...",
@@ -319,41 +323,42 @@ export default [
     ],
     category: 1,
     learnMore:
-      "De Europese Centrale Bank (ECB) heeft maatregelen genomen om te vechten tegen de toenemende inflatie. Ze heeft de rentetarieven verhoogd om lenen duurder te maken, wat de vraag kan afremmen en dus ook de inflatie. Bovendien heeft ze de aankopen van activa verminderd, waardoor het aanbod van circulerende valuta afneemt en ook kan helpen om de prijzen onder controle te houden. Deze acties zijn bedoeld om de prijsstabiliteit te handhaven, aangezien hoge inflatie het koopkracht van consumenten kan verminderen en de economie kan verstoren. Echter, op korte termijn kunnen ze ook de economische groei vertragen.",
+      "De Europese Centrale Bank (ECB) heeft maatregelen genomen om te vechten tegen de toenemende inflatie. Ze heeft de rentetarieven verhoogd om lenen duurder te maken, wat de vraag kan afremmen en dus ook de inflatie. Bovendien heeft ze de aankopen van activa verminderd, waardoor het aanbod van circulerende valuta afneemt en ook kan helpen om de prijzen onder controle te houden. Deze acties zijn bedoeld om de prijsstabiliteit te handhaven, aangezien hoge inflatie de koopkracht van consumenten kan verminderen en de economie kan verstoren. Echter, op korte termijn kunnen ze ook de economische groei vertragen.",
     id: 7,
     sources:
       "https://www.ecb.europa.eu/press/pr/date/2023/html/ecb.mp230914~aab39f8c21.fr.html",
+    express: false,
   },
   {
     question: "Zou een gedigitaliseerde euro een goede zaak zijn?",
     answers: [
       {
-        text: "Zou leiden tot staatscontrole op betalingen van burgers.",
+        text: "Het zou leiden tot staatscontrole op betalingen van burgers.",
         partyId: 7,
         id: 1,
       },
       {
-        text: "Voldoet niet aan een echte behoefte",
+        text: "Het voldoet niet aan een echte behoefte",
         partyId: 5,
         id: 2,
       },
       {
-        text: "Moet duidelijk zijn en ervoor zorgen dat het contant geld niet zal vervangen.",
+        text: "Het moet duidelijk zijn en ervoor zorgen dat het contant geld niet zal vervangen.",
         partyId: 1,
         id: 3,
       },
       {
-        text: "Moet een vertrouwensinstrument zijn voor Europeanen dat complementair zal zijn aan contant geld.",
+        text: "Het moet een vertrouwensinstrument zijn voor Europeanen dat complementair zal zijn aan contant geld.",
         partyId: 3,
         id: 4,
       },
       {
-        text: "Moet een verlies van monetaire soevereiniteit vermijden",
+        text: "Het moet een verlies van monetaire soevereiniteit vermijden",
         partyId: 2,
         id: 5,
       },
       {
-        text: "Moet een efficiënter en inclusiever betalingssysteem zijn",
+        text: "Het moet een efficiënter en inclusiever betalingssysteem zijn",
         partyId: 4,
         id: 6,
       },
@@ -368,9 +373,10 @@ export default [
       "Het project voor een digitale euro is een initiatief van de Europese Centrale Bank (ECB) om de creatie van een digitale versie van de euro te verkennen, als aanvulling op contant geld en bankdeposito's. Deze digitale valuta van de centrale bank (CBDC) zou burgers en bedrijven een veilig en efficiënt alternatief bieden voor elektronische transacties. De belangrijkste voordelen van het project zijn de garantie van monetaire stabiliteit, de bevordering van financiële innovatie en het behoud van de monetaire soevereiniteit van de eurozone ten opzichte van mondiale technologische ontwikkelingen, met name private cryptomunten.",
     id: 8,
     sources: "https://www.ecb.europa.eu/paym/digital_euro/html/index.en.html",
+    express: false,
   },
   {
-    question: "Het actieplan voor de circulaire economie maakt...",
+    question: "Het actieplan voor de circulaire economie leidt tot...",
     answers: [
       {
         text: "Het vermogen om onze industrieën te herplanten door het creëren van meer lokale supply chains en heel wat banen zonder ecologische beperkingen.",
@@ -414,9 +420,10 @@ export default [
     id: 9,
     sources:
       "https://environment.ec.europa.eu/strategy/circular-economy-action-plan_en",
+    express: false,
   },
   {
-    question: "Op het gebied van huisvesting voor iedereen moet Europa.",
+    question: "Op het gebied van huisvesting voor iedereen moet Europa...",
     answers: [
       {
         text: "Zich onthouden van ingrijpen omdat dit zou neerkomen op communistische economische planning.",
@@ -424,12 +431,12 @@ export default [
         id: 1,
       },
       {
-        text: "Buiten blijven omdat ze geen expertise heeft op dit gebied.",
+        text: "Zich er van onthouden omdat ze geen expertise heeft op dit gebied.",
         partyId: 5,
         id: 2,
       },
       {
-        text: "Het versterken van zijn actie in het kader van de Europese sociale pijler en de Europese garantie voor kinderen.",
+        text: "Actiever zijn in het kader van de Europese sociale pijler en de Europese garantie voor kinderen.",
         partyId: 1,
         id: 3,
       },
@@ -444,23 +451,23 @@ export default [
         id: 5,
       },
       {
-        text: '"Antwoord bieden op de huisvestingscrisis door burgers op Europees niveau te beschermen"',
+        text: "Antwoord bieden op de huisvestingscrisis door burgers op Europees niveau te beschermen",
         partyId: 4,
         id: 6,
       },
       {
-        text: "Een echte sociale strategie hebben en de huurprijzen kunnen plafonneren.",
+        text: "Een echte sociale strategie hebben en een plafond op huurprijzen kunnen zetten.",
         partyId: 6,
         id: 7,
       },
     ],
     category: 1,
     learnMore:
-      "De context van huisvesting in Europa toont diverse uitdagingen, zoals het tekort aan betaalbare woningen in bepaalde regio's, moeilijkheden bij toegang tot huisvesting voor kwetsbare groepen en toenemende ongelijkheden op het gebied van huisvesting. De Europese Unie (EU) heeft een strategie aangenomen om het recht op huisvesting te waarborgen, dat wordt beschouwd als een fundamenteel recht. Deze strategie heeft tot doel een eerlijke toegang tot fatsoenlijke huisvesting voor alle Europese burgers te garanderen. Haar belangrijkste doelstellingen omvatten de strijd tegen dakloosheid, de voorkoming van discriminatie op het gebied van huisvesting, en de bevordering van inclusieve en duurzame huisvestingsbeleiden.",
+      "De context van huisvesting in Europa toont diverse uitdagingen, zoals het tekort aan betaalbare woningen in bepaalde regio's, moeilijkheden bij toegang tot huisvesting voor kwetsbare groepen en toenemende ongelijkheden op het gebied van huisvesting. De Europese Unie (EU) heeft een strategie aangenomen om het recht op huisvesting te waarborgen, dat wordt beschouwd als een fundamenteel recht. Deze strategie heeft tot doel een eerlijke toegang tot fatsoenlijke huisvesting voor alle Europese burgers te garanderen. Haar belangrijkste doelstellingen omvatten de strijd tegen dakloosheid, het bestrijden van discriminatie op het gebied van huisvesting, en de bevordering van inclusieve en duurzame huisvestingsbeleiden.",
     id: 10,
     sources:
       "https://www.europarl.europa.eu/news/fr/press-room/20210114IPR95632/l-acces-a-un-logement-decent-devrait-etre-un-droit-fondamental-europeen",
-    express: true,
+    express: 1,
   },
   {
     question: "Moet de EU energieprijzen meer reguleren?",
@@ -471,7 +478,7 @@ export default [
         id: 1,
       },
       {
-        text: '"Nee, het is aan de lidstaten om strategisch hun energiemix te kiezen"',
+        text: "Nee, het is aan de lidstaten om strategisch hun energiemix te kiezen",
         partyId: 5,
         id: 2,
       },
@@ -481,7 +488,7 @@ export default [
         id: 3,
       },
       {
-        text: "Ja door stabiliteit voor consumenten en mededingingsprincipes op de markt in evenwicht te brengen.",
+        text: "Ja, door stabiliteit voor consumenten en mededingingsprincipes op de markt in evenwicht te brengen.",
         partyId: 3,
         id: 4,
       },
@@ -496,7 +503,7 @@ export default [
         id: 6,
       },
       {
-        text: "Ja, maar we moeten deze markt doorbreken en belasting heffen op de superwinsten.",
+        text: "Ja, maar we moeten deze markt doorbreken en belasting heffen op de exorbitante winsten.",
         partyId: 6,
         id: 7,
       },
@@ -507,13 +514,13 @@ export default [
     id: 11,
     sources:
       "https://www.europarl.europa.eu/factsheets/fr/sheet/45/marche-interieur-de-l-energie , https://www.consilium.europa.eu/fr/policies/electricity-market-reform/ , https://www.consilium.europa.eu/fr/policies/energy-prices-and-security-of-supply/",
-    express: true,
+    express: 1,
   },
   {
     question: "Het gebruik van nucleaire energie als energiebron in de EU...",
     answers: [
       {
-        text: "Het is essentieel om onze energieonafhankelijkheid te waarborgen.",
+        text: "Is essentieel om onze energieonafhankelijkheid te waarborgen.",
         partyId: 7,
         id: 1,
       },
@@ -523,12 +530,12 @@ export default [
         id: 2,
       },
       {
-        text: "Het is een belangrijke laagkoolstoftechnologie die moet voldoen aan hoge veiligheidsnormen.",
+        text: "Is een belangrijke laagkoolstoftechnologie die moet voldoen aan hoge veiligheidsnormen.",
         partyId: 1,
         id: 3,
       },
       {
-        text: "Hierdoor kan de energiemix gediversifieerd worden en de Europese industriële soevereiniteit versterkt worden.",
+        text: "Maakt het mogelijk dat de energiemix gediversificeerd en de Europese industriële soevereiniteit versterkt kan worden",
         partyId: 3,
         id: 4,
       },
@@ -538,7 +545,7 @@ export default [
         id: 5,
       },
       {
-        text: "Niet duurzaam, kostbaar, risicovol en ongeschikt om de klimaatcrisis te bestrijden.",
+        text: "Is niet duurzaam, kostbaar, risicovol en ongeschikt om de klimaatcrisis te bestrijden.",
         partyId: 4,
         id: 6,
       },
@@ -554,10 +561,11 @@ export default [
     id: 12,
     sources:
       "https://www.europarl.europa.eu/factsheets/fr/sheet/62/l-energie-nucleaire , https://www.touteleurope.eu/environnement/energie-nucleaire-quels-sont-les-principaux-pays-producteurs-en-europe/",
+    express: false,
   },
   {
     question:
-      "Is de ontwikkeling van een transeuropees netwerk in de energiesector noodzakelijk?",
+      "Is de ontwikkeling van een trans-Europees netwerk in de energiesector noodzakelijk?",
     answers: [
       {
         text: "Het is cruciaal vanuit het oogpunt van technologische neutraliteit en strategische autonomie door alle energiebronnen te prioriteren.",
@@ -601,13 +609,14 @@ export default [
     id: 13,
     sources:
       "https://www.europarl.europa.eu/RegData/etudes/fiches_techniques/2017/N52942/doc_fr.pdf , https://www.europarl.europa.eu/news/fr/press-room/20220401IPR26530/le-pe-reforme-le-deploiement-des-infrastructures-energetiques-transeuropeennes , https://www.consilium.europa.eu/fr/infographics/ten-e-energy-infrastructure/",
+    express: false,
   },
   {
     question:
-      "Moeten we achteruitgaan of een pauze nemen bij sommige maatregelen van de Green Deal?",
+      "Moeten we een pauze nemen bij sommige maatregelen van de Green Deal of sommige maatregelen ongedaan maken?",
     answers: [
       {
-        text: "Ja, we moeten ideologisch denken laten varen en meer pragmatisch zijn.",
+        text: "Ja, we moeten ideologisch denken laten varen en pragmatischer zijn.",
         partyId: 7,
         id: 1,
       },
@@ -627,7 +636,7 @@ export default [
         id: 4,
       },
       {
-        text: '"Nee, we moeten doorgaan met de wetten over het herstel van de natuur en de luchtkwaliteit."',
+        text: "Nee, we moeten doorgaan met de wetten over het herstel van de natuur en de luchtkwaliteit.",
         partyId: 2,
         id: 5,
       },
@@ -648,9 +657,10 @@ export default [
     id: 14,
     sources:
       "https://commission.europa.eu/strategy-and-policy/priorities-2019-2024/european-green-deal_fr , https://www.touteleurope.eu/environnement/qu-est-ce-que-le-pacte-vert-pour-l-europe/",
+    express: false,
   },
   {
-    question: "De eenheid van energie...",
+    question: "De energie-unie...",
     answers: [
       {
         text: "Is rampzalig en heeft de energiecrisis verergerd.",
@@ -693,14 +703,14 @@ export default [
       "De Europese Energiewerk heeft tot doel om in 2015 een veilige, duurzame en concurrerende energievoorziening binnen de EU tot stand te brengen. Het streeft ernaar de energieafhankelijkheid van de EU te verminderen, consumenten meer keuze en lagere prijzen te bieden en de klimaatverandering te bestrijden. De Energiewerk steunt op gemeenschappelijke regels en doelstellingen, en door het bundelen van middelen en de coördinatie van het energiebeleid op EU-niveau heeft het tot doel een efficiëntere energievoorziening te waarborgen.",
     id: 15,
     sources: "https://www.consilium.europa.eu/fr/policies/energy-union/",
-    express: true,
+    express: 1,
   },
   {
     question:
       "Is de oprichting van een sociaal fonds voor het klimaat noodzakelijk?",
     answers: [
       {
-        text: "Dit is een hypocriet mechanisme dat de energiearmoede niet zal verzachten.",
+        text: "Dit is een hypocriet mechanisme dat de energiearmoede niet zal verminderen.",
         partyId: 7,
         id: 1,
       },
@@ -715,17 +725,17 @@ export default [
         id: 3,
       },
       {
-        text: "Hij zal de meest kwetsbaren begeleiden in de ecologische overgang.",
+        text: "Het zal de meest kwetsbaren begeleiden in de ecologische overgang.",
         partyId: 3,
         id: 4,
       },
       {
-        text: "Hij zal kwetsbare huishoudens helpen bij hun overgang en investeringen verhogen.",
+        text: "Het zal kwetsbare huishoudens helpen bij hun overgang en investeringen verhogen.",
         partyId: 2,
         id: 5,
       },
       {
-        text: "Hij zal deelnemen aan de klimaatgerechtigheid die nodig is om sociale rechtvaardigheid te bereiken.",
+        text: "Het zal recht doen aan de klimaatgerechtigheid die nodig is om sociale rechtvaardigheid te bereiken.",
         partyId: 4,
         id: 6,
       },
@@ -741,6 +751,7 @@ export default [
     id: 16,
     sources:
       "https://www.europarl.europa.eu/news/fr/press-room/20221212IPR64528/accord-sur-la-creation-du-fonds-social-pour-le-climat , https://www.touteleurope.eu/environnement/fonds-social-pour-le-climat-comment-la-commission-veut-elle-concilier-ambition-environnementale-et-justice-sociale/",
+    express: false,
   },
   {
     question: "Welke plaats moet de EU toekennen aan fossiele energie?",
@@ -787,7 +798,7 @@ export default [
     id: 17,
     sources:
       "https://www.touteleurope.eu/environnement/l-energie-dans-l-union-europeenne/ , https://www.euractiv.fr/section/energie-climat/news/en-2022-les-etats-membres-ont-depense-330-milliards-deuros-pour-amortir-les-prix-de-lenergie/ , https://www.europarl.europa.eu/news/fr/press-room/20231117IPR12108/cop28-le-pe-veut-mettre-fin-a-toutes-les-subventions-aux-combustibles-fossiles",
-    express: true,
+    express: 1,
   },
   {
     question:
@@ -814,12 +825,12 @@ export default [
         id: 4,
       },
       {
-        text: "Hij moet de overgang naar duurzame energie versnellen.",
+        text: "Het moet de overgang naar duurzame energie versnellen.",
         partyId: 2,
         id: 5,
       },
       {
-        text: "Hij zal de huishoudens moeten ondersteunen bij de energiecrisis en de ecologische transitie.",
+        text: "Het zal de huishoudens moeten ondersteunen bij de energiecrisis en de ecologische transitie.",
         partyId: 4,
         id: 6,
       },
@@ -835,6 +846,7 @@ export default [
     id: 18,
     sources:
       "https://commission.europa.eu/strategy-and-policy/priorities-2019-2024/european-green-deal/repowereu-affordable-secure-and-sustainable-energy-europe_fr",
+    express: false,
   },
   {
     question: "Het aandeel van hernieuwbare energieën in Europa...",
@@ -845,7 +857,7 @@ export default [
         id: 1,
       },
       {
-        text: "Niet evolueren, er moet een opschorting komen van de overdreven ambities van de Commissie.",
+        text: "Niet laten groeien, er moet een opschorting komen van de overdreven ambities van de Commissie.",
         partyId: 5,
         id: 2,
       },
@@ -881,22 +893,23 @@ export default [
     id: 19,
     sources:
       "https://www.consilium.europa.eu/fr/press/press-releases/2023/10/09/renewable-energy-council-adopts-new-rules/",
+    express: false,
   },
   {
-    question: "Inzake energietransitie in de luchtvaartsector moet...",
+    question: "Inzake de energietransitie in de luchtvaartsector moet...",
     answers: [
       {
-        text: "Meer focussen op langeafstandsvluchten die de helft van de CO2-uitstoot van de luchtvaart genereren.",
+        text: "Er meer focus op langeafstandsvluchten die de helft van de CO2-uitstoot van de luchtvaart genereren.",
         partyId: 7,
         id: 1,
       },
       {
-        text: "Beperk de extra verplichtingen en kosten voor deze verzwakte sector.",
+        text: "Extra verplichtingen en kosten voor deze verzwakte sector beperkt worden.",
         partyId: 5,
         id: 2,
       },
       {
-        text: "Een flexibelere definitie van duurzame luchtvaartbrandstoffen om innovatie aan te moedigen",
+        text: "Er een flexibelere definitie van duurzame luchtvaartbrandstoffen komen om innovatie aan te moedigen",
         partyId: 1,
         id: 3,
       },
@@ -911,12 +924,12 @@ export default [
         id: 5,
       },
       {
-        text: "Een strikte definitie van duurzame vliegtuigbrandstof en een toename van hun productie.",
+        text: "Er een strikte definitie van duurzame vliegtuigbrandstof komen en een toename van hun productie.",
         partyId: 4,
         id: 6,
       },
       {
-        text: "Strikt duurzame luchtvaartbrandstof definiëren en geen greenwashing doen.",
+        text: "Strikt duurzame luchtvaartbrandstof definiëren en niet aan greenwashing doen.",
         partyId: 6,
         id: 7,
       },
@@ -927,6 +940,7 @@ export default [
     id: 20,
     sources:
       "https://www.europarl.europa.eu/thinktank/fr/document/EPRS_BRI(2022)698900",
+    express: false,
   },
   {
     question: "Valse informatie en desinformatie zijn gevaarlijk.",
@@ -973,6 +987,7 @@ export default [
     id: 21,
     sources:
       "https://digital-strategy.ec.europa.eu/fr/policies/online-disinformation",
+    express: false,
   },
   {
     question:
@@ -984,12 +999,12 @@ export default [
         id: 1,
       },
       {
-        text: "Te bewaren om een federalistische staatsgreep te voorkomen.",
+        text: "Moet worden bewaard om een federalistische staatsgreep te voorkomen.",
         partyId: 5,
         id: 2,
       },
       {
-        text: "Zou moeten worden verlaten, met name voor het buitenlands beleid.",
+        text: "Moet van worden afgestapt, met name voor het buitenlands beleid.",
         partyId: 1,
         id: 3,
       },
@@ -1020,19 +1035,19 @@ export default [
     id: 22,
     sources:
       "https://www.consilium.europa.eu/fr/council-eu/voting-system/unanimity/",
-    express: true,
+    express: 1,
   },
   {
     question:
-      "Het meest effectief om de rol van het Europees Parlement te verbeteren is...",
+      "De meest effectieve manier om de rol van het Europees Parlement te verbeteren is...",
     answers: [
       {
-        text: "Om zijn bevoegdheden niet te versterken.",
+        text: "Door zijn bevoegdheden niet te versterken.",
         partyId: 7,
         id: 1,
       },
       {
-        text: "Om zijn bevoegdheden niet ten koste van de Lidstaten te versterken.",
+        text: "Door zijn bevoegdheden niet ten koste van de lidstaten te versterken.",
         partyId: 5,
         id: 2,
       },
@@ -1068,6 +1083,7 @@ export default [
     id: 23,
     sources:
       "https://www.europarl.europa.eu/factsheets/en/sheet/19/the-european-parliament-powers",
+    express: false,
   },
   {
     question: "Moeten we de vrijheid van media versterken?",
@@ -1113,11 +1129,11 @@ export default [
       "Het Media Freedom Act (aangenomen in 2022) heeft tot doel de vrijheid van media en de pluriformiteit van informatie te beschermen. Het waarborgt een vrije en eerlijke mediawereld door overmatige concentratie van media te voorkomen en redactionele onafhankelijkheid te versterken. Dankzij innovatieve maatregelen zoals transparantie over mede-eigenaars van media en bescherming van journalisten verdedigt deze wet democratie en Europese waarden. Door diversiteit aan meningen te bevorderen en desinformatie te bestrijden, streeft de Media Freedom Act ernaar de EU voorop te laten lopen in de verdediging van de vrijheid van meningsuiting.",
     id: 24,
     sources: "https://ec.europa.eu/commission/presscorner/detail/fr/ip_22_5504",
-    express: true,
+    express: 1,
   },
   {
     question:
-      "Zal het Qatargate corruptieschandaal leiden tot verbeterde transparantie op de lange termijn?",
+      "Zal het Qatar-corruptieschandaal (Qatargate) leiden tot verbeterde transparantie op de lange termijn?",
     answers: [
       {
         text: "Het financieringssysteem van NGO's moet eerst worden beëindigd.",
@@ -1161,6 +1177,7 @@ export default [
     id: 25,
     sources:
       "https://www.touteleurope.eu/institutions/qatargate-tout-comprendre-au-scandale-de-corruption-qui-touche-le-parlement-europeen/",
+    express: false,
   },
   {
     question: "De Conferentie over de toekomst van Europa is…",
@@ -1171,7 +1188,7 @@ export default [
         id: 1,
       },
       {
-        text: "Een valse geïnstrumentaliseerde consultatie",
+        text: "Een valse gemanipuleerde consultatie",
         partyId: 5,
         id: 2,
       },
@@ -1203,41 +1220,42 @@ export default [
     ],
     category: 3,
     learnMore:
-      '"De "Conferentie over de toekomst van Europa" is een innovatief platform dat tot doel heeft om Europese burgers te betrekken bij het hervormingsproces van de EU. Gelanceerd in 2021, biedt het een open dialoogruimte waar burgers hun ideeën, zorgen en aspiraties voor de toekomst van Europa kunnen delen. Deze conferentie heeft tot doel de Europese democratie te versterken door burgers een directe stem te geven in het besluitvormingsproces van de EU. Dankzij openbare debatten, online consultaties en lokale evenementen bevordert het de actieve deelname van burgers aan de opbouw van de toekomst van Europa."',
+      'De "Conferentie over de toekomst van Europa" is een innovatief platform dat tot doel heeft om Europese burgers te betrekken bij het hervormingsproces van de EU. Gelanceerd in 2021, biedt het een open dialoogruimte waar burgers hun ideeën, zorgen en aspiraties voor de toekomst van Europa kunnen delen. Deze conferentie heeft tot doel de Europese democratie te versterken door burgers een directe stem te geven in het besluitvormingsproces van de EU. Dankzij openbare debatten, online consultaties en lokale evenementen bevordert het de actieve deelname van burgers aan de opbouw van de toekomst van Europa.',
     id: 26,
     sources:
       "https://www.consilium.europa.eu/fr/policies/conference-on-the-future-of-europe/",
+    express: false,
   },
   {
     question: "Voor de verkiezingen van het Europees Parlement...",
     answers: [
       {
-        text: "De lijsten moeten nationaal blijven.",
+        text: "Moeten de lijstennationaal blijven.",
         partyId: 7,
         id: 1,
       },
       {
-        text: "De organisatie van de Europese verkiezingen moet nationaal blijven.",
+        text: "Moet de organisatie van de Europese verkiezingen nationaal blijven.",
         partyId: 5,
         id: 2,
       },
       {
-        text: "Er moet een Europees kiesdistrict zijn om te kunnen stemmen voor Europese partijen.",
+        text: "Moet er een Europees kiesdistrict zijn om te kunnen stemmen voor Europese partijen.",
         partyId: 1,
         id: 3,
       },
       {
-        text: "Er zijn transnationale lijsten en lijsttrekkers nodig.",
+        text: "Zijn er trans-nationale lijsten en lijsttrekkers nodig.",
         partyId: 3,
         id: 4,
       },
       {
-        text: "Er zijn transnationale lijsten nodig die meer egalitair en inclusief zijn.",
+        text: "Zijn er trans-nationale lijsten nodig die meer egalitair en inclusief zijn.",
         partyId: 2,
         id: 5,
       },
       {
-        text: "Het is noodzakelijk dat de Europese vertegenwoordigers rechtstreeks worden verkozen door de burgers.",
+        text: "Is het noodzakelijk dat de Europese vertegenwoordigers rechtstreeks worden verkozen door de burgers.",
         partyId: 4,
         id: 6,
       },
@@ -1253,34 +1271,34 @@ export default [
     id: 27,
     sources:
       "https://www.europarl.europa.eu/news/fr/headlines/eu-affairs/20220422STO27706/des-regles-communes-et-des-listes-transnationales-pour-les-elections-europeennes",
-    express: true,
+    express: 1,
   },
   {
     question:
       "Moet de EU het Verdrag inzake de preventie en bestrijding van geweld tegen vrouwen ratificeren?",
     answers: [
       {
-        text: "Het is een instrumentalisering van de EU om de soevereiniteit van de lidstaten te beperken.",
+        text: "Het is een middel van de EU om de soevereiniteit van de lidstaten te beperken.",
         partyId: 7,
         id: 1,
       },
       {
-        text: "Is ineffectief omdat het gebaseerd is op gendertheorie.",
+        text: "Het is ineffectief omdat het gebaseerd is op gendertheorie.",
         partyId: 5,
         id: 2,
       },
       {
-        text: "Zal het leven van vrouwen in Europa redden, maar vereist nationale uitvoering",
+        text: "Het zal leven van vrouwen in Europa redden, maar vereist nationale uitvoering",
         partyId: 1,
         id: 3,
       },
       {
-        text: "Versterkt de strijd tegen seksueel geweld en legt juridische verplichtingen op aan de EU.",
+        text: "Het versterkt de strijd tegen seksueel geweld en legt juridische verplichtingen op aan de EU.",
         partyId: 3,
         id: 4,
       },
       {
-        text: "Het is te prijzen maar te laat en niet voldoende.",
+        text: "Het is te prijzen, maar te laat en niet voldoende.",
         partyId: 2,
         id: 5,
       },
@@ -1301,9 +1319,10 @@ export default [
     id: 28,
     sources:
       "https://www.europarl.europa.eu/RegData/etudes/ATAG/2020/659334/EPRS_ATA(2020)659334_FR.pdf",
+    express: false,
   },
   {
-    question: "Het niet respecteren van de rechtsstaat",
+    question: "Het niet respecteren van de rechtsstaat...",
     answers: [
       {
         text: "Mag geen toegang tot Europese fondsen belemmeren.",
@@ -1331,12 +1350,12 @@ export default [
         id: 5,
       },
       {
-        text: "Het rechtvaardigen van het afwijken van de regel van unanimiteit in het buitenlands en begrotingsbeleid.",
+        text: "Rechtvaardigt het afwijken van de regel van unanimiteit in het buitenlands en begrotingsbeleid.",
         partyId: 4,
         id: 6,
       },
       {
-        text: "Voorkomen om voorzitter te zijn, geld en stemrechten te ontvangen in de EU.",
+        text: "Moet leiden tot voorkomen om voorzitter te zijn, en geld te ontvangen en stemrechten te hebben in de EU.",
         partyId: 6,
         id: 7,
       },
@@ -1347,10 +1366,11 @@ export default [
     id: 29,
     sources:
       "https://commission.europa.eu/strategy-and-policy/policies/justice-and-fundamental-rights/upholding-rule-law_fr",
+    express: false,
   },
   {
     question:
-      "Worden de nationale parlementen goed in aanmerking genomen op het niveau van de EU?",
+      "Worden de nationale parlementen voldoende in aanmerking genomen op het niveau van de EU?",
     answers: [
       {
         text: "Niet genoeg, hun controle over de Commissie en het Europees Parlement moet worden versterkt.",
@@ -1394,6 +1414,7 @@ export default [
     id: 30,
     sources:
       "https://www.europarl.europa.eu/news/en/press-room/20240112IPR16766/improve-national-parliaments-role-in-european-democracy-meps-say",
+    express: false,
   },
   {
     question: "Moet overbevissing worden beperkt?",
@@ -1414,7 +1435,7 @@ export default [
         id: 3,
       },
       {
-        text: "Bodemtrawling kan gemakkelijk duurzaam zijn en hoeft niet volledig verboden te worden.",
+        text: "Bodemsleepnetvissen kan gemakkelijk duurzaam zijn en hoeft niet volledig verboden te worden.",
         partyId: 3,
         id: 4,
       },
@@ -1439,10 +1460,11 @@ export default [
       'De Europese Commissie heeft een reeks maatregelen gepresenteerd om de duurzaamheid van de visserij en aquacultuur te verbeteren, via de energietransitie, bescherming van mariene ecosystemen en versterking van het gemeenschappelijk visserijbeleid. Het doel is om de afhankelijkheid van fossiele brandstoffen te verminderen, de impact op ecosystemen te vertragen en de sector tegen 2050 koolstofneutraal te maken. Een partnerschap voor de energietransitie en een "Pact voor visserij en oceanen" zijn bedoeld om de inspanningen te coördineren. Deze maatregelen zullen bijdragen aan het behoud van mariene hulpbronnen en een duurzame toekomst verzekeren voor visserijgemeenschappen in de EU.',
     id: 31,
     sources: "https://ec.europa.eu/commission/presscorner/detail/fr/ip_23_828",
+    express: false,
   },
   {
     question:
-      "Wat betreft de normen voor hergebruik en recycling van plastic verpakkingen.",
+      "De normen voor hergebruik en recycling van plastic verpakkingen...",
     answers: [
       {
         text: "Zetten de voedselveiligheid en de bescherming van producten tijdens het transport op het spel.",
@@ -1460,7 +1482,7 @@ export default [
         id: 3,
       },
       {
-        text: "Ze zorgen voor harmonisatie en vermindering van het verbruik en de hoeveelheid.",
+        text: "Zorgen voor harmonisatie en vermindering van het verbruik en de hoeveelheid.",
         partyId: 3,
         id: 4,
       },
@@ -1486,9 +1508,10 @@ export default [
     id: 32,
     sources:
       "https://www.europarl.europa.eu/news/fr/headlines/society/20180328STO00751/gestion-des-dechets-dans-l-ue-faits-et-chiffres-infographie#:~:text=Selon%20des%20statistiques%20datant%20de,d%C3%A9chets%20municipaux%20d'ici%202030.",
+    express: false,
   },
   {
-    question: '"Hoe kunnen bossen beschermd worden tegen ontbossing?"',
+    question: "Hoe kunnen bossen beschermd worden tegen ontbossing?",
     answers: [
       {
         text: "Men moet een protectionistische en soevereine strategie bevoordelen en stoppen met vrijhandelsovereenkomsten.",
@@ -1532,10 +1555,11 @@ export default [
     id: 33,
     sources:
       "https://www.consilium.europa.eu/fr/policies/deforestation/#:~:text=L'huile%20de%20palme%20est,et%20le%20caoutchouc%20de%203%20%25.",
+    express: false,
   },
   {
     question:
-      '"Om de luchtkwaliteit in Europa te verbeteren, is het nodig om..."',
+      "Om de luchtkwaliteit in Europa te verbeteren, is het nodig om...",
     answers: [
       {
         text: "Beter rekening houden met de kenmerken van gebieden om de economie niet te schaden.",
@@ -1543,12 +1567,12 @@ export default [
         id: 1,
       },
       {
-        text: "Het niet naleven van de regels van de WHO en minder investeren.",
+        text: "De regels van de WHO niet naleven en minder investeren.",
         partyId: 5,
         id: 2,
       },
       {
-        text: "Het creëren van stimulansen en het promoten van opties met lage emissies.",
+        text: "Stimulansen creëren en het promoten van opties met lage emissies.",
         partyId: 1,
         id: 3,
       },
@@ -1579,6 +1603,7 @@ export default [
     id: 34,
     sources:
       "https://www.consilium.europa.eu/fr/policies/air-quality/#:~:text=En%202021%2C%20la%20Commission%20europ%C3%A9enne,pacte%20vert%20pour%20l'Europe.",
+    express: false,
   },
   {
     question: "Moet glyfosaat verboden worden?",
@@ -1625,7 +1650,7 @@ export default [
     id: 35,
     sources:
       "https://france.representation.ec.europa.eu/informations/glyphosate-les-etats-membres-nont-pas-atteint-la-majorite-qualifiee-pour-renouveler-ou-rejeter-son-2023-11-16_fr",
-    express: true,
+    express: 1,
   },
   {
     question:
@@ -1637,7 +1662,7 @@ export default [
         id: 1,
       },
       {
-        text: '"Treedt brutaal op de bevoegdheden van de lidstaten en brengt ongedekte kosten met zich mee"',
+        text: "Treedt brutaal op de bevoegdheden van de lidstaten en brengt ongedekte kosten met zich mee",
         partyId: 5,
         id: 2,
       },
@@ -1669,47 +1694,47 @@ export default [
     ],
     category: 4,
     learnMore:
-      'De Europese Commissie heeft een wet voorgesteld om beschadigde habitats in de EU te herstellen, in lijn met de klimaat- en biodiversiteitsdoelstellingen, met als doel tegen 2030 minstens 20% van de land- en zeegebieden te herstellen en tegen 2050 alle ecosystemen die restauratie nodig hebben aan te pakken. Lidstaten moeten gedetailleerde nationale plannen opstellen om deze doelstellingen te bereiken, waarbij prioriteit wordt gegeven aan de Natura 2000-gebieden. Specifieke maatregelen voor landbouw- en bosgebieden zijn opgenomen, evenals een mechanisme om financiële behoeften te beoordelen. Een "noodstop" kan de doelstellingen opschorten in geval van ernstige gevolgen voor de beschikbaarheid van landbouwgrond.',
+      'De Europese Commissie heeft een wet voorgesteld om beschadigde habitats in de EU te herstellen, in lijn met de klimaat- en biodiversiteitsdoelstellingen, met als doel tegen 2030 minstens 20% van de land- en zeegebieden te herstellen en tegen 2050 alle ecosystemen die restauratie nodig hebben aan te pakken. Lidstaten moeten gedetailleerde nationale plannen opstellen om deze doelstellingen te bereiken, waarbij prioriteit wordt gegeven aan de Natura 2000-gebieden. Specifieke maatregelen voor landbouw- en bosgebieden zijn opgenomen, evenals een mechanisme om financiële behoeften te beoordelen. Een "noodstop" kan de doelstell ingen opschorten in geval van ernstige gevolgen voor de beschikbaarheid van landbouwgrond.',
     id: 36,
     sources:
       "https://www.europarl.europa.eu/news/fr/press-room/20231031IPR08714/loi-sur-la-restauration-de-la-nature-les-deputes-concluent-un-accord",
-    express: true,
+    express: 1,
   },
   {
     question: "Om koolstofneutraliteit te bereiken, is het nodig om...",
     answers: [
       {
-        text: "Het verminderen van bureaucratie en het vereenvoudigen van subsidieprocedures.",
+        text: "Bureaucratie te verminderen en subsidieprocedures te vereenvoudigen.",
         partyId: 7,
         id: 1,
       },
       {
-        text: "Inzetten op nucleair",
+        text: "In te zetten op nucleair energie",
         partyId: 5,
         id: 2,
       },
       {
-        text: "Een globale strategie van autonomie en technologische en energetische efficiëntie.",
+        text: "Een globale strategie van autonomie en technologische en energetische efficiëntie te hebben.",
         partyId: 1,
         id: 3,
       },
       {
-        text: "Het versnellen van de productie van groene technologieën in Europa.",
+        text: "Productie van groene technologieën in Europa te versnellen.",
         partyId: 3,
         id: 4,
       },
       {
-        text: "Het ontwikkelen van een Europese industrie die geen koolstofdioxide-uitstoot produceert.",
+        text: "Een Europese industrie die geen koolstofdioxide-uitstoot produceert te ontwikkelen.",
         partyId: 2,
         id: 5,
       },
       {
-        text: "Zich richten op een netto nul economie en niet op technocratische oplossingen.",
+        text: "Te richten op een netto nul economie en niet op technocratische oplossingen.",
         partyId: 4,
         id: 6,
       },
       {
-        text: "Meer regulering opleggen om kwaliteitsvolle banen en een gezonde leefomgeving te waarborgen.",
+        text: "Meer regulering op te leggen om kwaliteitsvolle banen en een gezonde leefomgeving te waarborgen.",
         partyId: 6,
         id: 7,
       },
@@ -1720,6 +1745,7 @@ export default [
     id: 37,
     sources:
       "https://www.europarl.europa.eu/pdfs/news/expert/2019/10/story/20190926STO62270/20190926STO62270_fr.pdf",
+    express: false,
   },
   {
     question:
@@ -1731,7 +1757,7 @@ export default [
         id: 1,
       },
       {
-        text: '"Inciter ondernemers om betrouwbare informatie aan consumenten te verstrekken"',
+        text: "Moedig ondernemers aan om betrouwbare informatie aan consumenten te verstrekken",
         partyId: 5,
         id: 2,
       },
@@ -1746,7 +1772,7 @@ export default [
         id: 4,
       },
       {
-        text: '"Verbied commerciële communicatie als de ontwerpkenmerken van het product de levensduur ervan beperken"',
+        text: "Verbied commerciële communicatie als de ontwerpkenmerken van het product de levensduur ervan beperken",
         partyId: 2,
         id: 5,
       },
@@ -1756,7 +1782,7 @@ export default [
         id: 6,
       },
       {
-        text: '"Een verplichting instellen voor informatie over de beschikbaarheid van reserveonderdelen en het creëren van een recht op reparatie."',
+        text: "Een verplichting instellen voor informatie over de beschikbaarheid van reserveonderdelen en het creëren van een recht op reparatie.",
         partyId: 6,
         id: 7,
       },
@@ -1767,6 +1793,7 @@ export default [
     id: 38,
     sources:
       "https://www.europarl.europa.eu/news/fr/press-room/20230612IPR97206/ecoconception-nouvelles-regles-sur-la-durabilite-des-produits#:~:text=Le%20rapport%20interdit%20l'obsolescence,des%20accessoires%20pendant%20une%20dur%C3%A9e",
+    express: false,
   },
   {
     question: "Moeten auto's met verbrandingsmotoren worden verboden?",
@@ -1777,7 +1804,7 @@ export default [
         id: 1,
       },
       {
-        text: '"Nee, de markt moet beslissen wat de beste oplossing is"',
+        text: "Nee, de markt moet beslissen wat de beste oplossing is",
         partyId: 5,
         id: 2,
       },
@@ -1813,38 +1840,38 @@ export default [
     id: 39,
     sources:
       "https://www.consilium.europa.eu/fr/press/press-releases/2023/03/28/fit-for-55-council-adopts-regulation-on-co2-emissions-for-new-cars-and-vans/",
-    express: true,
+    express: 1,
   },
   {
     question: "De gefluoreerde gassen die de ozonlaag aantasten, moeten...",
     answers: [
       {
-        text: "Bewaard omdat ze essentieel zijn voor veel industrieën en helpen bij de ecologische overgang.",
+        text: "Behouden worden omdat ze essentieel zijn voor veel industrieën en helpen bij de ecologische overgang.",
         partyId: 7,
         id: 1,
       },
       {
-        text: "Bewaard voor hun gebruik in bepaalde sectoren.",
+        text: "Behouden worden voor hun gebruik in bepaalde sectoren.",
         partyId: 5,
         id: 2,
       },
       {
-        text: "Flexibele verboden om de doeltreffendheid en veiligheid van de overgang te waarborgen",
+        text: "Worden onderworpen aan flexibele verboden om de doeltreffendheid en veiligheid van de overgang te waarborgen",
         partyId: 1,
         id: 3,
       },
       {
-        text: "Het onderwerp van een verhoogde beperking ter bescherming van de natuur en de volksgezondheid",
+        text: "Het onderwerp worden van een verhoogde beperking ter bescherming van de natuur en de volksgezondheid",
         partyId: 3,
         id: 4,
       },
       {
-        text: "Verminderd volgens een strikt schema en een quotareductie.",
+        text: "Worden verminderd volgens een strikt schema en een quotareductie.",
         partyId: 2,
         id: 5,
       },
       {
-        text: '"Op wereldwijde schaal verboden"',
+        text: "Op wereldwijde worden schaal verboden",
         partyId: 4,
         id: 6,
       },
@@ -1860,6 +1887,7 @@ export default [
     id: 40,
     sources:
       "https://www.europarl.europa.eu/news/fr/press-room/20230717IPR03026/accord-sur-la-reduction-des-emissions-de-gaz-fluores-dans-l-ue",
+    express: false,
   },
   {
     question: "Een belasting op digitale giganten op Europees niveau zou...",
@@ -1870,32 +1898,32 @@ export default [
         id: 1,
       },
       {
-        text: '"Verlaag de belastinginkomsten van de lidstaten ten gunste van de EU."',
+        text: "De belastinginkomsten verlagen van de lidstaten ten gunste van de EU.",
         partyId: 5,
         id: 2,
       },
       {
-        text: '"De digitale markt eerlijker maken."',
+        text: "De digitale markt eerlijker maken.",
         partyId: 1,
         id: 3,
       },
       {
-        text: '"Een eerlijk belastingsstelsel mogelijk maken dat een eigen inkomstenbron voor de EU wordt"',
+        text: "Een eerlijk belastingsstelsel mogelijk maken dat een eigen inkomstenbron voor de EU wordt",
         partyId: 3,
         id: 4,
       },
       {
-        text: '"Een minimum belastingniveau opleggen aan de lidstaten."',
+        text: "Een minimum belastingniveau opleggen aan de lidstaten.",
         partyId: 2,
         id: 5,
       },
       {
-        text: '"De belastingontwijking van deze spelers verminderen."',
+        text: "De belastingontwijking van deze spelers verminderen.",
         partyId: 4,
         id: 6,
       },
       {
-        text: '"Zijn een maat voor sociale rechtvaardigheid"',
+        text: "Een maat zijn voor sociale rechtvaardigheid",
         partyId: 6,
         id: 7,
       },
@@ -1906,13 +1934,13 @@ export default [
     id: 41,
     sources:
       "https://www.touteleurope.eu/economie-et-social/qu-est-ce-que-la-taxe-gafa/#:~:text=Les%20entreprises%20concern%C3%A9es%20sont%20celles,d%27affaires%20r%C3%A9alis%C3%A9%20en%20France.",
-    express: true,
+    express: 1,
   },
   {
     question: "Wat betreft gerichte online reclame, is het nodig...",
     answers: [
       {
-        text: "Het verbieden omdat het leidt tot een datalek naar China en de VS.",
+        text: "Te verbieden omdat het leidt tot een datalek naar China en de VS.",
         partyId: 7,
         id: 1,
       },
@@ -1922,7 +1950,7 @@ export default [
         id: 2,
       },
       {
-        text: "Het verbieden voor minderjarigen en als het discriminerend is.",
+        text: "Te verbieden voor minderjarigen en als het discriminerend is.",
         partyId: 1,
         id: 3,
       },
@@ -1932,7 +1960,7 @@ export default [
         id: 4,
       },
       {
-        text: "Toestaan op basis van gebruikerstoestemming, maar verbieden voor gevoelige persoonlijke gegevens.",
+        text: "Toe te staan op basis van gebruikerstoestemming, maar verbieden voor gevoelige persoonlijke gegevens.",
         partyId: 2,
         id: 5,
       },
@@ -1942,7 +1970,7 @@ export default [
         id: 6,
       },
       {
-        text: '"Verbieden voor alle gebruikers"',
+        text: "Verbieden voor alle gebruikers",
         partyId: 6,
         id: 7,
       },
@@ -1953,13 +1981,14 @@ export default [
     id: 42,
     sources:
       "https://www.consilium.europa.eu/fr/policies/digital-services-act/",
+    express: false,
   },
   {
     question:
       "Het gebruik van kunstmatige intelligentie voor biometrische identificatie moet...",
     answers: [
       {
-        text: "Zich beperken tot controles aan de grenzen en van immigratie door een gematigde controle toe te passen",
+        text: "het zich beperken tot controles aan de grenzen en van immigratie door een gematigde controle toe te passen",
         partyId: 7,
         id: 1,
       },
@@ -1969,24 +1998,29 @@ export default [
         id: 2,
       },
       {
-        text: "Toegestaan zijn voor het zoeken naar vermiste personen of het voorkomen van terroristische aanslagen",
-        partyId: 3,
+        text: "Alleen betrekking hebben op terroristische aanslagen of strafrechtelijke onderzoeken",
+        partyId: 1,
         id: 3,
       },
       {
-        text: '"Verboden op afstand in de openbare ruimte, privé en online"',
-        partyId: 2,
+        text: "Toegestaan zijn voor het zoeken naar vermiste personen of het voorkomen van terroristische aanslagen",
+        partyId: 3,
         id: 4,
+      },
+      {
+        text: "Worden verboden in de openbare ruimte, privé en online",
+        partyId: 2,
+        id: 5,
       },
       {
         text: "Volledig verboden zijn in openbare ruimtes.",
         partyId: 4,
-        id: 5,
+        id: 6,
       },
       {
-        text: '"Specifiek verboden zijn voor migratiebeheer"',
+        text: "Specifiek verboden zijn voor migratiebeheer",
         partyId: 6,
-        id: 6,
+        id: 7,
       },
     ],
     category: 5,
@@ -1995,6 +2029,7 @@ export default [
     id: 43,
     sources:
       "https://www.europarl.europa.eu/news/en/headlines/society/20230601STO93804/eu-ai-act-first-regulation-on-artificial-intelligence",
+    express: false,
   },
   {
     question: "Een regulering van de Europese datamarkt is...",
@@ -2030,7 +2065,7 @@ export default [
         id: 6,
       },
       {
-        text: "Dringend bescherming bieden aan gegevens en klokkenluiders.",
+        text: "Dringend nodig om bescherming te bieden aan gegevens en klokkenluiders.",
         partyId: 6,
         id: 7,
       },
@@ -2040,42 +2075,43 @@ export default [
       "Het idee van een Europese gegevensmarkt wordt gepromoot door de Europese Commissie om de digitale economie te stimuleren. De Data Act beoogt het reguleren van de verzameling, opslag en deling van gegevens binnen de EU, waarbij de bescherming van de rechten van gebruikers en de gegevensbeveiliging worden gewaarborgd. Het stelt normen vast voor gegevensbeheer, transparantie en systeeminteroperabiliteit. De Europese gegevensmarkt zou innovatie en concurrentie bevorderen met inachtneming van de privacy- en gegevensbeschermingsprincipes. Deze initiatief zou de digitale economie van de EU een boost kunnen geven en haar mondiale positie versterken.",
     id: 44,
     sources: "https://digital-strategy.ec.europa.eu/fr/policies/data-act",
+    express: false,
   },
   {
-    question: '"In de strijd tegen illegale inhoud is het noodzakelijk om..."',
+    question: "In de strijd tegen illegale inhoud is het noodzakelijk om...",
     answers: [
       {
-        text: '"Het terugtrekken van inhoud verbieden zonder gerechtelijke controle."',
+        text: "Het terugtrekken van inhoud te verbieden zonder gerechtelijke controle.",
         partyId: 7,
         id: 1,
       },
       {
-        text: "Eerst de vrijheid van meningsuiting beschermen.",
+        text: "Eerst de vrijheid van meningsuiting te beschermen.",
         partyId: 5,
         id: 2,
       },
       {
-        text: "Zorgen voor een snelle verwijdering om de verspreiding van criminele inhoud te voorkomen.",
+        text: "Te zorgen voor een snelle verwijdering om de verspreiding van criminele inhoud te voorkomen.",
         partyId: 1,
         id: 3,
       },
       {
-        text: "Een gezondere en veiligere omgeving voor consumenten.",
+        text: "Een gezondere en veiligere omgeving voor consumenten te bieden.",
         partyId: 3,
         id: 4,
       },
       {
-        text: '"Een duidelijke wetgeving invoeren die platforms aansprakelijk stelt"',
+        text: "Een duidelijke wetgeving in te voeren die platforms aansprakelijk stelt",
         partyId: 2,
         id: 5,
       },
       {
-        text: "Dat matiging wordt uitgevoerd door een transparante en eerlijke menselijke controle.",
+        text: "Matiging uit te laten voeren door een transparante en eerlijke menselijke controle.",
         partyId: 4,
         id: 6,
       },
       {
-        text: "Meer controle door overheidsinstanties en rechtbanken.",
+        text: "Meer controle door overheidsinstanties en rechtbanken te hebben.",
         partyId: 6,
         id: 7,
       },
@@ -2086,13 +2122,13 @@ export default [
     id: 45,
     sources:
       "https://digital-strategy.ec.europa.eu/fr/policies/illegal-content-online-platforms",
-    express: true,
+    express: 1,
   },
   {
-    question: "Wat is de prioriteit op digitaal gebied?",
+    question: "Wat is prioriteit op digitaal gebied?",
     answers: [
       {
-        text: "Het lanceren van Europese acteurs van wereldformaat.",
+        text: "Het lanceren van Europese belanghebbenden van wereldformaat.",
         partyId: 7,
         id: 1,
       },
@@ -2102,17 +2138,17 @@ export default [
         id: 2,
       },
       {
-        text: '"Bevorderen en consumenten centraal stellen in de digitale economie"',
+        text: "Bevorderen en consumenten centraal stellen in de digitale economie",
         partyId: 1,
         id: 3,
       },
       {
-        text: '"Innovatie aanmoedigen om strategische digitale capaciteiten in Europa te ontwikkelen"',
+        text: "Innovatie aanmoedigen om strategische digitale capaciteiten in Europa te ontwikkelen",
         partyId: 3,
         id: 4,
       },
       {
-        text: '"Een inclusief digitaal Europa opbouwen met gelijke toegang tot digitale middelen"',
+        text: "Een inclusief digitaal Europa opbouwen met gelijke toegang tot digitale middelen",
         partyId: 2,
         id: 5,
       },
@@ -2133,12 +2169,13 @@ export default [
     id: 46,
     sources:
       "https://www.touteleurope.eu/l-europe-et-moi/digital-europe-le-programme-pour-une-europe-numerique/",
+    express: false,
   },
   {
     question: "De geoblocking van audiovisuele inhoud...",
     answers: [
       {
-        text: "Moet worden gehandhaafd ter bescherming van de uitzondering en culturele diversiteit.",
+        text: "Moet worden gehandhaafd ter bescherming van het uitzonderlijke en culturele diversiteit.",
         partyId: 7,
         id: 1,
       },
@@ -2178,13 +2215,14 @@ export default [
       "De geoblocking beperkt de toegang tot goederen en diensten op basis van de geografische locatie van de gebruiker. De EU heeft maatregelen genomen om deze oneerlijke discriminatie te beëindigen door een verordening aan te nemen die ongerechtvaardigd geoblocking verbiedt in bepaalde gevallen, zoals online aankopen van goederen en diensten. Deze verordening heeft tot doel een meer open en concurrerende digitale interne markt te bevorderen door consumenten gelijke en niet-discriminerende toegang te bieden tot online aanbiedingen in de hele Europese Unie.",
     id: 47,
     sources: "https://www.consilium.europa.eu/fr/policies/geo-blocking/",
+    express: false,
   },
   {
     question:
       "In het geval van subsidies voor de halfgeleiderindustrie, wat is de prioriteit?",
     answers: [
       {
-        text: '"Onze soevereiniteit waarborgen door de opkomst van een Europees halfgeleidergigant te subsidiëren."',
+        text: "Onze soevereiniteit waarborgen door de opkomst van een Europees halfgeleidergigant te subsidiëren.",
         partyId: 7,
         id: 1,
       },
@@ -2225,42 +2263,43 @@ export default [
     id: 48,
     sources:
       "https://commission.europa.eu/strategy-and-policy/priorities-2019-2024/europe-fit-digital-age/european-chips-act_fr",
+    express: false,
   },
   {
-    question: '"In termen van cybersecurity is het noodzakelijk om..."',
+    question: "In termen van cybersecurity is het noodzakelijk om...",
     answers: [
       {
-        text: '"Laat de staten hun vrije wil, want verdediging is een onschendbare prerogatief van staten."',
+        text: "Staten vrij te laten in hun wil, want verdediging is een onschendbare prerogatief van staten.",
         partyId: 7,
         id: 1,
       },
       {
-        text: '"Versterk de uitwisseling van informatie en samenwerking om een cyber-resistent Europa te creëren."',
+        text: "Uitwisseling van informatie te verstereken en samenwerking om een cyber-resistent Europa te creëren.",
         partyId: 5,
         id: 2,
       },
       {
-        text: "Zorg voor veiligheid vanaf het ontwerp van producten en reageer snel op kwetsbaarheden.",
+        text: "Te zorgen voor veiligheid vanaf het ontwerp van producten en reageer snel op kwetsbaarheden.",
         partyId: 1,
         id: 3,
       },
       {
-        text: '"Een digitaal paneuropees schild creëren om een minimumniveau van veiligheid in de EU te waarborgen"',
+        text: "Een digitaal pan-Europees schild te creëren om een minimumniveau van veiligheid in de EU te waarborgen",
         partyId: 3,
         id: 4,
       },
       {
-        text: '"Strikte regels vaststellen voor de kritieke infrastructuur van de EU (ziekenhuizen, energie-installaties)"',
+        text: "Strikte regels vast te stellen voor de kritieke infrastructuur van de EU (ziekenhuizen, energie-installaties)",
         partyId: 2,
         id: 5,
       },
       {
-        text: "Het instellen van strengere veiligheidsnormen om de bescherming van de EU te versterken.",
+        text: "Strengere veiligheidsnormen in te stellen om de bescherming van de EU te versterken.",
         partyId: 4,
         id: 6,
       },
       {
-        text: "Het versterken van veerkracht voor iedereen: instellingen maar ook KMO's en burgers.",
+        text: "Van veerkracht voor iedereen te versterken: instellingen maar ook KMO's en burgers.",
         partyId: 6,
         id: 7,
       },
@@ -2270,6 +2309,7 @@ export default [
       "De EU is betrokken bij een ambitieus programma om de cyberveiligheid in Europa te versterken, essentieel in onze digitale wereld. Dit programma heeft tot doel onze persoonlijke gegevens, kritieke infrastructuur en computersystemen te beschermen tegen cyberaanvallen. Het bevordert samenwerking tussen de lidstaten, bedrijven en de samenleving om online bedreigingen op te sporen en tegen te gaan. De EU investeert in onderzoek, opleiding en de ontwikkeling van innovatieve technologieën om onze digitale veerkracht te versterken. Door burgers bewust te maken van en te informeren over de risico's, streeft de EU naar een veilige en betrouwbare cyberomgeving voor alle Europeanen.",
     id: 49,
     sources: "https://digital-strategy.ec.europa.eu/fr/policies/cybersecurity",
+    express: false,
   },
   {
     question: "Is het nuttig om een Europese digitale identiteit te creëren?",
@@ -2316,7 +2356,7 @@ export default [
     id: 50,
     sources:
       "https://commission.europa.eu/strategy-and-policy/priorities-2019-2024/europe-fit-digital-age/european-digital-identity_fr#:~:text=L%27identit%C3%A9%20num%C3%A9rique%20de%20l,%2C%20dans%20toute%20l%27UE.",
-    express: true,
+    express: 1,
   },
   {
     question: "In hoeverre moet het GLB de ecologische transitie integreren?",
@@ -2362,6 +2402,7 @@ export default [
       "De GLB, het Gemeenschappelijk Landbouwbeleid van de EU sinds 1962, ondersteunt boeren en plattelandsontwikkeling door voedselzekerheid, marktstabiliteit en een fatsoenlijk inkomen te garanderen. Het maakt gebruik van subsidies, plattelandsontwikkelingsprogramma's en reguleringsmechanismen. Ecologische transitie verwijst naar een fundamentele verandering in economische, sociale en milieupraktijken om de negatieve impact op het milieu te verminderen en duurzaamheid te bevorderen. Daarom is het belangrijk om te weten welke maatregelen GLB moet nemen om de ecologische transitie te vergemakkelijken, hoeveel subsidies moeten worden toegewezen en in welke omvang.",
     id: 51,
     sources: "https://agriculture.ec.europa.eu/common-agricultural-policy_fr",
+    express: false,
   },
   {
     question:
@@ -2409,6 +2450,7 @@ export default [
     id: 52,
     sources:
       "https://www.consilium.europa.eu/fr/press/press-releases/2022/12/19/council-calls-for-a-complementary-impact-assessment-on-the-sustainable-use-of-plant-protection-products-proposal/",
+    express: false,
   },
   {
     question:
@@ -2430,7 +2472,7 @@ export default [
         id: 3,
       },
       {
-        text: '"Dieren fokken zonder kooien promoten."',
+        text: "Dieren fokken zonder kooien promoten.",
         partyId: 2,
         id: 4,
       },
@@ -2456,6 +2498,7 @@ export default [
     id: 53,
     sources:
       "https://commission.europa.eu/news/improving-welfare-animals-2023-12-07_fr#:~:text=La%20Commission%20europ%C3%A9enne%20a%20propos%C3%A9,%C3%A0%20fourrure%20dans%20l'UE.",
+    express: false,
   },
   {
     question:
@@ -2503,9 +2546,10 @@ export default [
     id: 54,
     sources:
       "https://www.europarl.europa.eu/doceo/document/TA-9-2024-0046_FR.html",
+    express: false,
   },
   {
-    question: "Hoe kunnen jonge landbouwers geholpen worden bij het vestigen?",
+    question: "Hoe kunnen jonge landbouwers geholpen worden bij hun start?",
     answers: [
       {
         text: "Het is nodig om administratieve stappen te verminderen en boeren te beschermen tegen oneerlijke externe concurrentie.",
@@ -2513,7 +2557,7 @@ export default [
         id: 1,
       },
       {
-        text: '"Door de verwaarlozing van plattelandsgebieden aan te pakken"',
+        text: "Door de verwaarlozing van plattelandsgebieden aan te pakken",
         partyId: 5,
         id: 2,
       },
@@ -2533,7 +2577,7 @@ export default [
         id: 5,
       },
       {
-        text: "Door landbouw en doelstellingen voor het verminderen van het gebruik van pesticiden, en dierenwelzijn op één lijn te brengen.",
+        text: "Door landbouw en doelstellingen voor het verminderen van het gebruik van pesticiden en dierenwelzijn op één lijn te brengen.",
         partyId: 4,
         id: 6,
       },
@@ -2549,7 +2593,7 @@ export default [
     id: 55,
     sources:
       "https://www.gouvernement.fr/argumentaire/des-nouvelles-avancees-pour-faciliter-l-installation-des-jeunes-agriculteurs",
-    express: true,
+    express: 1,
   },
   {
     question:
@@ -2586,7 +2630,7 @@ export default [
         id: 6,
       },
       {
-        text: "Vereenvoudigen administratief en financieel de toegang tot deze indicaties.",
+        text: "Vereenvoudig administratief en financieel de toegang tot deze indicaties.",
         partyId: 6,
         id: 7,
       },
@@ -2597,6 +2641,7 @@ export default [
     id: 56,
     sources:
       "https://agriculture.ec.europa.eu/farming/geographical-indications-and-quality-schemes_fr",
+    express: false,
   },
   {
     question:
@@ -2644,13 +2689,14 @@ export default [
     id: 57,
     sources:
       "https://www.euractiv.fr/section/agriculture-alimentation/news/la-commission-propose-de-sortir-le-loup-de-son-statut-despece-strictement-protegee/",
+    express: false,
   },
   {
     question:
       "Wat moet de prioriteit zijn voor het volgende Gemeenschappelijk Landbouwbeleid (vanaf 2027)?",
     answers: [
       {
-        text: '"Een eerlijke beloning voor boeren"',
+        text: "Een eerlijke beloning voor boeren",
         partyId: 7,
         id: 1,
       },
@@ -2680,7 +2726,7 @@ export default [
         id: 6,
       },
       {
-        text: '"Verander het sociaal-ecologische model van de Europese landbouw"',
+        text: "Verander het sociaal-ecologische model van de Europese landbouw",
         partyId: 6,
         id: 7,
       },
@@ -2691,7 +2737,7 @@ export default [
     id: 58,
     sources:
       "https://www.consilium.europa.eu/fr/policies/cap-introduction/cap-future-2020-common-agricultural-policy-2023-2027/",
-    express: true,
+    express: 1,
   },
   {
     question:
@@ -2728,7 +2774,7 @@ export default [
         id: 6,
       },
       {
-        text: "Het kost minder dieren om meer land te hebben om voedsel te verbouwen voor mensen.",
+        text: "Er moet een afname van dieren komen om meer land te hebben om voedsel te verbouwen voor mensen.",
         partyId: 6,
         id: 7,
       },
@@ -2739,6 +2785,7 @@ export default [
     id: 59,
     sources:
       "https://www.europarl.europa.eu/doceo/document/TA-9-2023-0375_FR.html",
+    express: false,
   },
   {
     question:
@@ -2750,7 +2797,7 @@ export default [
         id: 1,
       },
       {
-        text: '"Ja, als ze goed onderhandeld worden, stellen ze de EU in staat om zich aan te passen aan internationale standaarden."',
+        text: "Ja, als ze goed onderhandeld worden, stellen ze de EU in staat om zich aan te passen aan internationale standaarden.",
         partyId: 5,
         id: 2,
       },
@@ -2775,7 +2822,7 @@ export default [
         id: 6,
       },
       {
-        text: '"Nee, ze verslechteren alleen de Europese normen."',
+        text: "Nee, ze verslechteren alleen de Europese normen.",
         partyId: 6,
         id: 7,
       },
@@ -2786,19 +2833,19 @@ export default [
     id: 60,
     sources:
       "https://www.touteleurope.eu/economie-et-social/ceta-jefta-mercosur-qu-est-ce-qu-un-accord-de-libre-echange-de-nouvelle-generation/",
-    express: true,
+    express: 1,
   },
   {
     question:
       "Wat betreft de mogelijke toetreding van Oekraïne en Moldavië tot de Europese Unie...",
     answers: [
       {
-        text: "Ze moet bij voorkeur zonder enige behandeling worden behandeld.",
+        text: "Ze moeten zonder enige voorkeursbehandeling worden behandeld.",
         partyId: 7,
         id: 1,
       },
       {
-        text: "Ze is natuurlijk, gezien de vooruitgang die geboekt is in beide landen.",
+        text: "Het is logisch, gezien de vooruitgang die geboekt is in beide landen.",
         partyId: 5,
         id: 2,
       },
@@ -2808,7 +2855,7 @@ export default [
         id: 3,
       },
       {
-        text: "ze maken deel uit van de Europese familie, maar de EU moet zich voorbereiden op uitbreiding",
+        text: "Ze maken deel uit van de Europese familie, maar de EU moet zich voorbereiden op uitbreiding",
         partyId: 3,
         id: 4,
       },
@@ -2823,7 +2870,7 @@ export default [
         id: 6,
       },
       {
-        text: "ze moet worden afgewezen vanwege hun democratische en economische normen",
+        text: "Ze moet worden afgewezen vanwege hun democratische en economische normen",
         partyId: 6,
         id: 7,
       },
@@ -2833,6 +2880,7 @@ export default [
       "Oekraïne is een voormalige Sovjetrepubliek die sinds 2014 militaire druk van Rusland ondergaat. In 2022 werd een deel van haar grondgebied aangevallen door Rusland, en de oorlog duurt nog steeds voort. Deze oorlog komt op een moment dat Oekraïne bezig is met een proces van democratisering en modernisering van de economie, met als doel dichter bij de EU te komen. Moldavië, een klein land tussen Roemenië en Oekraïne, volgt dezelfde democratische projecten, en hoewel het niet direct wordt aangevallen door Rusland, heeft een deel van haar grondgebied (de regio Transnistrië) unilateraal autonomie verklaard, en vroeg om integratie met Rusland in 2016, zonder succes. Eind 2023, rekening houdend met de inspanningen van beide landen, en gezien de uitzonderlijke situatie, heeft de Europese Commissie de Raad van de EU aanbevolen om toetredingsonderhandelingen te openen.",
     id: 61,
     sources: "https://www.eeas.europa.eu/eeas/standwithukraine_en",
+    express: false,
   },
   {
     question: "Hoe moeten de relaties met China worden aangepakt?",
@@ -2879,6 +2927,7 @@ export default [
     id: 62,
     sources:
       "https://www.europarl.europa.eu/news/fr/press-room/20210910IPR11917/la-vision-du-parlement-concernant-la-nouvelle-strategie-de-l-ue-pour-la-chine",
+    express: false,
   },
   {
     question: "Moeten we de uitbreiding van de EU naar de Balkan overwegen?",
@@ -2899,12 +2948,12 @@ export default [
         id: 3,
       },
       {
-        text: '"Ja, het gaat om de geloofwaardigheid van de Unie als enige levensvatbare bondgenoot voor de regio"',
+        text: "Ja, het gaat om de geloofwaardigheid van de Unie als enige levensvatbare bondgenoot voor de regio",
         partyId: 3,
         id: 4,
       },
       {
-        text: '"Ja, als deze landen het gemeenschappelijk buitenlands beleid respecteren en hun inspanningen erkennen"',
+        text: "Ja, als deze landen het gemeenschappelijk buitenlands beleid respecteren en hun inspanningen erkennen",
         partyId: 2,
         id: 5,
       },
@@ -2925,13 +2974,14 @@ export default [
     id: 63,
     sources:
       "https://www.europarl.europa.eu/factsheets/fr/sheet/168/the-western-balkans",
+    express: false,
   },
   {
     question:
-      '"In de huidige situatie tussen Israël en Palestina vind ik dat..."',
+      "In de huidige situatie tussen Israël en Palestina vind ik dat...",
     answers: [
       {
-        text: '"Hamas is als enige verantwoordelijk voor deze situatie, waarin Israël zich legitiem verdedigt."',
+        text: "Hamas is als enige verantwoordelijk voor deze situatie, waarin Israël zich legitiem verdedigt.",
         partyId: 7,
         id: 1,
       },
@@ -2971,6 +3021,7 @@ export default [
       "Het Israëlisch-Palestijns conflict is een conflict in het Midden-Oosten dat voornamelijk twee staten tegenover elkaar plaatst, één vertegenwoordigd door een Joodse bevolking (Israël) en de andere door een Islamitische bevolking (Palestina, niet officieel erkend door de VN). Sinds 1948 zijn er meerdere oorlogen en crises, zowel intern als met betrokkenheid van buitenlandse partijen, die de regio hebben geteisterd. Sinds 7 oktober zijn de spanningen toegenomen door terroristische aanvallen, gevolgd door een zeer gewelddadige militaire reactie. Dit is een uiterst complex, gevoelig en gepolitiseerd onderwerp dat hier niet volledig samengevat kan worden, we raden u daarom aan om uzelf te informeren via betrouwbare bronnen.",
     id: 64,
     sources: "https://www.eeas.europa.eu/eeas/middle-east-peace-process_en",
+    express: false,
   },
   {
     question:
@@ -3018,42 +3069,43 @@ export default [
     id: 65,
     sources:
       "https://eur-lex.europa.eu/FR/legal-content/glossary/common-foreign-and-security-policy-cfsp.html",
+    express: false,
   },
   {
-    question: "De NAVO is een organisatie...",
+    question: "De NAVO is een organisatie die...",
     answers: [
       {
-        text: "samenwerking die Europa verdedigt.",
+        text: "Samenwerking die Europa verdedigt.",
         partyId: 7,
         id: 1,
       },
       {
-        text: "essentieel, want het is de enige levensvatbare verdedigingsbron in Europa",
+        text: "Essentieel is, want het is de enige levensvatbare verdedigingsbron in Europa",
         partyId: 5,
         id: 2,
       },
       {
-        text: "belangrijk, met de noodzaak van een pijler van Europese defensie om versterkt te worden",
+        text: "Belangrijk is, met de noodzaak van een pijler van Europese defensie om versterkt te worden",
         partyId: 1,
         id: 3,
       },
       {
-        text: "om naar een echte Europese Defensie-Unie te gaan",
+        text: "Helpt om naar een echte Europese Defensie-Unie te gaan",
         partyId: 3,
         id: 4,
       },
       {
-        text: "partner van de EU door zijn collectieve defensiestructuur",
+        text: "Partner van de EU door zijn collectieve defensiestructuur is",
         partyId: 2,
         id: 5,
       },
       {
-        text: "aanvullend op de Europese defensie zonder beperkingen voor de Lidstaten",
+        text: "Aanvullend op de Europese defensie is zonder beperkingen voor de Lidstaten",
         partyId: 4,
         id: 6,
       },
       {
-        text: "die het doel van het bevorderen van de vrede van de EU niet respecteert",
+        text: "Het doel van het bevorderen van de vrede van de EU niet respecteert",
         partyId: 6,
         id: 7,
       },
@@ -3063,18 +3115,18 @@ export default [
       "De Noord-Atlantische Verdragsorganisatie (NAVO) is een alliantie voor defensie en militaire samenwerking die 31 landen omvat, waaronder de Verenigde Staten, Canada, het Verenigd Koninkrijk en de meeste EU-landen (met uitzondering van Oostenrijk en Ierland). Het is opgericht om een agressie van de Sovjet-Unie tegen Europese landen te voorkomen. Artikel 5 van het verdrag bepaalt dat een aanval op één lid van de alliantie een aanval op alle leden van de alliantie is, wat afschrikkend werkt tegen frontale aanvallen, omdat de NAVO 55% van de wereldwijde militaire uitgaven vertegenwoordigt en meer dan 3 miljoen dienende soldaten telt. Met de oorlog in Oekraïne is Finland in 2023 toegetreden tot de NAVO en Zweden zou hetzelfde moeten doen in 2024. Toch is het lidmaatschap van de militaire organisatie theoretisch afhankelijk van een jaarlijkse uitgave van 2% van het BBP van een lidstaat aan acties binnen de NAVO, een criterium dat door de meeste leden niet wordt behaald",
     id: 66,
     sources: "https://www.nato.int/",
-    express: true,
+    express: 1,
   },
   {
     question: "De relatie tussen de EU en de VS is...",
     answers: [
       {
-        text: "een strategische relatie die verdiept moet worden om zich te onttrekken aan China",
+        text: "Een strategische relatie die verdiept moet worden om zich te onttrekken aan China",
         partyId: 7,
         id: 1,
       },
       {
-        text: "commercieel en defensief zonder dat de EU haar eigen leger nodig heeft",
+        text: "Commercieel en defensief zonder dat de EU haar eigen leger nodig heeft",
         partyId: 5,
         id: 2,
       },
@@ -3084,22 +3136,22 @@ export default [
         id: 3,
       },
       {
-        text: "is de geostrategische prioriteit van dit decennium die versterkt moet worden",
+        text: "De geostrategische prioriteit van dit decennium die versterkt moet worden",
         partyId: 3,
         id: 4,
       },
       {
-        text: "een alliantie zolang de Democraten aan de macht zijn",
+        text: "Een alliantie zolang de Democraten aan de macht zijn",
         partyId: 2,
         id: 5,
       },
       {
-        text: "een partnerschap dat vrede en stabiliteit garandeert in Europa en de wereld",
+        text: "Een partnerschap dat vrede en stabiliteit garandeert in Europa en de wereld",
         partyId: 4,
         id: 6,
       },
       {
-        text: "schadelijk op zowel militair als sociaal vlak",
+        text: "Schadelijk op zowel militair als sociaal vlak",
         partyId: 6,
         id: 7,
       },
@@ -3110,43 +3162,43 @@ export default [
     id: 67,
     sources:
       "https://www.eeas.europa.eu/eeas/european-union-united-states-relations_en",
-    express: true,
+    express: 1,
   },
   {
-    question: "In vergelijking met de betrekkingen met Turkije, moet de EU...",
+    question: "Wat betreft de betrekkingen met Turkije, moet de EU...",
     answers: [
       {
-        text: 'stop toetredings- en normaliseringsonderhandelingen"',
+        text: "toetredings- en normaliseringsonderhandelingen stoppen",
         partyId: 7,
         id: 1,
       },
       {
-        text: '"praten zonder de relaties te bevriezen, met name over de liberalisering van visa"',
+        text: "Praten zonder de relaties te bevriezen, met name over de liberalisering van visa",
         partyId: 5,
         id: 2,
       },
       {
-        text: "het toetredingsproces opschorten vanwege de huidige regering",
+        text: "Het toetredingsproces opschorten vanwege de huidige regering",
         partyId: 1,
         id: 3,
       },
       {
-        text: "een andere vorm van samenwerking zoeken en het lidmaatschap opgeven",
+        text: "Een andere vorm van samenwerking zoeken en het lidmaatschap opgeven",
         partyId: 3,
         id: 4,
       },
       {
-        text: '"gesloten zijn totdat Turkije onze waarden respecteert."',
+        text: "Gesloten zijn totdat Turkije onze waarden respecteert",
         partyId: 2,
         id: 5,
       },
       {
-        text: "het proces van toetreding voortzetten zoals gewenst door de Turkse bevolking",
+        text: "Het proces van toetreding voortzetten zoals gewenst door de Turkse bevolking",
         partyId: 4,
         id: 6,
       },
       {
-        text: '"een einde maken aan de dubbele standaarden en Turkije veroordelen"',
+        text: "Een einde maken aan de dubbele standaarden en Turkije veroordelen",
         partyId: 6,
         id: 7,
       },
@@ -3157,6 +3209,7 @@ export default [
     id: 68,
     sources:
       "https://www.europarl.europa.eu/news/fr/press-room/20210517IPR04118/les-relations-ue-turquie-a-un-niveau-historiquement-bas",
+    express: false,
   },
   {
     question: "De Europese defensie-industrie moet versterkt worden.",
@@ -3202,7 +3255,7 @@ export default [
       "5 EU-landen (Frankrijk, Italië, Duitsland, Spanje en Polen + Verenigd Koninkrijk) behoren tot de 10 landen ter wereld die het meest wapens exporteren. Samen exporteren Frankrijk en Italië meer dan China en Rusland samen. Echter, de oorlog in Oekraïne heeft de moeilijkheden aan het licht gebracht die de verschillende modellen van nationale wapens vertegenwoordigen (met name tanks en luchtmachtwagens). Verscheidene eenmalige projecten zijn aan de gang (zoals voor helikopters), maar zijn bijzonder moeilijk uit te voeren.",
     id: 69,
     sources: "https://ec.europa.eu/commission/presscorner/detail/en/ip_23_5364",
-    express: true,
+    express: 1,
   },
   {
     question:
@@ -3214,22 +3267,22 @@ export default [
         id: 1,
       },
       {
-        text: '"Dien de binnenlandse belangen van de EU, omdat wereldwijde problemen Europa beïnvloeden."',
+        text: "De binnenlandse belangen van de EU dienen, omdat wereldwijde problemen Europa beïnvloeden.",
         partyId: 5,
         id: 2,
       },
       {
-        text: '"Stabiliteit en vooruitgang creëren in alle domeinen, met name in de buurt van de EU"',
+        text: "Stabiliteit en vooruitgang creëren in alle domeinen, met name in de buurt van de EU",
         partyId: 1,
         id: 3,
       },
       {
-        text: '"bevorderen van veiligheid en economische ontwikkeling, vooral in de buurt van de EU en in Afrika"',
+        text: "Veiligheid en economische ontwikkeling bevorderen, vooral in de buurt van de EU en in Afrika",
         partyId: 3,
         id: 4,
       },
       {
-        text: "strijden tegen inkomensongelijkheid en klimaatverandering om armoede uit te roeien",
+        text: "Strijden tegen inkomensongelijkheid en klimaatverandering om armoede uit te roeien",
         partyId: 2,
         id: 5,
       },
@@ -3239,7 +3292,7 @@ export default [
         id: 6,
       },
       {
-        text: '"Bevorderen van respect voor de mensenrechten en het sluiten van overeenkomsten met wederzijdse voordelen"',
+        text: "Respect voor de mensenrechten en het sluiten van overeenkomsten met wederzijdse voordelen bevorderen",
         partyId: 6,
         id: 7,
       },
@@ -3250,12 +3303,13 @@ export default [
     id: 70,
     sources:
       "https://www.eeas.europa.eu/eeas/international-cooperation-partnership_en",
+    express: false,
   },
   {
     question: "Een geharmoniseerd Europees migratiebeleid is ...",
     answers: [
       {
-        text: '"volledig ineffectief en zal de migratiecrises verergeren."',
+        text: "Volledig ineffectief en zal de migratiecrises verergeren.",
         partyId: 7,
         id: 1,
       },
@@ -3265,27 +3319,27 @@ export default [
         id: 2,
       },
       {
-        text: "noodzakelijk om de controle over onze buitengrenzen te herwinnen en de migratiedruk naar de EU te verminderen",
+        text: "Noodzakelijk om de controle over onze buitengrenzen te herwinnen en de migratiedruk naar de EU te verminderen",
         partyId: 1,
         id: 3,
       },
       {
-        text: "een gemeenschappelijk en duurzaam Europees beleid",
+        text: "Een gemeenschappelijk en duurzaam Europees beleid",
         partyId: 3,
         id: 4,
       },
       {
-        text: "in staat om tot haalbare en gezamenlijke oplossingen te komen op het gebied van migratie en asiel",
+        text: "In staat om tot haalbare en gezamenlijke oplossingen te komen op het gebied van migratie en asiel",
         partyId: 2,
         id: 5,
       },
       {
-        text: '"onuitvoerbaar en versterkt praktijken die inbreuk maken op de mensenrechten."',
+        text: "Onuitvoerbaar en versterkt praktijken die inbreuk maken op de mensenrechten.",
         partyId: 4,
         id: 6,
       },
       {
-        text: '"tekent het einde van het individuele recht op asiel in de EU"',
+        text: "Tekent het einde van het individuele recht op asiel in de EU",
         partyId: 6,
         id: 7,
       },
@@ -3296,6 +3350,7 @@ export default [
     id: 71,
     sources:
       "https://www.consilium.europa.eu/fr/press/press-releases/2023/12/20/the-council-and-the-european-parliament-reach-breakthrough-in-reform-of-eu-asylum-and-migration-system/",
+    express: false,
   },
   {
     question: "Moeten asielprocedures worden vergemakkelijkt?",
@@ -3342,22 +3397,23 @@ export default [
     id: 72,
     sources:
       "https://www.consilium.europa.eu/fr/policies/eu-migration-policy/eu-migration-asylum-reform-pact/asylum-procedure/#:~:text=Le%20r%C3%A8glement%20sur%20les%20proc%C3%A9dures%20d'asile%20contient%20une%20r%C3%A8gle,demandes%20sont%20infond%C3%A9es%20ou%20irrecevables.",
+    express: false,
   },
   {
     question: "Het Europese beheer van asiel en migratie is ...",
     answers: [
       {
-        text: "rampzalig, de EU is niet in staat om haar externe grenzen te controleren en te beveiligen.",
+        text: "Rampzalig, de EU is niet in staat om haar externe grenzen te controleren en te beveiligen.",
         partyId: 7,
         id: 1,
       },
       {
-        text: "rampzalig, we moeten voorkomen dat migranten uit Afrika vertrekken die geen recht op asiel zullen hebben",
+        text: "Rampzalig, we moeten voorkomen dat migranten uit Afrika vertrekken die geen recht op asiel zullen hebben",
         partyId: 5,
         id: 2,
       },
       {
-        text: "Gapend, er is een hervorming van het Dublin-systeem nodig.",
+        text: "Gefragmenteerd, er is een hervorming van het Dublin-systeem nodig.",
         partyId: 1,
         id: 3,
       },
@@ -3367,7 +3423,7 @@ export default [
         id: 4,
       },
       {
-        text: "onvolledig, er is een solidariteitsmechanisme nodig dat gericht is op herlocalisatie en voorkeur van personen",
+        text: "Onvolledig, er is een solidariteitsmechanisme nodig dat gericht is op herlocalisatie en voorkeur van personen",
         partyId: 2,
         id: 5,
       },
@@ -3377,7 +3433,7 @@ export default [
         id: 6,
       },
       {
-        text: '- "inefficiënt, Europa slaagt er niet in om solidariteit, bescherming van de landen van eerste binnenkomst en het recht op asiel te waarborgen."',
+        text: "Inefficiënt, Europa slaagt er niet in om solidariteit, bescherming van de landen van eerste binnenkomst en het recht op asiel te waarborgen.",
         partyId: 6,
         id: 7,
       },
@@ -3388,43 +3444,43 @@ export default [
     id: 73,
     sources:
       "https://www.consilium.europa.eu/fr/policies/eu-migration-policy/eu-migration-asylum-reform-pact/asylum-migration-management/#:~:text=r%C3%A8gles%20de%20Dublin-,Le%20r%C3%A8glement%20relatif%20%C3%A0%20la%20gestion%20de%20l'asile%20et,et%20durable%20%C3%A0%20long%20terme.",
-    express: true,
+    express: 1,
   },
   {
     question: "Het filteren van migranten zonder verblijfsvergunning ...",
     answers: [
       {
-        text: '"zal massa-immigratie mogelijk maken en strenger moeten zijn."',
+        text: "Zal massa-immigratie mogelijk maken en strenger moeten zijn.",
         partyId: 7,
         id: 1,
       },
       {
-        text: '"moet worden aangevuld met strengere controles aan de grenzen."',
+        text: "Moet worden aangevuld met strengere controles aan de grenzen.",
         partyId: 5,
         id: 2,
       },
       {
-        text: "Het is nodig om een betere opvang van onregelmatige migranten aan de buitengrenzen van de EU mogelijk te maken.",
+        text: "Is nodig om een betere opvang van onregelmatige migranten aan de buitengrenzen van de EU mogelijk te maken.",
         partyId: 1,
         id: 3,
       },
       {
-        text: "garandeert een snelle verzameling van informatie en stelt geharmoniseerde regels op voor nieuwkomers.",
+        text: "Garandeert een snelle verzameling van informatie en stelt geharmoniseerde regels op voor nieuwkomers.",
         partyId: 3,
         id: 4,
       },
       {
-        text: "Het zal mogelijk maken om elke persoon die op onregelmatige wijze de EU binnenkomt te registreren en controleren, terwijl de geldende asielgaranties worden gewaarborgd.",
+        text: "Zal het mogelijk maken om elke persoon die op onregelmatige wijze de EU binnenkomt te registreren en controleren, terwijl de geldende asielgaranties worden gewaarborgd.",
         partyId: 2,
         id: 5,
       },
       {
-        text: "risico op een toename van etnisch profileren en raciale discriminatie veroorzaken.",
+        text: "Is een risico op een toename van etnisch profileren en raciale discriminatie veroorzaken.",
         partyId: 4,
         id: 6,
       },
       {
-        text: "Dit zal elke aanvrager in staat stellen begeleid te worden in het kader van de grensprocedure.",
+        text: "Zal elke aanvrager in staat stellen begeleid te worden in het kader van de grensprocedure.",
         partyId: 6,
         id: 7,
       },
@@ -3435,6 +3491,7 @@ export default [
     id: 74,
     sources:
       "https://eur-lex.europa.eu/legal-content/FR/TXT/HTML/?uri=CELEX:52020PC0612#:~:text=L%27article%204%20pr%C3%A9voit%20que,remplit%20les%20conditions%20d%27entr%C3%A9e.",
+    express: false,
   },
   {
     question:
@@ -3482,6 +3539,7 @@ export default [
     id: 75,
     sources:
       "https://www.edps.europa.eu/data-protection/european-it-systems/eurodac_fr",
+    express: false,
   },
   {
     question:
@@ -3503,7 +3561,7 @@ export default [
         id: 3,
       },
       {
-        text: "Er moet meer solidariteit zijn tussen lidstaten die onder druk van migratie staan.",
+        text: "Er moet meer solidariteit zijn tussen lidstaten bij de druk van migratie.",
         partyId: 3,
         id: 4,
       },
@@ -3529,7 +3587,7 @@ export default [
     id: 76,
     sources:
       "https://www.touteleurope.eu/societe/pacte-migratoire-europeen-en-s-accordant-sur-le-mecanisme-de-crise-les-etats-membres-entretiennent-l-espoir-d-une-conclusion-d-ici-quelques-mois/",
-    express: true,
+    express: 1,
   },
   {
     question: "Zijn migratieakkoorden een duurzame oplossing?",
@@ -3560,7 +3618,7 @@ export default [
         id: 5,
       },
       {
-        text: '"Deze akkoorden zullen nooit leiden tot minder migratie en schenden onze waarden."',
+        text: "Deze akkoorden zullen nooit leiden tot minder migratie en schenden onze waarden.",
         partyId: 4,
         id: 6,
       },
@@ -3576,27 +3634,28 @@ export default [
     id: 77,
     sources:
       "https://www.europarl.europa.eu/legislative-train/theme-promoting-our-european-way-of-life/file-mff-asylum-and-migration-fund",
+    express: false,
   },
   {
     question: "Een hervorming van de Schengenzone is ...",
     answers: [
       {
-        text: "primordiaal, moet de focus liggen op de bescherming van de externe grenzen.",
+        text: "Primordiaal, moet de focus liggen op de bescherming van de externe grenzen.",
         partyId: 7,
         id: 1,
       },
       {
-        text: "essentieel is om te focussen op de bescherming van de externe grenzen.",
+        text: "Essentieel om te focussen op de bescherming van de externe grenzen.",
         partyId: 5,
         id: 2,
       },
       {
-        text: '"nodig, de integratie van Roemenië en Bulgarije zal ons helpen onze externe grenzen beter te beschermen."',
+        text: "Nodig, de integratie van Roemenië en Bulgarije zal ons helpen onze externe grenzen beter te beschermen.",
         partyId: 1,
         id: 3,
       },
       {
-        text: "nuttig, het zal de veerkracht van Schengen versterken tegen de huidige uitdagingen.",
+        text: "Nuttig, het zal de veerkracht van Schengen versterken tegen de huidige uitdagingen.",
         partyId: 3,
         id: 4,
       },
@@ -3606,12 +3665,12 @@ export default [
         id: 5,
       },
       {
-        text: "aanmoedigend, het is van het grootste belang om de vrije circulatie van personen te behouden.",
+        text: "Aanmoedigend, het is van het grootste belang om de vrije circulatie van personen te behouden.",
         partyId: 4,
         id: 6,
       },
       {
-        text: "gevaarlijk, dit zou de vrijheid van verkeer van personen ernstig kunnen beïnvloeden.",
+        text: "Gevaarlijk, dit zou de vrijheid van verkeer van personen ernstig kunnen beïnvloeden.",
         partyId: 6,
         id: 7,
       },
@@ -3622,6 +3681,7 @@ export default [
     id: 78,
     sources:
       "https://www.europarl.europa.eu/legislative-train/theme-promoting-our-european-way-of-life/file-revision-of-schengen-evaluation-mechanism",
+    express: false,
   },
   {
     question: "Beheert het Frontex-agentschap de buitengrenzen van de EU goed?",
@@ -3657,7 +3717,7 @@ export default [
         id: 6,
       },
       {
-        text: '"Frontex moet worden afgeschaft."',
+        text: "Frontex moet worden afgeschaft.",
         partyId: 6,
         id: 7,
       },
@@ -3668,7 +3728,7 @@ export default [
     id: 79,
     sources:
       "https://european-union.europa.eu/institutions-law-budget/institutions-and-bodies/search-all-eu-institutions-and-bodies/frontex_fr",
-    express: true,
+    express: 1,
   },
   {
     question: "Voor een betere opvang van jonge Oekraïense vluchtelingen...",
@@ -3679,32 +3739,32 @@ export default [
         id: 1,
       },
       {
-        text: "Er moet een speciaal fonds worden gecreëerd.",
+        text: "Moet er een speciaal fonds worden gecreëerd.",
         partyId: 5,
         id: 2,
       },
       {
-        text: "Er moet een efficiënt registratiesysteem voor kinderen worden gecreëerd.",
+        text: "Moet er een efficiënt registratiesysteem voor kinderen worden gecreëerd.",
         partyId: 1,
         id: 3,
       },
       {
-        text: "Het registratieproces moet worden versterkt.",
+        text: "Moet het registratieproces worden versterkt.",
         partyId: 3,
         id: 4,
       },
       {
-        text: "We moeten onze belangrijke humanitaire hulp voortzetten.",
+        text: "Moeten we onze belangrijke humanitaire hulp voortzetten.",
         partyId: 2,
         id: 5,
       },
       {
-        text: "Er is een beleid nodig dat gebaseerd is op gastvrijheid, solidariteit en doordrenkt is met menselijkheid.",
+        text: "Is er een beleid nodig dat gebaseerd is op gastvrijheid, solidariteit en doordrenkt is met menselijkheid.",
         partyId: 4,
         id: 6,
       },
       {
-        text: "Er is bescherming nodig voor alle vluchtelingenkinderen.",
+        text: "Is er bescherming nodig voor alle vluchtelingenkinderen.",
         partyId: 6,
         id: 7,
       },
@@ -3715,43 +3775,44 @@ export default [
     id: 80,
     sources:
       "https://eu-solidarity-ukraine.ec.europa.eu/information-people-fleeing-war-ukraine/fleeing-ukraine-protection-children_fr#:~:text=Tous%20les%20enfants%20(c'est,'entr%C3%A9e%20dans%20l'UE.",
+    express: false,
   },
   {
     question:
       "Geconfronteerd met de vergrijzing van de Europese bevolking is het nodig om...",
     answers: [
       {
-        text: "het geboortecijfer ondersteunen om de effecten van de vergrijzing van de bevolking te verminderen",
+        text: "Het geboortecijfer te ondersteunen om de effecten van de vergrijzing van de bevolking te verminderen",
         partyId: 7,
         id: 1,
       },
       {
-        text: "is een grote uitdaging die pragmatisch moet worden aangepakt tegen de linkse ideologie",
+        text: "De vergrijzing is een grote uitdaging die pragmatisch moet worden aangepakt tegen de linkse ideologie",
         partyId: 5,
         id: 2,
       },
       {
-        text: "investeren in menselijke hulpbronnen om zieke en oudere mensen beter te verzorgen",
+        text: "Te investeren in menselijke hulpbronnen om zieke en oudere mensen beter te verzorgen",
         partyId: 1,
         id: 3,
       },
       {
-        text: "het creëren van gunstige omstandigheden voor actief en gezond ouder worden",
+        text: "Gunstige omstandigheden te creëren voor actief en gezond ouder worden",
         partyId: 3,
         id: 4,
       },
       {
-        text: "Let erop te letten dat het volledige respect voor de rechten van vrouwen niet wordt vergeten.",
+        text: "Erop te letten dat het volledige respect voor de rechten van vrouwen niet wordt vergeten.",
         partyId: 2,
         id: 5,
       },
       {
-        text: "zich richten op kleinschalige en lokale zorg.",
+        text: "Te richten op kleinschalige en lokale zorg.",
         partyId: 4,
         id: 6,
       },
       {
-        text: '"een recht op rust instellen om langdurige ziekten te beperken"',
+        text: "Een recht op rust in te stellen om langdurige ziekten te beperken",
         partyId: 6,
         id: 7,
       },
@@ -3762,19 +3823,19 @@ export default [
     id: 81,
     sources:
       "https://www.consilium.europa.eu/fr/press/press-releases/2021/06/18/fiscal-sustainability-conclusions-on-challenges-arising-from-an-ageing-population/",
-    express: true,
+    express: 1,
   },
   {
     question:
       "Het optreden van de EU op het gebied van onderwijs moet gericht zijn op",
     answers: [
       {
-        text: "niets, het valt niet onder zijn bevoegdheid",
+        text: "Niets, het valt niet onder zijn bevoegdheid",
         partyId: 7,
         id: 1,
       },
       {
-        text: 'het behoud van de soevereiniteit van de lidstaten om elke vorm van indoctrinatie te vermijden"',
+        text: "Het behoud van de soevereiniteit van de lidstaten om elke vorm van indoctrinatie te vermijden",
         partyId: 5,
         id: 2,
       },
@@ -3784,22 +3845,22 @@ export default [
         id: 3,
       },
       {
-        text: "De ontwikkeling van individuele accounts voor toegankelijke en flexibele training.",
+        text: "De ontwikkeling van individuele benaderingen voor toegankelijke en flexibele training.",
         partyId: 3,
         id: 4,
       },
       {
-        text: "erkenning van kwalificaties en het einde van onbetaalde stages",
+        text: "Erkenning van kwalificaties en het einde van onbetaalde stages",
         partyId: 2,
         id: 5,
       },
       {
-        text: "de promotie van een inclusieve, groene en digitale continue opleiding",
+        text: "De promotie van een inclusieve, groene en digitale continue opleiding",
         partyId: 4,
         id: 6,
       },
       {
-        text: "het bevorderen van minderheidstalen in de Unie",
+        text: "Het bevorderen van minderheidstalen in de Unie",
         partyId: 6,
         id: 7,
       },
@@ -3809,42 +3870,43 @@ export default [
       'Door het initiatief "Europese ruimte" probeert de Europese Unie de samenwerking tussen staten op het gebied van onderwijs te bevorderen. Het doel is om de mobiliteit van studenten te versterken, door partnerschappen tussen faculteiten van lidstaten of door programma\'s zoals Erasmus+. Deze initiatieven worden echter geconfronteerd met diverse uitdagingen, zoals Europese erkenning van kwalificaties, meertaligheid of schooluitval. Onderwijs is uiteindelijk een verticaal onderwerp dat zich bezighoudt met verschillende andere gebieden (zoals economische groei, innovatie, werkloosheid, enz.).',
     id: 82,
     sources: "https://www.consilium.europa.eu/fr/policies/education-area/",
+    express: false,
   },
   {
     question: "De actie voor gendergelijkheid moet leiden tot ...",
     answers: [
       {
-        text: '"het respecteren van het zelfbeschikkingsrecht van vrouwen door onze normen niet op te leggen aan derde landen."',
+        text: "Het respecteren van het zelfbeschikkingsrecht van vrouwen door onze normen niet op te leggen aan derde landen.",
         partyId: 7,
         id: 1,
       },
       {
-        text: '"het bevorderen van het recht en de autonomie van vrouwen zonder een conflict tussen de seksen te creëren."',
+        text: "Het bevorderen van het recht en de autonomie van vrouwen zonder een conflict tussen de seksen te creëren.",
         partyId: 5,
         id: 2,
       },
       {
-        text: "ervoor zorgen dat mannen en vrouwen gelijk worden betaald in Europa",
+        text: "Ervoor zorgen dat mannen en vrouwen gelijk worden betaald in Europa",
         partyId: 1,
         id: 3,
       },
       {
-        text: "het verdedigen van de rechten en vrijheden van vrouwen als een prioriteit van het buitenlands beleid van de EU",
+        text: "Het verdedigen van de rechten en vrijheden van vrouwen als een prioriteit van het buitenlands beleid van de EU",
         partyId: 3,
         id: 4,
       },
       {
-        text: '"het bevorderen van toegang tot gezondheidszorg en seksuele en reproductieve rechten over de hele wereld"',
+        text: "Het bevorderen van toegang tot gezondheidszorg en seksuele en reproductieve rechten over de hele wereld",
         partyId: 2,
         id: 5,
       },
       {
-        text: "ervoor zorgen dat iedereen recht heeft op onderwijs en reproductieve en seksuele gezondheidszorg.",
+        text: "Recht op onderwijs en reproductieve en seksuele gezondheidszorg voor iedereen.",
         partyId: 4,
         id: 6,
       },
       {
-        text: "het versterken van de vertegenwoordiging van vrouwen door het aannemen van een transformatieve intersectionele aanpak",
+        text: "Het versterken van de vertegenwoordiging van vrouwen door het aannemen van een transformatieve intersectionele aanpak",
         partyId: 6,
         id: 7,
       },
@@ -3854,6 +3916,7 @@ export default [
       'Gendergelijkheid is een fundamenteel beginsel van de Europese Unie dat wordt erkend in artikel 2 van het Verdrag betreffende de Europese Unie (VEU). Dit wordt geïmplementeerd in verschillende programma\'s, zoals "burgers, gelijkheid, rechten en waarden" (2021-2027), een initiatief van de Europese Unie dat tot doel heeft de fundamentele rechten te bevorderen en te beschermen, of het GAP III dat gendergelijkheid en de empowerment van vrouwen bevordert in het externe optreden van de EU. Gemiddeld verdienen vrouwen in Europa 16% minder dan mannen, bekleden slechts 29% van de topfuncties in grote bedrijven en zijn slechts 32% van de leden van nationale parlementen.',
     id: 83,
     sources: "https://ec.europa.eu/commission/presscorner/detail/en/IP_20_2184",
+    express: false,
   },
   {
     question: "Welk doel moet het Erasmus-programma nastreven?",
@@ -3864,22 +3927,22 @@ export default [
         id: 1,
       },
       {
-        text: '"Meer Europese universiteiten creëren en het programma inclusiever maken"',
+        text: "Meer Europese universiteiten creëren en het programma inclusiever maken",
         partyId: 5,
         id: 2,
       },
       {
-        text: '"Meer publiek bereiken en het Europese gevoel verdiepen"',
+        text: "Meer publiek bereiken en het Europese gevoel verdiepen",
         partyId: 1,
         id: 3,
       },
       {
-        text: "meer inclusiviteit door discriminatie op basis van sociale status of een handicap te bestrijden.",
+        text: "Meer inclusiviteit door discriminatie op basis van sociale status of een handicap te bestrijden.",
         partyId: 3,
         id: 4,
       },
       {
-        text: "Zich openstellen voor professionele programma's en het ontdekken van Europa mogelijk maken.",
+        text: "Het openstellen voor professionele programma's en het ontdekken van Europa mogelijk maken.",
         partyId: 2,
         id: 5,
       },
@@ -3889,7 +3952,7 @@ export default [
         id: 6,
       },
       {
-        text: '"het programma inclusiever maken voor de meest kwetsbare groepen"',
+        text: "Het programma inclusiever maken voor de meest kwetsbare groepen",
         partyId: 6,
         id: 7,
       },
@@ -3900,24 +3963,24 @@ export default [
     id: 84,
     sources:
       "https://www.consilium.europa.eu/fr/policies/erasmus-plus-programme/",
-    express: true,
+    express: 1,
   },
   {
     question:
       "De verklaring van de EU als een zone van vrijheid voor LGBTIQ...",
     answers: [
       {
-        text: "overeen met een ideologische logica die schadelijk is voor het gezinsmodel",
+        text: "Komt overeen met een ideologische logica die schadelijk is voor het gezinsmodel",
         partyId: 7,
         id: 1,
       },
       {
-        text: "overschrijdt de bevoegdheid van de EU op het gebied van huwelijk en gezin",
+        text: "oOverschrijdt de bevoegdheid van de EU op het gebied van huwelijk en gezin",
         partyId: 5,
         id: 2,
       },
       {
-        text: "is het signaal dat Europa een vrijheidszone vertegenwoordigt voor iedereen",
+        text: "Is het signaal dat Europa een vrijheidszone vertegenwoordigt voor iedereen",
         partyId: 1,
         id: 3,
       },
@@ -3927,12 +3990,12 @@ export default [
         id: 4,
       },
       {
-        text: "verzekert de verdediging van rechten tegen de criminalisering van extreemrechts",
+        text: "Verzekert de verdediging van rechten tegen de criminalisering van extreemrechts",
         partyId: 2,
         id: 5,
       },
       {
-        text: "is slechts een eerste stap die gevolgd moet worden door sterkere effecten",
+        text: "Is slechts een eerste stap die gevolgd moet worden door sterkere maatregelen",
         partyId: 4,
         id: 6,
       },
@@ -3948,12 +4011,13 @@ export default [
     id: 85,
     sources:
       "https://www.europarl.europa.eu/news/fr/press-room/20210304IPR99219/le-parlement-declare-l-union-europeenne-zone-de-liberte-lgbtiq",
+    express: false,
   },
   {
     question: "De steun van Europa aan kunstenaars...",
     answers: [
       {
-        text: "is ontoereikend en zou meer geld moeten toewijzen aan KMO's",
+        text: "Is ontoereikend en zou meer geld moeten toewijzen aan KMO's",
         partyId: 7,
         id: 1,
       },
@@ -3968,22 +4032,22 @@ export default [
         id: 3,
       },
       {
-        text: "moet een Europees cultuurbeleid vormen door de bevoegdheden van de EU op dit gebied uit te breiden",
+        text: "Moet een Europees cultuurbeleid vormen door de bevoegdheden van de EU op dit gebied uit te breiden",
         partyId: 3,
         id: 4,
       },
       {
-        text: "is nog steeds onvoldoende, er moet 2% van het herstelplan aan cultuur worden toegewezen.",
+        text: "Is nog steeds onvoldoende, er moet 2% van het herstelplan aan cultuur worden toegewezen.",
         partyId: 2,
         id: 5,
       },
       {
-        text: '"moet hun artistieke vrijheid beschermen en hen een inkomen en sociale zekerheid garanderen"',
+        text: "Moet hun artistieke vrijheid beschermen en hen een inkomen en sociale zekerheid garanderen",
         partyId: 4,
         id: 6,
       },
       {
-        text: "is onvoldoende en moet inclusiever worden op het gebied van geslacht",
+        text: "Is onvoldoende en moet inclusiever worden op het gebied van gender",
         partyId: 6,
         id: 7,
       },
@@ -3994,12 +4058,13 @@ export default [
     id: 86,
     sources:
       "https://culture.ec.europa.eu/fr/creative-europe/about-the-creative-europe-programme",
+    express: false,
   },
   {
-    question: "Het Europees Jaar van de Jeugd moet",
+    question: "Het Europees Jaar van de Jeugd moet...",
     answers: [
       {
-        text: "alle jonge Europeanen te raadplegen, niet alleen de stedelijke en burgerlijke jeugd",
+        text: "Alle jonge Europeanen raadplegen, niet alleen de stedelijke jeugd en jeugd van de burgerij",
         partyId: 7,
         id: 1,
       },
@@ -4009,27 +4074,27 @@ export default [
         id: 2,
       },
       {
-        text: "leiden tot acties voor een betere politieke participatie van jongeren",
+        text: "Leiden tot acties voor een betere politieke participatie van jongeren",
         partyId: 1,
         id: 3,
       },
       {
-        text: "uitkomen op concrete resultaten met betrekking tot de raadpleging van jongeren, het vergoeden van stages en geestelijke gezondheid",
+        text: "Uitkomen op concrete resultaten met betrekking tot de raadpleging van jongeren, het vergoeden van stages en geestelijke gezondheid",
         partyId: 3,
         id: 4,
       },
       {
-        text: "het vertrekpunt zijn van een inclusief, groen en gelijkheidsbevorderend beleid ten gunste van jongeren.",
+        text: "Het vertrekpunt zijn van een inclusief, groen en gelijkheidsbevorderend beleid ten gunste van jongeren.",
         partyId: 2,
         id: 5,
       },
       {
-        text: "meer inclusiviteit mogelijk maken door te strijden tegen racisme, discriminatie en gendergerelateerd geweld",
+        text: "Meer inclusiviteit mogelijk maken door te strijden tegen racisme, discriminatie en gendergerelateerd geweld",
         partyId: 4,
         id: 6,
       },
       {
-        text: "uitmonden in een toename van de overheidsuitgaven op het gebied van onderwijs",
+        text: "Uitmonden in een toename van de overheidsuitgaven op het gebied van onderwijs",
         partyId: 6,
         id: 7,
       },
@@ -4039,42 +4104,44 @@ export default [
       "In 2022 riep de Europese Unie het jaar 2022 uit tot het Europese jaar van de jeugd. Dit initiatief heeft tot doel de rol van jongeren in de opbouw van Europa te benadrukken, met de nadruk op de thema's ecologie, inclusiviteit en digitalisering. Ter gelegenheid hiervan werden 13.000 activiteiten georganiseerd in 67 landen, waarbij jongeren werden aangemoedigd om hun mening te uiten op sociale media, debatten en ontmoetingen met politieke leiders te organiseren.",
     id: 87,
     sources: "https://youth.europa.eu/year-of-youth_fr",
+    express: false,
   },
   {
-    question: '"de toegankelijkheid voor mensen met een handicap..."',
+    question:
+      "Prioriteit op het gebied van toegankelijkheid voor mensen met een handicap is...",
     answers: [
       {
-        text: "het vergroten van financiële instrumenten ten gunste van personen met een handicap",
+        text: "Het vergroten van financiële instrumenten ten gunste van personen met een handicap",
         partyId: 7,
         id: 1,
       },
       {
-        text: "het opstellen van een gemeenschappelijke Europese identiteitskaart voor personen met een handicap",
+        text: "Het opstellen van een gemeenschappelijke Europese identiteitskaart voor personen met een handicap",
         partyId: 5,
         id: 2,
       },
       {
-        text: "om voor iedereen een keuze in levensstijl te garanderen en hen een onafhankelijk leven mogelijk te maken",
+        text: "Om voor iedereen een keuze in levensstijl te garanderen en hen een onafhankelijk leven mogelijk te maken",
         partyId: 1,
         id: 3,
       },
       {
-        text: "het waarborgen van de toegankelijkheid van de arbeidsmarkt door antidiscriminatiewetgeving",
+        text: "Het waarborgen van de toegankelijkheid van de arbeidsmarkt door antidiscriminatiewetgeving",
         partyId: 3,
         id: 4,
       },
       {
-        text: "het creëren van gelijke kansen voor onderwijs en werk",
+        text: "Het creëren van gelijke kansen voor onderwijs en werk",
         partyId: 2,
         id: 5,
       },
       {
-        text: '"de rechten van personen met een handicap integreren in alle politieke domeinen"',
+        text: "De rechten van personen met een handicap integreren in alle politieke domeinen",
         partyId: 4,
         id: 6,
       },
       {
-        text: "het toezicht op het gebruik van Europese fondsen bestemd voor personen met een handicap",
+        text: "Het toezicht op het gebruik van Europese fondsen bestemd voor personen met een handicap",
         partyId: 6,
         id: 7,
       },
@@ -4085,42 +4152,43 @@ export default [
     id: 88,
     sources:
       "https://ec.europa.eu/social/main.jsp?catId=1484&langId=fr#:~:text=En%20mars%202021%2C%20la%20Commission,Europe%20et%20dans%20le%20monde.",
+    express: false,
   },
   {
     question: "Het sportbeleid van de Europese Unie moet...",
     answers: [
       {
-        text: '"beperkt zijn omdat het een gebied is dat niet gepolitiseerd mag worden"',
+        text: "Beperkt zijn omdat het een gebied is dat niet gepolitiseerd mag worden",
         partyId: 7,
         id: 1,
       },
       {
-        text: '"moet het traditionele model van sport verdedigen tegen commercialisering en genderideologie"',
+        text: "Moet het traditionele model van sport verdedigen tegen commercialisering en genderideologie",
         partyId: 5,
         id: 2,
       },
       {
-        text: '"Europese waarden ondersteunen en mensenrechten bevorderen tijdens sportevenementen"',
+        text: "Europese waarden ondersteunen en mensenrechten bevorderen tijdens sportevenementen",
         partyId: 1,
         id: 3,
       },
       {
-        text: "het verzekeren van sociale bescherming voor professionele atleten en het sector meer egalitair maken",
+        text: "Het verzekeren van sociale bescherming voor professionele atleten en het sector meer egalitair maken",
         partyId: 3,
         id: 4,
       },
       {
-        text: "strijden tegen privatisering en commercialisering om gemakkelijke toegang tot sport te garanderen",
+        text: "Strijden tegen privatisering en commercialisering om gemakkelijke toegang tot sport te garanderen",
         partyId: 2,
         id: 5,
       },
       {
-        text: '"controleren van de commerciële belangen van sport en het bevorderen van sportbeoefening"',
+        text: "De commerciële belangen van sport onder controle houden en sportbeoefening bevorderen",
         partyId: 4,
         id: 6,
       },
       {
-        text: "ontwikkeld worden omdat het een sleutel-element is van sociale inclusie en welzijn",
+        text: "Ontwikkeld worden omdat het een sleutel-element is van sociale inclusie en welzijn",
         partyId: 6,
         id: 7,
       },
@@ -4130,6 +4198,7 @@ export default [
       "Het domein van sport is een van de bevoegdheden van de Europese Unie sinds het Verdrag van Lissabon (2009). Het heeft belangrijke implicaties op het gebied van volksgezondheid, economische ontwikkeling en soft power. Europese initiatieven richten zich op de integriteit van sport door sociale inclusie te bevorderen via de promotie van initiatieven en programma's zoals Erasmus+. Het Europees Parlement ontwikkelt beleid op het gebied van gendergelijkheid en corruptiebestrijding. De promotie van sport omvat ook de regulering van e-sport, waarbij wordt gelet op de ontwikkeling en integriteit ervan.",
     id: 89,
     sources: "https://www.europarl.europa.eu/factsheets/fr/sheet/143/le-sport",
+    express: false,
   },
   {
     question: "Het Europese cultureel erfgoed is",
@@ -4140,12 +4209,12 @@ export default [
         id: 1,
       },
       {
-        text: '"Een onschatbare bron die moet worden beschermd en gefinancierd voor toekomstige generaties"',
+        text: "Een onschatbare bron die moet worden beschermd en gefinancierd voor toekomstige generaties",
         partyId: 5,
         id: 2,
       },
       {
-        text: "een identiteit en een economisch hulpmiddel om te beschermen",
+        text: "Een identiteit en een economisch hulpmiddel om te beschermen",
         partyId: 1,
         id: 3,
       },
@@ -4155,17 +4224,17 @@ export default [
         id: 4,
       },
       {
-        text: '"op weg naar digitalisering en versnelling van de actie van de Unie"',
+        text: "Op weg naar digitalisering en versnelling van de actie van de Unie",
         partyId: 2,
         id: 5,
       },
       {
-        text: "een universeel en multicultureel gemeenschappelijk goed, dat ons dwingt om onze geschiedenis te heroverwegen.",
+        text: "Een universeel en multicultureel gemeenschappelijk goed, dat ons dwingt om onze geschiedenis te heroverwegen.",
         partyId: 4,
         id: 6,
       },
       {
-        text: '"Onze identiteit moet beschermd worden, maar moet zich aanpassen aan de digitale en ecologische overgang."',
+        text: "Een identiteit dat beschermd moet worden, maar zich moet aanpassen aan de digitale en ecologische overgang.",
         partyId: 6,
         id: 7,
       },
@@ -4176,43 +4245,43 @@ export default [
     id: 90,
     sources:
       "https://culture.ec.europa.eu/fr/cultural-heritage/eu-policy-for-cultural-heritage/eu-competences-in-cultural-heritage",
-    express: true,
+    express: 1,
   },
   {
-    question: "Het beheer van de Covid-crisis door de EU heeft...",
+    question: "Het beleid van de Covid-crisis door de EU...",
     answers: [
       {
-        text: 'gebrek aan transparantie bij de aankoop van vaccins en met het COVID-certificaat"',
+        text: "Heeft gebrek aan transparantie aangetoond bij de aankoop van vaccins en met het COVID-certificaat",
         partyId: 7,
         id: 1,
       },
       {
-        text: "werd gekenmerkt door corruptie bij het onderhandelen over de aankoopcontracten voor vaccins",
+        text: "Werd gekenmerkt door corruptie bij het onderhandelen over de aankoopcontracten voor vaccins",
         partyId: 5,
         id: 2,
       },
       {
-        text: "mislukking in coördinatie maar heeft zich herpakt met de groepsaankoop van vaccins",
+        text: "Was een mislukking in coördinatie maar heeft zich herpakt met de groepsaankoop van vaccins",
         partyId: 1,
         id: 3,
       },
       {
-        text: "bewezen dat ze niet voldoende voorbereid was, maar dat je kunt laten zien dat je kunt reageren",
+        text: "Bewees dat ze niet voldoende voorbereid was, maar dat je kunt laten zien dat je kunt reageren",
         partyId: 3,
         id: 4,
       },
       {
-        text: '"was ineffectief door het gebrek aan deskundigheid van de EU op het gebied van gezondheid"',
+        text: "Was ineffectief door het gebrek aan deskundigheid van de EU op het gebied van gezondheid",
         partyId: 2,
         id: 5,
       },
       {
-        text: '"ontkend het recht op toegang tot zorg om de farmaceutische industrie te beschermen"',
+        text: "Weigerde het recht op toegang tot zorg om de farmaceutische industrie te beschermen",
         partyId: 4,
         id: 6,
       },
       {
-        text: '"bevoorrecht de belangen van de farmaceutische industrie ten koste van het algemeen belang"',
+        text: "Bevoorrechtte de belangen van de farmaceutische industrie ten koste van het algemeen belang",
         partyId: 6,
         id: 7,
       },
@@ -4222,43 +4291,43 @@ export default [
       "COVID-19 is in december 2019 ontstaan in Wuhan, China. In maart 2020 hadden alle lidstaten van de EU gevallen van COVID-19 gemeld. De EU reageerde door maatregelen te coördineren met haar lidstaten om de volksgezondheid te beschermen. Prioriteiten waren onder meer het opzetten van digitale vaccinatiecertificaten, hulp bij de repatriëring van 650.000 Europese burgers die vastzaten in derde landen en het toewijzen van aanzienlijke fondsen voor het herstel (1.824 miljard euro voor de periode 2021-2027). Tot slot heeft de EU bijgedragen aan initiatieven zoals COVAX om wereldwijd toegang tot vaccins te vergemakkelijken.",
     id: 91,
     sources: "https://www.consilium.europa.eu/fr/policies/coronavirus/",
-    express: true,
+    express: 1,
   },
   {
-    question: "Het Europese ruimte, gezondheidsgegevens...",
+    question: "De Europese ruimte voor gezondheidgegevens..",
     answers: [
       {
-        text: "belemmert de soevereiniteit van staten",
+        text: "Belemmert de soevereiniteit van staten",
         partyId: 7,
         id: 1,
       },
       {
-        text: "moet een optie voor afmelding bevatten",
+        text: "Moet een optie voor afmelding bevatten",
         partyId: 5,
         id: 2,
       },
       {
-        text: '"zal de kwaliteit van zorg verhogen door efficiënter te zijn"',
+        text: "Zal de kwaliteit van zorg verhogen door efficiënter te zijn",
         partyId: 1,
         id: 3,
       },
       {
-        text: "Het zal de diagnoses verbeteren en op een veilige manier de kosten van gegevens verlagen.",
+        text: "Zal de diagnoses verbeteren en op een veilige manier de kosten van gegevens verlagen.",
         partyId: 3,
         id: 4,
       },
       {
-        text: "Dit zal directe toegang tot informatie mogelijk maken.",
+        text: "Zal directe toegang tot informatie mogelijk maken.",
         partyId: 2,
         id: 5,
       },
       {
-        text: "Het zal de spelregels veranderen voor onderzoek en preventie van gezondheidscrises.",
+        text: "Zal de spelregels veranderen voor onderzoek en preventie van gezondheidscrises.",
         partyId: 4,
         id: 6,
       },
       {
-        text: "moet het recht van patiënten om toegang te hebben tot hun gegevens garanderen",
+        text: "Moet het recht van patiënten om toegang te hebben tot hun gegevens garanderen",
         partyId: 6,
         id: 7,
       },
@@ -4269,32 +4338,33 @@ export default [
     id: 92,
     sources:
       "https://health.ec.europa.eu/ehealth-digital-health-and-care/european-health-data-space_fr",
+    express: false,
   },
   {
-    question: '"De prioriteit op het gebied van gezondheidsbeleid is..."',
+    question: "Prioriteit op het gebied van gezondheidsbeleid is...",
     answers: [
       {
-        text: 'om financiering te verstrekken aan de lidstaten om te investeren in de gezondheid"',
+        text: "Om financiering te verstrekken aan de lidstaten om te investeren in de gezondheid",
         partyId: 7,
         id: 1,
       },
       {
-        text: "het verbeteren van de beschikbaarheid van medicijnen",
+        text: "Het verbeteren van de beschikbaarheid van medicijnen",
         partyId: 5,
         id: 2,
       },
       {
-        text: "investeren in onderzoek, met name in vaccins.",
+        text: "Investeren in onderzoek, met name in vaccins.",
         partyId: 1,
         id: 3,
       },
       {
-        text: "de opleiding in het bijzonder voor de preventie van chronisch zieken",
+        text: "Opleiding in preventie, met name voor chronisch zieken",
         partyId: 3,
         id: 4,
       },
       {
-        text: '"ziektes voorkomen en ongelijkheden verminderen"',
+        text: "Ziektes voorkomen en ongelijkheden verminderen",
         partyId: 2,
         id: 5,
       },
@@ -4304,7 +4374,7 @@ export default [
         id: 6,
       },
       {
-        text: "versterk de samenwerking tussen staten zonder deze bevoegdheid over te dragen aan de EU",
+        text: "De samenwerking tussen staten versterken zonder deze bevoegdheid over te dragen aan de EU",
         partyId: 6,
         id: 7,
       },
@@ -4315,42 +4385,43 @@ export default [
     id: 93,
     sources:
       "https://www.consilium.europa.eu/fr/policies/eu-health-policy/#:~:text=am%C3%A9liorer%20et%20renforcer%20la%20sant%C3%A9,l'utilisation%20efficace%20des%20ressources",
+    express: false,
   },
   {
     question: "Op mondiaal niveau moet de EU-actie op gezondheidsgebied...",
     answers: [
       {
-        text: "stop met het verrijken van grote farmaceutische bedrijven",
+        text: "Stoppen met het verrijken van grote farmaceutische bedrijven",
         partyId: 7,
         id: 1,
       },
       {
-        text: '"de partnerschappen met de rest van de wereld versterken zodat de geïnvesteerde fondsen effectief zijn"',
+        text: "De partnerschappen met de rest van de wereld versterken zodat de geïnvesteerde fondsen effectief zijn",
         partyId: 5,
         id: 2,
       },
       {
-        text: '"de fundamentele oorzaken van slechte gezondheid elimineren"',
+        text: "De fundamentele oorzaken van slechte gezondheid elimineren",
         partyId: 1,
         id: 3,
       },
       {
-        text: "zich eerst richten op de gezondheid van Europeanen",
+        text: "Zich eerst richten op de gezondheid van Europeanen",
         partyId: 3,
         id: 4,
       },
       {
-        text: "het waarborgen van gendergelijkheid in de toegang tot gezondheidszorg",
+        text: "Het waarborgen van gendergelijkheid in de toegang tot gezondheidszorg",
         partyId: 2,
         id: 5,
       },
       {
-        text: '"solidariteit tonen zonder grenzen"',
+        text: "Solidariteit tonen zonder grenzen",
         partyId: 4,
         id: 6,
       },
       {
-        text: "ervoor zorgen dat arme landen toegang hebben tot gezondheidstechnologieën",
+        text: "Er voor zorgen dat arme landen toegang hebben tot gezondheidstechnologieën",
         partyId: 6,
         id: 7,
       },
@@ -4361,43 +4432,44 @@ export default [
     id: 94,
     sources:
       "https://ec.europa.eu/commission/presscorner/detail/fr/qanda_22_7126",
+    express: false,
   },
   {
     question:
       "De actie van de EU voor de rechten van vrouwen heeft als doel...",
     answers: [
       {
-        text: "vrouwen ondersteunen zodat ze geen abortus hoeven te plegen",
+        text: "Vrouwen ondersteunen zodat ze geen abortus hoeven te plegen",
         partyId: 7,
         id: 1,
       },
       {
-        text: '"voor het recht op leven zijn in plaats van abortus"',
+        text: "Het recht op leven te beschermen in plaats van het recht op abortus",
         partyId: 5,
         id: 2,
       },
       {
-        text: "inzetten op seksuele voorlichting en anticonceptie",
+        text: "Inzetten op seksuele voorlichting en anticonceptie",
         partyId: 1,
         id: 3,
       },
       {
-        text: "abortus legaliseren om een fundamenteel recht te garanderen voor het leven van vrouwen",
+        text: "Abortus legaliseren om een fundamenteel recht te garanderen voor het leven van vrouwen",
         partyId: 3,
         id: 4,
       },
       {
-        text: "het recht op abortus waarborgen",
+        text: "Het recht op abortus waarborgen",
         partyId: 2,
         id: 5,
       },
       {
-        text: "het garanderen van een universeel, legaal en veilig recht op abortus",
+        text: "Het garanderen van een universeel, legaal en veilig recht op abortus",
         partyId: 4,
         id: 6,
       },
       {
-        text: "de volksgezondheidspolitiek versterken, verder dan alleen het recht op abortus.",
+        text: "De volksgezondheidspolitiek versterken, verder dan alleen het recht op abortus.",
         partyId: 6,
         id: 7,
       },
@@ -4408,43 +4480,43 @@ export default [
     id: 95,
     sources:
       "https://www.europarl.europa.eu/news/fr/press-room/20220701IPR34349/inclure-le-droit-a-l-avortement-dans-la-charte-des-droits-fondamentaux-de-l-ue",
-    express: true,
+    express: 1,
   },
   {
     question: "De relatie tussen de EU en de farmaceutische industrie moet...",
     answers: [
       {
-        text: "duurzaam zijn en de veerkracht van de Europese farmaceutische sector versterken",
+        text: "Duurzaam zijn en de veerkracht van de Europese farmaceutische sector versterken",
         partyId: 7,
         id: 1,
       },
       {
-        text: "werken aan het herstellen van de onafhankelijkheid van de medicijnproductie in Europa",
+        text: "Werken aan het herstel van onafhankelijke medicijnproductie in Europa",
         partyId: 5,
         id: 2,
       },
       {
-        text: "ervoor zorgen dat industrieën zich in Europa vestigen om Europees te produceren",
+        text: "Er voor zorgen dat industrieën zich in Europa vestigen om Europees te produceren",
         partyId: 1,
         id: 3,
       },
       {
-        text: "garanderen van eerlijke toegang tot gecontroleerde en betaalbare medicijnen",
+        text: "Eerlijke toegang tot gecontroleerde en betaalbare medicijnen garanderen",
         partyId: 3,
         id: 4,
       },
       {
-        text: '"de onafhankelijkheid van de EU op het gebied van de gezondheidszorg garanderen"',
+        text: "De onafhankelijkheid van de EU op het gebied van de gezondheidszorg garanderen",
         partyId: 2,
         id: 5,
       },
       {
-        text: '"uit het patroon stappen waarin de industrie gesubsidieerd wordt maar vrij haar prijzen kan bepalen"',
+        text: "Uit het patroon stappen waarin de industrie gesubsidieerd wordt maar vrij haar prijzen kan bepalen",
         partyId: 4,
         id: 6,
       },
       {
-        text: "het bieden van versterkte controle op de ondersteuning die het biedt aan farmaceutische bedrijven",
+        text: "Versterkte controle hebben op de ondersteuning die het biedt aan farmaceutische bedrijven",
         partyId: 6,
         id: 7,
       },
@@ -4455,27 +4527,28 @@ export default [
     id: 96,
     sources:
       "https://www.consilium.europa.eu/fr/press/press-releases/2016/06/17/epsco-conclusions-balance-pharmaceutical-system/",
+    express: false,
   },
   {
     question: "Het Europese initiatief voor geestelijke gezondheid...",
     answers: [
       {
-        text: "moet strijden tegen de oorzaken die armoede en toenemende sociale isolatie zijn",
+        text: "Moet strijden tegen de oorzaken, welke armoede en toenemende sociale isolatie zijn",
         partyId: 7,
         id: 1,
       },
       {
-        text: "moet innovatieve en ambitieuze pilotprogramma's creëren",
+        text: "Moet innovatieve en ambitieuze pilotprogramma's creëren",
         partyId: 5,
         id: 2,
       },
       {
-        text: "Het is noodzakelijk om slachtoffers van geestelijke gezondheidsproblemen te beschermen en discriminatie te voorkomen.",
+        text: "Is noodzakelijk om slachtoffers van geestelijke gezondheidsproblemen te beschermen en discriminatie te voorkomen.",
         partyId: 1,
         id: 3,
       },
       {
-        text: "Dit moet zich vertalen in acties op school, vanaf zeer jonge leeftijd.",
+        text: "Moet zich vertalen in acties op school, vanaf zeer jonge leeftijd.",
         partyId: 3,
         id: 4,
       },
@@ -4485,12 +4558,12 @@ export default [
         id: 5,
       },
       {
-        text: "moet zich in de eerste plaats richten tot de LGBTQI+ gemeenschap.",
+        text: "Moet zich in de eerste plaats richten tot de LGBTQI+ gemeenschap.",
         partyId: 4,
         id: 6,
       },
       {
-        text: "Het mag geen last hebben van onderfinanciering, anders zal de toegang tot zorg blijven afnemen.",
+        text: "Mag geen last hebben van onderfinanciering, anders zal de toegang tot zorg blijven afnemen.",
         partyId: 6,
         id: 7,
       },
@@ -4501,43 +4574,44 @@ export default [
     id: 97,
     sources:
       "https://www.europarl.europa.eu/topics/fr/article/20220624STO33809/le-parlement-appelle-a-l-action-pour-proteger-la-sante-mentale",
+    express: false,
   },
   {
     question:
       "De belangrijkste maatstaf van het Europees Sociaal Fonds (ESF) is...",
     answers: [
       {
-        text: "Het is schandalig dat dit plan de migratoire overstroming financiert.",
+        text: "Schandalig aangezien dit massa immigratie financiert.",
         partyId: 7,
         id: 1,
       },
       {
-        text: "dat hij een stabiel wettelijk kader vaststelt voor de medefinanciering van nationale sociale beleidsmaatregelen",
+        text: "Dat het een stabiel wettelijk kader vaststelt voor de medefinanciering van nationale sociale beleidsmaatregelen",
         partyId: 5,
         id: 2,
       },
       {
-        text: "de strijd tegen de armoede van kinderen in de EU",
+        text: "De strijd tegen de armoede van kinderen in de EU",
         partyId: 1,
         id: 3,
       },
       {
-        text: '"de verhoging van de minimale middelen om de meest behoeftigen te ondersteunen."',
+        text: "De verhoging van de minimale middelen om de ergst behoeftigen te ondersteunen.",
         partyId: 3,
         id: 4,
       },
       {
-        text: "de verplichting voor staten met een hoge kinderarmoede om een minimum van de ESF aan deze zaak te besteden",
+        text: "De verplichting voor staten met een hoge kinderarmoede om een minimum van de ESF aan deze zaak te besteden",
         partyId: 2,
         id: 5,
       },
       {
-        text: "de 88 miljard euro voor solidariteit en sociale rechtvaardigheid",
+        text: "De 88 miljard euro voor solidariteit en sociale rechtvaardigheid",
         partyId: 4,
         id: 6,
       },
       {
-        text: "de verplichting om een minimum aan middelen te gebruiken voor sociale inclusie",
+        text: "De verplichting om een minimum aan middelen te gebruiken voor sociale inclusie",
         partyId: 6,
         id: 7,
       },
@@ -4548,42 +4622,43 @@ export default [
     id: 98,
     sources:
       "https://www.consilium.europa.eu/fr/press/press-releases/2021/01/28/european-social-fund-plus-council-and-parliament-reach-a-provisional-deal/",
+    express: false,
   },
   {
     question: "Het arbeidsgezondheidsbeleid moet gericht zijn op",
     answers: [
       {
-        text: "massaal investeren om de veiligheid te waarborgen",
+        text: "Massaal investeren om de veiligheid te waarborgen",
         partyId: 7,
         id: 1,
       },
       {
-        text: '"up-to-date zijn voor digitale en thuiswerken"',
+        text: "Up-to-date zijn voor digitaal- en thuiswerken",
         partyId: 5,
         id: 2,
       },
       {
-        text: '"passen bij de nieuwe trends op de arbeidsmarkt en de nadruk op welzijn"',
+        text: "Passen bij de nieuwe trends op de arbeidsmarkt en de nadruk op welzijn",
         partyId: 1,
         id: 3,
       },
       {
-        text: '"het bereiken van een doel van nul mortaliteit op het werkongevallen"',
+        text: "Het hebben van nul dodelijke ongelukken op de werkvloer",
         partyId: 3,
         id: 4,
       },
       {
-        text: '"risico\'s op psychosociaal gebied voorkomen en het gebruik van AI reguleren"',
+        text: "Risico's op psychosociaal gebied voorkomen en het gebruik van AI reguleren",
         partyId: 2,
         id: 5,
       },
       {
-        text: '"ambitieuzer worden om sterfgevallen op het werk uit te roeien"',
+        text: "Meer ambitie om sterfgevallen op het werk uit te roeien",
         partyId: 4,
         id: 6,
       },
       {
-        text: '"de risico\'s op ziek worden op het werk elimineren"',
+        text: "Het risico om ziek te worden op de werkvloer volledig uitbannen",
         partyId: 6,
         id: 7,
       },
@@ -4593,42 +4668,43 @@ export default [
       "De EU pusht haar lidstaten om eerlijke en veilige arbeidsomstandigheden te bevorderen door werknemers fundamentele rechten te garanderen zoals sociale bescherming. De EU streeft ernaar alle vormen van geweld, discriminatie en pesterijen op de werkvloer uit te roeien, regels voor telewerken in te stellen en ook flexibele werktijden aan te bevelen om stress te verminderen.",
     id: 99,
     sources: "https://www.consilium.europa.eu/fr/policies/protecting-workers/",
+    express: false,
   },
   {
     question: "Een Europese richtlijn over minimumlonen...",
     answers: [
       {
-        text: '"zou de arbeidswetgeving en sociale verworvenheden vernietigen"',
+        text: "Zou de arbeidswetgeving en sociale verworvenheden vernietigen",
         partyId: 7,
         id: 1,
       },
       {
-        text: "moet duidelijk aangeven dat het de Lidstaten zijn die beslissingsbevoegd blijven",
+        text: "Moet duidelijk aangeven dat het de Lidstaten zijn die beslissingsbevoegd blijven",
         partyId: 5,
         id: 2,
       },
       {
-        text: "Het is in strijd met de verdragen en voedt het euroscepticisme in Scandinavië.",
+        text: "Is in strijd met de verdragen en voedt het Euroscepticisme in Scandinavië.",
         partyId: 1,
         id: 3,
       },
       {
-        text: "Dit zorgt ervoor dat alle werknemers in de EU een fatsoenlijke levensstandaard hebben.",
+        text: "Zorgt ervoor dat alle werknemers in de EU een fatsoenlijke levensstandaard hebben.",
         partyId: 3,
         id: 4,
       },
       {
-        text: "Dit zorgt ervoor dat een waardig leven wordt gegarandeerd voor iedereen die werkt.",
+        text: "Zorgt ervoor dat een waardig leven wordt gegarandeerd voor iedereen die werkt.",
         partyId: 2,
         id: 5,
       },
       {
-        text: '"brengt de sociale vooruitgang in Europa tot stand door de armoede op het werk met 10% te verminderen"',
+        text: "Brengt de sociale vooruitgang in Europa tot stand door de armoede op het werk met 10% te verminderen",
         partyId: 4,
         id: 6,
       },
       {
-        text: "moet vakbonden en collectieve arbeidsovereenkomsten versterken",
+        text: "Moet vakbonden en collectieve arbeidsovereenkomsten versterken",
         partyId: 6,
         id: 7,
       },
@@ -4639,6 +4715,6 @@ export default [
     id: 100,
     sources:
       "https://www.europarl.europa.eu/topics/fr/article/20210628STO07263/salaire-minimum-equitable-agir-pour-des-conditions-de-vie-decentes-dans-l-ue#:~:text=Le%20salaire%20minimum%20dans%20l,du%20co%C3%BBt%20de%20la%20vie.",
-    express: true,
+    express: 1,
   },
 ];

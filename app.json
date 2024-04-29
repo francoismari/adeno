@@ -2,7 +2,7 @@
   "expo": {
     "name": "Adeno",
     "slug": "adeno",
-    "version": "1.0.2",
+    "version": "1.0.8",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
     "userInterfaceStyle": "light",
@@ -16,7 +16,7 @@
     ],
     "ios": {
       "supportsTablet": false,
-      "buildNumber": "1",
+      "buildNumber": "2",
       "bundleIdentifier": "com.francoismari.adeno"
     },
     "android": {
@@ -25,7 +25,7 @@
         "backgroundColor": "#ffffff"
       },
       "package": "com.francoismari.adeno",
-      "versionCode": 7
+      "versionCode": 13
     },
     "web": {
       "favicon": "./assets/favicon.png"

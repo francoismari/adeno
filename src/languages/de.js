@@ -2,43 +2,43 @@ export default {
   onboarding: {
     firstScreen: {
       subtitle:
-        "Die App, um dich zur Teilnahme an den Europawahlen 2024 zu bewegen!",
-      firstRow: "Das erste Spiel, das dich für Politik interessiert",
+        "Die App, die dich motiviert, bei den Europawahlen 2024 deine Stimme abzugeben!",
+      firstRow: "Das erste Spiel, das dich für Politik begeistert",
       secondRow:
-        "Finde deine Spitzenkandidatin oder deinen Spitzenkandidaten im Solo-Modus und entdecke die Gesamtrangliste!",
-      thirdRow: "Verfügbar in den 27 EU-Ländern, übersetzt in 24 Sprachen",
+        "Finde deine Spitzenkandidatin oder deinen Spitzenkandidaten im Solo-Modus und entdecke das europaweite Ranking!",
+      thirdRow: "Verfügbar in allen 27 EU-Ländern - übersetzt in 24 Sprachen",
     },
     secondScreen: {
-      title: "Wie funktioniert es?",
+      title: "Wie wird gespielt?",
       multiplayerBox: {
         title: "Multiplayer-Modus",
         description:
-          "Spiele mit deinen Freunden, erstelle Spiele und beantworte Fragen zu den wichtigsten europäischen Themen, um deine und die Positionen deiner Freunde zu sehen!",
+          "Starte eine Runde mit deinen Freunden, gib deine Meinung zu den großen europäischen Themen ab und vergleicht eure Positionen untereinander!",
       },
       soloBox: {
         title: "Solo-Modus",
         description:
-          "Beantworte 100 Fragen zu 10 Themen und bilde dir eine Meinung über die wichtigsten Gruppen im Europäischen Parlament! Du wirst auch sehen, welcher Spitzenkandidat in deinem Land zu dir passt.",
+          "Beantworte 100 Fragen zu 10 Themen und bilde dir eine Meinung über die Fraktionen im Europäischen Parlament! Welche Spitzenkandidatin oder welcher Spitzenkandidat passt zu dir?",
       },
     },
     thirdScreen: {
-      title: "Bevor du anfängst",
+      title: "Bevor es losgeht",
       firstRow: {
         title: "Wir sammeln keine persönlichen Daten.",
         description:
-          "Alle Daten in der App sind anonym und beschränken sich auf das für die Funktion der App unbedingt Notwendige!",
+          "Alle Daten in der App sind anonymisiert und beschränken sich auf das für das Funktionieren der App Notwendige!",
         readChart: "Unsere Datenschutzrichtlinie lesen",
       },
       secondRow: {
-        title: "Adeno ist parteilos, neutral und transparent.",
+        title: "Adeno ist unabhängig, überparteilich und transparent.",
         description:
-          "Adeno ist mit keiner Regierungsorganisation verbunden und ist ein vollständig unabhängiges Projekt.",
+          "Adeno ist mit keiner Regierungsorganisation assoziiert und ist ein vollständig unabhängiges Projekt.",
         readChart: "Unsere Transparenzrichtlinie lesen",
       },
       startButton: "Los geht's!",
       footerText:
-        "Adeno ist ein Bürgerprojekt, erstellt von einem Team von Freiwilligen, ohne Gewinnabsicht, mit dem einzigen Ziel, dich zur Wahl zu bewegen!",
-      psText: "PS: Wir sind Open-Source ✌️",
+        "Adeno ist ein Projekt von Freiwilligen, das keine Gewinnabsichten verfolgt. Unser alleiniges Ziel ist es, dich zur Teilnahme an der Wahl zu motivieren!",
+      psText: "PS: Das Projekt ist Open-Source ✌️",
     },
   },
   home: {
@@ -46,11 +46,11 @@ export default {
     startButtonText: "Starten",
     multiplayerCard: {
       title: "Multiplayer-Modus 🎮",
-      subtitle: "Starte ein Spiel\nund fordere deine Freunde heraus!",
+      subtitle: "Starte eine Runde\nund spiele mit deinen Freunden!",
     },
     soloCard: {
       title: "Solo-Modus 🎯",
-      subtitle: "2 Modi & 100 Fragen\num deinen Spitzenkandidaten zu finden!",
+      subtitle: "2 Modi & 100 Fragen\nFinde deinen Spitzenkandidaten!",
     },
     headListCard: {
       title: "Mein Spitzenkandidat 🇪🇺",
@@ -59,8 +59,13 @@ export default {
       startButtonText: "Los geht's!",
       listNotAvailableTitle: "Dein Spitzenkandidat ist noch nicht verfügbar...",
       listNotAvailableSubtitle:
-        "Du wirst benachrichtigt, wenn deine Partei ihren Spitzenkandidaten in deinem Land bekannt gibt!",
+        "Du wirst benachrichtigt, wenn deine Partei ihren Spitzenkandidaten bekannt gibt!",
       seeAllResultsText: "Alle meine Ergebnisse sehen",
+      easyModeWarning: {
+        title: "Mit dem einfachen Modus",
+        description:
+          "Für genauere Ergebnisse und detaillierte Informationen zu deinen Antworten, verwende den erweiterten Modus!",
+      },
     },
   },
   ranking: {
@@ -70,25 +75,27 @@ export default {
     },
     europeCard: {
       title: "In Europa",
+      description:
+        "Das europäische Gesamtranking wird bald verfügbar sein! Teile Adeno mit deinen Freunden, damit es am repräsentativsten ist 😎",
     },
     shareAppText: "Adeno teilen",
   },
   discoverEU: {
     title: "Entdecke die EU",
     institutionsCard: {
-      title: "Die Institutionen 🇪🇺",
+      title: "Die Europäische Union 🇪🇺",
       subtitle:
         "Entdecke die europäischen Institutionen und ihre Funktionsweise!",
       showAllText: "Alles anzeigen",
     },
     commitCard: {
       title: "Engagiere dich ✊",
-      text: "Die Engagierten! ist ein Verein nach französischem Recht, der im Juni 2017 mit dem Ziel gegründet wurde, junge Menschen zur Beteiligung am städtischen Leben zu ermutigen. Seit fast 6 Jahren fördern die Engagierten verschiedene Formen des Engagements bei jungen Menschen im Alter von 18 bis 35 Jahren, indem sie jede Woche Debatten, Konferenzen, Treffen sowie Besuche in unseren verschiedenen Niederlassungen in mehreren Städten in Frankreich organisieren.",
+      text: "Les Engagés! ist ein eingetragener französischer Verein, der im Juni 2017 mit der Absicht gegründet wurde, das politische Engagement junger Menschen zu fördern. Seit sechs Jahren unterstützt Les Engagés! junge Erwachsene im Alter von 18 bis 35 Jahren bei ihren Projekten. Durch die regelmäßige Organisation und Durchführung von Debatten, Konferenzen, Treffen und Besuchen sind sie in ganz Frankreich aktiv.",
       joinButtonText: "Beitreten",
     },
     informCard: {
       title: "Informiere dich 🗞️",
-      text: "Der Alte Kontinent ist ein Online-Medium, dessen Ziel es ist, über europäische Fragen in der öffentlichen Debatte zu informieren und zu verbreiten, auf YouTube, TikTok und Instagram. Zu diesem Zweck produzieren sie verschiedene Formate wie Interviews, Straßenumfragen, Aktualitätsentschlüsselungen, Debatten, immer rund um europäische Themen. Ab April 2024 wird das Medium die Europawahlen in Frankreich sehr genau verfolgen.",
+      text: "Le Vieux Continent ist ein Online-Medium auf YouTube, Instagram und TikTok, das sich zum Ziel gesetzt hat, europäische Themen in die Öffentlichkeit zu tragen. Um dieses Ziel zu erreichen, erstellt das Team eine Vielzahl von Formaten, darunter Interviews, Straßenumfragen und Analysen aktueller Ereignisse. Ab April 2024 wird das Medium ein besonderes Augenmerk auf die Europawahlen in Frankreich legen.",
       joinButtonText: "Entdecken",
     },
     partnerCard: {
@@ -96,50 +103,49 @@ export default {
     },
   },
   allFiles: {
-    title: "Die Faktenblätter",
-    subtitle: "Um alles über die EU zu verstehen!",
+    title: "Die Steckbriefe",
+    subtitle: "Lerne alles über die EU!",
   },
   allUserResults: {
     title: "Meine Ergebnisse",
-    withAdeno: "Mit Adeno",
-    inSummaryTitle: "Kurz gesagt",
+    withAdeno: "mit Adeno",
+    inSummaryTitle: "Kurz & Knapp",
     shareMyResults: "Meine Ergebnisse teilen",
     seeMoreText: "Mehr sehen",
   },
   selectSoloMode: {
     title: "Solo-Modus",
     expressCard: {
-      title: "Express-Modus ⏱️",
-      subtitle: "30 Fragen, um\ndeinen Spitzenkandidaten zu finden!",
+      title: "Einfacher Modus",
+      subtitle:
+        "25 Fragen, um\ndeinen Spitzenkandidaten zu finden!\n\nHinweis: Der Einfachheit halber verwenden wir in Sätzen die männliche Form, aber wir sprechen alle an!",
     },
     classicCard: {
-      title: "Klassischer Modus 🗳️",
-      subtitle:
-        "Beantworte 100 Fragen und finde ein Ergebnis, das zu deinen Überzeugungen passt!",
+      title: "Klassischer Modus",
+      subtitle: "Beantworte 100 Fragen und finde dein politisches Match!",
     },
   },
   expressMode: {
-    title: "Express-Modus",
-    cardTitle:
-      "Finde die Gruppe, die zu dir passt, indem du 30 Fragen beantwortest!",
+    title: "Einfacher Modus",
+    cardTitle: "Finde in 25 Fragen die Fraktion, die zu dir passt!",
     warningText:
       "Achtung: Für zuverlässigere Ergebnisse und Fragen zu spezifischeren Themen verwende den klassischen Modus!",
     letsGoText: "Los geht's",
   },
   expressResults: {
     title: "Mein Ergebnis",
-    inSummaryTitle: "Kurz gesagt",
+    inSummaryTitle: "Kurz & Knapp",
     continueWithClassicMode: "Mit dem klassischen Modus fortfahren",
     goBack: "Zurück",
   },
   classicMode: {
     randomCard: {
-      title: "Zufällig",
+      title: "Zufällige Auswahl",
       subtitle: "Alle Themen",
     },
   },
   randomQuestionScreen: {
-    title: "Zufällig",
+    title: "Zufällige Auswahl",
     showContextText: "Kontext anzeigen",
     allQuestionsAnswered: "Du hast alle Fragen beantwortet!",
     showResultsText: "Meine Ergebnisse anzeigen",
@@ -151,8 +157,8 @@ export default {
   selectMultiplayerMode: {
     title: "Mehrspieler",
     selectText: "Wähle den Modus,\nder zu dir passt!",
-    onePhone: "Ein Telefon",
-    multiplePhones: "Mehrere Telefone",
+    onePhone: "Auf einem Gerät",
+    multiplePhones: "Auf mehreren Geräten",
   },
   setupOnePhone: {
     title: "Spieler",
@@ -174,9 +180,9 @@ export default {
   },
   multiplayerOnePhoneGame: {
     seconds: "Sekunden",
-    for: "Für",
-    against: "Gegen",
-    indifferent: "Gleichgültig",
+    for: "Dafür",
+    against: "Dagegen",
+    indifferent: "Neutral",
     alert: {
       quitPartyTitle: "Bist du sicher, dass du das Spiel verlassen möchtest?",
       cancel: "Abbrechen",
@@ -184,11 +190,11 @@ export default {
     },
   },
   multiplePhones: {
-    title: "Dein Spitzname",
-    pseudoPlaceholder: "Dein Spitzname",
+    title: "Dein Name",
+    pseudoPlaceholder: "Dein Name",
     createPartyText: "Eine Partie erstellen",
     joinPartyText: "Einer Partie beitreten",
-    waitCreatorText: "Der Ersteller muss das Spiel starten!",
+    waitCreatorText: "Der Spielleiter muss das Spiel starten!",
   },
   gameScreen: {
     title: "Spiel",
@@ -196,18 +202,18 @@ export default {
     startButton: "Starten",
   },
   gameQuestionsScreen: {
-    for: "Für",
-    against: "Gegen",
-    indifferent: "Gleichgültig",
+    for: "Dafür",
+    against: "Dagegen",
+    indifferent: "Neutral",
     waitingForPlayersTitle: "Warten auf andere Spieler!",
     waitingForPlayersSubtitle:
-      "Die Ergebnisse sind zugänglich, sobald jeder fertig ist",
+      "Du siehst die Ergebnisse, sobald deine Mitspieler fertig sind",
   },
   multiplayerResults: {
     title: "Die Ergebnisse",
     youAreTheMost: "du bist am meisten",
     youMatch: "Du passt zu",
-    withList: "mit der Liste von",
+    withList: "zu der Liste von",
     seeNext: "Nächsten sehen",
     resultsFooter: {
       anotherRound: "Eine weitere Runde?",
@@ -261,24 +267,23 @@ export default {
       title: "Solo-Modus",
       resetResultsText: "Meine Ergebnisse zurücksetzen",
       studyInfos: {
-        title: "Nimm an der großen Studie junger Menschen in Europa teil",
+        title: "Nimm an unserer großen europaweiten Studie teil",
         description:
-          "Deine Antworten auf die Fragen im Solo-Modus werden anonym aufgezeichnet und ermöglichen eine umfassende Studie über das Wahlverhalten junger Menschen in Europa, betreut von einem",
-        council:
-          "wissenschaftlichen Rat aus Professoren, Forschern und Intellektuellen",
+          "Deine Antworten auf die Fragen im Solo-Modus werden anonym gespeichert und ermöglichen eine umfassende Studie über das Wahlverhalten junger Menschen in Europa. Betreut wird die Studie von einem",
+        council: "Komitee aus Wissenschaftlerinnen und Wissenschaftlern",
         startButtonText: "An der Studie teilnehmen",
         userParticipates: "Du nimmst an der großen Studie über Europa teil!",
       },
     },
     createdByCard: {
-      title: "Erstellt von",
+      title: "Gegründet von",
       subtitle:
-        "Erstellt von Matthieu Maillard und einem Netzwerk von Freiwilligen in ganz Europa!",
+        "Gegründet von Matthieu Maillard und einem Netzwerk von Freiwilligen aus ganz Europa!",
     },
     incubatedBy: {
-      title: "Inkubiert von",
+      title: "Gefördert durch",
       subtitle:
-        "Inceptio Lab, gegründet im Jahr 2023 und verbunden mit der Föderation Les Engagés!, ist ein Inkubator, der darauf abzielt, unternehmerische Projekte mit Auswirkungen zu fördern, inspiriert vom Erfolg der Anwendung Elyze. Es bietet eine Plattform, um Fähigkeiten in engagierten, innovativen und nachhaltigen Initiativen anzuwenden und gleichzeitig die Beschäftigungsfähigkeit seiner Mitglieder zu fördern.",
+        "Inceptio Lab, gegründet im Jahr 2023 und Teil des Vereins Les Engagés!, ist eine Organisation, die sich darauf konzentriert, Start-Ups mit zivilgesellschaftlichen Zielen zu unterstützen. Inspiriert vom Erfolg der App Elyze, bietet Inceptio Lab ein Netzwerk über das engagierte, innovative und nachhaltige Projekte gefördert werden.",
       founderMaleText: "Gründer",
       founderFemaleText: "Gründerin",
     },

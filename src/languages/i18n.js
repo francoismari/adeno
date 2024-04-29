@@ -17,6 +17,11 @@ import sk from "./sk";
 import mt from "./mt";
 import lv from "./lv";
 import fi from "./fi";
+import el from "./el";
+import da from "./da";
+import bg from "./bg";
+import cs from "./cs";
+import hr from "./hr";
 
 const i18n = new I18n({
   en,
@@ -37,6 +42,11 @@ const i18n = new I18n({
   mt,
   lv,
   fi,
+  el,
+  da,
+  bg,
+  cs,
+  hr,
 });
 i18n.defaultLocale = "en";
 // i18n.locale = "en";

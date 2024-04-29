@@ -2,71 +2,78 @@ export default {
   onboarding: {
     firstScreen: {
       subtitle:
-        "Aplicația care te motivează să votezi la alegerile europene din 2024!",
-      firstRow: "Primul joc care te face interesat de politică",
+        "Aplicația care te ajută să votezi la alegerile europene din 2024!",
+      firstRow:
+        "Primul joc care te face să te interesezi de alegerile europene",
       secondRow:
-        "Găsește-ți capul de listă cu modul solo și descoperă clasamentul general!",
-      thirdRow: "Disponibil în cele 27 de țări ale UE, tradus în 24 de limbi",
+        "Găsește-ți capul de listă în modul single-player și vezi unde te situezi în clasamentul general!",
+      thirdRow:
+        "Disponibil în toate cele 27 de țări ale UE și tradus în 24 de limbi.",
     },
     secondScreen: {
       title: "Cum funcționează?",
       multiplayerBox: {
-        title: "Modul multiplayer",
+        title: "Multiplayer mode",
         description:
-          "Joacă-te cu prietenii, creează jocuri și răspunde la întrebări despre principalele probleme europene pentru a vedea pozițiile tale și ale prietenilor tăi!",
+          "Începeți un joc cu prietenii dvs., dați-vă cu părerea despre principalele probleme europene și aflați care este poziția lor!",
       },
       soloBox: {
-        title: "Modul solo",
+        title: "Solo Mode",
         description:
-          "Răspunde la 100 de întrebări pe 10 teme și formează-ți o opinie despre principalele grupuri din parlamentele europene! Vei vedea de asemenea cu care cap de listă te asortezi în țara ta.",
+          "Răspundeți la 100 de întrebări pe 10 subiecte pentru a vă face o părere despre grupurile politice din Parlamentul European! Vei afla care lider de listă se potrivește cel mai bine cu convingerile tale.",
       },
     },
     thirdScreen: {
       title: "Înainte de a începe",
       firstRow: {
-        title: "Nu colectăm date personale.",
+        title: "Nu colectăm niciun fel de date cu caracter personal.",
         description:
-          "Toate datele utilizate în aplicație sunt anonime și sunt limitate la strictul necesar pentru funcționarea corectă a aplicației!",
-        readChart: "Citește cartea noastră despre confidențialitate",
+          "Toate datele utilizate în aplicație sunt anonime și se limitează la cele strict necesare pentru buna funcționare a aplicației!",
+        readChart: "Citiți politica noastră de confidențialitate",
       },
       secondRow: {
-        title: "Adeno este apolitică, neutră și transparentă.",
+        title: "Adeno este nepartizan, neutru și transparent.",
         description:
-          "Adeno nu este legată de nicio organizație guvernamentală și este un proiect complet independent.",
-        readChart: "Citește cartea noastră despre transparență",
+          "Adeno este un proiect complet independent și nu are legătură cu niciun organism guvernamental.",
+        readChart: "Citiți Carta noastră privind transparența",
       },
-      startButton: "Să începem!",
+      startButton: "Haideți să începem!",
       footerText:
-        "Adeno este un proiect cetățenesc, creat de o echipă de voluntari, fără scop lucrativ, cu singurul obiectiv de a te face să votezi!",
+        "Adeno este un proiect cetățenesc, creat de o echipă de voluntari, fără scop lucrativ și cu un singur obiectiv: să vă ofere cheile pentru a vota la următoarele alegeri europene!",
       psText: "PS: suntem open-source ✌️",
     },
   },
   home: {
     title: "Joacă & votează",
-    startButtonText: "Începe",
+    startButtonText: "Începeți",
     multiplayerCard: {
-      title: "Modul multiplayer 🎮",
-      subtitle: "Începe un joc\nși provoacă-ți prietenii!",
+      title: "Multiplayer Mode 🎮",
+      subtitle: "Începe un joc\nși provoacă-ți colegii!",
     },
     soloCard: {
-      title: "Modul solo 🎯",
-      subtitle: "2 moduri & 100 de întrebări\npentru a-ți găsi capul de listă!",
+      title: "Solo Mode 🎯",
+      subtitle:
+        "2 moduri și 100 de întrebări pentru a găsi alegerea ta de top!",
     },
     headListCard: {
-      title: "Capul meu de listă 🇪🇺",
+      title: "Lista mea de top 🇪🇺",
       noResultText:
-        "Lansează modul solo pentru a descoperi capul tău de listă!",
-      startButtonText: "Să începem!",
-      listNotAvailableTitle: "Capul tău de listă nu este încă disponibil...",
+        "Începeți modul single-player pentru a afla cine se află în fruntea listei voastre!",
+      listNotAvailableTitle: "C Topul tău din listă nu este încă disponibil...",
       listNotAvailableSubtitle:
-        "Vei fi notificat când partidul tău își va anunța capul de listă în țara ta!",
-      seeAllResultsText: "Vezi toate rezultatele mele",
+        "Vei fi alertat când partidul tău își va anunța capul de listă din țara ta!",
+      seeAllResultsText: "Vedeți toate rezultatele mele",
+      easyModeWarning: {
+        title: "Cu modul ușor",
+        description:
+          "Pentru rezultate mai precise și informații detaliate despre răspunsurile tale, folosește modul avansat!",
+      },
     },
   },
   ranking: {
     title: "Clasamentul",
     userCountryCard: {
-      title: "În",
+      title: "Pe",
     },
     europeCard: {
       title: "În Europa",
@@ -74,47 +81,48 @@ export default {
     shareAppText: "Partajează Adeno",
   },
   discoverEU: {
-    title: "Descoperă UE",
+    title: "Descoperiți UE",
     institutionsCard: {
       title: "Instituțiile 🇪🇺",
-      subtitle: "Descoperă instituțiile europene și funcționarea lor!",
-      showAllText: "Afișează tot",
+      subtitle:
+        "Descoperiți instituțiile europene și modul în care acestea funcționează!",
+      showAllText: "Afișați toate",
     },
     commitCard: {
-      title: "Angajează-te ✊",
-      text: "Angajații! este o federație înființată în iunie 2017 cu scopul de a încuraja tinerii să se implice în viața civică. De aproape 6 ani, Angajații promovează diferite forme de angajament printre tinerii de 18-35 de ani, organizând în fiecare săptămână dezbateri, conferințe, întâlniri și vizite în diversele noastre sedii din mai multe orașe din Franța.",
-      joinButtonText: "Alătură-te",
+      title: "Implică-te✊",
+      text: "Les Engagés! este o asociație non-profit înființată în iunie 2017 pentru a-i încuraja pe tineri să se implice în viața comunității. De aproape 6 ani, Les Engagés se străduiește să promoveze diferite forme de angajament în rândul tinerilor cu vârste cuprinse între 18 și 35 de ani prin organizarea de dezbateri săptămânale, conferințe, întâlniri și vizite în diferitele noastre filiale răspândite în mai multe orașe din Franța.",
+      joinButtonText: "Înscrieți-vă la",
     },
     informCard: {
-      title: "Informează-te 🗞️",
-      text: "Bătrânul Continent este un mediu online al cărui scop este de a informa și de a difuza problema europeană în dezbaterea publică, pe YouTube, TikTok și Instagram. În acest scop, realizează diferite formate, cum ar fi interviuri, sondaje de stradă, decodificări ale actualității, dezbateri, întotdeauna pe teme europene. Începând cu aprilie 2024, mediul va acoperi îndeaproape alegerile europene din Franța.",
-      joinButtonText: "Descoperă",
+      title: "Informați-vă 🗞️",
+      text: "Le Vieux Continent este o organizație media online al cărei scop este de a informa publicul și de a face cunoscute problemele europene pe YouTube, TikTok și Instagram. În acest scop, ei produc o serie de formate, inclusiv interviuri, microtrofee, analize de știri și dezbateri, toate axate pe probleme europene. Din aprilie 2024, acest mediu va acoperi foarte atent alegerile europene din Franța.",
+      joinButtonText: "Descoperiți",
     },
     partnerCard: {
       title: "Partenerii noștri",
     },
   },
   allFiles: {
-    title: "Fișele",
+    title: "Fișe informative",
     subtitle: "Pentru a înțelege totul despre UE!",
   },
   allUserResults: {
     title: "Rezultatele mele",
     withAdeno: "Cu Adeno",
-    inSummaryTitle: "În rezumat",
-    shareMyResults: "Partajează rezultatele mele",
-    seeMoreText: "Vezi mai mult",
+    inSummaryTitle: "Pe scurt",
+    shareMyResults: "Împărtășiți rezultatele mele",
+    seeMoreText: "Vedeți mai multe",
   },
   selectSoloMode: {
     title: "Modul solo",
     expressCard: {
       title: "Modul express ⏱️",
-      subtitle: "30 de întrebări pentru a-ți găsi\ncapul de listă!",
+      subtitle: "30 de întrebări pentru a-ți găsi\n drumul spre vârf!",
     },
     classicCard: {
       title: "Modul clasic 🗳️",
       subtitle:
-        "Răspunde la 100 de întrebări și găsește un rezultat adaptat convingerilor tale!",
+        "Răspundeți la 100 de întrebări și găsiți un rezultat care să se potrivească convingerilor dumneavoastră!",
     },
   },
   expressMode: {
@@ -122,26 +130,26 @@ export default {
     cardTitle:
       "Găsește grupul care ți se potrivește răspunzând la 30 de întrebări!",
     warningText:
-      "Atenție: pentru rezultate mai fiabile și întrebări despre subiecte mai specifice, folosește modul clasic!",
-    letsGoText: "Să mergem",
+      "Atenție: pentru rezultate mai sigure și întrebări pe teme mai specifice, folosiți modul clasic!",
+    letsGoText: "Iată",
   },
   expressResults: {
-    title: "Rezultatul meu",
-    inSummaryTitle: "În rezumat",
-    continueWithClassicMode: "Continuă cu modul clasic",
+    title: "Rezultatele mele",
+    inSummaryTitle: "Pe scurt",
+    continueWithClassicMode: "Continuați cu modul clasic",
     goBack: "Înapoi",
   },
   classicMode: {
     randomCard: {
-      title: "Aleator",
+      title: "Aleatoriu",
       subtitle: "Toate temele",
     },
   },
   randomQuestionScreen: {
     title: "Aleator",
-    showContextText: "Arată contextul",
-    allQuestionsAnswered: "Ai răspuns la toate întrebările!",
-    showResultsText: "Arată rezultatele mele",
+    showContextText: "Afișați contextul",
+    allQuestionsAnswered: "Ați răspuns la toate întrebările!",
+    showResultsText: "Afișați rezultatele mele",
     goBack: "Înapoi",
   },
   contextScreen: {
@@ -149,15 +157,15 @@ export default {
   },
   selectMultiplayerMode: {
     title: "Multiplayer",
-    selectText: "Selectează modul\n care ți se potrivește!",
+    selectText: "Alege modul \n care ți se potrivește cel mai bine!",
     onePhone: "Un singur telefon",
     multiplePhones: "Mai multe telefoane",
   },
   setupOnePhone: {
     title: "Jucători",
-    noPlayerAdded: "Niciun jucător adăugat",
-    addPlayerText: "Adaugă un jucător",
-    letGoText: "Să mergem",
+    noPlayerAdded: "Nu s-au adăugat jucători",
+    addPlayerText: "Adăugați un jucător",
+    letGoText: "Adaugă",
     addPlayerModal: {
       title: "Adaugă un jucător",
       placeholder: "Numele jucătorului",
@@ -167,50 +175,50 @@ export default {
         nameAlreadyUsedSubtitle:
           "Fiecare jucător trebuie să aibă un nume diferit.",
         moreThanTenTitle: "Prea mulți jucători",
-        moreThanTenSubtitle: "Nu poți adăuga mai mult de 10 jucători",
+        moreThanTenSubtitle: "Nu puteți adăuga mai mult de 10 jucători",
       },
     },
   },
   multiplayerOnePhoneGame: {
     seconds: "secunde",
     for: "Pentru",
-    against: "Contra",
-    indifferent: "Indiferent",
+    against: "Împotriva ",
+    indifferent: "Mixt",
     alert: {
-      quitPartyTitle: "Ești sigur că vrei să părăsești jocul?",
+      quitPartyTitle: "Ești sigur că vrei să părăsești jocul? ",
       cancel: "Anulează",
-      quit: "Părăsește",
+      quit: "Părăsiți",
     },
   },
   multiplePhones: {
-    title: "Porecla ta",
+    title: "Numele tău de utilizator",
     pseudoPlaceholder: "Porecla ta",
-    createPartyText: "Creează o partidă",
-    joinPartyText: "Alătură-te unei partide",
-    waitCreatorText: "Creatorul trebuie să înceapă jocul!",
+    createPartyText: "Creați un joc",
+    joinPartyText: "Înscrieți-vă la un joc",
+    waitCreatorText: "Este la latitudinea creatorului să înceapă jocul!",
   },
   gameScreen: {
-    title: "Partida",
+    title: "JOc",
     codeText: "Cod",
-    startButton: "Începe",
+    startButton: "Începeți",
   },
   gameQuestionsScreen: {
     for: "Pentru",
-    against: "Contra",
-    indifferent: "Indiferent",
-    waitingForPlayersTitle: "Așteptând alți jucători!",
+    against: "Împotriva",
+    indifferent: "Mixt",
+    waitingForPlayersTitle: "În așteptarea celorlalți jucători!",
     waitingForPlayersSubtitle:
-      "Rezultatele vor fi accesibile după ce toți au terminat",
+      "Rezultatele vor fi disponibile după ce toată lumea a terminat",
   },
   multiplayerResults: {
-    title: "Rezultatele",
-    youAreTheMost: "tu ești cel/cea mai",
-    youMatch: "Te potrivești cu",
-    withList: "cu lista lui",
-    seeNext: "Vezi următorul",
+    title: "Rezultatele ",
+    youAreTheMost: "tu ești + ",
+    youMatch: "Te apropii de ",
+    withList: "de pe listă",
+    seeNext: "vezi următorul",
     resultsFooter: {
       anotherRound: "Încă o rundă?",
-      restartText: "Reîncepe",
+      restartText: "Începeți din nou",
     },
   },
   euCountries: {
@@ -244,53 +252,53 @@ export default {
     uk: "Regatul Unit",
   },
   setStudyInfos: {
-    title: "Participă la cel mai mare studiu despre Europa!",
+    title: "Luați parte la cel mai mare sondaj din Europa!",
   },
   settingsScreen: {
-    title: "Setări",
+    title: "Setări ",
     multiplayerCard: {
-      title: "Modul multiplayer",
-      timeByQuestionText: "Timp de răspuns pe întrebare",
+      title: "Multiplayer Mode",
+      timeByQuestionText: "Timp de răspuns pentru fiecare întrebare",
       setTimeByQuestionModal: {
-        title: "Schimbă timpul",
+        title: "Modificarea timpului",
         saveButton: "Salvează",
       },
     },
     soloCard: {
-      title: "Modul solo",
-      resetResultsText: "Resetează rezultatele mele",
+      title: "Solo Mode",
+      resetResultsText: "Resetează-mi rezultatele",
       studyInfos: {
-        title: "Participă la marele studiu al tinerilor din Europa",
+        title: "Luați parte la un studiu major al tinerilor din Europa",
         description:
-          "Răspunsurile tale la întrebările modului solo vor fi înregistrate anonim și vor contribui la realizarea unui mare studiu despre comportamentele electorale ale tinerilor din Europa, supravegheat de un",
+          "Răspunsurile dvs. la întrebările din modul pentru un singur jucător vor fi înregistrate în mod anonim și vor fi folosite pentru a realiza un studiu major privind comportamentul de vot al tinerilor din Europa, sub supravegherea unui",
         council:
-          "consiliu științific de profesori, cercetători și intelectuali",
-        startButtonText: "Răspunde la studiu",
-        userParticipates: "Participi la marele studiu despre Europa!",
+          "consiliu științific format din profesori, cercetători și intelectuali.",
+        startButtonText: "Participați la studiu",
+        userParticipates: "Participi la studiul major despre Europa!",
       },
     },
     createdByCard: {
       title: "Creat de",
       subtitle:
-        "Creat de Matthieu Maillard și o rețea de voluntari din întreaga Europă.",
+        "Creat de Matthieu Maillard și de o rețea de voluntari din întreaga Europă! ",
     },
     incubatedBy: {
       title: "Incubat de",
       subtitle:
-        "Inceptio Lab, fondat în 2023 și afiliat federației Les Engagés!, este un incubator destinat promovării proiectelor antreprenoriale cu impact, inspirat de succesul aplicației Elyze. Oferă o platformă pentru aplicarea competențelor în inițiative angajate, inovatoare și durabile, promovând în același timp ocupabilitatea membrilor săi.",
+        "Inceptio Lab, fondat în 2023 și afiliat la federația Les Engagés! este un incubator care promovează proiecte antreprenoriale de impact, inspirat de succesul aplicației Elyze. Acesta oferă o platformă pentru aplicarea competențelor în inițiative angajate, inovatoare și durabile, promovând în același timp capacitatea de angajare a membrilor săi. ",
       founderMaleText: "Fondator",
-      founderFemaleText: "Fondatoare",
+      founderFemaleText: "Fondator",
     },
     teamCard: {
       title: "Echipa",
     },
     contactCard: {
-      title: "Contactează-ne",
-      text: "Ne poți contacta pe",
+      title: "Contactați-ne",
+      text: "Ne puteți contacta la",
     },
     allRightsReserved: "toate drepturile rezervate",
   },
   councilScreen: {
-    title: "Consiliul",
+    title: "Consiliul de administrație",
   },
 };

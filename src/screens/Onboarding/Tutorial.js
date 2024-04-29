@@ -18,8 +18,8 @@ export default function Tutorial() {
           marginTop: 10,
         }}
       >
-        Comment ça marche ?
-        {/* {i18n.t("onboardingScreen.firstScreen.mainTitle")} */}
+        
+        {i18n.t('onboarding.secondScreen.title')}
       </CustomText>
       <View style={{ marginHorizontal: 20, marginTop: 20 }}>
         <View

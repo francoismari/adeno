@@ -4,8 +4,9 @@ import {
   SafeAreaView,
   Pressable,
   TouchableOpacity,
+  ActivityIndicator,
 } from "react-native";
-import React from "react";
+import React, { useState } from "react";
 import { useNavigation } from "@react-navigation/native";
 import AsyncStorage from "@react-native-async-storage/async-storage";
 import CustomText from "../../components/CustomText";
@@ -17,14 +18,18 @@ import i18n from "../../languages/i18n";
 export default function Start() {
   const navigation = useNavigation();
 
+  const [isStarting, setIsStarting] = useState(false);
+
   const { setUser } = useUser();
 
   const handlePress = async () => {
+    setIsStarting(true);
     await AsyncStorage.setItem("isSetUp", "true");
 
     const { user } = await signInAnonymously(auth);
     setUser(user);
 
+    setIsStarting(false);
     navigation.navigate("Navigator");
   };
 
@@ -135,7 +140,7 @@ export default function Start() {
       </View>
 
       <View style={{ position: "absolute", bottom: 50, marginHorizontal: 25 }}>
-        <StartButton onPress={handlePress} />
+        <StartButton onPress={handlePress} isStarting={isStarting} />
         <View>
           <Text
             style={{
@@ -171,7 +176,7 @@ export default function Start() {
   );
 }
 
-const StartButton = ({ onPress }) => {
+const StartButton = ({ onPress, isStarting }) => {
   return (
     <Pressable
       onPress={onPress}
@@ -184,16 +189,24 @@ const StartButton = ({ onPress }) => {
         alignItems: "center",
       }}
     >
-      <CustomText
-        style={{
-          fontSize: 20,
-          //   textTransform: "uppercase",
-          fontFamily: "FrancoisOne",
-          color: "white",
-        }}
-      >
-        {i18n.t("onboarding.thirdScreen.startButton")}
-      </CustomText>
+      {isStarting ? (
+        <ActivityIndicator
+          size={"small"}
+          style={{ alignSelf: "center", padding: 5}}
+          color={'white'}
+        />
+      ) : (
+        <CustomText
+          style={{
+            fontSize: 20,
+            //   textTransform: "uppercase",
+            fontFamily: "FrancoisOne",
+            color: "white",
+          }}
+        >
+          {i18n.t("onboarding.thirdScreen.startButton")}
+        </CustomText>
+      )}
     </Pressable>
   );
 };

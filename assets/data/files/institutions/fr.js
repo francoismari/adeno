@@ -12,7 +12,7 @@ export default [
     source: "https://www.touteleurope.eu/institutions/le-parlement-europeen/",
   },
   {
-    name: "La Comission européenne",
+    name: "La Commission européenne",
     text: `La Commission est composée de 27 commissaires, 1 par Etat membre, qui se répartissent des rôles thématiques. Sa présidente actuelle est Ursula Von Der Leyen. Elle est désignée par le Conseil Européen, en tenant compte des résultats des élections européennes. Elle participe, de concert avec les Etats membre à proposer les commissaires, qui seront ensuite confirmés par un vote au Parlement. 
     \nLa Commission européenne est souvent identifiée comme la "gardienne des traités" c’est-à-dire qu’elle joue un rôle majeur dans la surveillance et l'application du droit de l'UE. Elle possède des pouvoirs d'alerte pour signaler les risques d'infraction aux États et peut engager des procédures en cas de non-respect, notamment en saisissant la Cour de justice de l'Union européenne. Dans le domaine de la concurrence, la Commission peut directement prononcer des sanctions contre les entreprises violant les règles antitrust.
     \nEn plus de son rôle de surveillance, la Commission exerce une fonction d'impulsion et de proposition. Elle émet des recommandations non-normatives, influençant la coordination des politiques nationales, et détient le monopole de l'initiative législative pour la quasi-totalité des actes de droit dérivé de l'Union. De plus, elle participe à la préparation du budget de l'UE.

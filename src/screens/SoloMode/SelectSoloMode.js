@@ -4,6 +4,7 @@ import {
   Pressable,
   TouchableOpacity,
   ScrollView,
+  Alert,
 } from "react-native";
 import React from "react";
 import BackgroundWrapper from "../../components/BackgroundWrapper";
@@ -13,11 +14,53 @@ import CustomText from "../../components/CustomText";
 import CenteredHeader from "../../components/CenteredHeader";
 import { useUser } from "../../context/userContext";
 import i18n from "../../languages/i18n";
+import AsyncStorage from "@react-native-async-storage/async-storage";
 
 export default function SelectSoloMode() {
   const navigation = useNavigation();
 
   const { user } = useUser();
+
+  const checkForExistingAnswersAndNavigate = async (
+    navigateAction,
+    modeKey
+  ) => {
+    const existingAnswers = await AsyncStorage.getItem("answeredQuestions");
+    const easyExistingAnswers = await AsyncStorage.getItem(
+      "easyModeAnsweredQuestions"
+    );
+    if (
+      existingAnswers &&
+      JSON.parse(existingAnswers).length > 0 &&
+      modeKey === "easy"
+    ) {
+      Alert.alert(
+        "Attention",
+        "Tu as déjà commencé à répondre au mode avancé, si tu relances le mode facile, tes réponses du mode avancé seront réinitialisées, es-tu sûr de vouloir continuer ?",
+        [
+          {
+            text: "Non",
+            style: "cancel",
+          },
+          {
+            text: "Oui",
+            onPress: async () => {
+              await AsyncStorage.removeItem("answeredQuestions");
+              navigateAction();
+            },
+          },
+        ]
+      );
+    } else if (
+      easyExistingAnswers &&
+      JSON.parse(easyExistingAnswers).length > 0 &&
+      modeKey === "easy"
+    ) {
+      await AsyncStorage.removeItem("easyModeAnsweredQuestions");
+    } else {
+      navigateAction();
+    }
+  };
 
   const modes = [
     {
@@ -25,14 +68,22 @@ export default function SelectSoloMode() {
       title: i18n.t("selectSoloMode.expressCard.title"),
       description: i18n.t("selectSoloMode.expressCard.subtitle"),
       colors: ["#DB3366", "#E7265A"],
-      onPress: () => navigation.navigate("ExpressMode"),
+      onPress: () =>
+        checkForExistingAnswersAndNavigate(
+          () => navigation.navigate("EasyMode"),
+          "easy"
+        ),
     },
     {
       id: 2,
       title: i18n.t("selectSoloMode.classicCard.title"),
       description: i18n.t("selectSoloMode.classicCard.subtitle"),
-      colors: ["#FBD51F", "#F1CB22"],
-      onPress: () => navigation.navigate("ClassicMode"),
+      colors: ["#BFBFBFE0", "#BFBFBFE0"],
+      onPress: () =>
+        checkForExistingAnswersAndNavigate(
+          () => navigation.navigate("ClassicMode"),
+          "classic"
+        ),
     },
   ];
 
@@ -53,12 +104,10 @@ export default function SelectSoloMode() {
         title={i18n.t("selectSoloMode.title")}
       />
 
-      <ScrollView>
-        <View style={{ marginBottom: 5 }}>
-          {modes.map((mode, index) => (
-            <ModeCard key={index} mode={mode} />
-          ))}
-        </View>
+      <ScrollView style={{ flex: 1 }}>
+        {modes.map((mode, index) => (
+          <ModeCard mode={mode} />
+        ))}
 
         {!user?.responses && (
           <StudyCardInfo handleSetStudyInfos={handleSetStudyInfos} />

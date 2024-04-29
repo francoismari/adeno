@@ -14,6 +14,8 @@ import getElections from "../../../assets/data/files/elections/getElections";
 import getEnlargements from "../../../assets/data/files/enlargements/getEnlargements";
 import getTreaties from "../../../assets/data/files/treaties/getTreaties";
 import getPrinciples from "../../../assets/data/files/principles/getPrinciples";
+import getCandidate from "../../../assets/data/files/topList/getTopList";
+import getGroupsFiles from "../../../assets/data/files/groupsFiles/getGroups";
 
 const ThemeFiles = ({ navigation, route }) => {
   const { theme } = route.params;
@@ -29,7 +31,7 @@ const ThemeFiles = ({ navigation, route }) => {
       case 1:
         return getCountries().filter((country) => country.inEU !== false);
       case 2:
-        return getGroups(locale.userLocale);
+        return getGroupsFiles(locale.userLocale);
       case 3:
         return getInstitutions();
       case 4:
@@ -46,6 +48,8 @@ const ThemeFiles = ({ navigation, route }) => {
         return getSymbols();
       case 11:
         return getElections();
+      case 12:
+        return getCandidate(locale.userLocale);
       default:
         return [];
     }
@@ -65,7 +69,11 @@ const ThemeFiles = ({ navigation, route }) => {
         keyExtractor={(item, index) => `theme-item-${index}`}
         renderItem={({ item }) => (
           <Pressable
-            onPress={() => handleGoToFile(item.name, item.text, item.source)}
+            onPress={() => {
+              if (item.name) {
+                handleGoToFile(item.name, item.text, item.source);
+              }
+            }}
             style={{
               padding: 10,
               backgroundColor: "white",
@@ -87,7 +95,7 @@ const ThemeFiles = ({ navigation, route }) => {
             <CustomText
               style={{ fontSize: 22, marginLeft: item?.emoji ? 12 : 0 }}
             >
-              {item.name}
+              {item.name || item.firstname + " " + item.lastname}
             </CustomText>
           </Pressable>
         )}
